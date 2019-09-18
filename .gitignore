@@ -1,0 +1,18 @@
+# project
+_site
+.sass-cache
+.vagrant
+.jekyll-metadata
+.env
+.env.build
+.jekyll-cache
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# vs
+vendor
+.vs
+.git
