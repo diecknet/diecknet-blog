@@ -33,8 +33,8 @@ permalink: pretty
 include: ['_pages']
 exclude: ['LICENSE.md', 'README.md', 'publi.sh', 'Gemfile.lock']
 # Setup
-title:            Polyglot
-tagline:          'Straightforward I18n for Jekyll Blogs'
+title:            Diecknet
+tagline:          'Welcome to the blog of <span class="w3-tag">{{site.author.name}}</span>'
 description:
   de: Ein sprachunterstützung plugin für <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, die Unterstützung der Internationalisierung schnell und intuitiv macht, für Blogs groß und klein. Hergestellt von <a href="https://github.com/untra" target="_blank">@untra</a>.
   en: A i18n support plugin for <a href="http://jekyllrb.com" target="_blank">Jekyll</a> that makes multi-language support fast and intuitive, for blogs big and small. Made by <a href="https://github.com/untra" target="_blank">@untra</a>.
