@@ -16,6 +16,11 @@ common-css:
     <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %}{{site.url}}/{{page.url}}{% else %}/{{ tongue }}{{page.url}}{% endif %}"> <img src="/img/flag_{{ tongue }}.svg" alt="{{ tongue }} (flag)" style="height:15px; width:auto;" /> {{ tongue }}</a> |
     {% endfor %}
     </div>
+    <div class="w3-container w3-center w3-red w3-padding"><b>TEST</b>
+      {% for tongue in site.languages %}
+    <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a> |
+      {% endfor %}
+    </div>
     <div class="w3-content" style="max-width:1920px">
     <!-- Grid -->
     <div class="w3-row">
