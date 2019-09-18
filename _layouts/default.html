@@ -1,16 +1,35 @@
+---
+common-css:
+  - "/css/w3.css"
+  - "/css/font-raleway.css"
+---
 <!DOCTYPE html>
-<html lang="en-us">
-
-  {% include head.html %}
-
-  <body theme-base-08>
-
-    {% include sidebar.html %}
-
-    <div class="content container">
-      {{ content }}
+<html>
+    {% include head.html %}
+  <body class="w3-light-grey">
+    <header class="w3-container w3-center w3-padding-16 w3-2019-evening-blue">
+      <h1><b>{{site.title}}</b></h1>
+      <p>Welcome to the blog of <span class="w3-tag">{{site.author.name}}</span></p>
+    </header>
+    <div class="w3-container w3-center w3-black w3-padding">Change language:
+      {% for tongue in site.languages %}
+    <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %}{{site.url}}/{{page.url}}{% else %}/{{ tongue }}{{page.url}}{% endif %}"> <img src="/img/flag_{{ tongue }}.svg" alt="{{ tongue }} (flag)" style="height:15px; width:auto;" /> {{ tongue }}</a> |
+    {% endfor %}
     </div>
-
+    <div class="w3-content" style="max-width:1920px">
+    <!-- Grid -->
+    <div class="w3-row">
+    {{ content }}
+    {% include sidebar.html %}
+    </div> <!-- end grid/row -->
+    </div> <!-- end w3-content -->
+    <footer class="w3-container w3-2019-evening-blue w3-padding-8 w3-margin-top">
+    <p>
+      &copy; {{ site.author.name }}
+      &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+      {% if page.date %}{{ page.date | date: '%Y' }}{% else %}{{ site.time | date: '%Y' }}
+      {% endif %}
+    </p>
+    </footer>
   </body>
-
 </html>

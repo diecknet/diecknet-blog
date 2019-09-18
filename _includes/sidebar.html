@@ -1,45 +1,36 @@
-{% assign lang = site.active_lang %}
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <p class="speech">{{ site.hello[site.active_lang]}}</p>
-    </br>
-      <h1>
-        <a href="{{ site.baseurl }}">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">{{ site.description[lang] }}</p>
+<!-- BEGIN sidebar file -->
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-cardx w3-margin w3-margin-top">
+  <!-- <img src="w3images/avatar_g.jpg" style="width:100%"> -->
+    <div class="w3-container w3-white">
+      <h4><b>{{ site.hello[site.active_lang]}}</b></h4>
+      <p>{{ site.description[site.active_lang] }}</p>
     </div>
+  </div><hr>
+  <!-- Labels / tags -->
+  <div class="w3-cardx w3-margin"> <!-- START TAGS -->
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p>
+      {%- capture site_tags -%}
+          {%- for tag in site.tags -%}
+              {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+      {%- endcapture -%}
+      {%- assign tags_list = site_tags | split:',' | sort -%}
+      {%- for tag in tags_list -%}
+          <span class="w3-tag w3-black w3-small w3-margin-bottom">
+              &nbsp;{{- tag -}}&nbsp;
+          </span>&nbsp;
+      {%- endfor -%}
 
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
-
-      {% assign pages_list = site.pages %}
-      {% assign written = "" | split: '' %}
-      {% for node in pages_list %}
-        {% if written contains node.title %}
-          {% continue %}
-        {% endif %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-          {% assign written = written | push: node.title %}
-        {% endif %}
-      {% endfor %}
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-
-      <a class="sidebar-nav-item" href="https://rubygems.org/gems/jekyll-polyglot">Ruby Gem</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
-    </nav>
-
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-<p>
-  {% for tongue in site.languages %}
-<a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a> |
-  {% endfor %}
-</p>
-  </div>
+    </p>
+    </div>
+  </div> <!-- END TAGS -->
+<!-- END Introduction Menu -->
 </div>
+<!-- END sidebar file -->
