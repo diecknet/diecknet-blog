@@ -11,6 +11,12 @@ layout: default
          <span class="w3-opacity">{{ page.date | date: "%Y-%m-%d" }}</span></h5>
     </div>
     <div class="w3-container">
+      <!--
+      !Test!
+      lang = {{ lang }}
+      page.language = {{ page.language }}
+      site.active_lang = {{ site.active_lang }}
+      -->
       {{ content }}
       <div class="w3-row">
         {% if page.tags.size > 0 %}
