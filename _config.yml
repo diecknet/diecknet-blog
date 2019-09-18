@@ -29,7 +29,10 @@ hello:
 languages_fullname:
   en: English
   de: Deutsch
-  
+language_translation_missing:
+  en: "This content is not available in English yet. Here is the original content:"
+  de: "Dieser Inhalt ist noch nicht auf Deutsch verfügbar. Hier ist der originale Inhalt:"
+
 github:
   repo: https://github.com/diecknet/diecknet-blog
 

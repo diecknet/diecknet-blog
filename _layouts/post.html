@@ -13,10 +13,10 @@ layout: default
     <div class="w3-container">
       <!--
       !Test!
-      lang = {{ lang }}
       page.lang = {{ page.lang }}
       site.active_lang = {{ site.active_lang }}
       -->
+      {% if site.active_lang != blank and site.active_lang != page.lang %}<div class="w3-panel w3-pale-yellow w3-border"><h3>Sorry!</h3>{{language_translation_missing[site.active_lang]}}</div>{% endif %}
       {{ content }}
       <div class="w3-row">
         {% if page.tags.size > 0 %}
