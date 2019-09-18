@@ -18,15 +18,24 @@ incremental: false
 
 # author
 author:
-  name: 'Samuel Volin'
-  url: https://github.com/untra
+  name: 'Andreas Dieckmann'
+  url: https://github.com/diecknet
 
 # data
 hello:
   en: Hello!
-  es: ¡hola!
-  fr: Bonjour!
   de: Hallo!
+# this is custom, not from polyglot
+languages_fullname:
+  en: English
+  de: Deutsch
+language_translation_missing:
+  en: "This content is not available in English yet. Here is the original content:"
+  de: "Dieser Inhalt ist noch nicht auf Deutsch verfügbar. Hier ist der originale Inhalt:"
+
+github:
+  repo: https://github.com/diecknet/diecknet-blog
+
 
 plugins: [jekyll-polyglot, jekyll-paginate]
 # Permalinks
@@ -35,25 +44,25 @@ permalink: pretty
 include: ['_pages']
 exclude: ['LICENSE.md', 'README.md', 'publi.sh', 'Gemfile.lock']
 # Setup
-title:            Polyglot
-tagline:          'Straightforward I18n for Jekyll Blogs'
+title:            Diecknet
+tagline:          'Welcome to the blog of <span class="w3-tag">Andreas Dieckmann</span>'
 description:
   de: Ein sprachunterstützung plugin für <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, die Unterstützung der Internationalisierung schnell und intuitiv macht, für Blogs groß und klein. Hergestellt von <a href="https://github.com/untra" target="_blank">@untra</a>.
-  es: Un plugin soporte de i18n para <a href="http://jekyllrb.com" target="_blank">Jekyll</a> que hace soporte de internacionalización rápida e intuitiva, para los blogs grandes y pequeños. Hecho por <a href="https://github.com/untra" target="_blank">@untra</a>.
-  fr: Un plugin de support de i18n pour <a href="http://jekyllrb.com" target="_blank">Jekyll</a> qui fait support de l'internationalisation rapide et intuitive, pour les blogs grands et petits. Réalisé par <a href="https://github.com/untra" target="_blank">@untra</a>.
   en: A i18n support plugin for <a href="http://jekyllrb.com" target="_blank">Jekyll</a> that makes multi-language support fast and intuitive, for blogs big and small. Made by <a href="https://github.com/untra" target="_blank">@untra</a>.
 
-url: https://polyglot.untra.io
+# url: https://polyglot.untra.io
 
 paginate: 5
+# Excerpt Word Length
+# Truncates the excerpt to the specified number of words on the index page
+excerpt_length: 50
 # Custom vars
 version: 1.3.1
 
-github:
-  repo: https://github.com/untra/polyglot
+
 
 #Polyglot
-languages: ["en", "es", "de", "fr"]
-default_lang: "en"
+languages: ["de", "en"]
+default_lang: "de"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 data_dir: ./_data

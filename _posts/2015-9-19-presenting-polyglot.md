@@ -1,32 +1,32 @@
 ---
 layout: post
-title: Presenting Polyglot
-lang: en
+title: Ankündigung Polyglot
+lang: de
 ---
 
-After months of work and refinement, I am proud to present **Polyglot**: a i18n plugin for [Jekyll](http://jekyllrb.com) sites that *need* to cater their content to multiple languages and audiences.
+Nach monatelanger Arbeit und Raffinesse, ich bin stolz darauf, **Polyglot** präsentieren: eine i18n-Plugin für [Jekyll](http://jekyllrb.com) Websites, die *Notwendigkeit*, ihre Inhalte in mehrere Sprachen und Zielgruppen gerecht zu werden.
 
-### Features
+### Eigenschaften
 
-While there are other multi-language plugins for Jekyll, Polyglot is special. Polyglot takes care of the typical cruftwork normally left to developers to manage (such as wrangling urls and ensuring consistent sitemaps) while providing efficient and simple tools Jekyll developers can utilize into SEO and fast-tracked content aggregation.
+Zwar gibt es andere Multi-Language-Plugins für Jekyll ist Polyglot Besonderes. Polyglot kümmert sich um den typischen Unsinn in der Regel an die Entwickler verlassen zu verwalten (wie Gerangel URLs und konsistente Sitemaps) und bietet effiziente und einfache Werkzeuge Jekyll-Entwickler können in SEO und Eilverfahren Content-Aggregation zu nutzen.
 
-## Relativized Links
+## Relativiert URLs
 
-In the past, a multi-language static site or blog had to keep delicate track of what language each relative link the site was serving. It was all too easy for a developer to stumble, and foreign language visitors would quickly get lost in untranslated content.
+In der Vergangenheit hatte eine mehrsprachige statische Website oder ein Blog, um empfindliche verfolgen, was die Sprache jedes relativen Link wurde die Website dient zu halten. Es war viel zu einfach für einen Entwickler zu stolpern, und Fremdsprachen Besucher würde schnell in nicht übersetzten Inhalte verloren gehen.
 
-Polyglot automatically relativizes the urls for each language you want your site to build for. This allows website visitors to stay isolated on one language while browsing your website.
+Polyglot relativiert automatisch die URLs für jede Sprache, die Sie Ihre Website, um für die bauen wollen. Dies ermöglicht es Website-Besucher zu isoliert auf eine Sprache zu bleiben, während Durchsuchen Ihrer Website.
 
-## Fallback Support
+## Fallback-Unterstützung
 
-When you *don't* have translated or multilingual content, Jekyll will still build with the content you do have. When you *do* have translated or multilingual content, Jekyll will build using that content. Simple as that.
+Wenn Sie *nicht* haben übersetzt oder mehrsprachige Inhalte, Jekyll wird immer noch mit dem Inhalt zu bauen Sie zu tun haben. Wenn Sie *müssen* haben übersetzt oder mehrsprachigen Inhalten wird Jekyll bauen mit diesem Inhalt. So einfach ist das.
 
-Sitemaps stay consistent across all languages, and translated stays in the site it was built for.
+Sitemaps bleiben konsistent über alle Sprachen und übersetzt Aufenthalte in der Website es gebaut wurde.
 
-## Rich Content Translation
+## Reichen Inhalt Übersetzung
 
-Rich language content is normally hard to implement. Short strings or language dependent banners are typically hard for a Jekyll website to keep consistent.
+Reiche Sprache Inhalt ist in der Regel schwer zu implementieren. Kurze Strings oder sprachabhängige Banner sind in der Regel schwer für einen Jekyll Website konsistent zu halten.
 
-*Except when it's this easy*. In your config.yml, just store your strings as:
+*Außer, wenn es so einfach*. In Ihrem config.yml, nur die Saiten zu speichern, wie:
 {% highlight yaml %}
 hello:
   en: Hello!
@@ -34,24 +34,24 @@ hello:
   fr: Bonjour!
   de: Guten Tag!
 {% endhighlight %}
-and in your liquid, just call:
+und in ihre liquid, einfach anrufen:
 {% highlight html %}
 {% raw %}
 {{ site.hello[site.active_lang]}}
 {% endraw %}
 {% endhighlight %}
-produces:
+produziert:
 <p class="message">
 {{ site.hello[site.active_lang]}}
 </p>
 
-## Fast, Asynchronous, Zero-Overhead Builds
+## Schnell, Asynchron, baut Nullarbeit
 
-  Polyglot will build your multi-language website just as fast as it will build your default language website. Polyglot runs with a minimal overhead by *simultaneously* building all languages of your website as separate process. This means your website build time won't be a function of how many languages you need to support.
+  Polyglot wird Ihre mehrsprachige Website genauso schnell zu bauen, wie es Ihre Standardsprache Website zu bauen. Polyglot läuft mit einem minimalen Overhead von *gleichzeitig* Gebäude alle Sprachen Ihrer Website als separaten Prozess. Das bedeutet, Ihre Website Build-Zeit wird nicht davon ab, wie viele Sprachen, die unterstützt werden müssen.
 
 ### Download
 
-  Polyglot is available as a gem, or as a Jekyll plugin. It can be installed with:
+  Polyglot ist als eines ruby gem oder als Jekyll Plugin. Es kann mit installiert werden:
   {% highlight bash %}
   gem install 'jekyll-polyglot'
   {% endhighlight %}

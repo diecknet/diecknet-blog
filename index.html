@@ -2,36 +2,66 @@
 layout: default
 title: Home
 ---
-
-<div class="posts">
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
   {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{site.baseurl}}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+  <article>
+  <!-- Blog entry -->
+  <div class="w3-cardx w3-margin w3-white">
+    {% if post.image %}
+    <a href="{{ post.url | relative_url }}">
+      <img src="{{ post.image | relative_url }}" class="blog-crop-image" alt="{{ post.title }} / {{ post.subtitle }}" />
+    </a>
     {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <div class="w3-container">
+      <h3><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h3>
+      <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
+    </div>
+    <div class="w3-container">
+      {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+      {% assign excerpt_word_count = post.excerpt | number_of_words %}
+      <div class="w3-row">
+        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+          <div class="w3-col m8 s12">
+            <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
+          </div>
+        {% endif %}
+        {% if page.tags.size > 0 %}
+        <!-- BEGIN Tags! -->
+        <div class="w3-col m4 w3-hide-small">
+        <p>
+    <span class="w3-padding-large w3-right"><b>Tags:</b>
+    {% if site.link-tags %}
+    {% for tag in page.tags %}
+      <span class="w3-tag"><a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a></span>
+    {% endfor %}
+    {% else %}
+      {{ page.tags | join: ", " }}
+    {% endif %}
+  </p>
+  </div>
+  <!-- END Tags! -->
   {% endif %}
-</div>
+
+      </div>
+    </div>
+  </div>
+  </article>
+    {% endfor %}
+
+<!-- BEGIN Next / Previous Buttons -->
+    <div class="w3-col w3-margin">
+    {% if paginator.total_pages > 1 %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">&laquo; Older Posts</button></a>
+      {% else %}
+        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">&laquo; Older Posts</button>
+      {% endif %}
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Newer Posts &raquo;</button></a>
+      {% else %}
+        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Newer Posts &raquo;</button>
+      {% endif %}
+    {% endif %}
+</div> <!-- END Next / Previous Buttons -->
+</div> <!-- END Blog entries -->
