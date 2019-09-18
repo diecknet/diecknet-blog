@@ -52,7 +52,7 @@ github:
   repo: https://github.com/diecknet/diecknet-blog
 
 #Polyglot
-languages: ["en", "de"]
+languages: ["de", "en"]
 default_lang: "de"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 data_dir: ./_data
