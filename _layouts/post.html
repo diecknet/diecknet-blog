@@ -17,7 +17,7 @@ layout: default
       site.active_lang = {{ site.active_lang }}
       -->
       {% if site.active_lang != blank and site.active_lang != page.lang %}
-      <div class="w3-panel w3-pale-yellow w3-border"><h3>Sorry!</h3>
+      <div class="w3-panel w3-pale-yellow w3-border w3-margin"><h4>Sorry!</h4>
         {% if site.active_lang == blank %}
           {{site.language_translation_missing[site.default_lang]}}
         {% else %}
