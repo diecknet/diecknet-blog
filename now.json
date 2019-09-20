@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/css/",
+      "dest": "/403",
+      "status": 403
+    },
+    {
+      "src": "/fonts/",
+      "dest": "/403",
+      "status": 403
+    },
+    {
+      "src": "/img/",
+      "dest": "/403",
+      "status": 403
+    },
+    {
+      "src": "/css",
+      "dest": "/403",
+      "status": 403
+    },
+    {
+      "src": "/fonts",
+      "dest": "/403",
+      "status": 403
+    },
+    {
+      "src": "/img",
+      "dest": "/403",
+      "status": 403
+    },
+    {"handle": "filesystem"},
+    {"src": "/(.*)", "status": 404, "dest": "/404" }
+  ]
+}
