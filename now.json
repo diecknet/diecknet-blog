@@ -2,18 +2,20 @@
   "routes": [
     {
       "src": "/css/",
-      "dest": "/403.html",
+      "dest": "/403",
       "status": 403
     },
     {
       "src": "/fonts/",
-      "dest": "/403.html",
+      "dest": "/403",
       "status": 403
     },
     {
       "src": "/img/",
-      "dest": "/404.html",
+      "dest": "/404",
       "status": 404
-    }
+    },
+    {"handle": "filesystem"},
+    {"src": "\(.*)", "status": 404, "dest": "/404" }
   ]
 }
