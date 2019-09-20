@@ -1,17 +1,17 @@
 {
   "routes": [
     {
-      "src": "/css",
+      "src": "/css/",
       "dest": "/403.html",
       "status": 403
     },
     {
-      "src": "/fonts",
+      "src": "/fonts/",
       "dest": "/403.html",
       "status": 403
     },
     {
-      "src": "/img",
+      "src": "/img/",
       "dest": "/404.html",
       "status": 404
     }
