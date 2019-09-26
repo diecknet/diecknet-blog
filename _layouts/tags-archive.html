@@ -1,44 +1,54 @@
 ---
-layout: page
+layout: default
 ---
 
   {% assign numberof = page.posts | size %}
-  <h1>{{ numberof }} {% if numberof == 1 %}post{% else %}posts{% endif %} tagged {{ page.title }}</h1>
+  <h1>#{{ page.title }} ({{ numberof }} {% if numberof == 1 %}post{% else %}posts{% endif %})</h1>
 
-  <div class="container blog-entry {{tag}}" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="w3-col l8 s12">
     {% for post in page.posts %}
-        <article class="tag-index">
-          <div class="blog-title">
-            <h1 itemprop="headline" class="h4"><a class="link-alt" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-          </div>
+    <article>
+    <!-- Blog entry -->
+    <div class="w3-cardx w3-margin w3-white">
+      {% if post.image %}
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.image | relative_url }}" class="blog-crop-image" alt="{{ post.title }} / {{ post.subtitle }}" />
+      </a>
+      {% endif %}
+      <div class="w3-container">
+        <h3><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h3>
+        <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
+      </div>
+      <div class="w3-container">
+        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+        {% assign excerpt_word_count = post.excerpt | number_of_words %}
+        <div class="w3-row">
+          {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+            <div class="w3-col m8 s12">
+              <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
+            </div>
+          {% endif %}
+          {% if page.tags.size > 0 %}
+          <!-- BEGIN Tags! -->
+          <div class="w3-col m4 w3-hide-small">
+          <p>
+      <span class="w3-padding-large w3-right"><b>Tags:</b>
+      {% if site.link-tags %}
+      {% for tag in page.tags %}
+        <span class="w3-tag"><a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a></span>
+      {% endfor %}
+      {% else %}
+        {{ page.tags | join: ", " }}
+      {% endif %}
+    </p>
+    </div>
+    <!-- END Tags! -->
+    {% endif %}
 
-          <div class="blog-meta">
-            <p>
-              Posted on
-              <time class="blog-date" datetime="{{ post.date | date_to_xmlschema}}" itemprop="datePublished">
-                {{ post.date | date_to_string }}
-              </time>
-            </p>
-            <p>
-              Tagged /
-              <span class="blog-tags" itemprop="keywords">
-                {% for tag in post.tags %}
-                  <a href="{{site.baseurl}}/{{ site.tag_dir }}/{{ tag | slugify }}/">{{ tag }}</a>
-                  /
-                {% endfor %}
-              </span>
-            </p>
-          </div>
+        </div>
+      </div>
+    </div>
+    </article>
+      {% endfor %}
 
-          <div class="blog-snippet" itemprop="articleBody">
-            {% assign excerpt = post.excerpt | markdownify %}
-            <p>{{ excerpt | strip_html }}</p>
-          </div>
-
-          <div class="blog-continue">
-            <p><a href="{{ site.baseurl }}{{ post.url }}">Continue reading this post...</a></p>
-          </div>
-        </article>
-
-    {% endfor %}
-  </div>
+  </div> <!-- END Blog entries -->
