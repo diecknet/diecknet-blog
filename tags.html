@@ -3,7 +3,7 @@ title: Tags
 layout: page
 permalink: /tags/
 ---
-{% assign alldocs = site.documents | sort: 'date' | reverse | where_exp: "item", "item.includeonfeed == true" %}
+{% assign alldocs = site.documents | sort: 'date' | reverse %}
 {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
 {%- for tag in grouptag -%}
 <a href="/tags/{{- tag.name -}}"><span class="w3-tag w3-black w3-margin-bottom">&nbsp;{{- tag.name -}}&nbsp;({{tag.size}})</span></a>
@@ -20,6 +20,6 @@ permalink: /tags/
 {%- assign tags_list = site_tags | split:',' | sort -%}
 {%- for tag in tags_list -%}
     <a href="/tags/{{ tag }}" style="text-decoration:none;"><span class="w3-tag w3-black w3-margin-bottom">
-        &nbsp;{{- tag -}} ({{}})&nbsp;
+        &nbsp; {{- tag -}} &nbsp;
     </span></a>&nbsp;
 {%- endfor -%}
