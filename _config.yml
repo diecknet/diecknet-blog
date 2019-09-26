@@ -68,6 +68,8 @@ data_dir: ./_data
 # archives
 jekyll-archives:
   enabled: [tags]
-  layout: archive-archive
+  layout: tags-archive
+  layouts:
+    tag: tags-archive
   permalinks:
-    tag: '/tag/:name/'
+    tag: '/tags/:name/'
