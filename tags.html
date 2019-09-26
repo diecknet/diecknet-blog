@@ -5,6 +5,12 @@ permalink: /tags/
 ---
 {% assign alldocs = site.documents | sort: 'date' | reverse %}
 {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
+{% assign highest_count = grouptag[0].size %}
+{% assign lowest_count = grouptag | last | size %}
+<b>Test<br/>
+	highest_count: {{ highest_count }} <br />
+	lowest_count: {{ lowest_count }}<br /><br />
+
 {%- for tag in grouptag -%}
-<a href="/tags/{{- tag.name -}}"><span class="w3-tag w3-black w3-margin-bottom">&nbsp;{{- tag.name -}}&nbsp;({{tag.size}})</span></a>&nbsp;
+<a href="/tags/{{- tag.name -}}"><span class="w3-tag w3-black w3-margin-bottom {% if tag.size == highest_count %} w3-xxxlarge{% endif %}">&nbsp;{{- tag.name -}}&nbsp;({{tag.size}})</span></a>&nbsp;
 	{%- endfor -%}
