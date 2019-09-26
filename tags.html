@@ -6,7 +6,8 @@ permalink: /tags/
 {% assign alldocs = site.documents | sort: 'date' | reverse %}
 {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
 {% assign highest_count = grouptag[0].size %}
-{% assign lowest_count = grouptag[grouptag.size|minus:1].size %}
+{% assign lowest_count = grouptag | last %}
+{% assign lowest_count = lowest_count.size %}
 <b>Test<br/>
 	highest_count: {{ highest_count }} <br />
 	lowest_count: {{ lowest_count }}<br /><br />
