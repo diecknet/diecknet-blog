@@ -11,6 +11,6 @@ permalink: /tags/
 {%- assign tags_list = site_tags | split:',' | sort -%}
 {%- for tag in tags_list -%}
     <span class="w3-tag w3-black w3-margin-bottom">
-        &nbsp;{{- tag -}}&nbsp;
+        <a href="/tags/{{ tag }}">&nbsp;{{- tag -}}&nbsp;</a>
     </span>&nbsp;
 {%- endfor -%}
