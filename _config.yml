@@ -65,7 +65,7 @@ default_lang: "de"
 exclude_from_localization: ["img", "css", "fonts"]
 data_dir: ./_data
 
-# archives
+# archives / tags
 jekyll-archives:
   enabled: [tags]
   layout: tags-archive
@@ -73,3 +73,4 @@ jekyll-archives:
     tag: tags-archive
   permalinks:
     tag: '/tags/:name/'
+tag_dir: tags
