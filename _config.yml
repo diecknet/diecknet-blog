@@ -47,8 +47,8 @@ exclude: ['LICENSE.md', 'README.md', 'publi.sh', 'Gemfile.lock']
 title:            Diecknet
 tagline:          'Welcome to the blog of <span class="w3-tag">Andreas Dieckmann</span>'
 description:
-  de: Diecknet ist der IT-Blog von Andreas Dieckmann. 
-  en: A i18n support plugin for <a href="http://jekyllrb.com" target="_blank">Jekyll</a> that makes multi-language support fast and intuitive, for blogs big and small. Made by <a href="https://github.com/untra" target="_blank">@untra</a>.
+  de: Diecknet ist der IT-Blog von Andreas Dieckmann.
+  en: Diecknet is the IT-Blog by Andreas Dieckmann.
 
 # url: https://polyglot.untra.io
 
@@ -59,10 +59,15 @@ excerpt_length: 50
 # Custom vars
 version: 1.3.1
 
-
-
 #Polyglot
 languages: ["de", "en"]
 default_lang: "de"
 exclude_from_localization: ["img", "css", "fonts"]
 data_dir: ./_data
+
+# archives
+jekyll-archives:
+  enabled: [tags]
+  layout: archive-archive
+  permalinks:
+    tag: '/tag/:name/'
