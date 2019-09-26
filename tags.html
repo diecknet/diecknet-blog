@@ -1,28 +1,6 @@
 ---
-layout: page
 title: Tags
+layout: tag_page
+permalink: /tags/
 ---
-
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-
-{% for tag in tag_words %}
-<!-- tag: {{tag}} -->
-{% capture count %}
-
-		{% for tag_number in site.tags %}
-
-			{% if tag_number[0] == tag %}
-
-				{{tag_number[1] | size }}
-
-
-			{% endif %}
-
-		{% endfor %}
-
-{% endcapture %}
-
-	<p> <a href="{{ site.baseurl }}/tags/{{tag | slugify }}/" >{{tag}} </a> — {{count}} </p>
-
-
-	{% endfor %}
+<p>All tags:</p>
