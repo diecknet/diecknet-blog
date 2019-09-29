@@ -11,19 +11,17 @@ layout: default
          <span class="w3-opacity">{{ page.date | date: "%Y-%m-%d" }}</span></h5>
     </div>
     <div class="w3-container">
-      <!--
-      !Test!
-      page.lang = {{ page.lang }}
-      site.active_lang = {{ site.active_lang }}
-      -->
       {% if site.active_lang != blank and site.active_lang != page.lang %}
       <div class="w3-row">
       <div class="w3-col w3-pale-yellow w3-border w3-leftbar w3-border-yellow w3-padding s12 l8"><h4>Sorry!</h4>
+        {{ site.data["text"]["translation_missing"] }}
+        <!--
         {% if site.active_lang == blank %}
           {{site.language_translation_missing[site.default_lang]}}
         {% else %}
        {{site.language_translation_missing[site.active_lang]}}
        {% endif %}
+       -->
       </div></div>{% endif %}
       {{ content }}
       <div class="w3-row">

@@ -1,0 +1,5 @@
+tagcountsingular: "Posts mit Tag"
+tagcountplural: "Post mit Tag"
+404: 'Fehler: Datei/Ordner nicht gefunden.<br />Aber du kannst <a href="/">zurück zur Startseite...</a>'
+403: 'Error: Zugriff verweigert. <br />Aber du darfst <a href="/">zurück zur Startseite...</a>'
+translation_missing: "Dieser Inhalt ist noch nicht auf Deutsch verfügbar. Hier ist der originale Inhalt:"
