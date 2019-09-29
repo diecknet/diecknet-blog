@@ -54,7 +54,7 @@ paginate: 5
 # Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
 # Custom vars
-version: 1.3.1
+version: 0.0.1
 
 #Polyglot
 languages: ["de", "en"]
