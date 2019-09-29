@@ -3,7 +3,7 @@ layout: default
 ---
 
   {% assign numberof = page.posts | size %}
-  <h1>#{{ page.title }} ({{ numberof }} {% if numberof == 1 %}post{% else %}posts{% endif %})</h1>
+  <h1>{{ site.data["sample"]["tagheadline1"] }} #{{ page.title }} ({{ numberof }} {% if numberof == 1 %}post{% else %}posts{% endif %})</h1>
 
   <div class="w3-col l8 s12">
     {% for post in page.posts %}

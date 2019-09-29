@@ -3,3 +3,4 @@
 3: "Dieser Beispieltext stammte aus einer .yml Datei "
 4: "HTML-Tags werden <i>beibehalten</i> "
 5: 'und Links werden <a href="/">relativiert</a> '
+"tag-headline1": "Posts mit Tag"
