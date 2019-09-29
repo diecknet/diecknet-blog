@@ -1,5 +1,3 @@
 tagcountsingular: "Posts with Tag"
 tagcountplural: "Post with Tag"
-404: 'Error: file/folder not found.<br />But you could go <a href="/">back to the main page...</a>'
-403: 'Error: access forbidden. <br />But you are allowed to go <a href="/">back to the main page...</a>'
 translation_missing: "This content is not available in English yet. Here is the original content:"
