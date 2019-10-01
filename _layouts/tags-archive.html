@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign numberof = page.posts | size %}
 <!-- BEGIN Tag Page  -->
 <div class="w3-col l8 s12">
   <!-- Page entry -->
@@ -13,7 +14,7 @@ layout: default
       {% for post in page.posts %}
     <article>
       <!-- Blog entry -->
-      <div class="w3-container w3-margin w3-white">
+      <div class="w3-cardx w3-padding-16 w3-margin w3-white">
         {% if post.image %}
         <a href="{{ post.url | relative_url }}">
           <img src="{{ post.image | relative_url }}" class="blog-crop-image" alt="{{ post.title }} / {{ post.subtitle }}" />
