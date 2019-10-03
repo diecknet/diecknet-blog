@@ -26,20 +26,16 @@ title: Home
             <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
           </div>
         {% endif %}
-        {% if page.tags.size > 0 %}
-        <!-- BEGIN Tags! -->
-        <div class="w3-col m4 w3-hide-small">
-        <p>
-    <span class="w3-padding-large w3-right"><b>Tags:</b>
-    {% if site.link-tags %}
-    {% for tag in page.tags %}
-      <span class="w3-tag"><a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a></span>
-    {% endfor %}
-    {% else %}
-      {{ page.tags | join: ", " }}
-    {% endif %}
-  </p>
-  </div>
+        <!-- begin tags -->
+        <div class="w3-row w3-margin-bottom w3-padding-large w3-right">
+          {% if page.tags.size > 0 %} 
+            <p>Tags:
+            {% for tag in page.tags %}
+              <a href="{{ '/tags' | relative_url }}/{{- tag -}}"><span class="w3-tag w3-black w3-small">{{- tag -}}</span></a>
+            {% endfor %}
+            </p>
+          {% endif %}
+        </div>
   <!-- END Tags! -->
   {% endif %}
 
@@ -47,6 +43,7 @@ title: Home
     </div>
   </div>
   </article>
+  <!-- end of blog entry -->
     {% endfor %}
 
 <!-- BEGIN Next / Previous Buttons -->
