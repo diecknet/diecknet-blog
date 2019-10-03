@@ -20,15 +20,13 @@ title: Home
     <div class="w3-container">
       {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
       {% assign excerpt_word_count = post.excerpt | number_of_words %}
-      <div class="w3-row">
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <div class="w3-col m8 s12">
-            <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
-          </div>
-        {% endif %}
+      {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}       
+        <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
+      {% endif %}
+      <div class="w3-row">  
         <!-- begin tags -->
         {% if post.tags.size > 0 %} <hr style="margin-bottom: 0px"> {% endif %}
-        <div class="w3-row w3-right">
+        <div class="w3-col w3-right">
           {% if post.tags.size > 0 %}
             <p>
               Tags:
@@ -38,7 +36,7 @@ title: Home
             </p>
           {% endif %}
         </div>
-  <!-- END Tags! -->
+        <!-- END Tags! -->
       </div>
     </div>
   </div>
