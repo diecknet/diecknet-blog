@@ -22,7 +22,7 @@ layout: default
         <p>
     Tags:
     {% for tag in page.tags %}
-    <span class="w3-tag w3-black w3-small"><a href="{{ '/tags' | relative_url }}/{{- tag -}}">{{- tag -}}</a></span>
+    <a href="{{ '/tags' | relative_url }}/{{- tag -}}"><span class="w3-tag w3-black w3-small">{{- tag -}}</span></a>
     {% endfor %}
   </p>
   {% endif %}
