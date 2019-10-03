@@ -12,6 +12,7 @@ common-css:
       <h1 class="w3-margin-top"><b><a href="/" style="text-decoration:none">{{site.title}}</a></b></h1>
       <p>{{site.tagline}}</p>
       <div class="w3-container w3-right w3-black w3-padding s2 l1">
+        <img src="/img/Globe_icon.svg" style="filter:invert(100%); height:15px; width:auto;"/>
         {% for tongue in site.languages %}
             <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{site.languages_fullname[tongue]}}</a>{% if tongue != site.languages.last %} &vert; {% endif %}
         {% endfor %}
