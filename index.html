@@ -27,12 +27,14 @@ title: Home
           </div>
         {% endif %}
         <!-- begin tags -->
-        <div class="w3-row w3-margin-bottom w3-padding-large w3-right">
-          {% if page.tags.size > 0 %} 
-            <p>Tags:
-            {% for tag in page.tags %}
-              <a href="{{ '/tags' | relative_url }}/{{- tag -}}"><span class="w3-tag w3-black w3-small">{{- tag -}}</span></a>
-            {% endfor %}
+        {% if post.tags.size > 0 %} <hr style="margin-bottom: 0px"> {% endif %}
+        <div class="w3-row w3-right">
+          {% if post.tags.size > 0 %}
+            <p>
+              Tags:
+              {% for tag in post.tags %}
+              <a href="{{ '/tags' | relative_url }}/{{- tag -}}"><span class="w3-tag w3-black w3-small">#{{- tag -}}</span></a>
+              {% endfor %}
             </p>
           {% endif %}
         </div>
