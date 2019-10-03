@@ -7,7 +7,7 @@ layout: default
   <!-- Page entry -->
   <div class="w3-cardx w3-margin w3-white">
     <div class="w3-container">
-      <h1>{{ numberof }} {% if numberof == 1 %}{{ site.data["text"]["tagcountsingular"] }}{% else %}{{ site.data["text"]["tagcountplural"] }}{% endif %} #{{ page.title }}</h1>
+      <h1>{{ numberof }} {% if numberof == 1 %}{{ site.data["text"]["tagcountsingular"] }}{% else %}{{ site.data["text"]["tagcountplural"] }}{% endif %} <span class="w3-tag w3-black">#{{ page.title }}</span></h1>
     </div>
 
     <div class="w3-container">
