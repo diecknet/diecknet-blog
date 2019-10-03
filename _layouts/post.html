@@ -15,26 +15,15 @@ layout: default
       <div class="w3-row">
       <div class="w3-col w3-pale-yellow w3-border w3-leftbar w3-border-yellow w3-padding s12 l8"><h4>Sorry!</h4>
         {{ site.data["text"]["translation_missing"] }}
-        <!--
-        {% if site.active_lang == blank %}
-          {{site.language_translation_missing[site.default_lang]}}
-        {% else %}
-       {{site.language_translation_missing[site.active_lang]}}
-       {% endif %}
-       -->
       </div></div>{% endif %}
       {{ content }}
       <div class="w3-row">
         {% if page.tags.size > 0 %}
         <p>
     Tags:
-    {% if site.link-tags %}
     {% for tag in page.tags %}
-      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+    <span class="w3-tag w3-black w3-small"><a href="{{ '/tags' | relative_url }}/{{- tag -}}">{{- tag -}}</a></span>
     {% endfor %}
-    {% else %}
-      {{ page.tags | join: ", " }}
-    {% endif %}
   </p>
   {% endif %}
       </div>
