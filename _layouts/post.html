@@ -18,9 +18,9 @@ layout: default
         </div></div>
       {% endif %}
       {{ content }}
+      <hr style="margin-bottom: 0px">
       <div class="w3-row w3-right">
-        {% if page.tags.size > 0 %} 
-          <hr>
+        {% if page.tags.size > 0 %}
           <p>
             Tags:
             {% for tag in page.tags %}
