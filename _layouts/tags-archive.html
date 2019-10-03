@@ -30,7 +30,7 @@ layout: default
           <div class="w3-row">
             {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
               <div class="w3-col m8 s12">
-                <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
+                <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
               </div>
             {% endif %}
             {% if page.tags.size > 0 %}

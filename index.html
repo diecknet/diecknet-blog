@@ -23,7 +23,7 @@ title: Home
       <div class="w3-row">
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
           <div class="w3-col m8 s12">
-            <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
+            <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
           </div>
         {% endif %}
         <!-- begin tags -->
@@ -50,14 +50,14 @@ title: Home
     <div class="w3-col w3-margin">
     {% if paginator.total_pages > 1 %}
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">&laquo; Older Posts</button></a>
+        <a href="{{ paginator.next_page_path | relative_url }}"><button class="w3-button w3-black w3-padding w3-margin-bottom">&laquo; Older Posts</button></a>
       {% else %}
-        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">&laquo; Older Posts</button>
+        <button class="w3-button w3-black w3-disabled w3-padding w3-margin-bottom">&laquo; Older Posts</button>
       {% endif %}
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Newer Posts &raquo;</button></a>
+        <a href="{{ paginator.previous_page_path | relative_url }}"><button class="w3-button w3-black w3-padding w3-margin-bottom">Newer Posts &raquo;</button></a>
       {% else %}
-        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Newer Posts &raquo;</button>
+        <button class="w3-button w3-black w3-disabled w3-padding w3-margin-bottom">Newer Posts &raquo;</button>
       {% endif %}
     {% endif %}
 </div> <!-- END Next / Previous Buttons -->
