@@ -11,7 +11,7 @@
   </div><hr>
   <!-- Labels / tags -->
   <div class="w3-cardx w3-margin"> <!-- START TAGS -->
-    <div class="w3-container w3-padding w3-white w3-margin-bottom">
+    <div class="w3-container w3-padding w3-white">
       <h4><b>Tags</b></h4>
       <p>
         {% assign alldocs = site.documents | sort: 'date' | reverse %}
@@ -19,7 +19,7 @@
         {% assign font_size_multiplicator = 26 | divided_by:grouptag[0].size %}
         {% assign grouptag =  grouptag | shuffle %}
         {%- for tag in grouptag -%}
-          <a href="/tags/{{- tag.name -}}"><span class="w3-tag w3-black" style="font-size:{{ font_size_multiplicator | times: tag.size | at_most: 48 | at_least: 15 | round}}px">&nbsp;#{{- tag.name -}}&nbsp;({{tag.size}})&nbsp;</span></a> 
+          <a href="/tags/{{- tag.name -}}"><span class="w3-tag w3-black w3-margin-bottom" style="font-size:{{ font_size_multiplicator | times: tag.size | at_most: 48 | at_least: 15 | round}}px">&nbsp;#{{- tag.name -}}&nbsp;({{tag.size}})&nbsp;</span></a> &nbsp;
         {%- endfor -%}
       </p>
     </div>
