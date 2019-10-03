@@ -16,7 +16,7 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
       default_lang: powershell
-      css_class   : 'syntax'
+      css_class   : 'highlight'
       span:
         line_numbers: false
       block:
