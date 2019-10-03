@@ -1,10 +1,12 @@
-/* https://github.com/m-cat/nimbus-pygments */
+/* Thanks to m-cat! https://github.com/m-cat/nimbus-pygments */
 /**
  * Define colors
  */
 /**
  * Syntax highlighting styles
  */
+.highlight {
+  background-color: #112b47; }
 .highlight .hll {
   background-color: #112b47; }
 
