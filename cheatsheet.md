@@ -1,8 +1,18 @@
 ---
 layout: content-only
-title: My Jekyll Cheatsheet
+title: Mein Jekyll Cheatsheet
+lang: de
 ---
-This is my Jekyll Cheat Sheet.
+Das ist mein persönlicher Jekyll Cheat Sheet. Die Infos und Tags sind auf dieses Blog-Setup zugeschnitten.
+# Links
+## External Links
+{% highlight liquid linedivs %}
+{% raw %}
+[Beispiel-Link](https://www.example.com){:target="_blank" rel="noopener noreferrer"}
+{% endraw %}
+{% endhighlight %}
+Ergebnis:
+[Beispiel-Link](https://www.example.com){:target="_blank" rel="noopener noreferrer"}
 # Code highlighting
 ## Multi-Line code
 Best option for normal code:
@@ -11,7 +21,7 @@ Best option for normal code:
 Write-Host "some code..."
 {% endhighlight %}{% endraw %}
 {% endhighlight %}
-Result:
+Ergebnis:
 {% highlight powershell linedivs %}
 Write-Host "some code..."
 {% endhighlight %}
@@ -20,5 +30,6 @@ Write-Host "some code..."
 I have some {% raw %}{% ihighlight HTML %}<h1>some HTML code</h1>{% endihighlight %} in my text.
 {% endraw %}
 {% endhighlight %}
-Result:
+Ergebnis:
+
 I have some {% ihighlight HTML %}<h1>some HTML code</h1>{% endihighlight %} in my text.
