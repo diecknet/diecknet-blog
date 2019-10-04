@@ -84,4 +84,4 @@ tag_dir: tags
 
 # extlinks
 extlinks:
-  attributes: {rel: nofollow noopener, target: _blank}
+  attributes: {rel: noreferrer noopener, target: _blank}
