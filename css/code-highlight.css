@@ -294,3 +294,36 @@
 /* Literal.Number.Integer.Long */
 
 /*# sourceMappingURL=nimbus-pygments.css.map */
+
+/* Block code, highlight */
+figure.highlight pre {
+  /* ... */
+  code {
+      /* ... */
+      /* Use a counter to generate the line numbers */
+      counter-reset: code;
+      .div {
+          /* Increment the counter for each div */
+          counter-increment: code;
+          &:before {
+              content: counter(code);
+              /* Hacky, but necessary. Without these lines, single-digit line 
+              /* numbers will not line up with double-digit ones. Change width
+              /* to suit your font. */
+              width: 16px;
+              text-align: right;
+              /* Add a nice border */
+              display: inline-block;
+              padding-right: 0.25em;
+              border-right: 1px solid gray;
+              /* For older browsers and Safari */
+              -webkit-touch-callout: none;
+              -webkit-user-select: none;
+              -khtml-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+          }
+      }
+  }
+}
