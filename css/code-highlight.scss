@@ -225,7 +225,7 @@ figure.highlight, div.highlight {
               color: $nimbus-lightest-green;
               background-color: $nimbus-bg;
 
-              @include media-query(300px) {
+              @media (max-width:300px) {
                   visibility: hidden;
               }
           }
