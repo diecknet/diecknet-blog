@@ -21,4 +21,4 @@ I have some {% raw %}{% ihighlight HTML %}<h1>some HTML code</h1>{% endihighligh
 {% endraw %}
 {% endhighlight %}
 Result:
-I have some {% raw %}{% ihighlight HTML %}<h1>some HTML code</h1>{% endihighlight %} in my text.
+I have some {% ihighlight HTML %}<h1>some HTML code</h1>{% endihighlight %} in my text.
