@@ -5,9 +5,9 @@
   {% I18n_Headers %}
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }} &middot; {{ site.tagline | strip_html }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ page.title }} &middot; {{ site.title | strip_html }}
     {% endif %}
   </title>
 

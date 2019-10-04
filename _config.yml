@@ -12,6 +12,16 @@ collections:
 # Conversion
 markdown:    kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+      default_lang: powershell
+      css_class   : 'highlight'
+      span:
+        line_numbers: false
+      block:
+        line_numbers: true
+        start_line: 1
 lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
@@ -47,7 +57,7 @@ description:
   de: Diecknet ist der IT-Blog von Andreas Dieckmann.
   en: Diecknet is the IT-Blog of Andreas Dieckmann.
 
-# url: https://polyglot.untra.io
+url: https://diecknet.de
 
 paginate: 5
 # Excerpt Word Length

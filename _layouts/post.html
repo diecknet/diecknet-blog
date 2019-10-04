@@ -12,31 +12,22 @@ layout: default
     </div>
     <div class="w3-container">
       {% if site.active_lang != blank and site.active_lang != page.lang %}
-      <div class="w3-row">
-      <div class="w3-col w3-pale-yellow w3-border w3-leftbar w3-border-yellow w3-padding s12 l8"><h4>Sorry!</h4>
-        {{ site.data["text"]["translation_missing"] }}
-        <!--
-        {% if site.active_lang == blank %}
-          {{site.language_translation_missing[site.default_lang]}}
-        {% else %}
-       {{site.language_translation_missing[site.active_lang]}}
-       {% endif %}
-       -->
-      </div></div>{% endif %}
+        <div class="w3-row">
+        <div class="w3-col w3-pale-yellow w3-border w3-leftbar w3-border-yellow w3-padding s12 l10"><h4>Sorry!</h4>
+          {{ site.data["text"]["translation_missing"] }}
+        </div></div>
+      {% endif %}
       {{ content }}
-      <div class="w3-row">
+      {% if page.tags.size > 0 %} <hr style="margin-bottom: 0px"> {% endif %}
+      <div class="w3-row w3-right">
         {% if page.tags.size > 0 %}
-        <p>
-    Tags:
-    {% if site.link-tags %}
-    {% for tag in page.tags %}
-      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-    {% endfor %}
-    {% else %}
-      {{ page.tags | join: ", " }}
-    {% endif %}
-  </p>
-  {% endif %}
+          <p>
+            Tags:
+            {% for tag in page.tags %}
+            <a href="{{ '/tags' | relative_url }}/{{- tag -}}"><span class="w3-tag w3-black w3-small">#{{- tag -}}</span></a>
+            {% endfor %}
+          </p>
+        {% endif %}
       </div>
     </div>
   </div> <!-- END blog entry -->
