@@ -20,47 +20,40 @@ title: Home
     <div class="w3-container">
       {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
       {% assign excerpt_word_count = post.excerpt | number_of_words %}
-      <div class="w3-row">
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <div class="w3-col m8 s12">
-            <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
-          </div>
-        {% endif %}
-        {% if page.tags.size > 0 %}
-        <!-- BEGIN Tags! -->
-        <div class="w3-col m4 w3-hide-small">
-        <p>
-    <span class="w3-padding-large w3-right"><b>Tags:</b>
-    {% if site.link-tags %}
-    {% for tag in page.tags %}
-      <span class="w3-tag"><a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a></span>
-    {% endfor %}
-    {% else %}
-      {{ page.tags | join: ", " }}
-    {% endif %}
-  </p>
-  </div>
-  <!-- END Tags! -->
-  {% endif %}
-
-      </div>
+      {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}       
+        <a href="{{ post.url | relative_url }}"><b>{{ site.data["text"]["readmore"] }} &raquo;</b></a>
+      {% endif %}
+        <!-- begin tags -->
+        {% if post.tags.size > 0 %} <hr style="margin-bottom: 0px"> {% endif %}
+        <div class="w3-right">
+          {% if post.tags.size > 0 %}
+            <p>
+              Tags:
+              {% for tag in post.tags %}
+              <a href="{{ '/tags' | relative_url }}/{{- tag -}}"><span class="w3-tag w3-black w3-small">#{{- tag -}}</span></a>
+              {% endfor %}
+            </p>
+          {% endif %}
+        </div>
+        <!-- END Tags! -->
     </div>
   </div>
   </article>
+  <!-- end of blog entry -->
     {% endfor %}
 
 <!-- BEGIN Next / Previous Buttons -->
     <div class="w3-col w3-margin">
     {% if paginator.total_pages > 1 %}
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">&laquo; Older Posts</button></a>
+        <a href="{{ paginator.next_page_path | relative_url }}"><button class="w3-button w3-black w3-padding w3-margin-bottom">&laquo; Older Posts</button></a>
       {% else %}
-        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">&laquo; Older Posts</button>
+        <button class="w3-button w3-black w3-disabled w3-padding w3-margin-bottom">&laquo; Older Posts</button>
       {% endif %}
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Newer Posts &raquo;</button></a>
+        <a href="{{ paginator.previous_page_path | relative_url }}"><button class="w3-button w3-black w3-padding w3-margin-bottom">Newer Posts &raquo;</button></a>
       {% else %}
-        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Newer Posts &raquo;</button>
+        <button class="w3-button w3-black w3-disabled w3-padding w3-margin-bottom">Newer Posts &raquo;</button>
       {% endif %}
     {% endif %}
 </div> <!-- END Next / Previous Buttons -->
