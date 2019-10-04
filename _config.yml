@@ -44,7 +44,7 @@ github:
   repo: https://github.com/diecknet/diecknet-blog
 
 
-plugins: [jekyll-polyglot, jekyll-paginate, jekyll-archives]
+plugins: [jekyll-polyglot, jekyll-paginate, jekyll-archives, jekyll-target-blank]
 # Permalinks
 permalink: pretty
 
