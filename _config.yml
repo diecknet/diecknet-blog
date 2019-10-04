@@ -44,7 +44,7 @@ github:
   repo: https://github.com/diecknet/diecknet-blog
 
 
-plugins: [jekyll-polyglot, jekyll-paginate, jekyll-archives]
+plugins: [jekyll-polyglot, jekyll-paginate, jekyll-archives, jekyll-extlinks]
 # Permalinks
 permalink: pretty
 
@@ -81,3 +81,7 @@ jekyll-archives:
   permalinks:
     tag: '/tags/:name/'
 tag_dir: tags
+
+# extlinks
+extlinks:
+  attributes: {rel: nofollow noopener, target: _blank}
