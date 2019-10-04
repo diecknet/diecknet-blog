@@ -5,6 +5,9 @@
 /* Define font for code highlighting */
 $code-font-family: 'Hack', monospace !default;
 
+/* define spacing for code highlight */
+$spacing-unit:     30px !default;
+
 /**
  * Define colors
  */
@@ -157,7 +160,7 @@ code {
 }
 
 blockquote code {
-  color: $dark-gray;
+  color: $nimbus-dark-gray;
 }
 
 /* Inline code, highlight */
@@ -174,7 +177,7 @@ pre {
   margin: $spacing-unit * 0.75 $spacing-unit / 2;
   padding: 8px 12px;
   overflow-x: auto;
-  background-color: $lightest-purple;
+  background-color: $light-purple;
 
   code {
       border: 0;
