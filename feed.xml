@@ -13,10 +13,8 @@ layout: null
      <description>{{ site.description[site.active_lang] | xml_escape}}</description>
     {% endif %}
     <link href="{{ '/' | absolute_url }}" />
-    {% for lang in site.languages %}
-      {% if lang != site.active_lang and site.active_lang == blank and lang != site.default_lang %}
-    <link rel="alternative" hreflang="{{ lang }}" href="{{ 'feed.xml' | absolute_url }}" />
-      {% endif %}
+    {% for tongue in site.languages %}
+        <link rel="alternative" hreflang="tongue" href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}" />
     {% endfor %}
     <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
