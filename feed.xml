@@ -3,6 +3,8 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{% if site.active_lang == blank %}{{site.default_lang}}">
+    <id>{{ 'feed.xml' | absolute_url }}</id>
+    <updated>{{"now"| date: "%Y-%m-%dT%TZ"}}</updated>
      <subtitle>{{ site.description[site.default_lang] | xml_escape }}</subtitle>
     {% else %}{{site.active_lang}}">
      <subtitle>{{ site.description[site.active_lang] | xml_escape}}</subtitle>
@@ -23,7 +25,7 @@ layout: null
           {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
         </description>
-        <updated>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
+        <updated>{{ post.date | date: "%Y-%m-%dT%TZ" }}</updated>
         <link href="{{ post.url | absolute_url }}" />
       </entry>
     {% endfor %}
