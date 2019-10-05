@@ -13,8 +13,8 @@ layout: none
     </url>
     {% endfor %}
     {% for page in site.pages %}
-        {% unless page.url == "/robots.txt" or page.url == "/sitemap.xml" or page.url == "/cheatsheet" or page.url contains "/css/" %}
-            <url><!-- page.url: {{page.url}}-->
+        {% unless page.url == "/robots.txt" or page.url == "/404" or page.url == "/403" or page.url == "feed.xml "or page.url == "/sitemap.xml" or page.url == "/cheatsheet" or page.url contains "/css/" %}
+            <url>
                 <loc>{{ page.url | absolute_url }}</loc>
                 <lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>
                 <xhtml:link rel="alternate" hreflang="de" href="{{page.url|absolute_url}}" />
