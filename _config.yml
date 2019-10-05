@@ -58,7 +58,7 @@ description:
 url: https://diecknet.de
 
 ## PLUGIN CONF
-plugins: [jekyll-polyglot, jekyll-paginate, jekyll-archives]
+plugins: [jekyll-polyglot, jekyll-paginate, jekyll-archives, jekyll-minifier]
 
 paginate: 5
 # Excerpt Word Length
