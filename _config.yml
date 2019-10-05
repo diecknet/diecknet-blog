@@ -82,7 +82,3 @@ jekyll-archives:
   permalinks:
     tag: '/tags/:name/'
 tag_dir: tags
-
-# jekyll-feed
-feed:
-  path: jekyll-feed.xml

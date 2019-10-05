@@ -1,0 +1,34 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ post.url | absolute_url }}</loc>
+        <lastmod>{{ post.date | date: "%Y-%m-%dT%TZ" }}</lastmod>
+        <xhtml:link rel="alternate" hreflang="de" href="{{post.url|absolute_url}}" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://diecknet.de/en{{post.url}}" />
+    </url>
+    {% endfor %}
+    {% for page in site.pages %}
+        {%  unless page.url == "/robots.txt" or 
+            page.url == "/404/" or 
+            page.url == "/403/" or 
+            page.url contains "/feed.xml" or 
+            page.url contains "/sitemap.xml" or 
+            page.url == "/cheatsheet/" 
+            or page.url contains "/css/" %}
+            <url>
+                <loc>{{ page.url | absolute_url }}</loc>
+                {% if page.date != blank and page.date %}<lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>{% endif %}
+                <xhtml:link rel="alternate" hreflang="de" href="{{page.url|absolute_url}}" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://diecknet.de/en{{page.url}}" />
+                {% if page.url contains "/tags/" %}
+                    <priority>0.2</priority>
+                {% endif %}
+            </url>
+        {% endunless %}
+    {% endfor %}
+</urlset>
