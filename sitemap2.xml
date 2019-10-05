@@ -13,16 +13,16 @@ layout: none
     </url>
     {% endfor %}
     {% for page in site.pages %}
-    {% unless page.url == "/robots.txt" and page.url == "/sitemap.xml" and page.url == "/cheatsheet" and page.url contains "/css/" %}
-    <url>
-        <loc>{{ page.url | absolute_url }}</loc>
-        <lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>
-        <xhtml:link rel="alternate" hreflang="de" href="{{page.url|absolute_url}}" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://diecknet.de/en{{page.url}}" />
-        {% if page.url contains "/tags/" %}
-            <priority>0.2</priority>
-        {% endif %}
-    </url>
-    {% endunless %}
+        {% unless page.url == "/robots.txt" and page.url == "/sitemap.xml" and page.url == "/cheatsheet" and page.url contains "/css/" %}
+            <url><!-- page.url: {{page.url}}-->
+                <loc>{{ page.url | absolute_url }}</loc>
+                <lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>
+                <xhtml:link rel="alternate" hreflang="de" href="{{page.url|absolute_url}}" />
+                <xhtml:link rel="alternate" hreflang="en" href="https://diecknet.de/en{{page.url}}" />
+                {% if page.url contains "/tags/" %}
+                    <priority>0.2</priority>
+                {% endif %}
+            </url>
+        {% endunless %}
     {% endfor %}
 </urlset>
