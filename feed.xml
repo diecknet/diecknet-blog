@@ -10,11 +10,11 @@ layout: null
     <id>{{ 'feed.xml' | absolute_url }}</id>
     <updated>{{"now"| date: "%Y-%m-%dT%TZ"}}</updated>
     <title>{{ site.title | xml_escape }}</title>
-    <link href="{{ '/index.html' | absolute_url }}" rel="alternative" type="text/html" />
+    <link href="{{ '/index.html' | absolute_url }}" rel="alternate" type="text/html" />
     {% if site.active_lang == site.default_lang %}
-      <link rel="alternative" hreflang="en" href="https://diecknet.de/en/feed.xml" />
+      <link rel="alternate" hreflang="en" href="https://diecknet.de/en/feed.xml" />
     {% else %}
-      <link rel="alternative" hreflang="de" href=" https://diecknet.de/feed.xml" />
+      <link rel="alternate" hreflang="de" href=" https://diecknet.de/feed.xml" />
     {% endif %}
     <link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
@@ -22,7 +22,7 @@ layout: null
         <title>{{ post.title | xml_escape }}</title>
         <id>{{ post.url | absolute_url }}</id>
         <author><name>{% if post.author %}{{ post.author }}{% else %}{{ site.author.name }}{% endif %}</name></author>
-        <summary type"html">
+        <summary type="html">
           {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
         </summary>
