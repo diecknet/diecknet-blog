@@ -1,6 +1,7 @@
 ---
 layout: null
 ---
+{% capture xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{% if site.active_lang == blank %}{{site.default_lang}}">
      <subtitle>{{ site.description[site.default_lang] | xml_escape }}</subtitle>
@@ -9,12 +10,10 @@ layout: null
     {% endif %}
     <title>{{ site.title | xml_escape }}</title>
     <link href="{{ '/index.html' | absolute_url }}" rel="alternative" type="text/html" />
-      {% if site.active_lang == blank %} {% raw %}
+      {% if site.active_lang == blank %}
         <link rel="alternative" hreflang="en" href="https://diecknet.de/en/feed.xml" />
-      {% endraw %}{% else %}
-      {% raw %}
-        <link rel="alternative" hreflang="de" href="https://diecknet.de/feed.xml" />
-      {% endraw %}
+      {% else %}
+        <link rel="alternative" hreflang="de" href=" https://diecknet.de/feed.xml" />
       {% endif %}
     <link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
@@ -30,3 +29,5 @@ layout: null
       </entry>
     {% endfor %}
 </feed>
+{% endcapture %}
+{{ xml | replace: " https://", "https://"}}
