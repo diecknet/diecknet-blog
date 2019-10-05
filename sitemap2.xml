@@ -13,7 +13,7 @@ layout: none
     </url>
     {% endfor %}
     {% for page in site.pages %}
-        {% unless page.url == "/robots.txt" and page.url == "/sitemap.xml" and page.url == "/cheatsheet" and page.url contains "/css/" %}
+        {% unless page.url == "/robots.txt" or page.url == "/sitemap.xml" or page.url == "/cheatsheet" or page.url contains "/css/" %}
             <url><!-- page.url: {{page.url}}-->
                 <loc>{{ page.url | absolute_url }}</loc>
                 <lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>
