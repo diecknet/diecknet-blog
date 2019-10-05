@@ -2,8 +2,7 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
+<feed version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <title>{{ site.title | xml_escape }}</title>
     {% if site.active_lang == blank %}
      <language>{{site.default_lang}}</language>
@@ -12,7 +11,7 @@ layout: null
      <language>{{site.active_lang}}</language>
      <description>{{ site.description[site.active_lang] | xml_escape}}</description>
     {% endif %}
-    <link href="{{ '/' | absolute_url }}" />
+    <link href="{{ '/index.html' | absolute_url }}" rel="alternaitve" type="text/html" />
     {% for tongue in site.languages %}
       {% unless site.active_lang == tongue or site.active_lang == blank %} 
         <link rel="alternative" hreflang="{{ tongue }}" href=" {% capture hreflangurl %}{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}{% endcapture %}{{hreflangurl | absolute_url}}" />
@@ -20,9 +19,9 @@ layout: null
     {% endfor %}
     <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
-      <item>
+      <entry>
         <title>{{ post.title | xml_escape }}</title>
-        <author>{% if post.author %}{{ post.author }}{% else %}{{ site.author.name }}{% endif %}</author>
+        <author><name>{% if post.author %}{{ post.author }}{% else %}{{ site.author.name }}{% endif %}</name></author>
         <description>
           {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
@@ -30,7 +29,6 @@ layout: null
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ post.url | absolute_url }}</link>
         <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
-      </item>
+      </entry>
     {% endfor %}
-  </channel>
-</rss>
+</feed>
