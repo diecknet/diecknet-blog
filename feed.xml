@@ -11,11 +11,9 @@ layout: null
     {% endif %}
     <title>{{ site.title | xml_escape }}</title>
     <link href="{{ '/index.html' | absolute_url }}" rel="alternative" type="text/html" />
-      {% if site.active_lang == blank %}
-        <link rel="alternative" hreflang="en" href="https://diecknet.de/en/feed.xml" />
-      {% else %}
-        <link rel="alternative" hreflang="de" href=" https://diecknet.de/feed.xml" />
-      {% endif %}
+    <!-- {{site.active_lang}} -->
+    <link rel="alternative" hreflang="en" href="https://diecknet.de/en/feed.xml" />
+    <link rel="alternative" hreflang="de" href=" https://diecknet.de/feed.xml" />
     <link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
       <entry>
