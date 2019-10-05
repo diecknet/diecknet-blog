@@ -2,6 +2,7 @@
 ## Next steps
 * atom-feed needs optional images
 * try staticman comments
+* add meta data / seo stuff
 * ...
 ## postponed
 * Try updating to jekyll 4.0 (as of 2019-10-04: code highlighting plugin not working)

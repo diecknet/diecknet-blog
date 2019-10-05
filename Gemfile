@@ -8,4 +8,5 @@ group :jekyll_plugins do
   gem "jekyll-polyglot"
   gem "jekyll-paginate"
   gem "jekyll-archives"
+  gem "jekyll-minifier"
 end
