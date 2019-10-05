@@ -2,22 +2,19 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<feed version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <title>{{ site.title | xml_escape }}</title>
-    {% if site.active_lang == blank %}
-     <language>{{site.default_lang}}</language>
-     <description>{{ site.description[site.default_lang] | xml_escape }}</description>
-    {% else %}
-     <language>{{site.active_lang}}</language>
-     <description>{{ site.description[site.active_lang] | xml_escape}}</description>
+<feed xmlns:atom="http://www.w3.org/2005/Atom" xml:lang="{% if site.active_lang == blank %}{{site.default_lang}}">
+     <subtitle>{{ site.description[site.default_lang] | xml_escape }}</subtitle>
+    {% else %}{{site.active_lang}}">
+     <subtitle>{{ site.description[site.active_lang] | xml_escape}}</subtitle>
     {% endif %}
+    <title>{{ site.title | xml_escape }}</title>
     <link href="{{ '/index.html' | absolute_url }}" rel="alternaitve" type="text/html" />
     {% for tongue in site.languages %}
       {% unless site.active_lang == tongue or site.active_lang == blank %} 
         <link rel="alternative" hreflang="{{ tongue }}" href=" {% capture hreflangurl %}{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}{% endcapture %}{{hreflangurl | absolute_url}}" />
       {% endunless %}
     {% endfor %}
-    <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+    <link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
       <entry>
         <title>{{ post.title | xml_escape }}</title>
@@ -27,8 +24,7 @@ layout: null
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
         </description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <link href="{{ post.url | absolute_url }}" />
       </entry>
     {% endfor %}
 </feed>
