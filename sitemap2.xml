@@ -12,3 +12,4 @@ layout: none
         <xhtml:link rel="alternate" hreflang="de" href="{{post.url|absolute_url}}" />
         <xhtml:link rel="alternate" hreflang="en" href="https://diecknet.de/en{{post.url}}" />
         </url>{% endfor %}
+</urlset>
