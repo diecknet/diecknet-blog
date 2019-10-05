@@ -14,7 +14,7 @@ layout: null
     {% endif %}
     <link href="{{ '/' | absolute_url }}" />
     {% for tongue in site.languages %}
-        <link rel="alternative" hreflang="tongue" href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}" />
+        <link rel="alternative" hreflang="{{ tongue }}" href="{% capture hreflangurl %}{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}{% endcapture %}{{hreflangurl | absolute_url}}" />
     {% endfor %}
     <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
