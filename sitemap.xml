@@ -21,8 +21,8 @@ layout: none
             page.url == "/cheatsheet/" 
             or page.url contains "/css/" %}
             <url>
-                <loc>{{ page.url | absolute_url }}</loc>
-                {{% if page.date != blank %}}<lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>{{% endif %}}
+                <loc>{{ page.url | absolute_url }}</loc><!-- page.date: {{page.date}}-->
+                {% if page.date != blank and page.date %}<lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>{% endif %}
                 <xhtml:link rel="alternate" hreflang="de" href="{{page.url|absolute_url}}" />
                 <xhtml:link rel="alternate" hreflang="en" href="https://diecknet.de/en{{page.url}}" />
                 {% if page.url contains "/tags/" %}
