@@ -1,7 +1,6 @@
 # ToDo
 ## Next steps
-* Build own sitemap.xml file for multi-language
-* feed optional images
+* atom-feed needs optional images
 * try staticman comments
 * ...
 ## postponed
