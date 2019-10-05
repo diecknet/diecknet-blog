@@ -43,8 +43,6 @@ languages_fullname:
 github:
   repo: https://github.com/diecknet/diecknet-blog
 
-
-plugins: [jekyll-polyglot, jekyll-paginate, jekyll-archives]
 # Permalinks
 permalink: pretty
 
@@ -58,6 +56,9 @@ description:
   en: Diecknet is the IT-Blog of Andreas Dieckmann.
 
 url: https://diecknet.de
+
+## PLUGIN CONF
+plugins: [jekyll-polyglot, jekyll-paginate, jekyll-archives]
 
 paginate: 5
 # Excerpt Word Length
@@ -81,3 +82,7 @@ jekyll-archives:
   permalinks:
     tag: '/tags/:name/'
 tag_dir: tags
+
+# jekyll-feed
+feed:
+  path: jekyll-feed.xml
