@@ -2,18 +2,20 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:atom="http://www.w3.org/2005/Atom" xml:lang="{% if site.active_lang == blank %}{{site.default_lang}}">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{% if site.active_lang == blank %}{{site.default_lang}}">
      <subtitle>{{ site.description[site.default_lang] | xml_escape }}</subtitle>
     {% else %}{{site.active_lang}}">
      <subtitle>{{ site.description[site.active_lang] | xml_escape}}</subtitle>
     {% endif %}
     <title>{{ site.title | xml_escape }}</title>
-    <link href="{{ '/index.html' | absolute_url }}" rel="alternaitve" type="text/html" />
-    {% for tongue in site.languages %}
-      {% unless site.active_lang == tongue or site.active_lang == blank %} 
-        <link rel="alternative" hreflang="{{ tongue }}" href=" {% capture hreflangurl %}{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}{% endcapture %}{{hreflangurl | absolute_url}}" />
-      {% endunless %}
-    {% endfor %}
+    <link href="{{ '/index.html' | absolute_url }}" rel="alternative" type="text/html" />
+      {% if site.active_lang == blank %} {% raw %}
+        <link rel="alternative" hreflang="en" href="https://diecknet.de/en/feed.xml" />
+      {% endraw %}{% else %}
+      {% raw %}
+        <link rel="alternative" hreflang="de" href="https://diecknet.de/feed.xml" />
+      {% endraw %}
+      {% endif %}
     <link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
       <entry>
@@ -23,7 +25,7 @@ layout: null
           {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
         </description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <updated>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
         <link href="{{ post.url | absolute_url }}" />
       </entry>
     {% endfor %}
