@@ -82,3 +82,7 @@ jekyll-archives:
   permalinks:
     tag: '/tags/:name/'
 tag_dir: tags
+
+# jekyll-minifier
+jekyll-minifier:
+  remove_spaces_inside_tags: true
