@@ -7,6 +7,5 @@ gem "jekyll", "~> 3.8.6"
 group :jekyll_plugins do
   gem "jekyll-polyglot"
   gem "jekyll-paginate"
-  gem "jekyll-sitemap"
   gem "jekyll-archives"
 end
