@@ -13,10 +13,16 @@ layout: none
     </url>
     {% endfor %}
     {% for page in site.pages %}
-        {% unless page.url == "/robots.txt" or page.url == "/404" or page.url == "/403" or page.url == "feed.xml "or page.url == "/sitemap.xml" or page.url == "/cheatsheet" or page.url contains "/css/" %}
-            <url>
+        {%  unless page.url == "/robots.txt" or 
+            page.url == "/404" or 
+            page.url == "/403" or 
+            page.url contains "/feed.xml" or 
+            page.url contains "/sitemap.xml" or 
+            page.url contains "/cheatsheet" 
+            or page.url contains "/css/" %}
+            <url><!-- page.url: {{page.url}}-->
                 <loc>{{ page.url | absolute_url }}</loc>
-                <lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>
+                {{% if page.date %}}<lastmod>{{ page.date | date: "%Y-%m-%dT%TZ" }}</lastmod>{{% endif %}}
                 <xhtml:link rel="alternate" hreflang="de" href="{{page.url|absolute_url}}" />
                 <xhtml:link rel="alternate" hreflang="en" href="https://diecknet.de/en{{page.url}}" />
                 {% if page.url contains "/tags/" %}
