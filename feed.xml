@@ -11,18 +11,20 @@ layout: null
     {% endif %}
     <title>{{ site.title | xml_escape }}</title>
     <link href="{{ '/index.html' | absolute_url }}" rel="alternative" type="text/html" />
-    <!-- {{site.active_lang}} -->
-    <link rel="alternative" hreflang="en" href="https://diecknet.de/en/feed.xml" />
-    <link rel="alternative" hreflang="de" href=" https://diecknet.de/feed.xml" />
+    {% if site.active_lang == site.default_lang %}
+      <link rel="alternative" hreflang="en" href="https://diecknet.de/en/feed.xml" />
+    {% else %}
+      <link rel="alternative" hreflang="de" href=" https://diecknet.de/feed.xml" />
+    {% endif %}
     <link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
       <entry>
         <title>{{ post.title | xml_escape }}</title>
         <author><name>{% if post.author %}{{ post.author }}{% else %}{{ site.author.name }}{% endif %}</name></author>
-        <description>
+        <summary>
           {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
           {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
-        </description>
+        </summary>
         <updated>{{ post.date | date: "%Y-%m-%dT%TZ" }}</updated>
         <link href="{{ post.url | absolute_url }}" />
       </entry>
