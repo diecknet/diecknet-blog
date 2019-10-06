@@ -18,10 +18,8 @@ title: Home
         </div>
         <div class="w3-opacity"><h5>{{ post.date | date: "%Y-%m-%d" }}</h5></div>
       {% else %}
-        <div class="w3-container blog-headline-text">
-          <h2><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h2>
-        </div>
-        <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
+          <div class="w3-container blog-headline-text"><a href="{{ post.url | relative_url }}"><h2>{{ post.title }}</h2></a></div>
+          <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
       {% endif %}
       {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
       {% assign excerpt_word_count = post.excerpt | number_of_words %}
