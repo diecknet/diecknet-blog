@@ -18,7 +18,9 @@ title: Home
         </div>
         <div class="w3-opacity"><h5>{{ post.date | date: "%Y-%m-%d" }}</h5></div>
       {% else %}
-        <h3><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h3>
+        <div class="w3-container blog-headline-text">
+          <h3><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h3>
+        </div>
         <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
       {% endif %}
       {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
