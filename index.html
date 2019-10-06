@@ -8,11 +8,6 @@ title: Home
   <article>
   <!-- Blog entry -->
   <div class="w3-cardx w3-margin w3-white">
-    {% if post.image %}
-    <a href="{{ post.url | relative_url }}">
-      <img src="{{ post.image | relative_url }}" class="blog-crop-image" alt="{{ post.title }} / {{ post.subtitle }}" />
-    </a>
-    {% endif %}
     <div class="w3-container">
       <h3><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h3>
       <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>

@@ -229,7 +229,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 /* custom stuff diecknet */
 .w3-2019-evening-blue{color:#fff;background-color:#2A293E}
-.blog-crop-image{width:100%; max-height:220px; object-fit: cover; object-position: 0 20%}
+.blog-crop-image{max-width:25vh; max-height:25vh; width:auto; height:auto; object-fit: cover; object-position: 0 20%; float:right}
 .w3-border-light-darkmode,.w3-hover-border-light-darkmode:hover,.w3-border-light-darkmode,.w3-hover-border-light-darkmode:hover{border-color:#f1f1f1!important}
 .w3-border-darkmode,.w3-hover-border-darkmode:hover,.w3-border-darkmode,.w3-hover-border-darkmode:hover{border-color:#616161!important}
 .w3-text-light-darkmode,.w3-hover-text-light-darkmode:hover,.w3-text-light-darkmode,.w3-hover-text-light-darkmode:hover{color:#f1f1f1!important}
