@@ -239,3 +239,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-darkmode2,.w3-hover-darkmode2:hover,.w3-darkmode2,.w3-hover-darkmode2:hover{color:#fff!important;background-color:#363636!important}
 .w3-cardx{box-shadow:0 0px 1px 0 rgba(0,0,0,0.16),0 1px 1px 0 rgba(0,0,0,0.12)}
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.blog-headline-text { background-color: black; color: white; display:inline; }
