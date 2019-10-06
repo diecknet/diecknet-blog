@@ -23,7 +23,7 @@ title: Home
       {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}       
         <a href="{{ post.url | relative_url }}"><b>{{ site.data["text"]["readmore"] }} &raquo;</b></a>
       {% endif %}
-      </div><div class="w3-container"></div>
+      </div><div class="w3-container">
         <!-- begin tags -->
         {% if post.tags.size > 0 %} <hr style="margin-bottom: 0px"> {% endif %}
         <div class="w3-right">
