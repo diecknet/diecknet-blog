@@ -18,6 +18,11 @@ title: Home
       <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
     </div>
     <div class="w3-container">
+        {% if post.image %}
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" class="blog-crop-image" alt="{{ post.title }}{% if post.subtitle %} / {{ post.subtitle }}{% endif %}" />
+        </a>
+        {% endif %}
       {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
       {% assign excerpt_word_count = post.excerpt | number_of_words %}
       {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}       
