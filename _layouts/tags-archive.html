@@ -15,15 +15,19 @@ layout: default
     <article>
       <!-- Blog entry -->
       <div class="w3-cardx w3-padding-16 w3-margin w3-white">
-        {% if post.image %}
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}" class="blog-crop-image" alt="{{ post.title }} / {{ post.subtitle }}" />
-        </a>
+          {% if post.image %}
+            <div class="w3-display-container">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.image | relative_url }}" class="w3-image" alt="{{ post.title }} / {{ post.subtitle }}" />
+              <div class="w3-display-topleft w3-container"><h2>{{ post.title }}</h2>{% if post.subtitle %}<h3>{{ post.subtitle }}</h3>{% endif %}</div>
+              <div class="w3-display-bottomright w3-container w3-opacity"><h5>{{ post.date | date: "%Y-%m-%d" }}</h5></div>
+            </a></div>
+          {% else %}
+            <div class="w3-container">
+              <h3><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h3>
+              <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
+            </div>
         {% endif %}
-        <div class="w3-container">
-          <h3><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h3>
-          <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
-        </div>
         <div class="w3-container">
           {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
           {% assign excerpt_word_count = post.excerpt | number_of_words %}
