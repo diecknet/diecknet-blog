@@ -5,7 +5,7 @@ title: Home
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
   {% for post in paginator.posts %}
-    {% post-loop.html %} <!-- Includes post-loop.html: standardized post layout -->
+    {% post-loop.html post=post %} <!-- Includes post-loop.html: standardized post layout -->
   {% endfor %}
 
 <!-- BEGIN Next / Previous Buttons -->
