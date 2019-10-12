@@ -10,13 +10,14 @@ title: Home
   <div class="w3-cardx w3-margin w3-white">
     <div class="w3-container">
       {% if post.image %}
-        <div class="w3-display-container">
+        <div class="w3-display-container w3-margin-top">
           <a href="{{ post.url | relative_url }}">
             <img src="{{ post.image | relative_url }}" class="w3-image" alt="{{ post.title }}{% if post.subtitle %} / {{ post.subtitle }}{% endif %}" style="max-height:350px;" />
-            <div class="w3-display-topleft w3-container blog-headline-text w3-margin-top"><h2>{{ post.title }}</h2>{% if post.subtitle %}<h3>{{ post.subtitle }}</h3>{% endif %}</div>
+            <div class="w3-display-topleft w3-container blog-headline-text w3-margin-top"><h2>{{ post.title }}</h2>
+            </div>
           </a>
         </div>
-        <div class="w3-opacity"><h5>{{ post.date | date: "%Y-%m-%d" }}</h5></div>
+        <h5>{% if post.subtitle %} {{ post.subtitle }} &vert; {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
       {% else %}
         <div class="w3-margin-top">
           <a href="{{ post.url | relative_url }}"><h2 class="blog-headline-text w3-padding">{{ post.title }}</h2></a>
