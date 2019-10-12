@@ -12,52 +12,7 @@ layout: default
 
     <div class="w3-container">
       {% for post in page.posts %}
-    <article>
-      <!-- Blog entry -->
-      <div class="w3-cardx w3-padding-16 w3-margin w3-white">
-          {% if post.image %}
-            <div class="w3-display-container">
-            <a href="{{ post.url | relative_url }}">
-              <img src="{{ post.image | relative_url }}" class="w3-image" alt="{{ post.title }} / {{ post.subtitle }}" />
-              <div class="w3-display-topleft w3-container"><h2>{{ post.title }}</h2>{% if post.subtitle %}<h3>{{ post.subtitle }}</h3>{% endif %}</div>
-              <div class="w3-display-bottomright w3-container w3-opacity"><h5>{{ post.date | date: "%Y-%m-%d" }}</h5></div>
-            </a></div>
-          {% else %}
-            <div class="w3-container">
-              <h3><b><a href="{{ post.url | relative_url }}">{{ post.title }}</a></b></h3>
-              <h5>{% if post.subtitle %} {{ post.subtitle }}, {% endif %}<span class="w3-opacity">{{ post.date | date: "%Y-%m-%d" }}</span></h5>
-            </div>
-        {% endif %}
-        <div class="w3-container">
-          {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-          {% assign excerpt_word_count = post.excerpt | number_of_words %}
-          <div class="w3-row">
-            {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-              <div class="w3-col m8 s12">
-                <p><a href="{{ post.url | relative_url }}" class="post-read-more"><button class="w3-button w3-padding w3-white w3-border"><b>READ MORE &raquo;</b></button></a></p>
-              </div>
-            {% endif %}
-            {% if page.tags.size > 0 %}
-            <!-- BEGIN Tags! -->
-            <div class="w3-col m4 w3-hide-small">
-            <p>
-        <span class="w3-padding-large w3-right"><b>Tags:</b>
-        {% if site.link-tags %}
-        {% for tag in page.tags %}
-          <span class="w3-tag"><a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a></span>
-        {% endfor %}
-        {% else %}
-          {{ page.tags | join: ", " }}
-        {% endif %}
-      </p>
-      </div>
-      <!-- END Tags! -->
-      {% endif %}
-
-          </div>
-        </div>
-      </div>
-    </article>
+        {% include post-loop.html ipost=post %} <!-- Includes post-loop.html: standardized post layout -->
       {% endfor %}
 
     </div>
