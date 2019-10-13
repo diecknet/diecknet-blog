@@ -7,7 +7,9 @@ common-css:
 layout: base
 ---
 <!-- Page content is full-width -->
+<!-- beginn of page col -->
 <div class="w3-col s12">
   {{ content }}
-  {% include sidebar.html %}
 </div>
+<!-- end of page col -->
+{% include sidebar.html %}
