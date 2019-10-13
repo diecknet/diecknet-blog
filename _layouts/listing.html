@@ -1,0 +1,32 @@
+---
+layout: base
+---
+<!-- ! For listing pages, like index -->
+<!-- BEGIN Page entries -->
+<div class="w3-col l8 s12">
+  <!-- Page entry -->
+  <div class="w3-cardx w3-margin w3-white">
+    <div class="w3-container">
+      <h3><b><a href="{{ page.url | relative_url }}">{{ page.title }}</a></b></h3>
+      <h5>{% if page.subtitle %} {{ page.subtitle }}, {% endif %}{% if page.date %}<span class="w3-opacity">{{ page.date | date: "%Y-%m-%d" }}</span>{% endif %}</h5>
+    </div>
+
+    <div class="w3-container">
+      {{ content }}
+      <div class="w3-row">
+        {% if page.tags.size > 0 %}
+        <p>
+    Tags:
+    {% if site.link-tags %}
+    {% for tag in page.tags %}
+      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+    {% endfor %}
+    {% else %}
+      {{ page.tags | join: ", " }}
+    {% endif %}
+  </p>
+  {% endif %}
+      </div>
+    </div>
+  </div> <!-- END Page Entry -->
+</div> <!-- END Page Entries -->
