@@ -1,5 +1,5 @@
 ---
-layout: content-only
+layout: page
 title: Mein Jekyll Cheatsheet
 lang: de
 ---
