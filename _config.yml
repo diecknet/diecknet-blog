@@ -26,10 +26,14 @@ lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
 
+# global stuff
+twitter: diecknet
+
 # author
 author:
   name: 'Andreas Dieckmann'
   url: https://github.com/diecknet
+  twitter: diecknet
 
 # data
 hello:
