@@ -3,6 +3,8 @@ layout: post
 title: Ankündigung Polyglot
 lang: de
 tags: [example, polyglot]
+subtitle: Es gibt Neuigkeiten...
+image: 'img/2019-10-06 23_35_20-Windows PowerShell.png'
 ---
 
 Nach monatelanger Arbeit und Raffinesse, ich bin stolz darauf, **Polyglot** präsentieren: eine i18n-Plugin für [Jekyll](http://jekyllrb.com) Websites, die *Notwendigkeit*, ihre Inhalte in mehrere Sprachen und Zielgruppen gerecht zu werden.

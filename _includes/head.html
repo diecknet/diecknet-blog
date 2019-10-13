@@ -3,6 +3,10 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% I18n_Headers %}
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline | strip_html }}
@@ -17,10 +21,6 @@
       <link rel="stylesheet" href="{{ css | relative_url }}" />
     {% endfor %}
   {% endif %}
-
   <!-- Icons -->
-<!-- Maybe a todo for later <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico"> -->
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    <!-- Maybe a todo for later <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico"> -->
 </head>

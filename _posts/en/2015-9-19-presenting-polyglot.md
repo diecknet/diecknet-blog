@@ -3,6 +3,8 @@ layout: post
 title: Presenting Polyglot
 lang: en
 tags: [example, polyglot]
+subtitle: I got some news...
+image: 'img/2019-10-06 23_35_20-Windows PowerShell.png'
 ---
 
 After months of work and refinement, I am proud to present **Polyglot**: a i18n plugin for [Jekyll](http://jekyllrb.com) sites that *need* to cater their content to multiple languages and audiences.

@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<svg
+  width="600"
+  height="300"
+  viewBox="0 0 600 300"
+  xmlns="http://www.w3.org/2000/svg"
+>
+<g>
+	<rect width="600" height="300" style="fill:#2a293e" />
+      <text fill="white" style="font-size:120px; font-family: sans-serif;" x="60" y="180">Diecknet</text>
+ </g>
+</svg>
+  
