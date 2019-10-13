@@ -8,7 +8,7 @@
     {% capture title %}{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title | strip_html | strip }}{{ site.slogan | strip_html | strip | prepend: " – " }}{% endif %}{% endcapture %}
     {% assign title = title | strip_html | escape | strip_newlines %}
     
-    {% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description %}{{ site.description }}{% endif %}{% endcapture %}
+    {% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description[site.active_lang] %}{{ site.description[site.active_lang] }}{% endif %}{% endcapture %}
     {% assign description = description | strip_html | escape | strip %}
 
     {% if page.meta-title %}
