@@ -29,6 +29,8 @@ Ergebnis:
 
 ![Auflistung Kalenderberechtigungen für mehrere Raumpostfächer](/img/2020-01-15 17_20_31-CalendarPermissions.png "Auflistung Kalenderberechtigungen für mehrere Raumpostfächer. Die Berechtigungen sind nicht einheitlich (PowerShell Fenster)")
 
+In diesem Fall waren die Berechtigungen nicht einheitlich für alle Besprechungsräume des Kunden gesetzt. 
+
 ## Standard Berechtigungen für alle Raumpostfächer setzen
 Mit folgendem PowerShell Code lassen sich alle Berechtigungen für das Sicherheitsprinzipal "Standard" auf die Berechtigungsstufe "Reviewer" ändern.
 {% highlight powershell linedivs %}
