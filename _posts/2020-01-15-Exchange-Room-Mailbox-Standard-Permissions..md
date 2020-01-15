@@ -4,6 +4,7 @@ title: Exchange Raumpostfach - Berechtigungen setzen
 subtitle: Exchange Postfachordner Berechtigungen per PowerShell setzen
 lang: de
 tags: [exchange, powershell, exchange 2013]
+image: "/img/2020-01-15 17_44_53-_CalendarPermission-Error-Outlook.png"
 ---
 ![Exchange Raumpostfach - Berechtigungen](/img/2020-01-15 17_44_53-_CalendarPermission-Error-Outlook.png "Exchange Raumpostfach Berechtigungen (Outlook Fenster) - Zugriff wurde für den Benutzer verweigert.")<br/><br/>
 Standardmäßig haben Exchange 2013 Raumpostfächer die Berechtigung "LimitedDetails" für das Sicherheitsprinzipal "Standard". Wenn also keine weiteren Berechtigungen konfiguriert sind, können die Anwender keine Details für Termine in diesem Raum anzeigen. Für eine bessere Bedienbarkeit in Outlook ist die Berechtigung "Reviewer" besser geeignet. Hierdurch dürfen Elemente aufgelistet und Details angezeigt werden. Bei Bedarf kann noch das [CalendarProcessing](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-calendarprocessing?view=exchange-ps){:target="_blank" rel="noopener noreferrer"} angepasst werden, sodass Details wie Beschreibung und Betreff des Termins nicht im Raumpostfach gespeichert werden. Ob das alles sinnvoll ist, kommt immer auf die Umgebung an.
