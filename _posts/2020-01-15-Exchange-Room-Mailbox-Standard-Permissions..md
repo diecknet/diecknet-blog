@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Exchange Raumpostfach - Berechtigungen setzen"
-subtitle: "Exchange Postfachordner Berechtigungen per PowerShell setzen"
+title: Exchange Raumpostfach - Berechtigungen setzen
+subtitle: Exchange Postfachordner Berechtigungen per PowerShell setzen
 lang: de
 tags: [exchange, powershell, exchange 2013]
 ---
