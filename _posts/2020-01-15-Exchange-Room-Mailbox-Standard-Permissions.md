@@ -26,6 +26,7 @@ foreach($room in $rooms) {
 Dieser Code ist für deutsch- und englischsprachige Systeme geeignet. Bei anderen Sprachen sollte der Identity Parameter in Zeile 4 angepasst werden.
 
 Ergebnis:
+
 ![Auflistung Kalenderberechtigungen für mehrere Raumpostfächer](/img/2020-01-15 17_20_31-CalendarPermissions.png "Auflistung Kalenderberechtigungen für mehrere Raumpostfächer. Die Berechtigungen sind nicht einheitlich (PowerShell Fenster)")
 
 ## Standard Berechtigungen für alle Raumpostfächer setzen
