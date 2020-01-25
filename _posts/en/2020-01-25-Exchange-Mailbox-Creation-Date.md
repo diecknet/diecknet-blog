@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exchange: When was that mailbox REALLY created?"
+title: Exchange: When was that mailbox REALLY created?
 subtitle: MSExchWhenMailboxCreated might not be what it seems...
 lang: en
 tags: [exchange, powershell, exchange 2013]
