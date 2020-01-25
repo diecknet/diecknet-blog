@@ -75,7 +75,6 @@ version: 0.0.1
 languages: ["de", "en"]
 default_lang: "de"
 exclude_from_localization: ["img", "css", "fonts"]
-data_dir: ./_data
 
 # archives / tags
 jekyll-archives:
