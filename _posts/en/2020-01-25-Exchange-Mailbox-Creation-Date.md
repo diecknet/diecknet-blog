@@ -7,7 +7,11 @@ tags: [exchange, powershell, exchange 2013]
 image: "/img/2020/2020-01-25 MSExchMailboxWhenCreated PowerShell.png"
 ---
 ![Get MSExchMailboxWhenCreated attribute using PowerShell](/img/2020/2020-01-25 MSExchMailboxWhenCreated PowerShell.png "Get MSExchMailboxWhenCreated attribute using PowerShell - Get-ADUser -Properties MSExchMailboxWhenCreated") <br /><br />
-If you're wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute {% ihighlight powershell %}MSExchWhenMailboxCreated{% endihighlight %. You can get the value using PowerShell or ADUC with advanced features enabled.
+If you're wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute {% ihighlight powershell %}MSExchWhenMailboxCreated{% endihighlight %}. You can get the value using PowerShell or ADUC with advanced features enabled.
+
+{% highlight powershell linedivs %}
+Get-ADUser -Properties MSExchMaiboxWhenCreated
+{% endhighlight %}
 
 ![Get MSExchMailboxWhenCreated attribute using PowerShell](/img/2020/2020-01-25 MSExchMailboxWhenCreated ADUC.png "Get MSExchMailboxWhenCreated attribute using Active Directory Users and Computers. Advanced features need to be enabled.")
 
@@ -18,6 +22,10 @@ That could almost be the end of the story. BUT that attribute is not what you mi
 
 ## Finding out the real Mailbox creation date
 If the mailbox creation was done recently, you might find according event log entries on the Exchange Server. If you search the MSExchange Management Event Log for mailbox creations manually (CTRL+F and look for "Enable-Mailbox") you might find the actual mailbox creation date. The PowerShell way would be:
+
+{% highlight powershell linedivs %}
+Get-EventLog -Source "MSExchange CmdletLogs" -LogName "MSExchange Management" -ComputerName <Servername> -Message "*Enable-Mailbox*test.user*"
+{% endhighlight %}
 
 ![Checking the MSExchange Management Event Log for mailbox creations](/img/2020/2020-01-25 Exchange mailbox creation event log.png "Checking the MSExchange Management Event Log for mailbox creations - The mailbox got recently created by Enable-Mailbox cmdlet.")
 
