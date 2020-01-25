@@ -13,9 +13,9 @@ If you're wondering when an Exchange mailbox got created, you will most likely s
 Get-ADUser -Properties MSExchMaiboxWhenCreated
 {% endhighlight %}
 
-![Get MSExchMailboxWhenCreated attribute using PowerShell](/img/2020/2020-01-25 MSExchMailboxWhenCreated ADUC.png "Get MSExchMailboxWhenCreated attribute using Active Directory Users and Computers. Advanced features need to be enabled.")
+![Get MSExchWhenMailboxCreated attribute using PowerShell](/img/2020/2020-01-25 MSExchMailboxWhenCreated ADUC.png "Get MSExchMailboxWhenCreated attribute using Active Directory Users and Computers. Advanced features need to be enabled.")
 
-## MSExchMailboxWhenCreated contains not the full truth
+## MSExchWhenMailboxCreated contains not the full truth
 That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the *FIRST* time the user gets a mailbox. If that users mailbox was disabled and then recreated later, the timestamp of the first mailbox creation retains.
 
 ![Checking MSExchMailboxWhenCreated attribute using PowerShell after a mailbox recreation](/img/2020/2020-01-25 MSExchMailboxWhenCreated PowerShell Mailbox recreated.png "Checking MSExchMailboxWhenCreated attribute using PowerShell after a mailbox recreation - The old value remains.")
