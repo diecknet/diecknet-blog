@@ -41,7 +41,9 @@ Get-OrganizationRelationship | fl
 In meinem Fall, wurde ein Organization Relationship zurückgegeben. Es wird also DAUTH verwendet.
 
 ## DAUTH Überprüfung
-Ich habe hier tatsächlich nur an der Oberfläche gekratzt. Nach einigem Troubleshooting hat sich gezeigt, dass DAUTH in diesem Fall tatsächlich nicht richtig funktioniert. Ich habe hierzu in Outlook on the Web (OWA) versucht eine Cross-Premise Verfügbarkeit abzurufen. In der Browser-Entwicklerkonsole (per "F12" aufrufbar) kann dann unter "Network" nach "GetUserAvailabilityInternal" gefiltert werden. Die relevanten Informationen die ich dort finden konnte:
+Ich habe hier tatsächlich nur an der Oberfläche gekratzt. Nach einigem Troubleshooting hat sich gezeigt, dass DAUTH in diesem Fall tatsächlich nicht richtig funktioniert. Ich habe hierzu in Outlook on the Web (OWA) versucht eine Cross-Premise Verfügbarkeit abzurufen. In der Browser-Entwicklerkonsole (per "F12" aufrufbar) kann dann unter "Network" nach "GetUserAvailabilityInternal" gefiltert werden. 
+![Abruf der Entwickleroptionen - Network im Browser für OWA](/img/2020/2020-04-28-NetworkConsoleBrowserOWA.png "Abruf der Entwickleroptionen - Network im Browser für OWA")
+Die relevanten Informationen die ich dort finden konnte:
 
 > Error 0x80048800
 > wst:FailedAuthentication
