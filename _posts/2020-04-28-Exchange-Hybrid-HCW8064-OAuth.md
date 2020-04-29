@@ -11,7 +11,7 @@ image: "/img/2020/2020-04-28-HCW8064-01.png"
 Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:
 > HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.
 
-Der Link "**Weitere Informationen**" verweist auf [https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you](https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you){:target="_blank" rel="noopener noreferrer"}. Wenn man schaut, wofür OAuth verwendet, wird [dieser Artikel](https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN){:target="_blank" rel="noopener noreferrer"} referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird. Da diese erwähnten Funktionen in dem Projekt nicht relevant waren, habe ich das erstmal ignoriert.
+Der Link "**Weitere Informationen**" verweist auf [https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you](https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you){:target="_blank" rel="noopener noreferrer"}. Wenn man schaut, wofür OAuth verwendet, wird [dieser Artikel](https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN){:target="_blank" rel="noopener noreferrer"} referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird. Da diese erwähnten Funktionen in dem Projekt nicht relevant waren, habe ich das erstmal ignoriert. Eine erneute Ausführung des HCW hat übrigens auch kein OAuth einrichten können.
 
 OAuth *kann* allerdings auch für die Authentifizierung für den Cross-Premise Austausch von Free/Busy Informationen genutzt werden. Der verlinkte [OAuth-Artikel](https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN){:target="_blank" rel="noopener noreferrer"} erwähnt allerdings **ausschließlich** eDiscovery -  das ist auch die Sektion der Dokumentation in der sich der Artikel befindet. Weitere OAuth-Szenarien werden hier nicht erläutert. Im [Artikel zur Konfiguration von OAuth für Exchange Hybrid](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help){:target="_blank" rel="noopener noreferrer"} wird Free/Busy auch nicht erwähnt.
 
@@ -27,7 +27,7 @@ Sowohl On-Premise als auch in Exchange Online kann geprüft werden, ob ein **Int
 Get-IntraOrganizationConnector | fl
 {% endhighlight %}
 
-Das Attribut "Enabled" steht auf "False", also wird kein OAuth verwendet. Also wie erwartet.
+Das Attribut "Enabled" steht auf "False", demnach wird kein OAuth verwendet. Also wie erwartet.
 !["Get-IntraOrganizationConnector | fl" - "Enabled" steht auf "False"](/img/2020/2020-04-28-IOC-01.png "'Get-IntraOrganizationConnector | fl' - 'Enabled' steht auf 'False'")
 
 ## Organization Relationship (ORG REL)
