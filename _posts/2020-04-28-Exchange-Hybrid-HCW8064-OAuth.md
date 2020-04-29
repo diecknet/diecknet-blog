@@ -54,7 +54,7 @@ Die relevanten Informationen die ich dort finden konnte:
 Die Details zum Free/Busy Troubleshooting sind auch im [Exchange Team Blog: Demystifying Hybrid Free/Busy: Finding errors and troubleshooting](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-finding-errors-and-troubleshooting/ba-p/607727){:target="_blank" rel="noopener noreferrer"} zu finden. Da die nicht existente Application und der Code "AADSTS901124" anscheinend kein Standard-Szenario ist, wollte ich eigentlich schon ein Ticket bei Microsoft eröffnen. Da aber OAuth ohnehin die moderne und empfohlene Authentifizierungsmethode ist, kann man aber auch ersteinmal dafür Troubleshooting betreiben.
 
 ## OAuth manuell einrichten
-Grundsätzlich wird die manuelle Einrichtung von OAuth im Artikel [Configure OAuth authentication between Exchange and Exchange Online organizations](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help){:target="_blank" rel="noopener noreferrer"} beschrieben. Ich wiederhole das jetzt nicht hier alles in meinem Artikel. Was bei mir allerdings noch anders war:
+Grundsätzlich wird die manuelle Einrichtung von OAuth im Artikel [Configure OAuth authentication between Exchange and Exchange Online organizations](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help){:target="_blank" rel="noopener noreferrer"} beschrieben. Ich wiederhole das jetzt nicht hier alles. Was bei mir allerdings noch anders war:
 ### Exchange Server Auth Certificate abgelaufen und erneuert
 Im Abschnitt ["Step 3: Export the on-premises authorization certificate"](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-3-export-the-on-premises-authorization-certificate){:target="_blank" rel="noopener noreferrer"} wird beschrieben, wie das **Microsoft Exchange Server Auth Certificate** exportiert werden kann. Im nächsten Schritt würde es dann in Exchange Online importiert werden. Da das Exchange 2013 System beim Kunden bereits seit über 5 Jahren im Betrieb ist, wurde das Zertifikat bereits einmal ausgetauscht. Da Hybrid und OAuth hier noch nie verwendet wurden, wurde das neue Zertifikat auch nie für die Authentifizierung hinterlegt.
 
@@ -67,9 +67,7 @@ Set-AuthConfig -PublishCertificate
 
 Anschließend ist noch ein {% ihighlight powershell %}iisreset{% endihighlight %} notwendig.
 ### Intra-Organization Connector konfigurieren
-Anschließend konnte ich der Dokumentation entsprechend weiter verfahren ([Step 3, 4 und 5](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-3-export-the-on-premises-authorization-certificate){:target="_blank" rel="noopener noreferrer"}).
-
-[Step 6 und 7](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-6-create-an-intraorganizationconnector-from-your-on-premises-organization-to-office-365){:target="_blank" rel="noopener noreferrer"} waren nicht mehr zutreffend. Die IOC mussten nicht mehr angelegt werden, sondern mussten nur noch per {% ihighlight powershell %}Get-IntraOrganizationConnector | Set-IntraOrganizationConnector -Enabled $true{% endihighlight %} aktiviert werden. Step 8 spielte keine Rolle, da keine pre-Exchange 2013 SP1 Server in der Umgebung vorhanden waren.
+Anschließend konnte ich der Dokumentation entsprechend weiter verfahren ([Step 3, 4 und 5](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-3-export-the-on-premises-authorization-certificate){:target="_blank" rel="noopener noreferrer"}). [Step 6 und 7](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-6-create-an-intraorganizationconnector-from-your-on-premises-organization-to-office-365){:target="_blank" rel="noopener noreferrer"} waren nicht mehr zutreffend. Die IOC mussten nicht mehr angelegt werden, sondern mussten nur noch per {% ihighlight powershell %}Get-IntraOrganizationConnector | Set-IntraOrganizationConnector -Enabled $true{% endihighlight %} aktiviert werden. Step 8 spielte keine Rolle, da keine pre-Exchange 2013 SP1 Server in der Umgebung vorhanden waren.
 
 ## Tests
 Anschließend konnte ich folgende Tests erfolgreich durchführen:
@@ -87,7 +85,8 @@ Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of y
 {% endhighlight %}
 
 ### Abruf von Free/Busy Zeiten (Cross-Premise)
-Anschließend konnten Cross-Premise die Free/Busy Zeiten abgerufen werden - in beide Richtungen. Hier ein exemplarischer Screenshot, der die Abfrage von einem Exchange Online Postfach zu einem Exchange On-Premise Postfach zeigt.
+Tatsächlich konnten Cross-Premise die Free/Busy Zeiten abgerufen werden - in beide Richtungen. Hier ein exemplarischer Screenshot, der die Abfrage von einem Exchange Online Postfach zu einem Exchange On-Premise Postfach zeigt.
+
 ![Outlook on the Web: Abruf von Free/Busy Zeiten von Exchange Online zu Exchange On-Premise - erfolgreich](/img/2020/2020-04-28-FreeBusy.png "Outlook on the Web: Abruf von Free/Busy Zeiten von Exchange Online zu Exchange On-Premise - erfolgreich")
 
 ## Weiterführende Links
@@ -95,4 +94,4 @@ Anschließend konnten Cross-Premise die Free/Busy Zeiten abgerufen werden - in b
 - [Demystifying Hybrid Free/Busy: what are the moving parts? (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-what-are-the-moving-parts/ba-p/607704){:target="_blank" rel="noopener noreferrer"}
 - [Demystifying Hybrid Free/Busy: Finding errors and troubleshooting (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-finding-errors-and-troubleshooting/ba-p/607727){:target="_blank" rel="noopener noreferrer"}
 - [Configure OAuth authentication between Exchange and Exchange Online organizations (docs.microsoft.com)](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help){:target="_blank" rel="noopener noreferrer"}
-- [Exchange OAuth Artikel auf msxfaq.de](https://www.msxfaq.de/exchange/e2013/exchange_oauth.htm){:target="_blank" rel="noopener noreferrer"}
+- [Exchange OAuth Artikel (msxfaq.de)](https://www.msxfaq.de/exchange/e2013/exchange_oauth.htm){:target="_blank" rel="noopener noreferrer"}
