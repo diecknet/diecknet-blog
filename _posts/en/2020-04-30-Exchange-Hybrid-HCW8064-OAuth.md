@@ -6,7 +6,7 @@ lang: en
 tags: [exchange, exchange 2013, exchange hybrid, oauth, office 365]
 image: "/img/2020/2020-04-28-HCW8064-01.png"
 ---
-![HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.](/img/2020/2020-04-28-HCW8064-01.png "HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.") <br />
+![HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.](/img/2020/2020-04-28-HCW8064-01.png "HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.") <br /> 
 
 At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:
 > HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.
