@@ -3,7 +3,7 @@ layout: post
 title: Exchange - When was that mailbox REALLY created?
 subtitle: MSExchWhenMailboxCreated might not be what it seems...
 lang: en
-tags: [exchange, powershell, exchange 2013]
+tags: [exchange, powershell, exchange2013]
 image: "/img/2020/2020-01-25 MSExchWhenMailboxCreated PowerShell.png"
 ---
 ![Get MSExchWhenMailboxCreated attribute using PowerShell](/img/2020/2020-01-25 MSExchWhenMailboxCreated PowerShell.png "Get MSExchWhenMailboxCreated attribute using PowerShell - Get-ADUser -Properties MSExchWhenMailboxCreated") <br /><br />

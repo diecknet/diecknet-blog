@@ -3,7 +3,7 @@ layout: post
 title: Exchange Raumpostfach - Berechtigungen setzen
 subtitle: Exchange Postfachordner Berechtigungen per PowerShell setzen
 lang: de
-tags: [exchange, powershell, exchange 2013]
+tags: [exchange, powershell, exchange2013]
 image: "/img/2020-01-15 17_44_53-_CalendarPermission-Error-Outlook.png"
 ---
 ![Exchange Raumpostfach - Berechtigungen](/img/2020-01-15 17_44_53-_CalendarPermission-Error-Outlook.png "Exchange Raumpostfach Berechtigungen (Outlook Fenster) - Zugriff wurde für den Benutzer verweigert.") <br /><br />

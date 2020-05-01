@@ -3,7 +3,7 @@ layout: post
 title: Exchange Room Mailbox - Set Permissions
 subtitle: Set Exchange Mailboxfolder permissions using PowerShell
 lang: en
-tags: [exchange, powershell, exchange 2013]
+tags: [exchange, powershell, exchange2013]
 image: "/img/2020-01-15 17_44_53-_CalendarPermission-Error-Outlook.png"
 ---
 ![Exchange Raumpostfach - Berechtigungen](/img/2020-01-15 17_44_53-_CalendarPermission-Error-Outlook.png "Exchange Room Mailbox Permissions (Outlook Window) - Access denied.") <br /><br />
