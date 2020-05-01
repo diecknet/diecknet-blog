@@ -3,7 +3,7 @@ layout: post
 title: "Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden"
 subtitle: OAuth Konfiguration manuell durchführen
 lang: de
-tags: [exchange, exchange 2013, exchange hybrid, oauth, office 365]
+tags: [exchange, exchange2013, exchangehybrid, oauth, office365]
 image: "/img/2020/2020-04-28-HCW8064-01.png"
 ---
 ![HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.](/img/2020/2020-04-28-HCW8064-01.png "HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.") <br /><br />
