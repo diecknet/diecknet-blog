@@ -2,7 +2,7 @@
 layout: post
 title: Outlook Certificate Warning after Office 365 Migration
 lang: en
-tags: [office 365,exchange,exchange online,exchange 2010]
+tags: [office365,exchange,exchangeonline,exchange2010]
 image: "/img/2019-12-18-Certificate-Warning-outlook.png"
 ---
 ![Outlook Certificate Warning after Office 365 Migration - Security Alert: svr1.example.com - The security certificate has expired or is not valid yet](/img/2019-12-18-Certificate-Warning-outlook.png "Security Alert: svr1.example.com - The security certificate has expired or is not valid yet")  
