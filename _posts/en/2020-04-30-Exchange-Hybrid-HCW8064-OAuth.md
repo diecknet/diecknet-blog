@@ -39,7 +39,7 @@ The next step is to check if an Organization Relationship exists.
 Get-OrganizationRelationship | fl
 {% endhighlight %}
 
-!["Get-OrganizationRelationship | fl - Organization Relationship to the O365 Mail Domain exists"](/img/2020/2020-04-28-ORG-REL.png "Get-OrganizationRelationship | fl - Organization Relationship to the O365 Mail Domain exists")
+![Get-OrganizationRelationship to show that the Organization Relationship to the O365 Mail Domain exists"](/img/2020/2020-04-28-ORG-REL.png "Get-OrganizationRelationship to show that the Organization Relationship to the O365 Mail Domain exists")
 
 In my case, an Organization Relationship was returned. So DAUTH is in use.
 
