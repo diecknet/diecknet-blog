@@ -39,7 +39,7 @@ Als nächstes sollte geprüft werden, ob ein Organization Relationship vorhanden
 Get-OrganizationRelationship | fl
 {% endhighlight %}
 
-!["Get-OrganizationRelationship | fl - Organization Relationship zur O365 Mail Domain ist vorhanden"](/img/2020/2020-04-28-ORG-REL.png "Get-OrganizationRelationship | fl - Organization Relationship zur O365 Mail Domain ist vorhanden")
+![Get-OrganizationRelationship verwenden um zu überprüfen ob ein Organization Relationship zur O365 Mail Domain vorhanden ist](/img/2020/2020-04-28-ORG-REL.png "Get-OrganizationRelationship verwenden um zu überprüfen ob ein Organization Relationship zur O365 Mail Domain vorhanden ist")
 
 In meinem Fall, wurde ein Organization Relationship zurückgegeben. Es wird also DAUTH verwendet.
 
