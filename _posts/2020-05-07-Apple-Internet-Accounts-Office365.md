@@ -60,3 +60,49 @@ Die App sollte nun in Azure AD unter "Enterprise applications" -> "All applicati
 Anschließend sollten die Anwender per iOS Kalender/Kontakte auf ihre in Exchange Online hinterlegten Daten zugreifen können.
 
 ### Lösungsmöglichkeit 2: Administrator-Anfragen aktivieren
+
+Alternativ kann aktiviert werden, dass Anwender die Genehmigung einer App beantragen können. Dies ist auch ergänzend zu der einmaligen administrativen Freigabe aus Lösung 1 möglich.
+
+#### Schritt 1
+
+Als Administrator in Azure AD ["Enterprise applications" -> "User settings"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/){:target="_blank" rel="noopener noreferrer"} aufrufen. Unter "Admin consent requests (Preview)" kann die Option "Users can request admin consent to apps they are unable to consent to" aktiviert werden. Anschließend auf "Select admin consent request reviewers" klicken und die Administratoren auswählen, die die Requests bestätigen sollen. Bei Bedarf kann die Benachrichtigung des Administrators per E-Mail deaktiviert/aktiviert werden. Standardmäßig laufen die Anfragen nach 30 Tagen ab, was bei Bedarf auch angepasst werden kann.
+
+![Aktivieren von Enterprise Application Admin Consent Request in Azure AD](/img/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest.png "Aktivieren von Enterprise Application Admin Consent Request in Azure AD")
+
+#### Schritt 2: Benutzer fragt Administrator-Zustimmung an
+
+Wenn ein Benutzer nun eine neue Applikation nutzen möchte, erscheint die Meldung "**Genehmigung erforderlich**". Die notwendigen Berechtigungen der Applikation werden aufgelistet. Der Benutzer muss eine Begründung für die Anfrage der Applikation eingeben. Anschließend kann die Genehmigungsanforderung abgesendet werden.
+
+![Hinweis für Endanwender bei Benutzung der App - Genehmigung erforderlich. Die Rechte der App werden aufgeführt. Es muss eine Begründung für die Anfrage eingegeben werden.](/img/2020/2020-05-07_RequestAdminConsent_as_enduser.png "Hinweis für Endanwender bei Benutzung der App - Genehmigung erforderlich. Die Rechte der App werden aufgeführt. Es muss eine Begründung für die Anfrage eingegeben werden.")
+
+#### Schritt 3: Administrator prüft die Genehmigungsanforderung
+
+Die ausgewählten Administratoren erhalten eine E-Mail, in der Details zur Anforderung aufgeführt werden. In der E-Mail kann auf "Anforderung überprüfen" geklickt werden, um die Anfrage zu bearbeiten. Falls bis zum Ablaufdatum nicht reagiert wird, wird die Anfrage automatisch zurückgewiesen.
+
+![Auflistung von Enterprise Application - Admin consent requests](/img/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest_by_mail.png "Auflistung von Enterprise Application - Admin consent requests")
+
+Alternativ kann der Administrator auch die Liste der offenen Anfragen in Azure AD aufrufen. Hierzu ["Enterprise applications" -> "Admin consent requests"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/) anklicken.
+
+![Auflistung von Enterprise Application - Admin consent requests](/img/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "Auflistung von Enterprise Application - Admin consent requests")
+
+Es können Details wie Name, Homepage URL, verwendete Reply URLs angezeigt werden. Unter "Requested by" wird angezeigt, welcher Benutzer die App angefragt hat. Der Administrator kann nun wahlweise die Berechtigungen prüfen und genehmigen ("Review permissions and consent"), oder die Anfrage per "Deny" ablehnen. Falls die Applikation dauerhaft gesperrt werden soll, damit keine Anfragen mehr zu dieser App eingereicht werden können, kann "Block" angeklickt werden.
+![Abruf von Details zum Enterprise Application Admin consent request](/img/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Abruf von Details zum Enterprise Application Admin consent request")
+
+Falls die Applikation nicht gestattet wurde, würde der Benutzer bei der nächsten Anmeldung die Meldung **AADSTS7000112** erhalten.
+![Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled](/img/2020/2020-05-07_AADSTS7000112_application_disabled.png "Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled")
+
+#### Schritt 4
+
+Anschließend sollten die Anwender die angefragte und genehmigte App verwenden können.
+
+## Deaktivieren einer zuvor erlaubten App
+
+Wenn eine App bereits erlaubt ist, kann sie deaktiviert werden. Hierzu ...
+![Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.](/img/2020/2020-05-07_Disable_existing_enterpriseapp.png "Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.")
+
+
+
+
+## Weiterführende Links
+
+https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources
