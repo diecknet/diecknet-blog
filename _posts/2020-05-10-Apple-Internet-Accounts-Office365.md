@@ -81,7 +81,7 @@ Wenn ein Benutzer nun eine neue Applikation nutzen möchte, erscheint die Meldun
 
 Die ausgewählten Administratoren erhalten eine E-Mail, in der Details zur Anforderung aufgeführt werden. In der E-Mail kann auf "Anforderung überprüfen" geklickt werden, um die Anfrage zu bearbeiten. Falls bis zum Ablaufdatum nicht reagiert wird, wird die Anfrage automatisch zurückgewiesen.
 
-![Auflistung von Enterprise Application - Admin consent requests](/img/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest_by_mail.png "Auflistung von Enterprise Application - Admin consent requests")
+![E-Mail mit einem Enterprise Application - Admin consent requests](/img/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest_by_mail.png "E-Mail mit einem Enterprise Application - Admin consent requests")
 
 Alternativ kann der Administrator auch die Liste der offenen Anfragen in Azure AD aufrufen. Hierzu ["Enterprise applications" -> "Admin consent requests"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/){:target="_blank" rel="noopener noreferrer"} anklicken.
 
