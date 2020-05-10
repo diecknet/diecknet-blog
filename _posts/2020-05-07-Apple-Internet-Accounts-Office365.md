@@ -81,7 +81,7 @@ Die ausgewählten Administratoren erhalten eine E-Mail, in der Details zur Anfor
 
 ![Auflistung von Enterprise Application - Admin consent requests](/img/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest_by_mail.png "Auflistung von Enterprise Application - Admin consent requests")
 
-Alternativ kann der Administrator auch die Liste der offenen Anfragen in Azure AD aufrufen. Hierzu ["Enterprise applications" -> "Admin consent requests"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/) anklicken.
+Alternativ kann der Administrator auch die Liste der offenen Anfragen in Azure AD aufrufen. Hierzu ["Enterprise applications" -> "Admin consent requests"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/){:target="_blank" rel="noopener noreferrer"} anklicken.
 
 ![Auflistung von Enterprise Application - Admin consent requests](/img/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "Auflistung von Enterprise Application - Admin consent requests")
 
@@ -97,12 +97,11 @@ Anschließend sollten die Anwender die angefragte und genehmigte App verwenden k
 
 ## Deaktivieren einer zuvor erlaubten App
 
-Wenn eine App bereits erlaubt ist, kann sie deaktiviert werden. Hierzu ...
+Wenn eine App bereits erlaubt ist, kann sie deaktiviert werden. Hierzu die Applikation aus "Enterprise applications" raussuchen und unter "Properties" die Option "Enabled for users to sign-in" auf "Yes" setzen. Falls man hier stattdessen auf "Delete" klickt, können die Benutzer wieder erneut eine Genehmigung beantragen.
+
 ![Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.](/img/2020/2020-05-07_Disable_existing_enterpriseapp.png "Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.")
-
-
-
 
 ## Weiterführende Links
 
-https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources
+[Artikel office365.thorpick.de "iOS accounts needs permission to access Office 365 resources"](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources){:target="_blank" rel="noopener noreferrer"}
+
