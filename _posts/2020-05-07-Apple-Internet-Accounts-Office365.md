@@ -31,7 +31,7 @@ Es gibt mehrere Lösungsmöglichkeiten, ohne dass einfach alle Drittanbieter-App
 
 #### Schritt 1: TenantID herausfinden
 
-Als Erstes muss die Tenant ID des Azure AD Tenants herausgefunden werden. Diese ist auf Overview Seite in Azure Active Directory zu finden (im nachfolgenden Screenshot rot markiert).
+Als Erstes muss die Tenant ID des Azure AD Tenants herausgefunden werden. Diese ist auf ["Overview Seite in Azure Active Directory"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview){:target="_blank" rel="noopener noreferrer"} zu finden (im nachfolgenden Screenshot rot markiert).
 
 ![Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.](/img/2020/2020-05-07_AzureAD_TenantID.png "Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.") 
 
