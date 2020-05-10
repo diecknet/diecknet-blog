@@ -17,23 +17,25 @@ Die App hieß früher übrigens "iOS Accounts" und wurde anscheinend Anfang 2020
 ## Ursache
 
 Folgende Ursachen haben für diese Meldung gesorgt:
-1. Apple Internet Accounts wird für den Zugriff auf die Office 365 Ressourcen des Tenants benötigt. Ein Zugriff auf Ressourcen eines Office 365 Tenants ist nur nach Genehmigung der verwendeten App möglich.
+1. Die App "Apple Internet Accounts" wird von Apple iOS für den Zugriff auf die Office 365 Ressourcen des Benutzers benötigt. Ein Zugriff auf Ressourcen eines Office 365 Tenants durch eine Drittanbieter App ist nur nach expliziter Genehmigung möglich.
 2. Es wurde bisher noch keine Benutzer- oder Administrator-Genehmigung für Apple Internet Accounts in diesem Tenant erteilt.
 3. Die Benutzer-Genehmigung ist tenantweit deaktiviert. Diese empfehlenswerte Einstellung kann gesetzt werden, damit Endanwender nicht einfach Drittanbieter-Apps für den Zugriff auf Unternehmensdaten berechtigen können.
 
-Die Einstellung zu 3. ist in Azure AD unter ["Enterprise applications" -> "User settings"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/){:target="_blank" rel="noopener noreferrer"} zu finden. Die Option lautet "Users can consent to apps accessing company data on their behalf". **Diese Einstellung sollte auf "No" belassen werden!** Dass der Endanwender nicht einfach irgendwelche Apps erlauben darf und deshalb hier nicht weiterkommt, ist ja genau, was man möchte um die Unternehmensdaten vor unberechtigtem Zugriff zu schützen.
+Die Einstellung zu 3. ist in Azure AD unter ["Enterprise applications" -> "User settings"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/){:target="_blank" rel="noopener noreferrer"} zu finden. Die Option lautet "Users can consent to apps accessing company data on their behalf". **Diese Einstellung sollte auf "No" belassen werden!** Dass der Endanwender nicht einfach irgendwelche Apps erlauben darf (und deshalb hier nicht weiterkommt), ist ja genau was man möchte um die Unternehmensdaten vor unberechtigtem Zugriff zu schützen.
 
 ## Lösung
+
 Es gibt mehrere Lösungsmöglichkeiten, ohne dass einfach alle Drittanbieter-Apps freigeschaltet werden.
 
 ### Lösungsmöglichkeit 1: Apple Internet Accounts tenantweit erlauben
 
-#### Schritt 1
+#### Schritt 1: TenantID herausfinden
 
-Als erstes muss die Tenant ID des Azure AD Tenants herausgefunden werden. Diese ist auf Overview Seite in Azure Active Directory zu finden (im nachfolgenden Screenshot rot markiert).
+Als Erstes muss die Tenant ID des Azure AD Tenants herausgefunden werden. Diese ist auf Overview Seite in Azure Active Directory zu finden (im nachfolgenden Screenshot rot markiert).
+
 ![Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.](/img/2020/2020-05-07_AzureAD_TenantID.png "Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.") 
 
-#### Schritt 2
+#### Schritt 2: URL zusammensetzen
 
 Der Platzhalter {% ihighlight plaintext %}<TenantID>{% endihighlight %} muss in der nachfolgenden URL durch die Tenant ID aus Schritt 1 ersetzt werden. Anschließend kann die erstellte URL mit Tenant Admin (Global Administrator) Rechten aufgerufen werden. Die in der URL enthaltene {% ihighlight plaintext %}client_id{% endihighlight %} ist die ID von Apple Internet Accounts.
 
@@ -41,7 +43,7 @@ Der Platzhalter {% ihighlight plaintext %}<TenantID>{% endihighlight %} muss in 
 https://login.microsoftonline.com/<TenantID>/oauth2/authorize?client_id=f8d98a96-0999-43f5-8af3-69971c7bb423&response_type=code&redirect_uri=https://example.com&prompt=admin_consent
 {% endhighlight %}
 
-#### Schritt 3
+#### Schritt 3: Berechtigung administrativ für den gesamten Tenant erteilen
 
 Die Abfrage "Angeforderte Berechtigungen für Ihre Organisation zustimmen - Apple Internet Accounts" muss per "Akzeptieren" bestätigt werden.
 
@@ -55,7 +57,7 @@ Die App sollte nun in Azure AD unter "Enterprise applications" -> "All applicati
 
 ![Auflistung erlaubter Enterprise Applications in Azure AD](/img/2020/2020-05-07_AzureAD_enterpriseapplicationslist.png "Auflistung erlaubter Enterprise Applications in Azure AD")
 
-#### Schritt 4
+#### Schritt 4: Funktion überprüfen
 
 Anschließend sollten die Anwender per iOS Kalender/Kontakte auf ihre in Exchange Online hinterlegten Daten zugreifen können.
 
@@ -63,7 +65,7 @@ Anschließend sollten die Anwender per iOS Kalender/Kontakte auf ihre in Exchang
 
 Alternativ kann aktiviert werden, dass Anwender die Genehmigung einer App beantragen können. Dies ist auch ergänzend zu der einmaligen administrativen Freigabe aus Lösung 1 möglich.
 
-#### Schritt 1
+#### Schritt 1: Admin Consent Requests aktivieren
 
 Als Administrator in Azure AD ["Enterprise applications" -> "User settings"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/){:target="_blank" rel="noopener noreferrer"} aufrufen. Unter "Admin consent requests (Preview)" kann die Option "Users can request admin consent to apps they are unable to consent to" aktiviert werden. Anschließend auf "Select admin consent request reviewers" klicken und die Administratoren auswählen, die die Requests bestätigen sollen. Bei Bedarf kann die Benachrichtigung des Administrators per E-Mail deaktiviert/aktiviert werden. Standardmäßig laufen die Anfragen nach 30 Tagen ab, was bei Bedarf auch angepasst werden kann.
 
@@ -86,22 +88,23 @@ Alternativ kann der Administrator auch die Liste der offenen Anfragen in Azure A
 ![Auflistung von Enterprise Application - Admin consent requests](/img/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "Auflistung von Enterprise Application - Admin consent requests")
 
 Es können Details wie Name, Homepage URL, verwendete Reply URLs angezeigt werden. Unter "Requested by" wird angezeigt, welcher Benutzer die App angefragt hat. Der Administrator kann nun wahlweise die Berechtigungen prüfen und genehmigen ("Review permissions and consent"), oder die Anfrage per "Deny" ablehnen. Falls die Applikation dauerhaft gesperrt werden soll, damit keine Anfragen mehr zu dieser App eingereicht werden können, kann "Block" angeklickt werden.
+
 ![Abruf von Details zum Enterprise Application Admin consent request](/img/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Abruf von Details zum Enterprise Application Admin consent request")
 
 Falls die Applikation nicht gestattet wurde, würde der Benutzer bei der nächsten Anmeldung die Meldung **AADSTS7000112** erhalten.
+
 ![Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled](/img/2020/2020-05-07_AADSTS7000112_application_disabled.png "Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled")
 
-#### Schritt 4
+#### Schritt 4: Funktion überprüfen
 
 Anschließend sollten die Anwender die angefragte und genehmigte App verwenden können.
 
 ## Deaktivieren einer zuvor erlaubten App
 
-Wenn eine App bereits erlaubt ist, kann sie deaktiviert werden. Hierzu die Applikation aus "Enterprise applications" raussuchen und unter "Properties" die Option "Enabled for users to sign-in" auf "Yes" setzen. Falls man hier stattdessen auf "Delete" klickt, können die Benutzer wieder erneut eine Genehmigung beantragen.
+Wenn eine App bereits erlaubt ist, kann sie bei Bedarf auch wieder deaktiviert werden. Hierzu die Applikation aus "Enterprise applications" raussuchen und unter "Properties" die Option "Enabled for users to sign-in" auf "No" setzen. Falls man hier stattdessen auf "Delete" klickt, können die Benutzer wieder erneut eine Genehmigung beantragen.
 
 ![Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.](/img/2020/2020-05-07_Disable_existing_enterpriseapp.png "Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.")
 
 ## Weiterführende Links
-
-[Artikel office365.thorpick.de "iOS accounts needs permission to access Office 365 resources"](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources){:target="_blank" rel="noopener noreferrer"}
-
+- [Dokumentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management){:target="_blank" rel="noopener noreferrer"}
+- [Artikel: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources){:target="_blank" rel="noopener noreferrer"}
