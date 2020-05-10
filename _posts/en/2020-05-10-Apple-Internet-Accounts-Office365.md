@@ -88,24 +88,24 @@ Alternatively the Administrator can review the list of open requests in Azure AD
 
 ![List of Enterprise Application - Admin consent requests](/img/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "List of Enterprise Application - Admin consent requests")
 
-Es können Details wie Name, Homepage URL, verwendete Reply URLs angezeigt werden. Unter "Requested by" wird angezeigt, welcher Benutzer die App angefragt hat. Der Administrator kann nun wahlweise die Berechtigungen prüfen und genehmigen ("Review permissions and consent"), oder die Anfrage per "Deny" ablehnen. Falls die Applikation dauerhaft gesperrt werden soll, damit keine Anfragen mehr zu dieser App eingereicht werden können, kann "Block" angeklickt werden.
+Details like Name, Homepage URL, used Reply URLs can get reviewed. Under "Requested by" it lists the requesting user. The Administrator can review the permissions and approve the request ("Review permissions and consent") or "Deny" it. If the application should get blocked permanently, you can select "Block" - no further requests for this app are possible then. 
 
-![Abruf von Details zum Enterprise Application Admin consent request](/img/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Abruf von Details zum Enterprise Application Admin consent request")
+![Retrieve details to the Enterprise Application Admin consent request](/img/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Retrieve details to the Enterprise Application Admin consent request")
 
-Falls die Applikation nicht gestattet wurde, würde der Benutzer bei der nächsten Anmeldung die Meldung **AADSTS7000112** erhalten.
+If the application was not approved, the user would get the message **AADSTS7000112**, when trying to use it next time.
 
-![Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled](/img/2020/2020-05-07_AADSTS7000112_application_disabled.png "Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled")
+![Applikation was blocked by Administrator or was not approved: AADSTS7000112 application is disabled](/img/2020/2020-05-07_AADSTS7000112_application_disabled.png "Applikation was blocked by Administrator or was not approved: AADSTS7000112 application is disabled")
 
-#### Schritt 4: Funktion überprüfen
+#### Step 4: Test if it works
 
-Anschließend sollten die Anwender die angefragte und genehmigte App verwenden können.
+Afterwards the users should be able to use the requested and approved App.
 
-## Deaktivieren einer zuvor erlaubten App
+## Disable an App that was allowed before
 
-Wenn eine App bereits erlaubt ist, kann sie bei Bedarf auch wieder deaktiviert werden. Hierzu die Applikation aus "Enterprise applications" raussuchen und unter "Properties" die Option "Enabled for users to sign-in" auf "No" setzen. Falls man hier stattdessen auf "Delete" klickt, können die Benutzer wieder erneut eine Genehmigung beantragen.
+If an app has already been allowed, it can be deactivated again if required. To do this, select the application from "Enterprise applications" and under "Properties" set the option "Enabled for users to sign-in" to "No". If you click on "Delete" here instead, the users can request approval again.
 
-![Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.](/img/2020/2020-05-07_Disable_existing_enterpriseapp.png "Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.")
+![Disable a previously allowed Enterprise App: Set Enabled for users to sign-in to No.](/img/2020/2020-05-07_Disable_existing_enterpriseapp.png "Disable a previously allowed Enterprise App: Set Enabled for users to sign-in to No.")
 
-## Weiterführende Links
-- [Dokumentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management){:target="_blank" rel="noopener noreferrer"}
-- [Artikel: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources){:target="_blank" rel="noopener noreferrer"}
+## Related Links
+- [Documentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management){:target="_blank" rel="noopener noreferrer"}
+- [Article: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources){:target="_blank" rel="noopener noreferrer"}
