@@ -27,4 +27,5 @@ You can check Permissions using PowerShell with {% ihighlight powershell %}Get-A
 I created a quick-and-dirty PowerShell script to check the permissions. It's not attempting any automatic fixes. It just lists the folders with faulty permissions. You could either manually fix the permissions using the GUI, or take the ACL-Object of the subfolder and apply it to the files using {% ihighlight powershell %}Set-Acl{% endihighlight %}.
 
 ## Download Script
+
 [CheckProfileStoragePermissions.ps1 (Github)](https://gist.github.com/diecknet/8a36e9551cf5a08c03779e9f7d13d05e){:target="_blank" rel="noopener noreferrer"}
