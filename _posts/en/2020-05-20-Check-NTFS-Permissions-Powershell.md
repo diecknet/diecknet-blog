@@ -3,7 +3,9 @@ layout: post
 title: "Check NTFS Permissions using Powershell"
 lang: en
 tags: [powershell, accessrights, acl, ntfs, windowsvirtualdesktop]
+image: "/img/2020/2020-05-20_CheckProfileStoragePermissions.png"
 ---
+![Checking NTFS Access Rights with PowerShell script CheckProfileStoragePermissions.ps1. These are obviously not real people but test-accounts.](/img/2020/2020-05-20_CheckProfileStoragePermissions.png "Checking NTFS Access Rights with PowerShell script CheckProfileStoragePermissions.ps1. These are obviously not real people but test-accounts.") <br /><br />
 So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.
 
 The correct storage permissions are:
@@ -24,7 +26,7 @@ In this environment every user has their own subfolder in the share. The user cr
 
 You can check Permissions using PowerShell with {% ihighlight powershell %}Get-Acl{% endihighlight %}.
 
-I created a quick-and-dirty PowerShell script to check the permissions. It's not attempting any automatic fixes. It just lists the folders with faulty permissions. You could either manually fix the permissions using the GUI, or take the ACL-Object of the subfolder and apply it to the files using {% ihighlight powershell %}Set-Acl{% endihighlight %}.
+I created a quick-and-dirty PowerShell script to check the permissions. It's not attempting any automatic fixes. It just lists the folders and states any faulty permissions. You could either manually fix the permissions using the GUI, or take the ACL-Object of the subfolder and apply it to the files using {% ihighlight powershell %}Set-Acl{% endihighlight %}.
 
 ## Download Script
 
