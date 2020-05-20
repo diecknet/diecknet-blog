@@ -8,19 +8,23 @@ So I needed a quick way to check a few folders for correct permissions. We had W
 
 The correct storage permissions are:
 
-| test |   | 1 |    |   |
-|------|---|---|----|---|
-|      |   |   |    |   |
-|      |   |   | 32 |   |
-|      |   |   |    |   |
+| User Account             | Folder                             | Permissions  |
+|--------------------------|------------------------------------|--------------|
+| Users                    | This Folder Only                   | Modify       |
+| Creator / Owner          | Subfolders and Files Only          | Modify       |
+| Administrator (optional) | This Folder, Subfolders, and Files | Full Control |
 
 Official FSLogix documentation: [Configure storage permissions for use with Profile Containers and Office Containers](https://docs.microsoft.com/en-us/fslogix/fslogix-storage-config-ht){:target="_blank" rel="noopener noreferrer"}
 
-I created a quick-and-dirty PowerShell script to check the permissions
+## The environment
 
-You can find that setting for 3. in Azure AD under. 
+In this environment every user has their own subfolder in the share. The user created the subfolder (at their first logon to Windows Virtual Desktop), so they're the owner. Since they're owner, they have "Modify" rights to (sub-)subfolders and files in their subfolder. FSLogix creates a profile container vhd(x)-file in the user's folder.
 
-## Link to the source code
-[Documentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management){:target="_blank" rel="noopener noreferrer"}
+## Check Permissions with PowerShell
 
-## y
+You can check Permissions using PowerShell with {% ihighlight powershell %}Get-Acl{% endihighlight %}.
+
+I created a quick-and-dirty PowerShell script to check the permissions. It's not attempting any automatic fixes. It just lists the folders with faulty permissions. You could either manually fix the permissions using the GUI, or take the ACL-Object of the subfolder and apply it to the files using {% ihighlight powershell %}Set-Acl{% endihighlight %}.
+
+## Download Script
+[CheckProfileStoragePermissions.ps1 (Github)](https://gist.github.com/diecknet/8a36e9551cf5a08c03779e9f7d13d05e){:target="_blank" rel="noopener noreferrer"}
