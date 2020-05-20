@@ -2,7 +2,7 @@
 layout: post
 title: "Check NTFS Permissions using Powershell"
 lang: en
-tags: [powershell, accessrights, acl, ntfs, windowsvirtualdesktop]
+tags: [powershell, accessrights, acl, ntfs, windowsvirtualdesktop, fslogix]
 image: "/img/2020/2020-05-20_CheckProfileStoragePermissions.png"
 ---
 ![Checking NTFS Access Rights with PowerShell script CheckProfileStoragePermissions.ps1. These are obviously not real people but test-accounts.](/img/2020/2020-05-20_CheckProfileStoragePermissions.png "Checking NTFS Access Rights with PowerShell script CheckProfileStoragePermissions.ps1. These are obviously not real people but test-accounts.") <br /><br />
