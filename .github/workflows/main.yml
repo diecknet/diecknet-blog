@@ -37,3 +37,12 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         # with:
           # gem_src: sample_site # If there are multiple Gemfiles, specify one
+          
+      - name: 🚀 deploy using SFTP
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./ _site/
+          git-ftp-args:  --dry-run
