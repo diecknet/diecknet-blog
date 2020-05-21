@@ -37,12 +37,21 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         # with:
           # gem_src: sample_site # If there are multiple Gemfiles, specify one
-
-      - name: 🚀 deploy using SFTP
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+          
+      - name: 🚀 deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          ftp-server: ${{ secrets.FTP_SERVER }}
-          ftp-username: ${{ secrets.FTP_USER }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./public/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          # if the repo you are deploying to is <username>.github.io, uncomment the line below.
+          # if you are including the line below, make sure your source files are NOT in the master branch:
+          # publish_branch: master
+
+      #- name: 🚀 deploy using SFTP
+        #uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        #with:
+          #ftp-server: ${{ secrets.FTP_SERVER }}
+          #ftp-username: ${{ secrets.FTP_USER }}
+          #ftp-password: ${{ secrets.FTP_PASSWORD }}
+          #local-dir: ./public/
 
