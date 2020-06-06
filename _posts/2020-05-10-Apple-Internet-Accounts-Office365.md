@@ -3,7 +3,7 @@ layout: post
 title: "Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich"
 subtitle: iOS Zugriff auf Office 365 ermöglichen
 lang: de
-tags: [exchange, exchangeonline, iphone, apple, AzureAD, ios, microsoft365, office365]
+tags: [exchange, exchangeonline, iphone, apple, azuread, ios, microsoft365, office365]
 image: "/img/2020/2020-05-07_Apple-Internet-Accounts-de_1.png"
 ---
 ![Administratorgenehmigung erforderlich - Apple Internet Accounts - Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.](/img/2020/2020-05-07_Apple-Internet-Accounts-de_1.png "Administratorgenehmigung erforderlich - Apple Internet Accounts - Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.") <br /><br />
