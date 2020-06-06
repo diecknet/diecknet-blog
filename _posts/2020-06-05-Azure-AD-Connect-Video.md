@@ -4,16 +4,16 @@ title: "Azure AD Connect richtig planen und vorbereiten (Video)"
 subtitle: Weiterführende Links zu Azure AD Connect
 lang: de
 tags: [azuread, activedirectory, azureadconnect, microsoft365, office365, hybrid, hybrididentity]
-image: "/img/2020/2020-04-28-HCW8064-01.png"
+image: "/img/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png"
 ---
-![Azure AD Connect ](/img/2020/2020-06-05-AzureADConnectYouTube.png "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa") <br /><br />
-Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein YouTube Video erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.
+[![Azure AD Connect: Planen und vorbereiten (YouTube)](/img/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png "Azure AD Connect: Planen und vorbereiten (YouTube")](https://www.youtube.com/watch?v=_feF0VPL2Ps){:target="_blank" rel="noopener noreferrer"} <br /><br />
+Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein [YouTube Video](https://www.youtube.com/watch?v=_feF0VPL2Ps){:target="_blank" rel="noopener noreferrer"} erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.
 
 ## Azure AD Connect Entscheidungsbaum
 
-![Azure AD Connect Entscheidungsbaum (kostenloser Download)](/img/2020/2020-06-05_Azure_AD_Connect_Entscheidungsbaum.jpg "Azure AD Connect Entscheidungsbaum (kostenloser Download)")
+[![Azure AD Connect Entscheidungsbaum (kostenloser Download)](/img/2020/2020-06-05_Azure_AD_Connect_Entscheidungsbaum.jpg "Azure AD Connect Entscheidungsbaum (kostenloser Download)")](https://data.diecknet.de/dl/2020-06-05/Azure_AD_Connect_Entscheidungsbaum.zip){:target="_blank" rel="noopener noreferrer"}
 
-[Kostenloser Download (.pdf, .png, .drawio)](https://data.diecknet.de/dl/2020-06-05/){:target="_blank" rel="noopener noreferrer"}
+[Kostenloser Download (.pdf, .png, .drawio)](https://data.diecknet.de/dl/2020-06-05/Azure_AD_Connect_Entscheidungsbaum.zip){:target="_blank" rel="noopener noreferrer"}
 
 ## Weiterführende Links
 
@@ -25,3 +25,4 @@ Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem T
 - Microsoft IdFix zum Überprüfen der AD-Objekte: [IdFix : Directory Synchronization Error Remediation Tool (github.com)](https://github.com/microsoft/idfix){:target="_blank" rel="noopener noreferrer"}
 - Anleitung zu Microsoft IdFix / häufige Fehler die IdFix findet und wie sie zu beheben sind: [Prepare directory attributes for synchronization with Office 365 by using the IdFix tool (docs.microsoft.com)](https://docs.microsoft.com/en-us/office365/enterprise/prepare-directory-attributes-for-synch-with-idfix){:target="_blank" rel="noopener noreferrer"}
 - PowerShell Code Snip zum setzen der UPN aller Benutzer: [Prepare a non-routable domain for directory synchronization - You can also use Windows PowerShell to change the UPN suffix for all users (docs.microsoft.com)](https://docs.microsoft.com/en-us/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization#you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users){:target="_blank" rel="noopener noreferrer"}
+- Gruppenrichtlinie für Seamless Single Sign-On erstellen: [Azure Active Directory Seamless Single Sign-On: Quickstart -  Roll out the feature (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-3-roll-out-the-feature){:target="_blank" rel="noopener noreferrer"}
