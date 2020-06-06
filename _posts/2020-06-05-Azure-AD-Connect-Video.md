@@ -6,7 +6,7 @@ lang: de
 tags: [azuread, activedirectory, azureadconnect, microsoft365, office365, hybrid, hybrididentity]
 image: "/img/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png"
 ---
-[![Azure AD Connect: Planen und vorbereiten (YouTube)](/img/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png "Azure AD Connect: Planen und vorbereiten (YouTube")](https://www.youtube.com/watch?v=_feF0VPL2Ps){:target="_blank" rel="noopener noreferrer"} <br /><br />
+[![Azure AD Connect: Planen und vorbereiten (YouTube)](/img/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png "Azure AD Connect: Planen und vorbereiten (YouTube)")](https://www.youtube.com/watch?v=_feF0VPL2Ps){:target="_blank" rel="noopener noreferrer"} <br /><br />
 Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein [YouTube Video](https://www.youtube.com/watch?v=_feF0VPL2Ps){:target="_blank" rel="noopener noreferrer"} erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.
 
 ## Azure AD Connect Entscheidungsbaum
