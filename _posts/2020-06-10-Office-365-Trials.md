@@ -4,7 +4,7 @@ title: "Office 365 Trial Lizenzen"
 subtitle: Office 365 kostenfrei ausprobieren
 lang: de
 tags: [microsoft365, office365, licensing]
-image: "/img/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png"
+image: "/img/2020/2020-06-10_O365_Trials.png"
 ---
 ![Office 365 Trial Registration](/img/2020/2020-06-10_O365_Trials.png "Office 365 Trial Registration")<br /><br />
 
