@@ -25,4 +25,4 @@ Folgende Microsoft 365 Business Testlizenzen stehen zur Verfügung:
 ## Teams Lizenzen
 
 Außerdem ist es möglich Microsoft Teams Trial Lizenzen von Microsoft Partnern oder direkt vom Microsoft Support zu erhalten:
-- Microsoft Teams Commercial Cloud Trial (6 Monate Zeitraum!)
+- Microsoft Teams Commercial Cloud Trial (6 Monate Zeitraum, maximal 1.000 User)
