@@ -11,11 +11,18 @@ Zum Ausprobieren von Office 365 bzw. Microsoft 365 kann man sich eine kostenlose
 
 ## Enterprise Lizenzen
 
+Folgende Office 365 Enterprise Demolizenzen stehen zur Verfügung:
 - Office 365 E3 Trial: [https://go.microsoft.com/fwlink/p/?LinkID=403802](https://go.microsoft.com/fwlink/p/?LinkID=403802){:target="_blank" rel="noopener noreferrer"}
 - Office 365 E5 Trial: [https://go.microsoft.com/fwlink/p/?LinkID=698279](https://go.microsoft.com/fwlink/p/?LinkID=698279){:target="_blank" rel="noopener noreferrer"}
 
 ## Business Lizenzen
 
+Folgende Microsoft 365 Business Testlizenzen stehen zur Verfügung:
 - Microsoft 365 Business Standard Trial: [https://go.microsoft.com/fwlink/p/?LinkID=510938](https://go.microsoft.com/fwlink/p/?LinkID=510938){:target="_blank" rel="noopener noreferrer"}
 - Microsoft 365 Business Premium Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2102309](https://go.microsoft.com/fwlink/p/?LinkID=2102309){:target="_blank" rel="noopener noreferrer"}
 - Microsoft 365 Apps for Business Trial: [https://go.microsoft.com/fwlink/p/?LinkID=507653](https://go.microsoft.com/fwlink/p/?LinkID=507653){:target="_blank" rel="noopener noreferrer"}
+
+## Teams Lizenzen
+
+Außerdem ist es möglich von Microsoft Partnern oder direkt vom Microsoft Support Teams Trial Lizenzen zu erhalten. Dort gibt es unter anderem die folgenden Lizenzen:
+- Microsoft Teams Commercial Cloud Trial (6 Monate Zeitraum!)
