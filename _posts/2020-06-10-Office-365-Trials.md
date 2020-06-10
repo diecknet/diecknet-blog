@@ -7,7 +7,7 @@ tags: [microsoft365, office365, licensing]
 image: "/img/2020/2020-06-10_O365_Trials.png"
 ---
 ![Office 365 Trial Registration](/img/2020/2020-06-10_O365_Trials.png "Office 365 Trial Registration")<br /><br />
-Zum Ausprobieren von Office 365 kann man sich eine kostenlose 30 Tage Testphase aktivieren. Es sind jeweils 25 Benutzerlizenzen enthalten. Anschließend kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.
+Zum Ausprobieren von Office 365 bzw. Microsoft 365 kann man sich eine kostenlose 30 Tage Testphase aktivieren. Es sind jeweils 25 Benutzerlizenzen enthalten. Anschließend kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.
 
 ## Enterprise Lizenzen
 
