@@ -7,7 +7,7 @@ tags: [azuread, activedirectory, azureadconnect, microsoft365, office365, hybrid
 image: "/img/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png"
 ---
 [![Azure AD Connect installieren (YouTube)](/img/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png "Azure AD Connect installieren (YouTube)")](https://www.youtube.com/watch?v=xQYsSngTSnU){:target="_blank" rel="noopener noreferrer"} <br /><br />
-Ich habe ein [YouTube Video](https://www.youtube.com/watch?v=xQYsSngTSnU){:target="_blank" rel="noopener noreferrer"} über die Konfiguration von Azure AD Connect für die Password Hash Sync erstellt. In diesem Blog-Post verweise ich nur auf ein paar weiterführende Links.
+Ich habe ein [YouTube Video](https://www.youtube.com/watch?v=xQYsSngTSnU){:target="_blank" rel="noopener noreferrer"} über die Konfiguration von Azure AD Connect und die Password Hash Sync erstellt. In diesem Blog-Post verweise ich nur auf ein paar weiterführende Links. Schaut euch auch das vorherige [Video zur Planung und Vorbereitung von Azure AD Connect]({% post_url /_posts/../../2020-06-05-Azure-AD-Connect-Video.md %}) an!
 
 ## Weiterführende Links
 
