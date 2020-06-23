@@ -13,6 +13,15 @@ Das ist mein persönlicher Jekyll Cheat Sheet. Die Infos und Tags sind auf diese
 {% endhighlight %}
 Ergebnis:
 [Beispiel-Link](https://www.example.com){:target="_blank" rel="noopener noreferrer"}
+## Internal Links
+{% highlight liquid linedivs %}
+{% raw %}
+[Azure AD Connect richtig planen und vorbereiten](/2020/06/05/Azure-AD-Connect-Video/)
+{% endraw %}
+{% endhighlight %}
+Ergebnis:
+[Azure AD Connect richtig planen und vorbereiten](/2020/06/05/Azure-AD-Connect-Video/)
+
 # Code highlighting
 ## Multi-Line code
 Best option for normal code:
