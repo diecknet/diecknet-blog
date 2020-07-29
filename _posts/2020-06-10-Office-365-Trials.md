@@ -7,17 +7,7 @@ tags: [microsoft365, office365, licensing, trial]
 image: "/img/2020/2020-06-10_O365_Trials.png"
 ---
 ![Office 365 Trial Registration](/img/2020/2020-06-10_O365_Trials.png "Office 365 Trial Registration")<br /><br />
-Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich einen kostenlosen Tenant erstellen, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.
-
-Trial Lizenz zu bestehendem Tenant hinzufügen:
-![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (1)](/img/2020/2020-07-28_IntuneTrial_1.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (1)")
-
-![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)](/img/2020/2020-07-28_IntuneTrial_2.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)")
-
-## YouTube Video - Demo-Tenant anlegen
-
-In diesem [YouTube Video](https://www.youtube.com/watch?v=gCS2RkGWNjA){:target="_blank" rel="noopener noreferrer"} zeige ich, wie ein Demo-Tenant mit Trial-Lizenzen angelegt werden kann. Außerdem wird gezeigt, wie die Trial-Lizenz noch einmal um 30 Tage verlängert werden kann.
-[![Microsoft 365 Demo-Tenant anlegen! (YouTube)](/img/2020/2020-07-28_yt_M365_ausprobieren.png "Microsoft 365 Demo-Tenant anlegen! (YouTube)")](https://www.youtube.com/watch?v=gCS2RkGWNjA){:target="_blank" rel="noopener noreferrer"}
+Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich [einen kostenlosen Tenant erstellen](https://www.youtube.com/watch?v=gCS2RkGWNjA){:target="_blank" rel="noopener noreferrer"}, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.
 
 ## Enterprise Lizenzen
 
@@ -51,3 +41,21 @@ Zum Ausprobieren der Enterprise Mobility + Security E5 Funktionen kann folgende 
 Außerdem ist es möglich Microsoft Teams Trial Lizenzen von Microsoft Partnern oder direkt vom Microsoft Support zu erhalten:
 
 - Microsoft Teams Commercial Cloud Trial (6 Monate Zeitraum, maximal 1.000 User)
+
+## YouTube Video - Demo-Tenant anlegen
+
+In diesem [YouTube Video](https://www.youtube.com/watch?v=gCS2RkGWNjA){:target="_blank" rel="noopener noreferrer"} zeige ich, wie ein Demo-Tenant mit Trial-Lizenzen angelegt werden kann. Außerdem wird gezeigt, wie die Trial-Lizenz noch einmal um 30 Tage verlängert werden kann.
+
+[![Microsoft 365 Demo-Tenant anlegen! (YouTube)](/img/2020/2020-07-28_yt_M365_ausprobieren.png "Microsoft 365 Demo-Tenant anlegen! (YouTube)")](https://www.youtube.com/watch?v=gCS2RkGWNjA){:target="_blank" rel="noopener noreferrer"}
+
+## Trial Lizenz zu bestehendem Tenant hinzufügen
+
+Um eine Trial Lizenz zu einem bestehenden Tenant hinzuzufügen, können die gleichen Links verwendet werden.
+
+### Schritt 1: "Yes, add it to my account" anklicken
+
+![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (1)](/img/2020/2020-07-28_IntuneTrial_1.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (1)")
+
+### Schritt 2: Bestätigen per Klick auf "Try now"
+
+![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)](/img/2020/2020-07-28_IntuneTrial_2.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)")
