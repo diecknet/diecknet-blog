@@ -16,6 +16,7 @@ Get-Item beispiel.txt | Get-Member *time*
 [Dateidatums-Attribute anzeigen](/img/2020/2020-09-08_DateAttributes.png "Dateidatums-Attribute anzeigen")
 
 Interessant sind hier die Attribute:
+
 - CreationTime (Wann die Datei erstellt wurde)
 - LastAccessTime (Wann das letzte Mal auf die Datei zugegriffen wurde)
 - LastWriteTime (Wann die Datei zuletzt geändert wurde)
@@ -34,7 +35,7 @@ Ich generiere das Datum am liebsten mit folgendem Format: {% ihighlight powershe
 
 #### Abkürzungen und Aliase
 
-Mit {% ihighlight powershell %}gci{% endihighlight %} (Abkürzung/Alias für {% ihighlight powershell %}Get-ChildItem{% endihighlight %}) lesen wir alle Elemente (Ordner und Dateien) im aktuellen Ordner aus. 
+Mit {% ihighlight powershell %}gci{% endihighlight %} (Abkürzung/Alias für {% ihighlight powershell %}Get-ChildItem{% endihighlight %}) lesen wir alle Elemente (Ordner und Dateien) im aktuellen Ordner aus.
 Mit {% ihighlight powershell %}%{% endihighlight %} (Alias für {% ihighlight powershell %}ForEach-Object{% endihighlight %}) gehen wir durch alle Elemente eingegebenen Elemente durch.
 
 ### Erstelldatum ändern
