@@ -13,7 +13,7 @@ Per {% ihighlight powershell %}Get-Member{% endihighlight %} kann man sich die Z
 Get-Item beispiel.txt | Get-Member *time*
 {% endhighlight %}
 
-[Dateidatums-Attribute anzeigen](/img/2020/2020-09-08_DateAttributes.png "Dateidatums-Attribute anzeigen")
+![Dateidatums-Attribute anzeigen](/img/2020/2020-09-08_DateAttributes.png "Dateidatums-Attribute anzeigen")
 
 Interessant sind hier die Attribute:
 
