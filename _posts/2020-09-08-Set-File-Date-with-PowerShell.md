@@ -40,7 +40,7 @@ Mit {% ihighlight powershell %}%{% endihighlight %} (Alias für {% ihighlight po
 
 ### Erstelldatum ändern
 
-Beispiele zum Erstelldatum ändern:
+Beispiele zum Erstelldatum ("Erstellt") ändern:
 {% highlight powershell linedivs %}
 # Erstelldatum aller Elemente im aktuellen Ordner auf 1991-11-06 12:03 setzen
 gci | %{$_.CreationTime=(Get-Date "1991-11-06 12:03")}
@@ -51,7 +51,7 @@ Get-Item "Beispiel.txt" | %{$_.CreationTime=(Get-Date "1991-11-06 12:03")}
 
 ### Änderungsdatum ändern
 
-Beispiele zum Änderungsdatum ändern:
+Beispiele zum Änderungsdatum ("Geändert") ändern:
 {% highlight powershell linedivs %}
 # Änderungsdatum aller Elemente im aktuellen Ordner auf 2021-05-01 17:01 setzen
 gci | %{$_.LastWriteTime=Get-Date "2021-05-01 17:01"}
@@ -62,7 +62,7 @@ Get-Item "Beispiel.txt" | %{$_.LastWriteTime=Get-Date "2021-05-01 17:01"}
 
 ### Datum des letzten Zugriffs ändern
 
-Beispiele zum Zugriffszeitpunkt ändern:
+Beispiele zum Zugriffszeitpunkt ("Letzter Zugriff") ändern:
 {% highlight powershell linedivs %}
 # Zugriffsdatum aller Elemente im aktuellen Ordner auf 2019-01-06 08:03 setzen
 gci | %{$_.LastAccessTime=(Get-Date "2019-01-06 08:03")}
