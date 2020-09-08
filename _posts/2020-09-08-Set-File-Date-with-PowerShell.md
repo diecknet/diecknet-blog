@@ -31,7 +31,7 @@ Im Folgenden zeige ich ein paar Beispiele, wie das Änderungsdatum, der Zeitpunk
 
 #### Datum generieren
 
-Ich generiere das Datum am liebsten mit folgendem Format: {% ihighlight powershell %}2020-09-13T13:37:37{% endihighlight %} (siehe auch [ISO 8601](https://de.wikipedia.org/wiki/ISO_8601#:~:text=Das%20%C3%BCblichste%20Zeitformat%20der%20Norm,%2D14T23%3A34%3A30.){:target="_blank" rel="noopener noreferrer"}), alternativ vereinfacht auf {% ihighlight powershell %}2020-09-13 13:37{% endihighlight %}.
+Ich generiere das Datum am liebsten im folgendem Format: {% ihighlight powershell %}2020-09-13T13:37:37{% endihighlight %} (siehe auch [ISO 8601](https://de.wikipedia.org/wiki/ISO_8601#:~:text=Das%20%C3%BCblichste%20Zeitformat%20der%20Norm,%2D14T23%3A34%3A30.){:target="_blank" rel="noopener noreferrer"}), alternativ vereinfacht auf {% ihighlight powershell %}2020-09-13 13:37{% endihighlight %}. Dieses standardisierte Format funktioniert unabhängig von OS-Lokalisierungen.
 
 #### Abkürzungen und Aliase
 
