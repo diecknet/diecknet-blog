@@ -6,7 +6,7 @@ tags: [powershell, filesystem, windowsserver, powershellsnips]
 image: "/img/2020/2020-09-08_FileDate.png"
 ---
 ![Dateidatum kann beliebig geändert werden](/img/2020/2020-09-08_FileDate.png "Dateidatum kann beliebig geändert werden")<br /><br />
-Das Datum einer Datei kann beliebig gesetzt per PowerShell werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.
+Das Datum einer Datei kann beliebig per PowerShell gesetzt beziehungsweise manipuliert werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.
 
 Per {% ihighlight powershell %}Get-Member{% endihighlight %} kann man sich die Zeit-Attribute einer Datei anzeigen lassen.
 {% highlight powershell linedivs %}
@@ -70,3 +70,7 @@ gci | %{$_.LastAccessTime=(Get-Date "2019-01-06 08:03")}
 # Zugriffsdatum eines bestimmten Elements im aktuellen Ordner auf 2019-01-06 08:03 setzen
 Get-Item "Beispiel.txt" | %{$_.LastAccessTime=(Get-Date "2019-01-06 08:03")}
 {% endhighlight %}
+
+## Fazit
+
+Da die Zeit-Attribute von Dateien beliebig manipuliert werden können, sollte ihnen nicht getraut werden. Sie können bestenfalls als Anhaltspunkt für eine Aktion in einem System genutzt werden. Ein Beweis sind sie jedoch definitiv nicht.
