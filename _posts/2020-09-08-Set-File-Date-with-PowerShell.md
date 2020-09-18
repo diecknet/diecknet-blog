@@ -3,7 +3,7 @@ layout: post
 title: "Dateidatum per PowerShell setzen"
 subtitle: "Zeitreisen per PowerShell?"
 lang: de
-tags: [powershell, filesystem, windowsserver, powershellsnips]
+tags: [powershell, ntfs, windowsserver, powershellsnips]
 image: "/img/2020/2020-09-08_FileDate.png"
 ---
 ![Dateidatum kann beliebig geändert werden](/img/2020/2020-09-08_FileDate.png "Dateidatum kann beliebig geändert werden")<br /><br />
