@@ -28,6 +28,18 @@ layout: default
           </p>
         {% endif %}
       </div>
+      <div class="w3-container"> <!-- comment container -->
+        {% assign comments = site.data.comments[page.slug] | sort | where_exp: "comment", "comment[1].replying_to == blank" %}
+        {% for comment in comments %}
+          {% assign avatar      = comment[1].avatar %}
+          {% assign email       = comment[1].email %}
+          {% assign name        = comment[1].name %}
+          {% assign url         = comment[1].url %}
+          {% assign date        = comment[1].date %}
+          {% assign message     = comment[1].message %}
+          {% include comment.html avatar=avatar email=email name=name url=url date=date message=message %}
+        {% endfor %}
+      </div> <!-- end of comment container -->
     </div>
   </div> <!-- END blog entry -->
 <!-- END Layout: post -->
