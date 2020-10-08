@@ -35,10 +35,7 @@ layout: default
             <!-- Start static comments -->
             <div id="comments" class="js-comments">
               <h2 class="page__section-label">
-                {% if site.data.comments[page.slug].size > 1 %}
-                  {{ site.data.comments[page.slug] | size }}
-                {% endif %}
-                Comments
+                {{ site.data.comments[page.slug] | size }} Comments
               </h2>
               {% assign comments = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1].replying_to == blank' %}
               {% for comment in comments %}
