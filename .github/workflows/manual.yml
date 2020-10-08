@@ -36,3 +36,5 @@ jobs:
         ftp-username: ${{ secrets.FTP_USER }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         known-hosts: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDR4blOF2K2g5u2sbKI4DeSpaciCIb0Pk0KFWQA+pcKI3oJNfTv4R17c1/2UfGiIcl2wEyBbQCvmzQbcdmI3s4DYKvdLs4btFRBubwwJHZUIM+4bBUJWhMW1YRx6s/I5efdNVft/GXTjcV0Hz2zwzFABmwGV8GAMcTJzE+mnkYHZ/YRmrhu7MpjERSzj5aKain69tR7jrJTNsZPKQqQgj4NQod+K7Wb57VYrrkcT6Uq7IcBNCPpjUbfiNpw8+h3U6aAHBaXJ8BWKvoXoYu8rf7EqAd9isRKTvE5udGQJ/7ImIU8OU2i/ZR4rEYbe9T7Ii8oor+qXGpGKrJxY1Y7xPMr
+        local-dir: public
+        git-ftp-args: --insecure
