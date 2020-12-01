@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Microsoft 365 Self Service Purchase Lizenzen"
-subtitle: "Selbstkauf von Lizenzen durch Endanwender für Office 365"
+subtitle: "Selbstkauf von Office 365 Lizenzen durch Endanwender"
 lang: de
 tags: [microsoft365, office365, licensing, selfservice]
 image: "/img/2020/2020-12-01_Selfservicepurchase-YT-Thumbnail.jpg"
