@@ -51,3 +51,6 @@ foreach($product in $products) {
     Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId ($product.ProductID) -Enabled $false
 }
 {% endhighlight %}
+
+## Weiterführende Links
+[FAQ von Microsoft zu dem Thema (docs.microsoft.com)](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide){:target="_blank" rel="noopener noreferrer"}
