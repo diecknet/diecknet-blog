@@ -6,10 +6,14 @@
       {%- for thisdoc in alldocs -%}
         - {{ thisdoc.title }} <br />
       {%- endfor -%}
-      {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
+      {% comment %} 
+      old 
+        {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
+      {% endcomment %}
+      {% assign grouptag =  alldocs | map: 'tags' %}
       grouptag:<br/>
       {%- for thisgrouptag in grouptag -%}
-        - {{ thisgrouptag.title }} <br />
+        - {{ thisgrouptag.tags }} <br />
       {%- endfor -%}
       {% assign font_size_multiplicator = 26 | divided_by:grouptag[0].size %}
       {% assign grouptag =  grouptag | shuffle %}
