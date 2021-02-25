@@ -12,7 +12,7 @@
       {% endcomment %}
       {% assign grouptag = alldocs | map: 'tags' | join: ','  | split: ',' %}
       grouptag:<br/>
-      {%- for thisgrouptag in grouptag.items -%}
+      {%- for thisgrouptag in grouptag -%}
         - {{ thisgrouptag }} <br />
       {%- endfor -%}
       {% assign font_size_multiplicator = 26 | divided_by:grouptag[0].size %}
