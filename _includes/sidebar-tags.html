@@ -10,7 +10,7 @@
       old 
         {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
       {% endcomment %}
-      {% assign grouptag = alldocs | map: 'tags' | join: ','  | split: ',' %}
+      {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
       grouptag:<br/>
       {%- for thisgrouptag in grouptag -%}
         - {{ thisgrouptag }} <br />
