@@ -1,24 +1,24 @@
 ---
 layout: post
 title: "Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren"
-subtitle: "Unseriöse Teams Kamera-Hintergründe unterbinden"
+subtitle: "Unerwünschte Teams Kamera-Hintergründe unterbinden"
 lang: de
-tags: [microsoft365, office365, microsoftteams,powershell]
+tags: [microsoft365, office365, microsoftteams, powershell]
 image: "/img/2021/2021-02-25_TeamsMeetingPolicy_new.png"
 ---
 ![Konfiguration der Teams Global Meeting Policy](/img/2021/2021-02-25_TeamsMeetingPolicy_new.png "Konfiguration der Teams Global Meeting Policy")<br /><br />
-Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Falls ihr in eurem Tenant die Verwendung der Videofilter Hintergründe für Teams-Videokonferenzen einschränken wollt, könnt ihr hierzu eine Besprechungsrichtline konfigurieren.
+Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.
 
 ## Möglichkeiten zur Konfiguration
 
-Folgende Konfigurationsmöglichkeiten bestehen:
+Die Option "VideoFiltersMode" kann zur Zeit nur per PowerShell gesetzt werden - nicht per Teams Admin Center. Folgende Konfigurationsmöglichkeiten bestehen:
 
 |Name der Option |Hintergrund Weichzeichnen |Standard Hintergründe |Eigene Hintergründe |
 |---|---|---|---|
 |**NoFilters**     |❌ Nein |❌ Nein |❌ Nein |
 |**BlurOnly**     |✅ Ja |❌ Nein |❌ Nein |
 |**BlurandDefaultBackgrounds**     |✅ Ja |✅ Ja |❌ Nein |
-|**AllFilters** (Standard)    |✅ Ja |✅ Ja |✅ Ja |
+|**AllFilters** (Standardwert)    |✅ Ja |✅ Ja |✅ Ja |
 
 Standardmäßig ist die Option **AllFilters** für alle Benutzer aktiviert. Bei Bedarf können mehrere Teams Besprechungsrichtlinien verwendet werden, um den Benutzern unterschiedliche Hintergrundoptionen zu erlauben.
 
