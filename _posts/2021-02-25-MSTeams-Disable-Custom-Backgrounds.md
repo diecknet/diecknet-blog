@@ -14,7 +14,7 @@ Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführ
 Folgende Konfigurationsmöglichkeiten bestehen:
 
 |Name der Option |Hintergrund Weichzeichnen |Standard Hintergründe |Eigene Hintergründe |
-|---------|---------|
+|---|---|---|---|
 |**NoFilters**     |❌ Nein |❌ Nein |❌ Nein |
 |**BlurOnly**     |✅ Ja |❌ Nein |❌ Nein |
 |**BlurandDefaultBackgrounds**     |✅ Ja |✅ Ja |❌ Nein |
