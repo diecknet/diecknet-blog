@@ -55,11 +55,9 @@ I have some {% ihighlight HTML %}<h1>some HTML code</h1>{% endihighlight %} in m
 ### Geschweifte Klammern im Code
 
 {% highlight liquid linedivs %}
-&#123;% raw %&#125;
-{% raw %}
+{% raw %}{% {% endraw %}raw{% raw %} %}{% endraw %}
 somecode...
-{% endraw %}
-&#123;% endraw %&#125;
+{% raw %}{% {% endraw %}endraw{% raw %} %}{% endraw %}
 {% endhighlight %}
 
 ## Useful Links
