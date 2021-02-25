@@ -2,6 +2,9 @@
     <h4><b>Tags</b></h4>
     <p>
       {% assign alldocs = site.posts %}
+      {%- for thisdoc in alldocs -%}
+        - {{ thisdoc.title }}
+      {%- endfor -%}
       {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
       {% assign font_size_multiplicator = 26 | divided_by:grouptag[0].size %}
       {% assign grouptag =  grouptag | shuffle %}
