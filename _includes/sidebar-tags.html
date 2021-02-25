@@ -13,7 +13,7 @@
       {% assign grouptag =  alldocs | map: 'tags' %}
       grouptag:<br/>
       {%- for thisgrouptag in grouptag -%}
-        - {{ thisgrouptag.tags }} <br />
+        - {{ thisgrouptag }} <br />
       {%- endfor -%}
       {% assign font_size_multiplicator = 26 | divided_by:grouptag[0].size %}
       {% assign grouptag =  grouptag | shuffle %}
