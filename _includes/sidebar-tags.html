@@ -10,10 +10,13 @@
       old 
         {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | sort: 'size' | reverse %}
       {% endcomment %}
-      {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tags %}
+      {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ',' %}
       grouptag:<br/>
       {%- for thisgrouptag in grouptag -%}
-        - {{ thisgrouptag }} <br />
+        - plain: {{ thisgrouptag }} <br />
+        - .tag: {{ thisgrouptag.tag }} <br />
+        - .tags: {{ thisgrouptag.tags }} <br />
+        <br/>
       {%- endfor -%}
       {% assign font_size_multiplicator = 26 | divided_by:grouptag[0].size %}
       {% assign grouptag =  grouptag | shuffle %}
