@@ -13,12 +13,12 @@ Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführ
 
 Folgende Konfigurationsmöglichkeiten bestehen:
 
-|Name der Option |Bedeutung  |
+|Name der Option |Hintergrund Weichzeichnen |Standard Hintergründe |Eigene Hintergründe |
 |---------|---------|
-|**NoFilters**     |Verwendung von Hintergründen ist deaktiviert.|
-|**BlurOnly**     |User kann den Hintergrund weichzeichnen, aber keine Bilder als Hintergrund verwenden. |
-|**BlurandDefaultBackgrounds**     |User kann den Hintergrund weichzeichnen **und** kann die Standard-Bilder als Hintergrund verwenden. |
-|**AllFilters**     |User kann den Hintergrund weichzeichnen **und** kann die Standard-Bilder als Hintergrund verwenden **und** kann eigene Hintergründe einfügen (Standard). |
+|**NoFilters**     |❌ Nein |❌ Nein |❌ Nein |
+|**BlurOnly**     |✅ Ja |❌ Nein |❌ Nein |
+|**BlurandDefaultBackgrounds**     |✅ Ja |✅ Ja |❌ Nein |
+|**AllFilters** (Standard)    |✅ Ja |✅ Ja |✅ Ja |
 
 Standardmäßig ist die Option **AllFilters** für alle Benutzer aktiviert. Bei Bedarf können mehrere Teams Besprechungsrichtlinien verwendet werden, um den Benutzern unterschiedliche Hintergrundoptionen zu erlauben.
 
