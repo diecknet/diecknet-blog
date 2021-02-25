@@ -9,6 +9,19 @@ image: "/img/2021/2021-02-25_TeamsMeetingPolicy_new.png"
 ![Konfiguration der Teams Global Meeting Policy](/img/2021/2021-02-25_TeamsMeetingPolicy_new.png "Konfiguration der Teams Global Meeting Policy")<br /><br />
 Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige *interessante* custom Backgrounds in Meetings gesehen. Falls ihr in eurem Tenant die Verwendung der Videofilter Hintergründe für Teams einschränken wollt, könnt ihr hierzu eine Besprechungsrichtline konfigurieren.
 
+## Möglichkeiten zur Konfiguration
+
+Folgende Konfigurationsmöglichkeiten bestehen:
+
+|Name der Option |Bedeutung  |
+|---------|---------|
+|**NoFilters**     |Verwendung von Hintergründen ist deaktiviert.|
+|**BlurOnly**     |User kann den Hintergrund weichzeichnen, aber keine Bilder als Hintergrund verwenden. |
+|**BlurandDefaultBackgrounds**     |User kann den Hintergrund weichzeichnen **und** kann die Standard-Bilder als Hintergrund verwenden. |
+|**AllFilters**     |User kann den Hintergrund weichzeichnen **und** kann die Standard-Bilder als Hintergrund verwenden **und** kann eigene Hintergründe einfügen (Standard). |
+
+Standardmäßig ist die Option **AllFilters** für alle Benutzer aktiviert. Bei Bedarf können mehrere Teams Besprechungsrichtlinien verwendet werden, um den Benutzern unterschiedliche Hintergrundoptionen zu erlauben.
+
 ## Voraussetzungen
 
 - Administratorrechte für Teams im Tenant
