@@ -54,7 +54,13 @@ I have some {% ihighlight HTML %}<h1>some HTML code</h1>{% endihighlight %} in m
 
 ### Geschweifte Klammern im Code
 
-If you are using a language that contains curly braces, you will likely need to place {% ihighlight yaml %}{% raw %}{&#37; raw &#37;}{% endraw %}{% endihighlight %} and {% ihighlight yaml %}{% raw %}{&#37; endraw &#37;}{% endraw %}{% endihighlight %} tags around your code.
+{% highlight liquid linedivs %}
+&#123;% raw %&#125;
+{% raw %}
+somecode...
+{% endraw %}
+&#123;% endraw %&#125;
+{% endhighlight %}
 
 ## Useful Links
 
