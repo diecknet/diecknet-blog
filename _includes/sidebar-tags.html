@@ -32,7 +32,7 @@
 
       {% assign tags = site.tags | sort %}
       {% for tag in tags %}
-        <a href="/tags/{{ tag | first | slugify }}/"><span class="w3-tag w3-black w3-margin-bottom" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">&nbsp;#{{ tag[0] | replace:'-', ' ' }}&nbsp;({{ tag | last | size }})&nbsp;</span></a> &nbsp;
+        <a href="/tags/{{ tag | first | slugify }}/"><span class="w3-tag w3-black w3-margin-bottom" style="font-size: {{ tag | last | size | times: 4 | plus: 80 | at_least: 90}}%">&nbsp;#{{ tag[0] | replace:'-', ' ' }}&nbsp;({{ tag | last | size }})&nbsp;</span></a>&nbsp;
       {% endfor %}
 
     </p>
