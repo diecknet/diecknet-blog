@@ -89,3 +89,7 @@ tag_dir: tags
 # jekyll-minifier
 jekyll-minifier:
   remove_spaces_inside_tags: true
+
+# disable SCSS source maps (workaround for jekyll 4.x+ polyglot)
+sass:
+  sourcemap: never
