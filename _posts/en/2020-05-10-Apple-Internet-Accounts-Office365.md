@@ -3,7 +3,7 @@ layout: post
 title: "Exchange Online: Apple Internet Accounts - Need admin approval"
 subtitle: Enable iOS Access to Office 365 resources
 lang: en
-tags: [exchange, exchangeonline, iphone, apple, AzureAD, ios, microsoft365, office365]
+tags: [exchange, exchangeonline, iphone, apple, azuread, ios, microsoft365, office365]
 image: "/img/2020/2020-05-07_Apple-Internet-Accounts-de_1.png"
 ---
 ![Need admin approval - Apple Internet Accounts - Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.](/img/2020/2020-05-07_Apple-Internet-Accounts-de_1.png "Need admin approval - Apple Internet Accounts - Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.") <br /><br />
