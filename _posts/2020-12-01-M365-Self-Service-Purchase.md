@@ -10,7 +10,9 @@ Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen f
 
 - Power Apps per user
 - Power Automate per user
+- Power Automate RPA
 - Power BI Pro
+- Power BI Premium (standalone)
 - Project Plan 1
 - Project Plan 3
 - Visio Plan 1
