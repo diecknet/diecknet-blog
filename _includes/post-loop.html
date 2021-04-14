@@ -4,14 +4,12 @@
     <div class="w3-cardx w3-margin w3-white">
       <div class="w3-container">
         {% if include.ipost.image %}
-          <div class="w3-display-container w3-margin-top">
-            <a href="{{ include.ipost.url | relative_url }}">
+          <div class="w3-margin-top">
+            <a href="{{ include.ipost.url | relative_url }}"><h2 class="blog-headline-text w3-padding">{{ include.ipost.title }}</h2>
               <img src="{{ include.ipost.image | relative_url }}" class="w3-image" alt="{{ include.ipost.title }}{% if include.ipost.subtitle %} / {{ include.ipost.subtitle }}{% endif %}" style="max-height:350px;" />
-              <div class="w3-display-topleft w3-container blog-headline-text w3-margin-top"><h2>{{ include.ipost.title }}</h2>
-              </div>
             </a>
+            <h5>{% if include.ipost.subtitle %} {{ include.ipost.subtitle }} &vert; {% endif %}<span class="w3-opacity">{{ include.ipost.date | date: "%Y-%m-%d" }}</span></h5>
           </div>
-          <h5>{% if include.ipost.subtitle %} {{ include.ipost.subtitle }} &vert; {% endif %}<span class="w3-opacity">{{ include.ipost.date | date: "%Y-%m-%d" }}</span></h5>
         {% else %}
           <div class="w3-margin-top">
             <a href="{{ include.ipost.url | relative_url }}"><h2 class="blog-headline-text w3-padding">{{ include.ipost.title }}</h2></a>
