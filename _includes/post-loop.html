@@ -8,7 +8,7 @@
             <a href="{{ include.ipost.url | relative_url }}"><h2 class="blog-headline-text w3-padding">{{ include.ipost.title }}</h2>
             </a>
             <h5>{% if include.ipost.subtitle %} {{ include.ipost.subtitle }} &vert; {% endif %}<span class="w3-opacity">{{ include.ipost.date | date: "%Y-%m-%d" }}</span></h5>
-            <p><a href="{{ include.ipost.url | relative_url }}"></a><img src="{{ include.ipost.image | relative_url }}" class="w3-image" alt="{{ include.ipost.title }}{% if include.ipost.subtitle %} / {{ include.ipost.subtitle }}{% endif %}" style="max-height:350px;" /></a></p>
+            <p><a href="{{ include.ipost.url | relative_url }}"><img src="{{ include.ipost.image | relative_url }}" class="w3-image" alt="{{ include.ipost.title }}{% if include.ipost.subtitle %} / {{ include.ipost.subtitle }}{% endif %}" style="max-height:350px;" /></a></p>
           </div>
         {% else %}
           <div class="w3-margin-top">
