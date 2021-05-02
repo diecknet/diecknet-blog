@@ -3,11 +3,11 @@ layout: post
 title: "My simple serverless journey was not that easy"
 subtitle: "The making of simpleIP.de"
 lang: en
-tags: [simpleip.de, serverless, cloud, vercel, cloudflare, cloudflareworkers, ipaddress]
+tags: [simpleip, serverless, cloud, vercel, cloudflare, cloudflareworkers, ipaddress]
 image: "/img/2021/xyz.png"
 ---
-Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. Serverless doesn't mean "without any servers" - you just don't need to worry about them. That's not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there.
-Nowadays Serverless usually means some kind of modern architecture that allows you to run your application code. The difference is **scaling**. The cloud provider handles the logic to run your serverless functions as it's needed. When your application is not used, then the execution is stopped and no computing resources are consumed.
+Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. But Serverless doesn't mean "without any servers" - you just don't need to worry about them. That's not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there.
+Nowadays Serverless usually means some kind of modern architecture that allows you to run your application code. The difference is **scaling**. The cloud provider handles the logic to run your serverless functions as it's needed. When your application is not used, the execution is stopped and no computing resources are consumed.
 
 ## My serverless use case
 
@@ -218,3 +218,7 @@ class ElementHandler {
     }
 }  
 {% endhighlight %}
+
+## Conclusion
+
+Well, the [site](https://simpleip.de){:target="_blank" rel="noopener noreferrer"} is up and running. The source code is [available on Github](https://github.com/diecknet/simple-ip-site){:target="_blank" rel="noopener noreferrer"}, feel free to check the whole thing out. I'm 100% sure: It would've been way easier to just use a classic shared webspace and some PHP code. But this whole process was not just about the result. It was also really interesting to check out Serverless applications and different providers.
