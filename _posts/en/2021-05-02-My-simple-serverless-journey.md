@@ -4,8 +4,9 @@ title: "My simple serverless journey was not that easy"
 subtitle: "The making of simpleIP.de"
 lang: en
 tags: [simpleip, serverless, cloud, vercel, cloudflare, cloudflareworkers, ipaddress]
-image: "/img/2021/xyz.png"
+image: "/img/2021/2021-05-02_SimpleIP.jpg"
 ---
+![Screenshot of simpleIP.de](/img/2021//img/2021/2021-05-02_SimpleIP.jpg "Screenshot of simpleIP.de")<br /><br />
 Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. But Serverless doesn't mean "without any servers" - you just don't need to worry about them. That's not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there.
 Nowadays Serverless usually means some kind of modern architecture that allows you to run your application code. The difference is **scaling**. The cloud provider handles the logic to run your serverless functions as it's needed. When your application is not used, the execution is stopped and no computing resources are consumed.
 
