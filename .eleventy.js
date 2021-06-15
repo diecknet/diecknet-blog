@@ -1,6 +1,7 @@
 const { format, formatISO, getYear } = require("date-fns");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginToc = require("eleventy-plugin-toc");
+const i18n = require("eleventy-plugin-i18n");
 const { MD5 } = require("crypto-js");
 const { URL } = require("url");
 const { readFileSync } = require("fs");
@@ -31,6 +32,20 @@ module.exports = function (eleventyConfig) {
     // Add 3rd party plugins
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(pluginToc);
+
+    // multi language
+    eleventyConfig.addPlugin(i18n, {
+        translations: {
+            hello: {
+                'en': 'Hello',
+                'de': 'Hallo'
+            }
+        },
+        fallbackLocales: {
+            'en': 'de',
+            'de': 'en'
+        }
+    });
 
     // Define 11ty template formats
     eleventyConfig.setTemplateFormats([
