@@ -1,9 +1,8 @@
 ---
 title: "Microsoft 365 Self Service Purchase Lizenzen"
 subtitle: "Selbstkauf von Office 365 Lizenzen durch Endanwender"
-lang: de
-tags: [microsoft365, office365, licensing, selfservice]
-image: "/img/2020/2020-12-01_Selfservicepurchase-YT-Thumbnail.jpg"
+date: 2020-12-01
+contenttags: [microsoft365, office365, licensing, selfservice]
 ---
 Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:
 
@@ -21,7 +20,7 @@ Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen f
 
 Ich habe den Lizenzkauf als Anwender ausprobiert und dokumentiert. Die Funktionsweise eines Selbstkaufs von Lizenzen und eine Entscheidungshilfe, ob die Funktion im eigenen Unternehmen deaktiviert werden sollte zeige ich in folgendem Video:
 
-[![Microsoft 365 Self Service Purchase Lizenzen (YouTube)](/img/2020/2020-12-01_Selfservicepurchase-YT-Thumbnail.jpg "Microsoft 365 Self Service Purchase Lizenzen (YouTube)")](https://www.youtube.com/watch?v=zrsAle3-y7E){:target="_blank" rel="noopener noreferrer"}
+[![Microsoft 365 Self Service Purchase Lizenzen (YouTube)](/assets/images/2020/2020-12-01_Selfservicepurchase-YT-Thumbnail.jpg "Microsoft 365 Self Service Purchase Lizenzen (YouTube)")](https://www.youtube.com/watch?v=zrsAle3-y7E)
 
 ## Pro und Contra Selbstkauf
 
@@ -41,7 +40,7 @@ Gegen einen Selbstkauf von Lizenzen spricht:
 
 ## Self Purchase Lizenzen deaktivieren
 
-Mit folgendem PowerShell Code können alle Self Service Purchase Lizenzen deaktiviert werden. Falls ihr erstmal prüfen wollt, wie die aktuelle Konfiguration ist, könnt ihr anstelle der ``` powershell foreach```-Schleife (in den letzten 3 Zeilen) auch einfach nur ``` powershell $products``` ausführen.
+Mit folgendem PowerShell Code können alle Self Service Purchase Lizenzen deaktiviert werden. Falls ihr erstmal prüfen wollt, wie die aktuelle Konfiguration ist, könnt ihr anstelle der `foreach`-Schleife (in den letzten 3 Zeilen) auch einfach nur `$products` ausführen.
 
 ``` powershell
 Install-Module -Name MSCommerce
@@ -54,4 +53,5 @@ foreach($product in $products) {
 ```
 
 ## Weiterführende Links
-[FAQ von Microsoft zu dem Thema (docs.microsoft.com)](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide){:target="_blank" rel="noopener noreferrer"}
+
+[FAQ von Microsoft zu dem Thema (docs.microsoft.com)](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
