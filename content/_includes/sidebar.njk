@@ -7,8 +7,11 @@
             <a href="/" class="mx-auto">{{ siteconfig.title }}</a>
         </div>
         <div class="text-center text-sm pt-3 text-gray-400">
-            {{ siteconfig.description }}
+            {{ siteconfig.description }} <br>
+            <br>
+            {% include 'language-selector.njk' %}
         </div>
+        
     </div>
     <div class="menu">
         <ul class="list-none pl-0">
