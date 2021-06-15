@@ -1,12 +1,14 @@
-This reposity contains the source code of my blog, hosted live on https://diecknet.de
+# About this repo
+
+This reposity contains the source code of my blog, hosted live on [diecknet.de](https://diecknet.de). It uses eleventy as a static site generator.
 
 ## License
 
 All parts of the code that I created in this repository is licensed under the [MIT License](LICENSE.md).
 
-### Third Party Licenses
+## Third Party Licenses
 
-#### eleventy
+### eleventy
 
 This project uses [11ty/eleventy](https://github.com/11ty/eleventy) as a static site generator, which is licensed by Zach Leatherman @zachleat under the MIT license.
 
@@ -20,7 +22,7 @@ This project uses [11ty/eleventy](https://github.com/11ty/eleventy) as a static 
 > to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 > copies of the Software, and to permit persons to whom the Software is
 > furnished to do so, subject to the following conditions:
-> 
+>  
 > The above copyright notice and this permission notice shall be included in all
 > copies or substantial portions of the Software.
 >
@@ -32,13 +34,13 @@ This project uses [11ty/eleventy](https://github.com/11ty/eleventy) as a static 
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 > SOFTWARE.
 
-#### eleventy-chirpy-blog-template
+### eleventy-chirpy-blog-template
 
 This project also uses [eleventy-chirpy-blog-template](https://github.com/muenzpraeger/eleventy-chirpy-blog-template) as a base-theme of the site. eleventy-chirpy-blog-template is made by René Winkelmeyer and is licensed under the MIT license.
 
 > MIT License
 >
-> Copyright (c) 2021 René Winkelmeyer
+> Copyright (c) 2021 René Winkelmeyer and others
 >
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
@@ -46,7 +48,7 @@ This project also uses [eleventy-chirpy-blog-template](https://github.com/muenzp
 > to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 > copies of the Software, and to permit persons to whom the Software is
 > furnished to do so, subject to the following conditions:
-> 
+>  
 > The above copyright notice and this permission notice shall be included in all
 > copies or substantial portions of the Software.
 >
