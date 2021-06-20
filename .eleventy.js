@@ -104,10 +104,12 @@ module.exports = function (eleventyConfig) {
         return wordcount.toLocaleString("en");
     });
 
-    // Returns CSS class for home page link
+    // Returns CSS class for home page link / posts page link
     eleventyConfig.addNunjucksFilter("isHomeLink", function (url, pattern) {
         return (pattern === "/" && url === "/") ||
-            (pattern === "/" && url.startsWith("/posts"))
+            (pattern === "/" && url.startsWith("/posts")) ||
+            (pattern === "/" && url.startsWith("/de/2")) ||
+            (pattern === "/" && url.startsWith("/en/2"))
             ? "active"
             : "";
     });

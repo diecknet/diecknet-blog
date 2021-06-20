@@ -29,7 +29,7 @@ layout: base.njk
 	    					s-21.92-9.833-21.92-21.92V95.903H165.864v23.943c0,12.087-9.833,21.92-21.92,21.92s-21.92-9.833-21.92-21.92V95.903H62.687
 	    					c-8.161,0-14.8,6.639-14.8,14.8V164.059z" />
         	</svg>
-        	{{ date | readableDate }}
+        	{{ date | sitemapdate }}
 		</div>
 		<div class="flex readingtime" data-words="{{ content | striptags | wordcount | formatWords }} words">
         	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472.615 472.615" class="h-5 w-8 mr-2 ml-12">
