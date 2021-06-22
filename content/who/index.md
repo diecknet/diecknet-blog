@@ -3,5 +3,7 @@ eleventyExcludeFromCollections: true
 layout: page.njk
 title: Who
 ---
+## Hey there! 👋
 
-And here you can write about yourself. Or just change in the `sidebar.njk` the label and write something different.
+I'm Andreas from Hamburg, Germany. I like technology, IT, cloud and coding. Also nature, forests, lakes and video games.
+I'll hopefully update this `Who`-page soon 😅

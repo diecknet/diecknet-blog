@@ -11,14 +11,21 @@ meta:
   robots:
     value: noindex
 ---
+{% if content %}
+<div class="content page pt-4">
+    {{ content | safe }}
+</div>
+{% endif %}
 <div class="postlist pb-8 mt-8 font-light dark:font-extralight">
     {% for post in posts %}
     <div>
-    	<div class="pb-4 pt-4">
+    	<div class="pb-2 pt-4">
 			<a class="text-indigo-900 dark:text-indigo-300 text-xl dark:font-light font-normal postlistheading" href="{{ post.url | url }}">{{ post.data.title }}</a>
 		</div>
-      	<div class="pb-4 text-gray-900 dark:text-gray-400">{% excerpt post %}</div>
-      	<div class="pb-6 text-sm text-gray-500 dark:text-gray-400 border-b-1 border-gray-800 dark:border-gray-700 border-opacity-20 flex">
+		{% if post.data.subtitle %}
+			<div class="pb-4 text-gray-900 dark:text-gray-400 italic">{{ post.data.subtitle }}</div>
+		{% endif %}    	
+      	<div class="pb-6 text-sm text-gray-500 dark:text-gray-400 flex">
 			<div class="flex">
         		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600.112 600.111" class="h-5 w-4 mr-2">
 	        		<path d="M537.423,52.563h-59.836V21.92c0-11.83-9.591-21.42-21.42-21.42c-11.83,0-21.42,9.59-21.42,21.42v30.642H165.364V21.92
@@ -58,9 +65,13 @@ meta:
         						c0-42.077,34.231-76.308,76.298-76.308c42.077,0,76.308,34.231,76.308,76.308C432.644,278.38,398.413,312.611,356.337,312.611z" />
         		</svg>
         		{{ post.templateContent | striptags | wordcount | readingTime }}
-				<span></span>
 			</div>
       	</div>
+		{% if post.data.image %}
+			<div class="pb-4 text-gray-900 dark:text-gray-400 italic"><img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" /></div>
+		{% endif %}
+		<div class="pb-4 text-gray-900 dark:text-gray-400">{% excerpt post %}</div>
+		<hr class="border-gray-800 dark:border-gray-700 border-opacity-20 border-b-1 flex" />
     </div>
     {% endfor %}
 </div>

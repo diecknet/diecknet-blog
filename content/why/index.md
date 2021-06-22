@@ -1,7 +1,12 @@
 ---
 eleventyExcludeFromCollections: true
-layout: page.njk
+layout: home.njk
 title: Why
+pagination:
+  data: collections.why
+  size: 10
+  alias: posts
+  reverse: true
 ---
 
-You can put your own page here.
+The posts that you'll find here describe my motivation for this blog. The **WHY**.
