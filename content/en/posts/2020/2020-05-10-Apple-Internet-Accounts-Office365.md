@@ -3,10 +3,22 @@ layout: post
 title: "Exchange Online: Apple Internet Accounts - Need admin approval"
 subtitle: Enable iOS Access to Office 365 resources
 date: 2020-05-10
-contenttags: [exchange, exchangeonline, iphone, apple, azuread, ios, microsoft365, office365]
+contenttags:
+    [
+        exchange,
+        exchangeonline,
+        iphone,
+        apple,
+        azuread,
+        ios,
+        microsoft365,
+        office365
+    ]
 image: /assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
 ---
+
 When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:
+
 > **Need admin approval**
 > Apple Internet Accounts
 > Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
@@ -39,7 +51,7 @@ First of all you have to find out the Tenant ID of the Azure AD Tenant. You'll f
 
 The placeholder `<TenantID>` has to get replaced with the actual TenantID from Step 1 in the following URL. The generated URL can then be accessed with Tenant Admin (Global Administrator) rights. The `client_id` in the URL is the ID of Apple Internet Accounts.
 
-``` plaintext
+```plaintext
 <https://login.microsoftonline.com/><TenantID>/oauth2/authorize?client_id=f8d98a96-0999-43f5-8af3-69971c7bb423&response_type=code&redirect_uri=<https://example.com&prompt=admin_consent>
 
 ```
@@ -48,7 +60,7 @@ The placeholder `<TenantID>` has to get replaced with the actual TenantID from S
 
 The query "Permission requested - Accept for your organization - Apple Internet Accounts" must be confirmed with "Accept".
 
-![Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_2.png "Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts")  
+![Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_2.png "Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts")
 
 Afterwards an error is displayed, because the redirect URL points to `https://example.com`. The error AADSTS900561 may be ignored in this case.
 
@@ -89,7 +101,7 @@ Alternatively the Administrator can review the list of open requests in Azure AD
 
 ![List of Enterprise Application - Admin consent requests](/assets/images/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "List of Enterprise Application - Admin consent requests")
 
-Details like Name, Homepage URL, used Reply URLs can get reviewed. Under "Requested by" it lists the requesting user. The Administrator can review the permissions and approve the request ("Review permissions and consent") or "Deny" it. If the application should get blocked permanently, you can select "Block" - no further requests for this app are possible then.  
+Details like Name, Homepage URL, used Reply URLs can get reviewed. Under "Requested by" it lists the requesting user. The Administrator can review the permissions and approve the request ("Review permissions and consent") or "Deny" it. If the application should get blocked permanently, you can select "Block" - no further requests for this app are possible then.
 
 ![Retrieve details to the Enterprise Application Admin consent request](/assets/images/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Retrieve details to the Enterprise Application Admin consent request")
 
@@ -109,5 +121,5 @@ If an app has already been allowed, it can be deactivated again if required. To 
 
 ## Related Links
 
-- [Documentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management)
-- [Article: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources)
+-   [Documentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management)
+-   [Article: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources)

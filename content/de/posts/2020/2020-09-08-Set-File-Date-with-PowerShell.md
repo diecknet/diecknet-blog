@@ -5,11 +5,12 @@ date: 2020-09-08
 contenttags: [powershell, ntfs, windowsserver, powershellsnips]
 image: /assets/images/2020/2020-09-08_FileDate.png
 ---
+
 Das Datum einer Datei kann beliebig per PowerShell gesetzt beziehungsweise manipuliert werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.
 
 Per `Get-Member` kann man sich die Zeit-Attribute einer Datei anzeigen lassen.
 
-``` powershell
+```powershell
 Get-Item beispiel.txt | Get-Member *time*
 ```
 
@@ -17,9 +18,9 @@ Get-Item beispiel.txt | Get-Member *time*
 
 Interessant sind hier die Attribute:
 
-- CreationTime (Wann die Datei erstellt wurde)
-- LastAccessTime (Wann das letzte Mal auf die Datei zugegriffen wurde)
-- LastWriteTime (Wann die Datei zuletzt geändert wurde)
+-   CreationTime (Wann die Datei erstellt wurde)
+-   LastAccessTime (Wann das letzte Mal auf die Datei zugegriffen wurde)
+-   LastWriteTime (Wann die Datei zuletzt geändert wurde)
 
 Wie hinten am `{get;set;}` zu erkennen ist, kann man die Attribute auch nicht nur auslesen, sondern auch setzen.
 
@@ -42,7 +43,7 @@ Mit `%` (Alias für `ForEach-Object`) gehen wir durch alle Elemente eingegebenen
 
 Beispiele zum Erstelldatum ("Erstellt") ändern:
 
-``` powershell
+```powershell
 # Erstelldatum aller Elemente im aktuellen Ordner auf 1991-11-06 12:03 setzen
 gci | %{$_.CreationTime=(Get-Date "1991-11-06 12:03")}
 
@@ -54,7 +55,7 @@ Get-Item "Beispiel.txt" | %{$_.CreationTime=(Get-Date "1991-11-06 12:03")}
 
 Beispiele zum Änderungsdatum ("Geändert") ändern:
 
-``` powershell
+```powershell
 # Änderungsdatum aller Elemente im aktuellen Ordner auf 2021-05-01 17:01 setzen
 gci | %{$_.LastWriteTime=Get-Date "2021-05-01 17:01"}
 
@@ -66,7 +67,7 @@ Get-Item "Beispiel.txt" | %{$_.LastWriteTime=Get-Date "2021-05-01 17:01"}
 
 Beispiele zum Zugriffszeitpunkt ("Letzter Zugriff") ändern:
 
-``` powershell
+```powershell
 # Zugriffsdatum aller Elemente im aktuellen Ordner auf 2019-01-06 08:03 setzen
 gci | %{$_.LastAccessTime=(Get-Date "2019-01-06 08:03")}
 

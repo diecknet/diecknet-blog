@@ -1,5 +1,5 @@
 {
     "layout": "post.njk",
-    "tags": ["posts","posts-en"],
+    "tags": ["posts", "posts-en"],
     "permalink": "/{{ lang }}/{{ page.date | date: '%Y/%m/%d' }}/{{ page.fileSlug }}/"
 }

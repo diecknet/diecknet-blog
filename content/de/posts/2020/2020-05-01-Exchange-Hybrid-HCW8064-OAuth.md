@@ -5,25 +5,27 @@ contenttags: [exchange, exchange2013, exchangehybrid, oauth, office365]
 image: /assets/images/2020/2020-04-28-HCW8064-01.png
 date: 2020-05-01
 ---
+
 Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:
+
 > HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.
 
 Der Link "**Weitere Informationen**" verweist auf [https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you](https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you). Wenn man schaut, wofür OAuth verwendet, wird [dieser Artikel](https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN) referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird. Da diese erwähnten Funktionen in dem Projekt nicht relevant waren, habe ich das erstmal ignoriert. Eine erneute Ausführung des HCW hat übrigens auch kein OAuth einrichten können.
 
-OAuth *kann* allerdings auch für die Authentifizierung für den Cross-Premise Austausch von Free/Busy Informationen genutzt werden. Der verlinkte [OAuth-Artikel](https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN) erwähnt allerdings **ausschließlich** eDiscovery -  das ist auch die Sektion der Dokumentation in der sich der Artikel befindet. Weitere OAuth-Szenarien werden hier nicht erläutert. Im [Artikel zur Konfiguration von OAuth für Exchange Hybrid](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) wird Free/Busy auch nicht erwähnt.
+OAuth _kann_ allerdings auch für die Authentifizierung für den Cross-Premise Austausch von Free/Busy Informationen genutzt werden. Der verlinkte [OAuth-Artikel](https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN) erwähnt allerdings **ausschließlich** eDiscovery - das ist auch die Sektion der Dokumentation in der sich der Artikel befindet. Weitere OAuth-Szenarien werden hier nicht erläutert. Im [Artikel zur Konfiguration von OAuth für Exchange Hybrid](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) wird Free/Busy auch nicht erwähnt.
 
 ## Kein Free/Busy möglich
 
 Nachdem die ersten Test-User zu Exchange Online migriert wurden, hat sich gezeigt, dass der Cross-Premise Abruf von Free/Busy Informationen nicht funktioniert. Zur Erläuterung von Hybrid Free/Busy gibt es hier zwei sehr gute Artikel im Exchange Team Blog:
 
-- [Demystifying Hybrid Free/Busy: what are the moving parts?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-what-are-the-moving-parts/ba-p/607704)
-- [Demystifying Hybrid Free/Busy: Finding errors and troubleshooting](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-finding-errors-and-troubleshooting/ba-p/607727)
+-   [Demystifying Hybrid Free/Busy: what are the moving parts?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-what-are-the-moving-parts/ba-p/607704)
+-   [Demystifying Hybrid Free/Busy: Finding errors and troubleshooting](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-finding-errors-and-troubleshooting/ba-p/607727)
 
 ## Intra-Organization Connector (IOC)
 
 Sowohl On-Premise als auch in Exchange Online kann geprüft werden, ob ein **Intra-Organization Connector** (für Hybrid OAuth notwendig) verwendet wird. Da die Konfiguration per HCW fehlgeschlagen ist, sollte keine funktionierende IOC Konfiguration hinterlegt sein.
 
-``` powershell
+```powershell
 Get-IntraOrganizationConnector | fl
 ```
 
@@ -34,7 +36,7 @@ Das Attribut "Enabled" steht auf "False", demnach wird kein OAuth verwendet. Als
 
 Als nächstes sollte geprüft werden, ob ein Organization Relationship vorhanden ist.
 
-``` powershell
+```powershell
 Get-OrganizationRelationship | fl
 ```
 
@@ -51,7 +53,7 @@ Die relevanten Informationen die ich dort finden konnte:
 
 > Error 0x80048800  
 > wst:FailedAuthentication  
-> AADSTS901124: Application 'fydibohf25spdlt.example.com' does not exist.  
+> AADSTS901124: Application 'fydibohf25spdlt.example.com' does not exist.
 
 Die Details zum Free/Busy Troubleshooting sind auch im [Exchange Team Blog: Demystifying Hybrid Free/Busy: Finding errors and troubleshooting](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-finding-errors-and-troubleshooting/ba-p/607727) zu finden. Da die nicht existente Application und der Code "AADSTS901124" anscheinend kein Standard-Szenario ist, wollte ich eigentlich schon ein Ticket bei Microsoft eröffnen. Da aber OAuth ohnehin die moderne und empfohlene Authentifizierungsmethode ist, kann man aber auch ersteinmal dafür Troubleshooting betreiben.
 
@@ -63,18 +65,18 @@ Grundsätzlich wird die manuelle Einrichtung von OAuth im Artikel [Configure OAu
 
 Im Abschnitt ["Step 3: Export the on-premises authorization certificate"](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-3-export-the-on-premises-authorization-certificate) wird beschrieben, wie das **Microsoft Exchange Server Auth Certificate** exportiert werden kann. Im nächsten Schritt würde es dann in Exchange Online importiert werden. Da das Exchange 2013 System beim Kunden bereits seit über 5 Jahren im Betrieb ist, wurde das Zertifikat bereits einmal ausgetauscht. Da Hybrid und OAuth hier noch nie verwendet wurden, wurde das neue Zertifikat auch nie für die Authentifizierung hinterlegt.
 
-Auf [msxfaq.de gibt es einen guten Artikel zu Exchange OAuth](https://www.msxfaq.de/exchange/e2013/exchange_oauth.htm). Dort wird unter anderem beschrieben, wie per ```powershell Set-AuthConfig``` das neue Zertifikat hinterlegt werden kann:
+Auf [msxfaq.de gibt es einen guten Artikel zu Exchange OAuth](https://www.msxfaq.de/exchange/e2013/exchange_oauth.htm). Dort wird unter anderem beschrieben, wie per `powershell Set-AuthConfig` das neue Zertifikat hinterlegt werden kann:
 
-``` powershell
+```powershell
 Set-AuthConfig -NewCertificateThumbprint <myCertThumbprint> -NewCertificateEffectiveDate (Get-Date)
 Set-AuthConfig -PublishCertificate
 ```
 
-Anschließend ist noch ein ```powershell iisreset``` notwendig.
+Anschließend ist noch ein `powershell iisreset` notwendig.
 
 ### Intra-Organization Connector konfigurieren
 
-Anschließend konnte ich der Dokumentation entsprechend weiter verfahren ([Step 3, 4 und 5](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-3-export-the-on-premises-authorization-certificate)). [Step 6 und 7](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-6-create-an-intraorganizationconnector-from-your-on-premises-organization-to-office-365) waren nicht mehr zutreffend. Die IOC mussten nicht mehr angelegt werden, sondern mussten nur noch per ```powershell Get-IntraOrganizationConnector | Set-IntraOrganizationConnector -Enabled $true``` aktiviert werden. Step 8 spielte keine Rolle, da keine pre-Exchange 2013 SP1 Server in der Umgebung vorhanden waren.
+Anschließend konnte ich der Dokumentation entsprechend weiter verfahren ([Step 3, 4 und 5](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-3-export-the-on-premises-authorization-certificate)). [Step 6 und 7](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-6-create-an-intraorganizationconnector-from-your-on-premises-organization-to-office-365) waren nicht mehr zutreffend. Die IOC mussten nicht mehr angelegt werden, sondern mussten nur noch per `powershell Get-IntraOrganizationConnector | Set-IntraOrganizationConnector -Enabled $true` aktiviert werden. Step 8 spielte keine Rolle, da keine pre-Exchange 2013 SP1 Server in der Umgebung vorhanden waren.
 
 ## Tests
 
@@ -84,13 +86,13 @@ Anschließend konnte ich folgende Tests erfolgreich durchführen:
 
 In On-Premise Exchange Management Shell ausführen:
 
-``` powershell
+```powershell
 Test-OAuthConnectivity -Service EWS -TargetUri https://outlook.office365.com/ews/exchange.asmx -Mailbox <On-Premises Mailbox> -Verbose | Format-List
 ```
 
 In Exchange Online PowerShell ausführen:
 
-``` powershell
+```powershell
 Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of your Exchange On-Premises deployment>/metadata/json/1 -Mailbox <Exchange Online Mailbox> -Verbose | Format-List
 ```
 
@@ -102,7 +104,7 @@ Tatsächlich konnten Cross-Premise die Free/Busy Zeiten abgerufen werden - in be
 
 ## Weiterführende Links
 
-- [Demystifying Hybrid Free/Busy: what are the moving parts? (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-what-are-the-moving-parts/ba-p/607704)
-- [Demystifying Hybrid Free/Busy: Finding errors and troubleshooting (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-finding-errors-and-troubleshooting/ba-p/607727)
-- [Configure OAuth authentication between Exchange and Exchange Online organizations (docs.microsoft.com)](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)
-- [Exchange OAuth Artikel (msxfaq.de)](https://www.msxfaq.de/exchange/e2013/exchange_oauth.htm)
+-   [Demystifying Hybrid Free/Busy: what are the moving parts? (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-what-are-the-moving-parts/ba-p/607704)
+-   [Demystifying Hybrid Free/Busy: Finding errors and troubleshooting (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-finding-errors-and-troubleshooting/ba-p/607727)
+-   [Configure OAuth authentication between Exchange and Exchange Online organizations (docs.microsoft.com)](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)
+-   [Exchange OAuth Artikel (msxfaq.de)](https://www.msxfaq.de/exchange/e2013/exchange_oauth.htm)

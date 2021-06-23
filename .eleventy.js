@@ -37,35 +37,42 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(i18n, {
         translations: {
             hello: {
-                'en': 'Hello',
-                'de': 'Hallo'
+                en: "Hello",
+                de: "Hallo"
             }
         },
         fallbackLocales: {
-            'en': 'de',
-            'de': 'en'
+            en: "de",
+            de: "en"
         }
     });
 
     // custom link liquid filter, from https://github.com/11ty/eleventy/issues/544#issuecomment-496752551
-    eleventyConfig.addLiquidTag("link", function(liquidEngine) {
+    eleventyConfig.addLiquidTag("link", function (liquidEngine) {
         return {
-            parse: function(tagToken, remainTokens) {
+            parse: function (tagToken, remainTokens) {
                 this.path = tagToken.args;
             },
-            render: function(scope, hash) {
-                let isQuoted = this.path.charAt(0) === "'" || this.path.charAt(0) === '"';
-                let path = isQuoted ? liquidEngine.evalValue(this.path, scope) : this.path;
-    
+            render: function (scope, hash) {
+                let isQuoted =
+                    this.path.charAt(0) === "'" || this.path.charAt(0) === '"';
+                let path = isQuoted
+                    ? liquidEngine.evalValue(this.path, scope)
+                    : this.path;
+
                 // This is cheating a little bit because it‘s using the `collections.all` object
                 // Anything not in the `all` collection won’t resolve
-                let results = scope.contexts[0].collections.all.filter(function(tmpl) {
-                    return tmpl.inputPath === path;
-                });
-                if( results.length ) {
+                let results = scope.contexts[0].collections.all.filter(
+                    function (tmpl) {
+                        return tmpl.inputPath === path;
+                    }
+                );
+                if (results.length) {
                     return Promise.resolve(results[0].url);
                 }
-                return Promise.reject(`Template ${path} not found in \`link\` shortcode.`);
+                return Promise.reject(
+                    `Template ${path} not found in \`link\` shortcode.`
+                );
             }
         };
     });

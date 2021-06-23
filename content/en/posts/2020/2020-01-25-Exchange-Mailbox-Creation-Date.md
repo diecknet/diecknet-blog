@@ -6,9 +6,10 @@ date: 2020-01-25
 contenttags: [exchange, powershell, exchange2013]
 image: /assets/images/2020/2020-01-25_MSExchWhenMailboxCreated_PowerShell.png
 ---
+
 If you're wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute `MSExchWhenMailboxCreated`. You can get the value using PowerShell or ADUC with advanced features enabled.
 
-``` powershell
+```powershell
 Get-ADUser -Properties MSExchMaiboxWhenCreated
 ```
 
@@ -16,7 +17,7 @@ Get-ADUser -Properties MSExchMaiboxWhenCreated
 
 ## MSExchWhenMailboxCreated contains not the full truth
 
-That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the *FIRST* time the user gets a mailbox. If that users mailbox was disabled and then recreated later, the timestamp of the first mailbox creation retains.
+That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the _FIRST_ time the user gets a mailbox. If that users mailbox was disabled and then recreated later, the timestamp of the first mailbox creation retains.
 
 ![Checking MSExchWhenMailboxCreated attribute using PowerShell after a mailbox recreation](/assets/images/2020/2020-01-25 MSExchWhenMailboxCreated PowerShell Mailbox recreated.png "Checking MSExchWhenMailboxCreated attribute using PowerShell after a mailbox recreation - The old value remains.")
 
@@ -24,7 +25,7 @@ That could almost be the end of the story. BUT that attribute is not what you mi
 
 If the mailbox creation was done recently, you might find according event log entries on the Exchange Server. If you search the MSExchange Management Event Log for mailbox creations manually (CTRL+F and look for `Enable-Mailbox`) you might find the actual mailbox creation date. The PowerShell way would be:
 
-``` powershell
+```powershell
 Get-EventLog -Source "MSExchange CmdletLogs" -LogName "MSExchange Management" -ComputerName <Servername> -Message "*Enable-Mailbox*test.user*"
 ```
 

@@ -2,13 +2,25 @@
 title: "Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich"
 subtitle: iOS Zugriff auf Office 365 ermöglichen
 date: 2020-05-10
-contenttags: [exchange, exchangeonline, iphone, apple, azuread, ios, microsoft365, office365]
+contenttags:
+    [
+        exchange,
+        exchangeonline,
+        iphone,
+        apple,
+        azuread,
+        ios,
+        microsoft365,
+        office365
+    ]
 image: /assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
 ---
+
 Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:
+
 > **Administratorgenehmigung erforderlich**  
 > Apple Internet Accounts  
-> Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.  
+> Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.
 
 Die App hieß früher übrigens "iOS Accounts" und wurde anscheinend Anfang 2020 umbenannt. Die bisherige AppID ist allerdings gleich geblieben.
 
@@ -38,7 +50,7 @@ Als Erstes muss die Tenant ID des Azure AD Tenants herausgefunden werden. Diese 
 
 Der Platzhalter `<TenantID>` muss in der nachfolgenden URL durch die Tenant ID aus Schritt 1 ersetzt werden. Anschließend kann die erstellte URL mit Tenant Admin (Global Administrator) Rechten aufgerufen werden. Die in der URL enthaltene `client_id` ist die ID von Apple Internet Accounts.
 
-``` plaintext
+```plaintext
 https://login.microsoftonline.com/<TenantID>/oauth2/authorize?client_id=f8d98a96-0999-43f5-8af3-69971c7bb423&response_type=code&redirect_uri=https://example.com&prompt=admin_consent
 ```
 
@@ -106,5 +118,5 @@ Wenn eine App bereits erlaubt ist, kann sie bei Bedarf auch wieder deaktiviert w
 
 ## Weiterführende Links
 
-- [Dokumentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management)
-- [Artikel: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources)
+-   [Dokumentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management)
+-   [Artikel: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources)

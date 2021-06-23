@@ -2,15 +2,17 @@
 layout: post
 title: "Check NTFS Permissions using Powershell"
 date: 2020-05-20
-contenttags: [powershell, accessrights, acl, ntfs, windowsvirtualdesktop, fslogix]
+contenttags:
+    [powershell, accessrights, acl, ntfs, windowsvirtualdesktop, fslogix]
 image: /assets/images/2020/2020-05-20_CheckProfileStoragePermissions.png
 ---
+
 So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.
 
 The correct storage permissions are:
 
 | User Account             | Folder                             | Permissions  |
-|--------------------------|------------------------------------|--------------|
+| ------------------------ | ---------------------------------- | ------------ |
 | Users                    | This Folder Only                   | Modify       |
 | Creator / Owner          | Subfolders and Files Only          | Modify       |
 | Administrator (optional) | This Folder, Subfolders, and Files | Full Control |

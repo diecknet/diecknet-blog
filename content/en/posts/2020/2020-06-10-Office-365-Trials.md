@@ -6,6 +6,7 @@ date: 2020-06-10
 contenttags: [microsoft365, office365, licensing, trial]
 image: /assets/images/2020/2020-06-10_O365_Trials.png
 ---
+
 You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You'll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services.
 A list of links to the trial licenes is further below in this article.
 
@@ -13,34 +14,34 @@ A list of links to the trial licenes is further below in this article.
 
 The following Office 365 Enterprise demo licenses are available:
 
-- Office 365 E3 Trial: [https://go.microsoft.com/fwlink/p/?LinkID=403802](https://go.microsoft.com/fwlink/p/?LinkID=403802)
-- Office 365 E5 Trial: [https://go.microsoft.com/fwlink/p/?LinkID=698279](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+-   Office 365 E3 Trial: [https://go.microsoft.com/fwlink/p/?LinkID=403802](https://go.microsoft.com/fwlink/p/?LinkID=403802)
+-   Office 365 E5 Trial: [https://go.microsoft.com/fwlink/p/?LinkID=698279](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 ## Business Licenses
 
 These Microsoft 365 Business test licenses are available:
 
-- Microsoft 365 Business Standard Trial: [https://go.microsoft.com/fwlink/p/?LinkID=510938](https://go.microsoft.com/fwlink/p/?LinkID=510938)
-- Microsoft 365 Business Premium Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2102309](https://go.microsoft.com/fwlink/p/?LinkID=2102309)
-- Microsoft 365 Apps for Business Trial: [https://go.microsoft.com/fwlink/p/?LinkID=507653](https://go.microsoft.com/fwlink/p/?LinkID=507653)
+-   Microsoft 365 Business Standard Trial: [https://go.microsoft.com/fwlink/p/?LinkID=510938](https://go.microsoft.com/fwlink/p/?LinkID=510938)
+-   Microsoft 365 Business Premium Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2102309](https://go.microsoft.com/fwlink/p/?LinkID=2102309)
+-   Microsoft 365 Apps for Business Trial: [https://go.microsoft.com/fwlink/p/?LinkID=507653](https://go.microsoft.com/fwlink/p/?LinkID=507653)
 
 ## Intune Lizenzen
 
 These Microsoft Intune trial licenses are available:
 
-- Microsoft Intune Trial: [https://go.microsoft.com/fwlink/?linkid=2019088](https://go.microsoft.com/fwlink/?linkid=2019088)
+-   Microsoft Intune Trial: [https://go.microsoft.com/fwlink/?linkid=2019088](https://go.microsoft.com/fwlink/?linkid=2019088)
 
 ## Enterprise and Mobility Suite (E5)
 
 You can use this trial license to try out Enterprise Mobility + Security E5 features:
 
-- Microsoft Enterprise Mobility + Security E5 Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2077039&clcid=0x409](https://go.microsoft.com/fwlink/p/?LinkID=2077039&clcid=0x409)
+-   Microsoft Enterprise Mobility + Security E5 Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2077039&clcid=0x409](https://go.microsoft.com/fwlink/p/?LinkID=2077039&clcid=0x409)
 
 ## Teams Licenses
 
 It's also possible to get Microsoft Teams Trial licenses from Microsoft Partners or from the Microsoft Support:
 
-- Microsoft Teams Commercial Cloud Trial (6 months, maximum 1000 users)
+-   Microsoft Teams Commercial Cloud Trial (6 months, maximum 1000 users)
 
 ## YouTube Video - Create Demo-Tenant
 
