@@ -1,0 +1,27 @@
+{# partly based on https://github.com/adamduncan/eleventy-plugin-i18n-demo/blob/3ba4878fdff94cebb2948494bf4fb5169ebe0018/src/_includes/components/language-selector.njk #}
+{% set pageUrl = page.url.split('/').slice(2).join('/') %}
+{% if locales.length %}
+    {% set languageSwitcherList = '' %}
+    {% set languageSwitcherListCount = 0 %}
+    {% for locale in locales %}
+        {% for item in collections.all %}
+            {% if page.fileSlug in item.url and not locale.code in item.data.lang %}
+                {% set languageSwitcherListCount = languageSwitcherListCount + 1 %}
+                {% set languageSwitcherList = languageSwitcherList + 
+                "<a href=\"/"+locale.code+"/"+pageUrl+"\" rel=\"alternate\" hreflang=\""+locale.code+"\""
+                %}
+                {% if locale.code == lang %}
+                    {% set languageSwitcherList = languageSwitcherList + " style=\"font-weight: bold;\"" %}
+                {% endif %}
+                {% set languageSwitcherList = languageSwitcherList + ">"+locale.label+"</a>" %}
+                {% if locale != locales | last %}
+                {% set languageSwitcherList = languageSwitcherList + "&nbsp;&vert;&nbsp;" %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    
+    {% endfor %}
+    {% if languageSwitcherListCount > 1 %}
+        <p class="bg-gradient-to-r from-white to-purple-400 dark:from-dark-outer dark:to-purple-900 mb-4 px-6 py-2 truncate">This content is available in:<br>🌍&nbsp;{{ languageSwitcherList | safe }}</p>
+    {% endif %}
+{% endif %}

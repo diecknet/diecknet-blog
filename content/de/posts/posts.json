@@ -1,0 +1,5 @@
+{
+    "layout": "post.njk",
+    "tags": ["posts", "posts-de"],
+    "permalink": "/{{ lang }}/{{ page.date | date: '%Y/%m/%d' }}/{{ page.fileSlug }}/"
+}
