@@ -8,5 +8,6 @@ title: Who
 
 ## Hey there! 👋
 
-I'm Andreas from Hamburg, Germany. I like technology, IT, cloud and coding. Also nature, forests, lakes and video games.
-I'll hopefully update this `Who`-page soon 😅
+I'm Andreas from Hamburg, Germany. I like technology, IT, coding and Open Source. Also nature, forests, lakes and video games.
+
+Currently I'm working as a Senior IT-Consultant focused on Microsoft technologies like Microsoft 365 and Azure.
