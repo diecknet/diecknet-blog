@@ -16,7 +16,7 @@
     posthtml "^0.15.1"
     posthtml-urls "1.0.0"
 
-"@11ty/eleventy-plugin-syntaxhighlight@^3.0.6", "@11ty/eleventy-plugin-syntaxhighlight@^3.1.1":
+"@11ty/eleventy-plugin-syntaxhighlight@3.1.1", "@11ty/eleventy-plugin-syntaxhighlight@^3.0.6":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-3.1.1.tgz#0abfd8f0b2902629bd90aea69e8c8a0236d03ca4"
   integrity sha512-5zVJj3dIXPi8t2Mm+40qk6fHjyCrxTFbJ8SMQgrKyflgHiFNZRH28isKtz/K3Qq7eu6o7BYSsk2ed7aqmtJhxg==
@@ -62,7 +62,7 @@
     time-require "^0.1.2"
     valid-url "^1.0.9"
 
-"@akumzy/eleventy-plugin-syntaxhighlight@^0.0.2":
+"@akumzy/eleventy-plugin-syntaxhighlight@0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@akumzy/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-0.0.2.tgz#412e042ee1c50a5e42eb89852f9e69f5520e4158"
   integrity sha512-xpxXtzRvmeGnVszzVreMlR03uMOMPA3NeywmVSdQ5ycQw+CmJTUSrxfPHn8E9TRXr6X0kE3gSRKkLwzU5aOs4w==
