@@ -16,6 +16,14 @@
     posthtml "^0.15.1"
     posthtml-urls "1.0.0"
 
+"@11ty/eleventy-plugin-syntaxhighlight@^3.0.6", "@11ty/eleventy-plugin-syntaxhighlight@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-3.1.1.tgz#0abfd8f0b2902629bd90aea69e8c8a0236d03ca4"
+  integrity sha512-5zVJj3dIXPi8t2Mm+40qk6fHjyCrxTFbJ8SMQgrKyflgHiFNZRH28isKtz/K3Qq7eu6o7BYSsk2ed7aqmtJhxg==
+  dependencies:
+    linkedom "^0.5.5"
+    prismjs "^1.23.0"
+
 "@11ty/eleventy@0.12.1":
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-0.12.1.tgz#a957985e783bb5eeb8c1a97e661c5252014b2fd3"
@@ -53,6 +61,14 @@
     slugify "^1.4.7"
     time-require "^0.1.2"
     valid-url "^1.0.9"
+
+"@akumzy/eleventy-plugin-syntaxhighlight@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@akumzy/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-0.0.2.tgz#412e042ee1c50a5e42eb89852f9e69f5520e4158"
+  integrity sha512-xpxXtzRvmeGnVszzVreMlR03uMOMPA3NeywmVSdQ5ycQw+CmJTUSrxfPHn8E9TRXr6X0kE3gSRKkLwzU5aOs4w==
+  dependencies:
+    "@11ty/eleventy-plugin-syntaxhighlight" "^3.0.6"
+    prismjs "^1.23.0"
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -194,6 +210,11 @@
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
+
+"@ungap/event-target@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@ungap/event-target/-/event-target-0.2.2.tgz#6543122625a0a793c5fa265f45717cd096b0fb7c"
+  integrity sha512-z0bsRd8APns6CDBVEPEj3p82TiFc1UY8uWNhL+T0ydpQqnpHyPVwwgJ4FC5KP85sLbg80+g+h644UTatwKNi/g==
 
 a-sync-waterfall@^1.0.0:
   version "1.0.1"
@@ -2420,6 +2441,11 @@ html-encoding-sniffer@^2.0.1:
   dependencies:
     whatwg-encoding "^1.0.5"
 
+html-escaper@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/html-escaper/-/html-escaper-3.0.3.tgz#4d336674652beb1dcbc29ef6b6ba7f6be6fdfed6"
+  integrity sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==
+
 html-minifier@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-4.0.0.tgz#cca9aad8bce1175e02e17a8c33e46d8988889f56"
@@ -3089,6 +3115,17 @@ lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
+
+linkedom@^0.5.5:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/linkedom/-/linkedom-0.5.6.tgz#2c058dac9476b9b8ef1886ae8f0d495e3e6606e4"
+  integrity sha512-6PLYvs7memANEiA7aqzI6hPfi0yRJwup8uwp8yviCyQLu1hdvdlkULYATA4G/y/kMEpgGPnIQ57mTL5/0TylZw==
+  dependencies:
+    "@ungap/event-target" "^0.2.2"
+    css-select "^3.1.2"
+    html-escaper "^3.0.3"
+    htmlparser2 "^6.0.0"
+    uhyphen "^0.1.0"
 
 linkify-it@^2.0.0:
   version "2.2.0"
@@ -4679,6 +4716,11 @@ pretty@^2.0.0:
     extend-shallow "^2.0.1"
     js-beautify "^1.6.12"
 
+prismjs@^1.23.0:
+  version "1.24.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.24.0.tgz#0409c30068a6c52c89ef7f1089b3ca4de56be2ac"
+  integrity sha512-SqV5GRsNqnzCL8k5dfAjCNhUrF3pR0A9lTDSCUZeh/LIshheXJEaP0hwLz2t4XHivd2J/v2HR+gRnigzeKe3cQ==
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -5976,6 +6018,11 @@ uglify-js@^3.1.4, uglify-js@^3.5.1:
   version "3.13.7"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.7.tgz#25468a3b39b1c875df03f0937b2b7036a93f3fee"
   integrity sha512-1Psi2MmnZJbnEsgJJIlfnd7tFlJfitusmR7zDI8lXlFI0ACD4/Rm/xdrU8bh6zF0i74aiVoBtkRiFulkrmh3AA==
+
+uhyphen@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/uhyphen/-/uhyphen-0.1.0.tgz#3cc22afa790daa802b9f6789f3583108d5b4a08c"
+  integrity sha512-o0QVGuFg24FK765Qdd5kk0zU/U4dEsCtN/GSiwNI9i8xsSVtjIAOdTaVhLwZ1nrbWxFVMxNDDl+9fednsOMsBw==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"

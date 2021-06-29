@@ -8,6 +8,8 @@ const { readFileSync } = require("fs");
 const siteconfig = require("./content/_data/siteconfig.js");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const syntaxHighlightLineNumbers = require("@akumzy/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
     // Set Markdown library
@@ -28,6 +30,10 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./assets/js/");
     // And to make this work we've to disable the .gitignore usage of eleventy.
     eleventyConfig.setUseGitIgnore(false);
+
+    // syntax highlighting
+    eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(syntaxHighlightLineNumbers,  { showLineNumbers: true, alwaysWrapLineHighlights:false });
 
     // Add 3rd party plugins
     eleventyConfig.addPlugin(pluginRss);
