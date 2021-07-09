@@ -22,7 +22,6 @@ Microsoft.SharePoint.Client.ClientContext
 Here you go.
 
 ```powershell
-
 try {
 # trying to retrieve regional settings of $SPOSite
     $regionalSettings = Get-SPOSiteScriptFromWeb -WebUrl $SPOSite.Url -IncludeRegionalSettings | ConvertFrom-Json
@@ -31,13 +30,11 @@ try {
     # failback to 0 if not found
     $timezoneID = 0
 }       
-
 ```
 
-I assume you are already connected to SPO by `Connect-SPOService`. The return value of `Get-SPOSiteScriptFromWeb` is a JSON String. The JSON looks like this:
+I assume you are already connected to SPO by `Connect-SPOService`. The return value of `Get-SPOSiteScriptFromWeb` is a JSON String, which you can convert to an object by `ConvertFrom-Json`. The raw JSON looks like this:
 
 ```json
-
 {
   "$schema": "https://developer.microsoft.com/json-schemas/sp/site-design-script-actions.schema.json",
   "actions": [
@@ -50,15 +47,13 @@ I assume you are already connected to SPO by `Connect-SPOService`. The return va
     }
   ]
 }
-
 ```
 
 ## Convert SPO Timezone Code to human readable string
 
-Yes, I also made something for that 😎. Also available as a Github Gist.
+Yes, I also made something for that 😎. [Also available as a Github Gist.](https://gist.github.com/diecknet/c4fbefd8fc3fdeb965b70baefe9cee53)
 
 ```powershell
-
 function Convert-SPOTimezoneToString(
 # ID of a SPO Timezone
 [int]$ID
@@ -203,5 +198,4 @@ https://diecknet.de/en/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/
             return $ID
         }
     }
-
 ```
