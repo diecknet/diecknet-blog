@@ -12,10 +12,10 @@ imageAlt: Executing PowerShell cmdlets to retrieve the Timezone of a Sharepoint 
 date: 2021-07-09
 ---
 
-I've been looking for a way to retrieve the Timezone setting of a Sharepoint Online Site via PowerShell. Apparently there is not much good info publicly available. I looked for a way to use with the [standard SPO PowerShell module](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) named `Microsoft.Online.SharePoint.PowerShell`.
+I've been looking for a way to retrieve the Timezone setting of a Sharepoint Online Site via PowerShell. Apparently there is not much good info publicly available. I looked for a way to use with the [standard SPO PowerShell module](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) named Microsoft.Online.SharePoint.PowerShell.
   
-There are some infos online about using the PNPOnline Module, but that was not practical in my case. There are even some really annoying articles out, that claim to to provide a PowerShell way. But instead of retrieving the actual Timezone setting of a SPO site, they retrieve all available Timezones and then overwrite the current timezone with a valid one. Worst thing: They import Sharepoint .dll files, use plaintext authentication and use Client Context Object/CSOM. Oof.
-Microsoft.SharePoint.Client.ClientContext
+There are some infos online about using the PNPOnline Module, but that was not practical in my case. There are even some really annoying articles out, that claim to to provide a PowerShell way. But instead of retrieving the actual Timezone setting of a SPO site, they retrieve all available Timezones and then overwrite the current timezone with a valid one. Worst thing: They import Sharepoint .dll files, use plaintext authentication and use Client Context Object/CSOM (Microsoft.SharePoint.Client.ClientContext). 
+😵 Oof.
 
 ## TL;DR - here is the PowerShell code
 
