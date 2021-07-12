@@ -2,5 +2,11 @@
     "extends": [
         "config:base",
         ":automergeMinor"
-    ]
+    ],
+    "schedule": "after 2pm and before 7:00am", 
+      "npm": {
+         "extends": [
+             "npm:unpublishSafe"
+        ] 
+     } 
 }
