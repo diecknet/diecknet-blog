@@ -16,7 +16,15 @@
     posthtml "^0.15.1"
     posthtml-urls "1.0.0"
 
-"@11ty/eleventy-plugin-syntaxhighlight@3.1.1", "@11ty/eleventy-plugin-syntaxhighlight@^3.0.6":
+"@11ty/eleventy-plugin-syntaxhighlight@3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-3.1.2.tgz#3fc70298d4e7e5636121e3d8afdc2ab9a1002564"
+  integrity sha512-OdUNqRMV2rvNljHgL6MW4hA+jBpdEbuSKOWYNKgD8OwlsDwwzooRNyDAF5u4sXQ0knjenDeWOH6fuCiLharAWA==
+  dependencies:
+    linkedom "^0.11.0"
+    prismjs "^1.24.1"
+
+"@11ty/eleventy-plugin-syntaxhighlight@^3.0.6":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-3.1.1.tgz#0abfd8f0b2902629bd90aea69e8c8a0236d03ca4"
   integrity sha512-5zVJj3dIXPi8t2Mm+40qk6fHjyCrxTFbJ8SMQgrKyflgHiFNZRH28isKtz/K3Qq7eu6o7BYSsk2ed7aqmtJhxg==
@@ -1216,6 +1224,17 @@ css-select@^4.1.2:
     domutils "^2.6.0"
     nth-check "^2.0.0"
 
+css-select@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/css-select/-/css-select-4.1.3.tgz#a70440f70317f2669118ad74ff105e65849c7067"
+  integrity sha512-gT3wBNd9Nj49rAbmtFHj1cljIAOLYSX1nZ8CB7TBO3INYckygm5B7LISU/szY//YmdiSLbJvDLOx9VnMVpMBxA==
+  dependencies:
+    boolbase "^1.0.0"
+    css-what "^5.0.0"
+    domhandler "^4.2.0"
+    domutils "^2.6.0"
+    nth-check "^2.0.0"
+
 css-tree@1.0.0-alpha.37:
   version "1.0.0-alpha.37"
   resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha.37.tgz#98bebd62c4c1d9f960ec340cf9f7522e30709a22"
@@ -1390,6 +1409,11 @@ cssom@^0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/cssom/-/cssom-0.4.4.tgz#5a66cf93d2d0b661d80bf6a44fb65f5c2e4e0a10"
   integrity sha512-p3pvU7r1MyyqbTk+WbNJIgJjG2VmTIaB10rI93LzVPrmDJKkzKYMtxxyAvQXR/NS6otuzveI7+7BBq3SjBS2mw==
+
+cssom@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/cssom/-/cssom-0.5.0.tgz#d254fa92cd8b6fbd83811b9fbaed34663cc17c36"
+  integrity sha512-iKuQcq+NdHqlAcwUY0o/HL69XQrUaQdMjmStJ8JFmUaiiQErlhrmuigkg/CU4E2J0IyUKUrMAgl36TvN67MqTw==
 
 cssom@~0.3.6:
   version "0.3.8"
@@ -3131,6 +3155,18 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
+linkedom@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/linkedom/-/linkedom-0.11.0.tgz#dd9f35a1fdfc665372710e79af7d110b6bd13a01"
+  integrity sha512-y/CXnrFPOsPByOJvkXBqhUwUxGZI5p3mjBuXwl4/jOxzvGP7XovXyJv/3zFRPZVxAxSGDhUbocI1L6pKkc+A/Q==
+  dependencies:
+    "@ungap/event-target" "^0.2.2"
+    css-select "^4.1.3"
+    cssom "^0.5.0"
+    html-escaper "^3.0.3"
+    htmlparser2 "^6.1.0"
+    uhyphen "^0.1.0"
+
 linkedom@^0.5.5:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/linkedom/-/linkedom-0.5.6.tgz#2c058dac9476b9b8ef1886ae8f0d495e3e6606e4"
@@ -4740,6 +4776,11 @@ prismjs@^1.23.0:
   version "1.24.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.24.0.tgz#0409c30068a6c52c89ef7f1089b3ca4de56be2ac"
   integrity sha512-SqV5GRsNqnzCL8k5dfAjCNhUrF3pR0A9lTDSCUZeh/LIshheXJEaP0hwLz2t4XHivd2J/v2HR+gRnigzeKe3cQ==
+
+prismjs@^1.24.1:
+  version "1.24.1"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.24.1.tgz#c4d7895c4d6500289482fa8936d9cdd192684036"
+  integrity sha512-mNPsedLuk90RVJioIky8ANZEwYm5w9LcvCXrxHlwf4fNVSn8jEipMybMkWUyyF0JhnC+C4VcOVSBuHRKs1L5Ow==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
