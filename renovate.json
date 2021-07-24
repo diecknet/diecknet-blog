@@ -5,5 +5,5 @@
         "npm:unpublishSafe",
         "group:allNonMajor"
     ],
-    "schedule": "after 2pm and before 7:00am"
+    "schedule": "every weekend"
 }
