@@ -34,13 +34,13 @@
         "eleventy-plugin-toc": "1.1.0",
         "glob-parent": "6.0.1",
         "html-minifier": "4.0.0",
-        "jsdom": "16.6.0",
-        "markdown-it": "12.1.0",
+        "jsdom": "16.7.0",
+        "markdown-it": "12.2.0",
         "markdown-it-anchor": "8.1.2",
         "normalize-url": "7.0.0",
         "postcss": "8.3.6",
         "postcss-cli": "8.3.1",
-        "rollup": "2.55.0",
+        "rollup": "2.55.1",
         "rollup-plugin-postcss": "4.0.0",
         "rollup-plugin-terser": "7.0.2",
         "sharp": "0.28.3",
@@ -49,7 +49,7 @@
     },
     "devDependencies": {
         "concurrently": "6.2.0",
-        "eslint": "7.31.0",
+        "eslint": "7.32.0",
         "eslint-config-prettier": "8.3.0",
         "eslint-plugin-inclusive-language": "2.1.1",
         "husky": "7.0.1",
@@ -75,7 +75,7 @@
         ]
     },
     "volta": {
-        "node": "14.17.3",
+        "node": "14.17.4",
         "yarn": "1.22.11"
     }
 }
