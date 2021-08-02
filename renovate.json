@@ -2,8 +2,7 @@
     "extends": [
         "config:base",
         ":automergeMinor", 
-        "npm:unpublishSafe",
-        "group:allNonMajor"
+        "npm:unpublishSafe"
     ],
     "schedule": "every weekend"
 }
