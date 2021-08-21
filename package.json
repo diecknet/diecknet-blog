@@ -43,7 +43,7 @@
         "rollup": "2.56.2",
         "rollup-plugin-postcss": "4.0.1",
         "rollup-plugin-terser": "7.0.2",
-        "sharp": "0.28.3",
+        "sharp": "0.29.0",
         "shelljs": "0.8.4",
         "tailwindcss": "2.2.7"
     },
