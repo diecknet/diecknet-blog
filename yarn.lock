@@ -3485,10 +3485,10 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=
 
-normalize-url@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-7.0.1.tgz#44b67c94ecb2cd31d2d0491fe5cc13abb990e787"
-  integrity sha512-WjLnBQVhYX5XRIectq7CEXgu7O13OB1vsj3rkVItD4c48G/JRD5dohJ1R5vVwZ5wI2/SJDNHfpdQ0Xsqbr1dhQ==
+normalize-url@7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-7.0.2.tgz#3f250c964484715e6bfbcdfa2524ad76c57e1297"
+  integrity sha512-HC9c6eHqxmiR6sL9DKt9ttLkiLaI1jytdkJMGAEvkLAAdlOi99kR7UMWWWRrwjucuFabaau4ZuvP1Zv+6PpDjA==
 
 normalize-url@^6.0.1:
   version "6.1.0"
