@@ -28,7 +28,7 @@
         "crypto-js": "4.1.1",
         "css-what": "5.0.1",
         "cssnano": "5.0.8",
-        "date-fns": "2.24.0",
+        "date-fns": "2.25.0",
         "dotenv": "10.0.0",
         "eleventy-plugin-i18n": "0.1.2",
         "eleventy-plugin-toc": "1.1.5",
