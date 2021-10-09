@@ -24,7 +24,7 @@
         "@11ty/eleventy-plugin-syntaxhighlight": "3.1.2",
         "@akumzy/eleventy-plugin-syntaxhighlight": "0.0.2",
         "@rollup/plugin-replace": "3.0.0",
-        "autoprefixer": "10.3.6",
+        "autoprefixer": "10.3.7",
         "crypto-js": "4.1.1",
         "css-what": "5.0.1",
         "cssnano": "5.0.8",
