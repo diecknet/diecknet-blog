@@ -6,6 +6,10 @@ img {
     @apply rounded-lg shadow-lg block mx-auto h-auto;
 }
 
+kbd {
+    @apply border-gray-300 border-1 rounded p-1;
+}
+
 /* Left sidebar */
 
 .sidebar .navitem {
