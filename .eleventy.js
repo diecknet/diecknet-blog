@@ -33,7 +33,10 @@ module.exports = function (eleventyConfig) {
 
     // syntax highlighting
     eleventyConfig.addPlugin(syntaxHighlight);
-    eleventyConfig.addPlugin(syntaxHighlightLineNumbers,  { showLineNumbers: true, alwaysWrapLineHighlights:false });
+    eleventyConfig.addPlugin(syntaxHighlightLineNumbers, {
+        showLineNumbers: true,
+        alwaysWrapLineHighlights: false
+    });
 
     // Add 3rd party plugins
     eleventyConfig.addPlugin(pluginRss);
