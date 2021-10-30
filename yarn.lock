@@ -32,10 +32,10 @@
     linkedom "^0.11.0"
     prismjs "^1.24.1"
 
-"@11ty/eleventy@1.0.0-beta.2":
-  version "1.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-1.0.0-beta.2.tgz#94f6fa31a758d3cfae25b37ec80d95f123c0d03e"
-  integrity sha512-Vx6pJ5LEHRz1pkRYxi1yvussmpZTKOQIauFvSdahfd4/MK5ySvYFGEd3hXDEK+aReI1fGhg7DBi3DvrR6yomEg==
+"@11ty/eleventy@1.0.0-canary.44":
+  version "1.0.0-canary.44"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-1.0.0-canary.44.tgz#4adcafb8b3c945aeeceeaa2e92c6b33768267945"
+  integrity sha512-uDAZjNPxC9jsynfwkmTUqUSgxRi9FzBJXUCXzHJyoSHl8fYSAMHi8Cm7ZPUyfRNfJmrmZAZp7HcFOqPGU1n3ag==
   dependencies:
     "@11ty/dependency-tree" "^2.0.0"
     "@iarna/toml" "^2.2.5"
@@ -50,8 +50,8 @@
     gray-matter "^4.0.3"
     hamljs "^0.6.2"
     handlebars "^4.7.7"
-    is-glob "^4.0.3"
-    liquidjs "9.25.1"
+    is-glob "^4.0.1"
+    liquidjs "^9.25.1"
     lodash "^4.17.21"
     luxon "^2.0.2"
     markdown-it "^12.2.0"
@@ -61,15 +61,15 @@
     mustache "^4.2.0"
     normalize-path "^3.0.0"
     nunjucks "^3.2.3"
-    path-to-regexp "^6.2.0"
     please-upgrade-node "^3.2.0"
     pretty "^2.0.0"
     pug "^3.0.2"
     recursive-copy "^2.0.13"
     semver "^7.3.5"
-    slugify "^1.6.1"
+    slugify "^1.6.0"
     split "^1.0.1"
     time-require "^0.1.2"
+    url-pattern "^1.0.3"
 
 "@akumzy/eleventy-plugin-syntaxhighlight@0.0.2":
   version "0.0.2"
@@ -2815,10 +2815,10 @@ lint-staged@11.2.6:
     stringify-object "3.3.0"
     supports-color "8.1.1"
 
-liquidjs@9.25.1:
-  version "9.25.1"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.25.1.tgz#1330e015158e9d7f0a24d4c063d2242049266f79"
-  integrity sha512-V6RYwuFsx13aKZ5ZrSUMHUgTPrEWpcP3GcafEkMdvlWVW9tTlQHOgBoJaK2HtLbOyvjXtaHXT82ZElwmRNY+Kw==
+liquidjs@^9.25.1:
+  version "9.28.3"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.28.3.tgz#a663f49d9802284b3c34b9a976cb9c92d7f3871c"
+  integrity sha512-cgv92pgSyz7G+pEJRn2UqowrNWQvOrdAw1HvH2qgo4SXcfqJ5klYgaYEiwyr7BoNXxjye/IWw9spnT0LyMZoDg==
 
 list-to-array@^1.1.0:
   version "1.1.0"
@@ -3491,11 +3491,6 @@ path-parse@^1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
-
-path-to-regexp@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.0.tgz#f7b3803336104c346889adece614669230645f38"
-  integrity sha512-f66KywYG6+43afgE/8j/GoiNyygk/bnoCbps++3ErRKsIYkGGupyv07R2Ok5m9i67Iqc+T2g1eAUGUPzWhYTyg==
 
 path-type@^4.0.0:
   version "4.0.0"
@@ -4649,7 +4644,7 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-slugify@^1.6.1:
+slugify@^1.6.0:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.1.tgz#a5fcaef29f4e57c6e932ce7044b6ffd9cf81b641"
   integrity sha512-5ofqMTbetNhxlzjYYLBaZFQd6oiTuSkQlyfPEFIMwgUABlZQ0hbk5xIV9Ydd5jghWeRoO7GkiJliUvTpLOjNRA==
@@ -5199,6 +5194,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+url-pattern@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/url-pattern/-/url-pattern-1.0.3.tgz#0409292471b24f23c50d65a47931793d2b5acfc1"
+  integrity sha1-BAkpJHGyTyPFDWWkeTF5PStaz8E=
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
