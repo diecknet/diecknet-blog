@@ -25,7 +25,7 @@ And it still mentions "unlimited storage", even though since 2021-11-01 the Arch
 
 When the main Archive of the Mailbox reaches it's limit of 100 GB, another storage gets added. The additional storage is called "Auxilary Archive" or short "AuxArchive".
 
-I wrote a PowerShell function to list all the Mailbox locations of a user.
+I wrote a PowerShell function to list all the Mailbox locations of a user. It also lists some storage consumption information. 
 
 ```powershell
 # prerequisite: Exchange Online PowerShell module, must be connected to the service
