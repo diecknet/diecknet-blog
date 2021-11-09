@@ -27,7 +27,7 @@
         "autoprefixer": "10.4.0",
         "crypto-js": "4.1.1",
         "css-what": "5.1.0",
-        "cssnano": "5.0.9",
+        "cssnano": "5.0.10",
         "date-fns": "2.25.0",
         "dotenv": "10.0.0",
         "eleventy-plugin-i18n": "0.1.3",
