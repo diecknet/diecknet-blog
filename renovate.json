@@ -3,7 +3,8 @@
         "config:base",
         ":automergeMinor", 
         "npm:unpublishSafe",
-        "group:allNonMajor"
+        "group:allNonMajor",
+        ":noUnscheduledUpdates"
     ],
     "schedule": "every weekend", 
     "prCreation": "not-pending", 
