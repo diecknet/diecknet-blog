@@ -26,9 +26,6 @@ ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
-# Local .env file
-.env
-
 # Static content
 _site/
 # Uncomment the following line if you want to commit all images to source control. This will def speed up build time.
