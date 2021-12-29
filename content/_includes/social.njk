@@ -13,7 +13,7 @@
         </svg>
     </a>
     <a
-        href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absoluteUrl }}"
+        href="https://www.facebook.com/sharer/sharer.php?u={{ siteconfig.url }}{{ page.url}}"
         target="_blank"
         rel="noopener"
         aria-label="Share on Facebook (opens new tab)"
@@ -30,7 +30,7 @@
         </svg>
     </a>
     <a
-    href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absoluteUrl }}"
+    href="https://www.linkedin.com/sharing/share-offsite/?url={{ siteconfig.url }}{{ page.url}}"
     target="_blank"
     rel="noopener"
     aria-label="Share on LinkedIn (opens new tab)">
@@ -40,7 +40,7 @@
         </svg>
     </a>
     <a
-        href="https://twitter.com/intent/tweet/?text={{ title }}&url={{ page.url | absoluteUrl }}&via={{ siteconfig.twitterHandle }}"
+        href="https://twitter.com/intent/tweet/?text={{ title }}&url={{ siteconfig.url }}{{ page.url}}&via={{ siteconfig.twitterHandle }}"
         target="_blank"
         rel="noopener"
         aria-label="Share on Twitter (opens new tab)"

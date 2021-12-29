@@ -4,7 +4,7 @@ module.exports = {
     // Website title, shown in left sidebar and in page title
     title: "diecknet",
     // Site URL to generate absolute URLs. Used across the board.
-    url: process.env.URL || "http://localhost:8080",
+    url: "https://diecknet.de",
     // Profile image for left sidebar
     image: "/assets/images/sidebar_profile.jpg",
     // Image alt text for left sidebar

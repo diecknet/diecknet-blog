@@ -6,12 +6,12 @@ permalink: /feed.xml
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ siteconfig.title }}</title>
   <subtitle>{{ siteconfig.description }}</subtitle>
-  <link href="{{ '/feed.xml' | absoluteUrl }}" rel="self" type="application/rss+xml"/>
+  <link href="{{ siteconfig.url }}{{ '/feed.xml' | absoluteUrl }}" rel="self" type="application/rss+xml"/>
   <link href="{{ siteconfig.url }}"/>
   <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
   <id>{{ '/feed.xml' | absoluteUrl }}</id>
   {%- for post in collections.posts.slice(-10) | reverse %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  {% set absolutePostUrl %}{{ siteconfig.url }}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
