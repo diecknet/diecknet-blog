@@ -2,6 +2,7 @@
 layout: page
 title: Mein 11ty Cheatsheet
 lang: de
+eleventyExcludeFromCollections: true
 ---
 
 Das ist mein persönlicher 11ty Cheat Sheet. Die Infos und Tags sind auf dieses Blog-Setup zugeschnitten.
