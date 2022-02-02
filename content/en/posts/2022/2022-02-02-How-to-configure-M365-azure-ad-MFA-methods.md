@@ -19,11 +19,15 @@ If you don't trust me or that link above, you can manually click through to the 
 
 1. Open the Azure AD Portal and open the Directory ("Azure Active Directory").  
    [![Azure AD Admin Portal](/assets/images/2022/2022-02-02_Azure_Active_Directory_admin_center.png "Azure AD Admin Portal")](/assets/images/2022/2022-02-02_Azure_Active_Directory_admin_center.png)
+
 1. Open "Security".  
    [![Azure AD Admin Portal - Open Security](/assets/images/2022/2022-02-02_Azure_Active_Directory_admin_center_2.png "Azure AD Admin Portal - Open Security")](/assets/images/2022/2022-02-02_Azure_Active_Directory_admin_center_2.png)
+
 1. Open "MFA".  
    [![Azure AD Admin Portal - Security - Open MFA](/assets/images/2022/2022-02-02_Azure_Active_Directory_admin_center_Security.png "Azure AD Admin Portal - Security - Open MFA")](/assets/images/2022/2022-02-02_Azure_Active_Directory_admin_center_Security.png)
-1. Click on "Additional cloud-based MFA settings.  
+
+1. Click on "Additional cloud-based MFA settings".  
    [![Azure AD Admin Portal - Security - Open MFA](/assets/images/2022/2022-02-02_Azure_Active_Directory_admin_center_MFA.png "Azure AD Admin Portal - Security - Open MFA")](/assets/images/2022/2022-02-02_Azure_Active_Directory_admin_center_MFA.png)
+
 1. The classic Active Directory / Office 365 Portal opens. Choose the desired allowed Authentication Methods under "Verification options". Don't forget to click on "Save".  
    [![Azure AD Classic MFA Admin Portal](/assets/images/2022/2022-02-02_MFA_Portal_classic.png "Azure AD Classic MFA Admin Portal")](/assets/images/2022/2022-02-02_MFA_Portal_classic.png)
