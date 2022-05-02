@@ -35,7 +35,7 @@
         "glob-parent": "6.0.2",
         "html-minifier": "4.0.0",
         "jsdom": "19.0.0",
-        "markdown-it": "12.3.2",
+        "markdown-it": "13.0.0",
         "markdown-it-anchor": "8.6.2",
         "normalize-url": "7.0.3",
         "postcss": "8.4.13",
