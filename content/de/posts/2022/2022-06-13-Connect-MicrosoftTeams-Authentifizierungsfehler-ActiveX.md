@@ -6,7 +6,7 @@ contenttags: [microsoft365, office365, microsoftteams, powershell]
 image: /assets/images/2022/2022-06-13_TeamsPowerShellConnect.png
 ---
 
-Ich habe heute einen merkwürdigen beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.
+Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.
 
 Ich wollte mich einfach nur per `Connect-MicrosoftTeams` mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter. Aber bevor ich überhaupt nach einem Benutzernamen gefragt wurde - alles rot.
 
