@@ -39,7 +39,9 @@ You can find that setting for 3. in Azure AD under ["Enterprise applications" ->
 
 There are several possible solutions without simply unlocking all third-party apps.
 
-### Solution approach 1: Allow Apple Internet accounts tenant wide
+### Solution approach
+
+**Update 2022-06-20: It's usually not necessary anymore to craft the url manually. Instead you can just click this link: [https://aka.ms/ConsentAppleApp. Steps 1 and 2 can be skipped then.](https://aka.ms/ConsentAppleApp)**
 
 #### Step 1: Find out TenantID
 
@@ -62,7 +64,7 @@ The query "Permission requested - Accept for your organization - Apple Internet 
 
 ![Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_2.png "Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts")
 
-Afterwards an error is displayed, because the redirect URL points to `https://example.com`. The error AADSTS900561 may be ignored in this case.
+If you crafted the URL as described in Step 1 and 2, you'll receive an error now, because the redirect URL points to `https://example.com`. The error AADSTS900561 may be ignored in this case.
 
 ![Error: We couldn't log you in  - AADSTS900561: The endpoint only accepts POST requests. Received a GET request. May be ignored in this case.](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_3.png "Error: We couldn't log you in  - AADSTS900561: The endpoint only accepts POST requests. Received a GET request. May be ignored in this case.")
 
@@ -123,3 +125,4 @@ If an app has already been allowed, it can be deactivated again if required. To 
 
 -   [Documentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management)
 -   [Article: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources)
+-   [Article in Exchange Team Blog: Microsoft and Apple Working Together to Improve Exchange Online Security](https://techcommunity.microsoft.com/t5/exchange-team-blog/microsoft-and-apple-working-together-to-improve-exchange-online/ba-p/3513846)

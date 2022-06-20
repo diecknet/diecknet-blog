@@ -40,13 +40,15 @@ Es gibt mehrere Lösungsmöglichkeiten, ohne dass einfach alle Drittanbieter-App
 
 ### Lösungsmöglichkeit 1: Apple Internet Accounts tenantweit erlauben
 
+**Update 2022-06-20: Das manuelle Zusammensetzen der URL ist in der Regel nicht mehr notwendig. Stattdessen kann einfach folgender Link aufgerufen werden: [https://aka.ms/ConsentAppleApp. Die Schritte 1 und 2 können dann übersprungen werden.](https://aka.ms/ConsentAppleApp)**
+
 #### Schritt 1: TenantID herausfinden
 
 Als Erstes muss die Tenant ID des Azure AD Tenants herausgefunden werden. Diese ist auf ["Overview Seite in Azure Active Directory"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) zu finden (im nachfolgenden Screenshot rot markiert).
 
 ![Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.](/assets/images/2020/2020-05-07_AzureAD_TenantID.png "Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.")
 
-#### Schritt 2: URL zusammensetzen
+#### Schritt 2: URL zusammensetzen und aufrufen
 
 Der Platzhalter `<TenantID>` muss in der nachfolgenden URL durch die Tenant ID aus Schritt 1 ersetzt werden. Anschließend kann die erstellte URL mit Tenant Admin (Global Administrator) Rechten aufgerufen werden. Die in der URL enthaltene `client_id` ist die ID von Apple Internet Accounts.
 
@@ -60,7 +62,7 @@ Die Abfrage "Angeforderte Berechtigungen für Ihre Organisation zustimmen - Appl
 
 ![Administrativer Zustimmungsdialog: Angeforderte Berechtigung für Ihre Organisation zustimmen - Apple Internet Accounts - Diese Anwendung wird nicht von Microsoft oder Ihrer Organisation veröffentlicht. Diese App benötigt folgende Berechtigungen: Über Exchange Active Sync auf Postfächer zugreifen, Als angemeldeter Benutzer über Exchange-Webdienste auf Postfächer zugreifen, Anmelden und Benutzerprofil lesen](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_2.png "Administrativer Zustimmungsdialog für Apple Internet Accounts in Microsoft 365")
 
-Anschließend wird ein Fehler angezeigt, da die hinterlegte Redirect URL auf <https://example.com> verweist. Der Fehler AADSTS900561 kann in diesem Fall ignoriert werden.
+Falls die URL wie in Schritt 1 und 2 manuell zusammengesetzt wurde, wird anschließend ein Fehler angezeigt, da die hinterlegte Redirect URL auf <https://example.com> verweist. Der Fehler AADSTS900561 kann in diesem Fall ignoriert werden.
 
 ![Fehler: Leider können wir Sie nicht anmelden. AADSTS900561: The endpoint only accepts POST requests. Received a GET request. Kann in diesem Fall auf Grund der hinterlegten Redirect URL ignoriert werden.](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_3.png "Fehler AADSTS900561: Kann in diesem Fall auf Grund der hinterlegten Redirect URL ignoriert werden.")
 
@@ -120,3 +122,4 @@ Wenn eine App bereits erlaubt ist, kann sie bei Bedarf auch wieder deaktiviert w
 
 -   [Dokumentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management)
 -   [Artikel: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources)
+-   [Artikel im Exchange Team Blog: Microsoft and Apple Working Together to Improve Exchange Online Security](https://techcommunity.microsoft.com/t5/exchange-team-blog/microsoft-and-apple-working-together-to-improve-exchange-online/ba-p/3513846)
