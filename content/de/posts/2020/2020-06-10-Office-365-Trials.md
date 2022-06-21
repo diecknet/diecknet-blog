@@ -39,7 +39,7 @@ Zum Ausprobieren der Enterprise Mobility + Security E5 Funktionen kann folgende 
 ## Teams Lizenzen
 
 Grundsätzlich gibt es mittlerweile Teams als Free beziehungsweise Freemium Version. Die Anmeldung dazu erfolgt [hier: https://go.microsoft.com/fwlink/p/?LinkID=2123761](https://go.microsoft.com/fwlink/p/?LinkID=2123761).
-Zum Testen der **vollständigen Teams Version** sollte mindestens M365 Business Basic verwendet werden (siehe oben).
+Zum Testen der **vollständigen Teams Version** sollte aber mindestens M365 Business Basic verwendet werden (siehe oben).
 
 ## YouTube Video - Demo-Tenant anlegen
 
