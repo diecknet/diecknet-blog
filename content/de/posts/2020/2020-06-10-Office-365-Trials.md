@@ -19,6 +19,7 @@ Folgende Office 365 Enterprise Demolizenzen stehen zur Verfügung:
 
 Folgende Microsoft 365 Business Testlizenzen stehen zur Verfügung:
 
+-   Microsoft 365 Business Basic Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2147547](https://go.microsoft.com/fwlink/p/?LinkID=2147547)
 -   Microsoft 365 Business Standard Trial: [https://go.microsoft.com/fwlink/p/?LinkID=510938](https://go.microsoft.com/fwlink/p/?LinkID=510938)
 -   Microsoft 365 Business Premium Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2102309](https://go.microsoft.com/fwlink/p/?LinkID=2102309)
 -   Microsoft 365 Apps for Business Trial: [https://go.microsoft.com/fwlink/p/?LinkID=507653](https://go.microsoft.com/fwlink/p/?LinkID=507653)
@@ -37,9 +38,8 @@ Zum Ausprobieren der Enterprise Mobility + Security E5 Funktionen kann folgende 
 
 ## Teams Lizenzen
 
-Außerdem ist es möglich Microsoft Teams Trial Lizenzen von Microsoft Partnern oder direkt vom Microsoft Support zu erhalten:
-
--   Microsoft Teams Commercial Cloud Trial (6 Monate Zeitraum, maximal 1.000 User)
+Grundsätzlich gibt es mittlerweile Teams als Free beziehungsweise Freemium Version. Die Anmeldung dazu erfolgt [hier: https://go.microsoft.com/fwlink/p/?LinkID=2123761](https://go.microsoft.com/fwlink/p/?LinkID=2123761).
+Zum Testen der **vollständigen Teams Version** sollte mindestens M365 Business Basic verwendet werden (siehe oben).
 
 ## YouTube Video - Demo-Tenant anlegen
 

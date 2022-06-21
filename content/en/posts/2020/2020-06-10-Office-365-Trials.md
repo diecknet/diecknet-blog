@@ -21,6 +21,7 @@ The following Office 365 Enterprise demo licenses are available:
 
 These Microsoft 365 Business test licenses are available:
 
+-   Microsoft 365 Business Basic Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2147547](https://go.microsoft.com/fwlink/p/?LinkID=2147547)
 -   Microsoft 365 Business Standard Trial: [https://go.microsoft.com/fwlink/p/?LinkID=510938](https://go.microsoft.com/fwlink/p/?LinkID=510938)
 -   Microsoft 365 Business Premium Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2102309](https://go.microsoft.com/fwlink/p/?LinkID=2102309)
 -   Microsoft 365 Apps for Business Trial: [https://go.microsoft.com/fwlink/p/?LinkID=507653](https://go.microsoft.com/fwlink/p/?LinkID=507653)
@@ -39,9 +40,8 @@ You can use this trial license to try out Enterprise Mobility + Security E5 feat
 
 ## Teams Licenses
 
-It's also possible to get Microsoft Teams Trial licenses from Microsoft Partners or from the Microsoft Support:
-
--   Microsoft Teams Commercial Cloud Trial (6 months, maximum 1000 users)
+Teams is available for free or rather as a freemium application. You can signup [here: https://go.microsoft.com/fwlink/p/?LinkID=2123761](https://go.microsoft.com/fwlink/p/?LinkID=2123761).
+But to test **the full capabilities of Teams** you should atleast use M365 Business Basic (see above).
 
 ## YouTube Video - Create Demo-Tenant
 
