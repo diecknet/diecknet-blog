@@ -43,6 +43,12 @@ You can use this trial license to try out Enterprise Mobility + Security E5 feat
 Teams is available for free or rather as a freemium application. You can signup [here: https://go.microsoft.com/fwlink/p/?LinkID=2123761](https://go.microsoft.com/fwlink/p/?LinkID=2123761).
 But to test **the full capabilities of Teams** you should atleast use M365 Business Basic (see above).
 
+## Microsoft Viva Learning Trial License
+
+There is also a trial license for Microsoft Viva Learning:
+
+-   [Microsoft Viva Learning - 60 Days Trial: https://go.microsoft.com/fwlink/p/?LinkID=2184020](https://go.microsoft.com/fwlink/p/?LinkID=2184020)
+
 ## YouTube Video - Create Demo-Tenant
 
 In this [German YouTube Video](https://www.youtube.com/watch?v=gCS2RkGWNjA) I'll show how to create a Demo-Tenant with trial licenses. I'm also showing how you can extend the trial for another 30 days.
