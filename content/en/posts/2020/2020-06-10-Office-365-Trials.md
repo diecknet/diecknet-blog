@@ -26,7 +26,7 @@ These Microsoft 365 Business test licenses are available:
 -   Microsoft 365 Business Premium Trial: [https://go.microsoft.com/fwlink/p/?LinkID=2102309](https://go.microsoft.com/fwlink/p/?LinkID=2102309)
 -   Microsoft 365 Apps for Business Trial: [https://go.microsoft.com/fwlink/p/?LinkID=507653](https://go.microsoft.com/fwlink/p/?LinkID=507653)
 
-## Intune Lizenzen
+## Intune Licenses
 
 These Microsoft Intune trial licenses are available:
 
