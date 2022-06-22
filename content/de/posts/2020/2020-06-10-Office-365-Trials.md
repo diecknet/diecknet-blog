@@ -41,6 +41,12 @@ Zum Ausprobieren der Enterprise Mobility + Security E5 Funktionen kann folgende 
 Grundsätzlich gibt es mittlerweile Teams als Free beziehungsweise Freemium Version. Die Anmeldung dazu erfolgt [hier: https://go.microsoft.com/fwlink/p/?LinkID=2123761](https://go.microsoft.com/fwlink/p/?LinkID=2123761).
 Zum Testen der **vollständigen Teams Version** sollte aber mindestens M365 Business Basic verwendet werden (siehe oben).
 
+## Microsoft Viva Learning Trial Lizenz
+
+Auch für Microsoft Viva Learning gibt es eine Trial Lizenz:
+
+-   [Microsoft Viva Learning - 60 Tage Trial: https://go.microsoft.com/fwlink/p/?LinkID=2184020](https://go.microsoft.com/fwlink/p/?LinkID=2184020)
+
 ## YouTube Video - Demo-Tenant anlegen
 
 In diesem [YouTube Video](https://www.youtube.com/watch?v=gCS2RkGWNjA) zeige ich, wie ein Demo-Tenant mit Trial-Lizenzen angelegt werden kann. Außerdem wird gezeigt, wie die Trial-Lizenz noch einmal um 30 Tage verlängert werden kann.
