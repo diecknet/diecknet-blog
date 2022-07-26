@@ -5,9 +5,9 @@ contenttags: [azure ad, powershell, azure ad connect]
 image: /assets/images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png
 ---
 
-Here's a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. There is no native Cmdlet in the style of `Set-ADSyncStagingMode` or something like that.
+Here's a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. Sadly there is no native Cmdlet in the style of `Set-ADSyncStagingMode` or something like that.
 
-In this article I'll go first over the way and then later on list the full command block you can use. So feel free to skip below to the end of the post. The following PowerShell Cmdlets have to get executed on the Azure AD Connect Server.
+In this article I'll first explain the approach and then later on list the full command block you can use. So feel free to skip below to the end of the post. The following PowerShell Cmdlets have to get executed on the Azure AD Connect Server.
 
 **Execute these commands on your own risk.**
 
@@ -24,7 +24,7 @@ $aadSyncSettings
 
 ## Investigate the Parameters of the ADSyncGlobalSettings Object
 
-So the interesting stuff is hidden in the `parameters`-property. The settings regarding the Staging Mode lays in `Microsoft.Synchronize.StagingMode`.
+So the interesting stuff is hidden in the "parameters"-property. The settings regarding the Staging Mode lays in "Microsoft.Synchronize.StagingMode".
 
 ```powershell
 $aadSyncSettings.parameters
@@ -34,7 +34,7 @@ $aadSyncSettings.parameters
 
 ## Change the Staging Mode
 
-To configure the Staging Mode we need to set `Microsoft.Synchronize.StagingMode` to either `True` (enable Staging mode) or `False` (disable Staging mode).
+To configure the Staging Mode we need to set "Microsoft.Synchronize.StagingMode" to either "True" (enable Staging mode) or "False" (disable Staging mode).
 
 ```powershell
 # to disable AAD Connect Staging mode
@@ -62,7 +62,7 @@ Afterwards I verified in the GUI (Azure AD Connect Wizard) for the desired resul
 
 ## Summary - Full Code Snippets
 
-After we gathered all these informations, we can create or own short PowerShell Code Snippets to check/enable/disable the Azure AD Connect Staging mode.
+After we gathered all these informations, we can create our own short PowerShell Code Snippets to check/enable/disable the Azure AD Connect Staging mode.
 
 ### Snippet to check for Azure AD Connect Staging Mode
 
