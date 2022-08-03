@@ -72,11 +72,11 @@ Set-AuthConfig -NewCertificateThumbprint <myCertThumbprint> -NewCertificateEffec
 Set-AuthConfig -PublishCertificate
 ```
 
-Anschließend ist noch ein `powershell iisreset` notwendig.
+Anschließend ist noch ein `iisreset` notwendig.
 
 ### Intra-Organization Connector konfigurieren
 
-Anschließend konnte ich der Dokumentation entsprechend weiter verfahren ([Step 3, 4 und 5](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-3-export-the-on-premises-authorization-certificate)). [Step 6 und 7](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-6-create-an-intraorganizationconnector-from-your-on-premises-organization-to-office-365) waren nicht mehr zutreffend. Die IOC mussten nicht mehr angelegt werden, sondern mussten nur noch per `powershell Get-IntraOrganizationConnector | Set-IntraOrganizationConnector -Enabled $true` aktiviert werden. Step 8 spielte keine Rolle, da keine pre-Exchange 2013 SP1 Server in der Umgebung vorhanden waren.
+Anschließend konnte ich der Dokumentation entsprechend weiter verfahren ([Step 3, 4 und 5](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-3-export-the-on-premises-authorization-certificate)). [Step 6 und 7](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#step-6-create-an-intraorganizationconnector-from-your-on-premises-organization-to-office-365) waren nicht mehr zutreffend. Die IOC mussten nicht mehr angelegt werden, sondern mussten nur noch per `Get-IntraOrganizationConnector | Set-IntraOrganizationConnector -Enabled $true` aktiviert werden. Step 8 spielte keine Rolle, da keine pre-Exchange 2013 SP1 Server in der Umgebung vorhanden waren.
 
 ## Tests
 
