@@ -29,7 +29,7 @@ If the mailbox creation was done recently, you might find according event log en
 Get-EventLog -Source "MSExchange CmdletLogs" -LogName "MSExchange Management" -ComputerName <Servername> -Message "*Enable-Mailbox*test.user*"
 ```
 
-![Checking the MSExchange Management Event Log for mailbox creations](/assets/images/2020/2020-01-25 Exchange mailbox creation event log.png "Checking the MSExchange Management Event Log for mailbox creations - The mailbox got recently created by Enable-Mailbox cmdlet.")
+![Checking the MSExchange Management Event Log for mailbox creations](/assets/images/2020/2020-01-25_Exchange_mailbox_creation_event_log.png "Checking the MSExchange Management Event Log for mailbox creations - The mailbox got recently created by Enable-Mailbox cmdlet.")
 
 ## Exchange Versions
 
