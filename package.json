@@ -23,7 +23,7 @@
         "@11ty/eleventy-plugin-rss": "1.2.0",
         "@11ty/eleventy-plugin-syntaxhighlight": "4.1.0",
         "@akumzy/eleventy-plugin-syntaxhighlight": "0.0.2",
-        "@rollup/plugin-replace": "4.0.0",
+        "@rollup/plugin-replace": "5.0.0",
         "autoprefixer": "10.4.12",
         "crypto-js": "4.1.1",
         "css-what": "6.1.0",
