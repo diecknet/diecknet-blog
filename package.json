@@ -23,7 +23,7 @@
         "@11ty/eleventy-plugin-rss": "1.2.0",
         "@11ty/eleventy-plugin-syntaxhighlight": "4.1.0",
         "@akumzy/eleventy-plugin-syntaxhighlight": "0.0.2",
-        "@rollup/plugin-replace": "5.0.0",
+        "@rollup/plugin-replace": "5.0.1",
         "autoprefixer": "10.4.12",
         "crypto-js": "4.1.1",
         "css-what": "6.1.0",
@@ -48,8 +48,8 @@
         "tailwindcss": "2.2.19"
     },
     "devDependencies": {
-        "concurrently": "7.4.0",
-        "eslint": "8.25.0",
+        "concurrently": "7.5.0",
+        "eslint": "8.26.0",
         "eslint-config-prettier": "8.5.0",
         "eslint-plugin-inclusive-language": "2.2.0",
         "husky": "8.0.1",
