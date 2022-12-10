@@ -56,7 +56,7 @@
         "lint-staged": "13.1.0",
         "markdownlint": "0.26.2",
         "markdownlint-cli2": "0.5.1",
-        "prettier": "2.8.0"
+        "prettier": "2.8.1"
     },
     "husky": {
         "hooks": {
