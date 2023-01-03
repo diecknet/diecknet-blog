@@ -23,8 +23,10 @@ module.exports = {
     socialLinkedIn: "diecknet",
     // Twitter ID  (optional, remove it not needed), used for link in the left sidebar, and for OpenGraph sharing information
     socialTwitter: "diecknet",
+    // Mastodon
+    socialMastodon: "https://ieji.de/@diecknet",
     // YouTube ID/Channel  (optional, remove it not needed), used for link in the left sidebar
-    socialYouTube: "UCA5CR5IdmnLRq63Upd2iQkg"
+    socialYouTube: "@diecknet"
     // Google Analytics ID  (optional, remove it not needed), used for... well, Google Analytics
     // googleAnalytics: "YOUR_GA-ID",
     // Algolia-powered search  (optional, remove it not needed),

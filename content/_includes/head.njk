@@ -1,5 +1,10 @@
 <meta charset="utf-8">
 <title>{% if title %}{{ title }} | {% endif %}{{ siteconfig.title }}</title>
+
+{% if siteconfig.socialMastodon %}
+    <link rel="me" href="{{ siteconfig.socialMastodon }}">
+{% endif %}
+
 <script>
 // Toggle dark/light mode, inline JS to avoid any theme flicker
 function toggleDarkLightMode (isInit) {
