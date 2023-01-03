@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
 
     // Define passthrough for assets
     eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy(".well-known");
 
     // Add watch target for JS files (needed for JS bundling in dev mode)
     eleventyConfig.addWatchTarget("./assets/js/");
