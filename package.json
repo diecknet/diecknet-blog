@@ -49,14 +49,14 @@
     },
     "devDependencies": {
         "concurrently": "7.6.0",
-        "eslint": "8.31.0",
+        "eslint": "8.32.0",
         "eslint-config-prettier": "8.6.0",
         "eslint-plugin-inclusive-language": "2.2.0",
         "husky": "8.0.3",
         "lint-staged": "13.1.0",
         "markdownlint": "0.27.0",
         "markdownlint-cli2": "0.6.0",
-        "prettier": "2.8.2"
+        "prettier": "2.8.3"
     },
     "husky": {
         "hooks": {
