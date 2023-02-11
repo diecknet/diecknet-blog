@@ -9,7 +9,7 @@ Just a quick note if you want to use [ntfy.sh](https://ntfy.sh) with [Home Assis
 
 I added the following section to my `/config/configuration.yaml` file:
 
-```yaml
+```yaml{% raw %}
 shell_command:
     ntfy: >
         curl
@@ -22,21 +22,21 @@ shell_command:
         --header 'X-Delay: {{ delay }}'
         --header 'X-Actions: {{ actions }}'
         --header 'X-Click: {{ click }}'
-        --header 'X-Icon: {{ icon }}'
+        --header 'X-Icon: {{ icon }}'{% endraw %}
 ```
 
 ## Usage
 
-To send send a notification, I use this YAML action in an Automation. It's not necessary to provide all parameters. I ran with these.
+To send send a notification, I use this YAML action in an Automation. It's not necessary to provide all parameters. I ran with these four. As far as I know: Theoretically only `topic` is required by ntfy. But this simple `shell_command` action does not check if you set a topic.
 
-```yaml
+```yaml{% raw %}
 service: shell_command.ntfy
 alias: Send ntfy.sh
 data:
   tags: monocle_face
   topic: test
   title: Waschmaschine
-  message: Die Waschmaschine ist fertig!
+  message: Die Waschmaschine ist fertig!{% endraw %}
 ```
 
 ## Set default values
@@ -44,7 +44,7 @@ data:
 If you want to, you can also define default values. For example in this codeblock I've set the default topic to "test".
 So if I don't specify a topic when calling the command, it will fallback to test.
 
-```yaml
+```yaml{% raw %}
 shell_command:
     ntfy: >
         curl
@@ -57,5 +57,5 @@ shell_command:
         --header 'X-Delay: {{ delay }}'
         --header 'X-Actions: {{ actions }}'
         --header 'X-Click: {{ click }}'
-        --header 'X-Icon: {{ icon }}'
+        --header 'X-Icon: {{ icon }}'{% endraw %}
 ```
