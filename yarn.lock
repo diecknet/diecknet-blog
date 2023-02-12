@@ -49,14 +49,6 @@
     linkedom "^0.13.0"
     prismjs "^1.26.0"
 
-"@11ty/eleventy-upgrade-help@2":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-upgrade-help/-/eleventy-upgrade-help-2.0.5.tgz#2db0a2971aaaf40d5da2d8cfea5b4a15c93433ce"
-  integrity sha512-sIH/ObNN2QDyd9Tqzb4N5gKuhgmq7VDO5o/GNpD+jMwCmMFumUiCoNcpp1tlRonuNp7IAVrXIg6SYDp6aqvQUw==
-  dependencies:
-    chalk "^4.1.1"
-    semver "^7.3.5"
-
 "@11ty/eleventy-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-utils/-/eleventy-utils-1.0.1.tgz#e89dc94b475284e5003525db5078663c5087db82"
