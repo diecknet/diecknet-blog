@@ -1,0 +1,12 @@
+{
+    "baseURL": "https://diecknet.de/",
+    "languageCode": "de",
+    "title": "diecknet",
+    "theme": "PaperMod",
+    "enableRobotsTXT": true,
+    "minify": { "disableXML": true, "minifyOutput": true },
+    "params": {
+      "env": "production",
+      "author": "Andreas Dieckmann"
+    }
+}
