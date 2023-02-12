@@ -1,6 +1,6 @@
 {
     "name": "diecknet-blog",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "private": true,
     "scripts": {
         "build": "npm run build:css && npm run build:js && npm run build:eleventy",
@@ -19,7 +19,7 @@
         "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,yaml,yml}\""
     },
     "dependencies": {
-        "@11ty/eleventy": "1.0.2",
+        "@11ty/eleventy": "^2.0.0",
         "@11ty/eleventy-plugin-rss": "1.2.0",
         "@11ty/eleventy-plugin-syntaxhighlight": "4.2.0",
         "@11ty/eleventy-upgrade-help": "2",
