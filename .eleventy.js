@@ -10,6 +10,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const syntaxHighlightLineNumbers = require("@akumzy/eleventy-plugin-syntaxhighlight");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
     // Set Markdown library
@@ -197,6 +198,9 @@ module.exports = function (eleventyConfig) {
 
     // Plugin for minifying HTML
     eleventyConfig.addPlugin(require("./_11ty/html-minify.js"));
+
+    // Plugin to help upgrading to 11ty v2
+    eleventyConfig.addPlugin(UpgradeHelper);
 
     return {
         dir: {

@@ -32,6 +32,14 @@
     linkedom "^0.13.0"
     prismjs "^1.26.0"
 
+"@11ty/eleventy-upgrade-help@2":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-upgrade-help/-/eleventy-upgrade-help-2.0.5.tgz#2db0a2971aaaf40d5da2d8cfea5b4a15c93433ce"
+  integrity sha512-sIH/ObNN2QDyd9Tqzb4N5gKuhgmq7VDO5o/GNpD+jMwCmMFumUiCoNcpp1tlRonuNp7IAVrXIg6SYDp6aqvQUw==
+  dependencies:
+    chalk "^4.1.1"
+    semver "^7.3.5"
+
 "@11ty/eleventy-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-utils/-/eleventy-utils-1.0.1.tgz#e89dc94b475284e5003525db5078663c5087db82"
@@ -2900,7 +2908,7 @@ maximatch@^0.1.0:
     array-differ "^1.0.0"
     array-union "^1.0.1"
     arrify "^1.0.0"
-    minimatch "^3.0.5"
+    minimatch "^3.0.0"
 
 mdn-data@2.0.14:
   version "2.0.14"
@@ -3027,7 +3035,7 @@ multimatch@^5.0.0:
     array-differ "^3.0.0"
     array-union "^2.1.0"
     arrify "^2.0.1"
-    minimatch "^3.0.5"
+    minimatch "^3.0.4"
 
 mustache@^4.2.0:
   version "4.2.0"
@@ -4120,7 +4128,7 @@ resp-modifier@6.0.2:
   integrity sha512-U1+0kWC/+4ncRFYqQWTx/3qkfE6a4B/h3XXgmXypfa0SPZ3t7cbbaFk297PjQS/yov24R18h6OZe6iZwj3NSLw==
   dependencies:
     debug "^2.2.0"
-    minimatch "^3.0.5"
+    minimatch "^3.0.2"
 
 restore-cursor@^3.1.0:
   version "3.1.0"
