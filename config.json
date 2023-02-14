@@ -1,6 +1,12 @@
 {
     "baseURL": "https://diecknet.de/",
     "languageCode": "de",
+    "defaultContentLanguage": "de",
+    "defaultContentLanguageInSubdir": true,
+    "languages": {
+      "de": {},
+      "en": {}
+    },
     "title": "diecknet",
     "theme": "PaperMod",
     "enableRobotsTXT": true,
