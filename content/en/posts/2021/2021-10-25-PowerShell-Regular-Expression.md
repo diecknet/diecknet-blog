@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - powershell-regular-expression
 slug: PowerShell-Regular-Expression
 title: Using PowerShell Regular Expressions to match against filenames
 subtitle: Extracting info with named group captures

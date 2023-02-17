@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-online-per-azure-automation
 slug: Exchange-Online-per-Azure-Automation
 title: "Exchange Online per Azure Automation steuern im Jahr 2023"
 date: 2023-01-09

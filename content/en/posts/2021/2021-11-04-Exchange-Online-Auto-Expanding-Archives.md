@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-online-auto-expanding-archives
 slug: Exchange-Online-Auto-Expanding-Archives
 title: "Verify Auto-Expanding Archives in Exchange Online"
 date: 2021-11-04

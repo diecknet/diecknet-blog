@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - apple-internet-accounts-office365
 slug: Apple-Internet-Accounts-Office365
 title: "Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich"
 subtitle: iOS Zugriff auf Office 365 ermöglichen

@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-hybrid-hcw8064-oauth
 slug: Exchange-Hybrid-HCW8064-OAuth
 layout: post
 title: "Exchange Hybrid: HCW8064 OAuth configuration couldn't get performed"

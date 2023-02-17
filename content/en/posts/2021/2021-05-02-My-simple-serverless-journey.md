@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - my-simple-serverless-journey
 slug: My-simple-serverless-journey
 layout: post
 title: "My simple serverless journey was not that easy"

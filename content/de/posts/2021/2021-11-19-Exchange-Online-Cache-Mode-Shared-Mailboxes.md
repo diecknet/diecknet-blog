@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-online-cache-mode-shared-mailboxes
 slug: Exchange-Online-Cache-Mode-Shared-Mailboxes
 title: Outlook Cache Modus für Freigegebene Postfächer
 contenttags: [exchange, exchange online, shared mailbox, freigegebenes postfach]

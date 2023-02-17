@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - my-simple-serverless-journey-part2
 slug: My-simple-serverless-journey-part2
 title: "The Downside of going serverless"
 subtitle: "The making of simpleIP.de - Part 2"

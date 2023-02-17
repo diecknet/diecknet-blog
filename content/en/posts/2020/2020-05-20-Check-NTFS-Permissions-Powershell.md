@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - check-ntfs-permissions-powershell
 slug: Check-NTFS-Permissions-Powershell
 layout: post
 title: "Check NTFS Permissions using Powershell"

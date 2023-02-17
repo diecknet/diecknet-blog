@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - msteams-disable-custom-backgrounds
 slug: MSTeams-Disable-Custom-Backgrounds
 title: "Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren"
 subtitle: "Unerwünschte Teams Kamera-Hintergründe unterbinden"

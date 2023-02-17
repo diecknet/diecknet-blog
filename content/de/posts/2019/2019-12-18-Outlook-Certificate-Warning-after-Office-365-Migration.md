@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - outlook-certificate-warning-after-office-365-migration
 slug: Outlook-Certificate-Warning-after-Office-365-Migration
 title: Outlook Zertifikatswarnung nach Office 365 Migration
 contenttags: [office365, exchange, exchangeonline, exchange2010]

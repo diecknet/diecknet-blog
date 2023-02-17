@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - office-365-trials
 slug: Office-365-Trials
 layout: post
 title: "Office 365 Trial Licenses"

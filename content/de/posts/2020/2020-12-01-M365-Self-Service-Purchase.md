@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - m365-self-service-purchase
 slug: M365-Self-Service-Purchase
 title: "Microsoft 365 Self Service Purchase Lizenzen"
 subtitle: "Selbstkauf von Office 365 Lizenzen durch Endanwender"

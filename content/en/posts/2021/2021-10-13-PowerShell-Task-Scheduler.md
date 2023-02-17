@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - powershell-task-scheduler
 slug: PowerShell-Task-Scheduler
 title: Run PowerShell Script with Windows Task Scheduler
 subtitle: The parameter I keep forgetting is '-file'

@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - apple-internet-accounts-office365
 slug: Apple-Internet-Accounts-Office365
 layout: post
 title: "Exchange Online: Apple Internet Accounts - Need admin approval"

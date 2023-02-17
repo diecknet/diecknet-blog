@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-room-mailbox-standard-permissions
 slug: Exchange-Room-Mailbox-Standard-Permissions
 layout: post
 title: Exchange Room Mailbox - Set Permissions

@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - connect-microsoftteams-authentifizierungsfehler-activex
 slug: Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX
 title: "Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuerelement kann nicht instanziiert werden"
 subtitle: "Fehlercode: Microsoft.TeamsCmdlets.Powershell.Connect.ConnectMicrosoftTeams"

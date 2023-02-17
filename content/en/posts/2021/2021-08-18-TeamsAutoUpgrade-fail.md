@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - teamsautoupgrade-fail
 slug: TeamsAutoUpgrade-fail
 title: Moving from Skype for Business to Teams sucks
 contenttags:

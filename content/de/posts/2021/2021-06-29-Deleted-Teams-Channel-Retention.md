@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - deleted-teams-channel-retention
 slug: Deleted-Teams-Channel-Retention
 title: Wie lange werden gelöschte Teams Kanäle aufbewahrt?
 contenttags:

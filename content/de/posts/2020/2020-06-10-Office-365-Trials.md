@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - office-365-trials
 slug: Office-365-Trials
 title: "Office 365 Trial Lizenzen"
 subtitle: Microsoft 365 kostenfrei ausprobieren

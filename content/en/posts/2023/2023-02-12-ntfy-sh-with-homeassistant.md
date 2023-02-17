@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - ntfy-sh-with-homeassistant
 slug: ntfy-sh-with-homeassistant
 title: "Use ntfy.sh with Home Assistant"
 date: 2023-02-12

@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - set-teams-meeting-dialin-number-powershell
 slug: Set-Teams-Meeting-Dialin-number-powershell
 title: Set Teams Meeting Dial-in number using PowerShell
 contenttags:

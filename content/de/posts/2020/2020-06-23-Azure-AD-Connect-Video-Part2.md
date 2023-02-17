@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - azure-ad-connect-video-part2
 slug: Azure-AD-Connect-Video-Part2
 title: "Azure AD Connect installieren (Video)"
 subtitle: Weiterführende Links zu Azure AD Connect

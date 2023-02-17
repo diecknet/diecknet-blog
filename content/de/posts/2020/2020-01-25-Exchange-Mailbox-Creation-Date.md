@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-mailbox-creation-date
 slug: Exchange-Mailbox-Creation-Date
 title: Exchange - Wann wurde das Postfach WIRKLICH erstellt?
 subtitle: MSExchWhenMailboxCreated ist nicht was es scheint...

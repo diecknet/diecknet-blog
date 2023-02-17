@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-hybrid-hcw8064-oauth
 slug: Exchange-Hybrid-HCW8064-OAuth
 title: "Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden"
 subtitle: OAuth Konfiguration manuell durchführen

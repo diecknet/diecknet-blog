@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - set-file-date-with-powershell
 slug: Set-File-Date-with-PowerShell
 title: "Dateidatum per PowerShell setzen"
 subtitle: "Zeitreisen per PowerShell?"

@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-server-setup-incomplete-fail-stopping-services
 slug: Exchange-Server-Setup-Incomplete-fail-stopping-services
 title: "Exchange Server Setup Incomplete but fails to complete"
 subtitle: "Setup fails at 'Step 1 of 13: Stopping Services'"

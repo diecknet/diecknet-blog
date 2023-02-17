@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - list-all-microsoft-booking-mailboxes
 slug: List-All-Microsoft-Booking-Mailboxes
 title: "List all Microsoft Booking Calendars"
 date: 2021-11-12

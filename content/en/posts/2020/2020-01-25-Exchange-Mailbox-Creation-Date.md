@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - exchange-mailbox-creation-date
 slug: Exchange-Mailbox-Creation-Date
 layout: post
 title: Exchange - When was that mailbox REALLY created?

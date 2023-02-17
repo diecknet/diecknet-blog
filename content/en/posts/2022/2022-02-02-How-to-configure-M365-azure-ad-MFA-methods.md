@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - how-to-configure-m365-azure-ad-mfa-methods
 slug: How-to-configure-M365-azure-ad-MFA-methods
 title: "How to configure MFA methods for Azure AD"
 date: 2022-02-02

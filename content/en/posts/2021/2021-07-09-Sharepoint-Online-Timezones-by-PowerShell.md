@@ -1,4 +1,6 @@
 ﻿---
+aliases:
+    - sharepoint-online-timezones-by-powershell
 slug: Sharepoint-Online-Timezones-by-PowerShell
 title: Retrieve the Timezone of a Sharepoint Online Site using PowerShell
 contenttags:
