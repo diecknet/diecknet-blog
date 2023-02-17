@@ -4,8 +4,16 @@
     "defaultContentLanguage": "de",
     "defaultContentLanguageInSubdir": true,
     "languages": {
-      "de": {},
-      "en": {}
+      "de": {
+        "contentDir": "content/de",
+        "languageName": "Deutsch",
+        "weight": 10
+      },
+      "en": {
+        "contentDir": "content/en",
+        "languageName": "English",
+        "weight": 20
+      }
     },
     "title": "diecknet",
     "theme": "PaperMod",
