@@ -28,4 +28,3 @@ Ich habe ein [Video](https://www.youtube.com/watch?v=unXf7ma1NR4) erstellt, in d
 ## Weiterführende Links
 
 Die offizielle Microsoft Dokumentation dazu ist hier zu finden: [https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps)
-
