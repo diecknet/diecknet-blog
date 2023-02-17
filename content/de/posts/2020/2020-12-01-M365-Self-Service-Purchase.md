@@ -1,4 +1,5 @@
----
+﻿---
+slug: M365-Self-Service-Purchase
 title: "Microsoft 365 Self Service Purchase Lizenzen"
 subtitle: "Selbstkauf von Office 365 Lizenzen durch Endanwender"
 date: 2020-12-01
@@ -56,3 +57,4 @@ foreach($product in $products) {
 ## Weiterführende Links
 
 [FAQ von Microsoft zu dem Thema (docs.microsoft.com)](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+

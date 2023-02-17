@@ -1,4 +1,5 @@
----
+﻿---
+slug: Deleted-Teams-Channel-Retention
 title: Wie lange werden gelöschte Teams Kanäle aufbewahrt?
 contenttags:
     [
@@ -26,3 +27,4 @@ Im englischsprachigen Original [https://docs.microsoft.com/en-us/microsoftteams/
 Die deutschsprachige Version ist hier zu finden: [https://docs.microsoft.com/de-de/microsoftteams/limits-specifications-teams#teams-and-channels](https://docs.microsoft.com/de-de/microsoftteams/limits-specifications-teams#teams-and-channels)
 
 > **Gelöschte Kanäle können innerhalb von 30 Tagen wiederhergestellt werden. Während dieser 30 Tage wird ein gelöschter Kanal weiterhin in das Limit von 200 Kanälen oder 30 privaten Kanälen pro Team eingerechnet. Nach 30 Tagen wird ein gelöschter Kanal samt seiner Inhalte endgültig gelöscht und der Kanal wird nicht mehr in das Kanallimit pro Team eingerechnet.**
+

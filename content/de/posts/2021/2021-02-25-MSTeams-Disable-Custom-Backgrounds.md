@@ -1,4 +1,5 @@
----
+﻿---
+slug: MSTeams-Disable-Custom-Backgrounds
 title: "Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren"
 subtitle: "Unerwünschte Teams Kamera-Hintergründe unterbinden"
 date: 2021-02-25
@@ -69,3 +70,4 @@ Import-PSSession $session
 
 -   [Microsoft Teams PowerShell Modul](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-install)
 -   [Meeting policy settings - Video filters mode](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams#meeting-policy-settings---video-filters-mode)
+

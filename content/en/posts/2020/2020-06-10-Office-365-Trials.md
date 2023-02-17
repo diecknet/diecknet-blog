@@ -1,4 +1,5 @@
----
+﻿---
+slug: Office-365-Trials
 layout: post
 title: "Office 365 Trial Licenses"
 subtitle: Try Microsoft 365 for free
@@ -66,3 +67,4 @@ You can use the same trial license links to add the licenses to an existing tena
 ### Step 2: Click on "Try now"
 
 ![Add Microsoft 365 Trial license to existing Tenant (2)](/images/2020/2020-07-28_IntuneTrial_2.png "Add Microsoft 365 Trial license to existing Tenant (2)")
+

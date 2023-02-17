@@ -18,6 +18,7 @@
     "permalinks": {
       "posts": "/:year/:month/:day/:slug/"
     },
+    "disablePathToLower": true,
     "title": "diecknet",
     "theme": "PaperMod",
     "enableRobotsTXT": true,

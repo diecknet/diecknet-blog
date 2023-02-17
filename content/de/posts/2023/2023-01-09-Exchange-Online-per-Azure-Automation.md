@@ -1,4 +1,5 @@
----
+﻿---
+slug: Exchange-Online-per-Azure-Automation
 title: "Exchange Online per Azure Automation steuern im Jahr 2023"
 date: 2023-01-09
 contenttags: [microsoft365, office365, exchangeonline, powershell, exo, azure, azureautomation]
@@ -27,3 +28,4 @@ Ich habe ein [Video](https://www.youtube.com/watch?v=unXf7ma1NR4) erstellt, in d
 ## Weiterführende Links
 
 Die offizielle Microsoft Dokumentation dazu ist hier zu finden: [https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps)
+

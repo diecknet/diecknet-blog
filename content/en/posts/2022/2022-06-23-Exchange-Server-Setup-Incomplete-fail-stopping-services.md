@@ -1,4 +1,5 @@
----
+﻿---
+slug: Exchange-Server-Setup-Incomplete-fail-stopping-services
 title: "Exchange Server Setup Incomplete but fails to complete"
 subtitle: "Setup fails at 'Step 1 of 13: Stopping Services'"
 date: 2022-06-23
@@ -298,3 +299,4 @@ Then I ran the Exchange Management Shell to run `Get-ExchangeServer`. Looks good
 ### Sidenote
 
 In the Microsoft Exchange context `Cafe` stands for "Client Access Front End". I was somehow not aware of that abbreviation.
+

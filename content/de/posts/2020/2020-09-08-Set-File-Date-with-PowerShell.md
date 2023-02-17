@@ -1,4 +1,5 @@
----
+﻿---
+slug: Set-File-Date-with-PowerShell
 title: "Dateidatum per PowerShell setzen"
 subtitle: "Zeitreisen per PowerShell?"
 date: 2020-09-08
@@ -78,3 +79,4 @@ Get-Item "Beispiel.txt" | %{$_.LastAccessTime=(Get-Date "2019-01-06 08:03")}
 ## Fazit
 
 Da die Zeit-Attribute von Dateien beliebig manipuliert werden können, sollte ihnen nicht getraut werden. Sie können bestenfalls als Anhaltspunkt für eine Aktion in einem System genutzt werden. Ein Beweis sind sie jedoch definitiv nicht.
+

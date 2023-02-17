@@ -1,4 +1,5 @@
----
+﻿---
+slug: PowerShell-Task-Scheduler
 title: Run PowerShell Script with Windows Task Scheduler
 subtitle: The parameter I keep forgetting is '-file'
 contenttags: [powershell, windows, task scheduler]
@@ -26,3 +27,4 @@ Set all the self-explanatory options like Name, Description, User Account, Trigg
 | Action                   | Start a program            |
 | Program/script           | `powershell.exe`             |
 | Add arguments (optional) | `-file "C:\Path\Script.ps1"` |
+

@@ -1,4 +1,5 @@
----
+﻿---
+slug: Exchange-Hybrid-HCW8064-OAuth
 layout: post
 title: "Exchange Hybrid: HCW8064 OAuth configuration couldn't get performed"
 subtitle: OAuth configuration manually done
@@ -110,3 +111,4 @@ Actually, it was possible to retrieve cross-premise free/busy times - in both di
 -   [Demystifying Hybrid Free/Busy: Finding errors and troubleshooting (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-hybrid-free-busy-finding-errors-and-troubleshooting/ba-p/607727)
 -   [Configure OAuth authentication between Exchange and Exchange Online organizations (docs.microsoft.com)](https://docs.microsoft.com/en-us/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)
 -   [Exchange OAuth article (msxfaq.de)](https://www.msxfaq.de/exchange/e2013/exchange_oauth.htm)
+

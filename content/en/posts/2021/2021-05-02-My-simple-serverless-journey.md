@@ -1,4 +1,5 @@
----
+﻿---
+slug: My-simple-serverless-journey
 layout: post
 title: "My simple serverless journey was not that easy"
 subtitle: "The making of simpleIP.de"
@@ -237,3 +238,4 @@ class ElementHandler {
 ## Conclusion
 
 Well, the [site](https://simpleip.de) is up and running. The source code is [available on Github](https://github.com/diecknet/simple-ip-site), feel free to check the whole thing out. I'm 100% sure: It would've been way easier to just use a classic shared webspace and some PHP code. But this whole process was not just about the result. It was also really interesting to check out Serverless applications and different providers. I do prefer the Cloudflare approach, because the Serverless Workers are executed globally, not only in the US like with Vercel.
+

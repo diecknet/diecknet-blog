@@ -1,4 +1,5 @@
----
+﻿---
+slug: Azure-AD-Connect-Staging-mode-PowerShell
 title: "Set Azure AD Connect Staging Mode via PowerShell"
 date: 2022-07-21
 contenttags: [azure ad, powershell, azure ad connect]
@@ -88,3 +89,4 @@ $aadSyncSettings=Get-ADSyncGlobalSettings
 ($aadSyncSettings.parameters | ?{$_.name -eq "Microsoft.Synchronize.StagingMode"}).value="True"
 Set-ADSyncGlobalSettings $aadSyncSettings
 ```
+

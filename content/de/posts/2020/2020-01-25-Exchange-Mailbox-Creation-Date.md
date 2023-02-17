@@ -1,4 +1,5 @@
----
+﻿---
+slug: Exchange-Mailbox-Creation-Date
 title: Exchange - Wann wurde das Postfach WIRKLICH erstellt?
 subtitle: MSExchWhenMailboxCreated ist nicht was es scheint...
 contenttags: [exchange, powershell, exchange2013]
@@ -33,3 +34,4 @@ Get-EventLog -Source "MSExchange CmdletLogs" -LogName "MSExchange Management" -C
 ## Exchange Versionen
 
 Die Vorgehensweise wurde mit Exchange 2013 CU23 getestet. Ich bin mir nicht sicher, ob das beobachtete Verhalten ein Bug in Exchange 2013 ist. Die generelle Vorgehensweise sollte auch mit Exchange 2016/2019 funktionieren.
+

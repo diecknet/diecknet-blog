@@ -1,4 +1,5 @@
----
+﻿---
+slug: Set-Teams-Meeting-Dialin-number-powershell
 title: Einwahlrufnummer für Teams Meetings per PowerShell setzen
 contenttags:
     [teams, microsoft teams, teams dial in number, teams audio conferencing]
@@ -46,3 +47,4 @@ foreach($user in $users) {
 ## Quelle
 
 [Initiale Zuweisung der Einwahlrufnummern](https://docs.microsoft.com/en-us/microsoftteams/set-the-phone-numbers-included-on-invites-in-teams#initial-assignment-of-phone-numbers-that-are-included-in-the-meeting-invites-for-new-users)
+

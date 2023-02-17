@@ -1,4 +1,5 @@
----
+﻿---
+slug: TeamsAutoUpgrade-fail
 title: Moving from Skype for Business to Teams sucks
 contenttags:
     [
@@ -76,3 +77,4 @@ Type|Service|Protocol|Port|Weight|Priority|TTL|Name|Target|
 
 First of all I wish the automatic/assisted Upgrade would do a better job on understanding the DNS configuration of a domain. Alternatively there should be atleast an option to just skip the DNS Check when upgrading to TeamsOnly mode. Something like a `-Force` Option for `Grant-CsTeamsUpgradePolicy -Global`.  
 Either of those ways would make the transition to TeamsOnly mode way easier and smoother.
+

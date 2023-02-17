@@ -1,4 +1,5 @@
----
+﻿---
+slug: ntfy-sh-with-homeassistant
 title: "Use ntfy.sh with Home Assistant"
 date: 2023-02-12
 contenttags: [homeassistant, home assistant, ntfy.sh, notification]
@@ -59,3 +60,4 @@ shell_command:
         --header 'X-Click: {{ click }}'
         --header 'X-Icon: {{ icon }}'{% endraw %}
 ```
+

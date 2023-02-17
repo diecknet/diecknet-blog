@@ -1,4 +1,5 @@
----
+﻿---
+slug: How-to-list-all-users-with-admin-roles-m365
 title: "List all Users with administrative roles in a Microsoft 365 environment"
 date: 2021-12-13
 contenttags: [azure ad, microsoft 365, powershell]
@@ -36,3 +37,4 @@ $AllRoleAssignments | Sort-Object -Unique "UserPrincipalName" | Export-csv -Enco
 1. This snippet doesn't export App/Service Principals with admin roles
 
 But that's all that I needed at this moment. Feel free to modify the code to your needs.
+

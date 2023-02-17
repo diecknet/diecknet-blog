@@ -1,4 +1,5 @@
----
+﻿---
+slug: Apple-Internet-Accounts-Office365
 layout: post
 title: "Exchange Online: Apple Internet Accounts - Need admin approval"
 subtitle: Enable iOS Access to Office 365 resources
@@ -126,3 +127,4 @@ If an app has already been allowed, it can be deactivated again if required. To 
 -   [Documentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management)
 -   [Article: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources)
 -   [Article in Exchange Team Blog: Microsoft and Apple Working Together to Improve Exchange Online Security](https://techcommunity.microsoft.com/t5/exchange-team-blog/microsoft-and-apple-working-together-to-improve-exchange-online/ba-p/3513846)
+

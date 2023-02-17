@@ -1,4 +1,5 @@
----
+﻿---
+slug: Exchange-Online-Auto-Expanding-Archives
 title: "Verify Auto-Expanding Archives in Exchange Online"
 date: 2021-11-04
 contenttags: [exchange, exchange online, powershell, archive mailbox]
@@ -55,3 +56,4 @@ The user has a "Primary" mailbox, a "MainArchive" mailbox and another "AuxArchiv
 
 -   [Office 365: Auto-Expanding Archive FAQ (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)
 -   [Microsoft Caps Exchange Online’s Unlimited Archive at 1.5 TB (Practical 365)](https://practical365.com/microsoft-caps-exchange-onlines-unlimited-archive/)
+

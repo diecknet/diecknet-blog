@@ -1,4 +1,5 @@
----
+﻿---
+slug: Git-on-Windows-remove-all-merged-branches
 title: "How to remove all merged Git Branches on Windows"
 subtitle: "by using Git and PowerShell"
 date: 2022-06-21
@@ -50,3 +51,4 @@ Afterwards you might want to prune remote tracking branches, that don't exist re
 ```git
 git remote prune origin
 ```
+

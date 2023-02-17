@@ -1,4 +1,5 @@
----
+﻿---
+slug: Sharepoint-Online-Timezones-by-PowerShell
 title: Retrieve the Timezone of a Sharepoint Online Site using PowerShell
 contenttags:
     [
@@ -199,3 +200,4 @@ https://diecknet.de/en/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/
         }
     }
 ```
+

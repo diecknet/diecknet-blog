@@ -1,4 +1,5 @@
----
+﻿---
+slug: Office-365-Trials
 title: "Office 365 Trial Lizenzen"
 subtitle: Microsoft 365 kostenfrei ausprobieren
 date: 2020-06-10
@@ -64,3 +65,4 @@ Um eine Trial Lizenz zu einem bestehenden Tenant hinzuzufügen, können die glei
 ### Schritt 2: Bestätigen per Klick auf "Try now"
 
 ![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)](/images/2020/2020-07-28_IntuneTrial_2.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)")
+

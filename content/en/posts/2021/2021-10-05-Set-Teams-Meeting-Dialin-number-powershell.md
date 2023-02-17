@@ -1,4 +1,5 @@
----
+﻿---
+slug: Set-Teams-Meeting-Dialin-number-powershell
 title: Set Teams Meeting Dial-in number using PowerShell
 contenttags:
     [teams, microsoft teams, teams dial in number, teams audio conferencing]
@@ -46,3 +47,4 @@ foreach($user in $users) {
 ## Source
 
 [Initial assignment of phone numbers](https://docs.microsoft.com/en-us/microsoftteams/set-the-phone-numbers-included-on-invites-in-teams#initial-assignment-of-phone-numbers-that-are-included-in-the-meeting-invites-for-new-users)
+

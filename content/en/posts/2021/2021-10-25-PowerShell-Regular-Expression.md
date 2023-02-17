@@ -1,4 +1,5 @@
----
+﻿---
+slug: PowerShell-Regular-Expression
 title: Using PowerShell Regular Expressions to match against filenames
 subtitle: Extracting info with named group captures
 contenttags:
@@ -27,3 +28,4 @@ Output:
 ID: 1337
 Actual Filename: MyDocumentXYZ.pdf
 ```
+

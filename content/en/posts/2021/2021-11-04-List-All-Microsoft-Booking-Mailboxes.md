@@ -1,4 +1,5 @@
----
+﻿---
+slug: List-All-Microsoft-Booking-Mailboxes
 title: "List all Microsoft Booking Calendars"
 date: 2021-11-12
 contenttags:
@@ -54,3 +55,4 @@ If you only want to list the calendars, replace the last line of the script with
 ```powershell
 $BookingsMailboxesWithPermissions | Sort-Object -Property "Bookings Mailbox E-Mail-Address" -Unique | Export-Csv C:\temp\bookings-permissions.csv -Encoding utf8 -Delimiter ";" -NoTypeInformation
 ```
+
