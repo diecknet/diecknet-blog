@@ -38,4 +38,3 @@ Get-EventLog -Source "MSExchange CmdletLogs" -LogName "MSExchange Management" -C
 
 This procedure was tested with Exchange 2013 CU23. I'm not sure if this behavior is intended, of it's a bug in Exchange 2013.
 The general procedure should also apply to Exchange 2016/2019 and Exchange Online.
-

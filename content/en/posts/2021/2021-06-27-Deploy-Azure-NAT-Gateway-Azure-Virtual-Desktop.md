@@ -27,4 +27,3 @@ I created a PowerShell script to automatically deploy an Azure NAT-Gateway into 
 ## Get the script
 
 [The script is free to download on GitHub.](https://github.com/diecknet/AzureVirtualDesktop/tree/main/Deploy-NATGatewayAVD)
-

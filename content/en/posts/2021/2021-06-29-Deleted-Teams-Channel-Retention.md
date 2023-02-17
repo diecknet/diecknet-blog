@@ -25,4 +25,3 @@ If you're asking yourself "How long are deleted Teams channels retained?" or "Fo
 In [https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels](https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels) under the table *Teams and channels* in **footnote 4** it's stated:
 
 > **Deleted channels can be restored within 30 days. During these 30 days, a deleted channel continues to be counted towards the 200 channel or 30 private channel per team limit. After 30 days, a deleted channel and its content are permanently deleted and the channel no longer counts towards the per team limit.**
-

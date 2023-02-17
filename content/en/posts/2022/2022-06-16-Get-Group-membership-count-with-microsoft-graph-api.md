@@ -28,4 +28,3 @@ https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/mem
 ## More information
 
 [https://docs.microsoft.com/en-us/graph/aad-advanced-queries?tabs=http](https://docs.microsoft.com/en-us/graph/aad-advanced-queries?tabs=http)
-

@@ -56,4 +56,3 @@ foreach($room in $rooms) {
 ## Exchange Versions
 
 This procedure was tested with Exchange 2013. The procedure should also apply to Exchange 2016/2019 and Exchange Online.
-

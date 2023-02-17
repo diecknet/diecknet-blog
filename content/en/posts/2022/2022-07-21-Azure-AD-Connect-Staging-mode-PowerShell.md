@@ -91,4 +91,3 @@ $aadSyncSettings=Get-ADSyncGlobalSettings
 ($aadSyncSettings.parameters | ?{$_.name -eq "Microsoft.Synchronize.StagingMode"}).value="True"
 Set-ADSyncGlobalSettings $aadSyncSettings
 ```
-

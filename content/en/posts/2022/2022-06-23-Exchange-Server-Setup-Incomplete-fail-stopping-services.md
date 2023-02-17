@@ -301,4 +301,3 @@ Then I ran the Exchange Management Shell to run `Get-ExchangeServer`. Looks good
 ### Sidenote
 
 In the Microsoft Exchange context `Cafe` stands for "Client Access Front End". I was somehow not aware of that abbreviation.
-

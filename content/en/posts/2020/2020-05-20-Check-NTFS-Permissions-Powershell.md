@@ -35,4 +35,3 @@ I created a quick-and-dirty PowerShell script to check the permissions. It's not
 ## Download Script
 
 [CheckProfileStoragePermissions.ps1 (Github)](https://gist.github.com/diecknet/8a36e9551cf5a08c03779e9f7d13d05e)
-

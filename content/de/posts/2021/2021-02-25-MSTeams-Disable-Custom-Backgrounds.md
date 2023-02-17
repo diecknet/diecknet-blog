@@ -72,4 +72,3 @@ Import-PSSession $session
 
 -   [Microsoft Teams PowerShell Modul](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-install)
 -   [Meeting policy settings - Video filters mode](https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams#meeting-policy-settings---video-filters-mode)
-

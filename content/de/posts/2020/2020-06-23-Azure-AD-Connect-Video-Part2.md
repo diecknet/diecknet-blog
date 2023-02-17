@@ -26,4 +26,3 @@ Ich habe ein [YouTube Video](https://www.youtube.com/watch?v=xQYsSngTSnU) über 
 -   Diecknet Blog post: [Azure AD Connect richtig planen und vorbereiten](/de/2020/06/05/Azure-AD-Connect-Video/)
 -   YouTube Video: [Azure AD Connect richtig planen und vorbereiten](https://www.youtube.com/watch?v=_feF0VPL2Ps)
 -   Hardware Anforderungen für Azure AD Connect Server: [Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites#hardware-requirements-for-azure-ad-connect)
-

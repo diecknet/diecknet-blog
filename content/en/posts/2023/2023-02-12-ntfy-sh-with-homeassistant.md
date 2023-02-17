@@ -62,4 +62,3 @@ shell_command:
         --header 'X-Click: {{ click }}'
         --header 'X-Icon: {{ icon }}'{% endraw %}
 ```
-

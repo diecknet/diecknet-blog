@@ -30,4 +30,3 @@ I created a [German Video](https://www.youtube.com/watch?v=unXf7ma1NR4) showing 
 ## Further links
 
 The official Microsoft documentation for this can be found here: [https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps](https://learn.microsoft.com/en-us/powershell/exchange/connect-exo-powershell-managed-identity?view=exchange-ps)
-

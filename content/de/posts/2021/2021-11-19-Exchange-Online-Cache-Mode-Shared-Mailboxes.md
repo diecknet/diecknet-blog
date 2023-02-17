@@ -88,4 +88,3 @@ Anschließend sollte der Abruf von E-Mails möglich sein, wenn diese älter als 
 ## Fazit
 
 Ich bin mit diesem Workaround recht zufrieden. Ein wirklich guter Weg das zu automatisieren ist mir leider nicht bekannt. Außerdem habe ich mindestens 1 Tenant, bei dem die Einstellung nicht funktioniert. Dort wird zwar das Freigegebene Postfach als zusätzliches Konto eingebunden, aber der Abruf von nicht-gecacheten E-Mails ist trotzdem nicht möglich.
-

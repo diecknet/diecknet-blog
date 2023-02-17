@@ -34,4 +34,3 @@ If you don't trust me or that link above, you can manually click through to the 
 
 1. The classic Active Directory / Office 365 Portal opens. Choose the desired allowed Authentication Methods under "Verification options". Don't forget to click on "Save".  
    [![Azure AD Classic MFA Admin Portal](/images/2022/2022-02-02_MFA_Portal_classic.png "Azure AD Classic MFA Admin Portal")](/images/2022/2022-02-02_MFA_Portal_classic.png)
-

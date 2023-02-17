@@ -52,4 +52,3 @@ Anyway my API is running. Next step was to add some JavaScript code to the websi
 ## Conclusion
 
 So it's still _kinda_ serverless, since I don't administer the Webserver at Netcup 😇. It's a Shared Webhost package. When going serverless, there are several obstacles, but there's mostlikely a Workaround. For my use case, I still prefer these workarounds instead of administering a full server.
-

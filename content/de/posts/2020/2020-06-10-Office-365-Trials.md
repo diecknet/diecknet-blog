@@ -67,4 +67,3 @@ Um eine Trial Lizenz zu einem bestehenden Tenant hinzuzufügen, können die glei
 ### Schritt 2: Bestätigen per Klick auf "Try now"
 
 ![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)](/images/2020/2020-07-28_IntuneTrial_2.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)")
-

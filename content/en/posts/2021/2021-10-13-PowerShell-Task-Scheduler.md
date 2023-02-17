@@ -29,4 +29,3 @@ Set all the self-explanatory options like Name, Description, User Account, Trigg
 | Action                   | Start a program            |
 | Program/script           | `powershell.exe`             |
 | Add arguments (optional) | `-file "C:\Path\Script.ps1"` |
-

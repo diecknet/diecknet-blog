@@ -53,4 +53,3 @@ Afterwards you might want to prune remote tracking branches, that don't exist re
 ```git
 git remote prune origin
 ```
-

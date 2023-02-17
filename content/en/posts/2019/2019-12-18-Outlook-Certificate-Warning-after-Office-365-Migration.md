@@ -19,4 +19,3 @@ The On-Premise Exchange Server 2010 was still online - of course, otherwise a ce
 ![Outlook Connection Status: Outlook is still using resources from the local exchange server svr1.example.com](/images/2019-12-18-Outlook-connection-status.png "Outlook Connection Status: Outlook is still using resources from the local exchange server svr1.example.com")  
 For an affected user, we have retrieved the "Connection status" via CTRL+right-click on the Outlook icon in the tray in the menu. It quickly became apparent that the user was actually still accessing resources from the local On-Premise Exchange system: an IT employee created new resource mailboxes on the Exchange Server and granted users access.  
 As a workaround, the server's certificate could be renewed. The actual solution, to migrate the resource mailbox to Office 365 as well, could not be implemented in a timely manner for organizational reasons.
-

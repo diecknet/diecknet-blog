@@ -126,4 +126,3 @@ Wenn eine App bereits erlaubt ist, kann sie bei Bedarf auch wieder deaktiviert w
 -   [Dokumentation: Application management with Azure Active Directory (docs.microsoft.com)](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-management)
 -   [Artikel: "iOS accounts needs permission to access Office 365 resources" (office365.thorpick.de)](https://office365.thorpick.de/ios-accounts-needs-permission-to-access-office-365-resources)
 -   [Artikel im Exchange Team Blog: Microsoft and Apple Working Together to Improve Exchange Online Security](https://techcommunity.microsoft.com/t5/exchange-team-blog/microsoft-and-apple-working-together-to-improve-exchange-online/ba-p/3513846)
-

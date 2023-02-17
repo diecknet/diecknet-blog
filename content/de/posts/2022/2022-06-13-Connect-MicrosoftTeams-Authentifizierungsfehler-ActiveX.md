@@ -44,4 +44,3 @@ Ich hatte erst vermutet, dass ich eine veraltete Modulversion verwendet habe, ab
 ## Workaround
 
 Die genaue Ursache habe ich jetzt nicht untersucht. Anscheinend war aber noch eine alte Authentifzierung zwischen gecached. Einmal kurz `Disconnect-MicrosoftTeams` ausgeführt und anschließend konnte ich mich auch wie gewohnt per `Connect-MicrosoftTeams` einloggen.
-

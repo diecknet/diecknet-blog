@@ -58,4 +58,3 @@ The user has a "Primary" mailbox, a "MainArchive" mailbox and another "AuxArchiv
 
 -   [Office 365: Auto-Expanding Archive FAQ (Exchange Team Blog)](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)
 -   [Microsoft Caps Exchange Online’s Unlimited Archive at 1.5 TB (Practical 365)](https://practical365.com/microsoft-caps-exchange-onlines-unlimited-archive/)
-
