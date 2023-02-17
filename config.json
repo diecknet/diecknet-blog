@@ -15,6 +15,9 @@
         "weight": 20
       }
     },
+    "permalinks": {
+      "posts": "/:year/:month/:day/:slug/"
+    },
     "title": "diecknet",
     "theme": "PaperMod",
     "enableRobotsTXT": true,
