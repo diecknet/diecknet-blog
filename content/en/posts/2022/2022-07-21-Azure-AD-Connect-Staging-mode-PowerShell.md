@@ -2,7 +2,7 @@
 title: "Set Azure AD Connect Staging Mode via PowerShell"
 date: 2022-07-21
 contenttags: [azure ad, powershell, azure ad connect]
-image: /assets/images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png
+image: /images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png
 ---
 
 Here's a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. Sadly there is no native Cmdlet in the style of `Set-ADSyncStagingMode` or something like that.
@@ -20,7 +20,7 @@ $aadSyncSettings=Get-ADSyncGlobalSettings
 $aadSyncSettings
 ```
 
-[![Screenshot of PowerShell Code Execution - Retrieve Azure AD Connect Settings](/assets/images/2022/2022-07-21_AAD-Connect-Settings-Overview-PowerShell.png "Screenshot of PowerShell Code Execution - Retrieve Azure AD Connect Settings")](/assets/images/2022/2022-07-21_AAD-Connect-Settings-Overview-PowerShell.png)
+[![Screenshot of PowerShell Code Execution - Retrieve Azure AD Connect Settings](/images/2022/2022-07-21_AAD-Connect-Settings-Overview-PowerShell.png "Screenshot of PowerShell Code Execution - Retrieve Azure AD Connect Settings")](/images/2022/2022-07-21_AAD-Connect-Settings-Overview-PowerShell.png)
 
 ## Investigate the Parameters of the ADSyncGlobalSettings Object
 
@@ -30,7 +30,7 @@ So the interesting stuff is hidden in the "parameters"-property. The settings re
 $aadSyncSettings.parameters
 ```
 
-[![Screenshot of PowerShell Code Execution - Found the Staging mode](/assets/images/2022/2022-07-21_AzureAD-Connect-Staging-Mode-spotted-PowerShell.png "Screenshot of PowerShell Code Execution - Found the Staging mode")](/assets/images/2022/2022-07-21_AzureAD-Connect-Staging-Mode-spotted-PowerShell.png)
+[![Screenshot of PowerShell Code Execution - Found the Staging mode](/images/2022/2022-07-21_AzureAD-Connect-Staging-Mode-spotted-PowerShell.png "Screenshot of PowerShell Code Execution - Found the Staging mode")](/images/2022/2022-07-21_AzureAD-Connect-Staging-Mode-spotted-PowerShell.png)
 
 ## Change the Staging Mode
 
@@ -54,11 +54,11 @@ Haha, yes. We're not done yet. As of right now, we only have a PowerShell Object
 Set-ADSyncGlobalSettings $aadSyncSettings
 ```
 
-[![Screenshot of PowerShell Code Execution - Changing and setting the Staging mode](/assets/images/2022/2022-07-21_AzureAD-Connect-Staging-mode-set-by-powershell.png "Screenshot of PowerShell Code Execution - Changing and setting the Staging mode")](/assets/images/2022/2022-07-21_AzureAD-Connect-Staging-mode-set-by-powershell.png)
+[![Screenshot of PowerShell Code Execution - Changing and setting the Staging mode](/images/2022/2022-07-21_AzureAD-Connect-Staging-mode-set-by-powershell.png "Screenshot of PowerShell Code Execution - Changing and setting the Staging mode")](/images/2022/2022-07-21_AzureAD-Connect-Staging-mode-set-by-powershell.png)
 
 Afterwards I verified in the GUI (Azure AD Connect Wizard) for the desired result. In my case the Staging Mode was enabled now. Awesome!
 
-[![Verification of Azure AD Connect Staging Mode in the Wizard](/assets/images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png "Verification of Azure AD Connect Staging Mode in the Wizard")](/assets/images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png)
+[![Verification of Azure AD Connect Staging Mode in the Wizard](/images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png "Verification of Azure AD Connect Staging Mode in the Wizard")](/images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png)
 
 ## Summary - Full Code Snippets
 

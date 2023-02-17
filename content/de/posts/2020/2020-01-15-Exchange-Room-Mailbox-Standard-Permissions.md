@@ -2,7 +2,7 @@
 title: Exchange Raumpostfach - Berechtigungen setzen
 subtitle: Exchange Postfachordner Berechtigungen per PowerShell setzen
 contenttags: [exchange, powershell, exchange2013]
-image: /assets/images/2020-01-15_17_44_53-_CalendarPermission-Error-Outlook.png
+image: /images/2020-01-15_17_44_53-_CalendarPermission-Error-Outlook.png
 date: 2020-01-15
 ---
 
@@ -30,7 +30,7 @@ Dieser Code ist für deutsch- und englischsprachige Systeme geeignet. Bei andere
 
 **Ergebnis:**
 
-![Auflistung Kalenderberechtigungen für mehrere Raumpostfächer](/assets/images/2020-01-15_17_20_31-CalendarPermissions.png "Auflistung Kalenderberechtigungen für mehrere Raumpostfächer. Die Berechtigungen sind nicht einheitlich (PowerShell Fenster)")
+![Auflistung Kalenderberechtigungen für mehrere Raumpostfächer](/images/2020-01-15_17_20_31-CalendarPermissions.png "Auflistung Kalenderberechtigungen für mehrere Raumpostfächer. Die Berechtigungen sind nicht einheitlich (PowerShell Fenster)")
 
 In diesem Fall waren die Berechtigungen nicht einheitlich für alle Besprechungsräume des Kunden gesetzt.
 

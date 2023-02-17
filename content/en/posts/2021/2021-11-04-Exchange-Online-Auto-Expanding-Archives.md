@@ -2,18 +2,18 @@
 title: "Verify Auto-Expanding Archives in Exchange Online"
 date: 2021-11-04
 contenttags: [exchange, exchange online, powershell, archive mailbox]
-image: /assets/images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png
+image: /images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png
 ---
 
 If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.
 
 In the Exchange Admin Center (EAC), open the info pane of the user's mailbox. Click on "Manage mailbox archive".
 
-[![Exchange Admin Center - Mailbox Pane](/assets/images/2021/2021-11-04_Exchange_Online_Mailbox.png "Exchange Admin Center - Mailbox Pane")](/assets/images/2021/2021-11-04_Exchange_Online_Mailbox.png)
+[![Exchange Admin Center - Mailbox Pane](/images/2021/2021-11-04_Exchange_Online_Mailbox.png "Exchange Admin Center - Mailbox Pane")](/images/2021/2021-11-04_Exchange_Online_Mailbox.png)
 
 An Auto-Expanding Archive provisions more Archive storage space, if needed. Default Archives have 100 GB of storage available. If the archive is already bigger than 100 GB, we must have additional storage.
 
-[![Exchange Admin Center - Archive Mailbox Usage](/assets/images/2021/2021-11-04_Exchange_Online_Mailbox_Archive_Usage.png "Exchange Admin Center - Archive Mailbox Usage")](/assets/images/2021/2021-11-04_Exchange_Online_Mailbox_Archive_Usage.png)
+[![Exchange Admin Center - Archive Mailbox Usage](/images/2021/2021-11-04_Exchange_Online_Mailbox_Archive_Usage.png "Exchange Admin Center - Archive Mailbox Usage")](/images/2021/2021-11-04_Exchange_Online_Mailbox_Archive_Usage.png)
 
 By the way: This license note is apparently shown regardless whether that user has an Exchange Online Plan 2 license assigned or not:
 
@@ -49,7 +49,7 @@ Example of result:
 
 The user has a "Primary" mailbox, a "MainArchive" mailbox and another "AuxArchive" mailbox.
 
-[![Exchange Online PowerShell - Custom command to retrieve all mailbox locations of a user mailbox](/assets/images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png "Exchange Online PowerShell - Custom command to retrieve all mailbox locations of a user mailbox")](/assets/images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png)
+[![Exchange Online PowerShell - Custom command to retrieve all mailbox locations of a user mailbox](/images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png "Exchange Online PowerShell - Custom command to retrieve all mailbox locations of a user mailbox")](/images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png)
 
 ## Related Links
 

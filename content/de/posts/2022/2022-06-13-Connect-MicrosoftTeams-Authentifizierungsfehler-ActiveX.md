@@ -3,7 +3,7 @@ title: "Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuereleme
 subtitle: "Fehlercode: Microsoft.TeamsCmdlets.Powershell.Connect.ConnectMicrosoftTeams"
 date: 2022-06-13
 contenttags: [microsoft365, office365, microsoftteams, powershell]
-image: /assets/images/2022/2022-06-13_TeamsPowerShellConnect.png
+image: /images/2022/2022-06-13_TeamsPowerShellConnect.png
 ---
 
 Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.

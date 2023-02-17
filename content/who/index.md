@@ -4,7 +4,7 @@ layout: page.njk
 title: Who
 ---
 
-![Hey there](/assets/images/hi-there.jpg "Hey there! 👋")
+![Hey there](/images/hi-there.jpg "Hey there! 👋")
 
 ## Hey there! 👋
 

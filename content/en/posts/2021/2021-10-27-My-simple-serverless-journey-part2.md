@@ -13,7 +13,7 @@ contenttags:
         ipaddress,
         php
     ]
-image: /assets/images/2021/2021-10-27_SimpleIP.de.update.png
+image: /images/2021/2021-10-27_SimpleIP.de.update.png
 ---
 
 After creating [SimpleIP.de](https://simpleip.de) as a serverless application (see my blog post [My simple serverless journey was not that easy](/en/2021/05/02/My-simple-serverless-journey/)) I was kinda proud. Interesting technology, small and useful website. Nice.

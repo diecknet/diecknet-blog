@@ -21,11 +21,11 @@ Ergebnis:
 ## Image mit Link
 
 ```md
-[![Microsoft Teams Admin Center with options to change the dialin number for a user.](/assets/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png "Microsoft Teams Admin Center with options to change the dialin number for a user.")](/assets/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png)
+[![Microsoft Teams Admin Center with options to change the dialin number for a user.](/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png "Microsoft Teams Admin Center with options to change the dialin number for a user.")](/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png)
 ```
 
 Ergebnis:
-[![Microsoft Teams Admin Center with options to change the dialin number for a user.](/assets/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png "Microsoft Teams Admin Center with options to change the dialin number for a user.")](/assets/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png)
+[![Microsoft Teams Admin Center with options to change the dialin number for a user.](/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png "Microsoft Teams Admin Center with options to change the dialin number for a user.")](/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png)
 
 ## Code highlighting
 

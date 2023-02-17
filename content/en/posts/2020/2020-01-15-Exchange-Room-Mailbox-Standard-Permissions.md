@@ -4,7 +4,7 @@ title: Exchange Room Mailbox - Set Permissions
 subtitle: Set Exchange Mailboxfolder permissions using PowerShell
 date: 2020-01-15
 contenttags: [exchange, powershell, exchange2013]
-image: /assets/images/2020-01-15_17_44_53-_CalendarPermission-Error-Outlook.png
+image: /images/2020-01-15_17_44_53-_CalendarPermission-Error-Outlook.png
 ---
 
 By default, the "Calendar" folder in Exchange 2013 Room Mailboxes has the "LimitedDetails" permission for the "Standard" security principal. Therefore, if no other permissions are configured, users cannot view details for appointments in this room. For better usability in Outlook, the "Reviewer" permission is more suitable. This allows items to be listed and details to be displayed. If required, the [CalendarProcessing](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-calendarprocessing?view=exchange-ps) can be adjusted so that details such as the description and subject of the appointment are not saved in the room mailbox. Whether all this makes sense always depends on the environment.
@@ -30,7 +30,7 @@ This code is compatible with German and English language systems. For other lang
 
 **Result:**
 
-![List the calendar permissions for all room mailboxes](/assets/images/2020-01-15_17_20_31-CalendarPermissions.png "List the calendar permissions for all room mailboxes. The permissions are not standardized (PowerShell Window)")
+![List the calendar permissions for all room mailboxes](/images/2020-01-15_17_20_31-CalendarPermissions.png "List the calendar permissions for all room mailboxes. The permissions are not standardized (PowerShell Window)")
 
 In this case the permissions were not set consistently for all meeting rooms of the client.
 

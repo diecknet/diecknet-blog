@@ -6,7 +6,7 @@ contenttags:
         microsoft teams,
         teams channel retention
     ]
-image: /assets/images/2021/pexels-matthis-volquardsen-3529891.jpg
+image: /images/2021/pexels-matthis-volquardsen-3529891.jpg
 imageAlt: A photo of a trash can to symbolize a deleted Teams Channel
 date: 2021-06-29
 ---

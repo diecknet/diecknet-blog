@@ -4,7 +4,7 @@ title: "Office 365 Trial Licenses"
 subtitle: Try Microsoft 365 for free
 date: 2020-06-10
 contenttags: [microsoft365, office365, licensing, trial]
-image: /assets/images/2020/2020-06-10_O365_Trials.png
+image: /images/2020/2020-06-10_O365_Trials.png
 ---
 
 You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You'll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services.
@@ -53,7 +53,7 @@ There is also a trial license for Microsoft Viva Learning:
 
 In this [German YouTube Video](https://www.youtube.com/watch?v=gCS2RkGWNjA) I'll show how to create a Demo-Tenant with trial licenses. I'm also showing how you can extend the trial for another 30 days.
 
-[![Microsoft 365 Demo-Tenant anlegen! (YouTube)](/assets/images/2020/2020-07-28_yt_M365_ausprobieren.png "Microsoft 365 Demo-Tenant anlegen! (YouTube)")](https://www.youtube.com/watch?v=gCS2RkGWNjA)
+[![Microsoft 365 Demo-Tenant anlegen! (YouTube)](/images/2020/2020-07-28_yt_M365_ausprobieren.png "Microsoft 365 Demo-Tenant anlegen! (YouTube)")](https://www.youtube.com/watch?v=gCS2RkGWNjA)
 
 ## Add Trial license to existing Tenant
 
@@ -61,8 +61,8 @@ You can use the same trial license links to add the licenses to an existing tena
 
 ### Step 1: Click on "Yes, add it to my account"
 
-![Add Microsoft 365 Trial license to existing Tenant (1)](/assets/images/2020/2020-07-28_IntuneTrial_1.png "Add Microsoft 365 Trial license to existing Tenant (1)")
+![Add Microsoft 365 Trial license to existing Tenant (1)](/images/2020/2020-07-28_IntuneTrial_1.png "Add Microsoft 365 Trial license to existing Tenant (1)")
 
 ### Step 2: Click on "Try now"
 
-![Add Microsoft 365 Trial license to existing Tenant (2)](/assets/images/2020/2020-07-28_IntuneTrial_2.png "Add Microsoft 365 Trial license to existing Tenant (2)")
+![Add Microsoft 365 Trial license to existing Tenant (2)](/images/2020/2020-07-28_IntuneTrial_2.png "Add Microsoft 365 Trial license to existing Tenant (2)")

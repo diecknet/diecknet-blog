@@ -2,7 +2,7 @@
 title: "Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden"
 subtitle: OAuth Konfiguration manuell durchführen
 contenttags: [exchange, exchange2013, exchangehybrid, oauth, office365]
-image: /assets/images/2020/2020-04-28-HCW8064-01.png
+image: /images/2020/2020-04-28-HCW8064-01.png
 date: 2020-05-01
 ---
 
@@ -30,7 +30,7 @@ Get-IntraOrganizationConnector | fl
 ```
 
 Das Attribut "Enabled" steht auf "False", demnach wird kein OAuth verwendet. Also wie erwartet.
-!["Get-IntraOrganizationConnector | fl" - "Enabled" steht auf "False"](/assets/images/2020/2020-04-28-IOC-01.png "'Get-IntraOrganizationConnector | fl' - 'Enabled' steht auf 'False'")
+!["Get-IntraOrganizationConnector | fl" - "Enabled" steht auf "False"](/images/2020/2020-04-28-IOC-01.png "'Get-IntraOrganizationConnector | fl' - 'Enabled' steht auf 'False'")
 
 ## Organization Relationship (ORG REL)
 
@@ -40,14 +40,14 @@ Als nächstes sollte geprüft werden, ob ein Organization Relationship vorhanden
 Get-OrganizationRelationship | fl
 ```
 
-![Get-OrganizationRelationship verwenden um zu überprüfen ob ein Organization Relationship zur O365 Mail Domain vorhanden ist](/assets/images/2020/2020-04-28-ORG-REL.png "Get-OrganizationRelationship verwenden um zu überprüfen ob ein Organization Relationship zur O365 Mail Domain vorhanden ist")
+![Get-OrganizationRelationship verwenden um zu überprüfen ob ein Organization Relationship zur O365 Mail Domain vorhanden ist](/images/2020/2020-04-28-ORG-REL.png "Get-OrganizationRelationship verwenden um zu überprüfen ob ein Organization Relationship zur O365 Mail Domain vorhanden ist")
 
 In meinem Fall, wurde ein Organization Relationship zurückgegeben. Es wird also DAUTH verwendet.
 
 ## DAUTH Überprüfung
 
 Ich habe hier tatsächlich nur an der Oberfläche gekratzt. Nach einigem Troubleshooting hat sich gezeigt, dass die Authentifizierung per DAUTH in diesem Fall tatsächlich nicht funktioniert. Ich habe zum Überprüfen in Outlook on the Web (OWA) versucht eine Cross-Premise Verfügbarkeit abzurufen. In der Browser-Entwicklerkonsole (per "F12" aufrufbar) kann dann unter "Network" nach "GetUserAvailabilityInternal" gefiltert werden.
-![Abruf der Entwickleroptionen - Network im Browser für OWA](/assets/images/2020/2020-04-28-NetworkConsoleBrowserOWA.png "Abruf der Entwickleroptionen - Network im Browser für OWA")
+![Abruf der Entwickleroptionen - Network im Browser für OWA](/images/2020/2020-04-28-NetworkConsoleBrowserOWA.png "Abruf der Entwickleroptionen - Network im Browser für OWA")
 
 Die relevanten Informationen die ich dort finden konnte:
 
@@ -100,7 +100,7 @@ Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of y
 
 Tatsächlich konnten Cross-Premise die Free/Busy Zeiten abgerufen werden - in beide Richtungen. Hier ein exemplarischer Screenshot, der die Abfrage von einem Exchange Online Postfach zu einem Exchange On-Premise Postfach zeigt.
 
-![Outlook on the Web: Abruf von Free/Busy Zeiten von Exchange Online zu Exchange On-Premise - erfolgreich](/assets/images/2020/2020-04-28-FreeBusy.png "Outlook on the Web: Abruf von Free/Busy Zeiten von Exchange Online zu Exchange On-Premise - erfolgreich")
+![Outlook on the Web: Abruf von Free/Busy Zeiten von Exchange Online zu Exchange On-Premise - erfolgreich](/images/2020/2020-04-28-FreeBusy.png "Outlook on the Web: Abruf von Free/Busy Zeiten von Exchange Online zu Exchange On-Premise - erfolgreich")
 
 ## Weiterführende Links
 
