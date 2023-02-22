@@ -51,7 +51,8 @@
       "ShowReadingTime": true,
       "ShowShareButtons": true,
       "ShareButtons": ["linkedin","twitter" ],
-      "displayFullLangName": true
+      "displayFullLangName": true,
+      "dateFormat": "2006-01-02"
     },
     "menu": {
       "main": [
