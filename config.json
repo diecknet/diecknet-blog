@@ -50,7 +50,8 @@
       "ShowPostNavLinks": true,
       "ShowReadingTime": true,
       "ShowShareButtons": true,
-      "ShareButtons": ["linkedin","twitter" ]
+      "ShareButtons": ["linkedin","twitter" ],
+      "displayFullLangName": true
     },
     "menu": {
       "main": [
