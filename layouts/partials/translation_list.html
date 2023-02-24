@@ -2,9 +2,10 @@
 {{- if (ne .Layout "search") }}
 {{- if or .Params.author site.Params.author (.Param "ShowReadingTime") (not .Date.IsZero) }}&nbsp;|&nbsp;{{- end -}}
 {{- end }}
-🌍&nbsp;{{- i18n "translation-note" }}:
+
 <ul class="i18n_list">
     {{- range .Translations }}
+    🌍&nbsp;{{- i18n "translation-note" }}:&nbsp;
     <li>
         <a href="{{ .Permalink }}">
             {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
