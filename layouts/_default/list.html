@@ -39,11 +39,15 @@
 {{- $pages := union .RegularPages .Sections }}
 
 {{- if .IsHome }}
+{{- if eq .Site.Language.Lang "==" "de" }}
 {{- $pages = where (where site.AllPages "Kind" "page") "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
 {{- $pages = where (where $pages ".Language.Lang" "!=" .Site.Language.Lang) ".IsTranslated" "!=" true }}
 {{- $pages = append (where site.RegularPages "Type" "in" site.Params.mainSections) $pages }}
 {{- $pages = sort $pages ".Date" "desc"}}
+{{- else }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- end }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
@@ -56,7 +60,6 @@
 {{- range $index, $page := $paginator.Pages }}
 
 {{- $class := "post-entry" }}
-<h1>{{.Language}}</h1>
 {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
 {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
 {{- $class = "first-entry" }}
@@ -69,6 +72,9 @@
   {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
   <header class="entry-header">
     <h2>
+      {{- if (and (eq site.Language.Lang "==" "de") (ne .Language.Lang site.Language.Lang)) }}
+      [{{- .Language.LanguageName }}]&nbsp;
+      {{- end }}
       {{- .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
     </h2>
