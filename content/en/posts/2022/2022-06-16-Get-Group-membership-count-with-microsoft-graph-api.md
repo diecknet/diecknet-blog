@@ -5,7 +5,7 @@ slug: Get-Group-membership-count-with-microsoft-graph-api
 title: "How to get Group Membership count with Microsoft Graph API"
 subtitle: "How many users are in that Azure AD Group?"
 date: 2022-06-16
-contenttags: [azure ad, microsoft 365, graph api]
+tags: [azure ad, microsoft 365, graph api]
 cover:
     image: /images/2022/2022-06-16-Graph_Explorer.png
 ---

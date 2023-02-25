@@ -5,7 +5,7 @@ slug: Azure-AD-Connect-Video-Part2
 title: "Azure AD Connect installieren (Video)"
 subtitle: Weiterführende Links zu Azure AD Connect
 date: 2020-06-23
-contenttags:
+tags:
     [
         azuread,
         activedirectory,

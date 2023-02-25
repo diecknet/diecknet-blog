@@ -3,7 +3,7 @@ aliases:
     - exchange-online-cache-mode-shared-mailboxes
 slug: Exchange-Online-Cache-Mode-Shared-Mailboxes
 title: Outlook Cache Modus für Freigegebene Postfächer
-contenttags: [exchange, exchange online, shared mailbox, freigegebenes postfach]
+tags: [exchange, exchange online, shared mailbox, freigegebenes postfach]
 cover:
     image: /images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png
 imageAlt: A screenshot showing a Microsoft Teams Meeting invite with a dial-in phone number.

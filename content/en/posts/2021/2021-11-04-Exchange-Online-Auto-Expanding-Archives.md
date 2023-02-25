@@ -4,7 +4,7 @@ aliases:
 slug: Exchange-Online-Auto-Expanding-Archives
 title: "Verify Auto-Expanding Archives in Exchange Online"
 date: 2021-11-04
-contenttags: [exchange, exchange online, powershell, archive mailbox]
+tags: [exchange, exchange online, powershell, archive mailbox]
 cover:
     image: /images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png
 ---

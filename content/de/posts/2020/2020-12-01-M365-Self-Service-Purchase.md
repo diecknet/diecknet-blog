@@ -5,7 +5,7 @@ slug: M365-Self-Service-Purchase
 title: "Microsoft 365 Self Service Purchase Lizenzen"
 subtitle: "Selbstkauf von Office 365 Lizenzen durch Endanwender"
 date: 2020-12-01
-contenttags: [microsoft365, office365, licensing, selfservice]
+tags: [microsoft365, office365, licensing, selfservice]
 ---
 
 Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:

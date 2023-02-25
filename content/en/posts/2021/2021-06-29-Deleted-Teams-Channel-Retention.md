@@ -3,7 +3,7 @@ aliases:
     - deleted-teams-channel-retention
 slug: Deleted-Teams-Channel-Retention
 title: How long are deleted Teams Channels retained?
-contenttags:
+tags:
     [
         teams,
         microsoft teams,

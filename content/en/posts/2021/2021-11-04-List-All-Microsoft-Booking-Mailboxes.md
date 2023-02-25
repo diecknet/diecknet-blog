@@ -4,7 +4,7 @@ aliases:
 slug: List-All-Microsoft-Booking-Mailboxes
 title: "List all Microsoft Booking Calendars"
 date: 2021-11-12
-contenttags:
+tags:
     [exchange, exchange online, powershell, microsoft booking, booking calendar]
 cover:
     image: /images/2021/2021-11-12_bookings-permissions.csv.png

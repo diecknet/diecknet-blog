@@ -5,7 +5,7 @@ slug: Exchange-Server-Setup-Incomplete-fail-stopping-services
 title: "Exchange Server Setup Incomplete but fails to complete"
 subtitle: "Setup fails at 'Step 1 of 13: Stopping Services'"
 date: 2022-06-23
-contenttags: [exchange, exchange server setup, troubleshooting, powershell]
+tags: [exchange, exchange server setup, troubleshooting, powershell]
 cover:
     image: /images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected_small.png
 ---

@@ -5,7 +5,7 @@ slug: Outlook-Certificate-Warning-after-Office-365-Migration
 layout: post
 title: Outlook Certificate Warning after Office 365 Migration
 date: 2019-12-18
-contenttags: [office365, exchange, exchangeonline, exchange2010]
+tags: [office365, exchange, exchangeonline, exchange2010]
 cover:
     image: /images/2019-12-18-Certificate-Warning-outlook.png
 ---

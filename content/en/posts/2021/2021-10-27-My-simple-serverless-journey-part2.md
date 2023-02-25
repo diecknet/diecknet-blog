@@ -5,7 +5,7 @@ slug: My-simple-serverless-journey-part2
 title: "The Downside of going serverless"
 subtitle: "The making of simpleIP.de - Part 2"
 date: 2021-10-27
-contenttags:
+tags:
     [
         simpleip,
         serverless,

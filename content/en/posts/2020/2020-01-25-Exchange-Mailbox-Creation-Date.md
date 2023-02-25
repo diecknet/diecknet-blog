@@ -6,7 +6,7 @@ layout: post
 title: Exchange - When was that mailbox REALLY created?
 subtitle: MSExchWhenMailboxCreated might not be what it seems...
 date: 2020-01-25
-contenttags: [exchange, powershell, exchange2013]
+tags: [exchange, powershell, exchange2013]
 cover:
     image: /images/2020/2020-01-25_MSExchWhenMailboxCreated_PowerShell.png
 ---

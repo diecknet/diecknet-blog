@@ -6,7 +6,7 @@ layout: post
 title: "Office 365 Trial Licenses"
 subtitle: Try Microsoft 365 for free
 date: 2020-06-10
-contenttags: [microsoft365, office365, licensing, trial]
+tags: [microsoft365, office365, licensing, trial]
 cover:
     image: /images/2020/2020-06-10_O365_Trials.png
 ---

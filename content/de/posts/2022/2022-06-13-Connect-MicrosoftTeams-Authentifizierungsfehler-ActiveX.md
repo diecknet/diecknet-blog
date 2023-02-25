@@ -5,7 +5,7 @@ slug: Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX
 title: "Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuerelement kann nicht instanziiert werden"
 subtitle: "Fehlercode: Microsoft.TeamsCmdlets.Powershell.Connect.ConnectMicrosoftTeams"
 date: 2022-06-13
-contenttags: [microsoft365, office365, microsoftteams, powershell]
+tags: [microsoft365, office365, microsoftteams, powershell]
 cover:
     image: /images/2022/2022-06-13_TeamsPowerShellConnect.png
 ---

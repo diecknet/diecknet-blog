@@ -4,7 +4,7 @@ aliases:
 slug: Exchange-Mailbox-Creation-Date
 title: Exchange - Wann wurde das Postfach WIRKLICH erstellt?
 subtitle: MSExchWhenMailboxCreated ist nicht was es scheint...
-contenttags: [exchange, powershell, exchange2013]
+tags: [exchange, powershell, exchange2013]
 cover:
     image: /images/2020/2020-01-25_MSExchWhenMailboxCreated_PowerShell.png
 date: 2020-01-25

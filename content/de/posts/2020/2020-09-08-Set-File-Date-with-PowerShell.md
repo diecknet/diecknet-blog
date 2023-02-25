@@ -5,7 +5,7 @@ slug: Set-File-Date-with-PowerShell
 title: "Dateidatum per PowerShell setzen"
 subtitle: "Zeitreisen per PowerShell?"
 date: 2020-09-08
-contenttags: [powershell, ntfs, windowsserver, powershellsnips]
+tags: [powershell, ntfs, windowsserver, powershellsnips]
 cover:
     image: /images/2020/2020-09-08_FileDate.png
 ---

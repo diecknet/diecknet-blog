@@ -4,7 +4,7 @@ aliases:
 slug: Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop
 title: Deploy an Azure NAT-Gateway for Azure Virtual Desktop by PowerShell
 subtitle: Deploying Azure Resources by REST-API
-contenttags:
+tags:
     [
         azure,
         azure virtual desktop,

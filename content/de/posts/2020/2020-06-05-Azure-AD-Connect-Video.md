@@ -5,7 +5,7 @@ slug: Azure-AD-Connect-Video
 title: "Azure AD Connect richtig planen und vorbereiten (Video)"
 subtitle: Weiterführende Links zu Azure AD Connect
 date: 2020-06-05
-contenttags:
+tags:
     [
         azuread,
         activedirectory,

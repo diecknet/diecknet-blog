@@ -6,7 +6,7 @@ layout: post
 title: Exchange Room Mailbox - Set Permissions
 subtitle: Set Exchange Mailboxfolder permissions using PowerShell
 date: 2020-01-15
-contenttags: [exchange, powershell, exchange2013]
+tags: [exchange, powershell, exchange2013]
 cover:
     image: /images/2020-01-15_17_44_53-_CalendarPermission-Error-Outlook.png
 ---

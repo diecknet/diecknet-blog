@@ -5,7 +5,7 @@ slug: MSTeams-Disable-Custom-Backgrounds
 title: "Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren"
 subtitle: "Unerwünschte Teams Kamera-Hintergründe unterbinden"
 date: 2021-02-25
-contenttags: [microsoft365, office365, microsoftteams, powershell]
+tags: [microsoft365, office365, microsoftteams, powershell]
 cover:
     image: /images/2021/2021-02-25_TeamsMeetingPolicy_new.png
 ---

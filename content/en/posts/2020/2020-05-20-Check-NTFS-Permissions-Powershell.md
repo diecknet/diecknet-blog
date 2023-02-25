@@ -5,7 +5,7 @@ slug: Check-NTFS-Permissions-Powershell
 layout: post
 title: "Check NTFS Permissions using Powershell"
 date: 2020-05-20
-contenttags:
+tags:
     [powershell, accessrights, acl, ntfs, windowsvirtualdesktop, fslogix]
 cover:
     image: /images/2020/2020-05-20_CheckProfileStoragePermissions.png

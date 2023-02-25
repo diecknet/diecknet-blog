@@ -6,7 +6,7 @@ layout: post
 title: "My simple serverless journey was not that easy"
 subtitle: "The making of simpleIP.de"
 date: 2021-05-02
-contenttags:
+tags:
     [
         simpleip,
         serverless,
