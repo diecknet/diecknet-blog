@@ -64,8 +64,8 @@ dateFormat = "2006-01-02"
   url = "https://github.com/diecknet/"
 
   [params.editPost]
-  URL = "https://github.com/diecknet/diecknet-blog/tree/main/content/"
-  text = "Suggest Changes"
+  URL = "https://github.com/diecknet/diecknet-blog/tree/main/content"
+  text = "Edit"
   appendFilePath = true
 
 [[menu.main]]
