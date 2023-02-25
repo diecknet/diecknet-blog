@@ -5,7 +5,8 @@ slug: Exchange-Hybrid-HCW8064-OAuth
 title: "Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden"
 subtitle: OAuth Konfiguration manuell durchführen
 contenttags: [exchange, exchange2013, exchangehybrid, oauth, office365]
-image: /images/2020/2020-04-28-HCW8064-01.png
+cover:
+    image: /images/2020/2020-04-28-HCW8064-01.png
 date: 2020-05-01
 ---
 

@@ -5,7 +5,8 @@ slug: Exchange-Room-Mailbox-Standard-Permissions
 title: Exchange Raumpostfach - Berechtigungen setzen
 subtitle: Exchange Postfachordner Berechtigungen per PowerShell setzen
 contenttags: [exchange, powershell, exchange2013]
-image: /images/2020-01-15_17_44_53-_CalendarPermission-Error-Outlook.png
+cover:
+    image: /images/2020-01-15_17_44_53-_CalendarPermission-Error-Outlook.png
 date: 2020-01-15
 ---
 

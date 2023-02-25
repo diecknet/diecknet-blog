@@ -16,7 +16,8 @@ contenttags:
         microsoft365,
         office365
     ]
-image: /images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
+cover:
+    image: /images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
 ---
 
 Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:

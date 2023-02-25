@@ -7,7 +7,8 @@ title: "Exchange Hybrid: HCW8064 OAuth configuration couldn't get performed"
 subtitle: OAuth configuration manually done
 date: 2020-05-01
 contenttags: [exchange, exchange2013, exchangehybrid, oauth, office365]
-image: /images/2020/2020-04-28-HCW8064-01.png
+cover:
+    image: /images/2020/2020-04-28-HCW8064-01.png
 ---
 
 At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:

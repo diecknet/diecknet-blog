@@ -7,7 +7,8 @@ title: "Office 365 Trial Licenses"
 subtitle: Try Microsoft 365 for free
 date: 2020-06-10
 contenttags: [microsoft365, office365, licensing, trial]
-image: /images/2020/2020-06-10_O365_Trials.png
+cover:
+    image: /images/2020/2020-06-10_O365_Trials.png
 ---
 
 You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You'll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services.

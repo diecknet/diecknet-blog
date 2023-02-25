@@ -5,7 +5,8 @@ slug: Exchange-Online-per-Azure-Automation
 title: "Automate Exchange Online with Azure Automation in 2023"
 date: 2023-01-09
 contenttags: [microsoft365, office365, exchangeonline, powershell, exo, azure, azureautomation]
-image: /images/2023/2023-AA-EXO.jpg
+cover:
+    image: /images/2023/2023-AA-EXO.jpg
 ---
 
 I'll try to keep it short:

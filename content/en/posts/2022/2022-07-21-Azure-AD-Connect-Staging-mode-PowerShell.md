@@ -5,7 +5,8 @@ slug: Azure-AD-Connect-Staging-mode-PowerShell
 title: "Set Azure AD Connect Staging Mode via PowerShell"
 date: 2022-07-21
 contenttags: [azure ad, powershell, azure ad connect]
-image: /images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png
+cover:
+    image: /images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png
 ---
 
 Here's a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. Sadly there is no native Cmdlet in the style of `Set-ADSyncStagingMode` or something like that.

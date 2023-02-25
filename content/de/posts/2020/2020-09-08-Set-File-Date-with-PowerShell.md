@@ -6,7 +6,8 @@ title: "Dateidatum per PowerShell setzen"
 subtitle: "Zeitreisen per PowerShell?"
 date: 2020-09-08
 contenttags: [powershell, ntfs, windowsserver, powershellsnips]
-image: /images/2020/2020-09-08_FileDate.png
+cover:
+    image: /images/2020/2020-09-08_FileDate.png
 ---
 
 Das Datum einer Datei kann beliebig per PowerShell gesetzt beziehungsweise manipuliert werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.

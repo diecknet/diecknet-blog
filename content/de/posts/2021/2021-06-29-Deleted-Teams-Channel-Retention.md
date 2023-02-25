@@ -9,7 +9,8 @@ contenttags:
         microsoft teams,
         teams channel retention
     ]
-image: /images/2021/pexels-matthis-volquardsen-3529891.jpg
+cover:
+    image: /images/2021/pexels-matthis-volquardsen-3529891.jpg
 imageAlt: Ein Foto eines Mülleimes um einen gelöschten Teams Kanal zu symbolisieren
 date: 2021-06-29
 ---

@@ -17,7 +17,8 @@ contenttags:
         microsoft365,
         office365
     ]
-image: /images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
+cover:
+    image: /images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
 ---
 
 When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:

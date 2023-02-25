@@ -5,7 +5,8 @@ slug: Set-Teams-Meeting-Dialin-number-powershell
 title: Set Teams Meeting Dial-in number using PowerShell
 contenttags:
     [teams, microsoft teams, teams dial in number, teams audio conferencing]
-image: /images/2021/2021-10-05_TeamsMeeting-DialIn-Number_thumbnail.png
+cover:
+    image: /images/2021/2021-10-05_TeamsMeeting-DialIn-Number_thumbnail.png
 imageAlt: A screenshot showing a Microsoft Teams Meeting invite with a dial-in phone number.
 date: 2021-10-05
 ---

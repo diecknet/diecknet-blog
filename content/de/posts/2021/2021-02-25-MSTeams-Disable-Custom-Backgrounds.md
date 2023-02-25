@@ -6,7 +6,8 @@ title: "Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren"
 subtitle: "Unerwünschte Teams Kamera-Hintergründe unterbinden"
 date: 2021-02-25
 contenttags: [microsoft365, office365, microsoftteams, powershell]
-image: /images/2021/2021-02-25_TeamsMeetingPolicy_new.png
+cover:
+    image: /images/2021/2021-02-25_TeamsMeetingPolicy_new.png
 ---
 
 Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.

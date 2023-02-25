@@ -5,7 +5,8 @@ slug: Exchange-Online-Auto-Expanding-Archives
 title: "Verify Auto-Expanding Archives in Exchange Online"
 date: 2021-11-04
 contenttags: [exchange, exchange online, powershell, archive mailbox]
-image: /images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png
+cover:
+    image: /images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png
 ---
 
 If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.

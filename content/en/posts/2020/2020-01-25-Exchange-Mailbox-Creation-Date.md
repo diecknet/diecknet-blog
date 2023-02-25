@@ -7,7 +7,8 @@ title: Exchange - When was that mailbox REALLY created?
 subtitle: MSExchWhenMailboxCreated might not be what it seems...
 date: 2020-01-25
 contenttags: [exchange, powershell, exchange2013]
-image: /images/2020/2020-01-25_MSExchWhenMailboxCreated_PowerShell.png
+cover:
+    image: /images/2020/2020-01-25_MSExchWhenMailboxCreated_PowerShell.png
 ---
 
 If you're wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute `MSExchWhenMailboxCreated`. You can get the value using PowerShell or ADUC with advanced features enabled.

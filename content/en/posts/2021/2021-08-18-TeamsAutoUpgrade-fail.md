@@ -8,7 +8,8 @@ contenttags:
         MicrosoftTeams,
         SkypeForBusiness
     ]
-image: /images/2021/2021-08-05_TeamsUpgradeInMinusOneDays.png
+cover:
+    image: /images/2021/2021-08-05_TeamsUpgradeInMinusOneDays.png
 imageAlt: -1 days until your Teams Upgrade. Good news!
 date: 2021-08-18
 ---

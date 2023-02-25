@@ -10,7 +10,8 @@ contenttags:
         powershell,
         Microsoft.Online.SharePoint.PowerShell
     ]
-image: /images/2021/2021-07-09_ConvertSPOSiteTimezone.png
+cover:
+    image: /images/2021/2021-07-09_ConvertSPOSiteTimezone.png
 imageAlt: Executing PowerShell cmdlets to retrieve the Timezone of a Sharepoint Online site in a human readable form
 date: 2021-07-09
 ---

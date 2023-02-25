@@ -13,7 +13,8 @@ contenttags:
         powershell,
         hackathon
     ]
-image: /images/2021/2021-06-27-NAT-Gateway-Azure-Virtual-Desktop.png
+cover:
+    image: /images/2021/2021-06-27-NAT-Gateway-Azure-Virtual-Desktop.png
 imageAlt: YouTube Thumbnail for Azure NAT-Gateway/ Azure Virtual Desktop
 date: 2021-06-27
 ---

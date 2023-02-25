@@ -5,7 +5,8 @@ slug: How-to-configure-M365-azure-ad-MFA-methods
 title: "How to configure MFA methods for Azure AD"
 date: 2022-02-02
 contenttags: [azure ad, microsoft 365, mfa, multi-factor-authentication]
-image: /images/2022/2022-02-02_thumbnail.png
+cover:
+    image: /images/2022/2022-02-02_thumbnail.png
 ---
 
 In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you're also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you've come to right place.

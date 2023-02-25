@@ -6,7 +6,8 @@ title: "Exchange Server Setup Incomplete but fails to complete"
 subtitle: "Setup fails at 'Step 1 of 13: Stopping Services'"
 date: 2022-06-23
 contenttags: [exchange, exchange server setup, troubleshooting, powershell]
-image: /images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected_small.png
+cover:
+    image: /images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected_small.png
 ---
 
 I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed.

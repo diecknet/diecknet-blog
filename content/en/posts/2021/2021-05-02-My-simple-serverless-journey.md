@@ -16,7 +16,8 @@ contenttags:
         cloudflareworkers,
         ipaddress
     ]
-image: /images/2021/2021-05-02_SimpleIP.jpg
+cover:
+    image: /images/2021/2021-05-02_SimpleIP.jpg
 ---
 
 Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. But Serverless doesn't mean "without any servers" - you just don't need to worry about them. That's not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there.

@@ -6,7 +6,8 @@ title: "List all Microsoft Booking Calendars"
 date: 2021-11-12
 contenttags:
     [exchange, exchange online, powershell, microsoft booking, booking calendar]
-image: /images/2021/2021-11-12_bookings-permissions.csv.png
+cover:
+    image: /images/2021/2021-11-12_bookings-permissions.csv.png
 ---
 
 If you're using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type "SchedulingMailbox". If an user gets assigned "Administrator" for a Booking Calendar, they get "FullAccess" permissions for the Scheduling Mailbox.

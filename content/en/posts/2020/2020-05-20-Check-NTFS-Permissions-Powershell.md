@@ -7,7 +7,8 @@ title: "Check NTFS Permissions using Powershell"
 date: 2020-05-20
 contenttags:
     [powershell, accessrights, acl, ntfs, windowsvirtualdesktop, fslogix]
-image: /images/2020/2020-05-20_CheckProfileStoragePermissions.png
+cover:
+    image: /images/2020/2020-05-20_CheckProfileStoragePermissions.png
 ---
 
 So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.
