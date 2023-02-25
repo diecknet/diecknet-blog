@@ -102,3 +102,6 @@ lineNos = true
 lineNumbersInTable = true
 noClasses = true
 style = "xcode-dark"
+
+[security.funcs]
+getenv = ['^HUGO_', '^CI$', 'DIECKNET_IMPRESSUM']
