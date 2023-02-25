@@ -35,6 +35,8 @@ ShowShareButtons = true
 ShareButtons = [ "linkedin", "twitter" ]
 displayFullLangName = true
 dateFormat = "2006-01-02"
+ShowToc = true
+TocOpen = true
 
   [params.homeInfoParams]
   title = "Moin."
