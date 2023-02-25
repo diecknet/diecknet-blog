@@ -1,0 +1,102 @@
+baseURL = "https://diecknet.de/"
+languageCode = "de"
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = true
+disablePathToLower = true
+title = "diecknet"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[languages.de]
+contentDir = "content/de"
+languageName = "Deutsch"
+weight = 10
+
+[languages.en]
+contentDir = "content/en"
+languageName = "English"
+weight = 20
+
+[permalinks]
+posts = "/:year/:month/:day/:slug/"
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+author = "Andreas Dieckmann"
+showBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowPostNavLinks = true
+ShowReadingTime = true
+ShowShareButtons = true
+ShareButtons = [ "linkedin", "twitter" ]
+displayFullLangName = true
+dateFormat = "2006-01-02"
+
+  [params.homeInfoParams]
+  title = "Moin."
+  content = "Welcome to diecknet."
+
+  [params.assets]
+  disableHLJS = true
+
+  [[params.socialIcons]]
+  name = "youtube"
+  url = "https://youtube.com/@diecknet"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/diecknet"
+
+  [[params.socialIcons]]
+  name = "mastodon"
+  url = "https://ieji.de/@diecknet"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/diecknet"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/diecknet/"
+
+  [params.editPosts]
+  URL = "https://github.com/diecknet/diecknet-blog/tree/main/content/"
+  text = "Suggest Changes"
+  appendFilePath = true
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 3
+
+[[menu.main]]
+name = "Categories"
+url = "/categories/"
+weight = 4
+
+[[menu.main]]
+name = "Archive"
+url = "/archive/"
+weight = 5
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+lineNumbersInTable = true
+noClasses = true
+style = "xcode-dark"
