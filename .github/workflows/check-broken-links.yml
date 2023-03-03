@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 env:
   WEBSITE_URL: "https://diecknet.de/"
-  ISSUE_TEMPLATE: ".github/workflows/check-broken-links.md"
+  ISSUE_TEMPLATE: ".github/ISSUE_TEMPLATE/check-broken-links.md"
 
 jobs:
   check:
