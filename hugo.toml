@@ -40,7 +40,6 @@ TocOpen = true
 
   [params.homeInfoParams]
   title = "Moin."
-  content = "Welcome to diecknet."
 
   [params.assets]
   disableHLJS = true
@@ -97,6 +96,3 @@ lineNos = true
 lineNumbersInTable = true
 noClasses = true
 style = "xcode-dark"
-
-[security.funcs]
-getenv = ['^HUGO_', '^CI$', 'DIECKNET_IMPRESSUM']
