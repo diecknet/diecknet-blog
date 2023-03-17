@@ -4,7 +4,7 @@
         <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content">
-        {{ .Content | markdownify }}&nbsp;{{- i18n "home_info" }}
+        {{- i18n "home_info" }}
     </div>
     <footer class="entry-footer">
         {{ partial "social_icons.html" site.Params.socialIcons }}
