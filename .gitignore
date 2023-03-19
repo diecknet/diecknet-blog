@@ -25,3 +25,6 @@ $RECYCLE.BIN/
 
 # Static content / built site
 public/
+
+# node modules
+node_modules/
