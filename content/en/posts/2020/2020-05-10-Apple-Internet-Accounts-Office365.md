@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - apple-internet-accounts-office365
 slug: Apple-Internet-Accounts-Office365

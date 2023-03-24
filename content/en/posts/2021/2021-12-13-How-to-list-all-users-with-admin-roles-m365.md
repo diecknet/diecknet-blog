@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - how-to-list-all-users-with-admin-roles-m365
 slug: How-to-list-all-users-with-admin-roles-m365

@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - teamsautoupgrade-fail
 slug: TeamsAutoUpgrade-fail

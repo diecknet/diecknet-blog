@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - msteams-disable-custom-backgrounds
 slug: MSTeams-Disable-Custom-Backgrounds

@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - azure-ad-connect-video-part2
 slug: Azure-AD-Connect-Video-Part2

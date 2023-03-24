@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - my-simple-serverless-journey-part2
 slug: My-simple-serverless-journey-part2

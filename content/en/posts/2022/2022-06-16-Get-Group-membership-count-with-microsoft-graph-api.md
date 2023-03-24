@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - get-group-membership-count-with-microsoft-graph-api
 slug: Get-Group-membership-count-with-microsoft-graph-api

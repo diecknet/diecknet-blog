@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - exchange-hybrid-hcw8064-oauth
 slug: Exchange-Hybrid-HCW8064-OAuth

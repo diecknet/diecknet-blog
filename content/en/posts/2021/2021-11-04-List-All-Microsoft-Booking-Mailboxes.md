@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - list-all-microsoft-booking-mailboxes
 slug: List-All-Microsoft-Booking-Mailboxes

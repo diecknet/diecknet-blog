@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - powershell-regular-expression
 slug: PowerShell-Regular-Expression

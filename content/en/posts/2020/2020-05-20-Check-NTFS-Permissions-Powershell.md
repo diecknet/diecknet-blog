@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - check-ntfs-permissions-powershell
 slug: Check-NTFS-Permissions-Powershell

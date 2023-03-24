@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - exchange-room-mailbox-standard-permissions
 slug: Exchange-Room-Mailbox-Standard-Permissions

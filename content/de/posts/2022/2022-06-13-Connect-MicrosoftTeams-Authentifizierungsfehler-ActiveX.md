@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - connect-microsoftteams-authentifizierungsfehler-activex
 slug: Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX

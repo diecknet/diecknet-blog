@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - deploy-azure-nat-gateway-azure-virtual-desktop
 slug: Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop

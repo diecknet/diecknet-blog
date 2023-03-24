@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - exchange-online-auto-expanding-archives
 slug: Exchange-Online-Auto-Expanding-Archives

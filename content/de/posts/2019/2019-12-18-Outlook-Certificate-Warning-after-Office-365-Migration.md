@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - outlook-certificate-warning-after-office-365-migration
 slug: Outlook-Certificate-Warning-after-Office-365-Migration

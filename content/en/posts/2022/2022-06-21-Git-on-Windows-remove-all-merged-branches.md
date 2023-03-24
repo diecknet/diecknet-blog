@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - git-on-windows-remove-all-merged-branches
 slug: Git-on-Windows-remove-all-merged-branches

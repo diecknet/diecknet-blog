@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - sharepoint-online-timezones-by-powershell
 slug: Sharepoint-Online-Timezones-by-PowerShell

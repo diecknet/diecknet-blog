@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - m365-self-service-purchase
 slug: M365-Self-Service-Purchase

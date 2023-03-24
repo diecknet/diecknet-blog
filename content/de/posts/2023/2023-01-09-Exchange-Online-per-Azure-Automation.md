@@ -1,4 +1,4 @@
-﻿---
+---
 aliases:
     - exchange-online-per-azure-automation
 slug: Exchange-Online-per-Azure-Automation
@@ -7,6 +7,7 @@ date: 2023-01-09
 tags: [microsoft365, office365, exchangeonline, powershell, exo, azure, azureautomation]
 cover:
     image: /images/2023/2023-AA-EXO.jpg
+comments: true    
 ---
 
 Ich versuche es kurz und knackig zu halten:

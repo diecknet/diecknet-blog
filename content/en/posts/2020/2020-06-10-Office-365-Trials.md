@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - office-365-trials
 slug: Office-365-Trials

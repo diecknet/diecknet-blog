@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - exchange-server-setup-incomplete-fail-stopping-services
 slug: Exchange-Server-Setup-Incomplete-fail-stopping-services

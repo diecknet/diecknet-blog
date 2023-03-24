@@ -1,4 +1,5 @@
-﻿---
+---
+comments: true
 aliases:
     - deleted-teams-channel-retention
 slug: Deleted-Teams-Channel-Retention
