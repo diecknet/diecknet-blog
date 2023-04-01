@@ -7,7 +7,7 @@ jobs:
   gather-links:
     runs-on: ubuntu-latest
     steps:
-      - name: check pwsh
+      - name: Gather all links from the page using PowerShell
         shell: pwsh
         run: |
           function Get-LinksFromSiteMap($url) {
@@ -52,7 +52,7 @@ jobs:
           }
           # output unique external links plus internal to csv
           ($linkCollection+$allLinks | Select-Object -Unique) | Out-File links.csv -Encoding utf8
-      - name: upload linklist artifact
+      - name: Upload linklist artifact
         uses: actions/upload-artifact@v3
         with:
           name: linklist
@@ -65,16 +65,12 @@ jobs:
       image: secsi/waybackpy:3.0.6
       options: --cpus 1
     steps:
-      - name: download linklist artifact
+      - name: Download linklist artifact
         uses: actions/download-artifact@v3
         with:
           name: linklist
-      - name: list current dir
-        run: ls
-      - name: read linklist
+      - name: Go through linklist and add every link to archive.org using waybackpy
         run: |
           while read LINK; do
-            echo "THIS IS THE LINK: $LINK"
+            waybackpy --url "$LINK" --user_agent "diecknet-blog-archiver" --save
           done < "links.csv"
-      #- name: Run waybackpy to archive a page (test)
-      #  run: waybackpy --url "https://diecknet.de" --user_agent "diecknet-blog-archiver" --save
