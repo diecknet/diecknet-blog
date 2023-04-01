@@ -12,5 +12,8 @@ jobs:
     steps:
       - name: Check for dockerenv file
         run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
+      - name: check pwsh
+        shell: pwsh
+        run: Write-Output "test"
       - name: Run waybackpy to archive a page (test)
-        run: waybackpy --url "https://en.wikipedia.org/wiki/Social_media" --user_agent "diecknet-blog-archiver" --save
+        run: waybackpy --url "https://diecknet.de" --user_agent "diecknet-blog-archiver" --save
