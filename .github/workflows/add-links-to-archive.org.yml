@@ -1,7 +1,7 @@
 name: Add links to archive.org
 on:
-  push:
-    branches: [ main ]
+  #push:
+  #  branches: [ main ]
   workflow_dispatch:
 jobs:
   gather-links:
