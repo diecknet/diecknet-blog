@@ -83,7 +83,9 @@ jobs:
         with:
           name: linklist
       - name: Go through linklist and add every link to archive.org using waybackpy
+        # waiting for 6 seconds because only 15 URL submissions per minute are allowed
         run: |
           while read LINK; do
             waybackpy --url "$LINK" --user_agent "diecknet-blog-archiver" --save
+            sleep 6
           done < "links.csv"
