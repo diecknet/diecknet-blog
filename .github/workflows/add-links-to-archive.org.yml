@@ -9,14 +9,72 @@ jobs:
     steps:
       - name: check pwsh
         shell: pwsh
-        run: Write-Output "test $(Get-Date)"
+        run: |
+          function Get-LinksFromSiteMap($url) {
+          # get sitemap
+              try {
+                  $sitemap = Invoke-WebRequest -Uri $url -UseBasicParsing
+                  # convert from XML to object
+                  $xml = [xml]$sitemap.Content
+                  return($xml.urlset.url.loc)
+              } catch {
+                  Write-Error "Failed to retrieve sitemap. Error: $($_.Exception.Message)"
+                  exit 1
+              }
+          }
+
+          $siteBase = "https://diecknet.de"
+          $allLinks = Get-LinksFromSiteMap "$siteBase/sitemap.xml"
+
+          <# use this after migration to Hugo (language specific sitemaps) 
+          # probably not the most efficient way when adding two arrays, but it works
+          $allLinks = (Get-LinksFromSiteMap "$sitebase/de/sitemap.xml")+(Get-LinksFromSiteMap "$sitebase/en/sitemap.xml")
+          #>
+
+          $linkCollection = foreach($link in $allLinks) {
+              try {
+                  $page = Invoke-WebRequest -Uri $link -UseBasicParsing
+                  foreach($foundLink in ($page.Links.href)) {
+                      if($foundLink -like "#*") { # if the link is an anchor link
+                          continue
+                      }
+                      if($foundLink -like "/*") { # if the link is a relative link
+                          continue
+                      }
+                      if($foundLink -like "$($siteBase)/*") { # if the link is internal
+                          continue
+                      }
+                      $foundLink #output to foreach loop
+                  }
+              } catch {
+                  Write-Error "Failed to retrieve links from page ($($link)). Error: $($_.Exception.Message)"
+              }
+          }
+          # output unique external links plus internal to csv
+          ($linkCollection+$allLinks | Select-Object -Unique) | Out-File links.csv -Encoding utf8
+      - name: upload linklist artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: linklist
+          path: ./links.csv
+          if-no-files-found: error
   add-links:
+    needs: gather-links
     runs-on: ubuntu-latest
     container:
       image: secsi/waybackpy:3.0.6
       options: --cpus 1
     steps:
-      - name: Check for dockerenv file
-        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
-      - name: Run waybackpy to archive a page (test)
-        run: waybackpy --url "https://diecknet.de" --user_agent "diecknet-blog-archiver" --save
+      - name: download linklist artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: linklist
+      - name: list current dir
+        run: ls
+      - name: read linklist
+        run: |
+          while read LINK; do
+            echo "THIS IS THE LINK: $LINK"
+          done < "links.csv"
+      #- name: Run waybackpy to archive a page (test)
+      #  run: waybackpy --url "https://diecknet.de" --user_agent "diecknet-blog-archiver" --save
