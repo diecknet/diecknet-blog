@@ -11,47 +11,60 @@ jobs:
         shell: pwsh
         run: |
           function Get-LinksFromSiteMap($url) {
-          # get sitemap
-              try {
-                  $sitemap = Invoke-WebRequest -Uri $url -UseBasicParsing
-                  # convert from XML to object
-                  $xml = [xml]$sitemap.Content
-                  return($xml.urlset.url.loc)
-              } catch {
-                  Write-Error "Failed to retrieve sitemap. Error: $($_.Exception.Message)"
-                  exit 1
-              }
-          }
+            # get sitemap
+                try {
+                    $sitemap = Invoke-WebRequest -Uri $url -UseBasicParsing
+                    # convert from XML to object
+                    $xml = [xml]$sitemap.Content
+                    return($xml.urlset.url.loc)
+                } catch {
+                    Write-Error "Failed to retrieve sitemap. Error: $($_.Exception.Message)"
+                    exit 1
+                }
+            }
 
-          $siteBase = "https://diecknet.de"
-          $allLinks = Get-LinksFromSiteMap "$siteBase/sitemap.xml"
+            $filterOutPrefixes = @("https://www.facebook.com/sharer/*","https://www.linkedin.com/sharing/share-offsite/*","https://twitter.com/intent/tweet/*")
 
-          <# use this after migration to Hugo (language specific sitemaps) 
-          # probably not the most efficient way when adding two arrays, but it works
-          $allLinks = (Get-LinksFromSiteMap "$sitebase/de/sitemap.xml")+(Get-LinksFromSiteMap "$sitebase/en/sitemap.xml")
-          #>
+            $siteBase = "https://diecknet.de"
+            $allLinks = Get-LinksFromSiteMap "$siteBase/sitemap.xml"
 
-          $linkCollection = foreach($link in $allLinks) {
-              try {
-                  $page = Invoke-WebRequest -Uri $link -UseBasicParsing
-                  foreach($foundLink in ($page.Links.href)) {
-                      if($foundLink -like "#*") { # if the link is an anchor link
-                          continue
-                      }
-                      if($foundLink -like "/*") { # if the link is a relative link
-                          continue
-                      }
-                      if($foundLink -like "$($siteBase)/*") { # if the link is internal
-                          continue
-                      }
-                      $foundLink #output to foreach loop
-                  }
-              } catch {
-                  Write-Error "Failed to retrieve links from page ($($link)). Error: $($_.Exception.Message)"
-              }
-          }
-          # output unique external links plus internal to csv
-          ($linkCollection+$allLinks | Select-Object -Unique) | Out-File links.csv -Encoding utf8
+            <# use this after migration to Hugo (language specific sitemaps) 
+            # probably not the most efficient way when adding two arrays, but it works
+            $allLinks = (Get-LinksFromSiteMap "$sitebase/de/sitemap.xml")+(Get-LinksFromSiteMap "$sitebase/en/sitemap.xml")
+            #>
+
+
+            $linkCollection = foreach($link in $allLinks) {
+                try {
+                    $page = Invoke-WebRequest -Uri $link -UseBasicParsing
+                    # :linkCheck is a break label for continue later below
+                    :linkCheck foreach($foundLink in ($page.Links.href)) {
+                        if($foundLink -like "#*") { # if the link is an anchor link
+                            continue
+                        }
+                        if($foundLink -like "/*") { # if the link is a relative link
+                            continue
+                        }
+                        if($foundLink -like "$($siteBase)/*") { # if the link is internal
+                            continue
+                        }
+                        if([string]::IsNullOrWhiteSpace($foundLink)) { # if the link is empty
+                            continue
+                        }
+                        foreach($filter in $filterOutPrefixes) { # filter out specific url prefixes
+                            if($foundLink -like $filter) {
+                                continue linkCheck # continue with next link, not the current forEach loop here
+                            }
+                        }
+                        $foundLink #output to foreach loop
+                    }
+                } catch {
+                    Write-Error "Failed to retrieve links from page ($($link)). Error: $($_.Exception.Message)"
+                }
+            }
+            # output unique external links plus internal to csv
+            $linkCollection+$allLinks | Select-Object -Unique | Out-File links.csv -Encoding utf8
+
       - name: Upload linklist artifact
         uses: actions/upload-artifact@v3
         with:
