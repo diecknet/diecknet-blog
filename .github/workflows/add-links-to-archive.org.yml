@@ -4,6 +4,12 @@ on:
     branches: [ main ]
   workflow_dispatch:
 jobs:
+  gather-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check pwsh
+        shell: pwsh
+        run: Write-Output "test $(Get-Date)"
   add-links:
     runs-on: ubuntu-latest
     container:
@@ -12,8 +18,5 @@ jobs:
     steps:
       - name: Check for dockerenv file
         run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
-      - name: check pwsh
-        shell: pwsh
-        run: Write-Output "test"
       - name: Run waybackpy to archive a page (test)
         run: waybackpy --url "https://diecknet.de" --user_agent "diecknet-blog-archiver" --save
