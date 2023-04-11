@@ -1,8 +1,12 @@
 ---
+comments: true
+aliases:
+    - azure-ad-connect-video
+slug: Azure-AD-Connect-Video
 title: "Azure AD Connect richtig planen und vorbereiten (Video)"
 subtitle: Weiterführende Links zu Azure AD Connect
 date: 2020-06-05
-contenttags:
+tags:
     [
         azuread,
         activedirectory,
@@ -16,11 +20,11 @@ contenttags:
 
 Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein [YouTube Video](https://www.youtube.com/watch?v=_feF0VPL2Ps) erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.
 
-[![Azure AD Connect: Planen und vorbereiten (YouTube)](/assets/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png "Azure AD Connect: Planen und vorbereiten (YouTube)")](https://www.youtube.com/watch?v=_feF0VPL2Ps)
+[![Azure AD Connect: Planen und vorbereiten (YouTube)](/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png "Azure AD Connect: Planen und vorbereiten (YouTube)")](https://www.youtube.com/watch?v=_feF0VPL2Ps)
 
 ## Azure AD Connect Entscheidungsbaum
 
-[![Azure AD Connect Entscheidungsbaum (kostenloser Download)](/assets/images/2020/2020-06-05_Azure_AD_Connect_Entscheidungsbaum.jpg "Azure AD Connect Entscheidungsbaum (kostenloser Download)")](https://data.diecknet.de/dl/2020-06-05/Azure_AD_Connect_Entscheidungsbaum.zip)
+[![Azure AD Connect Entscheidungsbaum (kostenloser Download)](/images/2020/2020-06-05_Azure_AD_Connect_Entscheidungsbaum.jpg "Azure AD Connect Entscheidungsbaum (kostenloser Download)")](https://data.diecknet.de/dl/2020-06-05/Azure_AD_Connect_Entscheidungsbaum.zip)
 
 [Kostenloser Download (.pdf, .png, .drawio)](https://data.diecknet.de/dl/2020-06-05/Azure_AD_Connect_Entscheidungsbaum.zip)
 

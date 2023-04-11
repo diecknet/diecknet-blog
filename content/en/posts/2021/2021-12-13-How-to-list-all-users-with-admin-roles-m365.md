@@ -1,7 +1,11 @@
 ---
+comments: true
+aliases:
+    - how-to-list-all-users-with-admin-roles-m365
+slug: How-to-list-all-users-with-admin-roles-m365
 title: "List all Users with administrative roles in a Microsoft 365 environment"
 date: 2021-12-13
-contenttags: [azure ad, microsoft 365, powershell]
+tags: [azure ad, microsoft 365, powershell]
 ---
 
 Just a short PowerShell snippet to list all users with administrative roles in a Microsoft 365 (or Azure AD) environment. In the Admin Portals you can usually only list all the users with a specific role, not all users with **any admin role**.

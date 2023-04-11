@@ -1,7 +1,11 @@
 ---
+comments: true
+aliases:
+    - deploy-azure-nat-gateway-azure-virtual-desktop
+slug: Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop
 title: Deploy an Azure NAT-Gateway for Azure Virtual Desktop by PowerShell
 subtitle: Deploying Azure Resources by REST-API
-contenttags:
+tags:
     [
         azure,
         azure virtual desktop,
@@ -10,7 +14,8 @@ contenttags:
         powershell,
         hackathon
     ]
-image: /assets/images/2021/2021-06-27-NAT-Gateway-Azure-Virtual-Desktop.png
+cover:
+    image: /images/2021/2021-06-27-NAT-Gateway-Azure-Virtual-Desktop.png
 imageAlt: YouTube Thumbnail for Azure NAT-Gateway/ Azure Virtual Desktop
 date: 2021-06-27
 ---

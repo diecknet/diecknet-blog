@@ -1,9 +1,14 @@
 ---
+comments: true
+aliases:
+    - get-group-membership-count-with-microsoft-graph-api
+slug: Get-Group-membership-count-with-microsoft-graph-api
 title: "How to get Group Membership count with Microsoft Graph API"
 subtitle: "How many users are in that Azure AD Group?"
 date: 2022-06-16
-contenttags: [azure ad, microsoft 365, graph api]
-image: /assets/images/2022/2022-06-16-Graph_Explorer.png
+tags: [azure ad, microsoft 365, graph api]
+cover:
+    image: /images/2022/2022-06-16-Graph_Explorer.png
 ---
 
 Apparently it's not _that easy_ to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header `ConsistencyLevel: eventual` to use the **Advanced Query Capabilities**. Then we can use the Query parameter `$count`. Alternatively I found that I could also add it as an URL query parameter instead. That would be `&ConsistencyLevel=eventual`.

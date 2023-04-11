@@ -1,11 +1,16 @@
 ---
+comments: true
+aliases:
+    - teamsautoupgrade-fail
+slug: TeamsAutoUpgrade-fail
 title: Moving from Skype for Business to Teams sucks
-contenttags:
+tags:
     [
         MicrosoftTeams,
         SkypeForBusiness
     ]
-image: /assets/images/2021/2021-08-05_TeamsUpgradeInMinusOneDays.png
+cover:
+    image: /images/2021/2021-08-05_TeamsUpgradeInMinusOneDays.png
 imageAlt: -1 days until your Teams Upgrade. Good news!
 date: 2021-08-18
 ---
@@ -16,7 +21,7 @@ The upgrade process from Skype for Business Online to Microsoft Teams is a disas
 
 One client reported, that they suddenly have Skype Meetings in Outlook on iOS again, instead of Teams Meetings.
 
-![Skype Meeting in Outlook on iOS](/assets/images/2021/2021-08-11-TeamsUpgrade_SuddenlySkypeMeetings.png "Skype Meeting in Outlook on iOS")
+![Skype Meeting in Outlook on iOS](/images/2021/2021-08-11-TeamsUpgrade_SuddenlySkypeMeetings.png "Skype Meeting in Outlook on iOS")
 
 That particular client manages their Microsoft 365 tenant themselves. They were already exclusively using Teams for quite a while (>2 years), but never switched to "TeamsOnly" mode. I'm sure they don't read their Message Center entries on a regular basis (if ever). Microsoft informs the client with a message like this, when the automatic upgrade fails:
 
@@ -38,11 +43,11 @@ And promptly after in another Message:
 
 Okay, so the upgrade was halted. According to the Message the client had DNS entries pointing to an on-premises Skype for Business Server system. Thing is: **The client does not have a S4B Server.** And they never had one in the past. The upgrade process just assumes, that the client has one.
 
-![The Teams-Upgrade was paused!](/assets/images/2021/2021-08-18_TeamsUpgradePaused.png "The Teams-Upgrade was paused!")
+![The Teams-Upgrade was paused!](/images/2021/2021-08-18_TeamsUpgradePaused.png "The Teams-Upgrade was paused!")
 
 ## The actual issue
 
-![We can't upgrade this organization to 'Teams Only' mode.](/assets/images/2021/2021-08-18_TeamsUpgradeFailed.png "We can't upgrade this organization to 'Teams Only' mode.")
+![We can't upgrade this organization to 'Teams Only' mode.](/images/2021/2021-08-18_TeamsUpgradeFailed.png "We can't upgrade this organization to 'Teams Only' mode.")
 
 The actual issue is, that this particular client has Wildcard DNS entries for their domains in public DNS. So when the Upgrade Process checks for the Skype DNS entries, it'll receive the IP-Address of the client's website. The upgrade process does not check if:
 

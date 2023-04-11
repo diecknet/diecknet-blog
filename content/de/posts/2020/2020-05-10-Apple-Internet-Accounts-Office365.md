@@ -1,8 +1,12 @@
 ---
+comments: true
+aliases:
+    - apple-internet-accounts-office365
+slug: Apple-Internet-Accounts-Office365
 title: "Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich"
 subtitle: iOS Zugriff auf Office 365 ermöglichen
 date: 2020-05-10
-contenttags:
+tags:
     [
         exchange,
         exchangeonline,
@@ -13,7 +17,8 @@ contenttags:
         microsoft365,
         office365
     ]
-image: /assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
+cover:
+    image: /images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
 ---
 
 Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:
@@ -46,7 +51,7 @@ Es gibt mehrere Lösungsmöglichkeiten, ohne dass einfach alle Drittanbieter-App
 
 Als Erstes muss die Tenant ID des Azure AD Tenants herausgefunden werden. Diese ist auf ["Overview Seite in Azure Active Directory"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) zu finden (im nachfolgenden Screenshot rot markiert).
 
-![Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.](/assets/images/2020/2020-05-07_AzureAD_TenantID.png "Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.")
+![Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.](/images/2020/2020-05-07_AzureAD_TenantID.png "Die Tenant ID ist in Azure Active Directory auf der Overview Seite zu finden.")
 
 #### Schritt 2: URL zusammensetzen und aufrufen
 
@@ -60,15 +65,15 @@ https://login.microsoftonline.com/<TenantID>/oauth2/authorize?client_id=f8d98a96
 
 Die Abfrage "Angeforderte Berechtigungen für Ihre Organisation zustimmen - Apple Internet Accounts" muss per "Akzeptieren" bestätigt werden.
 
-![Administrativer Zustimmungsdialog: Angeforderte Berechtigung für Ihre Organisation zustimmen - Apple Internet Accounts - Diese Anwendung wird nicht von Microsoft oder Ihrer Organisation veröffentlicht. Diese App benötigt folgende Berechtigungen: Über Exchange Active Sync auf Postfächer zugreifen, Als angemeldeter Benutzer über Exchange-Webdienste auf Postfächer zugreifen, Anmelden und Benutzerprofil lesen](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_2.png "Administrativer Zustimmungsdialog für Apple Internet Accounts in Microsoft 365")
+![Administrativer Zustimmungsdialog: Angeforderte Berechtigung für Ihre Organisation zustimmen - Apple Internet Accounts - Diese Anwendung wird nicht von Microsoft oder Ihrer Organisation veröffentlicht. Diese App benötigt folgende Berechtigungen: Über Exchange Active Sync auf Postfächer zugreifen, Als angemeldeter Benutzer über Exchange-Webdienste auf Postfächer zugreifen, Anmelden und Benutzerprofil lesen](/images/2020/2020-05-07_Apple-Internet-Accounts-de_2.png "Administrativer Zustimmungsdialog für Apple Internet Accounts in Microsoft 365")
 
 Falls die URL wie in Schritt 1 und 2 manuell zusammengesetzt wurde, wird anschließend ein Fehler angezeigt, da die hinterlegte Redirect URL auf <https://example.com> verweist. Der Fehler AADSTS900561 kann in diesem Fall ignoriert werden.
 
-![Fehler: Leider können wir Sie nicht anmelden. AADSTS900561: The endpoint only accepts POST requests. Received a GET request. Kann in diesem Fall auf Grund der hinterlegten Redirect URL ignoriert werden.](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_3.png "Fehler AADSTS900561: Kann in diesem Fall auf Grund der hinterlegten Redirect URL ignoriert werden.")
+![Fehler: Leider können wir Sie nicht anmelden. AADSTS900561: The endpoint only accepts POST requests. Received a GET request. Kann in diesem Fall auf Grund der hinterlegten Redirect URL ignoriert werden.](/images/2020/2020-05-07_Apple-Internet-Accounts-de_3.png "Fehler AADSTS900561: Kann in diesem Fall auf Grund der hinterlegten Redirect URL ignoriert werden.")
 
 Die App sollte nun in Azure AD unter "Enterprise applications" -> "All applications" aufgelistet sein.
 
-![Auflistung erlaubter Enterprise Applications in Azure AD](/assets/images/2020/2020-05-07_AzureAD_enterpriseapplicationslist.png "Auflistung erlaubter Enterprise Applications in Azure AD")
+![Auflistung erlaubter Enterprise Applications in Azure AD](/images/2020/2020-05-07_AzureAD_enterpriseapplicationslist.png "Auflistung erlaubter Enterprise Applications in Azure AD")
 
 #### Schritt 4: Funktion überprüfen
 
@@ -82,31 +87,31 @@ Alternativ kann aktiviert werden, dass Anwender die Genehmigung einer App beantr
 
 Als Administrator in Azure AD ["Enterprise applications" -> "User settings"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/) aufrufen. Unter "Admin consent requests (Preview)" kann die Option "Users can request admin consent to apps they are unable to consent to" aktiviert werden. Anschließend auf "Select admin consent request reviewers" klicken und die Administratoren auswählen, die die Requests bestätigen sollen. Bei Bedarf kann die Benachrichtigung des Administrators per E-Mail deaktiviert/aktiviert werden. Standardmäßig laufen die Anfragen nach 30 Tagen ab, was bei Bedarf auch angepasst werden kann.
 
-![Aktivieren von Enterprise Application Admin Consent Request in Azure AD](/assets/images/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest.png "Aktivieren von Enterprise Application Admin Consent Request in Azure AD")
+![Aktivieren von Enterprise Application Admin Consent Request in Azure AD](/images/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest.png "Aktivieren von Enterprise Application Admin Consent Request in Azure AD")
 
 #### Schritt 2: Benutzer fragt Administrator-Zustimmung an
 
 Wenn ein Benutzer nun eine neue Applikation nutzen möchte, erscheint die Meldung "**Genehmigung erforderlich**". Die notwendigen Berechtigungen der Applikation werden aufgelistet. Der Benutzer muss eine Begründung für die Anfrage der Applikation eingeben. Anschließend kann die Genehmigungsanforderung abgesendet werden.
 
-![Hinweis für Endanwender bei Benutzung der App - Genehmigung erforderlich. Die Rechte der App werden aufgeführt. Es muss eine Begründung für die Anfrage eingegeben werden.](/assets/images/2020/2020-05-07_RequestAdminConsent_as_enduser.png "Hinweis für Endanwender bei Benutzung der App - Genehmigung erforderlich. Die Rechte der App werden aufgeführt. Es muss eine Begründung für die Anfrage eingegeben werden.")
+![Hinweis für Endanwender bei Benutzung der App - Genehmigung erforderlich. Die Rechte der App werden aufgeführt. Es muss eine Begründung für die Anfrage eingegeben werden.](/images/2020/2020-05-07_RequestAdminConsent_as_enduser.png "Hinweis für Endanwender bei Benutzung der App - Genehmigung erforderlich. Die Rechte der App werden aufgeführt. Es muss eine Begründung für die Anfrage eingegeben werden.")
 
 #### Schritt 3: Administrator prüft die Genehmigungsanforderung
 
 Die ausgewählten Administratoren erhalten eine E-Mail, in der Details zur Anforderung aufgeführt werden. In der E-Mail kann auf "Anforderung überprüfen" geklickt werden, um die Anfrage zu bearbeiten. Falls bis zum Ablaufdatum nicht reagiert wird, wird die Anfrage automatisch zurückgewiesen.
 
-![E-Mail mit einem Enterprise Application - Admin consent requests](/assets/images/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest_by_mail.png "E-Mail mit einem Enterprise Application - Admin consent requests")
+![E-Mail mit einem Enterprise Application - Admin consent requests](/images/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest_by_mail.png "E-Mail mit einem Enterprise Application - Admin consent requests")
 
 Alternativ kann der Administrator auch die Liste der offenen Anfragen in Azure AD aufrufen. Hierzu ["Enterprise applications" -> "Admin consent requests"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/) anklicken.
 
-![Auflistung von Enterprise Application - Admin consent requests](/assets/images/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "Auflistung von Enterprise Application - Admin consent requests")
+![Auflistung von Enterprise Application - Admin consent requests](/images/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "Auflistung von Enterprise Application - Admin consent requests")
 
 Es können Details wie Name, Homepage URL, verwendete Reply URLs angezeigt werden. Unter "Requested by" wird angezeigt, welcher Benutzer die App angefragt hat. Der Administrator kann nun wahlweise die Berechtigungen prüfen und genehmigen ("Review permissions and consent"), oder die Anfrage per "Deny" ablehnen. Falls die Applikation dauerhaft gesperrt werden soll, damit keine Anfragen mehr zu dieser App eingereicht werden können, kann "Block" angeklickt werden.
 
-![Abruf von Details zum Enterprise Application Admin consent request](/assets/images/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Abruf von Details zum Enterprise Application Admin consent request")
+![Abruf von Details zum Enterprise Application Admin consent request](/images/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Abruf von Details zum Enterprise Application Admin consent request")
 
 Falls die Applikation nicht gestattet wurde, würde der Benutzer bei der nächsten Anmeldung die Meldung **AADSTS7000112** erhalten.
 
-![Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled](/assets/images/2020/2020-05-07_AADSTS7000112_application_disabled.png "Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled")
+![Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled](/images/2020/2020-05-07_AADSTS7000112_application_disabled.png "Applikation wurde durch den Administrator blockiert oder nicht genehmigt: AADSTS7000112 application is disabled")
 
 #### Schritt 4: Funktion überprüfen nach erfolgter Administratorgenehmigung
 
@@ -116,7 +121,7 @@ Anschließend sollten die Anwender die angefragte und genehmigte App verwenden k
 
 Wenn eine App bereits erlaubt ist, kann sie bei Bedarf auch wieder deaktiviert werden. Hierzu die Applikation aus "Enterprise applications" raussuchen und unter "Properties" die Option "Enabled for users to sign-in" auf "No" setzen. Falls man hier stattdessen auf "Delete" klickt, können die Benutzer wieder erneut eine Genehmigung beantragen.
 
-![Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.](/assets/images/2020/2020-05-07_Disable_existing_enterpriseapp.png "Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.")
+![Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.](/images/2020/2020-05-07_Disable_existing_enterpriseapp.png "Deaktivieren einer bereits bestehenden Enterprise App: Enabled for users to sign-in auf No setzen.")
 
 ## Weiterführende Links
 

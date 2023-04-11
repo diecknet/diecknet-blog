@@ -1,9 +1,14 @@
 ---
+comments: true
+aliases:
+    - exchange-server-setup-incomplete-fail-stopping-services
+slug: Exchange-Server-Setup-Incomplete-fail-stopping-services
 title: "Exchange Server Setup Incomplete but fails to complete"
 subtitle: "Setup fails at 'Step 1 of 13: Stopping Services'"
 date: 2022-06-23
-contenttags: [exchange, exchange server setup, troubleshooting, powershell]
-image: /assets/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected_small.png
+tags: [exchange, exchange server setup, troubleshooting, powershell]
+cover:
+    image: /images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected_small.png
 ---
 
 I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed.
@@ -11,12 +16,12 @@ It was just a test environment, but I thought it would be useful or interesting 
 
 I'll guide you through my troubleshooting steps / thought process.
 
-[![Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected](/assets/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png "Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected")](/assets/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png)
+[![Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected](/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png "Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected")](/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png)
 
 ## Try to continue Setup
 
 First I tried to resume the setup. The setup fails early - at `Step 1 of 13: Stopping Services`.
-[![Exchange Server 2016 CU23 Setup Assistant - Fails at Step 1 Stopping services](/assets/images/2022/2022-06-22_Exchange_Server_Setup_Fails_at_stopping_services.png "Exchange Server 2016 CU23 Setup Assistant - Fails at Step 1 Stopping services")](/assets/images/2022/2022-06-22_Exchange_Server_Setup_Fails_at_stopping_services.png)
+[![Exchange Server 2016 CU23 Setup Assistant - Fails at Step 1 Stopping services](/images/2022/2022-06-22_Exchange_Server_Setup_Fails_at_stopping_services.png "Exchange Server 2016 CU23 Setup Assistant - Fails at Step 1 Stopping services")](/images/2022/2022-06-22_Exchange_Server_Setup_Fails_at_stopping_services.png)
 
 The error message in detail:
 
@@ -144,7 +149,7 @@ So `ServiceControl.ps1` resides in the Exchange Server `Bin`-directory. Well tha
 
 So the reversing of `$services` fails. The error message from before told us the issue already: `Value cannot be null`. So is it really null? I've set a PowerShell Debugging Breakpoint with the PowerShell ISE to see for myself.
 
-[![Exchange Server 2016 CU23 Setup - Debugging ServiceControl.ps1 with PowerShell ISE](/assets/images/2022/2022-06-22_Exchange_Server_setup_debug_servicecontrol_ps1.png "Exchange Server 2016 CU23 Setup - Debugging ServiceControl.ps1 with PowerShell ISE")](/assets/images/2022/2022-06-22_Exchange_Server_setup_debug_servicecontrol_ps1.png)
+[![Exchange Server 2016 CU23 Setup - Debugging ServiceControl.ps1 with PowerShell ISE](/images/2022/2022-06-22_Exchange_Server_setup_debug_servicecontrol_ps1.png "Exchange Server 2016 CU23 Setup - Debugging ServiceControl.ps1 with PowerShell ISE")](/images/2022/2022-06-22_Exchange_Server_setup_debug_servicecontrol_ps1.png)
 
 OKAY, it is empty. What did I even expect here?
 Then I looked at the definition of the function `Get-ServiceToControl`, which starts at line 105.
@@ -227,7 +232,7 @@ $script:servicesToControl['Critical']           = @( 'WinMgmt', 'RemoteRegistry'
 Ah okay, these are the actual Windows Service names for each Exchange Server Role. But that doesn't really help now. So one step back to `Get-ServiceToControl`.
 Oh yeah wait. So if `$Active` is set, only Windows Services that are not in the `Status` of `Stopped` are getting returned. Because of the failed Setup, most Exchange Services are `Disabled` and surely none are running.
 
-[![Exchange Server 2016 - Services are not running](/assets/images/2022/2022-06-22_Exchange_Server_Services_are_stopped.png "Exchange Server 2016 - Services are not running")](/assets/images/2022/2022-06-22_Exchange_Server_Services_are_stopped.png)
+[![Exchange Server 2016 - Services are not running](/images/2022/2022-06-22_Exchange_Server_Services_are_stopped.png "Exchange Server 2016 - Services are not running")](/images/2022/2022-06-22_Exchange_Server_Services_are_stopped.png)
 
 So... Could it be that easy? I imagine: If atleast **ONE** Exchange Service was running, `Get-ServiceToControl` would **NOT** return an empty response, so the `[array]::Reverse($services)` would **NOT** fail. Then the procedure of "Stopping Exchange Services" should be deemed successful - right?
 
@@ -235,7 +240,7 @@ So... Could it be that easy? I imagine: If atleast **ONE** Exchange Service was 
 
 So opened `services.msc` to enable and start the `Microsoft Exchange Active Directory Topology` Service (`MSExchangeADTopology`).
 
-[![Exchange Server 2016 - Enabling a service manually in services.msc](/assets/images/2022/2022-06-22_Exchange_Server_enable_service.png "Exchange Server 2016 - Enabling a service manually in services.msc")](/assets/images/2022/2022-06-22_Exchange_Server_enable_service.png)
+[![Exchange Server 2016 - Enabling a service manually in services.msc](/images/2022/2022-06-22_Exchange_Server_enable_service.png "Exchange Server 2016 - Enabling a service manually in services.msc")](/images/2022/2022-06-22_Exchange_Server_enable_service.png)
 
 ## Re-run Start-PreFileCopy[...].ps1
 
@@ -261,7 +266,7 @@ At X:\ExchangeServer\Bin\ServiceControl.ps1:343 char:7
 
 So it just might work now, if running from within the Setup context. So I tried. Already looked promising after a bit, because it's now at Step 2. I went to take break.
 
-[![Exchange Server 2016 CU23 Setup Assistant - Step 2 Copy Exchange Files running](/assets/images/2022/2022-06-22_Exchange_Server_setup_copy_exchange_files.png "Exchange Server 2016 CU23 Setup Assistant - Step 2 Copy Exchange Files running")](/assets/images/2022/2022-06-22_Exchange_Server_setup_copy_exchange_files.png)
+[![Exchange Server 2016 CU23 Setup Assistant - Step 2 Copy Exchange Files running](/images/2022/2022-06-22_Exchange_Server_setup_copy_exchange_files.png "Exchange Server 2016 CU23 Setup Assistant - Step 2 Copy Exchange Files running")](/images/2022/2022-06-22_Exchange_Server_setup_copy_exchange_files.png)
 
 When I came back, there was no Exchange Setup running anymore. Weird. Did it crash? I checked the `C:\ExchangeSetupLogs\ExchangeSetup.log` file again. Looks good now:
 
@@ -279,11 +284,11 @@ When I came back, there was no Exchange Setup running anymore. Weird. Did it cra
 
 First I looked if the Services are now enabled and running as they should. Looks good.
 
-[![Exchange Server 2016 - Services are running again](/assets/images/2022/2022-06-22_Exchange_Server_Services_are_running.png "Exchange Server 2016 - Services are running again")](/assets/images/2022/2022-06-22_Exchange_Server_Services_are_running.png)
+[![Exchange Server 2016 - Services are running again](/images/2022/2022-06-22_Exchange_Server_Services_are_running.png "Exchange Server 2016 - Services are running again")](/images/2022/2022-06-22_Exchange_Server_Services_are_running.png)
 
 Then I ran the Exchange Management Shell to run `Get-ExchangeServer`. Looks good aswell.
 
-[![Exchange Server 2016 - Exchange Management Shell is running](/assets/images/2022/2022-06-22_Exchange_Server_management_shell_working.png "Exchange Server 2016 - Exchange Management Shell is running")](/assets/images/2022/2022-06-22_Exchange_Server_management_shell_working.png)
+[![Exchange Server 2016 - Exchange Management Shell is running](/images/2022/2022-06-22_Exchange_Server_management_shell_working.png "Exchange Server 2016 - Exchange Management Shell is running")](/images/2022/2022-06-22_Exchange_Server_management_shell_working.png)
 
 ## Conclusion
 

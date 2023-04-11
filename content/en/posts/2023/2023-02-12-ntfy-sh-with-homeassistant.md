@@ -1,7 +1,9 @@
 ---
+slug: ntfy-sh-with-homeassistant
 title: "Use ntfy.sh with Home Assistant"
 date: 2023-02-12
-contenttags: [homeassistant, home assistant, ntfy.sh, notification]
+tags: [homeassistant, home assistant, ntfy.sh, notification]
+comments: true
 ---
 Just a quick note if you want to use [ntfy.sh](https://ntfy.sh) with [Home Assistant](https://www.home-assistant.io/).
 

@@ -1,8 +1,12 @@
 ---
+comments: true
+aliases:
+    - git-on-windows-remove-all-merged-branches
+slug: Git-on-Windows-remove-all-merged-branches
 title: "How to remove all merged Git Branches on Windows"
 subtitle: "by using Git and PowerShell"
 date: 2022-06-21
-contenttags: [git, powershell]
+tags: [git, powershell]
 ---
 
 Here's a quick tip on howto remove Git Branches that were already merged (thus not necessary to keep around anymore) locally on Windows, using PowerShell. Assuming that you do have Git for Windows installed. **Execute these commands on your own risk.**

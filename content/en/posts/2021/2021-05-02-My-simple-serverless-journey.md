@@ -1,9 +1,13 @@
 ---
+comments: true
+aliases:
+    - my-simple-serverless-journey
+slug: My-simple-serverless-journey
 layout: post
 title: "My simple serverless journey was not that easy"
 subtitle: "The making of simpleIP.de"
 date: 2021-05-02
-contenttags:
+tags:
     [
         simpleip,
         serverless,
@@ -13,7 +17,8 @@ contenttags:
         cloudflareworkers,
         ipaddress
     ]
-image: /assets/images/2021/2021-05-02_SimpleIP.jpg
+cover:
+    image: /images/2021/2021-05-02_SimpleIP.jpg
 ---
 
 Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. But Serverless doesn't mean "without any servers" - you just don't need to worry about them. That's not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there.
@@ -47,7 +52,7 @@ module.exports = (req, res) => {
 
 Neat! Vercel returns the client IP-Address for every request in `req.headers['x-forwarded-for']`.
 
-![My first own Microservice displaying an IP-Address as JSON](/assets/images/2021/2021-05-01_vercel_app_api_ip_js.png "My first own Microservice displaying an IP-Address as JSON")
+![My first own Microservice displaying an IP-Address as JSON](/images/2021/2021-05-01_vercel_app_api_ip_js.png "My first own Microservice displaying an IP-Address as JSON")
 
 I then started out to write a simple clientside JavaScript that calls the API URL to retrieve the IP-Address. Wow! That's on-point thinking in microservices 😅.
 
@@ -80,7 +85,7 @@ Eventhough I wanted to keep it simple, I found the location info too cool to lea
 
 Cool.
 
-![My second own Microservice displaying an IP-Address as JSON - on Cloudflare](/assets/images/2021/2021-05-01_cloudflare_workers_api_ip_js.png "My second own Microservice displaying an IP-Address as JSON - on Cloudflare")
+![My second own Microservice displaying an IP-Address as JSON - on Cloudflare](/images/2021/2021-05-01_cloudflare_workers_api_ip_js.png "My second own Microservice displaying an IP-Address as JSON - on Cloudflare")
 
 ## The static site on Cloudflare Pages
 

@@ -1,9 +1,14 @@
 ---
+comments: true
+aliases:
+    - office-365-trials
+slug: Office-365-Trials
 title: "Office 365 Trial Lizenzen"
 subtitle: Microsoft 365 kostenfrei ausprobieren
 date: 2020-06-10
-contenttags: [microsoft365, office365, licensing, trial]
-image: /assets/images/2020/2020-06-10_O365_Trials.png
+tags: [microsoft365, office365, licensing, trial]
+cover:
+    image: /images/2020/2020-06-10_O365_Trials.png
 ---
 
 Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich [einen kostenlosen Tenant erstellen](https://www.youtube.com/watch?v=gCS2RkGWNjA), oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.
@@ -51,7 +56,7 @@ Auch für Microsoft Viva Learning gibt es eine Trial Lizenz:
 
 In diesem [YouTube Video](https://www.youtube.com/watch?v=gCS2RkGWNjA) zeige ich, wie ein Demo-Tenant mit Trial-Lizenzen angelegt werden kann. Außerdem wird gezeigt, wie die Trial-Lizenz noch einmal um 30 Tage verlängert werden kann.
 
-[![Microsoft 365 Demo-Tenant anlegen! (YouTube)](/assets/images/2020/2020-07-28_yt_M365_ausprobieren.png "Microsoft 365 Demo-Tenant anlegen! (YouTube)")](https://www.youtube.com/watch?v=gCS2RkGWNjA)
+[![Microsoft 365 Demo-Tenant anlegen! (YouTube)](/images/2020/2020-07-28_yt_M365_ausprobieren.png "Microsoft 365 Demo-Tenant anlegen! (YouTube)")](https://www.youtube.com/watch?v=gCS2RkGWNjA)
 
 ## Trial Lizenz zu bestehendem Tenant hinzufügen
 
@@ -59,8 +64,8 @@ Um eine Trial Lizenz zu einem bestehenden Tenant hinzuzufügen, können die glei
 
 ### Schritt 1: "Yes, add it to my account" anklicken
 
-![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (1)](/assets/images/2020/2020-07-28_IntuneTrial_1.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (1)")
+![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (1)](/images/2020/2020-07-28_IntuneTrial_1.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (1)")
 
 ### Schritt 2: Bestätigen per Klick auf "Try now"
 
-![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)](/assets/images/2020/2020-07-28_IntuneTrial_2.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)")
+![Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)](/images/2020/2020-07-28_IntuneTrial_2.png "Microsoft 365 Trial Lizenz zu bestehenden Tenant hinzufügen (2)")

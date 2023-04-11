@@ -1,8 +1,13 @@
 ---
+aliases:
+    - exchange-online-per-azure-automation
+slug: Exchange-Online-per-Azure-Automation
 title: "Automate Exchange Online with Azure Automation in 2023"
 date: 2023-01-09
-contenttags: [microsoft365, office365, exchangeonline, powershell, exo, azure, azureautomation]
-image: /assets/images/2023/2023-AA-EXO.jpg
+tags: [microsoft365, office365, exchangeonline, powershell, exo, azure, azureautomation]
+cover:
+    image: /images/2023/2023-AA-EXO.jpg
+comments: true
 ---
 
 I'll try to keep it short:
@@ -22,7 +27,7 @@ The Exchange Online PowerShell module supports Managed Identities for authentica
 
 I created a [German Video](https://www.youtube.com/watch?v=unXf7ma1NR4) showing how Exchange Online can be controlled via Azure Automation. This involves using a System Assigned Managed Identity for the Azure Automation account and assigning Exchange management rights to this identity. You can probably use the automatic translated Subtitles on YouTube, if you don't speak German.
 
-[![German Video: Manage Exchange Online via Azure Automation (YouTube)](/assets/images/2023/2023-01-09_Azure_Automation_Exchange_online_thumbnail.png "German Video: Manage Exchange Online via Azure Automation (YouTube)")](https://www.youtube.com/watch?v=unXf7ma1NR4)
+[![German Video: Manage Exchange Online via Azure Automation (YouTube)](/images/2023/2023-01-09_Azure_Automation_Exchange_online_thumbnail.png "German Video: Manage Exchange Online via Azure Automation (YouTube)")](https://www.youtube.com/watch?v=unXf7ma1NR4)
 
 ## Further links
 

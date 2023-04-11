@@ -1,7 +1,12 @@
 ---
+comments: true
+aliases:
+    - exchange-online-cache-mode-shared-mailboxes
+slug: Exchange-Online-Cache-Mode-Shared-Mailboxes
 title: Outlook Cache Modus für Freigegebene Postfächer
-contenttags: [exchange, exchange online, shared mailbox, freigegebenes postfach]
-image: /assets/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png
+tags: [exchange, exchange online, shared mailbox, freigegebenes postfach]
+cover:
+    image: /images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png
 imageAlt: A screenshot showing a Microsoft Teams Meeting invite with a dial-in phone number.
 date: 2021-11-19
 ---
@@ -12,7 +17,7 @@ In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modu
 >
 > Verbindung mit dem Server herstellen, um diese anzuzeigen
 
-[![Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen](/assets/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png "Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen")](/assets/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png)
+[![Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen](/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png "Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen")](/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png)
 
 In persönlichen Postfächern wird stattdessen die Möglichkeit geboten, weitere Elemente vom Server abzurufen. Der Text dazu wurde stümperhaft automatisch übersetzt, was sich gut ins Gesamtbild fügt:
 
@@ -20,7 +25,7 @@ In persönlichen Postfächern wird stattdessen die Möglichkeit geboten, weitere
 >
 > Klicken Sie hier, um weitere Informationen "Microsoft Exchange" anzuzeigen
 
-[![Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Klicken Sie hier, um weitere Informationen Microsoft Exchange anzuzeigen](/assets/images/2021/2021-11-19_Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden-weitere-Informationen_Zoomed.png "Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Klicken Sie hier, um weitere Informationen Microsoft Exchange anzuzeigen")](/assets/images/2021/2021-11-19_Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden-weitere-Informationen_Zoomed.png)
+[![Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Klicken Sie hier, um weitere Informationen Microsoft Exchange anzuzeigen](/images/2021/2021-11-19_Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden-weitere-Informationen_Zoomed.png "Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Klicken Sie hier, um weitere Informationen Microsoft Exchange anzuzeigen")](/images/2021/2021-11-19_Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden-weitere-Informationen_Zoomed.png)
 
 ## Workaround
 
@@ -52,35 +57,35 @@ Nun 1h abwarten, bis die Berechtigung aktiv wird.
 Ein neues Konto hinzufügen, beispielsweise per "Datei" ➔ "Kontoeinstellungen" ➔ "Kontoeinstellungen..." ➔ "Neu...".
 Die E-Mail-Adresse eintragen und auf "Verbinden" klicken.
 
-[![Outlook Konto Einrichtung: Einbinden eines Kontos.](/assets/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-01.png "Outlook Konto Einrichtung: Einbinden einer SharedMailbox als Konto.")](/assets/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-01.png)
+[![Outlook Konto Einrichtung: Einbinden eines Kontos.](/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-01.png "Outlook Konto Einrichtung: Einbinden einer SharedMailbox als Konto.")](/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-01.png)
 
-[![Outlook Konto Einrichtung: Einbinden einer SharedMailbox als Konto.](/assets/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-02.png "Outlook Konto Einrichtung: Einbinden einer SharedMailbox als Konto.")](/assets/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-02.png)
+[![Outlook Konto Einrichtung: Einbinden einer SharedMailbox als Konto.](/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-02.png "Outlook Konto Einrichtung: Einbinden einer SharedMailbox als Konto.")](/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-02.png)
 
 ### 3. Zugangsdaten des Benutzers angeben
 
 Im Authentifizierungs-Dialog die E-Mail-Adresse des freigegebenen Postfachs entfernen und stattdessen die E-Mail-Adresse des Benutzers eintragen. Falls bereits nach dem Kennwort des Freigegebenen Postfachs gefragt wird, auf "Mit einem anderen Konto anmelden" klicken.
 
-[![Outlook Konto Einrichtung: E-Mail-Adresse der SharedMailbox entfernen.](/assets/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-03.png "Outlook Konto Einrichtung: E-Mail-Adresse der SharedMailbox entfernen.")](/assets/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-03.png)
+[![Outlook Konto Einrichtung: E-Mail-Adresse der SharedMailbox entfernen.](/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-03.png "Outlook Konto Einrichtung: E-Mail-Adresse der SharedMailbox entfernen.")](/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-03.png)
 
-[![Outlook Konto Einrichtung: E-Mail-Adresse des Benutzers eingeben.](/assets/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-04.png "Outlook Konto Einrichtung: E-Mail-Adresse des Benutzers eingeben.")](/assets/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-04.png)
+[![Outlook Konto Einrichtung: E-Mail-Adresse des Benutzers eingeben.](/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-04.png "Outlook Konto Einrichtung: E-Mail-Adresse des Benutzers eingeben.")](/images/2021/2021-11-19-E-Mail-Konto-Einrichtung-04.png)
 
 ### 4. Outlook neustarten
 
 Outlook beenden und neustarten.
 
-[![Outlook schließen Dialog](/assets/images/2021/2021-11-19-Close-Outlook.png "Outlook schließen Dialog")](/assets/images/2021/2021-11-19-Close-Outlook.png)
+[![Outlook schließen Dialog](/images/2021/2021-11-19-Close-Outlook.png "Outlook schließen Dialog")](/images/2021/2021-11-19-Close-Outlook.png)
 
 ### 5. Cache Zeitraum einstellen
 
 Der Cache Zeitraum ist jetzt in den Kontoeinstellungen separat einstellbar. Wenn ihr den Zeitraum anpasst, müsst ihr anschließend Outlook noch einmal neustarten.
 
-[![Outlook Cache Zeitraum für SharedMailbox einstellen](/assets/images/2021/2021-11-19-E-Mail-Konto-Cache-Zeitraum.png "Outlook Cache Zeitraum für SharedMailbox einstellen")](/assets/images/2021/2021-11-19-E-Mail-Konto-Cache-Zeitraum.png)
+[![Outlook Cache Zeitraum für SharedMailbox einstellen](/images/2021/2021-11-19-E-Mail-Konto-Cache-Zeitraum.png "Outlook Cache Zeitraum für SharedMailbox einstellen")](/images/2021/2021-11-19-E-Mail-Konto-Cache-Zeitraum.png)
 
 ## Ergebnis
 
 Anschließend sollte der Abruf von E-Mails möglich sein, wenn diese älter als der Cache Zeitraum sind. Dazu auf "Klicken Sie hier, um weitere Informationen zu Microsoft Exchange anzuzeigen" klicken.
 
-[![Outlook Cache Zeitraum für SharedMailbox einstellen](/assets/images/2021/2021-11-19_Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden-weitere-Informationen.png "Outlook Cache Zeitraum für SharedMailbox einstellen")](/assets/images/2021/2021-11-19_Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden-weitere-Informationen.png)
+[![Outlook Cache Zeitraum für SharedMailbox einstellen](/images/2021/2021-11-19_Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden-weitere-Informationen.png "Outlook Cache Zeitraum für SharedMailbox einstellen")](/images/2021/2021-11-19_Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden-weitere-Informationen.png)
 
 ## Fazit
 

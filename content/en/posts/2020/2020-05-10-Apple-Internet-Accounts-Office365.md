@@ -1,9 +1,13 @@
 ---
+comments: true
+aliases:
+    - apple-internet-accounts-office365
+slug: Apple-Internet-Accounts-Office365
 layout: post
 title: "Exchange Online: Apple Internet Accounts - Need admin approval"
 subtitle: Enable iOS Access to Office 365 resources
 date: 2020-05-10
-contenttags:
+tags:
     [
         exchange,
         exchangeonline,
@@ -14,7 +18,8 @@ contenttags:
         microsoft365,
         office365
     ]
-image: /assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
+cover:
+    image: /images/2020/2020-05-07_Apple-Internet-Accounts-de_1.png
 ---
 
 When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:
@@ -47,7 +52,7 @@ There are several possible solutions without simply unlocking all third-party ap
 
 First of all you have to find out the Tenant ID of the Azure AD Tenant. You'll find it on the ["Overview page in Azure Active Directory"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) (marked red in the following screenshot).
 
-![The Tenant ID can be found in Azure Active Directory on the Overview page.](/assets/images/2020/2020-05-07_AzureAD_TenantID.png "The Tenant ID can be found in Azure Active Directory on the Overview page.")
+![The Tenant ID can be found in Azure Active Directory on the Overview page.](/images/2020/2020-05-07_AzureAD_TenantID.png "The Tenant ID can be found in Azure Active Directory on the Overview page.")
 
 #### Step 2: Craft URL
 
@@ -62,15 +67,15 @@ The placeholder `<TenantID>` has to get replaced with the actual TenantID from S
 
 The query "Permission requested - Accept for your organization - Apple Internet Accounts" must be confirmed with "Accept".
 
-![Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_2.png "Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts")
+![Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts](/images/2020/2020-05-07_Apple-Internet-Accounts-de_2.png "Administrative Consent Request: Permissions requested - Accept for your organization - Apple Internet Accounts")
 
 If you crafted the URL as described in Step 1 and 2, you'll receive an error now, because the redirect URL points to `https://example.com`. The error AADSTS900561 may be ignored in this case.
 
-![Error: We couldn't log you in  - AADSTS900561: The endpoint only accepts POST requests. Received a GET request. May be ignored in this case.](/assets/images/2020/2020-05-07_Apple-Internet-Accounts-de_3.png "Error: We couldn't log you in  - AADSTS900561: The endpoint only accepts POST requests. Received a GET request. May be ignored in this case.")
+![Error: We couldn't log you in  - AADSTS900561: The endpoint only accepts POST requests. Received a GET request. May be ignored in this case.](/images/2020/2020-05-07_Apple-Internet-Accounts-de_3.png "Error: We couldn't log you in  - AADSTS900561: The endpoint only accepts POST requests. Received a GET request. May be ignored in this case.")
 
 The app should be listed in Azure AD under "Enterprise applications" -> "All applications" now.
 
-![List of allowed Enterprise Applications in Azure AD](/assets/images/2020/2020-05-07_AzureAD_enterpriseapplicationslist.png "List of allowed Enterprise Applications in Azure AD")
+![List of allowed Enterprise Applications in Azure AD](/images/2020/2020-05-07_AzureAD_enterpriseapplicationslist.png "List of allowed Enterprise Applications in Azure AD")
 
 #### Step 4: Test if it works
 
@@ -85,31 +90,31 @@ Alternatively, you can activate that users can request the approval of an app. T
 Open ["Enterprise applications" -> "User settings"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/) in Azure AD as an Administrator. Under "Admin consent requests (Preview)" you can enable the option "Users can request admin consent to apps they are unable to consent to". Then click on "Select admin consent request reviewers" and select the Administrators, that should approve the requests. If required, you can enable to notify these administrators by email.
 In Default the requests expire after 30 days, which can be adjusted aswell.
 
-![Enable Enterprise Application Admin Consent Request in Azure AD](/assets/images/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest.png "Enable Enterprise Application Admin Consent Request in Azure AD")
+![Enable Enterprise Application Admin Consent Request in Azure AD](/images/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest.png "Enable Enterprise Application Admin Consent Request in Azure AD")
 
 #### Step 2: User requests Administrator-Consent
 
 When a users wants to use a new app, he'll receive the info "**Approval Required**". The necessary permissions of the app are listed. The user must enter a reason for the application request. The approval request can then be sent.
 
-![Notification for the enduser when trying to use a new app - Approval Required - The required permissions are listed. It's necessary to enter a reason for the request.](/assets/images/2020/2020-05-07_RequestAdminConsent_as_enduser.png "Notification for the enduser when trying to use a new app - Approval Required - The required permissions are listed. It's necessary to enter a reason for the request.")
+![Notification for the enduser when trying to use a new app - Approval Required - The required permissions are listed. It's necessary to enter a reason for the request.](/images/2020/2020-05-07_RequestAdminConsent_as_enduser.png "Notification for the enduser when trying to use a new app - Approval Required - The required permissions are listed. It's necessary to enter a reason for the request.")
 
 #### Step 3: Administrator reviews the Approval Request
 
 The selected admins receive an E-Mail, which lists the details of the request. In that E-Mail they can click on "Review Request", to review more details. If they don't act until the expiration date, the request will get rejected automatically.
 
-![E-Mail showing an Enterprise Application - Admin consent request](/assets/images/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest_by_mail.png "E-Mail showing an Enterprise Application - Admin consent request")
+![E-Mail showing an Enterprise Application - Admin consent request](/images/2020/2020-05-07_EnterpriseApplication_AdminConsentRequest_by_mail.png "E-Mail showing an Enterprise Application - Admin consent request")
 
 Alternatively the Administrator can review the list of open requests in Azure AD. Open ["Enterprise applications" -> "Admin consent requests"](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AccessRequests/menuId/) to do so.
 
-![List of Enterprise Application - Admin consent requests](/assets/images/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "List of Enterprise Application - Admin consent requests")
+![List of Enterprise Application - Admin consent requests](/images/2020/2020-05-07_EnterpriseApplications_userreqeustlist.png "List of Enterprise Application - Admin consent requests")
 
 Details like Name, Homepage URL, used Reply URLs can get reviewed. Under "Requested by" it lists the requesting user. The Administrator can review the permissions and approve the request ("Review permissions and consent") or "Deny" it. If the application should get blocked permanently, you can select "Block" - no further requests for this app are possible then.
 
-![Retrieve details to the Enterprise Application Admin consent request](/assets/images/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Retrieve details to the Enterprise Application Admin consent request")
+![Retrieve details to the Enterprise Application Admin consent request](/images/2020/2020-05-07_EnterpriseApplication_AdminConsent_Actions_and_infos.png "Retrieve details to the Enterprise Application Admin consent request")
 
 If the application was not approved, the user would get the message **AADSTS7000112**, when trying to use it next time.
 
-![Applikation was blocked by Administrator or was not approved: AADSTS7000112 application is disabled](/assets/images/2020/2020-05-07_AADSTS7000112_application_disabled.png "Applikation was blocked by Administrator or was not approved: AADSTS7000112 application is disabled")
+![Applikation was blocked by Administrator or was not approved: AADSTS7000112 application is disabled](/images/2020/2020-05-07_AADSTS7000112_application_disabled.png "Applikation was blocked by Administrator or was not approved: AADSTS7000112 application is disabled")
 
 #### Step 4: Test if it works after the consent
 
@@ -119,7 +124,7 @@ Afterwards the users should be able to use the requested and approved App.
 
 If an app has already been allowed, it can be deactivated again if required. To do this, select the application from "Enterprise applications" and under "Properties" set the option "Enabled for users to sign-in" to "No". If you click on "Delete" here instead, the users can request approval again.
 
-![Disable a previously allowed Enterprise App: Set Enabled for users to sign-in to No.](/assets/images/2020/2020-05-07_Disable_existing_enterpriseapp.png "Disable a previously allowed Enterprise App: Set Enabled for users to sign-in to No.")
+![Disable a previously allowed Enterprise App: Set Enabled for users to sign-in to No.](/images/2020/2020-05-07_Disable_existing_enterpriseapp.png "Disable a previously allowed Enterprise App: Set Enabled for users to sign-in to No.")
 
 ## Related Links
 

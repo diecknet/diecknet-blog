@@ -1,7 +1,11 @@
 ---
+comments: true
+aliases:
+    - powershell-regular-expression
+slug: PowerShell-Regular-Expression
 title: Using PowerShell Regular Expressions to match against filenames
 subtitle: Extracting info with named group captures
-contenttags:
+tags:
     [powershell, filename, regular expressions, regex, regexp, named groups]
 date: 2021-10-25
 ---

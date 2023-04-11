@@ -1,10 +1,15 @@
 ---
+comments: true
+aliases:
+    - exchange-hybrid-hcw8064-oauth
+slug: Exchange-Hybrid-HCW8064-OAuth
 layout: post
 title: "Exchange Hybrid: HCW8064 OAuth configuration couldn't get performed"
 subtitle: OAuth configuration manually done
 date: 2020-05-01
-contenttags: [exchange, exchange2013, exchangehybrid, oauth, office365]
-image: /assets/images/2020/2020-04-28-HCW8064-01.png
+tags: [exchange, exchange2013, exchangehybrid, oauth, office365]
+cover:
+    image: /images/2020/2020-04-28-HCW8064-01.png
 ---
 
 At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:
@@ -31,7 +36,7 @@ Get-IntraOrganizationConnector | fl
 ```
 
 The attribute "Enabled" is set to `False`, therefore no OAuth is used. Just as expected.
-!["Get-IntraOrganizationConnector | fl" - "Enabled" is set to "False"](/assets/images/2020/2020-04-28-IOC-01.png "'Get-IntraOrganizationConnector | fl' - 'Enabled' is set to 'False'")
+!["Get-IntraOrganizationConnector | fl" - "Enabled" is set to "False"](/images/2020/2020-04-28-IOC-01.png "'Get-IntraOrganizationConnector | fl' - 'Enabled' is set to 'False'")
 
 ## Organization Relationship (ORG REL)
 
@@ -41,7 +46,7 @@ The next step is to check if an Organization Relationship exists.
 Get-OrganizationRelationship | fl
 ```
 
-![Get-OrganizationRelationship to show that the Organization Relationship to the O365 Mail Domain exists"](/assets/images/2020/2020-04-28-ORG-REL.png "Get-OrganizationRelationship to show that the Organization Relationship to the O365 Mail Domain exists")
+![Get-OrganizationRelationship to show that the Organization Relationship to the O365 Mail Domain exists"](/images/2020/2020-04-28-ORG-REL.png "Get-OrganizationRelationship to show that the Organization Relationship to the O365 Mail Domain exists")
 
 In my case, an Organization Relationship was returned. So DAUTH is in use.
 
@@ -49,7 +54,7 @@ In my case, an Organization Relationship was returned. So DAUTH is in use.
 
 I've actually only scratched the surface here. After some troubleshooting it turned out that authentication via DAUTH really isn't working in this case. I have tried to check the cross-premise availability in Outlook on the Web (OWA). In the browser developer console (accessible via "F12") under "Network" you can filter for "GetUserAvailabilityInternal".
 
-![Retrieving developer options - Network in the browser for OWA](/assets/images/2020/2020-04-28-NetworkConsoleBrowserOWA.png "Retrieving developer options - Network in the browser for OWA")
+![Retrieving developer options - Network in the browser for OWA](/images/2020/2020-04-28-NetworkConsoleBrowserOWA.png "Retrieving developer options - Network in the browser for OWA")
 
 The relevant information I could find there:
 
@@ -102,7 +107,7 @@ Test-OAuthConnectivity -Service EWS -TargetUri <external hostname authority of y
 
 Actually, it was possible to retrieve cross-premise free/busy times - in both directions. Here is an example screenshot showing the query from an Exchange Online mailbox to an Exchange On-Premise mailbox.
 
-![Outlook on the Web: retrieving Free/Busy times from Exchange Online to Exchange On-Premise - successfully](/assets/images/2020/2020-04-28-FreeBusy.png "Outlook on the Web: retrieving Free/Busy times from Exchange Online to Exchange On-Premise - successfully")
+![Outlook on the Web: retrieving Free/Busy times from Exchange Online to Exchange On-Premise - successfully](/images/2020/2020-04-28-FreeBusy.png "Outlook on the Web: retrieving Free/Busy times from Exchange Online to Exchange On-Premise - successfully")
 
 ## Related links
 

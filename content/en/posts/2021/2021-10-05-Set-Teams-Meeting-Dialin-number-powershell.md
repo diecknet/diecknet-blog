@@ -1,8 +1,13 @@
 ---
+comments: true
+aliases:
+    - set-teams-meeting-dialin-number-powershell
+slug: Set-Teams-Meeting-Dialin-number-powershell
 title: Set Teams Meeting Dial-in number using PowerShell
-contenttags:
+tags:
     [teams, microsoft teams, teams dial in number, teams audio conferencing]
-image: /assets/images/2021/2021-10-05_TeamsMeeting-DialIn-Number_thumbnail.png
+cover:
+    image: /images/2021/2021-10-05_TeamsMeeting-DialIn-Number_thumbnail.png
 imageAlt: A screenshot showing a Microsoft Teams Meeting invite with a dial-in phone number.
 date: 2021-10-05
 ---
@@ -15,7 +20,7 @@ The phone number in the meeting invite is based on the UsageLocation attribute o
 
 Users ➔ Manage Users ➔ Click on any user ➔ Click on "Edit" next to "Audio Conferencing" ➔ Select "Toll number" according to User Location.
 
-[![Microsoft Teams Admin Center with options to change the dialin number for a user.](/assets/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png "Microsoft Teams Admin Center with options to change the dialin number for a user.")](/assets/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png)
+[![Microsoft Teams Admin Center with options to change the dialin number for a user.](/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png "Microsoft Teams Admin Center with options to change the dialin number for a user.")](/images/2021/2021-10-05_TeamsMeeting-DialIn-Number.png)
 
 ## Use PowerShell to change Dial-In Number for multiple users
 

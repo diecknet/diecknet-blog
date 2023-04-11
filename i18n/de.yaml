@@ -1,0 +1,11 @@
+- id: translation-note
+  translation: "This content is also available in"
+
+- id: home_info
+  translation: "Andreas Dieckmann hier. Ich bin selbstständiger IT-Consultant und seit Jahren in der Branche tätig. Ich veröffentliche hier Blog-Posts zu IT-Themen, um anderen zu helfen."
+
+- id: imprint
+  translation: Impressum
+
+- id: privacy
+  translation: Datenschutz

@@ -1,8 +1,12 @@
 ---
+comments: true
+aliases:
+    - azure-ad-connect-video-part2
+slug: Azure-AD-Connect-Video-Part2
 title: "Azure AD Connect installieren (Video)"
 subtitle: Weiterführende Links zu Azure AD Connect
 date: 2020-06-23
-contenttags:
+tags:
     [
         azuread,
         activedirectory,
@@ -14,7 +18,7 @@ contenttags:
     ]
 ---
 
-[![Azure AD Connect installieren (YouTube)](/assets/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png "Azure AD Connect installieren (YouTube)")](https://www.youtube.com/watch?v=xQYsSngTSnU)  
+[![Azure AD Connect installieren (YouTube)](/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png "Azure AD Connect installieren (YouTube)")](https://www.youtube.com/watch?v=xQYsSngTSnU)  
 Ich habe ein [YouTube Video](https://www.youtube.com/watch?v=xQYsSngTSnU) über die Konfiguration von Azure AD Connect und die Password Hash Sync erstellt. In diesem Blog-Post verweise ich nur auf ein paar weiterführende Links. Schaut euch auch das vorherige [Video zur Planung und Vorbereitung von Azure AD Connect](/2020/06/05/Azure-AD-Connect-Video/) an!
 
 ## Weiterführende Links

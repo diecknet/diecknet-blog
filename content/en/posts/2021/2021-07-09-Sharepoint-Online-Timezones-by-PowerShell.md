@@ -1,13 +1,18 @@
 ---
+comments: true
+aliases:
+    - sharepoint-online-timezones-by-powershell
+slug: Sharepoint-Online-Timezones-by-PowerShell
 title: Retrieve the Timezone of a Sharepoint Online Site using PowerShell
-contenttags:
+tags:
     [
         sharepoint online,
         timezone,
         powershell,
         Microsoft.Online.SharePoint.PowerShell
     ]
-image: /assets/images/2021/2021-07-09_ConvertSPOSiteTimezone.png
+cover:
+    image: /images/2021/2021-07-09_ConvertSPOSiteTimezone.png
 imageAlt: Executing PowerShell cmdlets to retrieve the Timezone of a Sharepoint Online site in a human readable form
 date: 2021-07-09
 ---

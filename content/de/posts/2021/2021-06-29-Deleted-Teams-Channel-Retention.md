@@ -1,12 +1,17 @@
 ---
+comments: true
+aliases:
+    - deleted-teams-channel-retention
+slug: Deleted-Teams-Channel-Retention
 title: Wie lange werden gelöschte Teams Kanäle aufbewahrt?
-contenttags:
+tags:
     [
         teams,
         microsoft teams,
         teams channel retention
     ]
-image: /assets/images/2021/pexels-matthis-volquardsen-3529891.jpg
+cover:
+    image: /images/2021/pexels-matthis-volquardsen-3529891.jpg
 imageAlt: Ein Foto eines Mülleimes um einen gelöschten Teams Kanal zu symbolisieren
 date: 2021-06-29
 ---

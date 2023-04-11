@@ -1,8 +1,12 @@
 ---
+comments: true
+aliases:
+    - my-simple-serverless-journey-part2
+slug: My-simple-serverless-journey-part2
 title: "The Downside of going serverless"
 subtitle: "The making of simpleIP.de - Part 2"
 date: 2021-10-27
-contenttags:
+tags:
     [
         simpleip,
         serverless,
@@ -13,7 +17,8 @@ contenttags:
         ipaddress,
         php
     ]
-image: /assets/images/2021/2021-10-27_SimpleIP.de.update.png
+cover:
+    image: /images/2021/2021-10-27_SimpleIP.de.update.png
 ---
 
 After creating [SimpleIP.de](https://simpleip.de) as a serverless application (see my blog post [My simple serverless journey was not that easy](/en/2021/05/02/My-simple-serverless-journey/)) I was kinda proud. Interesting technology, small and useful website. Nice.

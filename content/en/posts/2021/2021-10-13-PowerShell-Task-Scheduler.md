@@ -1,8 +1,13 @@
 ---
+comments: true
+aliases:
+    - powershell-task-scheduler
+slug: PowerShell-Task-Scheduler
 title: Run PowerShell Script with Windows Task Scheduler
 subtitle: The parameter I keep forgetting is '-file'
-contenttags: [powershell, windows, task scheduler]
-image: /assets/images/2021/2021-10-13_TaskScheduler_PowerShell_Script.png
+tags: [powershell, windows, task scheduler]
+cover:
+    image: /images/2021/2021-10-13_TaskScheduler_PowerShell_Script.png
 imageAlt: A screenshot showing the Action Configuration of a Windows Scheduled Task - to run a PowerShell script.
 date: 2021-10-13
 ---
