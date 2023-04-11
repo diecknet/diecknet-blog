@@ -11,7 +11,7 @@ imprInfoName1: Andreas Jens Dieckmann
 imprInfoCompany: diecknet UG (haftungsbeschränkt)
 imprInfoStreet: Pestalozzistrasse 25
 imprInfoCity: 22305 Hamburg
-imprInfoUstId: DE1234567890
+imprInfoUstId: "-- beantragt, wird später nachgereicht --"
 imprInfoEmail: diecknet.de
 imprInfoE1: impressum
 imprInfoTe: +49 40 5247 1765
@@ -47,13 +47,15 @@ c/o {{< param imprInfoCompany >}}
 {{< param imprInfoCity >}}  
 E-Mail: {{< param imprInfoE1 >}}`@`{{< param imprInfoEmail >}}  
 
-## EU-Streitschlichtung
+## Konflikte
+
+### EU-Streitschlichtung
 
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
 [https://ec.europa.eu/consumers/odr/](https://ec.europa.eu/consumers/odr/).
 Unsere E-Mail-Adresse finden Sie oben im Impressum.
 
-## Verbraucherstreitbeilegung/Universalschlichtungsstelle
+### Verbraucherstreitbeilegung/Universalschlichtungsstelle
 
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
 Verbraucherschlichtungsstelle teilzunehmen.

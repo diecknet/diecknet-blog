@@ -1,5 +1,5 @@
 ---
-title: Legal info
+title: Privacy
 robotsNoIndex: true
 ShowWordCount: false
 disableShare: true
@@ -9,4 +9,4 @@ showtoc: false
 hideMeta: true
 
 ---
-[Sorry, the Legal info is only available in German. Click here to read it.](/de/legal/)
+[Sorry, the Data Privacy info is only available in German. Click here to read it.](/de/privacy/)
