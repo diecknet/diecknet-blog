@@ -24,7 +24,8 @@ $RECYCLE.BIN/
 .env
 
 # Static content / built site
-public/
+public/*
+!public/_redirects
 
 # node modules
 node_modules/

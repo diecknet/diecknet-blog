@@ -9,6 +9,7 @@ ShowReadingTime: false
 comments: false
 showtoc: false
 hideMeta: true
+rss_ignore: true
 ---
 
 ![Hey!](/images/hi-there.jpg "Hey! 👋")

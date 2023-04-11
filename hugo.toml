@@ -96,3 +96,8 @@ lineNos = true
 lineNumbersInTable = true
 noClasses = true
 style = "xcode-dark"
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"

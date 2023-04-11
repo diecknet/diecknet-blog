@@ -17,7 +17,7 @@ imprInfoE1: impressum
 imprInfoTe: +49 40 5247 1765
 imprInfoHRN: HRB 179818
 imprInfoHRG: Amtsgericht Hamburg
-
+rss_ignore: true
 ---
 ## Angaben gemäß § 5 TMG
 
