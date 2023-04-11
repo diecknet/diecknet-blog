@@ -26,12 +26,12 @@ jobs:
             $filterOutPrefixes = @("https://www.facebook.com/sharer/*","https://www.linkedin.com/sharing/share-offsite/*","https://twitter.com/intent/tweet/*")
 
             $siteBase = "https://diecknet.de"
-            $allLinks = Get-LinksFromSiteMap "$siteBase/sitemap.xml"
+            
 
-            <# use this after migration to Hugo (language specific sitemaps) 
+            # (language specific sitemaps) 
             # probably not the most efficient way when adding two arrays, but it works
             $allLinks = (Get-LinksFromSiteMap "$sitebase/de/sitemap.xml")+(Get-LinksFromSiteMap "$sitebase/en/sitemap.xml")
-            #>
+            
 
 
             $linkCollection = foreach($link in $allLinks) {
