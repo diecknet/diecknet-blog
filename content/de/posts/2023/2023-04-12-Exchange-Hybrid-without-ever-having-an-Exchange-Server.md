@@ -89,7 +89,14 @@ Weitere Komponenten:
 
 ## Verwaltung von Exchange Attributen
 
-Wenn jetzt Exchange Attribute angepasst werden sollen, dann muss zuerst das PowerShell SnapIn geladen werden. Anschließend können die entsprechenden PowerShell Cmdlets verwendet werden. Beispielsweise per `New-RemoteMailbox` oder `Set-RemoteMailbox`.
+Wenn jetzt Exchange Attribute angepasst werden sollen, dann muss zuerst das RecipientManagement PowerShell SnapIn geladen werden. Anschließend können die entsprechenden PowerShell Cmdlets verwendet werden. Beispielsweise per `New-RemoteMailbox` oder `Set-RemoteMailbox`.
+
+```powershell
+# SnapIn laden
+Add-PSSnapin *RecipientManagement
+# Exchange Verwaltung durchführen, z.B.
+Get-RemoteMailbox
+```
 
 ## Tipps
 
