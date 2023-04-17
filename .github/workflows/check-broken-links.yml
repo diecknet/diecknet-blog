@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Run Broken Links Checker
-      run: npx broken-link-checker $WEBSITE_URL --ordered --recursive
+      run: npx broken-link-checker $WEBSITE_URL --ordered --recursive --exclude="https://linkedin.com/in/diecknet"
 
     - uses: actions/checkout@v2
       if: failure()
