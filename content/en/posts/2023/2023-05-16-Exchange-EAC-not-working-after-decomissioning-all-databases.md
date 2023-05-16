@@ -15,7 +15,7 @@ I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exch
 
 ## Error 500
 
-Soon the company realized, they now get an **HTTP Error 500** after authenticating to ECP. So the page still prompted for credentials, but after entering valid credentials -> Error 500.
+Soon the company realized, they now get an **HTTP Error 500** after authenticating to the Exchange Admin Center (`https://exchangeserver2019.example.com/ecp`). So the page still prompted for credentials, but after entering valid credentials -> Error 500.
 
 [![Error 500 after authenticating to the Exchange Admin Center](/images/2023/2023-05-16-ExchangeEAC-Error500.jpg "Error 500 after authenticating to the Exchange Admin Center")](/images/2023/2023-05-16-ExchangeEAC-Error500.jpg)
 
@@ -25,18 +25,18 @@ The [Exchange HealthChecker.ps1](https://microsoft.github.io/CSS-Exchange/Diagno
 I also didn't find any relevant log entries on the system. I forgot how I came to the conclusion, but I suspected the missing System Mailboxes. Maybe it was this Error 5000 - AdminAuditLog Event:
 
 ```text
-Failed to save admin audit log for this cmdlet invocation.  
-Organization: First Organization  
-Log content:  
-Cmdlet Name: Enable-Mailbox  
-Object Modified: example.com/Users/SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}  
-Parameter: Identity = SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}  
-Parameter: Arbitration = True  
-Caller: example.com/`<OUPathToMyAdminAccount>`/MyAdminUser  
-ExternalAccess: False  
-Succeeded: True  
-Run Date: 2023-05-16T11:50:20  
-OriginatingServer: EXCHANGE2019 (15.02.1118.026)  
+Failed to save admin audit log for this cmdlet invocation.
+Organization: First Organization
+Log content:
+Cmdlet Name: Enable-Mailbox
+Object Modified: example.com/Users/SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}
+Parameter: Identity = SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}
+Parameter: Arbitration = True
+Caller: example.com/<OUPathToMyAdminAccount>/MyAdminUser
+ExternalAccess: False
+Succeeded: True
+Run Date: 2023-05-16T11:50:20
+OriginatingServer: EXCHANGE2019 (15.02.1118.026)
 
 Error:  
 Exception thrown during AdminLogProvisioningHandler.Validate: Microsoft.Exchange.Data.Storage.ObjectNotFoundException: The discovery mailbox, a hidden default mailbox that is required to search mailboxes, can't be found. It may have been inadvertently deleted. This mailbox must be re-created before you can search mailboxes.  
@@ -48,7 +48,12 @@ But I think it's not allowed to host Mailboxes with a Hybrid Server. It's only a
 
 [![USE RIGHTS AND LIMITATIONS FOR EXCHANGE SERVER 2019 HYBRID EDITION. Notwithstanding anything to the contrary in Sections 3a – 3e, your use rights and limitations for Exchange Server Hybrid edition are described in this Section 3f. The software is considered Hybrid edition if 1) you have an active subscription to Microsoft Exchange Online services under a Microsoft Volume Licensing program, 2) you are also running Microsoft Exchange Server as your on-premises email solution, and 3) you use the software solely for the purpose of enabling a hybrid deployment between your Exchange Online users and your on-premises email users. A hybrid deployment refers to the scenario under which your on-premises Exchange Server environment runs in parallel and interacts with the Microsoft Exchange Online service environment to form a single cohesive email infrastructure of your organization. You may not use the Hybrid edition to host on-premises mailboxes, to enable calendar sharing (except for calendar sharing with your Exchange Online users), to perform email filtering, or to perform any other functionality that is not required for a hybrid deployment. You may install and use any number of copies of the software on your devices, provided that you do not have any other instance of the Exchange Server 2019 running on premises.  Sections 1.b. (License Model), 3a – 3e. (Use Rights), 4.a. (Client Access Licenses (CALs)), 4.b. (Multiplexing), 13 (Support Services) below are not applicable to Exchange Server 2019 Hybrid edition. Your rights to use the Hybrid edition end upon the expiration or termination of your subscription to the Exchange Online services. At any time, Microsoft may change which version of the Exchange Server software it recommends for hybrid deployments.  Notwithstanding any other publicly available information pertaining to Exchange products or services, Microsoft makes no representation that it will continue to support Exchange Server 2019 Hybrid edition for hybrid use after the time period during which Exchange Server 2019 Hybrid edition is Microsoft’s recommended solution for hybrid deployments.  You are specifically advised that, if you continue to use Exchange Server 2019 Hybrid edition after it ceases to be Microsoft’s recommended solution for hybrid deployments, you may experience reduced or interrupted functionalities, and Microsoft may not provide support to your hybrid deployment.  For additional information about Microsoft’s recommendation regarding hybrid deployments](/images/2023/2023-05-16-ExchangeHybridLicenseTerms.jpg "USE RIGHTS AND LIMITATIONS FOR EXCHANGE SERVER 2019 HYBRID EDITION. Notwithstanding anything to the contrary in Sections 3a – 3e, your use rights and limitations for Exchange Server Hybrid edition are described in this Section 3f. The software is considered Hybrid edition if 1) you have an active subscription to Microsoft Exchange Online services under a Microsoft Volume Licensing program, 2) you are also running Microsoft Exchange Server as your on-premises email solution, and 3) you use the software solely for the purpose of enabling a hybrid deployment between your Exchange Online users and your on-premises email users. A hybrid deployment refers to the scenario under which your on-premises Exchange Server environment runs in parallel and interacts with the Microsoft Exchange Online service environment to form a single cohesive email infrastructure of your organization. You may not use the Hybrid edition to host on-premises mailboxes, to enable calendar sharing (except for calendar sharing with your Exchange Online users), to perform email filtering, or to perform any other functionality that is not required for a hybrid deployment. You may install and use any number of copies of the software on your devices, provided that you do not have any other instance of the Exchange Server 2019 running on premises.  Sections 1.b. (License Model), 3a – 3e. (Use Rights), 4.a. (Client Access Licenses (CALs)), 4.b. (Multiplexing), 13 (Support Services) below are not applicable to Exchange Server 2019 Hybrid edition. Your rights to use the Hybrid edition end upon the expiration or termination of your subscription to the Exchange Online services. At any time, Microsoft may change which version of the Exchange Server software it recommends for hybrid deployments.  Notwithstanding any other publicly available information pertaining to Exchange products or services, Microsoft makes no representation that it will continue to support Exchange Server 2019 Hybrid edition for hybrid use after the time period during which Exchange Server 2019 Hybrid edition is Microsoft’s recommended solution for hybrid deployments.  You are specifically advised that, if you continue to use Exchange Server 2019 Hybrid edition after it ceases to be Microsoft’s recommended solution for hybrid deployments, you may experience reduced or interrupted functionalities, and Microsoft may not provide support to your hybrid deployment.  For additional information about Microsoft’s recommendation regarding hybrid deployments")](/images/2023/2023-05-16-ExchangeHybridLicenseTerms.jpg)
 
-I highlighted the sentence, that I consider relevant. There is also a section at the beginning of the License terms called "Licensing Terminology" - but there is no clarification what it means to "host on-premises mailboxes". I don't know, I'm not a lawyer and this is not legal advice. BUT one could claim that creating **System**-Mailboxes - Mailboxes that are *required* by the system - is not **hosting** mailboxes.
+I highlighted the sentence, that I consider relevant.
+
+> You may not use the Hybrid edition to host on-premises mailboxes
+
+Okay, not allowed to host on-premises mailboxes. But what counts as a mailbox?
+There is even a section at the beginning of the License terms called "Licensing Terminology" - but there is no clarification what it means to "host on-premises mailboxes". I don't know, I'm not a lawyer and this is not legal advice. BUT one could claim that creating **System**-Mailboxes - Mailboxes that are *required* by the system - is not **hosting** mailboxes.
 
 By the way you can find the License Terms on the Exchange Install Medium (CU ISO) under `<Driveletter>:\Setup\ServerRoles\Common\Eula\en`.
 
