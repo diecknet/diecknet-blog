@@ -11,7 +11,7 @@ imprInfoName1: Andreas Jens Dieckmann
 imprInfoCompany: diecknet UG (haftungsbeschränkt)
 imprInfoStreet: Pestalozzistrasse 25
 imprInfoCity: 22305 Hamburg
-imprInfoUstId: "-- beantragt, wird später nachgereicht --"
+imprInfoUstId: DE360047884
 imprInfoEmail: diecknet.de
 imprInfoE1: impressum
 imprInfoTe: +49 40 5247 1765
