@@ -11,7 +11,7 @@ Just a quick note if you want to use [ntfy.sh](https://ntfy.sh) with [Home Assis
 
 I added the following section to my `/config/configuration.yaml` file:
 
-```yaml{% raw %}
+```yaml
 shell_command:
     ntfy: >
         curl
@@ -24,14 +24,14 @@ shell_command:
         --header 'X-Delay: {{ delay }}'
         --header 'X-Actions: {{ actions }}'
         --header 'X-Click: {{ click }}'
-        --header 'X-Icon: {{ icon }}'{% endraw %}
+        --header 'X-Icon: {{ icon }}'
 ```
 
 ## Usage
 
 To send send a notification, I use this YAML action in an Automation. It's not necessary to provide all parameters. I ran with these four. As far as I know: Theoretically only `topic` is required by ntfy. But this simple `shell_command` action does not check if you set a topic.
 
-```yaml{% raw %}
+```yaml
 service: shell_command.ntfy
 alias: Send ntfy.sh
 data:
@@ -46,7 +46,7 @@ data:
 If you want to, you can also define default values. For example in this codeblock I've set the default topic to "test".
 So if I don't specify a topic when calling the command, it will fallback to test.
 
-```yaml{% raw %}
+```yaml
 shell_command:
     ntfy: >
         curl
@@ -59,5 +59,5 @@ shell_command:
         --header 'X-Delay: {{ delay }}'
         --header 'X-Actions: {{ actions }}'
         --header 'X-Click: {{ click }}'
-        --header 'X-Icon: {{ icon }}'{% endraw %}
+        --header 'X-Icon: {{ icon }}'
 ```
