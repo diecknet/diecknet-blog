@@ -5,5 +5,5 @@ if [ "$CF_PAGES_BRANCH" == "main" ]; then
   hugo
 else
   # Else run for Cloudflare Pages preview
-  hugo --baseUrl $CF_PAGES_URL
+  hugo --baseURL $CF_PAGES_URL
 fi
