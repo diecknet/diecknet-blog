@@ -38,7 +38,7 @@ data:
   tags: monocle_face
   topic: test
   title: Waschmaschine
-  message: Die Waschmaschine ist fertig!{% endraw %}
+  message: Die Waschmaschine ist fertig!
 ```
 
 ## Set default values
