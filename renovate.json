@@ -8,5 +8,8 @@
   ],
   "schedule": "every weekend", 
   "prCreation": "not-pending", 
-  "stabilityDays": 3
+  "stabilityDays": 3,
+  "ignorePaths": [
+      "themes/PaperMod/"
+  ]
 }
