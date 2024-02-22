@@ -1,7 +1,7 @@
 ---
 slug: "powershell-check-admin-rights"
 title: "PowerShell: Überprüfen ob Admin-Rechte vorhanden sind"
-date: 2024-01-17
+date: 2024-02-20
 comments: true
 tags: [powershell, security identifiers, windows, admin rights]
 cover: 
