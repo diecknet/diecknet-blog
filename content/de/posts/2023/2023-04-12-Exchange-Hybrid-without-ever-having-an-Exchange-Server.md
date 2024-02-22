@@ -65,7 +65,7 @@ Weitere Komponenten:
 6. Nach Neustart des Servers:
    - Aus dem Microsoft 365 Admin Center unter "Einstellungen" -> "Domänen" die `.onmicrosoft.com` Domain des Tenants raussuchen. Bei mir ist das zum Beispiel "yr2z8.onmicrosoft.com"
    ![onmicrosoft.com Domäne im Tenant nachschauen unter Einstellungen - Domänen](/images/2023/2023-04-12-Exchange-Tenant-onmicrosoft.com-Domain.jpg)
-   - Diesen onmicrosoft.com Domainname ergänzen: Zwischen dem Tenantnamen und `.onmicrosoft.com` mit den Zusatz `.mail` einfügen (also so: `<Tenantname>.mail.onmicrosoft.com`). Beispielsweise wird bei mir aus `yr2z8.onmicrosoft.com` dann `yr2z8.mail.onmicrosoft.com`.
+   - Diesen onmicrosoft.com Domainname ergänzen: Zwischen dem Tenantnamen und `.onmicrosoft.com` den Zusatz `.mail` einfügen (also so: `<Tenantname>.mail.onmicrosoft.com`). Beispielsweise wird bei mir aus `yr2z8.onmicrosoft.com` dann `yr2z8.mail.onmicrosoft.com`.
    - Eine administrative PowerShell Session starten. Folgenden Befehle ausführen. Dabei natürlich die eigene Domäne einsetzen die wir gerade rausgesucht haben.
 
         ```powershell
