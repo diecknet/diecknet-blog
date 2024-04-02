@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Trial on diecknet</title>
+    <link>https://diecknet.de/en/tags/trial/</link>
+    <description>Recent content in Trial on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/trial/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Office 365 Trial Licenses</title>
+      <link>https://diecknet.de/en/2020/06/10/Office-365-Trials/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/06/10/Office-365-Trials/</guid>
+      <description>You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You&amp;rsquo;ll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services. A list of links to the trial licenes is further below in this article.</description>
+    </item>
+    
+  </channel>
+</rss>

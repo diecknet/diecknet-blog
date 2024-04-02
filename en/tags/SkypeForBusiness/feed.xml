@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SkypeForBusiness on diecknet</title>
+    <link>https://diecknet.de/en/tags/SkypeForBusiness/</link>
+    <description>Recent content in SkypeForBusiness on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/SkypeForBusiness/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moving from Skype for Business to Teams sucks</title>
+      <link>https://diecknet.de/en/2021/08/18/TeamsAutoUpgrade-fail/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/08/18/TeamsAutoUpgrade-fail/</guid>
+      <description>The upgrade process from Skype for Business Online to Microsoft Teams is a disaster. I had several SMB clients reporting unnecessary errors regarding Teams/Skype. With unnecessary I mean: They had no issues using Teams until 2021-07-31.
+Issue: Suddenly Skype Meetings are back in Outlook mobile One client reported, that they suddenly have Skype Meetings in Outlook on iOS again, instead of Teams Meetings.
+That particular client manages their Microsoft 365 tenant themselves.</description>
+    </item>
+    
+  </channel>
+</rss>

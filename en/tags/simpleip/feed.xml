@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Simpleip on diecknet</title>
+    <link>https://diecknet.de/en/tags/simpleip/</link>
+    <description>Recent content in Simpleip on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/simpleip/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Downside of going serverless</title>
+      <link>https://diecknet.de/en/2021/10/27/My-simple-serverless-journey-part2/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/10/27/My-simple-serverless-journey-part2/</guid>
+      <description>After creating SimpleIP.de as a serverless application (see my blog post My simple serverless journey was not that easy) I was kinda proud. Interesting technology, small and useful website. Nice.
+Reality But after a while reality kicked in. I was playing around with some IPv6 systems, when it hit me. With the previous design, the site would show only the primary IP-Address of the client. If the client supports both IPv6 and IPv4, it would still only show one IP-Address.</description>
+    </item>
+    
+    <item>
+      <title>My simple serverless journey was not that easy</title>
+      <link>https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/</guid>
+      <description>Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. But Serverless doesn&amp;rsquo;t mean &amp;ldquo;without any servers&amp;rdquo; - you just don&amp;rsquo;t need to worry about them. That&amp;rsquo;s not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there. Nowadays Serverless usually means some kind of modern architecture that allows you to run your application code.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Powershell on diecknet</title>
+    <link>https://diecknet.de/en/tags/powershell/</link>
+    <description>Recent content in Powershell on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set PowerShell ConstrainedLanguage Mode per Group Policy</title>
+      <link>https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</guid>
+      <description>PowerShell Language Modes are a way to restrict the functionality of PowerShell to increase the security of a system. Of course, this is only one small piece in a larger security strategy, so this alone is not sufficient protection for a system.
+At the same time, it&amp;rsquo;s also a double-edged sword:
+Advantage: we remove a powerful tool from potential attackers.
+Disadvantage: We as administrators can no longer use PowerShell properly on a system either.</description>
+    </item>
+    
+    <item>
+      <title>Automate Exchange Online with Azure Automation in 2023</title>
+      <link>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
+      <description>I&amp;rsquo;ll try to keep it short: If you want to manage Exchange Online via Azure Automation, Managed Identities is what you should use (as of early 2023).
+Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I?</description>
+    </item>
+    
+    <item>
+      <title>Set Azure AD Connect Staging Mode via PowerShell</title>
+      <link>https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</guid>
+      <description>Here&amp;rsquo;s a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. Sadly there is no native Cmdlet in the style of Set-ADSyncStagingMode or something like that.
+In this article I&amp;rsquo;ll first explain the approach and then later on list the full command block you can use. So feel free to skip below to the end of the post. The following PowerShell Cmdlets have to get executed on the Azure AD Connect Server.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Server Setup Incomplete but fails to complete</title>
+      <link>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</link>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
+      <description>I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed. It was just a test environment, but I thought it would be useful or interesting to drill down on that issue.
+I&amp;rsquo;ll guide you through my troubleshooting steps / thought process.
+Try to continue Setup First I tried to resume the setup. The setup fails early - at Step 1 of 13: Stopping Services.</description>
+    </item>
+    
+    <item>
+      <title>How to remove all merged Git Branches on Windows</title>
+      <link>https://diecknet.de/en/2022/06/21/Git-on-Windows-remove-all-merged-branches/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2022/06/21/Git-on-Windows-remove-all-merged-branches/</guid>
+      <description>Here&amp;rsquo;s a quick tip on howto remove Git Branches that were already merged (thus not necessary to keep around anymore) locally on Windows, using PowerShell. Assuming that you do have Git for Windows installed. Execute these commands on your own risk.
+List all merged branches You can list all merged Git Branches by running:
+1 git branch --merged Exclude current branch and &amp;ldquo;main&amp;rdquo; branch Then we |-pipe it into the following, to exclude the currently selected branch (marked with an asterisk *) and the main branch.</description>
+    </item>
+    
+    <item>
+      <title>List all Users with administrative roles in a Microsoft 365 environment</title>
+      <link>https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</guid>
+      <description>Option 1: Use M365 Admin Portal There is finally a way in the main Microsoft 365 Admin Portal. Go to &amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo; and click on &amp;ldquo;Export admin list&amp;rdquo; to get a CSV file with all admins and their roles.
+Option 2: Use PowerShell / Azure AD Graph Module Just a short PowerShell snippet to list all users with administrative roles in a Microsoft 365 (or Azure AD) environment. Please note that this uses the older Azure AD Graph Module (already planned for deprecation).</description>
+    </item>
+    
+    <item>
+      <title>List all Microsoft Booking Calendars</title>
+      <link>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
+      <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
+      <description>If you&amp;rsquo;re using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type &amp;ldquo;SchedulingMailbox&amp;rdquo;. If an user gets assigned &amp;ldquo;Administrator&amp;rdquo; for a Booking Calendar, they get &amp;ldquo;FullAccess&amp;rdquo; permissions for the Scheduling Mailbox.
+List all Booking Calendars with permission I wrote a PowerShell script to list all the Booking Mailboxes with the users that have access.</description>
+    </item>
+    
+    <item>
+      <title>Verify Auto-Expanding Archives in Exchange Online</title>
+      <link>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
+      <description>If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.
+In the Exchange Admin Center (EAC), open the info pane of the user&amp;rsquo;s mailbox. Click on &amp;ldquo;Manage mailbox archive&amp;rdquo;.
+An Auto-Expanding Archive provisions more Archive storage space, if needed. Default Archives have 100 GB of storage available. If the archive is already bigger than 100 GB, we must have additional storage.</description>
+    </item>
+    
+    <item>
+      <title>Using PowerShell Regular Expressions to match against filenames</title>
+      <link>https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/</guid>
+      <description>A short example for PowerShell Regular Expressions.
+Scenario: Match filenames like ID1234_MyDocumentXYZ.pdf.lnk. We want go get the number after ID and the rest of the filename between the underscore _ and the file extension .lnk.
+1 2 3 4 5 $oldLink = &amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34; if($oldLink -match &amp;#39;ID(?&amp;lt;id&amp;gt;\d+)_(?&amp;lt;actualFilename&amp;gt;.+)\.lnk$&amp;#39;) { Write-Output &amp;#34;ID: $($Matches.id)&amp;#34; Write-Output &amp;#34;Actual Filename: $($Matches.actualFilename)&amp;#34; } (?&amp;lt;id&amp;gt;\d+) is a named regex capture group (initialized by ?&amp;lt;groupname&amp;gt;). The group matches any numeric character (\d).</description>
+    </item>
+    
+    <item>
+      <title>Run PowerShell Script with Windows Task Scheduler</title>
+      <link>https://diecknet.de/en/2021/10/13/PowerShell-Task-Scheduler/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/10/13/PowerShell-Task-Scheduler/</guid>
+      <description>More ore less quick note for myself - on how to run a PowerShell Script using Windows Task Scheduler.
+Open Task Scheduler A quick way to open Task Scheduler: WIN + R, then run taskschd.msc.
+Create New Task Open &amp;ldquo;Task Scheduler Library&amp;rdquo; → &amp;ldquo;Create New Task&amp;rdquo;. Set all the self-explanatory options like Name, Description, User Account, Triggers, etc.
+Set Action Setting Value Action Start a program Program/script powershell.exe Add arguments (optional) -file &amp;quot;C:\Path\Script.</description>
+    </item>
+    
+    <item>
+      <title>Retrieve the Timezone of a Sharepoint Online Site using PowerShell</title>
+      <link>https://diecknet.de/en/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</guid>
+      <description>I&amp;rsquo;ve been looking for a way to retrieve the Timezone setting of a Sharepoint Online Site via PowerShell. Apparently there is not much good info publicly available. I looked for a way to use with the standard SPO PowerShell module named Microsoft.Online.SharePoint.PowerShell.
+There are some infos online about using the PNPOnline Module, but that was not practical in my case. There are even some really annoying articles out, that claim to to provide a PowerShell way.</description>
+    </item>
+    
+    <item>
+      <title>Deploy an Azure NAT-Gateway for Azure Virtual Desktop by PowerShell</title>
+      <link>https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
+      <description>I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the Nerdio Hackathon 2021. My first Hackathon attendance :^).
+Update 2021-10-05 - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements.</description>
+    </item>
+    
+    <item>
+      <title>Check NTFS Permissions using Powershell</title>
+      <link>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</guid>
+      <description>So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.
+The correct storage permissions are:
+User Account Folder Permissions Users This Folder Only Modify Creator / Owner Subfolders and Files Only Modify Administrator (optional) This Folder, Subfolders, and Files Full Control Official FSLogix documentation: Configure storage permissions for use with Profile Containers and Office Containers</description>
+    </item>
+    
+    <item>
+      <title>Exchange - When was that mailbox REALLY created?</title>
+      <link>https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
+      <description>If you&amp;rsquo;re wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute MSExchWhenMailboxCreated. You can get the value using PowerShell or ADUC with advanced features enabled.
+1 Get-ADUser -Properties MSExchMaiboxWhenCreated MSExchWhenMailboxCreated contains not the full truth That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the FIRST time the user gets a mailbox.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Room Mailbox - Set Permissions</title>
+      <link>https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
+      <description>By default, the &amp;ldquo;Calendar&amp;rdquo; folder in Exchange 2013 Room Mailboxes has the &amp;ldquo;LimitedDetails&amp;rdquo; permission for the &amp;ldquo;Standard&amp;rdquo; security principal. Therefore, if no other permissions are configured, users cannot view details for appointments in this room. For better usability in Outlook, the &amp;ldquo;Reviewer&amp;rdquo; permission is more suitable. This allows items to be listed and details to be displayed. If required, the CalendarProcessing can be adjusted so that details such as the description and subject of the appointment are not saved in the room mailbox.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Environment Variables on diecknet</title>
+    <link>https://diecknet.de/de/tags/environment-variables/</link>
+    <description>Recent content in Environment Variables on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/environment-variables/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell: Zugriff auf Umgebungsvariablen</title>
+      <link>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</guid>
+      <description>Per PowerShell auf Umgebungsvariablen zugreifen - das geht ganz einfach.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Umgebungsvariable per $Env:-Variable auslesen Die einfachste Möglichkeit ist per $Env:-Variable. Gebt dafür einfach $Env ein, dann einen Doppelpunkt und dann den Namen der Umgebungsvariable von der ihr den Wert auslesen wollt.
+1 $Env:username Dadurch wird der Username des aktuell angemeldeten Users ausgegeben.
+Das funktioniert übrigens plattformübergreifend, also auch zum Beispiel unter Linux.</description>
+    </item>
+    
+  </channel>
+</rss>

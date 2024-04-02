@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Graph Api on diecknet</title>
+    <link>https://diecknet.de/en/tags/graph-api/</link>
+    <description>Recent content in Graph Api on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/graph-api/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to get Group Membership count with Microsoft Graph API</title>
+      <link>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
+      <description>Apparently it&amp;rsquo;s not that easy to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header ConsistencyLevel: eventual to use the Advanced Query Capabilities. Then we can use the Query parameter $count. Alternatively I found that I could also add it as an URL query parameter instead. That would be &amp;amp;ConsistencyLevel=eventual.
+Example Queries Replace the Group ID (02bd9fd6-8f93-4758-87c3-1fb73740a315) with your desired Azure Active Directory Group ID.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nerdio on diecknet</title>
+    <link>https://diecknet.de/en/tags/nerdio/</link>
+    <description>Recent content in Nerdio on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/nerdio/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy an Azure NAT-Gateway for Azure Virtual Desktop by PowerShell</title>
+      <link>https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
+      <description>I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the Nerdio Hackathon 2021. My first Hackathon attendance :^).
+Update 2021-10-05 - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements.</description>
+    </item>
+    
+  </channel>
+</rss>

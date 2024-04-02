@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Iphone on diecknet</title>
+    <link>https://diecknet.de/en/tags/iphone/</link>
+    <description>Recent content in Iphone on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/iphone/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Online: Apple Internet Accounts - Need admin approval</title>
+      <link>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
+      <description>When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:
+Need admin approval Apple Internet Accounts Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
+By the way, the app used to be called &amp;ldquo;iOS Accounts&amp;rdquo; and was apparently renamed in early 2020.</description>
+    </item>
+    
+  </channel>
+</rss>

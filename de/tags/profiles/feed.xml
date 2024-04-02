@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Profiles on diecknet</title>
+    <link>https://diecknet.de/de/tags/profiles/</link>
+    <description>Recent content in Profiles on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/profiles/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Profile erklärt (mit Beispielen)</title>
+      <link>https://diecknet.de/de/2024/03/05/powershell-profiles/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/03/05/powershell-profiles/</guid>
+      <description>Mit PowerShell Profilen könnt ihr eure PowerShell anpassen. Also zum Beispiel, dass sie so aussieht:
+Oder ihr könnt einstellen, dass beim Start so ein Splash-Screen angezeigt (winfetch) wird:
+Oder ihr könnt auch eigene Funktionen und Variablen hinterlegen, sodass diese immer sofort verfügbar sind, wenn ihr die PowerShell startet.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Letztendlich ist ein PowerShell Profil einfach ein PowerShell Skript, was automatisch ausgeführt wird, wenn ihr die PowerShell startet.</description>
+    </item>
+    
+  </channel>
+</rss>

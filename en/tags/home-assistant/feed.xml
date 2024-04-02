@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Home Assistant on diecknet</title>
+    <link>https://diecknet.de/en/tags/home-assistant/</link>
+    <description>Recent content in Home Assistant on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/home-assistant/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use ntfy.sh with Home Assistant</title>
+      <link>https://diecknet.de/en/2023/02/12/ntfy-sh-with-homeassistant/</link>
+      <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2023/02/12/ntfy-sh-with-homeassistant/</guid>
+      <description>Just a quick note if you want to use ntfy.sh with Home Assistant.
+Setup I added the following section to my /config/configuration.yaml file:
+1 2 3 4 5 6 7 8 9 10 11 12 13 shell_command: ntfy: &amp;gt; curl -X POST --url &amp;#39;https://ntfy.sh/{{ topic }}&amp;#39; --data &amp;#39;{{ message }}&amp;#39; --header &amp;#39;X-Title: {{ title }}&amp;#39; --header &amp;#39;X-Tags: {{ tags }}&amp;#39; --header &amp;#39;X-Priority: {{ priority }}&amp;#39; --header &amp;#39;X-Delay: {{ delay }}&amp;#39; --header &amp;#39;X-Actions: {{ actions }}&amp;#39; --header &amp;#39;X-Click: {{ click }}&amp;#39; --header &amp;#39;X-Icon: {{ icon }}&amp;#39; Usage To send send a notification, I use this YAML action in an Automation.</description>
+    </item>
+    
+  </channel>
+</rss>

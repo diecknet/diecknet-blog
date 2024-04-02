@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Powershell on diecknet</title>
+    <link>https://diecknet.de/de/tags/powershell/</link>
+    <description>Recent content in Powershell on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Dot Sourcing</title>
+      <link>https://diecknet.de/de/2024/03/26/powershell-dot-sourcing/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/03/26/powershell-dot-sourcing/</guid>
+      <description>Mit PowerShell Dot Sourcing könnt ihr eine Skriptdatei in eure PowerShell Session importieren. Das Skript wird erstmal normal ausgeführt, aber gesetzte Variablen, erstellte Funktionen und so weiter sind dann in der Session verfügbar. Bei einem normalen Skript-Aufruf ist das sonst nicht der Fall. Mich erinnert das immer an den PHP-Befehl include, weil ich in meiner Jugend mit PHP rumgedaddelt habe 😅
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+    </item>
+    
+    <item>
+      <title>Regular Expressions in PowerShell</title>
+      <link>https://diecknet.de/de/2024/03/19/powershell-regex/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/03/19/powershell-regex/</guid>
+      <description>Regular Expressions sind Muster mit denen Texte verglichen werden können oder auch Infos aus Texten extrahiert werden können. Zum Beispiel könnt ihr damit überprüfen, ob eine Logdatei von einem Programm die Zeichenfolge &amp;ldquo;Error&amp;rdquo; enthält (also um zu prüfen, ob ein Fehler aufgetreten ist). Oder um einfach nur zu schauen, ob eine Zeichenkette einem bestimmten Muster entspricht, zum Beispiel einer E-Mail Adresse.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+    </item>
+    
+    <item>
+      <title>Die Ausführungsdauer von PowerShell Code messen</title>
+      <link>https://diecknet.de/de/2024/03/12/powershell-measure-execution-time/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/03/12/powershell-measure-execution-time/</guid>
+      <description>Wenn ihr euren PowerShell Code auf Geschwindigkeit optimieren wollt, dann macht es Sinn Zeiten zu messen. Es gibt mehrere Möglichkeiten um zu messen, wie lange die Ausführung von einem Stück PowerShell Code dauert.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Möglichkeit 1: Measure-Command Eine einfache Möglichkeit ist das Cmdlet Measure-Command. Es nimmt einen ScriptBlock entgegen, der dann auch ausgeführt wird. Und wir erhalten im Anschluss ein Messergebnis in Form eines TimeSpan Objekts.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Profile erklärt (mit Beispielen)</title>
+      <link>https://diecknet.de/de/2024/03/05/powershell-profiles/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/03/05/powershell-profiles/</guid>
+      <description>Mit PowerShell Profilen könnt ihr eure PowerShell anpassen. Also zum Beispiel, dass sie so aussieht:
+Oder ihr könnt einstellen, dass beim Start so ein Splash-Screen angezeigt (winfetch) wird:
+Oder ihr könnt auch eigene Funktionen und Variablen hinterlegen, sodass diese immer sofort verfügbar sind, wenn ihr die PowerShell startet.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Letztendlich ist ein PowerShell Profil einfach ein PowerShell Skript, was automatisch ausgeführt wird, wenn ihr die PowerShell startet.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell: Zugriff auf Umgebungsvariablen</title>
+      <link>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</guid>
+      <description>Per PowerShell auf Umgebungsvariablen zugreifen - das geht ganz einfach.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Umgebungsvariable per $Env:-Variable auslesen Die einfachste Möglichkeit ist per $Env:-Variable. Gebt dafür einfach $Env ein, dann einen Doppelpunkt und dann den Namen der Umgebungsvariable von der ihr den Wert auslesen wollt.
+1 $Env:username Dadurch wird der Username des aktuell angemeldeten Users ausgegeben.
+Das funktioniert übrigens plattformübergreifend, also auch zum Beispiel unter Linux.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell: Überprüfen ob Admin-Rechte vorhanden sind</title>
+      <link>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</guid>
+      <description>Wenn ihr ein PowerShell Skript erstellt habt, was Aktionen ausführen soll, die Adminrechte erfordern, dann könnt ihr das auch per Code überprüfen. Damit könnt ihr sicherstellen, dass euer Skript erfolgreich ausgeführt werden kann. Am einfachsten geht das mit einer Requires-Anweisung. 🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Admin-Rechte per Requires Anweisung erfordern 1 #Requires -RunAsAdministrator Diese Zeile kann an eine beliebigen Stelle im PowerShell Code eingefügt werden.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell: Übersetzte Security Identifier Namen herausfinden</title>
+      <link>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</guid>
+      <description>Security Identifiers sind dazu da, um bestimmte Security Prinzipale oder Gruppen unter Windows zu identifizieren. Leider sind die dazugehörigen Namen lokalisiert, also sind zum Beispiel in einem deutschsprachigen System anders als in einem englischsprachigen System.
+Beispielsweise heißt die eingebaute Administratorgruppe auf Englisch BUILTIN\ADMINISTRATORS und auf Deutsch VORDEFINIERT\Administratoren. Oder das Englische NT AUTHORITY\SYSTEM wird an einem Deutschen System zu NT-AUTORITÄT\SYSTEM. Das finde ich richtig abgefahren! Da wird auf einmal ein Leerzeichen durch ein Bindestrich ersetzt.</description>
+    </item>
+    
+    <item>
+      <title>Die unterschiedlichen Klammern in der PowerShell</title>
+      <link>https://diecknet.de/de/2023/11/28/powershell-brackets/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/11/28/powershell-brackets/</guid>
+      <description>Wann ist welche Klammer die Richtige in der PowerShell?
+# Verschiedene Klammern in der PowerShell () {} [] Die Klammern haben unterschiedliche Einsatzzwecke. Die Größer-als &amp;lt; und Kleiner-als &amp;gt; Zeichen würde ich übrigens nicht zu den Klammern zählen. Für alle echten Klammern gilt: Wenn ihr eine Klammer geöffnet habt, müsst ihr sie auch wieder schließen.
+Runde Klammern ( ) Mit runden Klammern wird in der PowerShell ein Ausdruck bzw. ein Befehl umfasst, bzw.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell ConstrainedLanguage Mode per Gruppenrichtlinie einstellen</title>
+      <link>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</guid>
+      <description>PowerShell Language Modes sind eine Möglichkeit die Funktionalität der PowerShell einzuschränken, um die Sicherheit eines Systems zu erhöhen. Das ist natürlich nur ein kleiner Baustein in einer größeren Sicherheitsstrategie, also das alleine ist noch kein ausreichender Schutz für ein System.
+Gleichzeitig ist das auch ein zweischneidiges Schwert:
+Vorteil: Wir entziehen potenziellen Angreifern ein mächtiges Werkzeug.
+Nachteil: Wir selbst als Administratoren können die PowerShell an einem System auch nicht mehr richtig nutzen.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Online per Azure Automation steuern im Jahr 2023</title>
+      <link>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
+      <description>Ich versuche es kurz und knackig zu halten: Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist Managed Identities was ihr benutzen solltet (Stand: Anfang 2023).
+Legacy Ansatz Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Credentials (🤢) verwendet, aber das gilt mittlerweile als veraltet. RunAs Accounts sind zum Herbst 2023 abgekündigt und zu Klartext-Kennwörtern muss ich nix sagen, oder? Eventuell bieten sich noch App Registrierungen in Azure AD an, aber wenn ihr wirklich einfach nur per Azure Automation ein paar Exchange Einstellungen automatisieren wollt, ist das eigentlich nicht notwendig.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuerelement kann nicht instanziiert werden</title>
+      <link>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</link>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</guid>
+      <description>Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.
+Ich wollte mich einfach nur per Connect-MicrosoftTeams mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren</title>
+      <link>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
+      <description>Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.
+Möglichkeiten zur Konfiguration Die Option &amp;ldquo;VideoFiltersMode&amp;rdquo; kann zur Zeit nur per PowerShell gesetzt werden - nicht per Teams Admin Center.</description>
+    </item>
+    
+    <item>
+      <title>Dateidatum per PowerShell setzen</title>
+      <link>https://diecknet.de/de/2020/09/08/Set-File-Date-with-PowerShell/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/09/08/Set-File-Date-with-PowerShell/</guid>
+      <description>Das Datum einer Datei kann beliebig per PowerShell gesetzt beziehungsweise manipuliert werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.
+Per Get-Member kann man sich die Zeit-Attribute einer Datei anzeigen lassen.
+1 Get-Item beispiel.txt | Get-Member *time* Interessant sind hier die Attribute:
+CreationTime (Wann die Datei erstellt wurde) LastAccessTime (Wann das letzte Mal auf die Datei zugegriffen wurde) LastWriteTime (Wann die Datei zuletzt geändert wurde) Wie hinten am {get;set;} zu erkennen ist, kann man die Attribute auch nicht nur auslesen, sondern auch setzen.</description>
+    </item>
+    
+    <item>
+      <title>Exchange - Wann wurde das Postfach WIRKLICH erstellt?</title>
+      <link>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
+      <description>Wenn du herausfinden möchtest, wann ein Exchange Postfach erstellt wurde, wirst du wahrscheinlich über das Active Directory-Benutzer Attribut MSExchWhenMailboxCreated stolpern. Um den Wert auszulesen, kannst du PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.
+1 Get-ADUser -Properties MSExchMaiboxWhenCreated MSExchWhenMailboxCreated enthält nicht die ganze Wahrheit Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was du vielleicht denkst. Das Attribut wird nur propagiert wenn der Benutzer DAS ERSTE MAL ein Postfach erhält.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Raumpostfach - Berechtigungen setzen</title>
+      <link>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
+      <description>Zugriff wurde für den Benutzer verweigert. - Exchange Raumpostfach Berechtigungen (Outlook Fenster)
+Standardmäßig hat der &amp;ldquo;Kalender&amp;rdquo;-Ordner von Exchange 2013 Raumpostfächer die Berechtigung &amp;ldquo;LimitedDetails&amp;rdquo; für das Sicherheitsprinzipal &amp;ldquo;Standard&amp;rdquo;. Wenn also keine weiteren Berechtigungen konfiguriert sind, können die Anwender keine Details für Termine in diesem Raum anzeigen. Für eine bessere Bedienbarkeit in Outlook ist die Berechtigung &amp;ldquo;Reviewer&amp;rdquo; besser geeignet. Hierdurch dürfen Elemente aufgelistet und Details angezeigt werden. Bei Bedarf kann noch das CalendarProcessing angepasst werden, sodass Details wie Beschreibung und Betreff des Termins nicht im Raumpostfach gespeichert werden.</description>
+    </item>
+    
+  </channel>
+</rss>

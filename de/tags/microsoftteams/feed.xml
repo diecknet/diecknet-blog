@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsoftteams on diecknet</title>
+    <link>https://diecknet.de/de/tags/microsoftteams/</link>
+    <description>Recent content in Microsoftteams on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/microsoftteams/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuerelement kann nicht instanziiert werden</title>
+      <link>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</link>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</guid>
+      <description>Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.
+Ich wollte mich einfach nur per Connect-MicrosoftTeams mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren</title>
+      <link>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
+      <description>Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.
+Möglichkeiten zur Konfiguration Die Option &amp;ldquo;VideoFiltersMode&amp;rdquo; kann zur Zeit nur per PowerShell gesetzt werden - nicht per Teams Admin Center.</description>
+    </item>
+    
+  </channel>
+</rss>

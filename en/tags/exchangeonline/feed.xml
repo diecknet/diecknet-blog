@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exchangeonline on diecknet</title>
+    <link>https://diecknet.de/en/tags/exchangeonline/</link>
+    <description>Recent content in Exchangeonline on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/exchangeonline/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automate Exchange Online with Azure Automation in 2023</title>
+      <link>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
+      <description>I&amp;rsquo;ll try to keep it short: If you want to manage Exchange Online via Azure Automation, Managed Identities is what you should use (as of early 2023).
+Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I?</description>
+    </item>
+    
+    <item>
+      <title>Exchange Online: Apple Internet Accounts - Need admin approval</title>
+      <link>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
+      <description>When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:
+Need admin approval Apple Internet Accounts Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
+By the way, the app used to be called &amp;ldquo;iOS Accounts&amp;rdquo; and was apparently renamed in early 2020.</description>
+    </item>
+    
+    <item>
+      <title>Outlook Certificate Warning after Office 365 Migration</title>
+      <link>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</link>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
+      <description>Outlook Certificate Warning after Office 365 Migration
+Security Alert: svr1.example.com
+The security certificate has expired or is not valid yet
+I recently received a request from a customer who still received certificate warnings (expired certificate) for the old Exchange Server after migrating to Office 365. Since I was not involved in the migration, I had to get an overview first:
+The On-Premise Exchange Server 2010 was still online - of course, otherwise a certificate warning would hardly have appeared.</description>
+    </item>
+    
+  </channel>
+</rss>

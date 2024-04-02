@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hybrid on diecknet</title>
+    <link>https://diecknet.de/en/tags/Hybrid/</link>
+    <description>Recent content in Hybrid on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/Hybrid/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange EAC stopped working after decomissioning all Mailbox Databases</title>
+      <link>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
+      <description>I had this weird issue with a Exchange Server environment: The company had an Exchange Server 2016 DAG and migrated all User Mailboxes to Exchange Online. I then installed a fresh Exchange Server 2019 for Recipient Management and SMTP-Relay. To use the Exchange Server 2019 Hybrid License, I did not create a Mailbox Database. I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exchange 2016 Servers. I decomissioned the DAG and uninstalled Exchange from the old Servers.</description>
+    </item>
+    
+  </channel>
+</rss>

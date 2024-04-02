@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Acl on diecknet</title>
+    <link>https://diecknet.de/en/tags/acl/</link>
+    <description>Recent content in Acl on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/acl/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check NTFS Permissions using Powershell</title>
+      <link>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</guid>
+      <description>So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.
+The correct storage permissions are:
+User Account Folder Permissions Users This Folder Only Modify Creator / Owner Subfolders and Files Only Modify Administrator (optional) This Folder, Subfolders, and Files Full Control Official FSLogix documentation: Configure storage permissions for use with Profile Containers and Office Containers</description>
+    </item>
+    
+  </channel>
+</rss>

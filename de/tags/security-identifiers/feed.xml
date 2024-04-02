@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Security Identifiers on diecknet</title>
+    <link>https://diecknet.de/de/tags/security-identifiers/</link>
+    <description>Recent content in Security Identifiers on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 20 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/security-identifiers/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell: Überprüfen ob Admin-Rechte vorhanden sind</title>
+      <link>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</guid>
+      <description>Wenn ihr ein PowerShell Skript erstellt habt, was Aktionen ausführen soll, die Adminrechte erfordern, dann könnt ihr das auch per Code überprüfen. Damit könnt ihr sicherstellen, dass euer Skript erfolgreich ausgeführt werden kann. Am einfachsten geht das mit einer Requires-Anweisung. 🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Admin-Rechte per Requires Anweisung erfordern 1 #Requires -RunAsAdministrator Diese Zeile kann an eine beliebigen Stelle im PowerShell Code eingefügt werden.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell: Übersetzte Security Identifier Namen herausfinden</title>
+      <link>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</guid>
+      <description>Security Identifiers sind dazu da, um bestimmte Security Prinzipale oder Gruppen unter Windows zu identifizieren. Leider sind die dazugehörigen Namen lokalisiert, also sind zum Beispiel in einem deutschsprachigen System anders als in einem englischsprachigen System.
+Beispielsweise heißt die eingebaute Administratorgruppe auf Englisch BUILTIN\ADMINISTRATORS und auf Deutsch VORDEFINIERT\Administratoren. Oder das Englische NT AUTHORITY\SYSTEM wird an einem Deutschen System zu NT-AUTORITÄT\SYSTEM. Das finde ich richtig abgefahren! Da wird auf einmal ein Leerzeichen durch ein Bindestrich ersetzt.</description>
+    </item>
+    
+  </channel>
+</rss>

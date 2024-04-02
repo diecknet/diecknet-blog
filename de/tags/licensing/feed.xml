@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Licensing on diecknet</title>
+    <link>https://diecknet.de/de/tags/licensing/</link>
+    <description>Recent content in Licensing on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/licensing/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft 365 Self Service Purchase Lizenzen</title>
+      <link>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</guid>
+      <description>Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:
+Power Apps per user Power Automate per user Power Automate RPA Power BI Pro Power BI Premium (standalone) Project Plan 1 Project Plan 3 Visio Plan 1 Visio Plan 2 Erklärungsvideo Ich habe den Lizenzkauf als Anwender ausprobiert und dokumentiert.</description>
+    </item>
+    
+    <item>
+      <title>Office 365 Trial Lizenzen</title>
+      <link>https://diecknet.de/de/2020/06/10/Office-365-Trials/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/06/10/Office-365-Trials/</guid>
+      <description>Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich einen kostenlosen Tenant erstellen, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.</description>
+    </item>
+    
+  </channel>
+</rss>

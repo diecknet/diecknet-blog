@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exchangehybrid on diecknet</title>
+    <link>https://diecknet.de/en/tags/exchangehybrid/</link>
+    <description>Recent content in Exchangehybrid on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/exchangehybrid/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Hybrid: HCW8064 OAuth configuration couldn&#39;t get performed</title>
+      <link>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
+      <description>At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:
+HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.
+The link &amp;ldquo;more information&amp;rdquo; links to https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. If you lookup what OAuth is used for, this article comes up.</description>
+    </item>
+    
+  </channel>
+</rss>

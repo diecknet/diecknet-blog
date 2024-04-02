@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Regexp on diecknet</title>
+    <link>https://diecknet.de/en/tags/regexp/</link>
+    <description>Recent content in Regexp on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/regexp/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using PowerShell Regular Expressions to match against filenames</title>
+      <link>https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/</guid>
+      <description>A short example for PowerShell Regular Expressions.
+Scenario: Match filenames like ID1234_MyDocumentXYZ.pdf.lnk. We want go get the number after ID and the rest of the filename between the underscore _ and the file extension .lnk.
+1 2 3 4 5 $oldLink = &amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34; if($oldLink -match &amp;#39;ID(?&amp;lt;id&amp;gt;\d+)_(?&amp;lt;actualFilename&amp;gt;.+)\.lnk$&amp;#39;) { Write-Output &amp;#34;ID: $($Matches.id)&amp;#34; Write-Output &amp;#34;Actual Filename: $($Matches.actualFilename)&amp;#34; } (?&amp;lt;id&amp;gt;\d+) is a named regex capture group (initialized by ?&amp;lt;groupname&amp;gt;). The group matches any numeric character (\d).</description>
+    </item>
+    
+  </channel>
+</rss>

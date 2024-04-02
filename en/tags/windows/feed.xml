@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Windows on diecknet</title>
+    <link>https://diecknet.de/en/tags/windows/</link>
+    <description>Recent content in Windows on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 13 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Run PowerShell Script with Windows Task Scheduler</title>
+      <link>https://diecknet.de/en/2021/10/13/PowerShell-Task-Scheduler/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/10/13/PowerShell-Task-Scheduler/</guid>
+      <description>More ore less quick note for myself - on how to run a PowerShell Script using Windows Task Scheduler.
+Open Task Scheduler A quick way to open Task Scheduler: WIN + R, then run taskschd.msc.
+Create New Task Open &amp;ldquo;Task Scheduler Library&amp;rdquo; → &amp;ldquo;Create New Task&amp;rdquo;. Set all the self-explanatory options like Name, Description, User Account, Triggers, etc.
+Set Action Setting Value Action Start a program Program/script powershell.exe Add arguments (optional) -file &amp;quot;C:\Path\Script.</description>
+    </item>
+    
+  </channel>
+</rss>

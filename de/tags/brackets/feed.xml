@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Brackets on diecknet</title>
+    <link>https://diecknet.de/de/tags/brackets/</link>
+    <description>Recent content in Brackets on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 28 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/brackets/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Die unterschiedlichen Klammern in der PowerShell</title>
+      <link>https://diecknet.de/de/2023/11/28/powershell-brackets/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/11/28/powershell-brackets/</guid>
+      <description>Wann ist welche Klammer die Richtige in der PowerShell?
+# Verschiedene Klammern in der PowerShell () {} [] Die Klammern haben unterschiedliche Einsatzzwecke. Die Größer-als &amp;lt; und Kleiner-als &amp;gt; Zeichen würde ich übrigens nicht zu den Klammern zählen. Für alle echten Klammern gilt: Wenn ihr eine Klammer geöffnet habt, müsst ihr sie auch wieder schließen.
+Runde Klammern ( ) Mit runden Klammern wird in der PowerShell ein Ausdruck bzw. ein Befehl umfasst, bzw.</description>
+    </item>
+    
+  </channel>
+</rss>

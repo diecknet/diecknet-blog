@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Regex on diecknet</title>
+    <link>https://diecknet.de/de/tags/regex/</link>
+    <description>Recent content in Regex on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/regex/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Regular Expressions in PowerShell</title>
+      <link>https://diecknet.de/de/2024/03/19/powershell-regex/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/03/19/powershell-regex/</guid>
+      <description>Regular Expressions sind Muster mit denen Texte verglichen werden können oder auch Infos aus Texten extrahiert werden können. Zum Beispiel könnt ihr damit überprüfen, ob eine Logdatei von einem Programm die Zeichenfolge &amp;ldquo;Error&amp;rdquo; enthält (also um zu prüfen, ob ein Fehler aufgetreten ist). Oder um einfach nur zu schauen, ob eine Zeichenkette einem bestimmten Muster entspricht, zum Beispiel einer E-Mail Adresse.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+    </item>
+    
+  </channel>
+</rss>

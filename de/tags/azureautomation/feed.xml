@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Azureautomation on diecknet</title>
+    <link>https://diecknet.de/de/tags/azureautomation/</link>
+    <description>Recent content in Azureautomation on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/azureautomation/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Online per Azure Automation steuern im Jahr 2023</title>
+      <link>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
+      <description>Ich versuche es kurz und knackig zu halten: Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist Managed Identities was ihr benutzen solltet (Stand: Anfang 2023).
+Legacy Ansatz Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Credentials (🤢) verwendet, aber das gilt mittlerweile als veraltet. RunAs Accounts sind zum Herbst 2023 abgekündigt und zu Klartext-Kennwörtern muss ich nix sagen, oder? Eventuell bieten sich noch App Registrierungen in Azure AD an, aber wenn ihr wirklich einfach nur per Azure Automation ein paar Exchange Einstellungen automatisieren wollt, ist das eigentlich nicht notwendig.</description>
+    </item>
+    
+  </channel>
+</rss>

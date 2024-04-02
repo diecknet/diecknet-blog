@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Azureadconnect on diecknet</title>
+    <link>https://diecknet.de/de/tags/azureadconnect/</link>
+    <description>Recent content in Azureadconnect on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/azureadconnect/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure AD Connect installieren (Video)</title>
+      <link>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</guid>
+      <description>Ich habe ein YouTube Video über die Konfiguration von Azure AD Connect und die Password Hash Sync erstellt. In diesem Blog-Post verweise ich nur auf ein paar weiterführende Links. Schaut euch auch das vorherige Video zur Planung und Vorbereitung von Azure AD Connect an!
+Weiterführende Links Download Azure AD Connect: Azure AD Connect Download (Microsoft.com) Diecknet Blog post: Azure AD Connect richtig planen und vorbereiten YouTube Video: Azure AD Connect richtig planen und vorbereiten Hardware Anforderungen für Azure AD Connect Server: Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.</description>
+    </item>
+    
+    <item>
+      <title>Azure AD Connect richtig planen und vorbereiten (Video)</title>
+      <link>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</guid>
+      <description>Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein YouTube Video erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.
+Azure AD Connect Entscheidungsbaum Kostenloser Download (.pdf, .png, .drawio)
+Weiterführende Links Unterstützte und nicht unterstützte Azure AD Connect Topologien: Topologies for Azure AD Connect (docs.microsoft.com) Hardware Anforderungen für Azure AD Connect Server: Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.</description>
+    </item>
+    
+  </channel>
+</rss>

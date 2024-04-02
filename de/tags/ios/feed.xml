@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ios on diecknet</title>
+    <link>https://diecknet.de/de/tags/ios/</link>
+    <description>Recent content in Ios on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/ios/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich</title>
+      <link>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
+      <description>Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:
+Administratorgenehmigung erforderlich
+Apple Internet Accounts
+Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.
+Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde anscheinend Anfang 2020 umbenannt.</description>
+    </item>
+    
+  </channel>
+</rss>

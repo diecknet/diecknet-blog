@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shared Mailbox on diecknet</title>
+    <link>https://diecknet.de/de/tags/shared-mailbox/</link>
+    <description>Recent content in Shared Mailbox on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/shared-mailbox/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outlook Cache Modus für Freigegebene Postfächer</title>
+      <link>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</link>
+      <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
+      <description>In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:
+Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden.
+Verbindung mit dem Server herstellen, um diese anzuzeigen
+In persönlichen Postfächern wird stattdessen die Möglichkeit geboten, weitere Elemente vom Server abzurufen. Der Text dazu wurde stümperhaft automatisch übersetzt, was sich gut ins Gesamtbild fügt:</description>
+    </item>
+    
+  </channel>
+</rss>

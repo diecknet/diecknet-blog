@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Azure Ad on diecknet</title>
+    <link>https://diecknet.de/en/tags/azure-ad/</link>
+    <description>Recent content in Azure Ad on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/azure-ad/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Azure AD Connect Staging Mode via PowerShell</title>
+      <link>https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</guid>
+      <description>Here&amp;rsquo;s a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. Sadly there is no native Cmdlet in the style of Set-ADSyncStagingMode or something like that.
+In this article I&amp;rsquo;ll first explain the approach and then later on list the full command block you can use. So feel free to skip below to the end of the post. The following PowerShell Cmdlets have to get executed on the Azure AD Connect Server.</description>
+    </item>
+    
+    <item>
+      <title>How to get Group Membership count with Microsoft Graph API</title>
+      <link>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
+      <description>Apparently it&amp;rsquo;s not that easy to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header ConsistencyLevel: eventual to use the Advanced Query Capabilities. Then we can use the Query parameter $count. Alternatively I found that I could also add it as an URL query parameter instead. That would be &amp;amp;ConsistencyLevel=eventual.
+Example Queries Replace the Group ID (02bd9fd6-8f93-4758-87c3-1fb73740a315) with your desired Azure Active Directory Group ID.</description>
+    </item>
+    
+    <item>
+      <title>How to configure MFA methods for Azure AD</title>
+      <link>https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
+      <description>In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you&amp;rsquo;re also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you&amp;rsquo;ve come to right place.
+So as of 2022-02-02 you&amp;rsquo;ll find the settings here:
+Short answer It&amp;rsquo;s still in the classic MFA Azure AD Portal, here: https://account.activedirectory.windowsazure.com/usermanagement/mfasettings.aspx
+Long answer If you don&amp;rsquo;t trust me or that link above, you can manually click through to the right place:</description>
+    </item>
+    
+    <item>
+      <title>List all Users with administrative roles in a Microsoft 365 environment</title>
+      <link>https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</guid>
+      <description>Option 1: Use M365 Admin Portal There is finally a way in the main Microsoft 365 Admin Portal. Go to &amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo; and click on &amp;ldquo;Export admin list&amp;rdquo; to get a CSV file with all admins and their roles.
+Option 2: Use PowerShell / Azure AD Graph Module Just a short PowerShell snippet to list all users with administrative roles in a Microsoft 365 (or Azure AD) environment. Please note that this uses the older Azure AD Graph Module (already planned for deprecation).</description>
+    </item>
+    
+  </channel>
+</rss>

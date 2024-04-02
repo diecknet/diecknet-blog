@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Diecknet on diecknet</title>
+    <link>https://diecknet.de/en/tags/diecknet/</link>
+    <description>Recent content in Diecknet on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/diecknet/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A new blog</title>
+      <link>https://diecknet.de/en/2019/10/21/new-blog/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2019/10/21/new-blog/</guid>
+      <description>That&amp;rsquo;s about how the conversation went when I told the first person about my blog plans.
+B: Your cell phone is ringing&amp;hellip;
+A: Oh, what? taps on the cell phone &amp;hellip;
+B: 2001 called and wants his blog back!
+A: &amp;hellip;
+Well&amp;hellip;
+The WHY Not only since I&amp;rsquo;ve been working professionally in the IT world, I know that the solution to many IT problems is often only a Google search away.</description>
+    </item>
+    
+  </channel>
+</rss>

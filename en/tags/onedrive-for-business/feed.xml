@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Onedrive for Business on diecknet</title>
+    <link>https://diecknet.de/en/tags/onedrive-for-business/</link>
+    <description>Recent content in Onedrive for Business on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/onedrive-for-business/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OneDrive for Business - Delegation to Manager after employee leaves company</title>
+      <link>https://diecknet.de/en/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</guid>
+      <description>Normally when a user leaves the Company their OneDrive for Business site gets automatically delegated to their manager. That means the manager gets SharePoint Site Collection admin rights to the OneDrive site of their subordinate.
+Checking and Changing Access Delegation ⚠️ Access Delegation is enabled as default. The setting can be found and changed here:
+Go to More features in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Teams on diecknet</title>
+    <link>https://diecknet.de/de/tags/teams/</link>
+    <description>Recent content in Teams on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/teams/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Einwahlrufnummer für Teams Meetings per PowerShell setzen</title>
+      <link>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</guid>
+      <description>Mit Microsoft Teams Audio Conferencing (Microsoft 365-Audiokonferenz) Lizenzen ist es möglich, Einwahlrufnummern für Teams Besprechungen zu verwenden. Die Lizenz wird für jeden Benutzer benötigt, der zu Teams Meetings mit Einwahlrufnummer einladen soll.
+Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - einmalig wenn der Benutzer für Audiokonferenz aktiviert wird. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.
+Teams Admin Center verwenden um die Einwahlrufnummer für einzelne Benutzer zu ändern Users ➔ Manage Users ➔ Auf einen Benutzer klicken ➔ Auf &amp;ldquo;Edit&amp;rdquo; klicken (neben &amp;ldquo;Audio Conferencing&amp;rdquo;) ➔ Auswählen der &amp;ldquo;Toll number&amp;rdquo; entsprechend des Benutzerstandorts.</description>
+    </item>
+    
+    <item>
+      <title>Wie lange werden gelöschte Teams Kanäle aufbewahrt?</title>
+      <link>https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/</link>
+      <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/</guid>
+      <description>Falls ihr euch fragt &amp;ldquo;Wie lange wird ein gelöschter Teams Kanal aufbewahrt?&amp;rdquo; oder &amp;ldquo;Für wie lange kann ich einen gelöschten Teams Kanal wiederherstellen?&amp;rdquo;, findet ihr die Antwort relativ schnell. Aber meistens fehlt der Verweis auf die original Quelle in der Microsoft Dokumentation.
+Antwort Gelöschte Teams Kanäle werden für 30 Tage aufbewahrt.
+Offizielle Quelle Im englischsprachigen Original https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels wird unterhalb der Tabelle Teams and channels in Fußnote 4 festgehalten:
+Deleted channels can be restored within 30 days.</description>
+    </item>
+    
+  </channel>
+</rss>

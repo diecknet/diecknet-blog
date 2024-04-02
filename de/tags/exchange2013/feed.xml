@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exchange2013 on diecknet</title>
+    <link>https://diecknet.de/de/tags/exchange2013/</link>
+    <description>Recent content in Exchange2013 on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/exchange2013/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden</title>
+      <link>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
+      <description>Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:
+HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.
+Der Link &amp;ldquo;Weitere Informationen&amp;rdquo; verweist auf https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. Wenn man schaut, wofür OAuth verwendet, wird dieser Artikel referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird.</description>
+    </item>
+    
+    <item>
+      <title>Exchange - Wann wurde das Postfach WIRKLICH erstellt?</title>
+      <link>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
+      <description>Wenn du herausfinden möchtest, wann ein Exchange Postfach erstellt wurde, wirst du wahrscheinlich über das Active Directory-Benutzer Attribut MSExchWhenMailboxCreated stolpern. Um den Wert auszulesen, kannst du PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.
+1 Get-ADUser -Properties MSExchMaiboxWhenCreated MSExchWhenMailboxCreated enthält nicht die ganze Wahrheit Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was du vielleicht denkst. Das Attribut wird nur propagiert wenn der Benutzer DAS ERSTE MAL ein Postfach erhält.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Raumpostfach - Berechtigungen setzen</title>
+      <link>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
+      <description>Zugriff wurde für den Benutzer verweigert. - Exchange Raumpostfach Berechtigungen (Outlook Fenster)
+Standardmäßig hat der &amp;ldquo;Kalender&amp;rdquo;-Ordner von Exchange 2013 Raumpostfächer die Berechtigung &amp;ldquo;LimitedDetails&amp;rdquo; für das Sicherheitsprinzipal &amp;ldquo;Standard&amp;rdquo;. Wenn also keine weiteren Berechtigungen konfiguriert sind, können die Anwender keine Details für Termine in diesem Raum anzeigen. Für eine bessere Bedienbarkeit in Outlook ist die Berechtigung &amp;ldquo;Reviewer&amp;rdquo; besser geeignet. Hierdurch dürfen Elemente aufgelistet und Details angezeigt werden. Bei Bedarf kann noch das CalendarProcessing angepasst werden, sodass Details wie Beschreibung und Betreff des Termins nicht im Raumpostfach gespeichert werden.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Archive Mailbox on diecknet</title>
+    <link>https://diecknet.de/en/tags/archive-mailbox/</link>
+    <description>Recent content in Archive Mailbox on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/archive-mailbox/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Verify Auto-Expanding Archives in Exchange Online</title>
+      <link>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
+      <description>If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.
+In the Exchange Admin Center (EAC), open the info pane of the user&amp;rsquo;s mailbox. Click on &amp;ldquo;Manage mailbox archive&amp;rdquo;.
+An Auto-Expanding Archive provisions more Archive storage space, if needed. Default Archives have 100 GB of storage available. If the archive is already bigger than 100 GB, we must have additional storage.</description>
+    </item>
+    
+  </channel>
+</rss>

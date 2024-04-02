@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsoft365 on diecknet</title>
+    <link>https://diecknet.de/de/tags/microsoft365/</link>
+    <description>Recent content in Microsoft365 on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/microsoft365/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Online per Azure Automation steuern im Jahr 2023</title>
+      <link>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
+      <description>Ich versuche es kurz und knackig zu halten: Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist Managed Identities was ihr benutzen solltet (Stand: Anfang 2023).
+Legacy Ansatz Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Credentials (🤢) verwendet, aber das gilt mittlerweile als veraltet. RunAs Accounts sind zum Herbst 2023 abgekündigt und zu Klartext-Kennwörtern muss ich nix sagen, oder? Eventuell bieten sich noch App Registrierungen in Azure AD an, aber wenn ihr wirklich einfach nur per Azure Automation ein paar Exchange Einstellungen automatisieren wollt, ist das eigentlich nicht notwendig.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuerelement kann nicht instanziiert werden</title>
+      <link>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</link>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</guid>
+      <description>Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.
+Ich wollte mich einfach nur per Connect-MicrosoftTeams mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren</title>
+      <link>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
+      <description>Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.
+Möglichkeiten zur Konfiguration Die Option &amp;ldquo;VideoFiltersMode&amp;rdquo; kann zur Zeit nur per PowerShell gesetzt werden - nicht per Teams Admin Center.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 365 Self Service Purchase Lizenzen</title>
+      <link>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</guid>
+      <description>Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:
+Power Apps per user Power Automate per user Power Automate RPA Power BI Pro Power BI Premium (standalone) Project Plan 1 Project Plan 3 Visio Plan 1 Visio Plan 2 Erklärungsvideo Ich habe den Lizenzkauf als Anwender ausprobiert und dokumentiert.</description>
+    </item>
+    
+    <item>
+      <title>Azure AD Connect installieren (Video)</title>
+      <link>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</guid>
+      <description>Ich habe ein YouTube Video über die Konfiguration von Azure AD Connect und die Password Hash Sync erstellt. In diesem Blog-Post verweise ich nur auf ein paar weiterführende Links. Schaut euch auch das vorherige Video zur Planung und Vorbereitung von Azure AD Connect an!
+Weiterführende Links Download Azure AD Connect: Azure AD Connect Download (Microsoft.com) Diecknet Blog post: Azure AD Connect richtig planen und vorbereiten YouTube Video: Azure AD Connect richtig planen und vorbereiten Hardware Anforderungen für Azure AD Connect Server: Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.</description>
+    </item>
+    
+    <item>
+      <title>Office 365 Trial Lizenzen</title>
+      <link>https://diecknet.de/de/2020/06/10/Office-365-Trials/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/06/10/Office-365-Trials/</guid>
+      <description>Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich einen kostenlosen Tenant erstellen, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.</description>
+    </item>
+    
+    <item>
+      <title>Azure AD Connect richtig planen und vorbereiten (Video)</title>
+      <link>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</guid>
+      <description>Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein YouTube Video erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.
+Azure AD Connect Entscheidungsbaum Kostenloser Download (.pdf, .png, .drawio)
+Weiterführende Links Unterstützte und nicht unterstützte Azure AD Connect Topologien: Topologies for Azure AD Connect (docs.microsoft.com) Hardware Anforderungen für Azure AD Connect Server: Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich</title>
+      <link>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
+      <description>Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:
+Administratorgenehmigung erforderlich
+Apple Internet Accounts
+Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.
+Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde anscheinend Anfang 2020 umbenannt.</description>
+    </item>
+    
+  </channel>
+</rss>

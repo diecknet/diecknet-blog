@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exchangehybrid on diecknet</title>
+    <link>https://diecknet.de/de/tags/exchangehybrid/</link>
+    <description>Recent content in Exchangehybrid on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/exchangehybrid/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden</title>
+      <link>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
+      <description>Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:
+HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.
+Der Link &amp;ldquo;Weitere Informationen&amp;rdquo; verweist auf https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. Wenn man schaut, wofür OAuth verwendet, wird dieser Artikel referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird.</description>
+    </item>
+    
+  </channel>
+</rss>

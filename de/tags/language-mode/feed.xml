@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Language Mode on diecknet</title>
+    <link>https://diecknet.de/de/tags/language-mode/</link>
+    <description>Recent content in Language Mode on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Sat, 20 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/language-mode/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell ConstrainedLanguage Mode per Gruppenrichtlinie einstellen</title>
+      <link>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</guid>
+      <description>PowerShell Language Modes sind eine Möglichkeit die Funktionalität der PowerShell einzuschränken, um die Sicherheit eines Systems zu erhöhen. Das ist natürlich nur ein kleiner Baustein in einer größeren Sicherheitsstrategie, also das alleine ist noch kein ausreichender Schutz für ein System.
+Gleichzeitig ist das auch ein zweischneidiges Schwert:
+Vorteil: Wir entziehen potenziellen Angreifern ein mächtiges Werkzeug.
+Nachteil: Wir selbst als Administratoren können die PowerShell an einem System auch nicht mehr richtig nutzen.</description>
+    </item>
+    
+  </channel>
+</rss>

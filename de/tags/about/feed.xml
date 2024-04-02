@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>About on diecknet</title>
+    <link>https://diecknet.de/de/tags/about/</link>
+    <description>Recent content in About on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/about/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ein neuer Blog</title>
+      <link>https://diecknet.de/de/2019/10/21/new-blog/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2019/10/21/new-blog/</guid>
+      <description>Ungefähr so ist die Unterhaltung abgelaufen, als ich der ersten Person von meinem Blog-Vorhaben erzählt habe:
+B: Dein Handy klingelt&amp;hellip;
+A: Oh, was? tippt auf das Handy &amp;hellip;
+B: 2001 hat angerufen und will seinen Blog zurück!
+A: &amp;hellip;
+Nun ja&amp;hellip;
+Das WARUM Nicht erst seit ich professionell in der IT-Welt arbeite, weiß ich, dass die Lösung zu vielen IT-Problemen oft nur eine Google Suche entfernt ist. Bei komplizierten Fällen muss man manchmal allerdings länger recherchieren&amp;hellip; In den Jahren habe ich immer mal wieder interessante Perspektiven und Lösungsansätze im Netz gefunden, die mir dabei geholfen haben weiter zu kommen.</description>
+    </item>
+    
+  </channel>
+</rss>

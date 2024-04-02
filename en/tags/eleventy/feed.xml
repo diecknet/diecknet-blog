@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Eleventy on diecknet</title>
+    <link>https://diecknet.de/en/tags/eleventy/</link>
+    <description>Recent content in Eleventy on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/eleventy/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating from 11ty to Hugo</title>
+      <link>https://diecknet.de/en/2024/02/22/Migrating-from-11ty-to-Hugo/</link>
+      <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2024/02/22/Migrating-from-11ty-to-Hugo/</guid>
+      <description>I recently upgraded this website to 11ty v2.0, but I needed more change. Initially I just wanted to create a basic Design with Terminal.css. But then I randomly stumbled over the Hugo Theme Gallery and found some beautiful themes! So I chose to use Hugo Papermod and migrate the Website to Hugo 🤓. Since I don&amp;rsquo;t really know JavaScript, so it doesn&amp;rsquo;t matter for me that Hugo uses Go instead. I never used Go as a programming language, but it sounds great.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsoft Booking on diecknet</title>
+    <link>https://diecknet.de/en/tags/microsoft-booking/</link>
+    <description>Recent content in Microsoft Booking on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 12 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/microsoft-booking/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>List all Microsoft Booking Calendars</title>
+      <link>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
+      <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
+      <description>If you&amp;rsquo;re using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type &amp;ldquo;SchedulingMailbox&amp;rdquo;. If an user gets assigned &amp;ldquo;Administrator&amp;rdquo; for a Booking Calendar, they get &amp;ldquo;FullAccess&amp;rdquo; permissions for the Scheduling Mailbox.
+List all Booking Calendars with permission I wrote a PowerShell script to list all the Booking Mailboxes with the users that have access.</description>
+    </item>
+    
+  </channel>
+</rss>

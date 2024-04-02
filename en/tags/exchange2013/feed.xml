@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Exchange2013 on diecknet</title>
+    <link>https://diecknet.de/en/tags/exchange2013/</link>
+    <description>Recent content in Exchange2013 on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/exchange2013/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exchange Hybrid: HCW8064 OAuth configuration couldn&#39;t get performed</title>
+      <link>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
+      <description>At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:
+HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.
+The link &amp;ldquo;more information&amp;rdquo; links to https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. If you lookup what OAuth is used for, this article comes up.</description>
+    </item>
+    
+    <item>
+      <title>Exchange - When was that mailbox REALLY created?</title>
+      <link>https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
+      <description>If you&amp;rsquo;re wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute MSExchWhenMailboxCreated. You can get the value using PowerShell or ADUC with advanced features enabled.
+1 Get-ADUser -Properties MSExchMaiboxWhenCreated MSExchWhenMailboxCreated contains not the full truth That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the FIRST time the user gets a mailbox.</description>
+    </item>
+    
+    <item>
+      <title>Exchange Room Mailbox - Set Permissions</title>
+      <link>https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
+      <description>By default, the &amp;ldquo;Calendar&amp;rdquo; folder in Exchange 2013 Room Mailboxes has the &amp;ldquo;LimitedDetails&amp;rdquo; permission for the &amp;ldquo;Standard&amp;rdquo; security principal. Therefore, if no other permissions are configured, users cannot view details for appointments in this room. For better usability in Outlook, the &amp;ldquo;Reviewer&amp;rdquo; permission is more suitable. This allows items to be listed and details to be displayed. If required, the CalendarProcessing can be adjusted so that details such as the description and subject of the appointment are not saved in the room mailbox.</description>
+    </item>
+    
+  </channel>
+</rss>
