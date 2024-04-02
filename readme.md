@@ -4,7 +4,7 @@ This reposity contains the source code of my blog, hosted live on [diecknet.de](
 
 ## License
 
-All parts of the code that I created in this repository is licensed under the [MIT License](LICENSE.md), if not mentioned otherwise.
+All parts of the code that I created in this repository is licensed under the [MIT License](LICENSE.md), if not mentioned otherwise. This only applies to Source Code, not the actual blog/website content.
 
 ## Third Party Licenses
 
