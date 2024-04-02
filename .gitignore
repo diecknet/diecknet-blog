@@ -29,3 +29,6 @@ public/*
 
 # node modules
 node_modules/
+
+# hugo specific
+.hugo_build.lock
