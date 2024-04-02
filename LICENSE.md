@@ -1,6 +1,8 @@
-MIT License
+The below statement only applies to Source Code in this repository that I created. The blog/website *content* is not licensed under MIT license.
 
-Copyright (c) 2023 Andreas Dieckmann
+## MIT License
+
+Copyright (c) 2024 Andreas Dieckmann
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
