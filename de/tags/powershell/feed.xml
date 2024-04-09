@@ -13,7 +13,9 @@
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/04/09/powershell-suppress-output/</guid>
-      <description>Manchmal geben PowerShell Befehle eine Rückmeldung aus, obwohl uns das gar nicht interessiert. Es gibt verschiedene Szenarien, wie ihr die Ausgaben unterdrücken könnt. Ich verwende hier zum Beispiel das Cmdlet New-NetFirewallRule mit dem ich eine neue Regel in der Windows Firewall hinzufügen kann:
+      <description>Manchmal geben PowerShell Befehle eine Rückmeldung aus, obwohl uns das gar nicht interessiert. Es gibt verschiedene Szenarien, wie ihr die Ausgaben unterdrücken könnt.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Ich verwende hier zum Beispiel das Cmdlet New-NetFirewallRule mit dem ich eine neue Regel in der Windows Firewall hinzufügen kann:
 1 New-NetFirewallRule -DisplayName &amp;#34;Ausgehende Verbindungen zu Port 443 blockieren&amp;#34; -Direction Outbound -RemotePort 443 -Protocol TCP -Action Block Wenn ich das ausführe, dann kriege ich als Rückgabe ein Objekt, welches die Firewall Regel repräsentiert.</description>
     </item>
     
