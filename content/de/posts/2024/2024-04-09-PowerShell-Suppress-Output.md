@@ -6,7 +6,9 @@ comments: true
 tags: [powershell]
 ---
 
-Manchmal geben PowerShell Befehle eine Rückmeldung aus, obwohl uns das gar nicht interessiert. Es gibt verschiedene Szenarien, wie ihr die Ausgaben unterdrücken könnt.
+Manchmal geben PowerShell Befehle eine Rückmeldung aus, obwohl uns das gar nicht interessiert. Es gibt verschiedene Szenarien, wie ihr die Ausgaben unterdrücken könnt.  
+**🎬 Ich habe übrigens auch ein [Video zu dem Thema erstellt.](https://youtu.be/0hS3IWrr_3I)**  
+  
 Ich verwende hier zum Beispiel das Cmdlet `New-NetFirewallRule` mit dem ich eine neue Regel in der Windows Firewall hinzufügen kann:
 
 ```powershell
