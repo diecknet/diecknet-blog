@@ -6,7 +6,17 @@
     <description>Recent content in Posts on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Tue, 09 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Skripte remote entwickeln</title>
+      <link>https://diecknet.de/de/2024/04/23/powershell-remote-script-development/</link>
+      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/04/23/powershell-remote-script-development/</guid>
+      <description>Es ist möglich PowerShell Skripte remote zu entwickeln. Also das Skript wird auf einem remote Computer gespeichert und ausgeführt, aber die Eingabe erfolgt im lokalen Editor-Tool. Das geht sowohl mit der klassischen Windows PowerShell ISE, als auch mit Visual Studio Code. In VSCode könnt ihr sowohl mit remote Windows PowerShell, als auch remote PowerShell 7 Systemen arbeiten. 🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Windows PowerShell ISE Die Windows PowerShell ISE unterstützt nur remote Windows Systeme mit Windows PowerShell.</description>
+    </item>
+    
     <item>
       <title>PowerShell Ausgabe unterdrücken</title>
       <link>https://diecknet.de/de/2024/04/09/powershell-suppress-output/</link>
