@@ -6,7 +6,17 @@
     <description>Recent content in Posts on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NULL in PowerShell</title>
+      <link>https://diecknet.de/de/2024/04/29/powershell-null/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/04/29/powershell-null/</guid>
+      <description>Wenn ihr in PowerShell prüfen wollt, ob ein Wert nicht gesetzt ist, dann könnt ihr einen Vergleich mit $null machen. Diese automatische Variable bedeutet immer null, nichts, kein Wert. Das ist aber etwas anderes, als wenn ihr einfach Anführungszeichen &amp;quot;&amp;quot; nehmt und dann nichts reinschreibt. Zum Beispiel ergibt das hier immer FALSE:
+1 2 3 4 5 $null -eq &amp;#34;&amp;#34; # = false $null -eq &amp;#39;&amp;#39; # = false # Hat übrigens nichts mit der Zahl 0 zu tun // also das ergibt auch False $null -eq 0 # = false 🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+    </item>
+    
     <item>
       <title>PowerShell Skripte remote entwickeln</title>
       <link>https://diecknet.de/de/2024/04/23/powershell-remote-script-development/</link>
