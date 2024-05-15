@@ -6,7 +6,17 @@
     <description>Recent content on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Befehle auf mehrere Zeilen aufteilen</title>
+      <link>https://diecknet.de/de/2024/05/15/powershell-multiline-commands/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/05/15/powershell-multiline-commands/</guid>
+      <description>PowerShell Befehle mit vielen Parametern können die Lesbarkeit vom Code verschlechtern. Zum Beispiel habe ich im nachfolgenden Codeabschnitt in Zeile 5 das Cmdlet New-ADUser verwendet und dabei 7 Parameter angegeben. Das ist sehr schwer auf einer Zeile zu lesen, selbst wenn ihr einen Ultra-Wide Monitor verwendet.
+1 2 3 4 5 6 $CSVFile = Import-Csv .\NeueUser.csv foreach($User in $CSVFile) { $Manager = Get-ADUser -Filter &amp;#34;mail -eq &amp;#39;$($User.Manager)&amp;#39;&amp;#34; New-ADUser -Name &amp;#34;$($User.Vorname) $($User.</description>
+    </item>
+    
     <item>
       <title>NULL in PowerShell</title>
       <link>https://diecknet.de/de/2024/04/29/powershell-null/</link>
