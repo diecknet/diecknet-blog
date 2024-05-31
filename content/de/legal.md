@@ -19,7 +19,6 @@ imprInfoHRN: HRB 179818
 imprInfoHRG: Amtsgericht Hamburg
 rss_ignore: true
 ---
-## Angaben gemäß § 5 TMG
 
 **{{< param imprInfoCompany >}}**  
 {{< param imprInfoStreet >}}  
