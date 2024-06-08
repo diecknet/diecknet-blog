@@ -89,7 +89,7 @@ foreach($User in $CSVFile) {
 
 Hier habe ich also zunächst einmal eine Hashtable mit dem Namen `$MeineParameter` erstellt (der Name ist frei wählbar). In der Hashtable ist jeweils ein Eintrag für einen Parameter inklusive des jeweiligen Parameterwerts. Um jetzt an einem Cmdlet eine gesplattete Variable als Parameter zu verwenden, muss diese mit einem `@`-Symbol anstatt des normalen `$`-Symbol für Variablen angegeben werden. Parameternamen müssen dann am Cmdlet nicht angegeben werden, denn die stehen ja alle in der Hashtable/Variable.
 
-Das sind die Grundlagen und ich finde es so weitaus schöner anzusehen als mit Backticks. 
+Das sind die Grundlagen und ich finde es so weitaus schöner anzusehen als mit Backticks.
 
 ### Tipps und Besonderheiten zum Splatting
 
