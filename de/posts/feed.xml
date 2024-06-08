@@ -6,7 +6,17 @@
     <description>Recent content in Posts on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Per PowerShell .zip-Archive erstellen und entpacken</title>
+      <link>https://diecknet.de/de/2024/06/08/powershell-zip/</link>
+      <pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/06/08/powershell-zip/</guid>
+      <description>Windows kann eigentlich schon ziemlich lange mit ZIP-Archiven umgehen. Und auch die PowerShell kann das, also sowohl ZIP-Dateien erstellen, als auch sie entpacken. Das kann nützlich sein, wenn ihr z.B. mit einem PowerShell Skript mehrere Dateien zu einer ZIP-Datei zusammenfassen wollt - das erleichtert das wegkopieren. Oder vielleicht um eine per Skript aus dem Internet geladene ZIP-Datei zu extrahieren.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+    </item>
+    
     <item>
       <title>PowerShell Befehle auf mehrere Zeilen aufteilen</title>
       <link>https://diecknet.de/de/2024/05/15/powershell-multiline-commands/</link>
