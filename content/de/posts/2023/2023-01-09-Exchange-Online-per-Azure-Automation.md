@@ -4,7 +4,7 @@ aliases:
 slug: Exchange-Online-per-Azure-Automation
 title: "Exchange Online per Azure Automation steuern im Jahr 2024"
 date: 2023-01-09
-lastmod: 2024-06-21
+lastmod: 2024-06-25
 tags: [microsoft365, office365, exchangeonline, powershell, exo, azure, azureautomation]
 cover:
     image: /images/2023/2023-AA-EXO.jpg
