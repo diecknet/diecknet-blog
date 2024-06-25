@@ -11,7 +11,6 @@ cover:
 comments: true    
 ---
 
-Ich versuche es kurz und knackig zu halten:
 Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist **Managed Identities** was ihr benutzen solltet (diese Aussage wurde zuletzt geprüft im Juni 2024).
 
 ## Legacy Ansatz
@@ -34,7 +33,7 @@ Ich bevorzuge es System Assigned Managed Identities zu verwenden, da so effektiv
 
 Die Zuweisung der "Exchange Administrator"-Rolle an die Managed Identity erfolgt dann anschließend per [PowerShell/Graph API](#konfiguration-per-powershell).
 
-## Konfiguration per PowerShell
+### Konfiguration per PowerShell
 
 In diesem Abschnitt wird beschrieben, wie ihr die Konfiguration per PowerShell durchführen könnt. Die Zuweisung der "Exchange Administrator"-Rolle an eine Managed Identity erfolgt einmalig per **lokaler** PowerShell - der nachfolgende Code wird also nicht in Azure Automation als Runbook ausgeführt.
 
@@ -87,6 +86,25 @@ New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $MI_ID -PrincipalId 
 $ExchangeAdminRoleID = (Get-MgRoleManagementDirectoryRoleDefinition -Filter "DisplayName eq 'Exchange Administrator'").Id
 # the actual assignment of the Exchange Administrator role:
 New-MgRoleManagementDirectoryRoleAssignment -PrincipalId $MI_ID -RoleDefinitionId $ExchangeAdminRoleID -DirectoryScopeId "/"
+```
+
+### Modul hinzufügen
+
+Egal ob ihr bereits "Runtime Environments" verwendet, oder noch die "Old experience", ihr müsst das ExchangeOnlineManagement PowerShell Modul hinzufügen. Im Falle der "Old experience" zum gesamten Automation Account. Wenn ihr Runtime Environments verwendet, dann fügt das Modul stattdessen zu einem Runtime Environment hinzu bzw. legt ein neues Runtime Environment an. Das Modul wird sowohl von Windows PowerShell, als auch PowerShell 7 unterstützt.
+
+### Exchange Online PowerShell verwenden
+
+Folgender Beispiel Code für ein Runbook verbindet sich als System Managed Managed Identity mit der Exchange Online Verwaltung, führt einen Exchange Online PowerShell Befehl aus und trennt dann die Verbindung zu Exchange Online wieder.
+
+```powershell
+# Replace the Organization name with a domain from your tenant
+Connect-ExchangeOnline -ManagedIdentity -Organization demotenant.de
+
+# Example command that uses Exchange Online PowerShell: List all mailboxes
+Get-ExoMailbox
+
+# Disconnect again to free up connections
+Disconnect-ExchangeOnline -Confirm:$false
 ```
 
 ## How-to Video
