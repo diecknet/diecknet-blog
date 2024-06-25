@@ -8,13 +8,13 @@
     <language>en</language>
     <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/office365/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Automate Exchange Online with Azure Automation in 2023</title>
+      <title>Automate Exchange Online with Azure Automation in 2024</title>
       <link>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
-      <description>I&amp;rsquo;ll try to keep it short: If you want to manage Exchange Online via Azure Automation, Managed Identities is what you should use (as of early 2023).
-Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I?</description>
+      <description>If you want to manage Exchange Online via Azure Automation, Managed Identities is what you should use (this statement was last checked in June 2024).
+Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I? You could still use App Registrations in Entra ID, but if you really just want to automate some Exchange settings via Azure Automation, it&amp;rsquo;s not really necessary.</description>
     </item>
     
     <item>
