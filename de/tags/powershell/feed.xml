@@ -6,7 +6,18 @@
     <description>Recent content in Powershell on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Sat, 08 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Write-Host VS. Write-Output</title>
+      <link>https://diecknet.de/de/2024/07/05/powershell-write-host-vs-write-output/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/07/05/powershell-write-host-vs-write-output/</guid>
+      <description>In PowerShell könnt ihr ja Text mit dem Cmdlet Write-Host ausgeben. Aber es wird teilweise davon abgeraten das zu verwenden. Es gibt zum Beispiel die Alternative Write-Output. In diesem Post erkläre ich euch die Unterschiede.
+🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
+Write-Host Write-Host gibt Daten auf dem PowerShell Host aus, dem Programm, welches die aktuelle PowerShell Sitzung hostet. Oft ist das der ConsoleHost, aber z.B. die PowerShell ISE oder Visual Studio Code verwenden eigene Hosts, die sich in manchen Aspekten voneinander unterscheiden.</description>
+    </item>
+    
     <item>
       <title>Per PowerShell .zip-Archive erstellen und entpacken</title>
       <link>https://diecknet.de/de/2024/06/08/powershell-zip/</link>
