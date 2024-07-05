@@ -10,15 +10,20 @@ cover:
     image: /images/2022/2022-02-02_thumbnail.png
 ---
 
+This post is outdated. The ["authentcation methods policy"](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy) is now easily available in the Entra portal. You might still need to migrate from the legacy settings, read the whole article at [Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy).
+
+
+## OLD POST for reference
+
 In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you're also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you've come to right place.
 
 So as of 2022-02-02 you'll find the settings here:
 
-## Short answer
+### Short answer
 
 It's still in the classic MFA Azure AD Portal, here: [https://account.activedirectory.windowsazure.com/usermanagement/mfasettings.aspx](https://account.activedirectory.windowsazure.com/usermanagement/mfasettings.aspx)
 
-## Long answer
+### Long answer
 
 If you don't trust me or that link above, you can manually click through to the right place:
 
