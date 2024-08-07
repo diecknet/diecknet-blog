@@ -13,6 +13,8 @@ The AD attribute `OperatingSystemVersion` holds the OS version with the build nu
 
 I needed to find some older devices, but it's not possible to compare with a "less than" operator against the attribute value. So I only extracted the actual build number in the parenthesis using the `-match` operator and a Regular Expression. If the RegEx matches, the extracted result is extracted into the automatic variable `$Matches`.
 
+Then I could eventually compare the build number using the "less than" (`-lt`) operator. If the device was using a older build version than `19042`, I added the computer to a specific security group.
+
 ```powershell
 $ADComputers = Get-ADComputer -Filter * -Properties OperatingSystemVersion
 
