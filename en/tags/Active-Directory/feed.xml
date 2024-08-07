@@ -6,7 +6,17 @@
     <description>Recent content in Active Directory on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/Active-Directory/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/Active-Directory/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell: Filter Active Directory Computers</title>
+      <link>https://diecknet.de/en/2024/08/07/powershell-active-directory-computers-filtering/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2024/08/07/powershell-active-directory-computers-filtering/</guid>
+      <description>I recently worked on a client project, where I had to do some work around Active Directory Computers. I used PowerShell and some light filtering and processing. And now I share those examples, and hopefully someone finds them interesting or helpful. Maybe it will be me, who finds it interesting in the future. In that case: Moin Andi! 👋
+Example 1: Filter Computer by Operating System Version The AD attribute OperatingSystemVersion holds the OS version with the build number in a format like this: 10.</description>
+    </item>
+    
     <item>
       <title>Exchange EAC stopped working after decomissioning all Mailbox Databases</title>
       <link>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
