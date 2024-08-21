@@ -6,7 +6,18 @@
     <description>Recent content in Posts on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Calculated Properties</title>
+      <link>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</guid>
+      <description>Wenn ihr per PowerShell Daten exportiert (zum Beispiel in eine CSV-Datei per Export-CSV), dann werden die originalen Eigenschaftsnamen von den PowerShell Objekten verwendet. Wenn die aber nicht ganz passend für euren Zweck sind, dann könnt ihr sie auch anpassen. Dafür können sogenannte &amp;ldquo;Calculcated Properties&amp;rdquo; und das Cmdlet Select-Object verwendet werden.
+Damit können zum Beispiel:
+Eigenschaften umbenannt werden Eigenschaftswerte formatiert werden Komplett eigene Eigenschaften erzeugt werden (z.B. durch den Aufruf zusätzlicher Cmdlets) Objekte normal ausgeben Zur Erinnerung: Die Auswahl von Objekteigenschaften bei Select-Object ist mit dem Parameter -Property möglich.</description>
+    </item>
+    
     <item>
       <title>PowerShell Write-Host VS. Write-Output</title>
       <link>https://diecknet.de/de/2024/07/05/powershell-write-host-vs-write-output/</link>
