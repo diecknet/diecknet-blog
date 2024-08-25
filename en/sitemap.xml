@@ -2,6 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://diecknet.de/en/</loc>
+    <lastmod>2024-08-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/posts/</loc>
+    <lastmod>2024-08-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/posts/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/tags/powershell/</loc>
+    <lastmod>2024-08-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/powershell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/powershell/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/2024/08/21/powershell-calculated-properties/</loc>
+    <lastmod>2024-08-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/08/21/powershell-calculated-properties/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/08/21/powershell-calculated-properties/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/tags/</loc>
+    <lastmod>2024-08-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/"
+                />
+  </url><url>
     <loc>https://diecknet.de/en/tags/Active-Directory/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -15,60 +80,8 @@
                 href="https://diecknet.de/en/tags/Active-Directory/"
                 />
   </url><url>
-    <loc>https://diecknet.de/en/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/en/posts/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/posts/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/en/tags/powershell/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/powershell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/powershell/"
-                />
-  </url><url>
     <loc>https://diecknet.de/en/2024/08/07/powershell-active-directory-computers-filtering/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://diecknet.de/en/tags/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/"
-                />
   </url><url>
     <loc>https://diecknet.de/en/tags/11ty/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>

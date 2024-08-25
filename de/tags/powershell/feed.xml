@@ -15,7 +15,7 @@
       <guid>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</guid>
       <description>Wenn ihr per PowerShell Daten exportiert (zum Beispiel in eine CSV-Datei per Export-CSV), dann werden die originalen Eigenschaftsnamen von den PowerShell Objekten verwendet. Wenn die aber nicht ganz passend für euren Zweck sind, dann könnt ihr sie auch anpassen. Dafür können sogenannte &amp;ldquo;Calculcated Properties&amp;rdquo; und das Cmdlet Select-Object verwendet werden.
 Damit können zum Beispiel:
-Eigenschaften umbenannt werden Eigenschaftswerte formatiert werden Komplett eigene Eigenschaften erzeugt werden (z.B. durch den Aufruf zusätzlicher Cmdlets) Objekte normal ausgeben Zur Erinnerung: Die Auswahl von Objekteigenschaften bei Select-Object ist mit dem Parameter -Property möglich.</description>
+Eigenschaften umbenannt werden Eigenschaftswerte formatiert werden Komplett eigene Eigenschaften erzeugt werden (z.B. durch den Aufruf zusätzlicher Cmdlets) Ich habe zu diesem Thema auch ein Video auf meinem YouTube Kanal veröffentlicht.</description>
     </item>
     
     <item>

@@ -43,6 +43,16 @@
   </url><url>
     <loc>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</loc>
     <lastmod>2024-08-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/08/21/powershell-calculated-properties/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/08/21/powershell-calculated-properties/"
+                />
   </url><url>
     <loc>https://diecknet.de/de/tags/</loc>
     <lastmod>2024-08-21T00:00:00+00:00</lastmod>

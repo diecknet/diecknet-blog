@@ -6,7 +6,18 @@
     <description>Recent content in Powershell on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Calculated Properties</title>
+      <link>https://diecknet.de/en/2024/08/21/powershell-calculated-properties/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2024/08/21/powershell-calculated-properties/</guid>
+      <description>If you export data via PowerShell (for example to a CSV file via Export-CSV), the original property names of the PowerShell objects are used. However, if these are not fully fitting for your purpose, you can also customize them. So-called &amp;ldquo;Calculated Properties&amp;rdquo; and the cmdlet Select-Object can be used for this.
+This can be used, for example, to
+Rename properties Format property values Create completely custom properties (e.g. by calling additional cmdlets) Output objects normally As a reminder: The selection of object properties with Select-Object is possible with the -Property parameter.</description>
+    </item>
+    
     <item>
       <title>PowerShell: Filter Active Directory Computers</title>
       <link>https://diecknet.de/en/2024/08/07/powershell-active-directory-computers-filtering/</link>
