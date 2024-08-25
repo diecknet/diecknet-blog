@@ -14,6 +14,8 @@ Damit können zum Beispiel:
 - Eigenschaftswerte formatiert werden
 - Komplett eigene Eigenschaften erzeugt werden (z.B. durch den Aufruf zusätzlicher Cmdlets)
 
+Ich habe zu diesem Thema auch [ein Video auf meinem YouTube Kanal veröffentlicht](https://www.youtube.com/watch?v=n7Vp6ESME5w).
+
 ## Objekte normal ausgeben
 
 Zur Erinnerung: Die Auswahl von Objekteigenschaften bei `Select-Object` ist mit dem Parameter `-Property` möglich. Wobei der Parameter in der Regel auch nicht explizit benannt werden muss.
