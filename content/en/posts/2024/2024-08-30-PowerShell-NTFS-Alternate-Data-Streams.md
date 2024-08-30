@@ -4,7 +4,6 @@ title: "PowerShell NTFS Alternate Data Streams"
 date: 2024-08-30
 comments: true
 tags: [powershell, ntfs]
-draft: true
 ---
 The NTFS file system is used by default in Windows. And normally a file has only one associated normal data stream with the name `:$DATA`. But there are also the so-called "Alternate Data Streams" (ADS), which can contain additional data. These ADS are not visible in the Windows Explorer or most other applications.
 
