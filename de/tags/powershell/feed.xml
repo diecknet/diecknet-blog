@@ -6,7 +6,18 @@
     <description>Recent content in Powershell on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell NTFS Alternate Data Streams</title>
+      <link>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</link>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
+      <description>Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerweise hat eine Datei nur einen dazugehörigen normalen Datenstrom (Data Stream) mit dem Namen :$DATA. Aber es gibt auch die sogenannten &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), die zusätzliche Daten enthalten können.
+Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.
+NTFS Alternate Data Stream auslesen Aus dem Internet heruntergeladene Dateien erhalten bei vielen Browsern unter Windows ein &amp;ldquo;Mark of the web&amp;rdquo; (MOTW) im Zone.</description>
+    </item>
+    
     <item>
       <title>PowerShell Calculated Properties</title>
       <link>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</link>

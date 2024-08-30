@@ -15,6 +15,19 @@
                 href="https://diecknet.de/en/"
                 />
   </url><url>
+    <loc>https://diecknet.de/en/tags/ntfs/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/ntfs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/ntfs/"
+                />
+  </url><url>
     <loc>https://diecknet.de/en/posts/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -29,7 +42,7 @@
                 />
   </url><url>
     <loc>https://diecknet.de/en/tags/powershell/</loc>
-    <lastmod>2024-08-21T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -39,6 +52,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://diecknet.de/en/tags/powershell/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/2024/08/30/powershell-ntfs-alternate-data-streams/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/08/30/powershell-ntfs-alternate-data-streams/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/tags/</loc>
+    <lastmod>2024-08-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/"
                 />
   </url><url>
     <loc>https://diecknet.de/en/2024/08/21/powershell-calculated-properties/</loc>
@@ -52,19 +91,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://diecknet.de/en/2024/08/21/powershell-calculated-properties/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/en/tags/</loc>
-    <lastmod>2024-08-21T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/"
                 />
   </url><url>
     <loc>https://diecknet.de/en/tags/Active-Directory/</loc>
@@ -660,19 +686,6 @@
   </url><url>
     <loc>https://diecknet.de/en/tags/fslogix/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://diecknet.de/en/tags/ntfs/</loc>
-    <lastmod>2020-05-20T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/ntfs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/ntfs/"
-                />
   </url><url>
     <loc>https://diecknet.de/en/tags/windowsvirtualdesktop/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
