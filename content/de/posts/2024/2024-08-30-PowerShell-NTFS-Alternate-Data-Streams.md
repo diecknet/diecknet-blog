@@ -9,6 +9,8 @@ Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerw
 
 Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.
 
+Ich habe zu dem Thema auch ein [YouTube Video erstellt](https://www.youtube.com/watch?v=r6LfYnekJkQ).
+
 ## NTFS Alternate Data Stream auslesen
 
 Aus dem Internet heruntergeladene Dateien erhalten bei vielen Browsern unter Windows ein "Mark of the web" (MOTW) im `Zone.Identifier` Stream. Dieser Stream enthält Infos zur Quelle der Datei - also z.B. dass sie aus dem Internet heruntergeladen wurde.
