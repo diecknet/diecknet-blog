@@ -15,6 +15,7 @@
       <guid>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
       <description>Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerweise hat eine Datei nur einen dazugehörigen normalen Datenstrom (Data Stream) mit dem Namen :$DATA. Aber es gibt auch die sogenannten &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), die zusätzliche Daten enthalten können.
 Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.
+Ich habe zu dem Thema auch ein YouTube Video erstellt.
 NTFS Alternate Data Stream auslesen Aus dem Internet heruntergeladene Dateien erhalten bei vielen Browsern unter Windows ein &amp;ldquo;Mark of the web&amp;rdquo; (MOTW) im Zone.</description>
     </item>
     
