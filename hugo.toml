@@ -57,10 +57,6 @@ TocOpen = true
   url = "https://ieji.de/@diecknet"
 
   [[params.socialIcons]]
-  name = "twitter"
-  url = "https://twitter.com/diecknet"
-
-  [[params.socialIcons]]
   name = "github"
   url = "https://github.com/diecknet/"
 
