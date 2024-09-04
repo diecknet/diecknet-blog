@@ -73,8 +73,8 @@ USA
 Pestalozzistraße 25<br />
 22306 Hamburg</p>
 
-<p>Telefon: +49 (0) 123 44 55 66<br />
-E-Mail: info@diecknet.de</p>
+<p>Telefon: +49 40 5247 1765<br />
+E-Mail: impressum@diecknet.de</p>
  <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o. &Auml;.) entscheidet.</p>
 
 <h3>Speicherdauer</h3>
