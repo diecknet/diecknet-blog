@@ -878,6 +878,18 @@
                 href="https://diecknet.de/de/privacy/"
                 />
   </url><url>
+    <loc>https://diecknet.de/de/services/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/services/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/services/"
+                />
+  </url><url>
     <loc>https://diecknet.de/de/legal/</loc>
     <xhtml:link
                 rel="alternate"
