@@ -71,14 +71,19 @@ url = "/"
 weight = 1
 
 [[menu.main]]
+name = "Services"
+url = "/services/"
+weight = 2
+
+[[menu.main]]
 name = "About"
 url = "/about/"
-weight = 2
+weight = 3
 
 [[menu.main]]
 name = "Tags"
 url = "/tags/"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "Archive"
