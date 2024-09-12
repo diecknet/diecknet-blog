@@ -6,7 +6,17 @@
     <description>Recent content in Posts on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Das Problem mit Array &#43;= in PowerShell</title>
+      <link>https://diecknet.de/de/2024/09/12/powershell-array-plus/</link>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/09/12/powershell-array-plus/</guid>
+      <description>Die PowerShell macht es leider recht einfach ineffizienten Code zu schreiben. Viele Leute benutzen zum Beispiel die += Schreibweise um ein Array zu befüllen. Nicht empfehlenswert!
+1 2 3 4 5 # So bitte nicht machen! $Array = @() for ($i = 0; $i -lt 10000; $i++) { $Array += $i } Mit Measure-Command können wir messen, wie lange die Ausführung eines Skriptblocks dauert. Bei mir hat die Ausführung des obigen Codes in einer Test-VM über 2 Sekunden benötigt.</description>
+    </item>
+    
     <item>
       <title>PowerShell NTFS Alternate Data Streams</title>
       <link>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</link>
