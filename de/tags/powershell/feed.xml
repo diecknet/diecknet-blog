@@ -6,7 +6,17 @@
     <description>Recent content in Powershell on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Thu, 12 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WMI in PowerShell verwenden</title>
+      <link>https://diecknet.de/de/2024/09/20/powershell-wmi/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/09/20/powershell-wmi/</guid>
+      <description>WMI ist eine mächtige Schnittstelle um Windows Systeme zu verwalten. Dadurch ist der Zugriff auf Dinge möglich, für die es vielleicht sonst gar keine eigenen PowerShell Cmdlets gibt. Teilweise können wir so mehr Infos abrufen, als die Standard-Cmdlets liefern. Das geht sowohl lokal, als auch remote.
+Deprecated: Die alten WMI Cmdlets Es gibt ein paar ältere Cmdlets, die allerdings für Neuentwicklungen nicht empfohlen werden. Aber vielleicht stoßt ihr in älteren Skripten mal darüber, also jetzt habt ihr schon mal davon gehört - die existieren zumindest.</description>
+    </item>
+    
     <item>
       <title>Das Problem mit Array &#43;= in PowerShell</title>
       <link>https://diecknet.de/de/2024/09/12/powershell-array-plus/</link>
