@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cyber Security on diecknet</title>
+    <link>https://diecknet.de/en/tags/cyber-security/</link>
+    <description>Recent content in Cyber Security on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/cyber-security/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TryHackMe Blueprint - Cyber Security Write-Up</title>
+      <link>https://diecknet.de/en/2024/09/24/tryhackme-blueprint/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2024/09/24/tryhackme-blueprint/</guid>
+      <description>I decided to try a bit more Penetration Testing/Ethical Hacking. The following is a Write-Up regarding the TryHackMe room &amp;ldquo;Blueprint&amp;rdquo;.
+Tasks The only info that we have is:
+Do you have what is takes to hack into this Windows Machine?
+And the questions:
+&amp;ldquo;Lab&amp;rdquo; user NTLM hash decrypted root.txt So we can assume it&amp;rsquo;s a Windows machine.
+Discovery I booted up my Kali linux machine and created a folder on my Desktop to use as a workspace.</description>
+    </item>
+    
+  </channel>
+</rss>
