@@ -6,7 +6,18 @@
     <description>Recent content on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Retrieve infos about Active Directory Based Activation via PowerShell</title>
+      <link>https://diecknet.de/en/2024/11/25/powershell-show-adba-infos/</link>
+      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2024/11/25/powershell-show-adba-infos/</guid>
+      <description>If you quickly want to retrieve infos about Active Directory Based Activation (ADBA) in your domain, you can use this PowerShell One-liner:
+1 Get-ADDomain | %{Get-ADObject -SearchBase &amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,$($_.DistinguishedName)&amp;#34; -LDAPFilter &amp;#34;(objectclass=msspp-activationobject)&amp;#34; -Properties * -ErrorAction SilentlyContinue | fl displayName,DistinguishedName,Name,msspp-csvlkpartialproductkey } I haven&amp;rsquo;t tested it in a multi-domain environment, but I think it should work.
+Explanation The code uses aliases, which are not great in scripts, but neat in One-Liners. It uses Get-ADDomain to determine the Distinguished Name for the Domain.</description>
+    </item>
+    
     <item>
       <title>TryHackMe Blueprint - Cyber Security Write-Up</title>
       <link>https://diecknet.de/en/2024/09/24/tryhackme-blueprint/</link>
