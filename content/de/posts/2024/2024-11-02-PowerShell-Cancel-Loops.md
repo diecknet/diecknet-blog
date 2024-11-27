@@ -143,7 +143,7 @@ $AlleOrdner = Get-ChildItem testdir\ -Directory
     $Dateien = Get-ChildItem $DieserOrdner.FullName -File
     :Datei foreach($DieseDatei in $Dateien) {
         if($DieseDatei.Length -ge 1KB) {
-            Write-Host "Die Datei $($DieseDatei.Name) ist größer oder gleich 1 KB - Überspringe Schleifendurchgang" -ForegroundColor Red
+            Write-Host "Die Datei $($DieseDatei.Name) ist größer oder gleich 1 KB - Breche Ordner-Schleife ab" -ForegroundColor Red
             break Ordner
         }
         Write-Host "Inhalt von $($DieseDatei.Name): $(Get-Content $DieseDatei.FullName)" -ForegroundColor Yellow
