@@ -17,7 +17,7 @@ More ore less quick note for myself - on how to run a PowerShell Script using Wi
 ## Open Task Scheduler
 
 A quick way to open Task Scheduler:
-<kbd>WIN</kbd> + <kbd>R</kbd>, then run `taskschd.msc`.
+`[WIN]` + `R`, then run `taskschd.msc`.
 
 ## Create New Task
 
