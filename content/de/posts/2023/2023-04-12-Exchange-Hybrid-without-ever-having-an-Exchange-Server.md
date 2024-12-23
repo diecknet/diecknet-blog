@@ -116,7 +116,6 @@ Get-RemoteMailbox
 - Um einfacher in die Exchange Recipient Verwaltung zu gelangen, könnt ihr euch eine Desktopverknüpfung anlegen, mit dem Ziel `powershell.exe -NoExit -Command "Add-Snapin *RecipientManagement"`. Am besten noch per Rechtsklick auf die Verknüpfung einstellen, dass der Befehl direkt in `C:\` (oder einem beliebigen anderem Ort) ausgeführt wird. Ansonsten wird es nämlich im PowerShell Programm-Ordner ausgeführt und belegt so viel sichtbaren Platz in der Shell 😛.
 ![Anpassung der Exchange EMT Verknüpfung, sodass sie in C:\ ausgeführt wird](/images/2023/2023-04-12-Exchange-Recipient-Management-Shortcut.jpg)
 
-<!-- markdown link references -->
 [cplusplus2012]: https://www.microsoft.com/download/details.aspx?id=30679  "Download: Visual C++ Redistributable for Visual Studio 2012"
 [net48]: https://go.microsoft.com/fwlink/?linkid=2088631  "Download .NET Framework 4.8"
 [ex2019download]: https://learn.microsoft.com/en-us/exchange/new-features/updates?view=exchserver-2019  "Download Exchange Server 2019 CUs"
