@@ -36,7 +36,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;Get MSExchWhenMailboxCreated attribute using Active Directory Users and Computers. Advanced features need to be enabled.&#34;  /&gt;
-&lt;/p&gt;</description>
+&lt;/p&gt;
+&lt;h2 id=&#34;msexchwhenmailboxcreated-contains-not-the-full-truth&#34;&gt;MSExchWhenMailboxCreated contains not the full truth&lt;/h2&gt;
+&lt;p&gt;That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the &lt;em&gt;FIRST&lt;/em&gt; time the user gets a mailbox. If that users mailbox was disabled and then recreated later, the timestamp of the first mailbox creation retains.&lt;/p&gt;</description>
     </item>
     
     <item>

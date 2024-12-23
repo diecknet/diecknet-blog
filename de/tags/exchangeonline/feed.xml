@@ -29,7 +29,9 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Administratorgenehmigung erforderlich&lt;/strong&gt;&lt;br&gt;
 Apple Internet Accounts&lt;br&gt;
-Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.&lt;/p&gt;</description>
+Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde anscheinend Anfang 2020 umbenannt. Die bisherige AppID ist allerdings gleich geblieben.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -16,10 +16,33 @@
       <description>&lt;p&gt;More ore less quick note for myself - on how to run a PowerShell Script using Windows Task Scheduler.&lt;/p&gt;
 &lt;h2 id=&#34;open-task-scheduler&#34;&gt;Open Task Scheduler&lt;/h2&gt;
 &lt;p&gt;A quick way to open Task Scheduler:
-&lt;!-- raw HTML omitted --&gt;WIN&lt;!-- raw HTML omitted --&gt; + &lt;!-- raw HTML omitted --&gt;R&lt;!-- raw HTML omitted --&gt;, then run &lt;code&gt;taskschd.msc&lt;/code&gt;.&lt;/p&gt;
+&lt;code&gt;[WIN]&lt;/code&gt; + &lt;code&gt;R&lt;/code&gt;, then run &lt;code&gt;taskschd.msc&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;create-new-task&#34;&gt;Create New Task&lt;/h2&gt;
 &lt;p&gt;Open &amp;ldquo;Task Scheduler Library&amp;rdquo; → &amp;ldquo;Create New Task&amp;rdquo;.
-Set all the self-explanatory options like Name, Description, User Account, Triggers, etc.&lt;/p&gt;</description>
+Set all the self-explanatory options like Name, Description, User Account, Triggers, etc.&lt;/p&gt;
+&lt;h2 id=&#34;set-action&#34;&gt;Set Action&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Setting&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Action&lt;/td&gt;
+          &lt;td&gt;Start a program&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Program/script&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;powershell.exe&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Add arguments (optional)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;-file &amp;quot;C:\Path\Script.ps1&amp;quot;&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
   </channel>

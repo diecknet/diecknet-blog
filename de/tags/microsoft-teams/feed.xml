@@ -14,7 +14,9 @@
       
       <guid>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</guid>
       <description>&lt;p&gt;Mit Microsoft Teams Audio Conferencing (Microsoft 365-Audiokonferenz) Lizenzen ist es möglich, Einwahlrufnummern für Teams Besprechungen zu verwenden. Die Lizenz wird für jeden Benutzer benötigt, der zu Teams Meetings mit Einwahlrufnummer einladen soll.&lt;/p&gt;
-&lt;p&gt;Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - &lt;strong&gt;einmalig wenn der Benutzer für Audiokonferenz aktiviert wird&lt;/strong&gt;. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.&lt;/p&gt;</description>
+&lt;p&gt;Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - &lt;strong&gt;einmalig wenn der Benutzer für Audiokonferenz aktiviert wird&lt;/strong&gt;. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.&lt;/p&gt;
+&lt;h2 id=&#34;teams-admin-center-verwenden-um-die-einwahlrufnummer-für-einzelne-benutzer-zu-ändern&#34;&gt;Teams Admin Center verwenden um die Einwahlrufnummer für einzelne Benutzer zu ändern&lt;/h2&gt;
+&lt;p&gt;Users ➔ Manage Users ➔ Auf einen Benutzer klicken ➔ Auf &amp;ldquo;Edit&amp;rdquo; klicken (neben &amp;ldquo;Audio Conferencing&amp;rdquo;) ➔ Auswählen der &amp;ldquo;Toll number&amp;rdquo; entsprechend des Benutzerstandorts.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,7 +29,9 @@
 &lt;h2 id=&#34;antwort&#34;&gt;Antwort&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Gelöschte Teams Kanäle werden für 30 Tage aufbewahrt.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;offizielle-quelle&#34;&gt;Offizielle Quelle&lt;/h2&gt;
-&lt;p&gt;Im englischsprachigen Original &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; wird unterhalb der Tabelle &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;Fußnote 4&lt;/strong&gt; festgehalten:&lt;/p&gt;</description>
+&lt;p&gt;Im englischsprachigen Original &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; wird unterhalb der Tabelle &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;Fußnote 4&lt;/strong&gt; festgehalten:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Deleted channels can be restored within 30 days. During these 30 days, a deleted channel continues to be counted towards the 200 channel or 30 private channel per team limit. After 30 days, a deleted channel and its content are permanently deleted and the channel no longer counts towards the per team limit.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

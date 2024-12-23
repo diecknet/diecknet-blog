@@ -34,7 +34,9 @@
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;while&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Variable&lt;/span&gt; -le &lt;span style=&#34;color:#d0bf69&#34;&gt;10&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6c7986&#34;&gt;# irgendwas&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Es ist aber auch möglich gezielt eine komplette Schleife vorzeitig abzubrechen oder einen einzelnen Schleifendurchgang abzubrechen. Und zwar auch, wenn ihr mehrere Schleifen ineinander verschachtelt habt.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,7 +71,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt; = &lt;span style=&#34;color:#d0bf69&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt; -lt &lt;span style=&#34;color:#d0bf69&#34;&gt;10000&lt;/span&gt;; &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt;++) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex; background-color:#353539&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$Array&lt;/span&gt; += &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Mit &lt;code&gt;Measure-Command&lt;/code&gt; können wir messen, wie lange die Ausführung eines Skriptblocks dauert. Bei mir hat die Ausführung des obigen Codes in einer Test-VM über 2 Sekunden benötigt.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,7 +84,10 @@
       <guid>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
       <description>&lt;p&gt;Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerweise hat eine Datei nur einen dazugehörigen normalen Datenstrom (Data Stream) mit dem Namen &lt;code&gt;:$DATA&lt;/code&gt;. Aber es gibt auch die sogenannten &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), die zusätzliche Daten enthalten können.&lt;/p&gt;
 &lt;p&gt;Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.&lt;/p&gt;
-&lt;p&gt;Ich habe zu dem Thema auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=r6LfYnekJkQ&#34; target=&#34;_blank&#34; &gt;YouTube Video erstellt&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;Ich habe zu dem Thema auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=r6LfYnekJkQ&#34; target=&#34;_blank&#34; &gt;YouTube Video erstellt&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ntfs-alternate-data-stream-auslesen&#34;&gt;NTFS Alternate Data Stream auslesen&lt;/h2&gt;
+&lt;p&gt;Aus dem Internet heruntergeladene Dateien erhalten bei vielen Browsern unter Windows ein &amp;ldquo;Mark of the web&amp;rdquo; (MOTW) im &lt;code&gt;Zone.Identifier&lt;/code&gt; Stream. Dieser Stream enthält Infos zur Quelle der Datei - also z.B. dass sie aus dem Internet heruntergeladen wurde.
+Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/code&gt; mit dem Parameter &lt;code&gt;-Stream&lt;/code&gt; und der Angabe des Streamnamens verwendet werden. Alternativ kann an den Dateinamen &lt;code&gt;:&amp;lt;Name des Streams&amp;gt;&lt;/code&gt; angehängt werden.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -138,7 +145,18 @@ Das kann nützlich sein, wenn ihr z.B. mit einem PowerShell Skript mehrere Datei
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;span style=&#34;background-color:#353539&#34;&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$CSVFile&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Import-Csv&lt;/span&gt; .\NeueUser.csv
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$CSVFile&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$Manager&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Filter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;mail -eq &amp;#39;&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Manager)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex; background-color:#353539&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#d0a8ff&#34;&gt;New-ADUser&lt;/span&gt; -Name &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Vorname)&lt;span style=&#34;color:#fc6a5d&#34;&gt; &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Nachname)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -Surname &lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Nachname -GivenName &lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Vorname -UserPrincipalName &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Vorname)&lt;span style=&#34;color:#fc6a5d&#34;&gt;.&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Nachname)&lt;span style=&#34;color:#fc6a5d&#34;&gt;@demotenant.de&amp;#34;&lt;/span&gt; -Department &lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Abteilung -Company &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Demotenant&amp;#34;&lt;/span&gt; -Path &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;OU=User,OU=Demotenant,DC=lan,DC=demotenant,DC=de&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Es würde die Lesbarkeit erhöhen, wenn wir den Befehl auf mehrere Zeilen aufteilen können.
+Deshalb zeige ich euch in diesem Artikel zwei Möglichkeiten um eure PowerShell Befehle auf mehrere Zeilen aufzuteilen.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -157,7 +175,16 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$null -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$null -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Hat übrigens nichts mit der Zahl 0 zu tun // also das ergibt auch False&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$null -eq &lt;span style=&#34;color:#d0bf69&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=EXoHcYNHSm8&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -166,7 +193,9 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/04/23/powershell-remote-script-development/</guid>
-      <description>&lt;p&gt;Es ist möglich PowerShell Skripte remote zu entwickeln. Also das Skript wird auf einem remote Computer gespeichert und ausgeführt, aber die Eingabe erfolgt im lokalen Editor-Tool. Das geht sowohl mit der klassischen Windows PowerShell ISE, als auch mit Visual Studio Code. In VSCode könnt ihr sowohl mit remote Windows PowerShell, als auch remote PowerShell 7 Systemen arbeiten. &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=T009J35wJQE&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Es ist möglich PowerShell Skripte remote zu entwickeln. Also das Skript wird auf einem remote Computer gespeichert und ausgeführt, aber die Eingabe erfolgt im lokalen Editor-Tool. Das geht sowohl mit der klassischen Windows PowerShell ISE, als auch mit Visual Studio Code. In VSCode könnt ihr sowohl mit remote Windows PowerShell, als auch remote PowerShell 7 Systemen arbeiten. &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=T009J35wJQE&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;windows-powershell-ise&#34;&gt;Windows PowerShell ISE&lt;/h2&gt;
+&lt;p&gt;Die Windows PowerShell ISE unterstützt nur remote Windows Systeme mit Windows PowerShell. Um remote ein Skript zu entwickeln, könnt ihr über das Menü &amp;ldquo;Datei&amp;rdquo; ➡️ &amp;ldquo;Neue Remote-PowerShell-Registerkarte&amp;rdquo; eine Session starten.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -181,7 +210,13 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;New-NetFirewallRule&lt;/span&gt; -DisplayName &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Ausgehende Verbindungen zu Port 443 blockieren&amp;#34;&lt;/span&gt; -Direction Outbound -RemotePort &lt;span style=&#34;color:#d0bf69&#34;&gt;443&lt;/span&gt; -Protocol TCP -Action Block
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-04-09_PowerShell_new-netfirewallrule_example.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-04-09_PowerShell_new-netfirewallrule_example.jpg&#34; alt=&#34;Beispiel für eine exzessive Rückgabe von Informationen durch ein PowerShell Cmdlet: Der Aufruf von New-NetFirewallRule&#34;  title=&#34;Beispiel für eine exzessive Rückgabe von Informationen durch ein PowerShell Cmdlet: Der Aufruf von New-NetFirewallRule&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -227,7 +262,8 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Oder ihr könnt einstellen, dass beim Start so ein Splash-Screen angezeigt (winfetch) wird:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; alt=&#34;Beispiel für Winfetch Infobildschirm&#34;  title=&#34;Beispiel für Winfetch Infobildschirm&#34;  /&gt;
-&lt;/a&gt;&lt;/p&gt;</description>
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oder ihr könnt auch eigene Funktionen und Variablen hinterlegen, sodass diese immer sofort verfügbar sind, wenn ihr die PowerShell startet.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -243,7 +279,14 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Env:username&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Dadurch wird der Username des aktuell angemeldeten Users ausgegeben.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-02-28_PowerShell_ENV_1.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-02-28_PowerShell_ENV_1.jpg&#34; alt=&#34;Beispiel Ausgabe von $Env:username in der PowerShell - der aktuelle Username wird angezeigt&#34;  title=&#34;Beispiel Ausgabe von $Env:username in der PowerShell - der aktuelle Username wird angezeigt&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -258,7 +301,12 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;Requires&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;-RunAsAdministrator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Diese Zeile kann an eine beliebigen Stelle im PowerShell Code eingefügt werden. Ich würde es immer relativ am Anfang des Skriptes einbauen, damit es gut sichtbar ist. Aber die Position spielt technisch gesehen keine Rolle. Also wenn die &lt;code&gt;#Requires&lt;/code&gt; Anweisung im Code drin steht, wird das vor der richtigen Ausführung des gesamten restlichen Codes ausgewertet. Und je nachdem ob Adminrechte vorhanden sind, oder nicht - wird ein Fehler ausgegeben.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -353,7 +401,9 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
       
       <guid>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</guid>
       <description>&lt;p&gt;Mit Microsoft Teams Audio Conferencing (Microsoft 365-Audiokonferenz) Lizenzen ist es möglich, Einwahlrufnummern für Teams Besprechungen zu verwenden. Die Lizenz wird für jeden Benutzer benötigt, der zu Teams Meetings mit Einwahlrufnummer einladen soll.&lt;/p&gt;
-&lt;p&gt;Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - &lt;strong&gt;einmalig wenn der Benutzer für Audiokonferenz aktiviert wird&lt;/strong&gt;. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.&lt;/p&gt;</description>
+&lt;p&gt;Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - &lt;strong&gt;einmalig wenn der Benutzer für Audiokonferenz aktiviert wird&lt;/strong&gt;. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.&lt;/p&gt;
+&lt;h2 id=&#34;teams-admin-center-verwenden-um-die-einwahlrufnummer-für-einzelne-benutzer-zu-ändern&#34;&gt;Teams Admin Center verwenden um die Einwahlrufnummer für einzelne Benutzer zu ändern&lt;/h2&gt;
+&lt;p&gt;Users ➔ Manage Users ➔ Auf einen Benutzer klicken ➔ Auf &amp;ldquo;Edit&amp;rdquo; klicken (neben &amp;ldquo;Audio Conferencing&amp;rdquo;) ➔ Auswählen der &amp;ldquo;Toll number&amp;rdquo; entsprechend des Benutzerstandorts.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -366,7 +416,9 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
 &lt;h2 id=&#34;antwort&#34;&gt;Antwort&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Gelöschte Teams Kanäle werden für 30 Tage aufbewahrt.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;offizielle-quelle&#34;&gt;Offizielle Quelle&lt;/h2&gt;
-&lt;p&gt;Im englischsprachigen Original &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; wird unterhalb der Tabelle &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;Fußnote 4&lt;/strong&gt; festgehalten:&lt;/p&gt;</description>
+&lt;p&gt;Im englischsprachigen Original &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; wird unterhalb der Tabelle &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;Fußnote 4&lt;/strong&gt; festgehalten:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Deleted channels can be restored within 30 days. During these 30 days, a deleted channel continues to be counted towards the 200 channel or 30 private channel per team limit. After 30 days, a deleted channel and its content are permanently deleted and the channel no longer counts towards the per team limit.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -416,7 +468,17 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; beispiel.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-09-08_DateAttributes.png&#34; alt=&#34;Dateidatums-Attribute anzeigen&#34;  title=&#34;Dateidatums-Attribute anzeigen&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Interessant sind hier die Attribute:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CreationTime (Wann die Datei erstellt wurde)&lt;/li&gt;
+&lt;li&gt;LastAccessTime (Wann das letzte Mal auf die Datei zugegriffen wurde)&lt;/li&gt;
+&lt;li&gt;LastWriteTime (Wann die Datei zuletzt geändert wurde)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wie hinten am &lt;code&gt;{get;set;}&lt;/code&gt; zu erkennen ist, kann man die Attribute auch nicht nur auslesen, sondern auch setzen.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -454,6 +516,9 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <guid>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</guid>
       <description>&lt;p&gt;Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;YouTube Video&lt;/a&gt; erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  title=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;azure-ad-connect-entscheidungsbaum&#34;&gt;Azure AD Connect Entscheidungsbaum&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://data.diecknet.de/dl/2020-06-05/Azure_AD_Connect_Entscheidungsbaum.zip&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-05_Azure_AD_Connect_Entscheidungsbaum.jpg&#34; alt=&#34;Azure AD Connect Entscheidungsbaum (kostenloser Download)&#34;  title=&#34;Azure AD Connect Entscheidungsbaum (kostenloser Download)&#34;  /&gt;
 &lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -467,7 +532,9 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Administratorgenehmigung erforderlich&lt;/strong&gt;&lt;br&gt;
 Apple Internet Accounts&lt;br&gt;
-Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.&lt;/p&gt;</description>
+Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde anscheinend Anfang 2020 umbenannt. Die bisherige AppID ist allerdings gleich geblieben.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -499,7 +566,9 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;MSExchWhenMailboxCreated Attribut per Active Directory-Benutzer und Computer anzeigen. Erweiterte Features müssen aktiviert sein.&#34;  /&gt;
-&lt;/p&gt;</description>
+&lt;/p&gt;
+&lt;h2 id=&#34;msexchwhenmailboxcreated-enthält-nicht-die-ganze-wahrheit&#34;&gt;MSExchWhenMailboxCreated enthält nicht die ganze Wahrheit&lt;/h2&gt;
+&lt;p&gt;Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was du vielleicht denkst. Das Attribut wird nur propagiert wenn der Benutzer &lt;em&gt;DAS ERSTE MAL&lt;/em&gt; ein Postfach erhält. Wenn das Postfach zwischenzeitlich deaktiviert und dann später neuerstellt wurde, bleibt trotzdem der Zeitstempel der ersten Postfacherstellung.&lt;/p&gt;</description>
     </item>
     
     <item>

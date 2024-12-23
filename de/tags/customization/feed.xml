@@ -18,7 +18,8 @@
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Oder ihr könnt einstellen, dass beim Start so ein Splash-Screen angezeigt (winfetch) wird:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; alt=&#34;Beispiel für Winfetch Infobildschirm&#34;  title=&#34;Beispiel für Winfetch Infobildschirm&#34;  /&gt;
-&lt;/a&gt;&lt;/p&gt;</description>
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oder ihr könnt auch eigene Funktionen und Variablen hinterlegen, sodass diese immer sofort verfügbar sind, wenn ihr die PowerShell startet.&lt;/p&gt;</description>
     </item>
     
   </channel>

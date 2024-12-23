@@ -21,7 +21,17 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; beispiel.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-09-08_DateAttributes.png&#34; alt=&#34;Dateidatums-Attribute anzeigen&#34;  title=&#34;Dateidatums-Attribute anzeigen&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Interessant sind hier die Attribute:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CreationTime (Wann die Datei erstellt wurde)&lt;/li&gt;
+&lt;li&gt;LastAccessTime (Wann das letzte Mal auf die Datei zugegriffen wurde)&lt;/li&gt;
+&lt;li&gt;LastWriteTime (Wann die Datei zuletzt geändert wurde)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wie hinten am &lt;code&gt;{get;set;}&lt;/code&gt; zu erkennen ist, kann man die Attribute auch nicht nur auslesen, sondern auch setzen.&lt;/p&gt;</description>
     </item>
     
   </channel>

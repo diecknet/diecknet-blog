@@ -27,7 +27,9 @@
 &lt;h2 id=&#34;answer&#34;&gt;Answer&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Deleted Microsoft Teams Channels are retained for 30 days.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;official-source&#34;&gt;Official Source&lt;/h2&gt;
-&lt;p&gt;In &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; under the table &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;footnote 4&lt;/strong&gt; it&amp;rsquo;s stated:&lt;/p&gt;</description>
+&lt;p&gt;In &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; under the table &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;footnote 4&lt;/strong&gt; it&amp;rsquo;s stated:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Deleted channels can be restored within 30 days. During these 30 days, a deleted channel continues to be counted towards the 200 channel or 30 private channel per team limit. After 30 days, a deleted channel and its content are permanently deleted and the channel no longer counts towards the per team limit.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

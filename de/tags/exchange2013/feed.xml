@@ -36,7 +36,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;MSExchWhenMailboxCreated Attribut per Active Directory-Benutzer und Computer anzeigen. Erweiterte Features müssen aktiviert sein.&#34;  /&gt;
-&lt;/p&gt;</description>
+&lt;/p&gt;
+&lt;h2 id=&#34;msexchwhenmailboxcreated-enthält-nicht-die-ganze-wahrheit&#34;&gt;MSExchWhenMailboxCreated enthält nicht die ganze Wahrheit&lt;/h2&gt;
+&lt;p&gt;Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was du vielleicht denkst. Das Attribut wird nur propagiert wenn der Benutzer &lt;em&gt;DAS ERSTE MAL&lt;/em&gt; ein Postfach erhält. Wenn das Postfach zwischenzeitlich deaktiviert und dann später neuerstellt wurde, bleibt trotzdem der Zeitstempel der ersten Postfacherstellung.&lt;/p&gt;</description>
     </item>
     
     <item>

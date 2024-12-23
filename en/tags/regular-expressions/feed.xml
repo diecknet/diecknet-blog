@@ -22,7 +22,17 @@
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; = &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; -match &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;ID(?&amp;lt;id&amp;gt;\d+)_(?&amp;lt;actualFilename&amp;gt;.+)\.lnk$&amp;#39;&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#d0a8ff&#34;&gt;Write-Output&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID: &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Matches&lt;/span&gt;.id)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#d0a8ff&#34;&gt;Write-Output&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Actual Filename: &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Matches&lt;/span&gt;.actualFilename)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;(?&amp;lt;id&amp;gt;\d+)&lt;/code&gt; is a named regex capture group (initialized by &lt;code&gt;?&amp;lt;groupname&amp;gt;&lt;/code&gt;). The group matches any numeric character (&lt;code&gt;\d&lt;/code&gt;). The &lt;code&gt;+&lt;/code&gt; afterwards is a multiplier, so we match against any amount of numeric characters.
+Since the Regular Expression matches successfully, the result is $true and we invoke the &lt;code&gt;if&lt;/code&gt; section.&lt;/p&gt;</description>
     </item>
     
   </channel>

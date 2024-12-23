@@ -20,7 +20,14 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Env:username&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Dadurch wird der Username des aktuell angemeldeten Users ausgegeben.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-02-28_PowerShell_ENV_1.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-02-28_PowerShell_ENV_1.jpg&#34; alt=&#34;Beispiel Ausgabe von $Env:username in der PowerShell - der aktuelle Username wird angezeigt&#34;  title=&#34;Beispiel Ausgabe von $Env:username in der PowerShell - der aktuelle Username wird angezeigt&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,7 +42,12 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;Requires&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;-RunAsAdministrator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Diese Zeile kann an eine beliebigen Stelle im PowerShell Code eingefügt werden. Ich würde es immer relativ am Anfang des Skriptes einbauen, damit es gut sichtbar ist. Aber die Position spielt technisch gesehen keine Rolle. Also wenn die &lt;code&gt;#Requires&lt;/code&gt; Anweisung im Code drin steht, wird das vor der richtigen Ausführung des gesamten restlichen Codes ausgewertet. Und je nachdem ob Adminrechte vorhanden sind, oder nicht - wird ein Fehler ausgegeben.&lt;/p&gt;</description>
     </item>
     
     <item>

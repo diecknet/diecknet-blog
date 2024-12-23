@@ -26,7 +26,9 @@
 &lt;li&gt;root.txt&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;So we can assume it&amp;rsquo;s a Windows machine.&lt;/p&gt;</description>
+&lt;p&gt;So we can assume it&amp;rsquo;s a Windows machine.&lt;/p&gt;
+&lt;h2 id=&#34;discovery&#34;&gt;Discovery&lt;/h2&gt;
+&lt;p&gt;I booted up my Kali linux machine and created a folder on my Desktop to use as a workspace.&lt;/p&gt;</description>
     </item>
     
   </channel>

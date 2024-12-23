@@ -20,7 +20,12 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;I haven&amp;rsquo;t tested it in a multi-domain environment, but I think it should work.&lt;/p&gt;
+&lt;h2 id=&#34;explanation&#34;&gt;Explanation&lt;/h2&gt;
+&lt;p&gt;The code uses aliases, which are not great in scripts, but neat in One-Liners.
+It uses &lt;code&gt;Get-ADDomain&lt;/code&gt; to determine the Distinguished Name for the Domain. This should make the code portable.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,7 +47,9 @@
 &lt;li&gt;root.txt&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;So we can assume it&amp;rsquo;s a Windows machine.&lt;/p&gt;</description>
+&lt;p&gt;So we can assume it&amp;rsquo;s a Windows machine.&lt;/p&gt;
+&lt;h2 id=&#34;discovery&#34;&gt;Discovery&lt;/h2&gt;
+&lt;p&gt;I booted up my Kali linux machine and created a folder on my Desktop to use as a workspace.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -162,7 +169,25 @@ I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exch
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;shell_command:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ntfy: &amp;gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        curl
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        -X POST
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --url &amp;#39;https://ntfy.sh/{{ topic }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --data &amp;#39;{{ message }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Title: {{ title }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Tags: {{ tags }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Priority: {{ priority }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Delay: {{ delay }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Actions: {{ actions }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Click: {{ click }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Icon: {{ icon }}&amp;#39;&lt;/span&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;To send send a notification, I use this YAML action in an Automation. It&amp;rsquo;s not necessary to provide all parameters. I ran with these four. As far as I know: Theoretically only &lt;code&gt;topic&lt;/code&gt; is required by ntfy. But this simple &lt;code&gt;shell_command&lt;/code&gt; action does not check if you set a topic.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -212,7 +237,13 @@ It was just a test environment, but I thought it would be useful or interesting 
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch --merged
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;exclude-current-branch-and-main-branch&#34;&gt;Exclude current branch and &amp;ldquo;main&amp;rdquo; branch&lt;/h2&gt;
+&lt;p&gt;Then we &lt;code&gt;|&lt;/code&gt;-pipe it into the following, to exclude the currently selected branch (marked with an asterisk &lt;code&gt;*&lt;/code&gt;) and the &lt;code&gt;main&lt;/code&gt; branch. This regex filter query does not aim to be universally good. So if you have branches that include the term &lt;code&gt;main&lt;/code&gt; in their name, those will be excluded aswell. I didn&amp;rsquo;t care to optimize, because I don&amp;rsquo;t name my branches in such a weird way.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -301,7 +332,17 @@ It was just a test environment, but I thought it would be useful or interesting 
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; = &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; -match &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;ID(?&amp;lt;id&amp;gt;\d+)_(?&amp;lt;actualFilename&amp;gt;.+)\.lnk$&amp;#39;&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#d0a8ff&#34;&gt;Write-Output&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID: &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Matches&lt;/span&gt;.id)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#d0a8ff&#34;&gt;Write-Output&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Actual Filename: &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Matches&lt;/span&gt;.actualFilename)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;(?&amp;lt;id&amp;gt;\d+)&lt;/code&gt; is a named regex capture group (initialized by &lt;code&gt;?&amp;lt;groupname&amp;gt;&lt;/code&gt;). The group matches any numeric character (&lt;code&gt;\d&lt;/code&gt;). The &lt;code&gt;+&lt;/code&gt; afterwards is a multiplier, so we match against any amount of numeric characters.
+Since the Regular Expression matches successfully, the result is $true and we invoke the &lt;code&gt;if&lt;/code&gt; section.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -313,10 +354,33 @@ It was just a test environment, but I thought it would be useful or interesting 
       <description>&lt;p&gt;More ore less quick note for myself - on how to run a PowerShell Script using Windows Task Scheduler.&lt;/p&gt;
 &lt;h2 id=&#34;open-task-scheduler&#34;&gt;Open Task Scheduler&lt;/h2&gt;
 &lt;p&gt;A quick way to open Task Scheduler:
-&lt;!-- raw HTML omitted --&gt;WIN&lt;!-- raw HTML omitted --&gt; + &lt;!-- raw HTML omitted --&gt;R&lt;!-- raw HTML omitted --&gt;, then run &lt;code&gt;taskschd.msc&lt;/code&gt;.&lt;/p&gt;
+&lt;code&gt;[WIN]&lt;/code&gt; + &lt;code&gt;R&lt;/code&gt;, then run &lt;code&gt;taskschd.msc&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;create-new-task&#34;&gt;Create New Task&lt;/h2&gt;
 &lt;p&gt;Open &amp;ldquo;Task Scheduler Library&amp;rdquo; → &amp;ldquo;Create New Task&amp;rdquo;.
-Set all the self-explanatory options like Name, Description, User Account, Triggers, etc.&lt;/p&gt;</description>
+Set all the self-explanatory options like Name, Description, User Account, Triggers, etc.&lt;/p&gt;
+&lt;h2 id=&#34;set-action&#34;&gt;Set Action&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Setting&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Action&lt;/td&gt;
+          &lt;td&gt;Start a program&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Program/script&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;powershell.exe&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Add arguments (optional)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;-file &amp;quot;C:\Path\Script.ps1&amp;quot;&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
     <item>
@@ -363,7 +427,9 @@ Set all the self-explanatory options like Name, Description, User Account, Trigg
 &lt;h2 id=&#34;answer&#34;&gt;Answer&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Deleted Microsoft Teams Channels are retained for 30 days.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;official-source&#34;&gt;Official Source&lt;/h2&gt;
-&lt;p&gt;In &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; under the table &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;footnote 4&lt;/strong&gt; it&amp;rsquo;s stated:&lt;/p&gt;</description>
+&lt;p&gt;In &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; under the table &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;footnote 4&lt;/strong&gt; it&amp;rsquo;s stated:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Deleted channels can be restored within 30 days. During these 30 days, a deleted channel continues to be counted towards the 200 channel or 30 private channel per team limit. After 30 days, a deleted channel and its content are permanently deleted and the channel no longer counts towards the per team limit.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -407,26 +473,26 @@ A list of links to the trial licenes is further below in this article.&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;User Account&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Folder&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Permissions&lt;/th&gt;
+          &lt;th&gt;User Account&lt;/th&gt;
+          &lt;th&gt;Folder&lt;/th&gt;
+          &lt;th&gt;Permissions&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Users&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;This Folder Only&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Modify&lt;/td&gt;
+          &lt;td&gt;Users&lt;/td&gt;
+          &lt;td&gt;This Folder Only&lt;/td&gt;
+          &lt;td&gt;Modify&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Creator / Owner&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Subfolders and Files Only&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Modify&lt;/td&gt;
+          &lt;td&gt;Creator / Owner&lt;/td&gt;
+          &lt;td&gt;Subfolders and Files Only&lt;/td&gt;
+          &lt;td&gt;Modify&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Administrator (optional)&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;This Folder, Subfolders, and Files&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Full Control&lt;/td&gt;
+          &lt;td&gt;Administrator (optional)&lt;/td&gt;
+          &lt;td&gt;This Folder, Subfolders, and Files&lt;/td&gt;
+          &lt;td&gt;Full Control&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -477,7 +543,9 @@ Apple Internet Accounts needs permission to access resources in your organizatio
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;Get MSExchWhenMailboxCreated attribute using Active Directory Users and Computers. Advanced features need to be enabled.&#34;  /&gt;
-&lt;/p&gt;</description>
+&lt;/p&gt;
+&lt;h2 id=&#34;msexchwhenmailboxcreated-contains-not-the-full-truth&#34;&gt;MSExchWhenMailboxCreated contains not the full truth&lt;/h2&gt;
+&lt;p&gt;That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the &lt;em&gt;FIRST&lt;/em&gt; time the user gets a mailbox. If that users mailbox was disabled and then recreated later, the timestamp of the first mailbox creation retains.&lt;/p&gt;</description>
     </item>
     
     <item>

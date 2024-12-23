@@ -15,7 +15,10 @@
       <guid>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
       <description>&lt;p&gt;Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerweise hat eine Datei nur einen dazugehörigen normalen Datenstrom (Data Stream) mit dem Namen &lt;code&gt;:$DATA&lt;/code&gt;. Aber es gibt auch die sogenannten &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), die zusätzliche Daten enthalten können.&lt;/p&gt;
 &lt;p&gt;Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.&lt;/p&gt;
-&lt;p&gt;Ich habe zu dem Thema auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=r6LfYnekJkQ&#34; target=&#34;_blank&#34; &gt;YouTube Video erstellt&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;Ich habe zu dem Thema auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=r6LfYnekJkQ&#34; target=&#34;_blank&#34; &gt;YouTube Video erstellt&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ntfs-alternate-data-stream-auslesen&#34;&gt;NTFS Alternate Data Stream auslesen&lt;/h2&gt;
+&lt;p&gt;Aus dem Internet heruntergeladene Dateien erhalten bei vielen Browsern unter Windows ein &amp;ldquo;Mark of the web&amp;rdquo; (MOTW) im &lt;code&gt;Zone.Identifier&lt;/code&gt; Stream. Dieser Stream enthält Infos zur Quelle der Datei - also z.B. dass sie aus dem Internet heruntergeladen wurde.
+Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/code&gt; mit dem Parameter &lt;code&gt;-Stream&lt;/code&gt; und der Angabe des Streamnamens verwendet werden. Alternativ kann an den Dateinamen &lt;code&gt;:&amp;lt;Name des Streams&amp;gt;&lt;/code&gt; angehängt werden.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,7 +35,17 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; beispiel.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-09-08_DateAttributes.png&#34; alt=&#34;Dateidatums-Attribute anzeigen&#34;  title=&#34;Dateidatums-Attribute anzeigen&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Interessant sind hier die Attribute:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CreationTime (Wann die Datei erstellt wurde)&lt;/li&gt;
+&lt;li&gt;LastAccessTime (Wann das letzte Mal auf die Datei zugegriffen wurde)&lt;/li&gt;
+&lt;li&gt;LastWriteTime (Wann die Datei zuletzt geändert wurde)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wie hinten am &lt;code&gt;{get;set;}&lt;/code&gt; zu erkennen ist, kann man die Attribute auch nicht nur auslesen, sondern auch setzen.&lt;/p&gt;</description>
     </item>
     
   </channel>

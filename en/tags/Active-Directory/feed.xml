@@ -20,7 +20,12 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;I haven&amp;rsquo;t tested it in a multi-domain environment, but I think it should work.&lt;/p&gt;
+&lt;h2 id=&#34;explanation&#34;&gt;Explanation&lt;/h2&gt;
+&lt;p&gt;The code uses aliases, which are not great in scripts, but neat in One-Liners.
+It uses &lt;code&gt;Get-ADDomain&lt;/code&gt; to determine the Distinguished Name for the Domain. This should make the code portable.&lt;/p&gt;</description>
     </item>
     
     <item>

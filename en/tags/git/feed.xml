@@ -19,7 +19,13 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch --merged
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;exclude-current-branch-and-main-branch&#34;&gt;Exclude current branch and &amp;ldquo;main&amp;rdquo; branch&lt;/h2&gt;
+&lt;p&gt;Then we &lt;code&gt;|&lt;/code&gt;-pipe it into the following, to exclude the currently selected branch (marked with an asterisk &lt;code&gt;*&lt;/code&gt;) and the &lt;code&gt;main&lt;/code&gt; branch. This regex filter query does not aim to be universally good. So if you have branches that include the term &lt;code&gt;main&lt;/code&gt; in their name, those will be excluded aswell. I didn&amp;rsquo;t care to optimize, because I don&amp;rsquo;t name my branches in such a weird way.&lt;/p&gt;</description>
     </item>
     
   </channel>
