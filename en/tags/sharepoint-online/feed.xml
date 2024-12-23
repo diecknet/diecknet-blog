@@ -13,9 +13,19 @@
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</guid>
-      <description>Normally when a user leaves the Company their OneDrive for Business site gets automatically delegated to their manager. That means the manager gets SharePoint Site Collection admin rights to the OneDrive site of their subordinate.
-Checking and Changing Access Delegation ⚠️ Access Delegation is enabled as default. The setting can be found and changed here:
-Go to More features in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.</description>
+      <description>&lt;p&gt;Normally when a user leaves the Company their OneDrive for Business site gets automatically delegated to their manager. That means the manager gets SharePoint Site Collection admin rights to the OneDrive site of their subordinate.&lt;/p&gt;
+&lt;h2 id=&#34;checking-and-changing-access-delegation&#34;&gt;Checking and Changing Access Delegation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ Access Delegation is enabled as default&lt;/strong&gt;. The setting can be found and changed here:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;More features&lt;/strong&gt; in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.
+[&amp;hellip;]&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;User profiles&lt;/strong&gt;, select &lt;strong&gt;Open&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;My Site Settings&lt;/strong&gt;, select &lt;strong&gt;Setup My Sites&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Next to &lt;strong&gt;My Site Cleanup&lt;/strong&gt;, make sure &lt;strong&gt;Enable access delegation&lt;/strong&gt; is selected.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Source: &lt;a href=&#34;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&#34; target=&#34;_blank&#34; &gt;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -24,8 +34,9 @@ Go to More features in the new SharePoint admin center, and sign in with an acco
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</guid>
-      <description>I&amp;rsquo;ve been looking for a way to retrieve the Timezone setting of a Sharepoint Online Site via PowerShell. Apparently there is not much good info publicly available. I looked for a way to use with the standard SPO PowerShell module named Microsoft.Online.SharePoint.PowerShell.
-There are some infos online about using the PNPOnline Module, but that was not practical in my case. There are even some really annoying articles out, that claim to to provide a PowerShell way.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been looking for a way to retrieve the Timezone setting of a Sharepoint Online Site via PowerShell. Apparently there is not much good info publicly available. I looked for a way to use with the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps&#34; target=&#34;_blank&#34; &gt;standard SPO PowerShell module&lt;/a&gt; named Microsoft.Online.SharePoint.PowerShell.&lt;/p&gt;
+&lt;p&gt;There are some infos online about using the PNPOnline Module, but that was not practical in my case. There are even some really annoying articles out, that claim to to provide a PowerShell way. But instead of retrieving the actual Timezone setting of a SPO site, they retrieve all available Timezones and then overwrite the current timezone with a valid one. Worst thing: They import Sharepoint .dll files, use plaintext authentication and use Client Context Object/CSOM (Microsoft.SharePoint.Client.ClientContext).
+😵 Oof.&lt;/p&gt;</description>
     </item>
     
   </channel>

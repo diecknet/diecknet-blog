@@ -13,8 +13,8 @@
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/03/19/powershell-regex/</guid>
-      <description>Regular Expressions sind Muster mit denen Texte verglichen werden können oder auch Infos aus Texten extrahiert werden können. Zum Beispiel könnt ihr damit überprüfen, ob eine Logdatei von einem Programm die Zeichenfolge &amp;ldquo;Error&amp;rdquo; enthält (also um zu prüfen, ob ein Fehler aufgetreten ist). Oder um einfach nur zu schauen, ob eine Zeichenkette einem bestimmten Muster entspricht, zum Beispiel einer E-Mail Adresse.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+      <description>&lt;p&gt;Regular Expressions sind Muster mit denen Texte verglichen werden können oder auch Infos aus Texten extrahiert werden können. Zum Beispiel könnt ihr damit überprüfen, ob eine Logdatei von einem Programm die Zeichenfolge &amp;ldquo;Error&amp;rdquo; enthält (also um zu prüfen, ob ein Fehler aufgetreten ist). Oder um einfach nur zu schauen, ob eine Zeichenkette einem bestimmten Muster entspricht, zum Beispiel einer E-Mail Adresse.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/Zk6iHL1T94k&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

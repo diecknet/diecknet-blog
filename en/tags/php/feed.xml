@@ -13,8 +13,9 @@
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/10/27/My-simple-serverless-journey-part2/</guid>
-      <description>After creating SimpleIP.de as a serverless application (see my blog post My simple serverless journey was not that easy) I was kinda proud. Interesting technology, small and useful website. Nice.
-Reality But after a while reality kicked in. I was playing around with some IPv6 systems, when it hit me. With the previous design, the site would show only the primary IP-Address of the client. If the client supports both IPv6 and IPv4, it would still only show one IP-Address.</description>
+      <description>&lt;p&gt;After creating &lt;a href=&#34;https://simpleip.de&#34; target=&#34;_blank&#34; &gt;SimpleIP.de&lt;/a&gt; as a serverless application (see my blog post &lt;a href=&#34;https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/&#34; &gt;My simple serverless journey was not that easy&lt;/a&gt;) I was kinda proud. Interesting technology, small and useful website. Nice.&lt;/p&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;But after a while reality kicked in. I was playing around with some IPv6 systems, when it hit me. With the previous design, the site would show only the &lt;em&gt;primary&lt;/em&gt; IP-Address of the client. If the client supports both IPv6 &lt;strong&gt;and&lt;/strong&gt; IPv4, it would still only show one IP-Address.&lt;/p&gt;</description>
     </item>
     
   </channel>

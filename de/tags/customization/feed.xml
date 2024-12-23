@@ -13,11 +13,12 @@
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/03/05/powershell-profiles/</guid>
-      <description>Mit PowerShell Profilen könnt ihr eure PowerShell anpassen. Also zum Beispiel, dass sie so aussieht:
-Oder ihr könnt einstellen, dass beim Start so ein Splash-Screen angezeigt (winfetch) wird:
-Oder ihr könnt auch eigene Funktionen und Variablen hinterlegen, sodass diese immer sofort verfügbar sind, wenn ihr die PowerShell startet.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Letztendlich ist ein PowerShell Profil einfach ein PowerShell Skript, was automatisch ausgeführt wird, wenn ihr die PowerShell startet.</description>
+      <description>&lt;p&gt;Mit PowerShell Profilen könnt ihr eure PowerShell anpassen. Also zum Beispiel, dass sie so aussieht:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; alt=&#34;PowerShell Konsole angepasst mit Oh My Posh und dem Theme Blue Owl&#34;  title=&#34;PowerShell Konsole angepasst mit Oh My Posh und dem Theme Blue Owl&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oder ihr könnt einstellen, dass beim Start so ein Splash-Screen angezeigt (winfetch) wird:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; alt=&#34;Beispiel für Winfetch Infobildschirm&#34;  title=&#34;Beispiel für Winfetch Infobildschirm&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

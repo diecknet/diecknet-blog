@@ -13,10 +13,10 @@
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</guid>
-      <description>PowerShell Language Modes are a way to restrict the functionality of PowerShell to increase the security of a system. Of course, this is only one small piece in a larger security strategy, so this alone is not sufficient protection for a system.
-At the same time, it&amp;rsquo;s also a double-edged sword:
-Advantage: we remove a powerful tool from potential attackers.
-Disadvantage: We as administrators can no longer use PowerShell properly on a system either.</description>
+      <description>&lt;p&gt;PowerShell Language Modes are a way to restrict the functionality of PowerShell to increase the security of a system. Of course, this is only one small piece in a larger security strategy, so this alone is not sufficient protection for a system.&lt;/p&gt;
+&lt;p&gt;At the same time, it&amp;rsquo;s also a double-edged sword:&lt;br&gt;
+Advantage: we remove a powerful tool from potential attackers.&lt;br&gt;
+Disadvantage: We as administrators can no longer use PowerShell properly on a system either.&lt;/p&gt;</description>
     </item>
     
   </channel>

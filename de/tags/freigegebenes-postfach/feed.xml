@@ -13,10 +13,13 @@
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
-      <description>In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:
-Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden.
-Verbindung mit dem Server herstellen, um diese anzuzeigen
-In persönlichen Postfächern wird stattdessen die Möglichkeit geboten, weitere Elemente vom Server abzurufen. Der Text dazu wurde stümperhaft automatisch übersetzt, was sich gut ins Gesamtbild fügt:</description>
+      <description>&lt;p&gt;In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden.&lt;/p&gt;
+&lt;p&gt;Verbindung mit dem Server herstellen, um diese anzuzeigen&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; alt=&#34;Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen&#34;  title=&#34;Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -13,8 +13,10 @@
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
-      <description>If you want to manage Exchange Online via Azure Automation, Managed Identities is what you should use (this statement was last checked in June 2024).
-Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I? You could still use App Registrations in Entra ID, but if you really just want to automate some Exchange settings via Azure Automation, it&amp;rsquo;s not really necessary.</description>
+      <description>&lt;p&gt;If you want to manage Exchange Online via Azure Automation, &lt;strong&gt;Managed Identities&lt;/strong&gt; is what you should use (this statement was last checked in June 2024).&lt;/p&gt;
+&lt;h2 id=&#34;legacy-approach&#34;&gt;Legacy approach&lt;/h2&gt;
+&lt;p&gt;In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be  discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I?
+You could still use App Registrations in Entra ID, but if you really just want to automate some Exchange settings via Azure Automation, it&amp;rsquo;s not really necessary.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,7 +25,8 @@ Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/06/10/Office-365-Trials/</guid>
-      <description>You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You&amp;rsquo;ll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services. A list of links to the trial licenes is further below in this article.</description>
+      <description>&lt;p&gt;You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You&amp;rsquo;ll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services.
+A list of links to the trial licenes is further below in this article.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,9 +35,13 @@ Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
-      <description>When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:
-Need admin approval Apple Internet Accounts Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
-By the way, the app used to be called &amp;ldquo;iOS Accounts&amp;rdquo; and was apparently renamed in early 2020.</description>
+      <description>&lt;p&gt;When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Need admin approval&lt;/strong&gt;
+Apple Internet Accounts
+Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;By the way, the app used to be called &amp;ldquo;iOS Accounts&amp;rdquo; and was apparently renamed in early 2020. However, the previous AppID has remained the same.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,9 +50,11 @@ By the way, the app used to be called &amp;ldquo;iOS Accounts&amp;rdquo; and was
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
-      <description>At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:
-HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.
-The link &amp;ldquo;more information&amp;rdquo; links to https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. If you lookup what OAuth is used for, this article comes up.</description>
+      <description>&lt;p&gt;At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The link &amp;ldquo;&lt;strong&gt;more information&lt;/strong&gt;&amp;rdquo; links to &lt;a href=&#34;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&#34; target=&#34;_blank&#34; &gt;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&lt;/a&gt;. If you lookup what OAuth is used for, &lt;a href=&#34;https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN&#34; target=&#34;_blank&#34; &gt;this article&lt;/a&gt; comes up. There you can read OAuth is needed for cross-premises eDiscovery searches. Since these functions were not relevant in the project, I ignored them for the time being. By the way, running HCW again did not set up OAuth properly in this case. But sometimes you can easily fix a issue like this by re-running HCW.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,11 +63,13 @@ The link &amp;ldquo;more information&amp;rdquo; links to https://support.microso
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
-      <description>Outlook Certificate Warning after Office 365 Migration
-Security Alert: svr1.example.com
-The security certificate has expired or is not valid yet
-I recently received a request from a customer who still received certificate warnings (expired certificate) for the old Exchange Server after migrating to Office 365. Since I was not involved in the migration, I had to get an overview first:
-The On-Premise Exchange Server 2010 was still online - of course, otherwise a certificate warning would hardly have appeared.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Outlook Certificate Warning after Office 365 Migration&lt;br&gt;
+Security Alert: svr1.example.com&lt;br&gt;
+The security certificate has expired or is not valid yet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I recently received a request from a customer who still received certificate warnings (expired certificate) for the old Exchange Server after migrating to Office 365. Since I was not involved in the migration, I had to get an overview first:&lt;br&gt;
+The On-Premise Exchange Server 2010 was still online - of course, otherwise a certificate warning would hardly have appeared. However, not all users received this message. This affected migrated users as well as users whose mailboxes were created directly in Office 365.&lt;/p&gt;</description>
     </item>
     
   </channel>

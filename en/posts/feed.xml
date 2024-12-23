@@ -13,9 +13,14 @@
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/11/25/powershell-show-adba-infos/</guid>
-      <description>If you quickly want to retrieve infos about Active Directory Based Activation (ADBA) in your domain, you can use this PowerShell One-liner:
-1 Get-ADDomain | %{Get-ADObject -SearchBase &amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,$($_.DistinguishedName)&amp;#34; -LDAPFilter &amp;#34;(objectclass=msspp-activationobject)&amp;#34; -Properties * -ErrorAction SilentlyContinue | fl displayName,DistinguishedName,Name,msspp-csvlkpartialproductkey } I haven&amp;rsquo;t tested it in a multi-domain environment, but I think it should work.
-Explanation The code uses aliases, which are not great in scripts, but neat in One-Liners. It uses Get-ADDomain to determine the Distinguished Name for the Domain.</description>
+      <description>&lt;p&gt;If you quickly want to retrieve infos about Active Directory Based Activation (ADBA) in your domain, you can use this PowerShell One-liner:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -24,12 +29,20 @@ Explanation The code uses aliases, which are not great in scripts, but neat in O
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/09/24/tryhackme-blueprint/</guid>
-      <description>I decided to try a bit more Penetration Testing/Ethical Hacking. The following is a Write-Up regarding the TryHackMe room &amp;ldquo;Blueprint&amp;rdquo;.
-Tasks The only info that we have is:
-Do you have what is takes to hack into this Windows Machine?
-And the questions:
-&amp;ldquo;Lab&amp;rdquo; user NTLM hash decrypted root.txt So we can assume it&amp;rsquo;s a Windows machine.
-Discovery I booted up my Kali linux machine and created a folder on my Desktop to use as a workspace.</description>
+      <description>&lt;p&gt;I decided to try a bit more Penetration Testing/Ethical Hacking. The following is a Write-Up regarding the &lt;a href=&#34;https://tryhackme.com/&#34; target=&#34;_blank&#34; &gt;TryHackMe&lt;/a&gt; room &lt;a href=&#34;https://tryhackme.com/r/room/blueprint&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Blueprint&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;tasks&#34;&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;The only info that we have is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do you have what is takes to hack into this Windows Machine?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And the questions:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Lab&amp;rdquo; user NTLM hash decrypted&lt;/li&gt;
+&lt;li&gt;root.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So we can assume it&amp;rsquo;s a Windows machine.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,8 +51,8 @@ Discovery I booted up my Kali linux machine and created a folder on my Desktop t
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
-      <description>The NTFS file system is used by default in Windows. And normally a file has only one associated normal data stream with the name :$DATA. But there are also the so-called &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), which can contain additional data. These ADS are not visible in the Windows Explorer or most other applications.
-ADS are sometimes used by the system, but could also be used by attackers to hide data.</description>
+      <description>&lt;p&gt;The NTFS file system is used by default in Windows. And normally a file has only one associated normal data stream with the name &lt;code&gt;:$DATA&lt;/code&gt;. But there are also the so-called &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), which can contain additional data. These ADS are not visible in the Windows Explorer or most other applications.&lt;/p&gt;
+&lt;p&gt;ADS are sometimes used by the system, but could also be used by attackers to hide data.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +61,15 @@ ADS are sometimes used by the system, but could also be used by attackers to hid
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/08/21/powershell-calculated-properties/</guid>
-      <description>If you export data via PowerShell (for example to a CSV file via Export-CSV), the original property names of the PowerShell objects are used. However, if these are not fully fitting for your purpose, you can also customize them. So-called &amp;ldquo;Calculated Properties&amp;rdquo; and the cmdlet Select-Object can be used for this.
-This can be used, for example, to
-Rename properties Format property values Create completely custom properties (e.g. by calling additional cmdlets) Output objects normally As a reminder: The selection of object properties with Select-Object is possible with the -Property parameter.</description>
+      <description>&lt;p&gt;If you export data via PowerShell (for example to a CSV file via &lt;code&gt;Export-CSV&lt;/code&gt;), the original property names of the PowerShell objects are used. However, if these are not fully fitting for your purpose, you can also customize them. So-called &amp;ldquo;Calculated Properties&amp;rdquo; and the cmdlet &lt;code&gt;Select-Object&lt;/code&gt; can be used for this.&lt;/p&gt;
+&lt;p&gt;This can be used, for example, to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rename properties&lt;/li&gt;
+&lt;li&gt;Format property values&lt;/li&gt;
+&lt;li&gt;Create completely custom properties (e.g. by calling additional cmdlets)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;output-objects-normally&#34;&gt;Output objects normally&lt;/h2&gt;
+&lt;p&gt;As a reminder: The selection of object properties with &lt;code&gt;Select-Object&lt;/code&gt; is possible with the &lt;code&gt;-Property&lt;/code&gt; parameter. However, the parameter usually does not have to be named explicitly.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,8 +78,9 @@ Rename properties Format property values Create completely custom properties (e.
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/08/07/powershell-active-directory-computers-filtering/</guid>
-      <description>I recently worked on a client project, where I had to do some work around Active Directory Computers. I used PowerShell and some light filtering and processing. And now I share those examples, and hopefully someone finds them interesting or helpful. Maybe it will be me, who finds it interesting in the future. In that case: Moin Andi! 👋
-Example 1: Filter Computer by Operating System Version The AD attribute OperatingSystemVersion holds the OS version with the build number in a format like this: 10.</description>
+      <description>&lt;p&gt;I recently worked on a client project, where I had to do some work around Active Directory Computers. I used PowerShell and some light filtering and processing. And now I share those examples, and hopefully someone finds them interesting or helpful. Maybe it will be me, who finds it interesting in the future. In that case: Moin Andi! 👋&lt;/p&gt;
+&lt;h2 id=&#34;example-1-filter-computer-by-operating-system-version&#34;&gt;Example 1: Filter Computer by Operating System Version&lt;/h2&gt;
+&lt;p&gt;The AD attribute &lt;code&gt;OperatingSystemVersion&lt;/code&gt; holds the OS version with the build number in a format like this: &lt;code&gt;10.0 (19041)&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,7 +89,8 @@ Example 1: Filter Computer by Operating System Version The AD attribute Operatin
       <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/02/22/Migrating-from-11ty-to-Hugo/</guid>
-      <description>I recently upgraded this website to 11ty v2.0, but I needed more change. Initially I just wanted to create a basic Design with Terminal.css. But then I randomly stumbled over the Hugo Theme Gallery and found some beautiful themes! So I chose to use Hugo Papermod and migrate the Website to Hugo 🤓. Since I don&amp;rsquo;t really know JavaScript, so it doesn&amp;rsquo;t matter for me that Hugo uses Go instead. I never used Go as a programming language, but it sounds great.</description>
+      <description>&lt;p&gt;I recently upgraded this website to 11ty v2.0, but I needed more change. Initially I just wanted to create a basic Design with &lt;a href=&#34;https://github.com/Gioni06/terminal.css&#34; target=&#34;_blank&#34; &gt;Terminal.css&lt;/a&gt;. But then I randomly stumbled over the &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; &gt;Hugo Theme Gallery&lt;/a&gt; and found some beautiful themes! So I chose to use &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod/&#34; target=&#34;_blank&#34; &gt;Hugo Papermod&lt;/a&gt; and migrate the Website to Hugo 🤓. Since I don&amp;rsquo;t &lt;em&gt;really&lt;/em&gt; know JavaScript, so it doesn&amp;rsquo;t matter for me that Hugo uses Go instead. I never used Go as a programming language, but it sounds great.&lt;br&gt;
+I&amp;rsquo;ll just ramble a bit now what I did to migrate my blog.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -78,9 +99,19 @@ Example 1: Filter Computer by Operating System Version The AD attribute Operatin
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</guid>
-      <description>Normally when a user leaves the Company their OneDrive for Business site gets automatically delegated to their manager. That means the manager gets SharePoint Site Collection admin rights to the OneDrive site of their subordinate.
-Checking and Changing Access Delegation ⚠️ Access Delegation is enabled as default. The setting can be found and changed here:
-Go to More features in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.</description>
+      <description>&lt;p&gt;Normally when a user leaves the Company their OneDrive for Business site gets automatically delegated to their manager. That means the manager gets SharePoint Site Collection admin rights to the OneDrive site of their subordinate.&lt;/p&gt;
+&lt;h2 id=&#34;checking-and-changing-access-delegation&#34;&gt;Checking and Changing Access Delegation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ Access Delegation is enabled as default&lt;/strong&gt;. The setting can be found and changed here:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;More features&lt;/strong&gt; in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.
+[&amp;hellip;]&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;User profiles&lt;/strong&gt;, select &lt;strong&gt;Open&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;My Site Settings&lt;/strong&gt;, select &lt;strong&gt;Setup My Sites&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Next to &lt;strong&gt;My Site Cleanup&lt;/strong&gt;, make sure &lt;strong&gt;Enable access delegation&lt;/strong&gt; is selected.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Source: &lt;a href=&#34;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&#34; target=&#34;_blank&#34; &gt;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,10 +120,10 @@ Go to More features in the new SharePoint admin center, and sign in with an acco
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</guid>
-      <description>PowerShell Language Modes are a way to restrict the functionality of PowerShell to increase the security of a system. Of course, this is only one small piece in a larger security strategy, so this alone is not sufficient protection for a system.
-At the same time, it&amp;rsquo;s also a double-edged sword:
-Advantage: we remove a powerful tool from potential attackers.
-Disadvantage: We as administrators can no longer use PowerShell properly on a system either.</description>
+      <description>&lt;p&gt;PowerShell Language Modes are a way to restrict the functionality of PowerShell to increase the security of a system. Of course, this is only one small piece in a larger security strategy, so this alone is not sufficient protection for a system.&lt;/p&gt;
+&lt;p&gt;At the same time, it&amp;rsquo;s also a double-edged sword:&lt;br&gt;
+Advantage: we remove a powerful tool from potential attackers.&lt;br&gt;
+Disadvantage: We as administrators can no longer use PowerShell properly on a system either.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -101,7 +132,10 @@ Disadvantage: We as administrators can no longer use PowerShell properly on a sy
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
-      <description>I had this weird issue with a Exchange Server environment: The company had an Exchange Server 2016 DAG and migrated all User Mailboxes to Exchange Online. I then installed a fresh Exchange Server 2019 for Recipient Management and SMTP-Relay. To use the Exchange Server 2019 Hybrid License, I did not create a Mailbox Database. I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exchange 2016 Servers. I decomissioned the DAG and uninstalled Exchange from the old Servers.</description>
+      <description>&lt;p&gt;I had this weird issue with a Exchange Server environment:
+The company had an Exchange Server 2016 DAG and migrated all User Mailboxes to Exchange Online. I then installed a fresh Exchange Server 2019 for Recipient Management and SMTP-Relay.
+To use the Exchange Server 2019 Hybrid License, I did not create a Mailbox Database.
+I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exchange 2016 Servers. I decomissioned the DAG and uninstalled Exchange from the old Servers.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,9 +144,25 @@ Disadvantage: We as administrators can no longer use PowerShell properly on a sy
       <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/02/12/ntfy-sh-with-homeassistant/</guid>
-      <description>Just a quick note if you want to use ntfy.sh with Home Assistant.
-Setup I added the following section to my /config/configuration.yaml file:
-1 2 3 4 5 6 7 8 9 10 11 12 13 shell_command: ntfy: &amp;gt; curl -X POST --url &amp;#39;https://ntfy.sh/{{ topic }}&amp;#39; --data &amp;#39;{{ message }}&amp;#39; --header &amp;#39;X-Title: {{ title }}&amp;#39; --header &amp;#39;X-Tags: {{ tags }}&amp;#39; --header &amp;#39;X-Priority: {{ priority }}&amp;#39; --header &amp;#39;X-Delay: {{ delay }}&amp;#39; --header &amp;#39;X-Actions: {{ actions }}&amp;#39; --header &amp;#39;X-Click: {{ click }}&amp;#39; --header &amp;#39;X-Icon: {{ icon }}&amp;#39; Usage To send send a notification, I use this YAML action in an Automation.</description>
+      <description>&lt;p&gt;Just a quick note if you want to use &lt;a href=&#34;https://ntfy.sh&#34; target=&#34;_blank&#34; &gt;ntfy.sh&lt;/a&gt; with &lt;a href=&#34;https://www.home-assistant.io/&#34; target=&#34;_blank&#34; &gt;Home Assistant&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;I added the following section to my &lt;code&gt;/config/configuration.yaml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -121,8 +171,10 @@ Setup I added the following section to my /config/configuration.yaml file:
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
-      <description>If you want to manage Exchange Online via Azure Automation, Managed Identities is what you should use (this statement was last checked in June 2024).
-Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I? You could still use App Registrations in Entra ID, but if you really just want to automate some Exchange settings via Azure Automation, it&amp;rsquo;s not really necessary.</description>
+      <description>&lt;p&gt;If you want to manage Exchange Online via Azure Automation, &lt;strong&gt;Managed Identities&lt;/strong&gt; is what you should use (this statement was last checked in June 2024).&lt;/p&gt;
+&lt;h2 id=&#34;legacy-approach&#34;&gt;Legacy approach&lt;/h2&gt;
+&lt;p&gt;In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be  discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I?
+You could still use App Registrations in Entra ID, but if you really just want to automate some Exchange settings via Azure Automation, it&amp;rsquo;s not really necessary.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,8 +183,8 @@ Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</guid>
-      <description>Here&amp;rsquo;s a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. Sadly there is no native Cmdlet in the style of Set-ADSyncStagingMode or something like that.
-In this article I&amp;rsquo;ll first explain the approach and then later on list the full command block you can use. So feel free to skip below to the end of the post. The following PowerShell Cmdlets have to get executed on the Azure AD Connect Server.</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. Sadly there is no native Cmdlet in the style of &lt;code&gt;Set-ADSyncStagingMode&lt;/code&gt; or something like that.&lt;/p&gt;
+&lt;p&gt;In this article I&amp;rsquo;ll first explain the approach and then later on list the full command block you can use. So feel free to skip below to the end of the post. The following PowerShell Cmdlets have to get executed on the Azure AD Connect Server.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -141,9 +193,11 @@ In this article I&amp;rsquo;ll first explain the approach and then later on list
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
-      <description>I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed. It was just a test environment, but I thought it would be useful or interesting to drill down on that issue.
-I&amp;rsquo;ll guide you through my troubleshooting steps / thought process.
-Try to continue Setup First I tried to resume the setup. The setup fails early - at Step 1 of 13: Stopping Services.</description>
+      <description>&lt;p&gt;I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed.
+It was just a test environment, but I thought it would be useful or interesting to drill down on that issue.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll guide you through my troubleshooting steps / thought process.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; alt=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  title=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -152,9 +206,13 @@ Try to continue Setup First I tried to resume the setup. The setup fails early -
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/06/21/Git-on-Windows-remove-all-merged-branches/</guid>
-      <description>Here&amp;rsquo;s a quick tip on howto remove Git Branches that were already merged (thus not necessary to keep around anymore) locally on Windows, using PowerShell. Assuming that you do have Git for Windows installed. Execute these commands on your own risk.
-List all merged branches You can list all merged Git Branches by running:
-1 git branch --merged Exclude current branch and &amp;ldquo;main&amp;rdquo; branch Then we |-pipe it into the following, to exclude the currently selected branch (marked with an asterisk *) and the main branch.</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s a quick tip on howto remove Git Branches that were already merged (thus not necessary to keep around anymore) locally on Windows, using PowerShell. Assuming that you do have Git for Windows installed. &lt;strong&gt;Execute these commands on your own risk.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;list-all-merged-branches&#34;&gt;List all merged branches&lt;/h2&gt;
+&lt;p&gt;You can list all merged Git Branches by running:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -163,8 +221,9 @@ List all merged branches You can list all merged Git Branches by running:
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
-      <description>Apparently it&amp;rsquo;s not that easy to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header ConsistencyLevel: eventual to use the Advanced Query Capabilities. Then we can use the Query parameter $count. Alternatively I found that I could also add it as an URL query parameter instead. That would be &amp;amp;ConsistencyLevel=eventual.
-Example Queries Replace the Group ID (02bd9fd6-8f93-4758-87c3-1fb73740a315) with your desired Azure Active Directory Group ID.</description>
+      <description>&lt;p&gt;Apparently it&amp;rsquo;s not &lt;em&gt;that easy&lt;/em&gt; to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; to use the &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt;. Then we can use the Query parameter &lt;code&gt;$count&lt;/code&gt;. Alternatively I found that I could also add it as an URL query parameter instead. That would be &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;example-queries&#34;&gt;Example Queries&lt;/h2&gt;
+&lt;p&gt;Replace the Group ID (&lt;code&gt;02bd9fd6-8f93-4758-87c3-1fb73740a315&lt;/code&gt;) with your desired Azure Active Directory Group ID. &lt;a href=&#34;https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%2F02bd9fd6-8f93-4758-87c3-1fb73740a315%2Fmembers%3F%24count%3Dtrue%26ConsistencyLevel%3Deventual&amp;amp;method=GET&amp;amp;version=v1.0&amp;amp;GraphUrl=https://graph.microsoft.com&#34; target=&#34;_blank&#34; &gt;Try the query in the Microsoft Graph Explorer here.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -173,8 +232,9 @@ Example Queries Replace the Group ID (02bd9fd6-8f93-4758-87c3-1fb73740a315) with
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
-      <description>This post is outdated. The &amp;ldquo;authentcation methods policy&amp;rdquo; is now easily available in the Entra portal. You might still need to migrate from the legacy settings, read the whole article at Microsoft Learn.
-OLD POST for reference In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you&amp;rsquo;re also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you&amp;rsquo;ve come to right place.</description>
+      <description>&lt;p&gt;This post is outdated. The &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;authentcation methods policy&amp;rdquo;&lt;/a&gt; is now easily available in the Entra portal. You might still need to migrate from the legacy settings, read the whole article at &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;old-post-for-reference&#34;&gt;OLD POST for reference&lt;/h2&gt;
+&lt;p&gt;In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you&amp;rsquo;re also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you&amp;rsquo;ve come to right place.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -183,8 +243,12 @@ OLD POST for reference In my opinion the official Microsoft Documentation lacks 
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</guid>
-      <description>Option 1: Use M365 Admin Portal There is finally a way in the main Microsoft 365 Admin Portal. Go to &amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo; and click on &amp;ldquo;Export admin list&amp;rdquo; to get a CSV file with all admins and their roles.
-Option 2: Use PowerShell / Azure AD Graph Module Just a short PowerShell snippet to list all users with administrative roles in a Microsoft 365 (or Azure AD) environment. Please note that this uses the older Azure AD Graph Module (already planned for deprecation).</description>
+      <description>&lt;h2 id=&#34;option-1-use-m365-admin-portal&#34;&gt;Option 1: Use M365 Admin Portal&lt;/h2&gt;
+&lt;p&gt;There is finally a way in the main Microsoft 365 Admin Portal. Go to &lt;a href=&#34;https://admin.microsoft.com/Adminportal/Home?#/rbac/directory&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo;&lt;/a&gt; and click on &amp;ldquo;Export admin list&amp;rdquo; to get a CSV file with all admins and their roles.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg&#34; alt=&#34;M365 Admin Center - role assignments&#34;  title=&#34;M365 Admin Center - role assignments&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;option-2-use-powershell--azure-ad-graph-module&#34;&gt;Option 2: Use PowerShell / Azure AD Graph Module&lt;/h2&gt;
+&lt;p&gt;Just a short PowerShell snippet to list all users with administrative roles in a Microsoft 365 (or Azure AD) environment. Please note that this uses the older Azure AD Graph Module (already planned for deprecation). I don&amp;rsquo;t have an example code that uses the newer Microsoft Graph API &lt;strong&gt;yet&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -193,8 +257,9 @@ Option 2: Use PowerShell / Azure AD Graph Module Just a short PowerShell snippet
       <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
-      <description>If you&amp;rsquo;re using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type &amp;ldquo;SchedulingMailbox&amp;rdquo;. If an user gets assigned &amp;ldquo;Administrator&amp;rdquo; for a Booking Calendar, they get &amp;ldquo;FullAccess&amp;rdquo; permissions for the Scheduling Mailbox.
-List all Booking Calendars with permission I wrote a PowerShell script to list all the Booking Mailboxes with the users that have access.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type &amp;ldquo;SchedulingMailbox&amp;rdquo;. If an user gets assigned &amp;ldquo;Administrator&amp;rdquo; for a Booking Calendar, they get &amp;ldquo;FullAccess&amp;rdquo; permissions for the Scheduling Mailbox.&lt;/p&gt;
+&lt;h2 id=&#34;list-all-booking-calendars-with-permission&#34;&gt;List all Booking Calendars with permission&lt;/h2&gt;
+&lt;p&gt;I wrote a PowerShell script to list all the Booking Mailboxes with the users that have access.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -203,9 +268,11 @@ List all Booking Calendars with permission I wrote a PowerShell script to list a
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
-      <description>If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.
-In the Exchange Admin Center (EAC), open the info pane of the user&amp;rsquo;s mailbox. Click on &amp;ldquo;Manage mailbox archive&amp;rdquo;.
-An Auto-Expanding Archive provisions more Archive storage space, if needed. Default Archives have 100 GB of storage available. If the archive is already bigger than 100 GB, we must have additional storage.</description>
+      <description>&lt;p&gt;If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.&lt;/p&gt;
+&lt;p&gt;In the Exchange Admin Center (EAC), open the info pane of the user&amp;rsquo;s mailbox. Click on &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; alt=&#34;Exchange Admin Center - Mailbox Pane&#34;  title=&#34;Exchange Admin Center - Mailbox Pane&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An Auto-Expanding Archive provisions more Archive storage space, if needed. Default Archives have 100 GB of storage available. If the archive is already bigger than 100 GB, we must have additional storage.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -214,8 +281,9 @@ An Auto-Expanding Archive provisions more Archive storage space, if needed. Defa
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/10/27/My-simple-serverless-journey-part2/</guid>
-      <description>After creating SimpleIP.de as a serverless application (see my blog post My simple serverless journey was not that easy) I was kinda proud. Interesting technology, small and useful website. Nice.
-Reality But after a while reality kicked in. I was playing around with some IPv6 systems, when it hit me. With the previous design, the site would show only the primary IP-Address of the client. If the client supports both IPv6 and IPv4, it would still only show one IP-Address.</description>
+      <description>&lt;p&gt;After creating &lt;a href=&#34;https://simpleip.de&#34; target=&#34;_blank&#34; &gt;SimpleIP.de&lt;/a&gt; as a serverless application (see my blog post &lt;a href=&#34;https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/&#34; &gt;My simple serverless journey was not that easy&lt;/a&gt;) I was kinda proud. Interesting technology, small and useful website. Nice.&lt;/p&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;But after a while reality kicked in. I was playing around with some IPv6 systems, when it hit me. With the previous design, the site would show only the &lt;em&gt;primary&lt;/em&gt; IP-Address of the client. If the client supports both IPv6 &lt;strong&gt;and&lt;/strong&gt; IPv4, it would still only show one IP-Address.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -224,9 +292,16 @@ Reality But after a while reality kicked in. I was playing around with some IPv6
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/</guid>
-      <description>A short example for PowerShell Regular Expressions.
-Scenario: Match filenames like ID1234_MyDocumentXYZ.pdf.lnk. We want go get the number after ID and the rest of the filename between the underscore _ and the file extension .lnk.
-1 2 3 4 5 $oldLink = &amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34; if($oldLink -match &amp;#39;ID(?&amp;lt;id&amp;gt;\d+)_(?&amp;lt;actualFilename&amp;gt;.+)\.lnk$&amp;#39;) { Write-Output &amp;#34;ID: $($Matches.id)&amp;#34; Write-Output &amp;#34;Actual Filename: $($Matches.actualFilename)&amp;#34; } (?&amp;lt;id&amp;gt;\d+) is a named regex capture group (initialized by ?&amp;lt;groupname&amp;gt;). The group matches any numeric character (\d).</description>
+      <description>&lt;p&gt;A short example for PowerShell Regular Expressions.&lt;/p&gt;
+&lt;p&gt;Scenario: Match filenames like &lt;code&gt;ID1234_MyDocumentXYZ.pdf.lnk&lt;/code&gt;. We want go get the number after &lt;code&gt;ID&lt;/code&gt; and the rest of the filename between the underscore &lt;code&gt;_&lt;/code&gt; and the file extension &lt;code&gt;.lnk&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -235,10 +310,13 @@ Scenario: Match filenames like ID1234_MyDocumentXYZ.pdf.lnk. We want go get the 
       <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/10/13/PowerShell-Task-Scheduler/</guid>
-      <description>More ore less quick note for myself - on how to run a PowerShell Script using Windows Task Scheduler.
-Open Task Scheduler A quick way to open Task Scheduler: WIN + R, then run taskschd.msc.
-Create New Task Open &amp;ldquo;Task Scheduler Library&amp;rdquo; → &amp;ldquo;Create New Task&amp;rdquo;. Set all the self-explanatory options like Name, Description, User Account, Triggers, etc.
-Set Action Setting Value Action Start a program Program/script powershell.exe Add arguments (optional) -file &amp;quot;C:\Path\Script.</description>
+      <description>&lt;p&gt;More ore less quick note for myself - on how to run a PowerShell Script using Windows Task Scheduler.&lt;/p&gt;
+&lt;h2 id=&#34;open-task-scheduler&#34;&gt;Open Task Scheduler&lt;/h2&gt;
+&lt;p&gt;A quick way to open Task Scheduler:
+&lt;!-- raw HTML omitted --&gt;WIN&lt;!-- raw HTML omitted --&gt; + &lt;!-- raw HTML omitted --&gt;R&lt;!-- raw HTML omitted --&gt;, then run &lt;code&gt;taskschd.msc&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;create-new-task&#34;&gt;Create New Task&lt;/h2&gt;
+&lt;p&gt;Open &amp;ldquo;Task Scheduler Library&amp;rdquo; → &amp;ldquo;Create New Task&amp;rdquo;.
+Set all the self-explanatory options like Name, Description, User Account, Triggers, etc.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -247,8 +325,8 @@ Set Action Setting Value Action Start a program Program/script powershell.exe Ad
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</guid>
-      <description>You can using Microsoft Teams Audio Conferencing licenses to get Dial-In phone numbers for your meetings. The license is needed per user that creates the meeting invites.
-The phone number in the meeting invite is based on the UsageLocation attribute of the user - once when the user gets enabled for Audio Conferencing. So even if you fix a wrong UsageLocation, the user will still have the old dial-in number assigned.</description>
+      <description>&lt;p&gt;You can using Microsoft Teams Audio Conferencing licenses to get Dial-In phone numbers for your meetings. The license is needed per user that creates the meeting invites.&lt;/p&gt;
+&lt;p&gt;The phone number in the meeting invite is based on the UsageLocation attribute of the user - &lt;strong&gt;once when the user gets enabled for Audio Conferencing&lt;/strong&gt;. So even if you fix a wrong UsageLocation, the user will still have the old dial-in number assigned.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -257,9 +335,11 @@ The phone number in the meeting invite is based on the UsageLocation attribute o
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/08/18/TeamsAutoUpgrade-fail/</guid>
-      <description>The upgrade process from Skype for Business Online to Microsoft Teams is a disaster. I had several SMB clients reporting unnecessary errors regarding Teams/Skype. With unnecessary I mean: They had no issues using Teams until 2021-07-31.
-Issue: Suddenly Skype Meetings are back in Outlook mobile One client reported, that they suddenly have Skype Meetings in Outlook on iOS again, instead of Teams Meetings.
-That particular client manages their Microsoft 365 tenant themselves.</description>
+      <description>&lt;p&gt;The upgrade process from Skype for Business Online to Microsoft Teams is a disaster. I had several SMB clients reporting unnecessary errors regarding Teams/Skype. With unnecessary I mean: &lt;strong&gt;They had no issues using Teams until 2021-07-31.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;issue-suddenly-skype-meetings-are-back-in-outlook-mobile&#34;&gt;Issue: Suddenly Skype Meetings are back in Outlook mobile&lt;/h2&gt;
+&lt;p&gt;One client reported, that they suddenly have Skype Meetings in Outlook on iOS again, instead of Teams Meetings.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-08-11-TeamsUpgrade_SuddenlySkypeMeetings.png&#34; alt=&#34;Skype Meeting in Outlook on iOS&#34;  title=&#34;Skype Meeting in Outlook on iOS&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -268,8 +348,9 @@ That particular client manages their Microsoft 365 tenant themselves.</descripti
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</guid>
-      <description>I&amp;rsquo;ve been looking for a way to retrieve the Timezone setting of a Sharepoint Online Site via PowerShell. Apparently there is not much good info publicly available. I looked for a way to use with the standard SPO PowerShell module named Microsoft.Online.SharePoint.PowerShell.
-There are some infos online about using the PNPOnline Module, but that was not practical in my case. There are even some really annoying articles out, that claim to to provide a PowerShell way.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been looking for a way to retrieve the Timezone setting of a Sharepoint Online Site via PowerShell. Apparently there is not much good info publicly available. I looked for a way to use with the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps&#34; target=&#34;_blank&#34; &gt;standard SPO PowerShell module&lt;/a&gt; named Microsoft.Online.SharePoint.PowerShell.&lt;/p&gt;
+&lt;p&gt;There are some infos online about using the PNPOnline Module, but that was not practical in my case. There are even some really annoying articles out, that claim to to provide a PowerShell way. But instead of retrieving the actual Timezone setting of a SPO site, they retrieve all available Timezones and then overwrite the current timezone with a valid one. Worst thing: They import Sharepoint .dll files, use plaintext authentication and use Client Context Object/CSOM (Microsoft.SharePoint.Client.ClientContext).
+😵 Oof.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -278,10 +359,11 @@ There are some infos online about using the PNPOnline Module, but that was not p
       <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/06/29/Deleted-Teams-Channel-Retention/</guid>
-      <description>If you&amp;rsquo;re asking yourself &amp;ldquo;How long are deleted Teams channels retained?&amp;rdquo; or &amp;ldquo;For how long can I restore a deleted Teams channel?&amp;rdquo; you can find the answer relatively quick. But mostly the original source in the Microsoft documentation is missing.
-Answer Deleted Microsoft Teams Channels are retained for 30 days.
-Official Source In https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels under the table Teams and channels in footnote 4 it&amp;rsquo;s stated:
-Deleted channels can be restored within 30 days.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re asking yourself &amp;ldquo;How long are deleted Teams channels retained?&amp;rdquo; or &amp;ldquo;For how long can I restore a deleted Teams channel?&amp;rdquo; you can find the answer relatively quick. But mostly the original source in the Microsoft documentation is missing.&lt;/p&gt;
+&lt;h2 id=&#34;answer&#34;&gt;Answer&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Deleted Microsoft Teams Channels are retained for 30 days.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;official-source&#34;&gt;Official Source&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; under the table &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;footnote 4&lt;/strong&gt; it&amp;rsquo;s stated:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -290,8 +372,8 @@ Deleted channels can be restored within 30 days.</description>
       <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
-      <description>I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the Nerdio Hackathon 2021. My first Hackathon attendance :^).
-Update 2021-10-05 - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements.</description>
+      <description>&lt;p&gt;I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the &lt;a href=&#34;https://getnerdio.com/nerdio-hackathon/&#34; target=&#34;_blank&#34; &gt;Nerdio Hackathon 2021&lt;/a&gt;. My first Hackathon attendance :^).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 2021-10-05&lt;/strong&gt; - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements. Anyway I got a 1000 USD Amazon Gift Card 🤩.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -300,7 +382,8 @@ Update 2021-10-05 - I actually won first place, but apparently not many people p
       <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/</guid>
-      <description>Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. But Serverless doesn&amp;rsquo;t mean &amp;ldquo;without any servers&amp;rdquo; - you just don&amp;rsquo;t need to worry about them. That&amp;rsquo;s not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there. Nowadays Serverless usually means some kind of modern architecture that allows you to run your application code.</description>
+      <description>&lt;p&gt;Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. But Serverless doesn&amp;rsquo;t mean &amp;ldquo;without any servers&amp;rdquo; - you just don&amp;rsquo;t need to worry about them. That&amp;rsquo;s not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there.
+Nowadays Serverless usually means some kind of modern architecture that allows you to run your application code. The difference is &lt;strong&gt;scaling&lt;/strong&gt;. The cloud provider handles the logic to run your serverless functions as it&amp;rsquo;s needed. When your application is not used, the execution is stopped and no computing resources are consumed.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -309,7 +392,8 @@ Update 2021-10-05 - I actually won first place, but apparently not many people p
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/06/10/Office-365-Trials/</guid>
-      <description>You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You&amp;rsquo;ll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services. A list of links to the trial licenes is further below in this article.</description>
+      <description>&lt;p&gt;You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You&amp;rsquo;ll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services.
+A list of links to the trial licenes is further below in this article.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -318,9 +402,35 @@ Update 2021-10-05 - I actually won first place, but apparently not many people p
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</guid>
-      <description>So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.
-The correct storage permissions are:
-User Account Folder Permissions Users This Folder Only Modify Creator / Owner Subfolders and Files Only Modify Administrator (optional) This Folder, Subfolders, and Files Full Control Official FSLogix documentation: Configure storage permissions for use with Profile Containers and Office Containers</description>
+      <description>&lt;p&gt;So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.&lt;/p&gt;
+&lt;p&gt;The correct storage permissions are:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;User Account&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Folder&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Permissions&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Users&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;This Folder Only&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Modify&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Creator / Owner&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Subfolders and Files Only&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Modify&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Administrator (optional)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;This Folder, Subfolders, and Files&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Full Control&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Official FSLogix documentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/fslogix/fslogix-storage-config-ht&#34; target=&#34;_blank&#34; &gt;Configure storage permissions for use with Profile Containers and Office Containers&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -329,9 +439,13 @@ User Account Folder Permissions Users This Folder Only Modify Creator / Owner Su
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
-      <description>When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:
-Need admin approval Apple Internet Accounts Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
-By the way, the app used to be called &amp;ldquo;iOS Accounts&amp;rdquo; and was apparently renamed in early 2020.</description>
+      <description>&lt;p&gt;When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Need admin approval&lt;/strong&gt;
+Apple Internet Accounts
+Apple Internet Accounts needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;By the way, the app used to be called &amp;ldquo;iOS Accounts&amp;rdquo; and was apparently renamed in early 2020. However, the previous AppID has remained the same.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -340,9 +454,11 @@ By the way, the app used to be called &amp;ldquo;iOS Accounts&amp;rdquo; and was
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
-      <description>At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:
-HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.
-The link &amp;ldquo;more information&amp;rdquo; links to https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. If you lookup what OAuth is used for, this article comes up.</description>
+      <description>&lt;p&gt;At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The link &amp;ldquo;&lt;strong&gt;more information&lt;/strong&gt;&amp;rdquo; links to &lt;a href=&#34;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&#34; target=&#34;_blank&#34; &gt;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&lt;/a&gt;. If you lookup what OAuth is used for, &lt;a href=&#34;https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN&#34; target=&#34;_blank&#34; &gt;this article&lt;/a&gt; comes up. There you can read OAuth is needed for cross-premises eDiscovery searches. Since these functions were not relevant in the project, I ignored them for the time being. By the way, running HCW again did not set up OAuth properly in this case. But sometimes you can easily fix a issue like this by re-running HCW.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -351,8 +467,17 @@ The link &amp;ldquo;more information&amp;rdquo; links to https://support.microso
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
-      <description>If you&amp;rsquo;re wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute MSExchWhenMailboxCreated. You can get the value using PowerShell or ADUC with advanced features enabled.
-1 Get-ADUser -Properties MSExchMaiboxWhenCreated MSExchWhenMailboxCreated contains not the full truth That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the FIRST time the user gets a mailbox.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt;. You can get the value using PowerShell or ADUC with advanced features enabled.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;Get MSExchWhenMailboxCreated attribute using Active Directory Users and Computers. Advanced features need to be enabled.&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -361,7 +486,7 @@ The link &amp;ldquo;more information&amp;rdquo; links to https://support.microso
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
-      <description>By default, the &amp;ldquo;Calendar&amp;rdquo; folder in Exchange 2013 Room Mailboxes has the &amp;ldquo;LimitedDetails&amp;rdquo; permission for the &amp;ldquo;Standard&amp;rdquo; security principal. Therefore, if no other permissions are configured, users cannot view details for appointments in this room. For better usability in Outlook, the &amp;ldquo;Reviewer&amp;rdquo; permission is more suitable. This allows items to be listed and details to be displayed. If required, the CalendarProcessing can be adjusted so that details such as the description and subject of the appointment are not saved in the room mailbox.</description>
+      <description>&lt;p&gt;By default, the &amp;ldquo;Calendar&amp;rdquo; folder in Exchange 2013 Room Mailboxes has the &amp;ldquo;LimitedDetails&amp;rdquo; permission for the &amp;ldquo;Standard&amp;rdquo; security principal. Therefore, if no other permissions are configured, users cannot view details for appointments in this room. For better usability in Outlook, the &amp;ldquo;Reviewer&amp;rdquo; permission is more suitable. This allows items to be listed and details to be displayed. If required, the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-calendarprocessing?view=exchange-ps&#34; target=&#34;_blank&#34; &gt;CalendarProcessing&lt;/a&gt; can be adjusted so that details such as the description and subject of the appointment are not saved in the room mailbox. Whether all this makes sense always depends on the environment.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -370,11 +495,13 @@ The link &amp;ldquo;more information&amp;rdquo; links to https://support.microso
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
-      <description>Outlook Certificate Warning after Office 365 Migration
-Security Alert: svr1.example.com
-The security certificate has expired or is not valid yet
-I recently received a request from a customer who still received certificate warnings (expired certificate) for the old Exchange Server after migrating to Office 365. Since I was not involved in the migration, I had to get an overview first:
-The On-Premise Exchange Server 2010 was still online - of course, otherwise a certificate warning would hardly have appeared.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Outlook Certificate Warning after Office 365 Migration&lt;br&gt;
+Security Alert: svr1.example.com&lt;br&gt;
+The security certificate has expired or is not valid yet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I recently received a request from a customer who still received certificate warnings (expired certificate) for the old Exchange Server after migrating to Office 365. Since I was not involved in the migration, I had to get an overview first:&lt;br&gt;
+The On-Premise Exchange Server 2010 was still online - of course, otherwise a certificate warning would hardly have appeared. However, not all users received this message. This affected migrated users as well as users whose mailboxes were created directly in Office 365.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -383,13 +510,16 @@ The On-Premise Exchange Server 2010 was still online - of course, otherwise a ce
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2019/10/21/new-blog/</guid>
-      <description>That&amp;rsquo;s about how the conversation went when I told the first person about my blog plans.
-B: Your cell phone is ringing&amp;hellip;
-A: Oh, what? taps on the cell phone &amp;hellip;
-B: 2001 called and wants his blog back!
-A: &amp;hellip;
-Well&amp;hellip;
-The WHY Not only since I&amp;rsquo;ve been working professionally in the IT world, I know that the solution to many IT problems is often only a Google search away.</description>
+      <description>&lt;p&gt;That&amp;rsquo;s about how the conversation went when I told the first person about my blog plans.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;B: Your cell phone is ringing&amp;hellip;&lt;br&gt;
+A: Oh, what? &lt;em&gt;taps on the cell phone&lt;/em&gt; &amp;hellip;&lt;br&gt;
+B: 2001 called and wants his blog back!&lt;br&gt;
+A: &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Well&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;the-why&#34;&gt;The WHY&lt;/h2&gt;
+&lt;p&gt;Not only since I&amp;rsquo;ve been working professionally in the IT world, I know that the solution to many IT problems is often only a Google search away. In complicated cases, however, you sometimes have to research longer&amp;hellip; Over the years I&amp;rsquo;ve always found interesting perspectives and solutions on the net that have helped me to get progress. With this blog I would like to give something back. I want to share solutions and ideas to help others. So this website is not commercial, and does not serve self-promotion or the like.&lt;/p&gt;</description>
     </item>
     
   </channel>

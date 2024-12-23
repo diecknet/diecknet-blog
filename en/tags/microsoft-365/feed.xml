@@ -13,8 +13,9 @@
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
-      <description>Apparently it&amp;rsquo;s not that easy to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header ConsistencyLevel: eventual to use the Advanced Query Capabilities. Then we can use the Query parameter $count. Alternatively I found that I could also add it as an URL query parameter instead. That would be &amp;amp;ConsistencyLevel=eventual.
-Example Queries Replace the Group ID (02bd9fd6-8f93-4758-87c3-1fb73740a315) with your desired Azure Active Directory Group ID.</description>
+      <description>&lt;p&gt;Apparently it&amp;rsquo;s not &lt;em&gt;that easy&lt;/em&gt; to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; to use the &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt;. Then we can use the Query parameter &lt;code&gt;$count&lt;/code&gt;. Alternatively I found that I could also add it as an URL query parameter instead. That would be &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;example-queries&#34;&gt;Example Queries&lt;/h2&gt;
+&lt;p&gt;Replace the Group ID (&lt;code&gt;02bd9fd6-8f93-4758-87c3-1fb73740a315&lt;/code&gt;) with your desired Azure Active Directory Group ID. &lt;a href=&#34;https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%2F02bd9fd6-8f93-4758-87c3-1fb73740a315%2Fmembers%3F%24count%3Dtrue%26ConsistencyLevel%3Deventual&amp;amp;method=GET&amp;amp;version=v1.0&amp;amp;GraphUrl=https://graph.microsoft.com&#34; target=&#34;_blank&#34; &gt;Try the query in the Microsoft Graph Explorer here.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,8 +24,9 @@ Example Queries Replace the Group ID (02bd9fd6-8f93-4758-87c3-1fb73740a315) with
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
-      <description>This post is outdated. The &amp;ldquo;authentcation methods policy&amp;rdquo; is now easily available in the Entra portal. You might still need to migrate from the legacy settings, read the whole article at Microsoft Learn.
-OLD POST for reference In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you&amp;rsquo;re also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you&amp;rsquo;ve come to right place.</description>
+      <description>&lt;p&gt;This post is outdated. The &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;authentcation methods policy&amp;rdquo;&lt;/a&gt; is now easily available in the Entra portal. You might still need to migrate from the legacy settings, read the whole article at &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;old-post-for-reference&#34;&gt;OLD POST for reference&lt;/h2&gt;
+&lt;p&gt;In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you&amp;rsquo;re also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you&amp;rsquo;ve come to right place.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,8 +35,12 @@ OLD POST for reference In my opinion the official Microsoft Documentation lacks 
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</guid>
-      <description>Option 1: Use M365 Admin Portal There is finally a way in the main Microsoft 365 Admin Portal. Go to &amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo; and click on &amp;ldquo;Export admin list&amp;rdquo; to get a CSV file with all admins and their roles.
-Option 2: Use PowerShell / Azure AD Graph Module Just a short PowerShell snippet to list all users with administrative roles in a Microsoft 365 (or Azure AD) environment. Please note that this uses the older Azure AD Graph Module (already planned for deprecation).</description>
+      <description>&lt;h2 id=&#34;option-1-use-m365-admin-portal&#34;&gt;Option 1: Use M365 Admin Portal&lt;/h2&gt;
+&lt;p&gt;There is finally a way in the main Microsoft 365 Admin Portal. Go to &lt;a href=&#34;https://admin.microsoft.com/Adminportal/Home?#/rbac/directory&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo;&lt;/a&gt; and click on &amp;ldquo;Export admin list&amp;rdquo; to get a CSV file with all admins and their roles.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg&#34; alt=&#34;M365 Admin Center - role assignments&#34;  title=&#34;M365 Admin Center - role assignments&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;option-2-use-powershell--azure-ad-graph-module&#34;&gt;Option 2: Use PowerShell / Azure AD Graph Module&lt;/h2&gt;
+&lt;p&gt;Just a short PowerShell snippet to list all users with administrative roles in a Microsoft 365 (or Azure AD) environment. Please note that this uses the older Azure AD Graph Module (already planned for deprecation). I don&amp;rsquo;t have an example code that uses the newer Microsoft Graph API &lt;strong&gt;yet&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

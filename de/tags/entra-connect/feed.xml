@@ -13,8 +13,8 @@
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/12/16/entra-connect-matching/</guid>
-      <description>In diesem Post geht es darum, wie Entra Connect Identitäten zusammenführt und dann im Betrieb weiter trackt. Bei einigen Punkten könnte man bestimmt noch weiter in die Tiefe einsteigen, aber das hier sind meiner Meinung nach die wichtigsten Grundlagen.
-Alles was ich jetzt hier in dem Post beschreibe bezieht sich in der Regel sowohl auf das klassische Entra Connect Sync, als auch auf das modernere Entra Cloud Sync. Falls doch etwas nur für das eine oder andere Sync Tool gilt, dann weise ich explizit darauf hin.</description>
+      <description>&lt;p&gt;In diesem Post geht es darum, wie Entra Connect Identitäten zusammenführt und dann im Betrieb weiter trackt. Bei einigen Punkten könnte man bestimmt noch weiter in die Tiefe einsteigen, aber das hier sind meiner Meinung nach die wichtigsten Grundlagen.&lt;/p&gt;
+&lt;p&gt;Alles was ich jetzt hier in dem Post beschreibe bezieht sich in der Regel sowohl auf das klassische Entra Connect Sync, als auch auf das modernere Entra Cloud Sync. Falls doch etwas nur für das eine oder andere Sync Tool gilt, dann weise ich explizit darauf hin. Ansonsten werde ich aber der Einfachheit halber im Folgenden einfach Entra Connect schreiben, wenn ich beides meine.&lt;/p&gt;</description>
     </item>
     
   </channel>

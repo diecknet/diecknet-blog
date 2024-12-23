@@ -13,8 +13,8 @@
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/12/16/entra-connect-matching/</guid>
-      <description>In diesem Post geht es darum, wie Entra Connect Identitäten zusammenführt und dann im Betrieb weiter trackt. Bei einigen Punkten könnte man bestimmt noch weiter in die Tiefe einsteigen, aber das hier sind meiner Meinung nach die wichtigsten Grundlagen.
-Alles was ich jetzt hier in dem Post beschreibe bezieht sich in der Regel sowohl auf das klassische Entra Connect Sync, als auch auf das modernere Entra Cloud Sync. Falls doch etwas nur für das eine oder andere Sync Tool gilt, dann weise ich explizit darauf hin.</description>
+      <description>&lt;p&gt;In diesem Post geht es darum, wie Entra Connect Identitäten zusammenführt und dann im Betrieb weiter trackt. Bei einigen Punkten könnte man bestimmt noch weiter in die Tiefe einsteigen, aber das hier sind meiner Meinung nach die wichtigsten Grundlagen.&lt;/p&gt;
+&lt;p&gt;Alles was ich jetzt hier in dem Post beschreibe bezieht sich in der Regel sowohl auf das klassische Entra Connect Sync, als auch auf das modernere Entra Cloud Sync. Falls doch etwas nur für das eine oder andere Sync Tool gilt, dann weise ich explizit darauf hin. Ansonsten werde ich aber der Einfachheit halber im Folgenden einfach Entra Connect schreiben, wenn ich beides meine.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,8 +23,18 @@ Alles was ich jetzt hier in dem Post beschreibe bezieht sich in der Regel sowohl
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/11/02/powershell-cancel-loops/</guid>
-      <description>Normalerweise wird eine Schleife in PowerShell solange ausgeführt, wie es durch den außen stehenden Bedingungsblock definiert ist. Die folgende while-Schleife wird zum Beispiel so lange ausgeführt, wie die Variable namens $Variable kleiner oder gleich 10 ist.
-1 2 3 while($Variable -le 10) { # irgendwas } Es ist aber auch möglich gezielt eine komplette Schleife vorzeitig abzubrechen oder einen einzelnen Schleifendurchgang abzubrechen. Und zwar auch, wenn ihr mehrere Schleifen ineinander verschachtelt habt.</description>
+      <description>&lt;p&gt;Normalerweise wird eine Schleife in PowerShell solange ausgeführt, wie es durch den außen stehenden Bedingungsblock definiert ist. Die folgende &lt;code&gt;while&lt;/code&gt;-Schleife wird zum Beispiel so lange ausgeführt, wie die Variable namens &lt;code&gt;$Variable&lt;/code&gt; kleiner oder gleich &lt;code&gt;10&lt;/code&gt; ist.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;while&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Variable&lt;/span&gt; -le &lt;span style=&#34;color:#d0bf69&#34;&gt;10&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6c7986&#34;&gt;# irgendwas&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -33,8 +43,9 @@ Alles was ich jetzt hier in dem Post beschreibe bezieht sich in der Regel sowohl
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/09/20/powershell-wmi/</guid>
-      <description>WMI ist eine mächtige Schnittstelle um Windows Systeme zu verwalten. Dadurch ist der Zugriff auf Dinge möglich, für die es vielleicht sonst gar keine eigenen PowerShell Cmdlets gibt. Teilweise können wir so mehr Infos abrufen, als die Standard-Cmdlets liefern. Das geht sowohl lokal, als auch remote.
-Deprecated: Die alten WMI Cmdlets Es gibt ein paar ältere Cmdlets, die allerdings für Neuentwicklungen nicht empfohlen werden. Aber vielleicht stoßt ihr in älteren Skripten mal darüber, also jetzt habt ihr schon mal davon gehört - die existieren zumindest.</description>
+      <description>&lt;p&gt;WMI ist eine mächtige Schnittstelle um Windows Systeme zu verwalten. Dadurch ist der Zugriff auf Dinge möglich, für die es vielleicht sonst gar keine eigenen PowerShell Cmdlets gibt. Teilweise können wir so mehr Infos abrufen, als die Standard-Cmdlets liefern. Das geht sowohl lokal, als auch remote.&lt;/p&gt;
+&lt;h2 id=&#34;deprecated-die-alten-wmi-cmdlets&#34;&gt;Deprecated: Die alten WMI Cmdlets&lt;/h2&gt;
+&lt;p&gt;Es gibt ein paar ältere Cmdlets, die allerdings für Neuentwicklungen nicht empfohlen werden. Aber vielleicht stoßt ihr in älteren Skripten mal darüber, also jetzt habt ihr schon mal davon gehört - die existieren zumindest.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,8 +54,22 @@ Deprecated: Die alten WMI Cmdlets Es gibt ein paar ältere Cmdlets, die allerdin
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/09/12/powershell-array-plus/</guid>
-      <description>Die PowerShell macht es leider recht einfach ineffizienten Code zu schreiben. Viele Leute benutzen zum Beispiel die += Schreibweise um ein Array zu befüllen. Nicht empfehlenswert!
-1 2 3 4 5 # So bitte nicht machen! $Array = @() for ($i = 0; $i -lt 10000; $i++) { $Array += $i } Mit Measure-Command können wir messen, wie lange die Ausführung eines Skriptblocks dauert. Bei mir hat die Ausführung des obigen Codes in einer Test-VM über 2 Sekunden benötigt.</description>
+      <description>&lt;p&gt;Die PowerShell macht es leider recht einfach ineffizienten Code zu schreiben. Viele Leute benutzen zum Beispiel die &lt;code&gt;+=&lt;/code&gt; Schreibweise um ein Array zu befüllen. Nicht empfehlenswert!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;background-color:#353539&#34;&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# So bitte nicht machen!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Array&lt;/span&gt; = @()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt; = &lt;span style=&#34;color:#d0bf69&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt; -lt &lt;span style=&#34;color:#d0bf69&#34;&gt;10000&lt;/span&gt;; &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt;++) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex; background-color:#353539&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$Array&lt;/span&gt; += &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -53,10 +78,9 @@ Deprecated: Die alten WMI Cmdlets Es gibt ein paar ältere Cmdlets, die allerdin
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
-      <description>Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerweise hat eine Datei nur einen dazugehörigen normalen Datenstrom (Data Stream) mit dem Namen :$DATA. Aber es gibt auch die sogenannten &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), die zusätzliche Daten enthalten können.
-Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.
-Ich habe zu dem Thema auch ein YouTube Video erstellt.
-NTFS Alternate Data Stream auslesen Aus dem Internet heruntergeladene Dateien erhalten bei vielen Browsern unter Windows ein &amp;ldquo;Mark of the web&amp;rdquo; (MOTW) im Zone.</description>
+      <description>&lt;p&gt;Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerweise hat eine Datei nur einen dazugehörigen normalen Datenstrom (Data Stream) mit dem Namen &lt;code&gt;:$DATA&lt;/code&gt;. Aber es gibt auch die sogenannten &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), die zusätzliche Daten enthalten können.&lt;/p&gt;
+&lt;p&gt;Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.&lt;/p&gt;
+&lt;p&gt;Ich habe zu dem Thema auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=r6LfYnekJkQ&#34; target=&#34;_blank&#34; &gt;YouTube Video erstellt&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -65,9 +89,14 @@ NTFS Alternate Data Stream auslesen Aus dem Internet heruntergeladene Dateien er
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</guid>
-      <description>Wenn ihr per PowerShell Daten exportiert (zum Beispiel in eine CSV-Datei per Export-CSV), dann werden die originalen Eigenschaftsnamen von den PowerShell Objekten verwendet. Wenn die aber nicht ganz passend für euren Zweck sind, dann könnt ihr sie auch anpassen. Dafür können sogenannte &amp;ldquo;Calculcated Properties&amp;rdquo; und das Cmdlet Select-Object verwendet werden.
-Damit können zum Beispiel:
-Eigenschaften umbenannt werden Eigenschaftswerte formatiert werden Komplett eigene Eigenschaften erzeugt werden (z.B. durch den Aufruf zusätzlicher Cmdlets) Ich habe zu diesem Thema auch ein Video auf meinem YouTube Kanal veröffentlicht.</description>
+      <description>&lt;p&gt;Wenn ihr per PowerShell Daten exportiert (zum Beispiel in eine CSV-Datei per &lt;code&gt;Export-CSV&lt;/code&gt;), dann werden die originalen Eigenschaftsnamen von den PowerShell Objekten verwendet. Wenn die aber nicht ganz passend für euren Zweck sind, dann könnt ihr sie auch anpassen. Dafür können sogenannte &amp;ldquo;Calculcated Properties&amp;rdquo; und das Cmdlet &lt;code&gt;Select-Object&lt;/code&gt; verwendet werden.&lt;/p&gt;
+&lt;p&gt;Damit können zum Beispiel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eigenschaften umbenannt werden&lt;/li&gt;
+&lt;li&gt;Eigenschaftswerte formatiert werden&lt;/li&gt;
+&lt;li&gt;Komplett eigene Eigenschaften erzeugt werden (z.B. durch den Aufruf zusätzlicher Cmdlets)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ich habe zu diesem Thema auch &lt;a href=&#34;https://www.youtube.com/watch?v=n7Vp6ESME5w&#34; target=&#34;_blank&#34; &gt;ein Video auf meinem YouTube Kanal veröffentlicht&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -76,9 +105,10 @@ Eigenschaften umbenannt werden Eigenschaftswerte formatiert werden Komplett eige
       <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/07/05/powershell-write-host-vs-write-output/</guid>
-      <description>In PowerShell könnt ihr ja Text mit dem Cmdlet Write-Host ausgeben. Aber es wird teilweise davon abgeraten das zu verwenden. Es gibt zum Beispiel die Alternative Write-Output. In diesem Post erkläre ich euch die Unterschiede.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Write-Host Write-Host gibt Daten auf dem PowerShell Host aus, dem Programm, welches die aktuelle PowerShell Sitzung hostet. Oft ist das der ConsoleHost, aber z.B. die PowerShell ISE oder Visual Studio Code verwenden eigene Hosts, die sich in manchen Aspekten voneinander unterscheiden.</description>
+      <description>&lt;p&gt;In PowerShell könnt ihr ja Text mit dem Cmdlet &lt;code&gt;Write-Host&lt;/code&gt; ausgeben. Aber es wird teilweise davon abgeraten das zu verwenden. Es gibt zum Beispiel die Alternative &lt;code&gt;Write-Output&lt;/code&gt;. In diesem Post erkläre ich euch die Unterschiede.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=eHBO4b_Riho&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;write-host&#34;&gt;Write-Host&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Write-Host&lt;/code&gt; gibt Daten auf dem PowerShell &lt;strong&gt;Host&lt;/strong&gt; aus, dem Programm, welches die aktuelle PowerShell Sitzung hostet. Oft ist das der &lt;code&gt;ConsoleHost&lt;/code&gt;, aber z.B. die PowerShell ISE oder Visual Studio Code verwenden eigene Hosts, die sich in manchen Aspekten voneinander unterscheiden.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -87,8 +117,10 @@ Write-Host Write-Host gibt Daten auf dem PowerShell Host aus, dem Programm, welc
       <pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/06/08/powershell-zip/</guid>
-      <description>Windows kann eigentlich schon ziemlich lange mit ZIP-Archiven umgehen. Und auch die PowerShell kann das, also sowohl ZIP-Dateien erstellen, als auch sie entpacken. Das kann nützlich sein, wenn ihr z.B. mit einem PowerShell Skript mehrere Dateien zu einer ZIP-Datei zusammenfassen wollt - das erleichtert das wegkopieren. Oder vielleicht um eine per Skript aus dem Internet geladene ZIP-Datei zu extrahieren.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+      <description>&lt;p&gt;Windows kann eigentlich schon ziemlich lange mit ZIP-Archiven umgehen.
+Und auch die PowerShell kann das, also sowohl ZIP-Dateien erstellen, als auch sie entpacken.
+Das kann nützlich sein, wenn ihr z.B. mit einem PowerShell Skript mehrere Dateien zu einer ZIP-Datei zusammenfassen wollt - das erleichtert das wegkopieren. Oder vielleicht um eine per Skript aus dem Internet geladene ZIP-Datei zu extrahieren.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/ALoe26e8c5s&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -97,8 +129,16 @@ Write-Host Write-Host gibt Daten auf dem PowerShell Host aus, dem Programm, welc
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/05/15/powershell-multiline-commands/</guid>
-      <description>PowerShell Befehle mit vielen Parametern können die Lesbarkeit vom Code verschlechtern. Zum Beispiel habe ich im nachfolgenden Codeabschnitt in Zeile 5 das Cmdlet New-ADUser verwendet und dabei 7 Parameter angegeben. Das ist sehr schwer auf einer Zeile zu lesen, selbst wenn ihr einen Ultra-Wide Monitor verwendet.
-1 2 3 4 5 6 $CSVFile = Import-Csv .\NeueUser.csv foreach($User in $CSVFile) { $Manager = Get-ADUser -Filter &amp;#34;mail -eq &amp;#39;$($User.Manager)&amp;#39;&amp;#34; New-ADUser -Name &amp;#34;$($User.Vorname) $($User.</description>
+      <description>&lt;p&gt;PowerShell Befehle mit vielen Parametern können die Lesbarkeit vom Code verschlechtern. Zum Beispiel habe ich im nachfolgenden Codeabschnitt in Zeile 5 das Cmdlet &lt;code&gt;New-ADUser&lt;/code&gt; verwendet und dabei 7 Parameter angegeben. Das ist sehr schwer auf einer Zeile zu lesen, selbst wenn ihr einen Ultra-Wide Monitor verwendet.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;background-color:#353539&#34;&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -107,8 +147,17 @@ Write-Host Write-Host gibt Daten auf dem PowerShell Host aus, dem Programm, welc
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/04/29/powershell-null/</guid>
-      <description>Wenn ihr in PowerShell prüfen wollt, ob ein Wert nicht gesetzt ist, dann könnt ihr einen Vergleich mit $null machen. Diese automatische Variable bedeutet immer null, nichts, kein Wert. Das ist aber etwas anderes, als wenn ihr einfach Anführungszeichen &amp;quot;&amp;quot; nehmt und dann nichts reinschreibt. Zum Beispiel ergibt das hier immer FALSE:
-1 2 3 4 5 $null -eq &amp;#34;&amp;#34; # = false $null -eq &amp;#39;&amp;#39; # = false # Hat übrigens nichts mit der Zahl 0 zu tun // also das ergibt auch False $null -eq 0 # = false 🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+      <description>&lt;p&gt;Wenn ihr in PowerShell prüfen wollt, ob ein Wert nicht gesetzt ist, dann &lt;em&gt;könnt&lt;/em&gt; ihr einen Vergleich mit &lt;code&gt;$null&lt;/code&gt; machen. Diese automatische Variable bedeutet immer null, nichts, kein Wert.
+Das ist aber etwas anderes, als wenn ihr einfach Anführungszeichen &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; nehmt und dann nichts reinschreibt.
+Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -117,8 +166,7 @@ Write-Host Write-Host gibt Daten auf dem PowerShell Host aus, dem Programm, welc
       <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/04/23/powershell-remote-script-development/</guid>
-      <description>Es ist möglich PowerShell Skripte remote zu entwickeln. Also das Skript wird auf einem remote Computer gespeichert und ausgeführt, aber die Eingabe erfolgt im lokalen Editor-Tool. Das geht sowohl mit der klassischen Windows PowerShell ISE, als auch mit Visual Studio Code. In VSCode könnt ihr sowohl mit remote Windows PowerShell, als auch remote PowerShell 7 Systemen arbeiten. 🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Windows PowerShell ISE Die Windows PowerShell ISE unterstützt nur remote Windows Systeme mit Windows PowerShell.</description>
+      <description>&lt;p&gt;Es ist möglich PowerShell Skripte remote zu entwickeln. Also das Skript wird auf einem remote Computer gespeichert und ausgeführt, aber die Eingabe erfolgt im lokalen Editor-Tool. Das geht sowohl mit der klassischen Windows PowerShell ISE, als auch mit Visual Studio Code. In VSCode könnt ihr sowohl mit remote Windows PowerShell, als auch remote PowerShell 7 Systemen arbeiten. &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=T009J35wJQE&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -127,10 +175,13 @@ Windows PowerShell ISE Die Windows PowerShell ISE unterstützt nur remote Window
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/04/09/powershell-suppress-output/</guid>
-      <description>Manchmal geben PowerShell Befehle eine Rückmeldung aus, obwohl uns das gar nicht interessiert. Es gibt verschiedene Szenarien, wie ihr die Ausgaben unterdrücken könnt.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Ich verwende hier zum Beispiel das Cmdlet New-NetFirewallRule mit dem ich eine neue Regel in der Windows Firewall hinzufügen kann:
-1 New-NetFirewallRule -DisplayName &amp;#34;Ausgehende Verbindungen zu Port 443 blockieren&amp;#34; -Direction Outbound -RemotePort 443 -Protocol TCP -Action Block Wenn ich das ausführe, dann kriege ich als Rückgabe ein Objekt, welches die Firewall Regel repräsentiert.</description>
+      <description>&lt;p&gt;Manchmal geben PowerShell Befehle eine Rückmeldung aus, obwohl uns das gar nicht interessiert. Es gibt verschiedene Szenarien, wie ihr die Ausgaben unterdrücken könnt.&lt;br&gt;
+&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/0hS3IWrr_3I&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ich verwende hier zum Beispiel das Cmdlet &lt;code&gt;New-NetFirewallRule&lt;/code&gt; mit dem ich eine neue Regel in der Windows Firewall hinzufügen kann:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -139,8 +190,8 @@ Ich verwende hier zum Beispiel das Cmdlet New-NetFirewallRule mit dem ich eine n
       <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/03/26/powershell-dot-sourcing/</guid>
-      <description>Mit PowerShell Dot Sourcing könnt ihr eine Skriptdatei in eure PowerShell Session importieren. Das Skript wird erstmal normal ausgeführt, aber gesetzte Variablen, erstellte Funktionen und so weiter sind dann in der Session verfügbar. Bei einem normalen Skript-Aufruf ist das sonst nicht der Fall. Mich erinnert das immer an den PHP-Befehl include, weil ich in meiner Jugend mit PHP rumgedaddelt habe 😅
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+      <description>&lt;p&gt;Mit PowerShell Dot Sourcing könnt ihr eine Skriptdatei in eure PowerShell Session importieren. Das Skript wird erstmal normal ausgeführt, aber gesetzte Variablen, erstellte Funktionen und so weiter sind dann in der Session verfügbar. Bei einem normalen Skript-Aufruf ist das sonst nicht der Fall. Mich erinnert das immer an den PHP-Befehl &lt;code&gt;include&lt;/code&gt;, weil ich in meiner Jugend mit PHP rumgedaddelt habe 😅&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/TTnKAU-Po7Q&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -149,8 +200,8 @@ Ich verwende hier zum Beispiel das Cmdlet New-NetFirewallRule mit dem ich eine n
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/03/19/powershell-regex/</guid>
-      <description>Regular Expressions sind Muster mit denen Texte verglichen werden können oder auch Infos aus Texten extrahiert werden können. Zum Beispiel könnt ihr damit überprüfen, ob eine Logdatei von einem Programm die Zeichenfolge &amp;ldquo;Error&amp;rdquo; enthält (also um zu prüfen, ob ein Fehler aufgetreten ist). Oder um einfach nur zu schauen, ob eine Zeichenkette einem bestimmten Muster entspricht, zum Beispiel einer E-Mail Adresse.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.</description>
+      <description>&lt;p&gt;Regular Expressions sind Muster mit denen Texte verglichen werden können oder auch Infos aus Texten extrahiert werden können. Zum Beispiel könnt ihr damit überprüfen, ob eine Logdatei von einem Programm die Zeichenfolge &amp;ldquo;Error&amp;rdquo; enthält (also um zu prüfen, ob ein Fehler aufgetreten ist). Oder um einfach nur zu schauen, ob eine Zeichenkette einem bestimmten Muster entspricht, zum Beispiel einer E-Mail Adresse.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/Zk6iHL1T94k&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -159,9 +210,10 @@ Ich verwende hier zum Beispiel das Cmdlet New-NetFirewallRule mit dem ich eine n
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/03/12/powershell-measure-execution-time/</guid>
-      <description>Wenn ihr euren PowerShell Code auf Geschwindigkeit optimieren wollt, dann macht es Sinn Zeiten zu messen. Es gibt mehrere Möglichkeiten um zu messen, wie lange die Ausführung von einem Stück PowerShell Code dauert.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Möglichkeit 1: Measure-Command Eine einfache Möglichkeit ist das Cmdlet Measure-Command. Es nimmt einen ScriptBlock entgegen, der dann auch ausgeführt wird. Und wir erhalten im Anschluss ein Messergebnis in Form eines TimeSpan Objekts.</description>
+      <description>&lt;p&gt;Wenn ihr euren PowerShell Code auf Geschwindigkeit optimieren wollt, dann macht es Sinn Zeiten zu messen. Es gibt mehrere Möglichkeiten um zu messen, wie lange die Ausführung von einem Stück PowerShell Code dauert.&lt;br&gt;
+&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/-tpR-KQpPq4&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;möglichkeit-1-measure-command&#34;&gt;Möglichkeit 1: Measure-Command&lt;/h2&gt;
+&lt;p&gt;Eine einfache Möglichkeit ist das Cmdlet &lt;code&gt;Measure-Command&lt;/code&gt;. Es nimmt einen ScriptBlock entgegen, der dann auch ausgeführt wird. Und wir erhalten im Anschluss ein Messergebnis in Form eines &lt;code&gt;TimeSpan&lt;/code&gt; Objekts. Ein einfaches Beispiel dafür:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -170,11 +222,12 @@ Möglichkeit 1: Measure-Command Eine einfache Möglichkeit ist das Cmdlet Measur
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/03/05/powershell-profiles/</guid>
-      <description>Mit PowerShell Profilen könnt ihr eure PowerShell anpassen. Also zum Beispiel, dass sie so aussieht:
-Oder ihr könnt einstellen, dass beim Start so ein Splash-Screen angezeigt (winfetch) wird:
-Oder ihr könnt auch eigene Funktionen und Variablen hinterlegen, sodass diese immer sofort verfügbar sind, wenn ihr die PowerShell startet.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Letztendlich ist ein PowerShell Profil einfach ein PowerShell Skript, was automatisch ausgeführt wird, wenn ihr die PowerShell startet.</description>
+      <description>&lt;p&gt;Mit PowerShell Profilen könnt ihr eure PowerShell anpassen. Also zum Beispiel, dass sie so aussieht:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; alt=&#34;PowerShell Konsole angepasst mit Oh My Posh und dem Theme Blue Owl&#34;  title=&#34;PowerShell Konsole angepasst mit Oh My Posh und dem Theme Blue Owl&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oder ihr könnt einstellen, dass beim Start so ein Splash-Screen angezeigt (winfetch) wird:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; alt=&#34;Beispiel für Winfetch Infobildschirm&#34;  title=&#34;Beispiel für Winfetch Infobildschirm&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -183,11 +236,14 @@ Letztendlich ist ein PowerShell Profil einfach ein PowerShell Skript, was automa
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</guid>
-      <description>Per PowerShell auf Umgebungsvariablen zugreifen - das geht ganz einfach.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Umgebungsvariable per $Env:-Variable auslesen Die einfachste Möglichkeit ist per $Env:-Variable. Gebt dafür einfach $Env ein, dann einen Doppelpunkt und dann den Namen der Umgebungsvariable von der ihr den Wert auslesen wollt.
-1 $Env:username Dadurch wird der Username des aktuell angemeldeten Users ausgegeben.
-Das funktioniert übrigens plattformübergreifend, also auch zum Beispiel unter Linux.</description>
+      <description>&lt;p&gt;Per PowerShell auf Umgebungsvariablen zugreifen - das geht ganz einfach.&lt;br&gt;
+&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/25-jcylahSo&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;umgebungsvariable-per-env-variable-auslesen&#34;&gt;Umgebungsvariable per &lt;code&gt;$Env:&lt;/code&gt;-Variable auslesen&lt;/h2&gt;
+&lt;p&gt;Die einfachste Möglichkeit ist per &lt;code&gt;$Env:&lt;/code&gt;-Variable. Gebt dafür einfach &lt;code&gt;$Env&lt;/code&gt; ein, dann einen Doppelpunkt und dann den Namen der Umgebungsvariable von der ihr den Wert auslesen wollt.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -196,8 +252,13 @@ Das funktioniert übrigens plattformübergreifend, also auch zum Beispiel unter 
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</guid>
-      <description>Wenn ihr ein PowerShell Skript erstellt habt, was Aktionen ausführen soll, die Adminrechte erfordern, dann könnt ihr das auch per Code überprüfen. Damit könnt ihr sicherstellen, dass euer Skript erfolgreich ausgeführt werden kann. Am einfachsten geht das mit einer Requires-Anweisung. 🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Admin-Rechte per Requires Anweisung erfordern 1 #Requires -RunAsAdministrator Diese Zeile kann an eine beliebigen Stelle im PowerShell Code eingefügt werden.</description>
+      <description>&lt;p&gt;Wenn ihr ein PowerShell Skript erstellt habt, was Aktionen ausführen soll, die Adminrechte erfordern, dann könnt ihr das auch per Code überprüfen. Damit könnt ihr sicherstellen, dass euer Skript erfolgreich ausgeführt werden kann. Am einfachsten geht das mit einer &lt;code&gt;Requires&lt;/code&gt;-Anweisung.
+&lt;strong&gt;&lt;a href=&#34;https://youtu.be/ACUCARq7joM&#34; target=&#34;_blank&#34; &gt;🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;admin-rechte-per-requires-anweisung-erfordern&#34;&gt;Admin-Rechte per Requires Anweisung erfordern&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -206,8 +267,8 @@ Admin-Rechte per Requires Anweisung erfordern 1 #Requires -RunAsAdministrator Di
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</guid>
-      <description>Security Identifiers sind dazu da, um bestimmte Security Prinzipale oder Gruppen unter Windows zu identifizieren. Leider sind die dazugehörigen Namen lokalisiert, also sind zum Beispiel in einem deutschsprachigen System anders als in einem englischsprachigen System.
-Beispielsweise heißt die eingebaute Administratorgruppe auf Englisch BUILTIN\ADMINISTRATORS und auf Deutsch VORDEFINIERT\Administratoren. Oder das Englische NT AUTHORITY\SYSTEM wird an einem Deutschen System zu NT-AUTORITÄT\SYSTEM. Das finde ich richtig abgefahren! Da wird auf einmal ein Leerzeichen durch ein Bindestrich ersetzt.</description>
+      <description>&lt;p&gt;Security Identifiers sind dazu da, um bestimmte Security Prinzipale oder Gruppen unter Windows zu identifizieren. Leider sind die dazugehörigen Namen lokalisiert, also sind zum Beispiel in einem deutschsprachigen System anders als in einem englischsprachigen System.&lt;/p&gt;
+&lt;p&gt;Beispielsweise heißt die eingebaute Administratorgruppe auf Englisch &lt;code&gt;BUILTIN\ADMINISTRATORS&lt;/code&gt; und auf Deutsch &lt;code&gt;VORDEFINIERT\Administratoren&lt;/code&gt;. Oder das Englische &lt;code&gt;NT AUTHORITY\SYSTEM&lt;/code&gt; wird an einem Deutschen System zu &lt;code&gt;NT-AUTORITÄT\SYSTEM&lt;/code&gt;. &lt;strong&gt;Das finde ich richtig abgefahren!&lt;/strong&gt; Da wird auf einmal ein Leerzeichen durch ein Bindestrich ersetzt. Naja was soll&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -216,9 +277,12 @@ Beispielsweise heißt die eingebaute Administratorgruppe auf Englisch BUILTIN\AD
       <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2023/11/28/powershell-brackets/</guid>
-      <description>Wann ist welche Klammer die Richtige in der PowerShell?
-# Verschiedene Klammern in der PowerShell () {} [] Die Klammern haben unterschiedliche Einsatzzwecke. Die Größer-als &amp;lt; und Kleiner-als &amp;gt; Zeichen würde ich übrigens nicht zu den Klammern zählen. Für alle echten Klammern gilt: Wenn ihr eine Klammer geöffnet habt, müsst ihr sie auch wieder schließen.
-Runde Klammern ( ) Mit runden Klammern wird in der PowerShell ein Ausdruck bzw. ein Befehl umfasst, bzw.</description>
+      <description>&lt;p&gt;Wann ist welche Klammer die Richtige in der PowerShell?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Verschiedene Klammern in der PowerShell&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;() {} []&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Die Klammern haben unterschiedliche Einsatzzwecke. Die Größer-als &lt;code&gt;&amp;lt;&lt;/code&gt; und Kleiner-als &lt;code&gt;&amp;gt;&lt;/code&gt; Zeichen würde ich übrigens nicht zu den Klammern zählen. Für alle echten Klammern gilt: Wenn ihr eine Klammer geöffnet habt, müsst ihr sie auch wieder schließen.&lt;/p&gt;
+&lt;h2 id=&#34;runde-klammern--&#34;&gt;Runde Klammern &lt;code&gt;( )&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Mit runden Klammern wird in der PowerShell ein Ausdruck bzw. ein Befehl umfasst, bzw. die Parameter für .NET Methoden umschlossen.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -227,10 +291,10 @@ Runde Klammern ( ) Mit runden Klammern wird in der PowerShell ein Ausdruck bzw. 
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</guid>
-      <description>PowerShell Language Modes sind eine Möglichkeit die Funktionalität der PowerShell einzuschränken, um die Sicherheit eines Systems zu erhöhen. Das ist natürlich nur ein kleiner Baustein in einer größeren Sicherheitsstrategie, also das alleine ist noch kein ausreichender Schutz für ein System.
-Gleichzeitig ist das auch ein zweischneidiges Schwert:
-Vorteil: Wir entziehen potenziellen Angreifern ein mächtiges Werkzeug.
-Nachteil: Wir selbst als Administratoren können die PowerShell an einem System auch nicht mehr richtig nutzen.</description>
+      <description>&lt;p&gt;PowerShell Language Modes sind eine Möglichkeit die Funktionalität der PowerShell einzuschränken, um die Sicherheit eines Systems zu erhöhen. Das ist natürlich nur ein kleiner Baustein in einer größeren Sicherheitsstrategie, also das alleine ist noch kein ausreichender Schutz für ein System.&lt;/p&gt;
+&lt;p&gt;Gleichzeitig ist das auch ein zweischneidiges Schwert:&lt;br&gt;
+Vorteil: Wir entziehen potenziellen Angreifern ein mächtiges Werkzeug.&lt;br&gt;
+Nachteil: Wir selbst als Administratoren können die PowerShell an einem System auch nicht mehr richtig nutzen.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -239,8 +303,10 @@ Nachteil: Wir selbst als Administratoren können die PowerShell an einem System 
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</guid>
-      <description>Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden. Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die Microsoft Dokumentation verweist nur am Rande auf das Thema und erklärt nicht wirklich.
-In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Unternehmen betrifft: Im Microsoft 365 Admin Center wird angezeigt:</description>
+      <description>&lt;p&gt;Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden.
+Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft Dokumentation verweist nur am Rande auf das Thema&lt;/a&gt; und erklärt nicht wirklich.&lt;/p&gt;
+&lt;p&gt;In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Unternehmen betrifft:
+Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -249,8 +315,10 @@ In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Untern
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
-      <description>Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist Managed Identities was ihr benutzen solltet (diese Aussage wurde zuletzt geprüft im Juni 2024).
-Legacy Ansatz Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Credentials (🤢) verwendet, aber das gilt mittlerweile als veraltet. RunAs Accounts sind zum Herbst 2023 abgekündigt und zu Klartext-Kennwörtern muss ich nix sagen, oder? Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wirklich einfach nur per Azure Automation ein paar Exchange Online Einstellungen automatisieren wollt, ist das eigentlich nicht notwendig.</description>
+      <description>&lt;p&gt;Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist &lt;strong&gt;Managed Identities&lt;/strong&gt; was ihr benutzen solltet (diese Aussage wurde zuletzt geprüft im Juni 2024).&lt;/p&gt;
+&lt;h2 id=&#34;legacy-ansatz&#34;&gt;Legacy Ansatz&lt;/h2&gt;
+&lt;p&gt;Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Credentials (🤢) verwendet, aber das gilt mittlerweile als veraltet. RunAs Accounts sind zum Herbst 2023 abgekündigt und zu Klartext-Kennwörtern muss ich nix sagen, oder?
+Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wirklich einfach nur per Azure Automation ein paar Exchange Online Einstellungen automatisieren wollt, ist das eigentlich nicht notwendig.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -259,8 +327,8 @@ Legacy Ansatz Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Cre
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</guid>
-      <description>Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.
-Ich wollte mich einfach nur per Connect-MicrosoftTeams mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter.</description>
+      <description>&lt;p&gt;Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.&lt;/p&gt;
+&lt;p&gt;Ich wollte mich einfach nur per &lt;code&gt;Connect-MicrosoftTeams&lt;/code&gt; mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter. Aber bevor ich überhaupt nach einem Benutzernamen gefragt wurde - alles rot.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -269,10 +337,13 @@ Ich wollte mich einfach nur per Connect-MicrosoftTeams mit der Microsoft Teams A
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
-      <description>In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:
-Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden.
-Verbindung mit dem Server herstellen, um diese anzuzeigen
-In persönlichen Postfächern wird stattdessen die Möglichkeit geboten, weitere Elemente vom Server abzurufen. Der Text dazu wurde stümperhaft automatisch übersetzt, was sich gut ins Gesamtbild fügt:</description>
+      <description>&lt;p&gt;In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden.&lt;/p&gt;
+&lt;p&gt;Verbindung mit dem Server herstellen, um diese anzuzeigen&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; alt=&#34;Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen&#34;  title=&#34;Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -281,9 +352,8 @@ In persönlichen Postfächern wird stattdessen die Möglichkeit geboten, weitere
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</guid>
-      <description>Mit Microsoft Teams Audio Conferencing (Microsoft 365-Audiokonferenz) Lizenzen ist es möglich, Einwahlrufnummern für Teams Besprechungen zu verwenden. Die Lizenz wird für jeden Benutzer benötigt, der zu Teams Meetings mit Einwahlrufnummer einladen soll.
-Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - einmalig wenn der Benutzer für Audiokonferenz aktiviert wird. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.
-Teams Admin Center verwenden um die Einwahlrufnummer für einzelne Benutzer zu ändern Users ➔ Manage Users ➔ Auf einen Benutzer klicken ➔ Auf &amp;ldquo;Edit&amp;rdquo; klicken (neben &amp;ldquo;Audio Conferencing&amp;rdquo;) ➔ Auswählen der &amp;ldquo;Toll number&amp;rdquo; entsprechend des Benutzerstandorts.</description>
+      <description>&lt;p&gt;Mit Microsoft Teams Audio Conferencing (Microsoft 365-Audiokonferenz) Lizenzen ist es möglich, Einwahlrufnummern für Teams Besprechungen zu verwenden. Die Lizenz wird für jeden Benutzer benötigt, der zu Teams Meetings mit Einwahlrufnummer einladen soll.&lt;/p&gt;
+&lt;p&gt;Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - &lt;strong&gt;einmalig wenn der Benutzer für Audiokonferenz aktiviert wird&lt;/strong&gt;. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -292,10 +362,11 @@ Teams Admin Center verwenden um die Einwahlrufnummer für einzelne Benutzer zu �
       <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/</guid>
-      <description>Falls ihr euch fragt &amp;ldquo;Wie lange wird ein gelöschter Teams Kanal aufbewahrt?&amp;rdquo; oder &amp;ldquo;Für wie lange kann ich einen gelöschten Teams Kanal wiederherstellen?&amp;rdquo;, findet ihr die Antwort relativ schnell. Aber meistens fehlt der Verweis auf die original Quelle in der Microsoft Dokumentation.
-Antwort Gelöschte Teams Kanäle werden für 30 Tage aufbewahrt.
-Offizielle Quelle Im englischsprachigen Original https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels wird unterhalb der Tabelle Teams and channels in Fußnote 4 festgehalten:
-Deleted channels can be restored within 30 days.</description>
+      <description>&lt;p&gt;Falls ihr euch fragt &amp;ldquo;Wie lange wird ein gelöschter Teams Kanal aufbewahrt?&amp;rdquo; oder &amp;ldquo;Für wie lange kann ich einen gelöschten Teams Kanal wiederherstellen?&amp;rdquo;, findet ihr die Antwort relativ schnell. Aber meistens fehlt der Verweis auf die original Quelle in der Microsoft Dokumentation.&lt;/p&gt;
+&lt;h2 id=&#34;antwort&#34;&gt;Antwort&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Gelöschte Teams Kanäle werden für 30 Tage aufbewahrt.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;offizielle-quelle&#34;&gt;Offizielle Quelle&lt;/h2&gt;
+&lt;p&gt;Im englischsprachigen Original &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; wird unterhalb der Tabelle &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;Fußnote 4&lt;/strong&gt; festgehalten:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -304,8 +375,9 @@ Deleted channels can be restored within 30 days.</description>
       <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
-      <description>Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.
-Möglichkeiten zur Konfiguration Die Option &amp;ldquo;VideoFiltersMode&amp;rdquo; kann zur Zeit nur per PowerShell gesetzt werden - nicht per Teams Admin Center.</description>
+      <description>&lt;p&gt;Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.&lt;/p&gt;
+&lt;h2 id=&#34;möglichkeiten-zur-konfiguration&#34;&gt;Möglichkeiten zur Konfiguration&lt;/h2&gt;
+&lt;p&gt;Die Option &amp;ldquo;VideoFiltersMode&amp;rdquo; kann zur Zeit nur per PowerShell gesetzt werden - nicht per Teams Admin Center. Folgende Konfigurationsmöglichkeiten bestehen:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -314,8 +386,20 @@ Möglichkeiten zur Konfiguration Die Option &amp;ldquo;VideoFiltersMode&amp;rdqu
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</guid>
-      <description>Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:
-Power Apps per user Power Automate per user Power Automate RPA Power BI Pro Power BI Premium (standalone) Project Plan 1 Project Plan 3 Visio Plan 1 Visio Plan 2 Erklärungsvideo Ich habe den Lizenzkauf als Anwender ausprobiert und dokumentiert.</description>
+      <description>&lt;p&gt;Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Power Apps per user&lt;/li&gt;
+&lt;li&gt;Power Automate per user&lt;/li&gt;
+&lt;li&gt;Power Automate RPA&lt;/li&gt;
+&lt;li&gt;Power BI Pro&lt;/li&gt;
+&lt;li&gt;Power BI Premium (standalone)&lt;/li&gt;
+&lt;li&gt;Project Plan 1&lt;/li&gt;
+&lt;li&gt;Project Plan 3&lt;/li&gt;
+&lt;li&gt;Visio Plan 1&lt;/li&gt;
+&lt;li&gt;Visio Plan 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;erklärungsvideo&#34;&gt;Erklärungsvideo&lt;/h2&gt;
+&lt;p&gt;Ich habe den Lizenzkauf als Anwender ausprobiert und dokumentiert. Die Funktionsweise eines Selbstkaufs von Lizenzen und eine Entscheidungshilfe, ob die Funktion im eigenen Unternehmen deaktiviert werden sollte zeige ich in folgendem Video:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -324,10 +408,15 @@ Power Apps per user Power Automate per user Power Automate RPA Power BI Pro Powe
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/09/08/Set-File-Date-with-PowerShell/</guid>
-      <description>Das Datum einer Datei kann beliebig per PowerShell gesetzt beziehungsweise manipuliert werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.
-Per Get-Member kann man sich die Zeit-Attribute einer Datei anzeigen lassen.
-1 Get-Item beispiel.txt | Get-Member *time* Interessant sind hier die Attribute:
-CreationTime (Wann die Datei erstellt wurde) LastAccessTime (Wann das letzte Mal auf die Datei zugegriffen wurde) LastWriteTime (Wann die Datei zuletzt geändert wurde) Wie hinten am {get;set;} zu erkennen ist, kann man die Attribute auch nicht nur auslesen, sondern auch setzen.</description>
+      <description>&lt;p&gt;Das Datum einer Datei kann beliebig per PowerShell gesetzt beziehungsweise manipuliert werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.&lt;/p&gt;
+&lt;p&gt;Per &lt;code&gt;Get-Member&lt;/code&gt; kann man sich die Zeit-Attribute einer Datei anzeigen lassen.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; beispiel.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -336,8 +425,16 @@ CreationTime (Wann die Datei erstellt wurde) LastAccessTime (Wann das letzte Mal
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</guid>
-      <description>Ich habe ein YouTube Video über die Konfiguration von Azure AD Connect und die Password Hash Sync erstellt. In diesem Blog-Post verweise ich nur auf ein paar weiterführende Links. Schaut euch auch das vorherige Video zur Planung und Vorbereitung von Azure AD Connect an!
-Weiterführende Links Download Azure AD Connect: Azure AD Connect Download (Microsoft.com) Diecknet Blog post: Azure AD Connect richtig planen und vorbereiten YouTube Video: Azure AD Connect richtig planen und vorbereiten Hardware Anforderungen für Azure AD Connect Server: Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect installieren (YouTube)&#34;  title=&#34;Azure AD Connect installieren (YouTube)&#34;  /&gt;
+&lt;/a&gt;&lt;br&gt;
+Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;YouTube Video&lt;/a&gt; über die Konfiguration von Azure AD Connect und die Password Hash Sync erstellt. In diesem Blog-Post verweise ich nur auf ein paar weiterführende Links. Schaut euch auch das vorherige &lt;a href=&#34;https://diecknet.de/2020/06/05/Azure-AD-Connect-Video/&#34; &gt;Video zur Planung und Vorbereitung von Azure AD Connect&lt;/a&gt; an!&lt;/p&gt;
+&lt;h2 id=&#34;weiterführende-links&#34;&gt;Weiterführende Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download Azure AD Connect: &lt;a href=&#34;https://go.microsoft.com/fwlink/?LinkId=615771&#34; target=&#34;_blank&#34; &gt;Azure AD Connect Download (Microsoft.com)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Diecknet Blog post: &lt;a href=&#34;https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/&#34; &gt;Azure AD Connect richtig planen und vorbereiten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;YouTube Video: &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;Azure AD Connect richtig planen und vorbereiten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hardware Anforderungen für Azure AD Connect Server: &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites#hardware-requirements-for-azure-ad-connect&#34; target=&#34;_blank&#34; &gt;Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.microsoft.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -346,7 +443,7 @@ Weiterführende Links Download Azure AD Connect: Azure AD Connect Download (Micr
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/06/10/Office-365-Trials/</guid>
-      <description>Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich einen kostenlosen Tenant erstellen, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.</description>
+      <description>&lt;p&gt;Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich &lt;a href=&#34;https://www.youtube.com/watch?v=gCS2RkGWNjA&#34; target=&#34;_blank&#34; &gt;einen kostenlosen Tenant erstellen&lt;/a&gt;, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -355,9 +452,9 @@ Weiterführende Links Download Azure AD Connect: Azure AD Connect Download (Micr
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</guid>
-      <description>Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein YouTube Video erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.
-Azure AD Connect Entscheidungsbaum Kostenloser Download (.pdf, .png, .drawio)
-Weiterführende Links Unterstützte und nicht unterstützte Azure AD Connect Topologien: Topologies for Azure AD Connect (docs.microsoft.com) Hardware Anforderungen für Azure AD Connect Server: Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.</description>
+      <description>&lt;p&gt;Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;YouTube Video&lt;/a&gt; erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  title=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -366,11 +463,11 @@ Weiterführende Links Unterstützte und nicht unterstützte Azure AD Connect Top
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
-      <description>Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:
-Administratorgenehmigung erforderlich
-Apple Internet Accounts
-Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.
-Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde anscheinend Anfang 2020 umbenannt.</description>
+      <description>&lt;p&gt;Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Administratorgenehmigung erforderlich&lt;/strong&gt;&lt;br&gt;
+Apple Internet Accounts&lt;br&gt;
+Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -379,9 +476,11 @@ Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde ans
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
-      <description>Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:
-HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.
-Der Link &amp;ldquo;Weitere Informationen&amp;rdquo; verweist auf https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. Wenn man schaut, wofür OAuth verwendet, wird dieser Artikel referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird.</description>
+      <description>&lt;p&gt;Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Der Link &amp;ldquo;&lt;strong&gt;Weitere Informationen&lt;/strong&gt;&amp;rdquo; verweist auf &lt;a href=&#34;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&#34; target=&#34;_blank&#34; &gt;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&lt;/a&gt;. Wenn man schaut, wofür OAuth verwendet, wird &lt;a href=&#34;https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN&#34; target=&#34;_blank&#34; &gt;dieser Artikel&lt;/a&gt; referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird. Da diese erwähnten Funktionen in dem Projekt nicht relevant waren, habe ich das erstmal ignoriert. Eine erneute Ausführung des HCW hat übrigens auch kein OAuth einrichten können. Manchmal kann aber das erneute Ausführen des HCW solche Probleme tatsächlich beheben - einfach ausprobieren!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -390,8 +489,17 @@ Der Link &amp;ldquo;Weitere Informationen&amp;rdquo; verweist auf https://suppor
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
-      <description>Wenn du herausfinden möchtest, wann ein Exchange Postfach erstellt wurde, wirst du wahrscheinlich über das Active Directory-Benutzer Attribut MSExchWhenMailboxCreated stolpern. Um den Wert auszulesen, kannst du PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.
-1 Get-ADUser -Properties MSExchMaiboxWhenCreated MSExchWhenMailboxCreated enthält nicht die ganze Wahrheit Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was du vielleicht denkst. Das Attribut wird nur propagiert wenn der Benutzer DAS ERSTE MAL ein Postfach erhält.</description>
+      <description>&lt;p&gt;Wenn du herausfinden möchtest, wann ein Exchange Postfach erstellt wurde, wirst du wahrscheinlich über das Active Directory-Benutzer Attribut &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt; stolpern. Um den Wert auszulesen, kannst du PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;MSExchWhenMailboxCreated Attribut per Active Directory-Benutzer und Computer anzeigen. Erweiterte Features müssen aktiviert sein.&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -400,8 +508,10 @@ Der Link &amp;ldquo;Weitere Informationen&amp;rdquo; verweist auf https://suppor
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
-      <description>Zugriff wurde für den Benutzer verweigert. - Exchange Raumpostfach Berechtigungen (Outlook Fenster)
-Standardmäßig hat der &amp;ldquo;Kalender&amp;rdquo;-Ordner von Exchange 2013 Raumpostfächer die Berechtigung &amp;ldquo;LimitedDetails&amp;rdquo; für das Sicherheitsprinzipal &amp;ldquo;Standard&amp;rdquo;. Wenn also keine weiteren Berechtigungen konfiguriert sind, können die Anwender keine Details für Termine in diesem Raum anzeigen. Für eine bessere Bedienbarkeit in Outlook ist die Berechtigung &amp;ldquo;Reviewer&amp;rdquo; besser geeignet. Hierdurch dürfen Elemente aufgelistet und Details angezeigt werden. Bei Bedarf kann noch das CalendarProcessing angepasst werden, sodass Details wie Beschreibung und Betreff des Termins nicht im Raumpostfach gespeichert werden.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Zugriff wurde für den Benutzer verweigert. - Exchange Raumpostfach Berechtigungen (Outlook Fenster)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Standardmäßig hat der &amp;ldquo;Kalender&amp;rdquo;-Ordner von Exchange 2013 Raumpostfächer die Berechtigung &amp;ldquo;LimitedDetails&amp;rdquo; für das Sicherheitsprinzipal &amp;ldquo;Standard&amp;rdquo;. Wenn also keine weiteren Berechtigungen konfiguriert sind, können die Anwender keine Details für Termine in diesem Raum anzeigen. Für eine bessere Bedienbarkeit in Outlook ist die Berechtigung &amp;ldquo;Reviewer&amp;rdquo; besser geeignet. Hierdurch dürfen Elemente aufgelistet und Details angezeigt werden. Bei Bedarf kann noch das &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-calendarprocessing?view=exchange-ps&#34; target=&#34;_blank&#34; &gt;CalendarProcessing&lt;/a&gt; angepasst werden, sodass Details wie Beschreibung und Betreff des Termins nicht im Raumpostfach gespeichert werden. Ob das alles sinnvoll ist, kommt immer auf die Umgebung an.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -410,12 +520,14 @@ Standardmäßig hat der &amp;ldquo;Kalender&amp;rdquo;-Ordner von Exchange 2013 
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
-      <description>Outlook Zertifikatswarnung nach Office 365 Migration
-Security Alert: svr1.example.com
-&amp;hellip;
-The security certificate has expired or is not valid yet]
-Ich habe kürzlich eine Anfrage von einem Kunden erhalten, der nach seiner Office 365 Migration noch Zertifikatswarnungen (Zertifikat abgelaufen) für den alten Exchange Server erhalten hat. Da ich bei der Migration nicht involviert war, musste ich mir erstmal einen Überblick verschaffen:
-Der On-Premise Exchange Server 2010 war noch vorhanden - logisch, sonst wäre wohl kaum eine Zertifikatswarnung erschienen.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Outlook Zertifikatswarnung nach Office 365 Migration&lt;br&gt;
+Security Alert: svr1.example.com&lt;br&gt;
+&amp;hellip;&lt;br&gt;
+The security certificate has expired or is not valid yet]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ich habe kürzlich eine Anfrage von einem Kunden erhalten, der nach seiner Office 365 Migration noch Zertifikatswarnungen (Zertifikat abgelaufen) für den alten Exchange Server erhalten hat. Da ich bei der Migration nicht involviert war, musste ich mir erstmal einen Überblick verschaffen:&lt;br&gt;
+Der On-Premise Exchange Server 2010 war noch vorhanden - logisch, sonst wäre wohl kaum eine Zertifikatswarnung erschienen. Es erhalten allerdings auch nicht alle Anwender diese Meldung. Betroffen waren sowohl migrierte Benutzer, als auch Benutzer, deren Postfächer direkt in Office 365 erstellt wurden.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -424,13 +536,17 @@ Der On-Premise Exchange Server 2010 war noch vorhanden - logisch, sonst wäre wo
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2019/10/21/new-blog/</guid>
-      <description>Ungefähr so ist die Unterhaltung abgelaufen, als ich der ersten Person von meinem Blog-Vorhaben erzählt habe:
-B: Dein Handy klingelt&amp;hellip;
-A: Oh, was? tippt auf das Handy &amp;hellip;
-B: 2001 hat angerufen und will seinen Blog zurück!
-A: &amp;hellip;
-Nun ja&amp;hellip;
-Das WARUM Nicht erst seit ich professionell in der IT-Welt arbeite, weiß ich, dass die Lösung zu vielen IT-Problemen oft nur eine Google Suche entfernt ist. Bei komplizierten Fällen muss man manchmal allerdings länger recherchieren&amp;hellip; In den Jahren habe ich immer mal wieder interessante Perspektiven und Lösungsansätze im Netz gefunden, die mir dabei geholfen haben weiter zu kommen.</description>
+      <description>&lt;p&gt;Ungefähr so ist die Unterhaltung abgelaufen, als ich der ersten Person von meinem Blog-Vorhaben erzählt habe:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;B: Dein Handy klingelt&amp;hellip;&lt;br&gt;
+A: Oh, was? &lt;em&gt;tippt auf das Handy&lt;/em&gt; &amp;hellip;&lt;br&gt;
+B: 2001 hat angerufen und will seinen Blog zurück!&lt;br&gt;
+A: &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Nun ja&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;das-warum&#34;&gt;Das WARUM&lt;/h2&gt;
+&lt;p&gt;Nicht erst seit ich professionell in der IT-Welt arbeite, weiß ich, dass die Lösung zu vielen IT-Problemen oft nur eine Google Suche entfernt ist. Bei komplizierten Fällen muss man manchmal allerdings länger recherchieren&amp;hellip; In den Jahren habe ich immer mal wieder interessante Perspektiven und Lösungsansätze im Netz gefunden, die mir dabei geholfen haben weiter zu kommen.
+Mit diesem Blog möchte ich etwas zurückgeben. Ich möchte Lösungen und Ideen teilen, um anderen zu helfen. Diese Webseite ist also nicht kommerziell, dient nicht der Selbstdarstellung oder ähnlichem.&lt;/p&gt;</description>
     </item>
     
     

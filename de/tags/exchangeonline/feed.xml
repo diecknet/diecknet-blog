@@ -13,8 +13,10 @@
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
-      <description>Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist Managed Identities was ihr benutzen solltet (diese Aussage wurde zuletzt geprüft im Juni 2024).
-Legacy Ansatz Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Credentials (🤢) verwendet, aber das gilt mittlerweile als veraltet. RunAs Accounts sind zum Herbst 2023 abgekündigt und zu Klartext-Kennwörtern muss ich nix sagen, oder? Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wirklich einfach nur per Azure Automation ein paar Exchange Online Einstellungen automatisieren wollt, ist das eigentlich nicht notwendig.</description>
+      <description>&lt;p&gt;Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist &lt;strong&gt;Managed Identities&lt;/strong&gt; was ihr benutzen solltet (diese Aussage wurde zuletzt geprüft im Juni 2024).&lt;/p&gt;
+&lt;h2 id=&#34;legacy-ansatz&#34;&gt;Legacy Ansatz&lt;/h2&gt;
+&lt;p&gt;Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Credentials (🤢) verwendet, aber das gilt mittlerweile als veraltet. RunAs Accounts sind zum Herbst 2023 abgekündigt und zu Klartext-Kennwörtern muss ich nix sagen, oder?
+Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wirklich einfach nur per Azure Automation ein paar Exchange Online Einstellungen automatisieren wollt, ist das eigentlich nicht notwendig.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,11 +25,11 @@ Legacy Ansatz Früher wurden dafür auch gerne RunAs Accounts oder Plaintext Cre
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
-      <description>Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:
-Administratorgenehmigung erforderlich
-Apple Internet Accounts
-Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.
-Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde anscheinend Anfang 2020 umbenannt.</description>
+      <description>&lt;p&gt;Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Administratorgenehmigung erforderlich&lt;/strong&gt;&lt;br&gt;
+Apple Internet Accounts&lt;br&gt;
+Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,12 +38,14 @@ Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde ans
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
-      <description>Outlook Zertifikatswarnung nach Office 365 Migration
-Security Alert: svr1.example.com
-&amp;hellip;
-The security certificate has expired or is not valid yet]
-Ich habe kürzlich eine Anfrage von einem Kunden erhalten, der nach seiner Office 365 Migration noch Zertifikatswarnungen (Zertifikat abgelaufen) für den alten Exchange Server erhalten hat. Da ich bei der Migration nicht involviert war, musste ich mir erstmal einen Überblick verschaffen:
-Der On-Premise Exchange Server 2010 war noch vorhanden - logisch, sonst wäre wohl kaum eine Zertifikatswarnung erschienen.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Outlook Zertifikatswarnung nach Office 365 Migration&lt;br&gt;
+Security Alert: svr1.example.com&lt;br&gt;
+&amp;hellip;&lt;br&gt;
+The security certificate has expired or is not valid yet]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ich habe kürzlich eine Anfrage von einem Kunden erhalten, der nach seiner Office 365 Migration noch Zertifikatswarnungen (Zertifikat abgelaufen) für den alten Exchange Server erhalten hat. Da ich bei der Migration nicht involviert war, musste ich mir erstmal einen Überblick verschaffen:&lt;br&gt;
+Der On-Premise Exchange Server 2010 war noch vorhanden - logisch, sonst wäre wohl kaum eine Zertifikatswarnung erschienen. Es erhalten allerdings auch nicht alle Anwender diese Meldung. Betroffen waren sowohl migrierte Benutzer, als auch Benutzer, deren Postfächer direkt in Office 365 erstellt wurden.&lt;/p&gt;</description>
     </item>
     
   </channel>

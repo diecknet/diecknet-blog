@@ -13,8 +13,9 @@
       <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
-      <description>If you&amp;rsquo;re using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type &amp;ldquo;SchedulingMailbox&amp;rdquo;. If an user gets assigned &amp;ldquo;Administrator&amp;rdquo; for a Booking Calendar, they get &amp;ldquo;FullAccess&amp;rdquo; permissions for the Scheduling Mailbox.
-List all Booking Calendars with permission I wrote a PowerShell script to list all the Booking Mailboxes with the users that have access.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type &amp;ldquo;SchedulingMailbox&amp;rdquo;. If an user gets assigned &amp;ldquo;Administrator&amp;rdquo; for a Booking Calendar, they get &amp;ldquo;FullAccess&amp;rdquo; permissions for the Scheduling Mailbox.&lt;/p&gt;
+&lt;h2 id=&#34;list-all-booking-calendars-with-permission&#34;&gt;List all Booking Calendars with permission&lt;/h2&gt;
+&lt;p&gt;I wrote a PowerShell script to list all the Booking Mailboxes with the users that have access.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,9 +24,11 @@ List all Booking Calendars with permission I wrote a PowerShell script to list a
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
-      <description>If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.
-In the Exchange Admin Center (EAC), open the info pane of the user&amp;rsquo;s mailbox. Click on &amp;ldquo;Manage mailbox archive&amp;rdquo;.
-An Auto-Expanding Archive provisions more Archive storage space, if needed. Default Archives have 100 GB of storage available. If the archive is already bigger than 100 GB, we must have additional storage.</description>
+      <description>&lt;p&gt;If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.&lt;/p&gt;
+&lt;p&gt;In the Exchange Admin Center (EAC), open the info pane of the user&amp;rsquo;s mailbox. Click on &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; alt=&#34;Exchange Admin Center - Mailbox Pane&#34;  title=&#34;Exchange Admin Center - Mailbox Pane&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An Auto-Expanding Archive provisions more Archive storage space, if needed. Default Archives have 100 GB of storage available. If the archive is already bigger than 100 GB, we must have additional storage.&lt;/p&gt;</description>
     </item>
     
   </channel>

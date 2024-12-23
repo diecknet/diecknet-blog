@@ -13,12 +13,20 @@
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/09/24/tryhackme-blueprint/</guid>
-      <description>I decided to try a bit more Penetration Testing/Ethical Hacking. The following is a Write-Up regarding the TryHackMe room &amp;ldquo;Blueprint&amp;rdquo;.
-Tasks The only info that we have is:
-Do you have what is takes to hack into this Windows Machine?
-And the questions:
-&amp;ldquo;Lab&amp;rdquo; user NTLM hash decrypted root.txt So we can assume it&amp;rsquo;s a Windows machine.
-Discovery I booted up my Kali linux machine and created a folder on my Desktop to use as a workspace.</description>
+      <description>&lt;p&gt;I decided to try a bit more Penetration Testing/Ethical Hacking. The following is a Write-Up regarding the &lt;a href=&#34;https://tryhackme.com/&#34; target=&#34;_blank&#34; &gt;TryHackMe&lt;/a&gt; room &lt;a href=&#34;https://tryhackme.com/r/room/blueprint&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Blueprint&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;tasks&#34;&gt;Tasks&lt;/h2&gt;
+&lt;p&gt;The only info that we have is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do you have what is takes to hack into this Windows Machine?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And the questions:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Lab&amp;rdquo; user NTLM hash decrypted&lt;/li&gt;
+&lt;li&gt;root.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So we can assume it&amp;rsquo;s a Windows machine.&lt;/p&gt;</description>
     </item>
     
   </channel>

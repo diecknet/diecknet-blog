@@ -13,9 +13,11 @@
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
-      <description>I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed. It was just a test environment, but I thought it would be useful or interesting to drill down on that issue.
-I&amp;rsquo;ll guide you through my troubleshooting steps / thought process.
-Try to continue Setup First I tried to resume the setup. The setup fails early - at Step 1 of 13: Stopping Services.</description>
+      <description>&lt;p&gt;I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed.
+It was just a test environment, but I thought it would be useful or interesting to drill down on that issue.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll guide you through my troubleshooting steps / thought process.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; alt=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  title=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

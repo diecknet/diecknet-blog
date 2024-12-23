@@ -13,8 +13,10 @@
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
-      <description>If you want to manage Exchange Online via Azure Automation, Managed Identities is what you should use (this statement was last checked in June 2024).
-Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I? You could still use App Registrations in Entra ID, but if you really just want to automate some Exchange settings via Azure Automation, it&amp;rsquo;s not really necessary.</description>
+      <description>&lt;p&gt;If you want to manage Exchange Online via Azure Automation, &lt;strong&gt;Managed Identities&lt;/strong&gt; is what you should use (this statement was last checked in June 2024).&lt;/p&gt;
+&lt;h2 id=&#34;legacy-approach&#34;&gt;Legacy approach&lt;/h2&gt;
+&lt;p&gt;In the past, RunAs Accounts or Plaintext Credentials (🤢) were also commonly used for this purpose, but this is now considered deprecated. RunAs accounts will be  discontinued by fall 2023. And I don&amp;rsquo;t have to say anything about plaintext passwords, do I?
+You could still use App Registrations in Entra ID, but if you really just want to automate some Exchange settings via Azure Automation, it&amp;rsquo;s not really necessary.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,8 +25,8 @@ Legacy approach In the past, RunAs Accounts or Plaintext Credentials (🤢) were
       <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
-      <description>I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the Nerdio Hackathon 2021. My first Hackathon attendance :^).
-Update 2021-10-05 - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements.</description>
+      <description>&lt;p&gt;I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the &lt;a href=&#34;https://getnerdio.com/nerdio-hackathon/&#34; target=&#34;_blank&#34; &gt;Nerdio Hackathon 2021&lt;/a&gt;. My first Hackathon attendance :^).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 2021-10-05&lt;/strong&gt; - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements. Anyway I got a 1000 USD Amazon Gift Card 🤩.&lt;/p&gt;</description>
     </item>
     
   </channel>

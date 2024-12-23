@@ -13,10 +13,11 @@
       <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/06/29/Deleted-Teams-Channel-Retention/</guid>
-      <description>If you&amp;rsquo;re asking yourself &amp;ldquo;How long are deleted Teams channels retained?&amp;rdquo; or &amp;ldquo;For how long can I restore a deleted Teams channel?&amp;rdquo; you can find the answer relatively quick. But mostly the original source in the Microsoft documentation is missing.
-Answer Deleted Microsoft Teams Channels are retained for 30 days.
-Official Source In https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels under the table Teams and channels in footnote 4 it&amp;rsquo;s stated:
-Deleted channels can be restored within 30 days.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re asking yourself &amp;ldquo;How long are deleted Teams channels retained?&amp;rdquo; or &amp;ldquo;For how long can I restore a deleted Teams channel?&amp;rdquo; you can find the answer relatively quick. But mostly the original source in the Microsoft documentation is missing.&lt;/p&gt;
+&lt;h2 id=&#34;answer&#34;&gt;Answer&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Deleted Microsoft Teams Channels are retained for 30 days.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;official-source&#34;&gt;Official Source&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; under the table &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;footnote 4&lt;/strong&gt; it&amp;rsquo;s stated:&lt;/p&gt;</description>
     </item>
     
   </channel>

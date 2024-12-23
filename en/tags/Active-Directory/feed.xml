@@ -13,9 +13,14 @@
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/11/25/powershell-show-adba-infos/</guid>
-      <description>If you quickly want to retrieve infos about Active Directory Based Activation (ADBA) in your domain, you can use this PowerShell One-liner:
-1 Get-ADDomain | %{Get-ADObject -SearchBase &amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,$($_.DistinguishedName)&amp;#34; -LDAPFilter &amp;#34;(objectclass=msspp-activationobject)&amp;#34; -Properties * -ErrorAction SilentlyContinue | fl displayName,DistinguishedName,Name,msspp-csvlkpartialproductkey } I haven&amp;rsquo;t tested it in a multi-domain environment, but I think it should work.
-Explanation The code uses aliases, which are not great in scripts, but neat in One-Liners. It uses Get-ADDomain to determine the Distinguished Name for the Domain.</description>
+      <description>&lt;p&gt;If you quickly want to retrieve infos about Active Directory Based Activation (ADBA) in your domain, you can use this PowerShell One-liner:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
     <item>
@@ -24,8 +29,9 @@ Explanation The code uses aliases, which are not great in scripts, but neat in O
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/08/07/powershell-active-directory-computers-filtering/</guid>
-      <description>I recently worked on a client project, where I had to do some work around Active Directory Computers. I used PowerShell and some light filtering and processing. And now I share those examples, and hopefully someone finds them interesting or helpful. Maybe it will be me, who finds it interesting in the future. In that case: Moin Andi! 👋
-Example 1: Filter Computer by Operating System Version The AD attribute OperatingSystemVersion holds the OS version with the build number in a format like this: 10.</description>
+      <description>&lt;p&gt;I recently worked on a client project, where I had to do some work around Active Directory Computers. I used PowerShell and some light filtering and processing. And now I share those examples, and hopefully someone finds them interesting or helpful. Maybe it will be me, who finds it interesting in the future. In that case: Moin Andi! 👋&lt;/p&gt;
+&lt;h2 id=&#34;example-1-filter-computer-by-operating-system-version&#34;&gt;Example 1: Filter Computer by Operating System Version&lt;/h2&gt;
+&lt;p&gt;The AD attribute &lt;code&gt;OperatingSystemVersion&lt;/code&gt; holds the OS version with the build number in a format like this: &lt;code&gt;10.0 (19041)&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,7 +40,10 @@ Example 1: Filter Computer by Operating System Version The AD attribute Operatin
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
-      <description>I had this weird issue with a Exchange Server environment: The company had an Exchange Server 2016 DAG and migrated all User Mailboxes to Exchange Online. I then installed a fresh Exchange Server 2019 for Recipient Management and SMTP-Relay. To use the Exchange Server 2019 Hybrid License, I did not create a Mailbox Database. I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exchange 2016 Servers. I decomissioned the DAG and uninstalled Exchange from the old Servers.</description>
+      <description>&lt;p&gt;I had this weird issue with a Exchange Server environment:
+The company had an Exchange Server 2016 DAG and migrated all User Mailboxes to Exchange Online. I then installed a fresh Exchange Server 2019 for Recipient Management and SMTP-Relay.
+To use the Exchange Server 2019 Hybrid License, I did not create a Mailbox Database.
+I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exchange 2016 Servers. I decomissioned the DAG and uninstalled Exchange from the old Servers.&lt;/p&gt;</description>
     </item>
     
   </channel>

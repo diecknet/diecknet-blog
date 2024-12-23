@@ -13,8 +13,9 @@
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
-      <description>Apparently it&amp;rsquo;s not that easy to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header ConsistencyLevel: eventual to use the Advanced Query Capabilities. Then we can use the Query parameter $count. Alternatively I found that I could also add it as an URL query parameter instead. That would be &amp;amp;ConsistencyLevel=eventual.
-Example Queries Replace the Group ID (02bd9fd6-8f93-4758-87c3-1fb73740a315) with your desired Azure Active Directory Group ID.</description>
+      <description>&lt;p&gt;Apparently it&amp;rsquo;s not &lt;em&gt;that easy&lt;/em&gt; to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; to use the &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt;. Then we can use the Query parameter &lt;code&gt;$count&lt;/code&gt;. Alternatively I found that I could also add it as an URL query parameter instead. That would be &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;example-queries&#34;&gt;Example Queries&lt;/h2&gt;
+&lt;p&gt;Replace the Group ID (&lt;code&gt;02bd9fd6-8f93-4758-87c3-1fb73740a315&lt;/code&gt;) with your desired Azure Active Directory Group ID. &lt;a href=&#34;https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%2F02bd9fd6-8f93-4758-87c3-1fb73740a315%2Fmembers%3F%24count%3Dtrue%26ConsistencyLevel%3Deventual&amp;amp;method=GET&amp;amp;version=v1.0&amp;amp;GraphUrl=https://graph.microsoft.com&#34; target=&#34;_blank&#34; &gt;Try the query in the Microsoft Graph Explorer here.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

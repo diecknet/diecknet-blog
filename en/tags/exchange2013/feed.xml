@@ -13,9 +13,11 @@
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
-      <description>At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:
-HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.
-The link &amp;ldquo;more information&amp;rdquo; links to https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. If you lookup what OAuth is used for, this article comes up.</description>
+      <description>&lt;p&gt;At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HCW8064 - The HCW has completed, but was not able to perform the OAuth portion of your Hybrid configuration. If you need features that rely on OAuth, you can try running the HCW again or manually configure OAuth using these manual steps.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The link &amp;ldquo;&lt;strong&gt;more information&lt;/strong&gt;&amp;rdquo; links to &lt;a href=&#34;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&#34; target=&#34;_blank&#34; &gt;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&lt;/a&gt;. If you lookup what OAuth is used for, &lt;a href=&#34;https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN&#34; target=&#34;_blank&#34; &gt;this article&lt;/a&gt; comes up. There you can read OAuth is needed for cross-premises eDiscovery searches. Since these functions were not relevant in the project, I ignored them for the time being. By the way, running HCW again did not set up OAuth properly in this case. But sometimes you can easily fix a issue like this by re-running HCW.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -24,8 +26,17 @@ The link &amp;ldquo;more information&amp;rdquo; links to https://support.microso
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
-      <description>If you&amp;rsquo;re wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute MSExchWhenMailboxCreated. You can get the value using PowerShell or ADUC with advanced features enabled.
-1 Get-ADUser -Properties MSExchMaiboxWhenCreated MSExchWhenMailboxCreated contains not the full truth That could almost be the end of the story. BUT that attribute is not what you might think. The attribute gets only propagated the FIRST time the user gets a mailbox.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;re wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt;. You can get the value using PowerShell or ADUC with advanced features enabled.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;Get MSExchWhenMailboxCreated attribute using Active Directory Users and Computers. Advanced features need to be enabled.&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,7 +45,7 @@ The link &amp;ldquo;more information&amp;rdquo; links to https://support.microso
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
-      <description>By default, the &amp;ldquo;Calendar&amp;rdquo; folder in Exchange 2013 Room Mailboxes has the &amp;ldquo;LimitedDetails&amp;rdquo; permission for the &amp;ldquo;Standard&amp;rdquo; security principal. Therefore, if no other permissions are configured, users cannot view details for appointments in this room. For better usability in Outlook, the &amp;ldquo;Reviewer&amp;rdquo; permission is more suitable. This allows items to be listed and details to be displayed. If required, the CalendarProcessing can be adjusted so that details such as the description and subject of the appointment are not saved in the room mailbox.</description>
+      <description>&lt;p&gt;By default, the &amp;ldquo;Calendar&amp;rdquo; folder in Exchange 2013 Room Mailboxes has the &amp;ldquo;LimitedDetails&amp;rdquo; permission for the &amp;ldquo;Standard&amp;rdquo; security principal. Therefore, if no other permissions are configured, users cannot view details for appointments in this room. For better usability in Outlook, the &amp;ldquo;Reviewer&amp;rdquo; permission is more suitable. This allows items to be listed and details to be displayed. If required, the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-calendarprocessing?view=exchange-ps&#34; target=&#34;_blank&#34; &gt;CalendarProcessing&lt;/a&gt; can be adjusted so that details such as the description and subject of the appointment are not saved in the room mailbox. Whether all this makes sense always depends on the environment.&lt;/p&gt;</description>
     </item>
     
   </channel>

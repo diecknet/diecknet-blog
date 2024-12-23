@@ -13,8 +13,8 @@
       <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
-      <description>I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the Nerdio Hackathon 2021. My first Hackathon attendance :^).
-Update 2021-10-05 - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements.</description>
+      <description>&lt;p&gt;I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the &lt;a href=&#34;https://getnerdio.com/nerdio-hackathon/&#34; target=&#34;_blank&#34; &gt;Nerdio Hackathon 2021&lt;/a&gt;. My first Hackathon attendance :^).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 2021-10-05&lt;/strong&gt; - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements. Anyway I got a 1000 USD Amazon Gift Card 🤩.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -13,7 +13,8 @@
       <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/02/22/Migrating-from-11ty-to-Hugo/</guid>
-      <description>I recently upgraded this website to 11ty v2.0, but I needed more change. Initially I just wanted to create a basic Design with Terminal.css. But then I randomly stumbled over the Hugo Theme Gallery and found some beautiful themes! So I chose to use Hugo Papermod and migrate the Website to Hugo 🤓. Since I don&amp;rsquo;t really know JavaScript, so it doesn&amp;rsquo;t matter for me that Hugo uses Go instead. I never used Go as a programming language, but it sounds great.</description>
+      <description>&lt;p&gt;I recently upgraded this website to 11ty v2.0, but I needed more change. Initially I just wanted to create a basic Design with &lt;a href=&#34;https://github.com/Gioni06/terminal.css&#34; target=&#34;_blank&#34; &gt;Terminal.css&lt;/a&gt;. But then I randomly stumbled over the &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; &gt;Hugo Theme Gallery&lt;/a&gt; and found some beautiful themes! So I chose to use &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod/&#34; target=&#34;_blank&#34; &gt;Hugo Papermod&lt;/a&gt; and migrate the Website to Hugo 🤓. Since I don&amp;rsquo;t &lt;em&gt;really&lt;/em&gt; know JavaScript, so it doesn&amp;rsquo;t matter for me that Hugo uses Go instead. I never used Go as a programming language, but it sounds great.&lt;br&gt;
+I&amp;rsquo;ll just ramble a bit now what I did to migrate my blog.&lt;/p&gt;</description>
     </item>
     
   </channel>

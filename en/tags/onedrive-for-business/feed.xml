@@ -13,9 +13,19 @@
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</guid>
-      <description>Normally when a user leaves the Company their OneDrive for Business site gets automatically delegated to their manager. That means the manager gets SharePoint Site Collection admin rights to the OneDrive site of their subordinate.
-Checking and Changing Access Delegation ⚠️ Access Delegation is enabled as default. The setting can be found and changed here:
-Go to More features in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.</description>
+      <description>&lt;p&gt;Normally when a user leaves the Company their OneDrive for Business site gets automatically delegated to their manager. That means the manager gets SharePoint Site Collection admin rights to the OneDrive site of their subordinate.&lt;/p&gt;
+&lt;h2 id=&#34;checking-and-changing-access-delegation&#34;&gt;Checking and Changing Access Delegation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ Access Delegation is enabled as default&lt;/strong&gt;. The setting can be found and changed here:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;More features&lt;/strong&gt; in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.
+[&amp;hellip;]&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;User profiles&lt;/strong&gt;, select &lt;strong&gt;Open&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;My Site Settings&lt;/strong&gt;, select &lt;strong&gt;Setup My Sites&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Next to &lt;strong&gt;My Site Cleanup&lt;/strong&gt;, make sure &lt;strong&gt;Enable access delegation&lt;/strong&gt; is selected.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Source: &lt;a href=&#34;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&#34; target=&#34;_blank&#34; &gt;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -13,8 +13,10 @@
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</guid>
-      <description>Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden. Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die Microsoft Dokumentation verweist nur am Rande auf das Thema und erklärt nicht wirklich.
-In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Unternehmen betrifft: Im Microsoft 365 Admin Center wird angezeigt:</description>
+      <description>&lt;p&gt;Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden.
+Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft Dokumentation verweist nur am Rande auf das Thema&lt;/a&gt; und erklärt nicht wirklich.&lt;/p&gt;
+&lt;p&gt;In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Unternehmen betrifft:
+Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,10 +25,13 @@ In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Untern
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
-      <description>In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:
-Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden.
-Verbindung mit dem Server herstellen, um diese anzuzeigen
-In persönlichen Postfächern wird stattdessen die Möglichkeit geboten, weitere Elemente vom Server abzurufen. Der Text dazu wurde stümperhaft automatisch übersetzt, was sich gut ins Gesamtbild fügt:</description>
+      <description>&lt;p&gt;In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden.&lt;/p&gt;
+&lt;p&gt;Verbindung mit dem Server herstellen, um diese anzuzeigen&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; alt=&#34;Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen&#34;  title=&#34;Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,11 +40,11 @@ In persönlichen Postfächern wird stattdessen die Möglichkeit geboten, weitere
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
-      <description>Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:
-Administratorgenehmigung erforderlich
-Apple Internet Accounts
-Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.
-Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde anscheinend Anfang 2020 umbenannt.</description>
+      <description>&lt;p&gt;Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Administratorgenehmigung erforderlich&lt;/strong&gt;&lt;br&gt;
+Apple Internet Accounts&lt;br&gt;
+Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugreifen zu können, eine Berechtigung, die nur ein Administrator erteilen kann. Bitten Sie einen Administrator, die Berechtigung für diese App zu erteilen, damit Sie die App verwenden können.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +53,11 @@ Die App hieß früher übrigens &amp;ldquo;iOS Accounts&amp;rdquo; und wurde ans
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
-      <description>Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:
-HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.
-Der Link &amp;ldquo;Weitere Informationen&amp;rdquo; verweist auf https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you. Wenn man schaut, wofür OAuth verwendet, wird dieser Artikel referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird.</description>
+      <description>&lt;p&gt;Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HCW8064 - Der Assistent für Hybridkonfiguration wurde abgeschlossen, er konnte den OAuth-Anteil der Hybridkonfiguration aber nicht ausführen. Wenn Sie Features benötigen, die OAuth voraussetzen, können Sie versuchen den Assistenten für Hybridkonfiguration erneut auszuführen oder OAuth mithilfe dieser manuellen Schritte manuell konfigurieren.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Der Link &amp;ldquo;&lt;strong&gt;Weitere Informationen&lt;/strong&gt;&amp;rdquo; verweist auf &lt;a href=&#34;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&#34; target=&#34;_blank&#34; &gt;https://support.microsoft.com/en-us/help/3089172/hcw-has-completed-but-was-not-able-to-perform-the-oauth-portion-of-you&lt;/a&gt;. Wenn man schaut, wofür OAuth verwendet, wird &lt;a href=&#34;https://docs.microsoft.com/en-us/exchange/using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help?redirectedfrom=MSDN&#34; target=&#34;_blank&#34; &gt;dieser Artikel&lt;/a&gt; referenziert. Dort ist zu lesen, OAuth für Cross-Premises eDiscovery Suchen benötigt wird. Da diese erwähnten Funktionen in dem Projekt nicht relevant waren, habe ich das erstmal ignoriert. Eine erneute Ausführung des HCW hat übrigens auch kein OAuth einrichten können. Manchmal kann aber das erneute Ausführen des HCW solche Probleme tatsächlich beheben - einfach ausprobieren!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,8 +66,17 @@ Der Link &amp;ldquo;Weitere Informationen&amp;rdquo; verweist auf https://suppor
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
-      <description>Wenn du herausfinden möchtest, wann ein Exchange Postfach erstellt wurde, wirst du wahrscheinlich über das Active Directory-Benutzer Attribut MSExchWhenMailboxCreated stolpern. Um den Wert auszulesen, kannst du PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.
-1 Get-ADUser -Properties MSExchMaiboxWhenCreated MSExchWhenMailboxCreated enthält nicht die ganze Wahrheit Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was du vielleicht denkst. Das Attribut wird nur propagiert wenn der Benutzer DAS ERSTE MAL ein Postfach erhält.</description>
+      <description>&lt;p&gt;Wenn du herausfinden möchtest, wann ein Exchange Postfach erstellt wurde, wirst du wahrscheinlich über das Active Directory-Benutzer Attribut &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt; stolpern. Um den Wert auszulesen, kannst du PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;MSExchWhenMailboxCreated Attribut per Active Directory-Benutzer und Computer anzeigen. Erweiterte Features müssen aktiviert sein.&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,8 +85,10 @@ Der Link &amp;ldquo;Weitere Informationen&amp;rdquo; verweist auf https://suppor
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
-      <description>Zugriff wurde für den Benutzer verweigert. - Exchange Raumpostfach Berechtigungen (Outlook Fenster)
-Standardmäßig hat der &amp;ldquo;Kalender&amp;rdquo;-Ordner von Exchange 2013 Raumpostfächer die Berechtigung &amp;ldquo;LimitedDetails&amp;rdquo; für das Sicherheitsprinzipal &amp;ldquo;Standard&amp;rdquo;. Wenn also keine weiteren Berechtigungen konfiguriert sind, können die Anwender keine Details für Termine in diesem Raum anzeigen. Für eine bessere Bedienbarkeit in Outlook ist die Berechtigung &amp;ldquo;Reviewer&amp;rdquo; besser geeignet. Hierdurch dürfen Elemente aufgelistet und Details angezeigt werden. Bei Bedarf kann noch das CalendarProcessing angepasst werden, sodass Details wie Beschreibung und Betreff des Termins nicht im Raumpostfach gespeichert werden.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Zugriff wurde für den Benutzer verweigert. - Exchange Raumpostfach Berechtigungen (Outlook Fenster)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Standardmäßig hat der &amp;ldquo;Kalender&amp;rdquo;-Ordner von Exchange 2013 Raumpostfächer die Berechtigung &amp;ldquo;LimitedDetails&amp;rdquo; für das Sicherheitsprinzipal &amp;ldquo;Standard&amp;rdquo;. Wenn also keine weiteren Berechtigungen konfiguriert sind, können die Anwender keine Details für Termine in diesem Raum anzeigen. Für eine bessere Bedienbarkeit in Outlook ist die Berechtigung &amp;ldquo;Reviewer&amp;rdquo; besser geeignet. Hierdurch dürfen Elemente aufgelistet und Details angezeigt werden. Bei Bedarf kann noch das &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-calendarprocessing?view=exchange-ps&#34; target=&#34;_blank&#34; &gt;CalendarProcessing&lt;/a&gt; angepasst werden, sodass Details wie Beschreibung und Betreff des Termins nicht im Raumpostfach gespeichert werden. Ob das alles sinnvoll ist, kommt immer auf die Umgebung an.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,12 +97,14 @@ Standardmäßig hat der &amp;ldquo;Kalender&amp;rdquo;-Ordner von Exchange 2013 
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
-      <description>Outlook Zertifikatswarnung nach Office 365 Migration
-Security Alert: svr1.example.com
-&amp;hellip;
-The security certificate has expired or is not valid yet]
-Ich habe kürzlich eine Anfrage von einem Kunden erhalten, der nach seiner Office 365 Migration noch Zertifikatswarnungen (Zertifikat abgelaufen) für den alten Exchange Server erhalten hat. Da ich bei der Migration nicht involviert war, musste ich mir erstmal einen Überblick verschaffen:
-Der On-Premise Exchange Server 2010 war noch vorhanden - logisch, sonst wäre wohl kaum eine Zertifikatswarnung erschienen.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Outlook Zertifikatswarnung nach Office 365 Migration&lt;br&gt;
+Security Alert: svr1.example.com&lt;br&gt;
+&amp;hellip;&lt;br&gt;
+The security certificate has expired or is not valid yet]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ich habe kürzlich eine Anfrage von einem Kunden erhalten, der nach seiner Office 365 Migration noch Zertifikatswarnungen (Zertifikat abgelaufen) für den alten Exchange Server erhalten hat. Da ich bei der Migration nicht involviert war, musste ich mir erstmal einen Überblick verschaffen:&lt;br&gt;
+Der On-Premise Exchange Server 2010 war noch vorhanden - logisch, sonst wäre wohl kaum eine Zertifikatswarnung erschienen. Es erhalten allerdings auch nicht alle Anwender diese Meldung. Betroffen waren sowohl migrierte Benutzer, als auch Benutzer, deren Postfächer direkt in Office 365 erstellt wurden.&lt;/p&gt;</description>
     </item>
     
   </channel>

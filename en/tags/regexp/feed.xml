@@ -13,9 +13,16 @@
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/</guid>
-      <description>A short example for PowerShell Regular Expressions.
-Scenario: Match filenames like ID1234_MyDocumentXYZ.pdf.lnk. We want go get the number after ID and the rest of the filename between the underscore _ and the file extension .lnk.
-1 2 3 4 5 $oldLink = &amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34; if($oldLink -match &amp;#39;ID(?&amp;lt;id&amp;gt;\d+)_(?&amp;lt;actualFilename&amp;gt;.+)\.lnk$&amp;#39;) { Write-Output &amp;#34;ID: $($Matches.id)&amp;#34; Write-Output &amp;#34;Actual Filename: $($Matches.actualFilename)&amp;#34; } (?&amp;lt;id&amp;gt;\d+) is a named regex capture group (initialized by ?&amp;lt;groupname&amp;gt;). The group matches any numeric character (\d).</description>
+      <description>&lt;p&gt;A short example for PowerShell Regular Expressions.&lt;/p&gt;
+&lt;p&gt;Scenario: Match filenames like &lt;code&gt;ID1234_MyDocumentXYZ.pdf.lnk&lt;/code&gt;. We want go get the number after &lt;code&gt;ID&lt;/code&gt; and the rest of the filename between the underscore &lt;code&gt;_&lt;/code&gt; and the file extension &lt;code&gt;.lnk&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
   </channel>

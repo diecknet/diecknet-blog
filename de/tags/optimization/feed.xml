@@ -13,9 +13,10 @@
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2024/03/12/powershell-measure-execution-time/</guid>
-      <description>Wenn ihr euren PowerShell Code auf Geschwindigkeit optimieren wollt, dann macht es Sinn Zeiten zu messen. Es gibt mehrere Möglichkeiten um zu messen, wie lange die Ausführung von einem Stück PowerShell Code dauert.
-🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.
-Möglichkeit 1: Measure-Command Eine einfache Möglichkeit ist das Cmdlet Measure-Command. Es nimmt einen ScriptBlock entgegen, der dann auch ausgeführt wird. Und wir erhalten im Anschluss ein Messergebnis in Form eines TimeSpan Objekts.</description>
+      <description>&lt;p&gt;Wenn ihr euren PowerShell Code auf Geschwindigkeit optimieren wollt, dann macht es Sinn Zeiten zu messen. Es gibt mehrere Möglichkeiten um zu messen, wie lange die Ausführung von einem Stück PowerShell Code dauert.&lt;br&gt;
+&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/-tpR-KQpPq4&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;möglichkeit-1-measure-command&#34;&gt;Möglichkeit 1: Measure-Command&lt;/h2&gt;
+&lt;p&gt;Eine einfache Möglichkeit ist das Cmdlet &lt;code&gt;Measure-Command&lt;/code&gt;. Es nimmt einen ScriptBlock entgegen, der dann auch ausgeführt wird. Und wir erhalten im Anschluss ein Messergebnis in Form eines &lt;code&gt;TimeSpan&lt;/code&gt; Objekts. Ein einfaches Beispiel dafür:&lt;/p&gt;</description>
     </item>
     
   </channel>

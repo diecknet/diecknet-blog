@@ -13,11 +13,13 @@
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
-      <description>Outlook Certificate Warning after Office 365 Migration
-Security Alert: svr1.example.com
-The security certificate has expired or is not valid yet
-I recently received a request from a customer who still received certificate warnings (expired certificate) for the old Exchange Server after migrating to Office 365. Since I was not involved in the migration, I had to get an overview first:
-The On-Premise Exchange Server 2010 was still online - of course, otherwise a certificate warning would hardly have appeared.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Outlook Certificate Warning after Office 365 Migration&lt;br&gt;
+Security Alert: svr1.example.com&lt;br&gt;
+The security certificate has expired or is not valid yet&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I recently received a request from a customer who still received certificate warnings (expired certificate) for the old Exchange Server after migrating to Office 365. Since I was not involved in the migration, I had to get an overview first:&lt;br&gt;
+The On-Premise Exchange Server 2010 was still online - of course, otherwise a certificate warning would hardly have appeared. However, not all users received this message. This affected migrated users as well as users whose mailboxes were created directly in Office 365.&lt;/p&gt;</description>
     </item>
     
   </channel>

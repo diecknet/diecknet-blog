@@ -13,8 +13,8 @@
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</guid>
-      <description>Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.
-Ich wollte mich einfach nur per Connect-MicrosoftTeams mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter.</description>
+      <description>&lt;p&gt;Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.&lt;/p&gt;
+&lt;p&gt;Ich wollte mich einfach nur per &lt;code&gt;Connect-MicrosoftTeams&lt;/code&gt; mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter. Aber bevor ich überhaupt nach einem Benutzernamen gefragt wurde - alles rot.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,8 +23,9 @@ Ich wollte mich einfach nur per Connect-MicrosoftTeams mit der Microsoft Teams A
       <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
-      <description>Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.
-Möglichkeiten zur Konfiguration Die Option &amp;ldquo;VideoFiltersMode&amp;rdquo; kann zur Zeit nur per PowerShell gesetzt werden - nicht per Teams Admin Center.</description>
+      <description>&lt;p&gt;Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.&lt;/p&gt;
+&lt;h2 id=&#34;möglichkeiten-zur-konfiguration&#34;&gt;Möglichkeiten zur Konfiguration&lt;/h2&gt;
+&lt;p&gt;Die Option &amp;ldquo;VideoFiltersMode&amp;rdquo; kann zur Zeit nur per PowerShell gesetzt werden - nicht per Teams Admin Center. Folgende Konfigurationsmöglichkeiten bestehen:&lt;/p&gt;</description>
     </item>
     
   </channel>

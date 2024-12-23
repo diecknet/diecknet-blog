@@ -13,8 +13,9 @@
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
-      <description>This post is outdated. The &amp;ldquo;authentcation methods policy&amp;rdquo; is now easily available in the Entra portal. You might still need to migrate from the legacy settings, read the whole article at Microsoft Learn.
-OLD POST for reference In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you&amp;rsquo;re also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you&amp;rsquo;ve come to right place.</description>
+      <description>&lt;p&gt;This post is outdated. The &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;authentcation methods policy&amp;rdquo;&lt;/a&gt; is now easily available in the Entra portal. You might still need to migrate from the legacy settings, read the whole article at &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;old-post-for-reference&#34;&gt;OLD POST for reference&lt;/h2&gt;
+&lt;p&gt;In my opinion the official Microsoft Documentation lacks of any clear information on where to configure the allowed MFA methods for Azure AD. So if you&amp;rsquo;re also wondering on how to configure the allowed Multi-Factor-Authentication methods for Microsoft 365, you&amp;rsquo;ve come to right place.&lt;/p&gt;</description>
     </item>
     
   </channel>

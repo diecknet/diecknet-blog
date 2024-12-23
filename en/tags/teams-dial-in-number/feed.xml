@@ -13,8 +13,8 @@
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</guid>
-      <description>You can using Microsoft Teams Audio Conferencing licenses to get Dial-In phone numbers for your meetings. The license is needed per user that creates the meeting invites.
-The phone number in the meeting invite is based on the UsageLocation attribute of the user - once when the user gets enabled for Audio Conferencing. So even if you fix a wrong UsageLocation, the user will still have the old dial-in number assigned.</description>
+      <description>&lt;p&gt;You can using Microsoft Teams Audio Conferencing licenses to get Dial-In phone numbers for your meetings. The license is needed per user that creates the meeting invites.&lt;/p&gt;
+&lt;p&gt;The phone number in the meeting invite is based on the UsageLocation attribute of the user - &lt;strong&gt;once when the user gets enabled for Audio Conferencing&lt;/strong&gt;. So even if you fix a wrong UsageLocation, the user will still have the old dial-in number assigned.&lt;/p&gt;</description>
     </item>
     
   </channel>

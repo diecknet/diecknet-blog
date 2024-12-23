@@ -13,10 +13,11 @@
       <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/</guid>
-      <description>Falls ihr euch fragt &amp;ldquo;Wie lange wird ein gelöschter Teams Kanal aufbewahrt?&amp;rdquo; oder &amp;ldquo;Für wie lange kann ich einen gelöschten Teams Kanal wiederherstellen?&amp;rdquo;, findet ihr die Antwort relativ schnell. Aber meistens fehlt der Verweis auf die original Quelle in der Microsoft Dokumentation.
-Antwort Gelöschte Teams Kanäle werden für 30 Tage aufbewahrt.
-Offizielle Quelle Im englischsprachigen Original https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels wird unterhalb der Tabelle Teams and channels in Fußnote 4 festgehalten:
-Deleted channels can be restored within 30 days.</description>
+      <description>&lt;p&gt;Falls ihr euch fragt &amp;ldquo;Wie lange wird ein gelöschter Teams Kanal aufbewahrt?&amp;rdquo; oder &amp;ldquo;Für wie lange kann ich einen gelöschten Teams Kanal wiederherstellen?&amp;rdquo;, findet ihr die Antwort relativ schnell. Aber meistens fehlt der Verweis auf die original Quelle in der Microsoft Dokumentation.&lt;/p&gt;
+&lt;h2 id=&#34;antwort&#34;&gt;Antwort&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Gelöschte Teams Kanäle werden für 30 Tage aufbewahrt.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;offizielle-quelle&#34;&gt;Offizielle Quelle&lt;/h2&gt;
+&lt;p&gt;Im englischsprachigen Original &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; wird unterhalb der Tabelle &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;Fußnote 4&lt;/strong&gt; festgehalten:&lt;/p&gt;</description>
     </item>
     
   </channel>

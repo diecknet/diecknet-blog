@@ -13,9 +13,13 @@
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2022/06/21/Git-on-Windows-remove-all-merged-branches/</guid>
-      <description>Here&amp;rsquo;s a quick tip on howto remove Git Branches that were already merged (thus not necessary to keep around anymore) locally on Windows, using PowerShell. Assuming that you do have Git for Windows installed. Execute these commands on your own risk.
-List all merged branches You can list all merged Git Branches by running:
-1 git branch --merged Exclude current branch and &amp;ldquo;main&amp;rdquo; branch Then we |-pipe it into the following, to exclude the currently selected branch (marked with an asterisk *) and the main branch.</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s a quick tip on howto remove Git Branches that were already merged (thus not necessary to keep around anymore) locally on Windows, using PowerShell. Assuming that you do have Git for Windows installed. &lt;strong&gt;Execute these commands on your own risk.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;list-all-merged-branches&#34;&gt;List all merged branches&lt;/h2&gt;
+&lt;p&gt;You can list all merged Git Branches by running:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     
   </channel>

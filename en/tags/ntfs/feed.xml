@@ -13,8 +13,8 @@
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
-      <description>The NTFS file system is used by default in Windows. And normally a file has only one associated normal data stream with the name :$DATA. But there are also the so-called &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), which can contain additional data. These ADS are not visible in the Windows Explorer or most other applications.
-ADS are sometimes used by the system, but could also be used by attackers to hide data.</description>
+      <description>&lt;p&gt;The NTFS file system is used by default in Windows. And normally a file has only one associated normal data stream with the name &lt;code&gt;:$DATA&lt;/code&gt;. But there are also the so-called &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), which can contain additional data. These ADS are not visible in the Windows Explorer or most other applications.&lt;/p&gt;
+&lt;p&gt;ADS are sometimes used by the system, but could also be used by attackers to hide data.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,9 +23,35 @@ ADS are sometimes used by the system, but could also be used by attackers to hid
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</guid>
-      <description>So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.
-The correct storage permissions are:
-User Account Folder Permissions Users This Folder Only Modify Creator / Owner Subfolders and Files Only Modify Administrator (optional) This Folder, Subfolders, and Files Full Control Official FSLogix documentation: Configure storage permissions for use with Profile Containers and Office Containers</description>
+      <description>&lt;p&gt;So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.&lt;/p&gt;
+&lt;p&gt;The correct storage permissions are:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;User Account&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Folder&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Permissions&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Users&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;This Folder Only&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Modify&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Creator / Owner&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Subfolders and Files Only&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Modify&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Administrator (optional)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;This Folder, Subfolders, and Files&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Full Control&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Official FSLogix documentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/fslogix/fslogix-storage-config-ht&#34; target=&#34;_blank&#34; &gt;Configure storage permissions for use with Profile Containers and Office Containers&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

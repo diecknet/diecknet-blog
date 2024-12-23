@@ -13,9 +13,12 @@
       <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2023/11/28/powershell-brackets/</guid>
-      <description>Wann ist welche Klammer die Richtige in der PowerShell?
-# Verschiedene Klammern in der PowerShell () {} [] Die Klammern haben unterschiedliche Einsatzzwecke. Die Größer-als &amp;lt; und Kleiner-als &amp;gt; Zeichen würde ich übrigens nicht zu den Klammern zählen. Für alle echten Klammern gilt: Wenn ihr eine Klammer geöffnet habt, müsst ihr sie auch wieder schließen.
-Runde Klammern ( ) Mit runden Klammern wird in der PowerShell ein Ausdruck bzw. ein Befehl umfasst, bzw.</description>
+      <description>&lt;p&gt;Wann ist welche Klammer die Richtige in der PowerShell?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Verschiedene Klammern in der PowerShell&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;() {} []&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Die Klammern haben unterschiedliche Einsatzzwecke. Die Größer-als &lt;code&gt;&amp;lt;&lt;/code&gt; und Kleiner-als &lt;code&gt;&amp;gt;&lt;/code&gt; Zeichen würde ich übrigens nicht zu den Klammern zählen. Für alle echten Klammern gilt: Wenn ihr eine Klammer geöffnet habt, müsst ihr sie auch wieder schließen.&lt;/p&gt;
+&lt;h2 id=&#34;runde-klammern--&#34;&gt;Runde Klammern &lt;code&gt;( )&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Mit runden Klammern wird in der PowerShell ein Ausdruck bzw. ein Befehl umfasst, bzw. die Parameter für .NET Methoden umschlossen.&lt;/p&gt;</description>
     </item>
     
   </channel>

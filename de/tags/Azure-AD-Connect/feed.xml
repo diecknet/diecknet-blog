@@ -13,8 +13,10 @@
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</guid>
-      <description>Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden. Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die Microsoft Dokumentation verweist nur am Rande auf das Thema und erklärt nicht wirklich.
-In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Unternehmen betrifft: Im Microsoft 365 Admin Center wird angezeigt:</description>
+      <description>&lt;p&gt;Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden.
+Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft Dokumentation verweist nur am Rande auf das Thema&lt;/a&gt; und erklärt nicht wirklich.&lt;/p&gt;
+&lt;p&gt;In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Unternehmen betrifft:
+Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
     </item>
     
   </channel>
