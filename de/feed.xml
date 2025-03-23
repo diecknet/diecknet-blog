@@ -6,7 +6,22 @@
     <description>Recent content on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E-Mails per PowerShell verschicken mit Send-MailMessage</title>
+      <link>https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/</guid>
+      <description>&lt;p&gt;Es ist recht einfach E-Mails per PowerShell zu verschicken. Dafür gibt es das mitgelieferte Cmdlet &lt;code&gt;Send-MailMessage&lt;/code&gt;, welches allerdings mittlerweile von Microsoft als veraltet bezeichnet wird:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ Warnung&lt;/p&gt;
+&lt;p&gt;Das Cmdlet &lt;code&gt;Send-MailMessage&lt;/code&gt; ist veraltet. Dieses Cmdlet garantiert keine sicheren Verbindungen mit SMTP-Servern. Es ist zwar kein sofortiger Ersatz in PowerShell verfügbar, es wird jedoch empfohlen, &lt;code&gt;Send-MailMessage&lt;/code&gt; nicht zu verwenden. Weitere Informationen finden Sie unter &lt;a href=&#34;https://aka.ms/SendMailMessage&#34; target=&#34;_blank&#34; &gt;Plattformkompatibilitätshinweis DE0005&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Quelle: &lt;a href=&#34;https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7.5&#34; target=&#34;_blank&#34; &gt;https://learn.microsoft.com/de-de/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7.5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Für einige Szenarien ist die Verwendung von &lt;code&gt;Send-MailMessage&lt;/code&gt; aber &lt;em&gt;meiner Meinung nach&lt;/em&gt; trotzdem okay. Wenn ihr zum Beispiel einen eigenen SMTP-Server (z.B. Microsoft Exchange Server) betreibt oder angemietet habt (z.B. bei jedem beliebigen Webhoster), dann gibt es dort in der Regel gar keine Unterstützung für modernere Authentifizierungsmethoden. Ihr könnt einen solchen SMTP-Server natürlich auch zusätzlich zu einer Exchange Online Umgebung betreiben. Tendenziell würde ich empfehlen für solche automatischen E-Mails eher eine Subdomain (z.B. &amp;ldquo;reports.demotenant.de&amp;rdquo; statt einfach nur &amp;ldquo;demotenant.de&amp;rdquo;) oder eine separate Domain zu verwenden, aber das ist natürlich kein Muss.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Entra Connect: Soft Match und Hard Match</title>
       <link>https://diecknet.de/de/2024/12/16/entra-connect-matching/</link>
