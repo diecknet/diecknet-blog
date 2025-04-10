@@ -174,7 +174,7 @@ Anschließend der neuen API Berechtigung im Namen der Organisation zustimmen per
 
 #### Zertifikat
 
-Wenn ihr euch per Zertifikat authentifizieren möchtet, dann schaut euch die Dokumentation bei Microsoft an: <https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-self-signed-certificate>
+Wenn ihr euch per Zertifikat authentifizieren möchtet, dann schaut euch die Dokumentation bei Microsoft an: <https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-self-signed-certificate?wt.mc_id=MVP_330618>
 
 #### Client Secret
 
@@ -193,7 +193,7 @@ Das Secret hier im Screenshot ist natürlich nicht mehr gültig 😉
 [![Secret sollte sofort kopiert werden und wie ein Passwort behandelt werden](/images/2025/2025-04-10_NewAppRegistrationClientSecret3.jpg "Secret sollte sofort kopiert werden und wie ein Passwort behandelt werden")](/images/2025/2025-04-10_NewAppRegistrationClientSecret3.jpg)
 
 Eine Möglichkeit das Secret einigermaßen sicher abzuspeichern wäre als exportieres PowerShell Credential Objekt. Das kann nur durch den User (am gleichen Computer) entschlüsselt werden, der es auch verschlüsselt hat.
-Alternativ ist das [PowerShell Modul SecretManagement](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules) auch noch ein interessanter Ansatz.
+Alternativ ist das [PowerShell Modul SecretManagement](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.secretmanagement/?view=ps-modules&wt.mc_id=MVP_330618) auch noch ein interessanter Ansatz.
 
 So könnt ihr die Credentials abfragen abspeichern - als Username die Application ID von der Hauptseite der App Registration angeben.
 
@@ -211,12 +211,12 @@ Connect-MgGraph -ClientSecretCredential $Credential -TenantId "hier eure TenantI
 
 ### E-Mail-Versand nur auf bestimmte Absender einschränken
 
-Wie bereits erwähnt darf ein Service Principal/Managed Identity mit der `Mail.Send` Berechtigung erstmal alle Exchange-Objekte aus eurer Umgebung als Absender verwenden. Ich würde empfehlen diese Rechte immer [einzuschränken](https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access
+Wie bereits erwähnt darf ein Service Principal/Managed Identity mit der `Mail.Send` Berechtigung erstmal alle Exchange-Objekte aus eurer Umgebung als Absender verwenden. Ich würde empfehlen diese Rechte immer [einzuschränken](https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access?wt.mc_id=MVP_330618
 ), sodass nur durch bestimmte Absender verschickt werden darf.
 
 Die Konfiguration so einer Einschränkung erfolgt per Exchange Online PowerShell. Das muss nicht am Automatisierungshost gemacht werden, sondern kann auch von einer Admin-VM o.ä. erfolgen (siehe auch: [PowerShell Module für die Einrichtung](#-für-die-einrichtung)).
 
-Zu den Parameterwerten für [`New-ApplicationAccessPolicy`](https://learn.microsoft.com/en-us/powershell/module/exchange/new-applicationaccesspolicy?view=exchange-ps):
+Zu den Parameterwerten für [`New-ApplicationAccessPolicy`](https://learn.microsoft.com/en-us/powershell/module/exchange/new-applicationaccesspolicy?view=exchange-ps&wt.mc_id=MVP_330618):
 
 - `-AppId` die Application ID (auch "Client ID" genannt) von eurer App Registration bzw. eurer Managed Identity*
 - `-PolicyGroupScopeId` wahlweise ein einzelnes Postfach (auch Shared Mailboxes werden unterstützt) oder eine Mail-Enabled Security Group, die die Exchange Objekte enthält von denen aus gesendet werden soll
@@ -237,7 +237,7 @@ New-ApplicationAccessPolicy -AppId "Hier App ID eintragen" -PolicyScopeGroupId "
 
 Puh... Die Authentifizierung und Einschränkung auf bestimmte Absender-Adressen haben wir jetzt also. Hier ein paar Beispiele für den eigentlichen Versand von E-Mails.
 
-Es gibt noch zahlreiche weitere Optionen, für die ihr die `$params` Hashtable anpassen könnt. Diese "complex Parameters" werden in der Dokumentation zum Cmdlet `Send-MgUserMail` [im Abschnitt "Notes" aufgeführt](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/send-mgusermail?view=graph-powershell-1.0#notes).
+Es gibt noch zahlreiche weitere Optionen, für die ihr die `$params` Hashtable anpassen könnt. Diese "complex Parameters" werden in der Dokumentation zum Cmdlet `Send-MgUserMail` [im Abschnitt "Notes" aufgeführt](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/send-mgusermail?view=graph-powershell-1.0&wt.mc_id=MVP_330618#notes).
 
 ### Beispiel 1: Plain-Text E-Mail
 
