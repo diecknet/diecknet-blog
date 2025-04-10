@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://diecknet.de/de/</loc>
-    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,11 +15,27 @@
                 href="https://diecknet.de/de/"
                 />
   </url><url>
-    <loc>https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/</loc>
-    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+    <loc>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</loc>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://diecknet.de/de/tags/exchange/</loc>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/exchange/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/exchange/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/tags/microsoft-graph/</loc>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://diecknet.de/de/posts/</loc>
-    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -32,7 +48,7 @@
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/powershell/</loc>
-    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -45,7 +61,7 @@
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/</loc>
-    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -56,6 +72,9 @@
                 hreflang="de"
                 href="https://diecknet.de/de/tags/"
                 />
+  </url><url>
+    <loc>https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://diecknet.de/de/tags/Active-Directory/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
@@ -294,19 +313,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://diecknet.de/de/tags/Azure-AD-Connect/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/tags/exchange/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exchange/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exchange/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/Exchange-Server/</loc>

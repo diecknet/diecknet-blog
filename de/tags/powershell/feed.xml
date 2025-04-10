@@ -6,7 +6,17 @@
     <description>Recent content in Powershell on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E-Mails per PowerShell und Microsoft Graph verschicken</title>
+      <link>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</guid>
+      <description>&lt;p&gt;E-Mails via Powershell und Microsoft Graph API zu verschicken, ist leider nicht so einfach wie mit dem klassischen &lt;code&gt;Send-MailMessage&lt;/code&gt; Cmdlet. Zu dem klassischen Weg hatte ich ja auch kürzlich &lt;a href=&#34;https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/&#34; &gt;einen Blog-Post veröffentlicht&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Trotzdem gibt es einige Gründe, die für den Versand per Microsoft Graph sprechen. Im Oktober 2025 wird voraussichtlich die Plaintext Authentifizierung (&amp;ldquo;Basic Authentifizierung&amp;rdquo;) für den SMTP-Versand bei Exchange Online abgeschaltet. Falls also Exchange Online euer einziges E-Mail-System ist, aber ihr automatisiert E-Mails verschicken wollt, dann ist MS Graph die richtige Wahl. Alternativ könntet ihr natürlich auch ein zusätzliches E-Mail-System anschaffen (anmieten oder selbst betreiben).&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>E-Mails per PowerShell verschicken mit Send-MailMessage</title>
       <link>https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/</link>
