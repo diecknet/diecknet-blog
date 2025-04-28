@@ -6,7 +6,27 @@
     <description>Recent content on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Active Directory Papierkorb aktivieren, konfigurieren und Objekte wiederherstellen</title>
+      <link>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</guid>
+      <description>&lt;p&gt;Wenn ihr Active Directory Domain Services verwendet, solltet ihr unbedingt prüfen, ob der &lt;strong&gt;AD-Papierkorb&lt;/strong&gt; bei euch aktiviert ist.&lt;/p&gt;
+&lt;h2 id=&#34;was-ist-der-ad-papierkorb&#34;&gt;Was ist der AD-Papierkorb?&lt;/h2&gt;
+&lt;p&gt;Der AD-Papierkorb funktioniert ähnlich wie ein Papierkorb im Dateisystem:&lt;br&gt;
+&lt;strong&gt;Gelöschte Objekte&lt;/strong&gt; (Benutzer, Gruppen etc.) landen zunächst im Papierkorb und können einfach wiederhergestellt werden.&lt;/p&gt;
+&lt;p&gt;Das ist besonders praktisch bei:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;versehentlichen Löschungen&lt;/li&gt;
+&lt;li&gt;absichtlichen Löschungen, die rückgängig gemacht werden sollen,&lt;/li&gt;
+&lt;li&gt;fehlendem AD-Backup (ersetzt natürlich kein Backup!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Der AD-Papierkorb wurde mit &lt;strong&gt;Windows Server 2008 R2&lt;/strong&gt; eingeführt.&lt;br&gt;
+Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2008 R2 Functional Level&lt;/strong&gt; haben.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>E-Mails per PowerShell und Microsoft Graph verschicken</title>
       <link>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</link>
