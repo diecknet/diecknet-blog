@@ -6,7 +6,18 @@
     <description>Recent content in Posts on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Mon, 28 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Führende Nullen per PowerShell hinzufügen</title>
+      <link>https://diecknet.de/de/2025/05/19/powershell-pad-zeros/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2025/05/19/powershell-pad-zeros/</guid>
+      <description>&lt;p&gt;Es gibt viele verschiedene Wege um führende Nullen zu einer Zahl in PowerShell hinzuzufügen. Wobei eigentlich können Zahlen (Objekttyp: &lt;code&gt;[int]&lt;/code&gt;) keine führenden Nullen haben, deshalb erzeugen wir eigentlich einen Text (Objekttyp: &lt;code&gt;[string]&lt;/code&gt;), der die Zahl enthält.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In den folgenden Beispielen ergänze ich die Zahl &lt;code&gt;42&lt;/code&gt; jeweils auf vier Stellen (= &lt;code&gt;0042&lt;/code&gt;). Ihr könnt aber die Länge des &amp;ldquo;Paddings&amp;rdquo; natürlich anpassen :)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ich demonstriere die nachfolgenden Möglichkeiten (plus noch ein paar mehr) auch &lt;a href=&#34;https://youtu.be/0Ck8rzW3f-g&#34; target=&#34;_blank&#34; &gt;in diesem Video hier auf YouTube&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Active Directory Papierkorb aktivieren, konfigurieren und Objekte wiederherstellen</title>
       <link>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</link>

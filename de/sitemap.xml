@@ -2,6 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://diecknet.de/de/</loc>
+    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/2025/05/19/powershell-pad-zeros/</loc>
+    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://diecknet.de/de/posts/</loc>
+    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/posts/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/tags/powershell/</loc>
+    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/powershell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/powershell/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/tags/</loc>
+    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/"
+                />
+  </url><url>
     <loc>https://diecknet.de/de/tags/Active-Directory/</loc>
     <lastmod>2025-04-28T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -17,58 +72,6 @@
   </url><url>
     <loc>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</loc>
     <lastmod>2025-04-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://diecknet.de/de/</loc>
-    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/posts/</loc>
-    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/posts/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/tags/powershell/</loc>
-    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/powershell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/powershell/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/tags/</loc>
-    <lastmod>2025-04-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/"
-                />
   </url><url>
     <loc>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
