@@ -6,7 +6,25 @@
     <description>Recent content in Tags on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unraid</title>
+      <link>https://diecknet.de/en/tags/unraid/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/tags/unraid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zfs</title>
+      <link>https://diecknet.de/en/tags/zfs/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/tags/zfs/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Active Directory</title>
       <link>https://diecknet.de/en/tags/Active-Directory/</link>

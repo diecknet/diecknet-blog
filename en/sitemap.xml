@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://diecknet.de/en/</loc>
+    <lastmod>2025-12-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/posts/</loc>
+    <lastmod>2025-12-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/posts/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/tags/</loc>
+    <lastmod>2025-12-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/en/tags/unraid/</loc>
+    <lastmod>2025-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://diecknet.de/en/2025/12/27/unraid-destroy-zfs-failed/</loc>
+    <lastmod>2025-12-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://diecknet.de/en/tags/zfs/</loc>
+    <lastmod>2025-12-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://diecknet.de/en/tags/Active-Directory/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -18,32 +66,6 @@
     <loc>https://diecknet.de/en/tags/adba/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://diecknet.de/en/</loc>
-    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/en/posts/</loc>
-    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/posts/"
-                />
-  </url><url>
     <loc>https://diecknet.de/en/tags/powershell/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -59,19 +81,6 @@
   </url><url>
     <loc>https://diecknet.de/en/2024/11/25/powershell-show-adba-infos/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://diecknet.de/en/tags/</loc>
-    <lastmod>2024-11-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/"
-                />
   </url><url>
     <loc>https://diecknet.de/en/tags/cyber-security/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
