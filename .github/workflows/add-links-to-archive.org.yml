@@ -66,7 +66,7 @@ jobs:
             $linkCollection+$allLinks | Select-Object -Unique | Out-File links.csv -Encoding utf8
 
       - name: Upload linklist artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: linklist
           path: ./links.csv
@@ -79,7 +79,7 @@ jobs:
       options: --cpus 1
     steps:
       - name: Download linklist artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: linklist
       - name: Go through linklist and add every link to archive.org using waybackpy
