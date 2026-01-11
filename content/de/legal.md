@@ -12,8 +12,7 @@ imprInfoCompany: diecknet UG (haftungsbeschränkt)
 imprInfoStreet: Pestalozzistrasse 25
 imprInfoCity: 22305 Hamburg
 imprInfoUstId: DE360047884
-imprInfoEmail: diecknet.de
-imprInfoE1: impressum
+imprInfoEmail: diecknet-impressum-20260111.refreeze257@simplelogin.com
 imprInfoTe: +49 40 5247 1765
 imprInfoHRN: HRB 179818
 imprInfoHRG: Amtsgericht Hamburg
@@ -31,7 +30,8 @@ Registergericht: {{< param imprInfoHRG >}}
 ## Kontakt
 
 Telefon: {{< param imprInfoTe >}}  
-E-Mail: {{< param imprInfoE1 >}}`@`{{< param imprInfoEmail >}}  
+E-Mail*: {{< param imprInfoEmail >}}  
+***Wichtig:** Diese E-Mail-Adresse ⬆️ kann sich aus Spamschutzgründen ändern. Wenn Sie über das Impressum Kontakt aufnehmen möchten, rufen Sie bitte tagesaktuell die E-Mail-Adresse hier ab.
 
 ## Umsatzsteuer-ID
 
@@ -44,19 +44,16 @@ Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
 c/o {{< param imprInfoCompany >}}  
 {{< param imprInfoStreet >}}  
 {{< param imprInfoCity >}}  
-E-Mail: {{< param imprInfoE1 >}}`@`{{< param imprInfoEmail >}}  
+E-Mail*: {{< param imprInfoEmail >}}  
+***Wichtig:** Diese E-Mail-Adresse ⬆️ kann sich aus Spamschutzgründen ändern. Wenn Sie über das Impressum Kontakt aufnehmen möchten, rufen Sie bitte tagesaktuell die E-Mail-Adresse hier ab.
 
 ## Konflikte
-
-### EU-Streitschlichtung
-
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
-[https://ec.europa.eu/consumers/odr/](https://ec.europa.eu/consumers/odr/).
-Unsere E-Mail-Adresse finden Sie oben im Impressum.
 
 ### Verbraucherstreitbeilegung/Universalschlichtungsstelle
 
 Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
 Verbraucherschlichtungsstelle teilzunehmen.
 
-`Quelle: e-recht24.de`
+## Quelle
+
+<https://www.e-recht24.de/impressum-generator.html>
