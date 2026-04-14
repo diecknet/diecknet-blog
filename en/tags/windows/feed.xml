@@ -6,7 +6,19 @@
     <description>Recent content in Windows on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find out which Process is listening on a Port using PowerShell</title>
+      <link>https://diecknet.de/en/2026/04/14/powershell-find-process-listening-port/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2026/04/14/powershell-find-process-listening-port/</guid>
+      <description>&lt;p&gt;If you want to find out which process is listening on a specific TCP/UDP port, you can also use PowerShell for this in Windows. I find this easier than analyzing the output of &lt;code&gt;netstat&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I also show this &lt;a href=&#34;https://youtu.be/SGvbBbsIpjw&#34; target=&#34;_blank&#34; &gt;in a Video on YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;for-tcp-get-nettcpconnection&#34;&gt;For TCP: Get-NetTCPConnection&lt;/h2&gt;
+&lt;p&gt;For TCP connections, there is the &lt;code&gt;Get-NetTCPConnection&lt;/code&gt; cmdlet. However, it only returns the ID of the running process (the &lt;code&gt;OwningProcess&lt;/code&gt; property), but we can resolve that using &lt;code&gt;Get-Process&lt;/code&gt;. Manually, you would do it like this:&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Run PowerShell Script with Windows Task Scheduler</title>
       <link>https://diecknet.de/en/2021/10/13/PowerShell-Task-Scheduler/</link>

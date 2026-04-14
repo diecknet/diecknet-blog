@@ -6,13 +6,22 @@
     <description>Recent content in Tags on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Powershell</title>
       <link>https://diecknet.de/de/tags/powershell/</link>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://diecknet.de/de/tags/windows/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/tags/windows/</guid>
       <description></description>
     </item>
     
@@ -139,15 +148,6 @@
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/tags/environment-variables/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://diecknet.de/de/tags/windows/</link>
-      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://diecknet.de/de/tags/windows/</guid>
       <description></description>
     </item>
     

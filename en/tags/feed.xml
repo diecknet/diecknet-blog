@@ -6,7 +6,25 @@
     <description>Recent content in Tags on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powershell</title>
+      <link>https://diecknet.de/en/tags/powershell/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://diecknet.de/en/tags/windows/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/tags/windows/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Unraid</title>
       <link>https://diecknet.de/en/tags/unraid/</link>
@@ -40,15 +58,6 @@
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/tags/adba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Powershell</title>
-      <link>https://diecknet.de/en/tags/powershell/</link>
-      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://diecknet.de/en/tags/powershell/</guid>
       <description></description>
     </item>
     
@@ -544,15 +553,6 @@
       <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/en/tags/task-scheduler/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://diecknet.de/en/tags/windows/</link>
-      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://diecknet.de/en/tags/windows/</guid>
       <description></description>
     </item>
     
