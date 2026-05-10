@@ -6,7 +6,19 @@
     <description>Recent content in Powershell on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating Screenshots with PowerShell</title>
+      <link>https://diecknet.de/en/2026/05/10/powershell-screenshots/</link>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/en/2026/05/10/powershell-screenshots/</guid>
+      <description>&lt;p&gt;If you want to create screenshots with PowerShell, then you need to use .NET. I will show you the required code below. But if you want to do it easier, you can also use my &lt;a href=&#34;https://github.com/diecknet/PSScreenshot&#34; target=&#34;_blank&#34; &gt;Screenshot PowerShell module&lt;/a&gt; (more information on that further down).&lt;/p&gt;
+&lt;p&gt;I also demonstrate the following options &lt;a href=&#34;https://youtu.be/wcEcqw89si8&#34; target=&#34;_blank&#34; &gt;in this video on YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;why-though&#34;&gt;Why though?&lt;/h2&gt;
+&lt;p&gt;Of course, screenshots can simply be created manually by pressing the &lt;code&gt;[Print]&lt;/code&gt; key on your keyboard, and there are also good tools for editing screenshots (for example Greenshot). But if you already automate something with PowerShell then it can be helpful e.g. for documentation purposes, if you can create screenshots &lt;strong&gt;automatically&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Find out which Process is listening on a Port using PowerShell</title>
       <link>https://diecknet.de/en/2026/04/14/powershell-find-process-listening-port/</link>

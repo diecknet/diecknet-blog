@@ -6,7 +6,19 @@
     <description>Recent content on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Screenshots per PowerShell erstellen</title>
+      <link>https://diecknet.de/de/2026/05/10/powershell-screenshots/</link>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2026/05/10/powershell-screenshots/</guid>
+      <description>&lt;p&gt;Wenn ihr Screenshots per PowerShell erstellen wollt, dann müsst ihr .NET verwenden. Den passenden Code dazu zeige ich im folgenden. Aber falls ihr das einfacher machen möchtet, könnt ihr auch &lt;a href=&#34;https://github.com/diecknet/PSScreenshot&#34; target=&#34;_blank&#34; &gt;mein Screenshot PowerShell Modul&lt;/a&gt; verwenden (mehr Infos dazu weiter unten).&lt;/p&gt;
+&lt;p&gt;Ich demonstriere die nachfolgenden Möglichkeiten auch &lt;a href=&#34;https://youtu.be/wcEcqw89si8&#34; target=&#34;_blank&#34; &gt;in diesem Video hier auf YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;warum-eigentlich&#34;&gt;Warum eigentlich?&lt;/h2&gt;
+&lt;p&gt;Natürlich können Screenshots einfach manuell erstellt werden (z.B. per Screenshot-Taste auf der Tastatur) und es gibt auch gute Tools für die Bearbeitung von Screenshots (z.B. Greenshot). Aber falls ihr etwas mit PowerShell automatisiert und dabei Screenshots automatisch erstellen könnt, kann das hilfreich z.B. zu Dokumentationszwecken sein.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Herausfinden welcher Prozess auf einem bestimmten Port lauscht (PowerShell)</title>
       <link>https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/</link>

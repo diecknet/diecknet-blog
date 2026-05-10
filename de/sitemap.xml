@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://diecknet.de/de/</loc>
-    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,71 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://diecknet.de/de/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/posts/</loc>
+    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/posts/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/tags/powershell/</loc>
+    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/powershell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/powershell/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/2026/05/10/powershell-screenshots/</loc>
+    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/2026/05/10/powershell-screenshots/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/2026/05/10/powershell-screenshots/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/tags/</loc>
+    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/tags/windows/</loc>
+    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/windows/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/</loc>
@@ -26,58 +91,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/posts/</loc>
-    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/posts/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/tags/powershell/</loc>
-    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/powershell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/powershell/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/tags/</loc>
-    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/tags/windows/</loc>
-    <lastmod>2026-04-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/windows/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2025/05/19/powershell-pad-zeros/</loc>
