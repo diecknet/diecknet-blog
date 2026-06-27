@@ -3,8 +3,8 @@ comments: true
 aliases:
     - get-group-membership-count-with-microsoft-graph-api
 slug: Get-Group-membership-count-with-microsoft-graph-api
-title: "How to get Group Membership count with Microsoft Graph API"
-subtitle: "How many users are in that Azure AD Group?"
+title: "Mit der Microsoft Graph API die Anzahl der Gruppenmitglieder abrufen"
+subtitle: "Wie viele Benutzer sind in dieser Azure-AD-Gruppe?"
 date: 2022-06-16
 tags: [azure ad, microsoft 365, graph api]
 cover:

@@ -3,8 +3,8 @@ comments: true
 aliases:
     - git-on-windows-remove-all-merged-branches
 slug: Git-on-Windows-remove-all-merged-branches
-title: "How to remove all merged Git Branches on Windows"
-subtitle: "by using Git and PowerShell"
+title: "Alle gemergten Git-Branches unter Windows entfernen"
+subtitle: "mit Git und PowerShell"
 date: 2022-06-21
 tags: [git, powershell]
 ---

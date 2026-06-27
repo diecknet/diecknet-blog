@@ -4,7 +4,7 @@ aliases:
     - my-simple-serverless-journey-part2
 slug: My-simple-serverless-journey-part2
 title: "Die Kehrseite von Serverless"
-subtitle: "The making of simpleIP.de - Teil 2"
+subtitle: "Wie simpleIP.de entstanden ist – Teil 2"
 date: 2021-10-27
 tags:
     [

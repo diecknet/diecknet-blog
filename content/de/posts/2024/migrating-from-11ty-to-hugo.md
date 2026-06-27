@@ -1,6 +1,6 @@
 ---
 comments: true
-title: "Migrating from 11ty to Hugo"
+title: "Von 11ty zu Hugo migrieren"
 date: 2024-02-22
 tags:
     [

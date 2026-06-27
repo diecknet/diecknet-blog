@@ -3,7 +3,7 @@ comments: true
 aliases:
     - how-to-configure-m365-azure-ad-mfa-methods
 slug: How-to-configure-M365-azure-ad-MFA-methods
-title: "How to configure MFA methods for Azure AD"
+title: "MFA-Methoden für Azure AD konfigurieren"
 date: 2022-02-02
 tags: [azure ad, microsoft 365, mfa, multi-factor-authentication]
 cover:

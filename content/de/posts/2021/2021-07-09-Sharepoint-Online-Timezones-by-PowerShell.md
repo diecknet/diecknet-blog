@@ -3,7 +3,7 @@ comments: true
 aliases:
     - sharepoint-online-timezones-by-powershell
 slug: Sharepoint-Online-Timezones-by-PowerShell
-title: Retrieve the Timezone of a Sharepoint Online Site using PowerShell
+title: Die Zeitzone einer SharePoint-Online-Website mit PowerShell auslesen
 tags:
     [
         sharepoint online,
@@ -13,7 +13,7 @@ tags:
     ]
 cover:
     image: /images/2021/2021-07-09_ConvertSPOSiteTimezone.png
-imageAlt: Executing PowerShell cmdlets to retrieve the Timezone of a Sharepoint Online site in a human readable form
+imageAlt: Ausführen von PowerShell-Cmdlets, um die Zeitzone einer SharePoint-Online-Website in lesbarer Form abzurufen
 date: 2021-07-09
 ---
 

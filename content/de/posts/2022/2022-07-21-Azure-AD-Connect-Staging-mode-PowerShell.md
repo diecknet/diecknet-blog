@@ -2,7 +2,7 @@
 aliases:
     - azure-ad-connect-staging-mode-powershell
 slug: Azure-AD-Connect-Staging-mode-PowerShell
-title: "Set Azure AD Connect Staging Mode via PowerShell"
+title: "Azure AD Connect Staging Mode per PowerShell setzen"
 date: 2022-07-21
 tags: [azure ad, powershell, azure ad connect]
 cover:

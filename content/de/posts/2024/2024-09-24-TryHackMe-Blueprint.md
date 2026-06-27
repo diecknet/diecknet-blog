@@ -1,6 +1,6 @@
 ---
 slug: "tryhackme-blueprint"
-title: "TryHackMe Blueprint - Cyber Security Write-Up"
+title: "TryHackMe Blueprint – Cybersecurity-Write-up"
 date: 2024-09-24
 comments: true
 tags: [tryhackme, cyber security]

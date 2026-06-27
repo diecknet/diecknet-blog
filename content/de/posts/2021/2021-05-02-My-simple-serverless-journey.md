@@ -4,8 +4,8 @@ aliases:
     - my-simple-serverless-journey
 slug: My-simple-serverless-journey
 layout: post
-title: "My simple serverless journey was not that easy"
-subtitle: "The making of simpleIP.de"
+title: "Meine einfache Serverless-Reise war gar nicht so einfach"
+subtitle: "Die Entstehung von simpleIP.de"
 date: 2021-05-02
 tags:
     [
@@ -21,18 +21,19 @@ cover:
     image: /images/2021/2021-05-02_SimpleIP.jpg
 ---
 
-Serverless Computing ist ein interessantes Konzept gewesen. Man hat ein Skript oder Programm ausführen können, ohne die Infrastruktur dahinter (Server, Storage, Netzwerke usw.) selbst aufzusetzen. Man hat einfach Code geschrieben und dieser ist ausgeführt worden. Aber Serverless hat nicht „ohne Server“ bedeutet – man hat sich nur nicht darum kümmern müssen. Das ist gar nicht so weit davon entfernt gewesen, klassischen Webspace bei einem Hosting-Anbieter zu mieten und dort PHP-Skripte abzulegen.
-Heutzutage hat Serverless meist irgendeine moderne Architektur bedeutet, mit der Anwendungscode ausgeführt worden ist. Der Unterschied ist **Skalierung** gewesen. Der Cloud-Anbieter hat die Logik übernommen, um Serverless Functions bei Bedarf auszuführen. Wenn die Anwendung nicht genutzt worden ist, ist die Ausführung gestoppt worden und es sind keine Rechenressourcen verbraucht worden.
+Serverless Computing ist ein spannendes Konzept. Man kann ein Skript oder Programm ausführen, ohne die komplette Infrastruktur dahinter aufzubauen (Server, Storage, Netzwerke usw.). Man schreibt einfach den Code und er wird ausgeführt. Aber Serverless heißt nicht „ohne Server“ – man muss sich nur nicht darum kümmern. Das ist gar nicht so weit weg von klassischem Webspace beim Hoster, auf den man PHP-Skripte legt.
+
+Heute meint Serverless meistens eine moderne Architektur, mit der man Anwendungscode ausführen kann. Der große Unterschied ist das **Skalieren**. Der Cloud-Anbieter übernimmt die Logik, wann und wie Serverless-Funktionen laufen. Wenn die Anwendung nicht genutzt wird, wird nichts ausgeführt und es werden keine Rechenressourcen verbraucht.
 
 ## Mein Serverless-Anwendungsfall
 
-Manchmal habe ich _einfach_ meine öffentliche IP-Adresse herausfinden müssen, ohne mich mit systemabhängigen Besonderheiten zu beschäftigen. Der einfachste Weg dafür ist gewesen, irgendeine der rund 1,5 Milliarden Websites zu öffnen, die die IP-Adresse des Besuchers anzeigen.
+Ich habe ab und zu _einfach_ nur meine öffentliche IP-Adresse gebraucht, ohne mich mit irgendeinem systemabhängigen Kram herumzuschlagen. Der einfachste Weg dafür ist eine der gefühlt 1,5 Milliarden Websites, die die IP-Adresse des Besuchers anzeigen.
 
-Das Problem ist gewesen: Diese Websites sind oft nervig, voller Werbung, Tracking und unnötiger Informationen gewesen. Ich habe nie sicher sein können, ob eine dieser Seiten wirklich sicher nutzbar gewesen ist. Selbst wenn eine Seite zu einem Zeitpunkt brauchbar gewesen ist, habe ich nicht sicher sein können, dass sie so bleibt. Deshalb habe ich entschieden, eine eigene Website zu bauen, die die IP-Adresse anzeigt.
+Das Problem: Viele dieser Seiten sind nervig, voller Werbung, Tracking und unnötiger Informationen. Ich konnte nie sicher sein, ob die jeweilige Seite wirklich vertrauenswürdig ist. Selbst wenn sie heute okay ist, muss das morgen nicht mehr so sein. Also habe ich meine eigene Seite gebaut, die nur die IP-Adresse anzeigt.
 
-## Mit Vercel auf Serverless gegangen
+## Serverless mit Vercel
 
-Mein erster Versuch ist mit [Vercel](https://vercel.com) gewesen. Ich habe dieses Blog dort bereits als statische Website mit Jekyll und GitHub-Integration gehostet. Ich habe gewusst, dass Vercel auch Serverless Functions unterstützt hat. Irgendwie habe ich die Idee gehabt, eine statische Jamstack-Seite zu erstellen und die IP-Adresse dann per JavaScript-AJAX-Request von einer selbst geschriebenen JSON-API zu holen, die als Serverless Function gelaufen ist.
+Mein erster Versuch lief mit [Vercel](https://vercel.com). Dieses Blog hoste ich dort bereits als statische Seite mit Jekyll und GitHub-Integration. Ich wusste, dass Vercel auch Serverless Functions unterstützt. Also habe ich eine statische Jamstack-Seite gebaut und dann per JavaScript-AJAX-Request die IP-Adresse über eine selbst geschriebene JSON-API abgefragt, die als Serverless Function läuft.
 
 Das ist tatsächlich ziemlich einfach gewesen.
 
@@ -50,17 +51,17 @@ module.exports = (req, res) => {
 };
 ```
 
-Sauber! Vercel hat für jede Anfrage die Client-IP-Adresse in `req.headers['x-forwarded-for']` zurückgegeben.
+Sauber! Vercel liefert bei jedem Request die Client-IP-Adresse in `req.headers['x-forwarded-for']`.
 
-![Mein erstes eigenes Microservice, das eine IP-Adresse als JSON angezeigt hat](/images/2021/2021-05-01_vercel_app_api_ip_js.png "Mein erstes eigenes Microservice, das eine IP-Adresse als JSON angezeigt hat")
+![Mein erster eigener Microservice, der eine IP-Adresse als JSON anzeigt](/images/2021/2021-05-01_vercel_app_api_ip_js.png "Mein erster eigener Microservice, der eine IP-Adresse als JSON anzeigt")
 
-Danach habe ich angefangen, ein einfaches clientseitiges JavaScript zu schreiben, das die API-URL aufgerufen hat, um die IP-Adresse abzurufen. Wow! Das ist wirklich punktgenaues Denken in Microservices gewesen 😅.
+Danach habe ich ein kleines clientseitiges JavaScript geschrieben, das die API-URL aufruft und die IP-Adresse abholt. Wow – Microservice-Denken auf den Punkt 😅.
 
-Ich habe schnell eine funktionierende Frontend-Seite gehabt, bis ich gemerkt habe: Vercel hat kein IPv6 unterstützt. Ups. Egal, das Frontend habe ich weiterverwenden können – ich habe nur den Backend-Anbieter wechseln müssen.
+Ich hatte schnell eine funktionierende Frontend-Seite, bis ich gemerkt habe: Vercel unterstützt kein IPv6. Ups. Egal, das Frontend konnte ich weiter nutzen – ich musste nur den Backend-Anbieter wechseln.
 
-## Auf Serverless mit Cloudflare Workers gewechselt
+## Wechsel zu Serverless mit Cloudflare Workers
 
-Also bin ich zu Cloudflare Workers gewechselt. Hauptsächlich, weil dort IPv6 und IPv4 unterstützt worden sind. Da Cloudflare Workers die IP-Adresse des Besuchers [auf eine andere Art bereitgestellt hat](https://support.cloudflare.com/hc/en-us/articles/200170986-How-does-Cloudflare-handle-HTTP-Request-headers-), habe ich mein komplettes Backend neu schreiben müssen 🤭. Dabei ist dieser Code entstanden:
+Also bin ich auf Cloudflare Workers gewechselt. Hauptsächlich, weil dort IPv4 und IPv6 unterstützt werden. Da Cloudflare Workers die IP-Adresse des Besuchers [anders bereitstellt](https://support.cloudflare.com/hc/en-us/articles/200170986-How-does-Cloudflare-handle-HTTP-Request-headers-), musste ich mein komplettes Backend neu schreiben 🤭. Daraus ist dieser Code entstanden:
 
 ```javascript
 function getClientIPInfo(request) {
@@ -81,15 +82,15 @@ function getClientIPInfo(request) {
 }
 ```
 
-Obwohl ich es simpel halten wollte, habe ich die Standortinfos zu cool gefunden, um sie wegzulassen 😅. Deshalb habe ich zusätzlich einen geschätzten Standort mit Stadt und Land zurückgegeben. Die Stadt ist oft nicht besonders genau gewesen, aber das Land hat meistens gepasst.
+Obwohl ich es simpel halten wollte, war die Standortinfo einfach zu cool, um sie wegzulassen 😅. Deshalb gebe ich jetzt zusätzlich einen geschätzten Standort mit Stadt und Land zurück. Die Stadt ist oft nicht ganz korrekt, das Land passt aber meistens.
 
 Cool.
 
-![Mein zweites eigenes Microservice, das eine IP-Adresse als JSON angezeigt hat – auf Cloudflare](/images/2021/2021-05-01_cloudflare_workers_api_ip_js.png "Mein zweites eigenes Microservice, das eine IP-Adresse als JSON angezeigt hat – auf Cloudflare")
+![Mein zweiter eigener Microservice, der eine IP-Adresse als JSON anzeigt – auf Cloudflare](/images/2021/2021-05-01_cloudflare_workers_api_ip_js.png "Mein zweiter eigener Microservice, der eine IP-Adresse als JSON anzeigt – auf Cloudflare")
 
-## Die statische Website auf Cloudflare Pages
+## Die statische Seite auf Cloudflare Pages
 
-Danach habe ich meine statische Seite auf [Cloudflare Pages](https://developers.cloudflare.com/pages/) gelegt. Weil ich kein aufgeblähtes Framework nutzen wollte, habe ich die Seite mit [W3.CSS](https://www.w3schools.com/w3css/default.asp) gestylt und meinen eigenen simplen Code für den AJAX-Request geschrieben. Das ist auch nicht gerade Best-Practice-JavaScript gewesen, aber es hat für mich funktioniert. Ich habe sogar eine Methode eingebaut, damit es in Internet Explorer 5 und 6 funktioniert – obwohl ich nicht getestet habe, ob das wirklich klappt.
+Danach habe ich meine statische Seite auf [Cloudflare Pages](https://developers.cloudflare.com/pages/) gelegt. Weil ich kein aufgeblasenes Framework nutzen wollte, habe ich die Seite mit [W3.CSS](https://www.w3schools.com/w3css/default.asp) gestylt und den AJAX-Request selbst gebaut. Das war nicht gerade Best-Practice-JavaScript, hat aber für mich funktioniert. Ich habe sogar eine Methode eingebaut, die auch mit Internet Explorer 5 und 6 laufen soll – auch wenn ich das nicht getestet habe.
 
 ```javascript
 /*Retrieve IP-Address using AJAX request*/
@@ -153,7 +154,7 @@ function getIPinfo() {
 }
 ```
 
-Danach habe ich begonnen, eine Funktion zu schreiben, die die IP-Adresse in die Zwischenablage des Users kopiert. Es hat einen alten Weg mit `document.execCommand("copy");` und einen modernen Weg über die Clipboard-API `navigator.clipboard.writeText();` gegeben. Ich habe entschieden, beides zu implementieren – zuerst modern, dann den alten Weg als Fallback.
+Anschließend habe ich eine Funktion gebaut, um die IP-Adresse in die Zwischenablage zu kopieren. Es gibt den alten Weg mit `document.execCommand("copy");` und den modernen Weg über die Clipboard API `navigator.clipboard.writeText();`. Ich habe beide umgesetzt: erst modern, dann als Fallback die Legacy-Methode.
 
 ```javascript
 function copy2Clipboard(whichElement) {
@@ -191,18 +192,18 @@ function copy2ClipboardLegacy(whichElement) {
 }
 ```
 
-Jetzt bin ich im Grunde fertig gewesen, also habe ich die Architektur nochmal geändert 🙄.
+Damit war ich eigentlich fertig – also habe ich die Architektur natürlich nochmal umgebaut 🙄.
 
 ## NoScript first – Cloudflare Workers Sites
 
-Dann habe ich gemerkt, dass mir mein aktueller Ansatz aus zwei Gründen nicht gefallen hat:
+Dann habe ich gemerkt, dass mir mein Ansatz aus zwei Gründen nicht gefallen hat:
 
-1. Die Website hat clientseitiges JavaScript benötigt, um zu funktionieren. Ich habe selbst [NoScript](https://noscript.net/) (oder [ScriptSafe](https://github.com/andryou/scriptsafe)) genutzt und Websites, die zwingend JS brauchen, nie besonders gemocht.
-2. Um die IP-Adresse auf der Seite anzuzeigen, hätte der Benutzer eine weitere unnötige GET-Anfrage ausgelöst. Ich habe ein schnelleres Ergebnis liefern können, wenn ich alle Informationen in einer Anfrage ausgeliefert habe.
+1. Die Website braucht clientseitiges JavaScript. Ich nutze selbst [NoScript](https://noscript.net/) (oder [ScriptSafe](https://github.com/andryou/scriptsafe)) und mag Seiten nicht, die ohne JS nicht sauber funktionieren.
+2. Um die IP-Adresse anzuzeigen, hätte der Nutzer einen zusätzlichen, unnötigen GET-Request ausgelöst. Ich konnte schneller liefern, wenn alle Informationen direkt mit einer Anfrage kommen.
 
-Also habe ich tiefer gegraben und [Cloudflare Workers Sites](https://developers.cloudflare.com/workers/platform/sites) gefunden. Im Kern hat das die Fähigkeiten von Cloudflare Pages – statische Seiten über ein globales CDN auszuliefern – mit Cloudflare Workers kombiniert. Die statischen Teile wie .html- und .css-Dateien sind in Cloudflare KV gespeichert und global verteilt worden. Ich habe dann [HTMLRewriter](https://developers.cloudflare.com/workers/runtime-apis/html-rewriter) verwendet, um IP-Adresse und Standortinfos direkt vor der Auslieferung in meine statische HTML-Seite zu injizieren.
+Also habe ich weiter gesucht und [Cloudflare Workers Sites](https://developers.cloudflare.com/workers/platform/sites) gefunden. Das kombiniert im Grunde die Möglichkeiten von Cloudflare Pages (statische Seiten über ein globales CDN ausliefern) mit Cloudflare Workers. Die statischen Teile wie `.html` und `.css` landen in Cloudflare KV und werden global verteilt. Mit [HTMLRewriter](https://developers.cloudflare.com/workers/runtime-apis/html-rewriter) injiziere ich dann nur IP-Adresse und Standort in meine statische HTML-Seite, bevor sie an den Nutzer ausgeliefert wird.
 
-Das Rewriting ist nur für index.html passiert und hat den HTML-Elementen mit den IDs "ipaddress" und "location" entsprechend Werte gesetzt.
+Das Umschreiben passiert nur für `index.html` und setzt die Werte der HTML-Elemente mit den IDs `ipaddress` und `location`.
 
 ```javascript
 // if the main page / or /index is requested, we apply a HTMLRewriter to inject the IP-Address and location info
@@ -241,4 +242,4 @@ class ElementHandler {
 
 ## Fazit
 
-Gut, die [Seite](https://simpleip.de) ist live gegangen. Der Quellcode ist [auf GitHub verfügbar](https://github.com/diecknet/simple-ip-site), schaut euch das gerne komplett an. Ich bin mir zu 100 % sicher gewesen: Es wäre viel einfacher gewesen, klassischen Shared Webspace und etwas PHP-Code zu nutzen. Aber bei dem ganzen Prozess ist es nicht nur um das Ergebnis gegangen. Es ist auch sehr spannend gewesen, Serverless-Anwendungen und verschiedene Anbieter auszuprobieren. Ich habe den Cloudflare-Ansatz bevorzugt, weil die Serverless Workers global ausgeführt worden sind und nicht nur in den USA wie bei Vercel.
+Die [Seite](https://simpleip.de) läuft, und der Quellcode ist [auf GitHub verfügbar](https://github.com/diecknet/simple-ip-site). Schaut es euch gern an. Ich bin mir zu 100 % sicher: Mit klassischem Shared Webspace und etwas PHP wäre das deutlich einfacher gewesen. Aber der Weg ist hier wichtiger gewesen als nur das Ergebnis. Es war wirklich spannend, Serverless-Anwendungen und unterschiedliche Anbieter praktisch auszuprobieren. Ich bevorzuge den Cloudflare-Ansatz, weil die Serverless Worker global ausgeführt werden und nicht nur in den USA wie bei Vercel.

@@ -3,8 +3,8 @@ comments: true
 aliases:
     - exchange-server-setup-incomplete-fail-stopping-services
 slug: Exchange-Server-Setup-Incomplete-fail-stopping-services
-title: "Exchange Server Setup Incomplete but fails to complete"
-subtitle: "Setup fails at 'Step 1 of 13: Stopping Services'"
+title: "Exchange-Server-Setup unvollständig und Abschluss schlägt fehl"
+subtitle: "Setup scheitert bei 'Schritt 1 von 13: Dienste werden beendet'"
 date: 2022-06-23
 tags: [exchange, exchange server setup, troubleshooting, powershell]
 cover:
