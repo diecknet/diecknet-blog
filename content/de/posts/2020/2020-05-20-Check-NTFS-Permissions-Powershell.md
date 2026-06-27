@@ -12,7 +12,7 @@ cover:
     image: /images/2020/2020-05-20_CheckProfileStoragePermissions.png
 ---
 
-Ich brauchte eine schnelle Möglichkeit, ein paar Ordner auf korrekte Berechtigungen zu prüfen. Es ging um Windows Virtual Desktop/FSLogix-Benutzerprofilcontainer in einer Azure Files-Freigabe. Bei einigen dieser Profilordner waren die Berechtigungen falsch gesetzt.
+Ich habe eine schnelle Möglichkeit gebraucht, ein paar Ordner auf korrekte Berechtigungen zu prüfen. Es hat sich um Windows Virtual Desktop/FSLogix-Benutzerprofilcontainer in einer Azure Files-Freigabe gehandelt. Bei einigen dieser Profilordner sind die Berechtigungen falsch gesetzt gewesen.
 
 Die korrekten Storage-Berechtigungen sind:
 
