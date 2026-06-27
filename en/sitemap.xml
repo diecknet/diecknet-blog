@@ -727,18 +727,68 @@
   </url><url>
     <loc>https://diecknet.de/en/tags/accessrights/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/accessrights/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/accessrights/"
+                />
   </url><url>
     <loc>https://diecknet.de/en/tags/acl/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/acl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/acl/"
+                />
   </url><url>
     <loc>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/"
+                />
   </url><url>
     <loc>https://diecknet.de/en/tags/fslogix/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/fslogix/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/fslogix/"
+                />
   </url><url>
     <loc>https://diecknet.de/en/tags/windowsvirtualdesktop/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/windowsvirtualdesktop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/windowsvirtualdesktop/"
+                />
   </url><url>
     <loc>https://diecknet.de/en/tags/apple/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>

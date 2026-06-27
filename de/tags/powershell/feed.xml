@@ -476,6 +476,43 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
     </item>
     
     <item>
+      <title>NTFS-Berechtigungen mit PowerShell prüfen</title>
+      <link>https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/</guid>
+      <description>&lt;p&gt;Ich habe eine schnelle Möglichkeit gebraucht, ein paar Ordner auf korrekte Berechtigungen zu prüfen. Es hat sich um Windows Virtual Desktop/FSLogix-Benutzerprofilcontainer in einer Azure Files-Freigabe gehandelt. Bei einigen dieser Profilordner sind die Berechtigungen falsch gesetzt gewesen.&lt;/p&gt;
+&lt;p&gt;Die korrekten Storage-Berechtigungen sind:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Benutzerkonto&lt;/th&gt;
+          &lt;th&gt;Ordner&lt;/th&gt;
+          &lt;th&gt;Berechtigungen&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Users&lt;/td&gt;
+          &lt;td&gt;Nur dieser Ordner&lt;/td&gt;
+          &lt;td&gt;Ändern&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Creator / Owner&lt;/td&gt;
+          &lt;td&gt;Nur Unterordner und Dateien&lt;/td&gt;
+          &lt;td&gt;Ändern&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Administrator (optional)&lt;/td&gt;
+          &lt;td&gt;Dieser Ordner, Unterordner, Dateien&lt;/td&gt;
+          &lt;td&gt;Vollzugriff&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Offizielle FSLogix-Dokumentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/fslogix/fslogix-storage-config-ht&#34; target=&#34;_blank&#34; &gt;Configure storage permissions for use with Profile Containers and Office Containers&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Exchange - Wann wurde das Postfach WIRKLICH erstellt?</title>
       <link>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
