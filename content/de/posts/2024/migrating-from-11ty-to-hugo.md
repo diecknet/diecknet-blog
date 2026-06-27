@@ -120,7 +120,7 @@ Ich bin davon ausgegangen, dass mehr deutschsprachige Leute Englisch verstanden 
 Leider hat es dafür in Hugo keine Funktion gegeben. Ich habe aber ein paar funky Filter gebaut, die mein Ziel erreicht haben. Das habe ich in meine Datei [layouts/_default/list.html](https://github.com/diecknet/diecknet-blog/blob/265016c97e1861bd9e713345eba6affbc93567d4/layouts/_default/list.html#L42-L49) gepackt:
 
 ```go {linenostart=42}
-{{- if eq .Site.Language.Lang "==" "de" }}
+{{- if eq .Site.Language.Lang "de" }}
 {{- $pages = where (where site.AllPages "Kind" "page") "Type" "in" site.Params.mainSections }}
 {{- $pages = where (where $pages ".Language.Lang" "!=" .Site.Language.Lang) ".IsTranslated" "!=" true }}
 {{- $pages = append (where site.RegularPages "Type" "in" site.Params.mainSections) $pages }}
