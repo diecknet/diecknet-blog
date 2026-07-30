@@ -79,5 +79,5 @@ Type|Service|Protocol|Port|Weight|Priority|TTL|Name|Target|
 
 ## Meine Gedanken zum Problem
 
-Ich habe mir gewünscht, dass das automatische/assistierte Upgrade die DNS-Konfiguration einer Domain besser verstanden hat. Alternativ hat es zumindest eine Option geben sollen, um den DNS-Check beim Upgrade in den TeamsOnly-Modus zu überspringen. Etwas wie eine `-Force`-Option für `Grant-CsTeamsUpgradePolicy -Global`.  
+Ich hätte mir gewünscht, dass das automatische/assistierte Upgrade die DNS-Konfiguration einer Domain besser verstanden hätte. Alternativ hätte es zumindest eine Option geben sollen, um den DNS-Check beim Upgrade in den TeamsOnly-Modus zu überspringen. Etwas wie eine `-Force`-Option für `Grant-CsTeamsUpgradePolicy -Global`.  
 Beide Wege haben den Wechsel in den TeamsOnly-Modus deutlich einfacher und reibungsloser gemacht.
