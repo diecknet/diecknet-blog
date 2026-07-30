@@ -20,7 +20,7 @@ imageAlt: YouTube Thumbnail for Azure NAT-Gateway/ Azure Virtual Desktop
 date: 2021-06-27
 ---
 
-Ich habe ein PowerShell-Skript erstellt, das automatisch ein Azure NAT-Gateway in einer Azure Virtual Desktop Umgebung bereitstellt. Das ist nützlich, wenn ihr eine statische IP-Adresse für deine AVD-Maschinen braucht. Das Skript habe ich als Beitrag für den [Nerdio Hackathon 2021](https://getnerdio.com/nerdio-hackathon/) erstellt. Mein erster Hackathon überhaupt :^).
+Ich habe ein PowerShell-Skript erstellt, das automatisch ein Azure NAT-Gateway in einer Azure Virtual Desktop Umgebung bereitstellt. Das ist nützlich, wenn ihr eine statische IP-Adresse für eure AVD-Maschinen braucht. Das Skript habe ich als Beitrag für den [Nerdio Hackathon 2021](https://getnerdio.com/nerdio-hackathon/) erstellt. Mein erster Hackathon überhaupt :^).
 
 **Update 2021-10-05** - Ich habe tatsächlich den ersten Platz gewonnen, allerdings haben anscheinend nicht viele am Wettbewerb teilgenommen. Das Nerdio-Team war etwas enttäuscht und hat daher keine Ankündigung veröffentlicht. Immerhin habe ich einen Amazon-Gutschein über 1000 USD bekommen 🤩.
 

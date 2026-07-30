@@ -10,7 +10,7 @@ tags: [azure ad, microsoft 365, powershell]
 
 ## Option 1: M365 Admin Portal verwenden
 
-Im Microsoft-365-Admin-Portal gab es endlich einen Weg. Gehe zu ["Roles" -> "Role assignments"](https://admin.microsoft.com/Adminportal/Home?#/rbac/directory) und klicke auf "Export admin list", um eine CSV-Datei mit allen Admins und ihren Rollen zu erhalten.
+Im Microsoft-365-Admin-Portal gab es endlich einen Weg. Geht zu ["Roles" -> "Role assignments"](https://admin.microsoft.com/Adminportal/Home?#/rbac/directory) und klickt auf "Export admin list", um eine CSV-Datei mit allen Admins und ihren Rollen zu erhalten.
 
 [![M365 Admin Center - Rollenzuweisungen](/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg "M365 Admin Center - Rollenzuweisungen")](/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg)
 
@@ -20,14 +20,14 @@ Nur ein kurzes PowerShell-Snippet, um alle Benutzer mit administrativen Rollen i
 
 ### Voraussetzungen
 
-Du hast das Azure-AD-PowerShell-for-Graph-Modul installiert und dich mit deinem Azure-AD-Tenant verbunden.
+Ihr habt das Azure-AD-PowerShell-for-Graph-Modul installiert und euch mit eurem Azure-AD-Tenant verbunden.
 
 1. [Install the Azure AD PowerShell for Graph module (if you don't have it yet)](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
-1. Mit `Connect-AzureAD` mit deinem Tenant verbinden
+1. Mit `Connect-AzureAD` mit eurem Tenant verbinden
 
 ### PowerShell-Code, um alle Admins aufzulisten
 
-Lies das folgende Snippet, stelle sicher, dass es nicht bösartig oder unsinnig ist, und führe es dann aus. Das Skript schreibt einen CSV-Export nach `C:\temp\AAD_Admins.csv`.
+Lest das folgende Snippet, stellt sicher, dass es nicht bösartig oder unsinnig ist, und führt es dann aus. Das Skript schreibt einen CSV-Export nach `C:\temp\AAD_Admins.csv`.
 
 ```powershell
 $AllRoleAssignments = ForEach ($Role in (Get-AzureADMSRoleDefinition)) {
@@ -47,4 +47,4 @@ $AllRoleAssignments | Sort-Object -Unique "UserPrincipalName" | Export-csv -Enco
 1. Dieses Snippet hat nicht exportiert, welche Rollen die Benutzer hatten
 1. Dieses Snippet hat keine App-/Service-Principals mit Adminrollen exportiert
 
-Aber genau das habe ich in dem Moment gebraucht. Passe den Code gern an deine Anforderungen an.
+Aber genau das habe ich in dem Moment gebraucht. Passt den Code gern an eure Anforderungen an.

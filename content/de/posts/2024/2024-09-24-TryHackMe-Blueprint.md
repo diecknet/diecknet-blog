@@ -12,7 +12,7 @@ Ich habe mich entschieden, etwas mehr Penetration Testing/Ethical Hacking auszup
 
 Die einzige Information, die wir gehabt haben, ist:
 
-> Hast du das Zeug dazu, in diese Windows-Maschine einzudringen?
+> Habt ihr das Zeug dazu, in diese Windows-Maschine einzudringen?
 
 Und die Fragen:
 

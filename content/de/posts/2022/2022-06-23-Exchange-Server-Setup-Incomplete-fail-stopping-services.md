@@ -14,7 +14,7 @@ cover:
 Ich habe ein Problem mit einem kaputten Exchange Server 2016 CU23 gehabt. Oder eher: Er ist nicht vollständig installiert gewesen.
 Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich oder interessant gewesen ist, bei diesem Problem tiefer einzusteigen.
 
-Ich habe dich durch meine Troubleshooting-Schritte bzw. meinen Denkprozess geführt.
+Ich habe euch durch meine Troubleshooting-Schritte bzw. meinen Denkprozess geführt.
 
 [![Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected](/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png "Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected")](/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png)
 

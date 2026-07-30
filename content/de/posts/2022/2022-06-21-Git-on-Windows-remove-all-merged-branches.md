@@ -9,11 +9,11 @@ date: 2022-06-21
 tags: [git, powershell]
 ---
 
-Hier ist ein schneller Tipp gewesen, wie du Git-Branches, die bereits gemergt worden sind (und daher nicht mehr lokal benötigt worden sind), unter Windows mit PowerShell entfernt hast. Dabei ist vorausgesetzt worden, dass du Git for Windows installiert hast. **Du hast diese Befehle auf eigenes Risiko ausgeführt.**
+Hier ist ein schneller Tipp gewesen, wie ihr Git-Branches, die bereits gemergt worden sind (und daher nicht mehr lokal benötigt worden sind), unter Windows mit PowerShell entfernt habt. Dabei ist vorausgesetzt worden, dass ihr Git for Windows installiert habt. **Ihr habt diese Befehle auf eigenes Risiko ausgeführt.**
 
 ## Alle gemergten Branches auflisten
 
-Du hast alle gemergten Git-Branches auflisten können, indem du Folgendes ausgeführt hast:
+Ihr habt alle gemergten Git-Branches auflisten können, indem ihr Folgendes ausgeführt habt:
 
 ```git
 git branch --merged
@@ -21,7 +21,7 @@ git branch --merged
 
 ## Aktuellen Branch und den Branch "main" ausschließen
 
-Danach hast du es mit `|` in Folgendes gepiped, um den aktuell ausgewählten Branch (mit einem Stern `*` markiert) und den Branch `main` auszuschließen. Diese Regex-Filterabfrage hat nicht den Anspruch gehabt, universell gut zu sein. Wenn du Branches gehabt hast, die den Begriff `main` im Namen enthalten haben, sind diese ebenfalls ausgeschlossen worden. Ich habe das nicht optimiert, weil ich meine Branches nicht auf eine so seltsame Weise benannt habe.
+Danach habt ihr es mit `|` in Folgendes gepiped, um den aktuell ausgewählten Branch (mit einem Stern `*` markiert) und den Branch `main` auszuschließen. Diese Regex-Filterabfrage hat nicht den Anspruch gehabt, universell gut zu sein. Wenn ihr Branches gehabt habt, die den Begriff `main` im Namen enthalten haben, sind diese ebenfalls ausgeschlossen worden. Ich habe das nicht optimiert, weil ich meine Branches nicht auf eine so seltsame Weise benannt habe.
 
 ```powershell
 Where-Object {$_ -notmatch "(^\*|main)"}
@@ -49,7 +49,7 @@ git branch | Where-Object {$_ -notmatch "(^\*|main)"} | forEach-Object { & git b
 
 ## Hinweis
 
-Anschließend hast du möglicherweise die Remote-Tracking-Branches bereinigen wollen, die remote nicht mehr existiert haben. Das ist ein recht einfacher Standard-Git-Befehl gewesen:
+Anschließend habt ihr möglicherweise die Remote-Tracking-Branches bereinigen wollen, die remote nicht mehr existiert haben. Das ist ein recht einfacher Standard-Git-Befehl gewesen:
 
 ```git
 git remote prune origin

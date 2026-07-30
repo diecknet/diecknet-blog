@@ -11,7 +11,7 @@ cover:
     image: /images/2021/2021-11-12_bookings-permissions.csv.png
 ---
 
-Wenn du Microsoft Booking in deinem Microsoft-365-Tenant genutzt hast, willst du vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ "SchedulingMailbox". Wenn einem Benutzer die Rolle "Administrator" für einen Booking-Kalender zugewiesen wurde, hat er "FullAccess"-Berechtigungen für das Scheduling-Postfach bekommen.
+Wenn ihr Microsoft Booking in eurem Microsoft-365-Tenant genutzt habt, wollt ihr vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ "SchedulingMailbox". Wenn einem Benutzer die Rolle "Administrator" für einen Booking-Kalender zugewiesen wurde, hat er "FullAccess"-Berechtigungen für das Scheduling-Postfach bekommen.
 
 ## Alle Booking-Kalender mit Berechtigungen auflisten
 
@@ -54,7 +54,7 @@ In diesem Fall gab es zwei Booking-Postfächer im Tenant. Eines der Postfächer 
 
 ## Alle Booking-Kalender auflisten
 
-Wenn du nur die Kalender auflisten willst, ersetze die letzte Zeile des Skripts durch Folgendes:
+Wenn ihr nur die Kalender auflisten wollt, ersetzt die letzte Zeile des Skripts durch Folgendes:
 
 ```powershell
 $BookingsMailboxesWithPermissions | Sort-Object -Property "Bookings Mailbox E-Mail-Address" -Unique | Export-Csv C:\temp\bookings-permissions.csv -Encoding utf8 -Delimiter ";" -NoTypeInformation

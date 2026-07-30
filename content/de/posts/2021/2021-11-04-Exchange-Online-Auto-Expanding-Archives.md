@@ -10,9 +10,9 @@ cover:
     image: /images/2021/2021-11-04_Get-AdditionalMailbox-AutoExpandingArchivesInfo.png
 ---
 
-Wenn du Auto-Expanding Archives für Exchange-Online-Postfächer aktiviert hast, willst du vielleicht herausfinden, ob zusätzlicher Speicher tatsächlich bereitgestellt worden ist.
+Wenn ihr Auto-Expanding Archives für Exchange-Online-Postfächer aktiviert habt, wollt ihr vielleicht herausfinden, ob zusätzlicher Speicher tatsächlich bereitgestellt worden ist.
 
-Im Exchange Admin Center (EAC) öffnest du den Infobereich des Benutzerpostfachs. Dann klickst du auf "Manage mailbox archive".
+Im Exchange Admin Center (EAC) öffnet ihr den Infobereich des Benutzerpostfachs. Dann klickt ihr auf "Manage mailbox archive".
 
 [![Exchange Admin Center - Postfachbereich](/images/2021/2021-11-04_Exchange_Online_Mailbox.png "Exchange Admin Center - Postfachbereich")](/images/2021/2021-11-04_Exchange_Online_Mailbox.png)
 

@@ -27,7 +27,7 @@ Nachdem ich [SimpleIP.de](https://simpleip.de) als Serverless-Anwendung gebaut h
 
 Aber nach einer Weile hat mich die Realität eingeholt. Ich habe mit ein paar IPv6-Systemen herumgespielt, als es mir aufgefallen ist. Beim bisherigen Design hat die Seite nur die _primäre_ IP-Adresse des Clients angezeigt. Wenn der Client sowohl IPv6 **als auch** IPv4 unterstützt hat, wurde trotzdem nur eine IP-Adresse angezeigt.
 
-Ich habe ein bisschen herumprobiert. Obwohl Cloudflare DNS Host A- (IPv4) und AAAA- (IPv6) Einträge erlaubt hat, hat es nicht so funktioniert, wie ich es wollte. Cloudflare muss die DNS-Einträge proxyen, damit Cloudflare Workers funktionieren. Und selbst wenn man nur eine IP-Version hinzufügt, hat Cloudflare trotzdem beide Internet-Protokollversionen geproxyt. Die Realität bei Serverless ist also: **Du hast nur sehr begrenzte Kontrolle über den Server, auf dem deine Anwendung läuft.** Für manche Szenarien passt das, für andere nicht.
+Ich habe ein bisschen herumprobiert. Obwohl Cloudflare DNS Host A- (IPv4) und AAAA- (IPv6) Einträge erlaubt hat, hat es nicht so funktioniert, wie ich es wollte. Cloudflare muss die DNS-Einträge proxyen, damit Cloudflare Workers funktionieren. Und selbst wenn man nur eine IP-Version hinzufügt, hat Cloudflare trotzdem beide Internet-Protokollversionen geproxyt. Die Realität bei Serverless ist also: **Ihr habt nur sehr begrenzte Kontrolle über den Server, auf dem eure Anwendung läuft.** Für manche Szenarien passt das, für andere nicht.
 
 ## Mein Workaround
 
