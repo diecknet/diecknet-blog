@@ -10,15 +10,15 @@ cover:
 comments: true
 ---
 
-Hier ist ein schneller Tipp gewesen, wie ihr den Staging Mode in Azure AD Connect per PowerShell ein- oder ausgeschaltet habt. Leider hat es kein natives Cmdlet im Stil von `Set-ADSyncStagingMode` oder so gegeben.
+Hier ist ein schneller Tipp, wie ihr den Staging Mode in Azure AD Connect per PowerShell ein- oder ausschaltet. Leider gibt es kein natives Cmdlet im Stil von `Set-ADSyncStagingMode` oder so.
 
-In diesem Artikel habe ich zuerst den Ansatz erklärt und danach den vollständigen Befehlsblock aufgelistet, den ihr nutzen konntet. Ihr habt also gern nach unten zum Ende des Beitrags springen können. Die folgenden PowerShell-Cmdlets haben auf dem Azure-AD-Connect-Server ausgeführt werden müssen.
+In diesem Artikel erkläre ich zuerst den Ansatz und liste danach den vollständigen Befehlsblock auf, den ihr nutzen könnt. Ihr könnt also gern nach unten zum Ende des Beitrags springen. Die folgenden PowerShell-Cmdlets müsst ihr auf dem Azure-AD-Connect-Server ausführen.
 
-**Ihr habt diese Befehle auf eigenes Risiko ausgeführt.**
+**Führt diese Befehle auf eigenes Risiko aus.**
 
 ## Aktuelle Azure AD Connect Staging-Mode-Einstellung auflisten
 
-Als Erstes haben wir die aktuellen Azure-AD-Connect-Einstellungen mit `Get-ADSyncGlobalSettings` abrufen können.
+Als Erstes könnt ihr die aktuellen Azure-AD-Connect-Einstellungen mit `Get-ADSyncGlobalSettings` abrufen.
 
 ```powershell
 $aadSyncSettings=Get-ADSyncGlobalSettings
@@ -29,7 +29,7 @@ $aadSyncSettings
 
 ## Die Parameter des ADSyncGlobalSettings-Objekts untersuchen
 
-Die interessanten Dinge sind in der Eigenschaft „parameters“ versteckt gewesen. Die Einstellung für den Staging Mode hat in „Microsoft.Synchronize.StagingMode“ gelegen.
+Die interessanten Dinge verstecken sich in der Eigenschaft „parameters“. Die Einstellung für den Staging Mode liegt in „Microsoft.Synchronize.StagingMode“.
 
 ```powershell
 $aadSyncSettings.parameters
@@ -39,7 +39,7 @@ $aadSyncSettings.parameters
 
 ## Den Staging Mode ändern
 
-Um den Staging Mode zu konfigurieren, haben wir „Microsoft.Synchronize.StagingMode“ entweder auf „True“ (Staging Mode aktivieren) oder auf „False“ (Staging Mode deaktivieren) setzen müssen.
+Um den Staging Mode zu konfigurieren, müsst ihr „Microsoft.Synchronize.StagingMode“ entweder auf „True“ (Staging Mode aktivieren) oder auf „False“ (Staging Mode deaktivieren) setzen.
 
 ```powershell
 # to disable AAD Connect Staging mode
@@ -53,7 +53,7 @@ Um den Staging Mode zu konfigurieren, haben wir „Microsoft.Synchronize.Staging
 
 ## Den Staging Mode tatsächlich SETZEN
 
-Haha, ja. Wir sind noch nicht fertig gewesen. Bis hierhin haben wir nur ein PowerShell-Objekt („Microsoft.IdentityManagement.PowerShell.ObjectModel.GlobalSettings“) gehabt, das die Azure-AD-Connect-Einstellungen repräsentiert hat. Und das Ändern dieses Objekts hat die tatsächliche Konfiguration von Azure AD Connect nicht geändert. Also haben wir die echte Konfiguration mit unserem geänderten Settings-Objekt setzen müssen.
+Haha, ja. Wir sind noch nicht fertig. Bis hierhin haben wir nur ein PowerShell-Objekt („Microsoft.IdentityManagement.PowerShell.ObjectModel.GlobalSettings“), das die Azure-AD-Connect-Einstellungen repräsentiert. Und das Ändern dieses Objekts ändert die tatsächliche Konfiguration von Azure AD Connect nicht. Also müssen wir die echte Konfiguration mit unserem geänderten Settings-Objekt setzen.
 
 ```powershell
 Set-ADSyncGlobalSettings $aadSyncSettings
@@ -61,13 +61,13 @@ Set-ADSyncGlobalSettings $aadSyncSettings
 
 [![Screenshot of PowerShell Code Execution - Changing and setting the Staging mode](/images/2022/2022-07-21_AzureAD-Connect-Staging-mode-set-by-powershell.png "Screenshot of PowerShell Code Execution - Changing and setting the Staging mode")](/images/2022/2022-07-21_AzureAD-Connect-Staging-mode-set-by-powershell.png)
 
-Danach habe ich im GUI (Azure AD Connect Wizard) das gewünschte Ergebnis überprüft. In meinem Fall ist der Staging Mode jetzt aktiviert gewesen. Großartig!
+Danach habe ich im GUI (Azure AD Connect Wizard) das gewünschte Ergebnis überprüft. In meinem Fall ist der Staging Mode jetzt aktiviert. Großartig!
 
 [![Verification of Azure AD Connect Staging Mode in the Wizard](/images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png "Verification of Azure AD Connect Staging Mode in the Wizard")](/images/2022/2022-07-21_Azure-AD-Connect-Staging-mode-is-enabled.png)
 
 ## Zusammenfassung – vollständige Code-Snippets
 
-Nachdem wir all diese Informationen gesammelt haben, haben wir unsere eigenen kurzen PowerShell-Code-Snippets erstellen können, um den Azure-AD-Connect-Staging-Mode zu prüfen/aktivieren/deaktivieren.
+Nachdem wir all diese Informationen gesammelt haben, können wir unsere eigenen kurzen PowerShell-Code-Snippets erstellen, um den Azure-AD-Connect-Staging-Mode zu prüfen, zu aktivieren oder zu deaktivieren.
 
 ### Snippet zum Prüfen des Azure AD Connect Staging Mode
 

@@ -6,11 +6,11 @@ comments: true
 tags: [onedrive, onedrive for business, sharepoint online, my site]
 ---
 
-Normalerweise wird bei einem Benutzer, der die Firma verlässt, dessen OneDrive-for-Business-Seite automatisch an den Vorgesetzten delegiert. Das bedeutet, dass der Vorgesetzte SharePoint Site Collection Admin-Rechte auf die OneDrive-Seite des Mitarbeiters erhalten hat.
+Normalerweise wird bei einem Benutzer, der die Firma verlässt, dessen OneDrive-for-Business-Seite automatisch an den Vorgesetzten delegiert. Das bedeutet, dass der Vorgesetzte SharePoint Site Collection Admin-Rechte auf die OneDrive-Seite des Mitarbeiters erhält.
 
 ## Zugriffsdelegierung prüfen und ändern
 
-**⚠️ Die Zugriffsdelegierung ist standardmäßig aktiviert gewesen**. Die Einstellung kann man hier finden und ändern:
+**⚠️ Die Zugriffsdelegierung ist standardmäßig aktiviert**. Die Einstellung findet und ändert ihr hier:
 
 > 1. Go to **More features** in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.
 > [...]
@@ -26,13 +26,13 @@ In manchen Firmen ist das nicht gewünscht, daher könnt ihr diese Option bei Be
 
 ## Wie sieht das aus?
 
-Wenn ein Benutzer gelöscht wird und die OneDrive-Zugriffsdelegierung **aktiviert** ist, erhält der Vorgesetzte eine E-Mail. Zumindest in meinem Test-Tenant hat die E-Mail kein professionelles Design gehabt. Das ist einfach eine Textwand gewesen:
+Wenn ein Benutzer gelöscht wird und die OneDrive-Zugriffsdelegierung **aktiviert** ist, erhält der Vorgesetzte eine E-Mail. Zumindest in meinem Test-Tenant hat die E-Mail kein professionelles Design. Es ist einfach eine Textwand:
 
 [![Info-E-Mail an einen Manager bezüglich OneDrive eines Mitarbeiters](/images/2023/2023-09-25_OneDrive-Delegation-Infomail1.jpg "Info-E-Mail an einen Manager bezüglich OneDrive eines Mitarbeiters")](/images/2023/2023-09-25_OneDrive-Delegation-Infomail1.jpg)
 
 > Adele Vance's account has been deleted from the Active Directory. Their OneDrive for Business will be preserved for 30 days. You're the temporary owner of all documents saved to their OneDrive for Business. If you would like to save content beyond the 30 day retention period, you can copy important documents to another location. You can also contact your administrator to reassign ownership to another OneDrive for Business owner. After 30 days, Adele Vance's OneDrive for Business will be permanently deleted. Go to Adele Vance's OneDrive for Business at https://diecknetdemotenant-my.sharepoint.com/personal/adelev_yr2z8_onmicrosoft_com/Documents/Forms/All.aspx
 
-Und dann hat der Vorgesetzte 7 Tage vor der Löschung von OneDrive eine Erinnerung erhalten:
+Und 7 Tage vor der Löschung von OneDrive erhält der Vorgesetzte dann eine Erinnerung:
 
 [![Info-E-Mail an einen Manager zum bald ablaufenden OneDrive eines Mitarbeiters](/images/2023/2023-09-25_OneDrive-Delegation-Infomail2.jpg "Info-E-Mail an einen Manager zum bald ablaufenden OneDrive eines Mitarbeiters")](/images/2023/2023-09-25_OneDrive-Delegation-Infomail2.jpg)
 
@@ -131,8 +131,8 @@ foreach($site in $AllOneDriveSites) {
 }
 ```
 
-Danach habe ich eine CSV-Datei gehabt, die ich in Excel prüfen konnte. Ich habe festgestellt, dass die Datei **ALLE** zusätzlichen Zuweisungen enthält, auch einige legitime. Also habe ich das PowerShell-Modul `AzureAD` genutzt, um zu vergleichen, ob das Benutzerkonto zur jeweiligen OneDrive-Seite noch existiert hat.
-Normalerweise trägt eine OneDrive-Seite den Namen des Benutzers als Seitentitel. Deshalb konnte ich `Get-AzureADUser` verwenden, um nach dem SPO-Seitentitel zu suchen. `Get-AzureADUser` liefert keine gelöschten Benutzer zurück. Wenn ein Benutzer existiert hat, habe ich die Zuweisung als legitim behandelt, weil es dann keine automatische Delegierung durch eine Löschung gewesen sein sollte.
+Danach hatte ich eine CSV-Datei, die ich in Excel prüfen konnte. Ich habe festgestellt, dass die Datei **ALLE** zusätzlichen Zuweisungen enthält, auch einige legitime. Also habe ich das PowerShell-Modul `AzureAD` genutzt, um zu vergleichen, ob das Benutzerkonto zur jeweiligen OneDrive-Seite noch existiert.
+Normalerweise trägt eine OneDrive-Seite den Namen des Benutzers als Seitentitel. Deshalb konnte ich `Get-AzureADUser` verwenden, um nach dem SPO-Seitentitel zu suchen. `Get-AzureADUser` liefert keine gelöschten Benutzer zurück. Wenn ein Benutzer existiert, behandle ich die Zuweisung als legitim, weil es dann keine automatische Delegierung durch eine Löschung sein sollte.
 
 ```ps1
 # Compare-OneDriveSitesWithUsers.ps1
@@ -168,7 +168,7 @@ $sites | Where-Object {$_.UserStillExists -ne $true} | Export-Csv -Path C:\temp\
 
 ## Zusätzliche Admins von OneDrive-Seiten entfernen
 
-Nachdem ich das Ergebnis geprüft hatte, habe ich ein weiteres Skript verwendet, um die zusätzlichen SPO-Berechtigungen tatsächlich zu entfernen. Wieder musste ich mein Admin-Konto zuerst als SPO Site Collection Admin hinzufügen. Danach habe ich zuerst die Site-Admin-Rechte des Manager-Benutzers mit `Set-SPOUser -Site $site.SiteURL -LoginName $SPOAdminUsername -IsSiteCollectionAdmin $True` entfernt. Anschließend habe ich den Benutzer mit `Remove-SPOUser -Site $site.SiteURL -LoginName $site.AdditionalUserLoginName` komplett von der Seite entfernt. Nachdem ich mit der Seite fertig gewesen bin, habe ich meine Admin-Berechtigungen wieder entfernt.
+Nachdem ich das Ergebnis geprüft hatte, habe ich ein weiteres Skript verwendet, um die zusätzlichen SPO-Berechtigungen tatsächlich zu entfernen. Wieder musste ich mein Admin-Konto zuerst als SPO Site Collection Admin hinzufügen. Danach habe ich zuerst die Site-Admin-Rechte des Manager-Benutzers mit `Set-SPOUser -Site $site.SiteURL -LoginName $SPOAdminUsername -IsSiteCollectionAdmin $True` entfernt. Anschließend habe ich den Benutzer mit `Remove-SPOUser -Site $site.SiteURL -LoginName $site.AdditionalUserLoginName` komplett von der Seite entfernt. Nachdem ich mit der Seite fertig war, habe ich meine Admin-Berechtigungen wieder entfernt.
 
 ```ps1
 # Remove-AdditionalOneDriveOwners.ps1

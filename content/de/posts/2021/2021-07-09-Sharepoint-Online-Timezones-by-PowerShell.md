@@ -17,9 +17,9 @@ imageAlt: Ausführen von PowerShell-Cmdlets, um die Zeitzone einer SharePoint-On
 date: 2021-07-09
 ---
 
-Ich habe nach einer Möglichkeit gesucht, die Zeitzonen-Einstellung einer Sharepoint-Online-Seite per PowerShell auszulesen. Offenbar sind öffentlich nicht viele gute Informationen verfügbar gewesen. Ich habe nach einem Weg gesucht, das mit dem [standard SPO PowerShell module](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) namens Microsoft.Online.SharePoint.PowerShell zu machen.
+Ich habe nach einer Möglichkeit gesucht, die Zeitzonen-Einstellung einer Sharepoint-Online-Seite per PowerShell auszulesen. Offenbar sind öffentlich nicht viele gute Informationen dazu verfügbar. Ich habe nach einem Weg gesucht, das mit dem [standard SPO PowerShell module](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) namens Microsoft.Online.SharePoint.PowerShell zu machen.
   
-Es hat online ein paar Infos zur Nutzung des PNPOnline-Moduls gegeben, aber das ist in meinem Fall nicht praktisch gewesen. Es hat sogar einige wirklich nervige Artikel gegeben, die behauptet haben, einen PowerShell-Weg zu zeigen. Aber statt die tatsächliche Zeitzonen-Einstellung einer SPO-Seite auszulesen, haben sie alle verfügbaren Zeitzonen abgefragt und anschließend die aktuelle Zeitzone mit einer gültigen überschrieben. Das Schlimmste: Sie haben Sharepoint-.dll-Dateien importiert, Plaintext-Authentifizierung verwendet und mit Client Context Object/CSOM (Microsoft.SharePoint.Client.ClientContext) gearbeitet. 
+Online gibt es ein paar Infos zur Nutzung des PNPOnline-Moduls, aber das ist in meinem Fall nicht praktisch. Es gibt sogar einige wirklich nervige Artikel, die behaupten, einen PowerShell-Weg zu zeigen. Aber statt die tatsächliche Zeitzonen-Einstellung einer SPO-Seite auszulesen, fragen sie alle verfügbaren Zeitzonen ab und überschreiben anschließend die aktuelle Zeitzone mit einer gültigen. Das Schlimmste: Sie importieren Sharepoint-.dll-Dateien, verwenden Plaintext-Authentifizierung und arbeiten mit Client Context Object/CSOM (Microsoft.SharePoint.Client.ClientContext). 
 😵 Oof.
 
 ## TL;DR - hier ist der PowerShell-Code
@@ -37,7 +37,7 @@ try {
 }       
 ```
 
-Ich habe vorausgesetzt, dass ihr bereits per `Connect-SPOService` mit SPO verbunden gewesen seid. Der Rückgabewert von `Get-SPOSiteScriptFromWeb` ist ein JSON-String, den ihr mit `ConvertFrom-Json` in ein Objekt umwandeln könnt. Das rohe JSON hat so ausgesehen:
+Ich setze voraus, dass ihr bereits per `Connect-SPOService` mit SPO verbunden seid. Der Rückgabewert von `Get-SPOSiteScriptFromWeb` ist ein JSON-String, den ihr mit `ConvertFrom-Json` in ein Objekt umwandeln könnt. Das rohe JSON sieht so aus:
 
 ```json
 {

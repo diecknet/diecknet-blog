@@ -16,11 +16,11 @@ Im Microsoft-365-Admin-Portal gab es endlich einen Weg. Geht zu ["Roles" -> "Rol
 
 ## Option 2: PowerShell / Azure AD Graph Module verwenden
 
-Nur ein kurzes PowerShell-Snippet, um alle Benutzer mit administrativen Rollen in einer Microsoft-365- (oder Azure-AD-) Umgebung aufzulisten. Bitte beachte, dass hier das ältere Azure-AD-Graph-Modul verwendet wurde (die Abkündigung war bereits geplant). Ein Beispiel mit der neueren Microsoft Graph API hatte ich **noch nicht**.
+Nur ein kurzes PowerShell-Snippet, um alle Benutzer mit administrativen Rollen in einer Microsoft-365- (oder Azure-AD-) Umgebung aufzulisten. Bitte beachtet, dass hier das ältere Azure-AD-Graph-Modul verwendet wird (die Abkündigung war bereits geplant). Ein Beispiel mit der neueren Microsoft Graph API habe ich **noch nicht**.
 
 ### Voraussetzungen
 
-Ihr habt das Azure-AD-PowerShell-for-Graph-Modul installiert und euch mit eurem Azure-AD-Tenant verbunden.
+Ihr braucht das Azure-AD-PowerShell-for-Graph-Modul und müsst euch mit eurem Azure-AD-Tenant verbinden.
 
 1. [Install the Azure AD PowerShell for Graph module (if you don't have it yet)](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
 1. Mit `Connect-AzureAD` mit eurem Tenant verbinden
@@ -42,9 +42,9 @@ $AllRoleAssignments = ForEach ($Role in (Get-AzureADMSRoleDefinition)) {
 $AllRoleAssignments | Sort-Object -Unique "UserPrincipalName" | Export-csv -Encoding utf8 -NoTypeInformation -Path C:\temp\AAD_Admins.csv
 ```
 
-### Was das nicht gemacht hat
+### Was das nicht macht
 
-1. Dieses Snippet hat nicht exportiert, welche Rollen die Benutzer hatten
-1. Dieses Snippet hat keine App-/Service-Principals mit Adminrollen exportiert
+1. Dieses Snippet exportiert nicht, welche Rollen die Benutzer haben
+1. Dieses Snippet exportiert keine App-/Service-Principals mit Adminrollen
 
 Aber genau das habe ich in dem Moment gebraucht. Passt den Code gern an eure Anforderungen an.
