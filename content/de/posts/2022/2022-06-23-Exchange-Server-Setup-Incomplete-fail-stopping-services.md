@@ -12,9 +12,9 @@ cover:
 ---
 
 Ich habe ein Problem mit einem kaputten Exchange Server 2016 CU23 gehabt. Oder eher: Er ist nicht vollständig installiert gewesen.
-Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich oder interessant gewesen ist, bei diesem Problem tiefer einzusteigen.
+Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich oder interessant sein würde, bei diesem Problem tiefer einzusteigen.
 
-Ich habe euch durch meine Troubleshooting-Schritte bzw. meinen Denkprozess geführt.
+Ich nehme euch bei meinen Troubleshooting-Schritten bzw. meinem Denkprozess mit.
 
 [![Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected](/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png "Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected")](/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png)
 
@@ -230,7 +230,7 @@ $script:servicesToControl['Critical']           = @( 'WinMgmt', 'RemoteRegistry'
 ```
 
 Ah okay, das sind die tatsächlichen Windows-Service-Namen für jede Exchange-Server-Rolle gewesen. Das hat uns hier aber noch nicht direkt geholfen. Also einen Schritt zurück zu `Get-ServiceToControl`.
-Oh ja, warte. Wenn `$Active` gesetzt gewesen ist, sind nur Windows-Services zurückgegeben worden, die nicht den Status `Stopped` gehabt haben. Wegen des fehlgeschlagenen Setups sind die meisten Exchange-Services `Disabled` gewesen, und sicher ist keiner gelaufen.
+Oh ja, warte. Wenn `$Active` gesetzt ist, werden nur Windows-Services zurückgegeben, die nicht den Status `Stopped` haben. Wegen des fehlgeschlagenen Setups sind die meisten Exchange-Services `Disabled` gewesen, und sicher ist keiner gelaufen.
 
 [![Exchange Server 2016 - Services are not running](/images/2022/2022-06-22_Exchange_Server_Services_are_stopped.png "Exchange Server 2016 - Services are not running")](/images/2022/2022-06-22_Exchange_Server_Services_are_stopped.png)
 
@@ -268,7 +268,7 @@ Also könnte es jetzt innerhalb des Setup-Kontexts einfach funktionieren. Das ha
 
 [![Exchange Server 2016 CU23 Setup Assistant - Step 2 Copy Exchange Files running](/images/2022/2022-06-22_Exchange_Server_setup_copy_exchange_files.png "Exchange Server 2016 CU23 Setup Assistant - Step 2 Copy Exchange Files running")](/images/2022/2022-06-22_Exchange_Server_setup_copy_exchange_files.png)
 
-Als ich zurückgekommen bin, ist kein Exchange Setup mehr gelaufen. Seltsam. Ist es abgestürzt? Ich habe die Datei `C:\ExchangeSetupLogs\ExchangeSetup.log` erneut geprüft. Es hat jetzt gut ausgesehen:
+Als ich zurückgekommen bin, ist kein Exchange Setup mehr gelaufen. Seltsam. Ist es abgestürzt? Ich habe die Datei `C:\ExchangeSetupLogs\ExchangeSetup.log` erneut geprüft. Sah jetzt gut aus:
 
 ```log
 [06/22/2022 10:07:00.0062] [2] Install is complete.  Server state has been set to Active.
@@ -292,7 +292,7 @@ Danach habe ich die Exchange Management Shell gestartet, um `Get-ExchangeServer`
 
 ## Fazit
 
-1.  Es ist wirklich seltsam gewesen, wie dieser Check implementiert worden ist. IMO hätte Microsoft das Setup-Erlebnis hier verbessern können, wenn das Setup geprüft hätte, ob überhaupt Services gelaufen sind, die tatsächlich gestoppt werden mussten. Stattdessen ist es abgestürzt, wenn keine Exchange-Services gelaufen sind.
+1.  Es ist wirklich seltsam, wie dieser Check implementiert worden ist. IMO hätte Microsoft das Setup-Erlebnis hier verbessern können, wenn das Setup geprüft hätte, ob überhaupt Services gelaufen sind, die tatsächlich gestoppt werden mussten. Stattdessen ist es abgestürzt, wenn keine Exchange-Services gelaufen sind.
 
 1.  Im Nachhinein ist es immer leicht und offensichtlich gewesen. Aber vielleicht wäre ich schneller zum Ziel gekommen, wenn ich direkt diese Schlussfolgerung gezogen hätte:
 
@@ -300,6 +300,6 @@ Danach habe ich die Exchange Management Shell gestartet, um `Get-ExchangeServer`
     -   Es sind keine Exchange-Services gelaufen
     -   = Also haben keine Services **gestoppt** werden können
 
-### Nebenbemerkung
+### Randbemerkung
 
-Im Microsoft-Exchange-Kontext hat `Cafe` für „Client Access Front End“ gestanden. Diese Abkürzung ist mir vorher irgendwie nicht bewusst gewesen.
+Im Microsoft-Exchange-Kontext steht `Cafe` für "Client Access Front End". Diese Abkürzung ist mir vorher irgendwie nicht bewusst gewesen.
