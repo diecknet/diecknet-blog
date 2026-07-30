@@ -11,7 +11,7 @@ cover:
     image: /images/2021/2021-11-12_bookings-permissions.csv.png
 ---
 
-Wenn ihr Microsoft Booking in eurem Microsoft-365-Tenant genutzt habt, wollt ihr vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ "SchedulingMailbox". Wenn einem Benutzer die Rolle "Administrator" für einen Booking-Kalender zugewiesen wurde, hat er "FullAccess"-Berechtigungen für das Scheduling-Postfach bekommen.
+Wenn ihr Microsoft Booking in eurem Microsoft-365-Tenant nutzt, wollt ihr vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ "SchedulingMailbox". Wenn einem Benutzer die Rolle "Administrator" für einen Booking-Kalender zugewiesen ist, hat er "FullAccess"-Berechtigungen für das Scheduling-Postfach.
 
 ## Alle Booking-Kalender mit Berechtigungen auflisten
 
