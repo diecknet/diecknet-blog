@@ -46,7 +46,7 @@ aus.
 
 Der Trick ist, dass `v4.alt.simpleip.de` nur einen Host-A-Record hat - dadurch funktioniert es nur für IPv4-Clients. Und `v6.alt.simpleip.de` hat nur einen Host-AAAA-Record - dadurch funktioniert es nur für IPv6-Clients. Ursprünglich wollte ich `ipv4.alt.simpleip.de` und `ipv6.alt.simpleip.de` nutzen, aber anscheinend hat ein Bug im Netcup-Plesk-Control-Panel das verhindert 🤔. Komisch.
 
-Jedenfalls ist meine API gelaufen. Der nächste Schritt war, etwas JavaScript-Code zur Website hinzuzufügen. Der Code versucht, zu beiden Hostnames eine Verbindung aufzubauen. Wenn ein Ergebnis zurückkommt, wird es auf der Seite ergänzt. Den alten Cloudflare-basierten Ansatz habe ich in der Seite gelassen. Wenn ein Client also die Seite aufruft, ist der neue Programmablauf so gewesen:
+Jedenfalls hat meine API funktioniert. Der nächste Schritt war, etwas JavaScript-Code zur Website hinzuzufügen. Der Code versucht, zu beiden Hostnames eine Verbindung aufzubauen. Wenn ein Ergebnis zurückkommt, wird es auf der Seite ergänzt. Den alten Cloudflare-basierten Ansatz habe ich in der Seite gelassen. Wenn ein Client also die Seite aufruft, ist der neue Programmablauf so gewesen:
 
 1. Cloudflare Workers injiziert die Client-IP-Adresse in das HTML und liefert die Seite aus (kein Client-JS nötig).
 2. Wenn der HTML-Body lädt **und** Client-JS aktiviert ist:
