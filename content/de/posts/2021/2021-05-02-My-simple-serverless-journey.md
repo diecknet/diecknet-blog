@@ -4,7 +4,7 @@ aliases:
     - my-simple-serverless-journey
 slug: My-simple-serverless-journey
 layout: post
-title: "Meine einfache Serverless-Reise war gar nicht so einfach"
+title: "Meine simple Serverless-Reise war gar nicht so einfach"
 subtitle: "Die Entstehung von simpleIP.de"
 date: 2021-05-02
 tags:
@@ -154,7 +154,7 @@ function getIPinfo() {
 }
 ```
 
-Anschließend habe ich eine Funktion gebaut, um die IP-Adresse in die Zwischenablage zu kopieren. Es gibt den alten Weg mit `document.execCommand("copy");` und den modernen Weg über die Clipboard API `navigator.clipboard.writeText();`. Ich habe beide umgesetzt: erst modern, dann als Fallback die Legacy-Methode.
+Anschließend habe ich eine Funktion gebaut, um die IP-Adresse in die Zwischenablage zu kopieren. Es gibt einen legacy Weg mit `document.execCommand("copy");` und den modernen Weg über die Clipboard API `navigator.clipboard.writeText();`. Ich habe beide umgesetzt: erst modern, dann als Fallback die Legacy-Methode.
 
 ```javascript
 function copy2Clipboard(whichElement) {
