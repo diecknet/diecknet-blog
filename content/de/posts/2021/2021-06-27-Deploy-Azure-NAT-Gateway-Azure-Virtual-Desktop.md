@@ -3,8 +3,8 @@ comments: true
 aliases:
     - deploy-azure-nat-gateway-azure-virtual-desktop
 slug: Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop
-title: Deploy an Azure NAT-Gateway for Azure Virtual Desktop by PowerShell
-subtitle: Deploying Azure Resources by REST-API
+title: Bereitstellung eines Azure NAT-Gateways für Azure Virtual Desktop mit PowerShell
+subtitle: Azure-Ressourcen per REST-API bereitstellen
 tags:
     [
         azure,
@@ -20,12 +20,12 @@ imageAlt: YouTube Thumbnail for Azure NAT-Gateway/ Azure Virtual Desktop
 date: 2021-06-27
 ---
 
-I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That's useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the [Nerdio Hackathon 2021](https://getnerdio.com/nerdio-hackathon/). My first Hackathon attendance :^).
+Ich habe ein PowerShell-Skript erstellt, das automatisch ein Azure NAT-Gateway in einer Azure Virtual Desktop Umgebung bereitstellt. Das ist nützlich, wenn du eine statische IP-Adresse für deine AVD-Maschinen brauchst. Das Skript habe ich als Beitrag für den [Nerdio Hackathon 2021](https://getnerdio.com/nerdio-hackathon/) erstellt. Mein erster Hackathon überhaupt :^).
 
-**Update 2021-10-05** - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn't publish any announcements. Anyway I got a 1000 USD Amazon Gift Card 🤩.
+**Update 2021-10-05** - Ich habe tatsächlich den ersten Platz gewonnen, allerdings haben anscheinend nicht viele am Wettbewerb teilgenommen. Das Nerdio-Team war etwas enttäuscht und hat daher keine Ankündigung veröffentlicht. Immerhin habe ich einen Amazon-Gutschein über 1000 USD bekommen 🤩.
 
-[I also created a quick video proof of the script working, which you can check out on YouTube.](https://www.youtube.com/watch?v=luehHTThFFk)
+[Ich habe außerdem ein kurzes Video erstellt, das zeigt, wie das Skript funktioniert. Du kannst es dir auf YouTube ansehen.](https://www.youtube.com/watch?v=luehHTThFFk)
 
-## Get the script
+## Skript abrufen
 
-[The script is free to download on GitHub.](https://github.com/diecknet/AzureVirtualDesktop/tree/main/Deploy-NATGatewayAVD)
+[Das Skript kannst du kostenlos auf GitHub herunterladen.](https://github.com/diecknet/AzureVirtualDesktop/tree/main/Deploy-NATGatewayAVD)
