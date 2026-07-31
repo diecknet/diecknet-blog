@@ -5,11 +5,11 @@ date: 2024-08-07
 comments: true
 tags: [powershell, active directory]
 ---
-Ich habe vor Kurzem an einem Kundenprojekt gearbeitet, bei dem ich rund um Active Directory Computer einiges machen musste. Ich habe PowerShell und etwas leichtes Filtern und Verarbeiten verwendet. Diese Beispiele habe ich jetzt geteilt, und hoffentlich hat sie jemand interessant oder hilfreich gefunden. Vielleicht bin ich es in Zukunft selbst gewesen, der sie interessant gefunden hat. In dem Fall: Moin Andi! 👋
+Ich habe vor Kurzem an einem Kundenprojekt gearbeitet, bei dem ich rund um Active Directory Computer einiges machen musste. Ich habe PowerShell und etwas leichtes Filtern und Verarbeiten verwendet. Diese Beispiele teile ich jetzt hier und hoffentlich findet sie jemand interessant oder hilfreich. Vielleicht werde ich sie auch zukünftig interessant finden - in dem Fall: Moin Andi! 👋
 
 ## Beispiel 1: Computer nach Betriebssystemversion filtern
 
-Das AD-Attribut `OperatingSystemVersion` hat die OS-Version inklusive Buildnummer in einem Format wie diesem enthalten: `10.0 (19041)`
+Das AD-Attribut `OperatingSystemVersion` enthält die OS-Version inklusive Buildnummer in einem Format wie diesem: `10.0 (19041)`
 
 Ich habe einige ältere Geräte finden müssen, aber ein Vergleich mit einem "kleiner als"-Operator gegen den Attributwert war nicht möglich. Deshalb habe ich mit dem Operator `-match` und einem regulären Ausdruck nur die eigentliche Buildnummer in den Klammern extrahiert. Wenn der RegEx gepasst hat, ist das extrahierte Ergebnis in der automatischen Variable `$Matches` gelandet.
 
