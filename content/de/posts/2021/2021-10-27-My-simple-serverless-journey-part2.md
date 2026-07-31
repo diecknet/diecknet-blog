@@ -55,4 +55,8 @@ Jedenfalls hat meine API funktioniert. Der nächste Schritt war, etwas JavaScrip
 
 ## Fazit
 
-Also ist es immer noch _irgendwie_ serverless, weil ich den Webserver bei Netcup nicht administrieren musste 😇. Das ist ein Shared-Webhosting-Paket. Bei Serverless gab es mehrere Hürden, aber es hat höchstwahrscheinlich einen Workaround gegeben. Für meinen Use Case habe ich diese Workarounds weiterhin bevorzugt, statt einen kompletten Server zu administrieren.
+Also ist es immer noch _irgendwie_ serverless, weil ich den Webserver bei Netcup nicht administrieren musste 😇. Das ist ein Shared-Webhosting-Paket. Wenn man Serverless gehen möchte, gibt es einige Hürden, aber wahrscheinlich gibt es auch einen passenden Workaround. Für meinen Use Case bevorzuge ich diese Workarounds, statt einen kompletten Server zu administrieren.
+
+## Nachtrag 2026
+
+Ich benutze bereits seit einiger Zeit nicht mehr Cloudflare für SimpleIP.de. Ich lasse den Blogpost aber online, als Referenz.
