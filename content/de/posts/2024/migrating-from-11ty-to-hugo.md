@@ -13,7 +13,7 @@ tags:
     ]
 ---
 
-Ich habe diese Website kürzlich auf 11ty v2.0 aktualisiert, aber ich habe noch mehr Veränderung gewollt. Anfangs habe ich nur ein simples Design mit [Terminal.css](https://github.com/Gioni06/terminal.css) bauen wollen. Dann bin ich aber zufällig über die [Hugo Theme Gallery](https://themes.gohugo.io/) gestolpert und habe ein paar richtig schöne Themes gefunden! Deshalb habe ich mich entschieden, [Hugo Papermod](https://github.com/adityatelange/hugo-PaperMod/) zu nutzen und die Website auf Hugo zu migrieren 🤓. Da ich JavaScript nicht *wirklich* beherrscht habe, ist es für mich egal gewesen, dass Hugo stattdessen Go genutzt hat. Ich habe Go als Programmiersprache zwar nie verwendet, aber es hat gut geklungen.  
+Ich habe diese Website kürzlich auf 11ty v2.0 aktualisiert, aber ich habe noch mehr Veränderung gewollt. Anfangs habe ich nur ein simples Design mit [Terminal.css](https://github.com/Gioni06/terminal.css) bauen wollen. Dann bin ich aber zufällig über die [Hugo Theme Gallery](https://themes.gohugo.io/) gestolpert und habe ein paar richtig schöne Themes gefunden! Deshalb habe ich mich entschieden, [Hugo Papermod](https://github.com/adityatelange/hugo-PaperMod/) zu nutzen und die Website auf Hugo zu migrieren 🤓. Da ich JavaScript nicht *wirklich* beherrsche, ist es für mich egal, dass Hugo stattdessen Go nutzt. Ich habe Go als Programmiersprache zwar noch nie verwendet, aber klingt gut.  
 Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Migration meines Blogs gemacht habe.
 
 ## Bilder von /assets/ nach /static/ verschieben
@@ -24,15 +24,15 @@ Mit 11ty habe ich `/assets/` zum Speichern meiner Bilder verwendet. Bei Hugo ist
 
 Bei Hugo habt ihr freie Wahl zwischen YAML, TOML oder JSON für die Konfiguration. Ich habe für meine Haupt-Konfigurationsdatei anfangs JSON gewählt. Einfach weil:
 
-- ich wegen der Einrückungen etwas Respekt vor YAML gehabt habe
+- ich wegen der Einrückungen etwas Respekt vor YAML habe
 - und TOML vorher nie genutzt habe.
 
-*Ein paar Minuten später ...* Ich habe [TOML dann kurz nachgeschlagen und es hat echt sauber ausgesehen.](https://en.wikipedia.org/wiki/TOML) Ich habe meine Konfigurationsdatei auf TOML umgeschrieben.
+*Ein paar Minuten später ...* Ich habe [TOML dann kurz nachgeschlagen und es hat echt sauber ausgesehen.](https://en.wikipedia.org/wiki/TOML) Deshalb habe ich meine Konfigurationsdatei zu TOML umgeschrieben.
 
 ## URLs
 
 Okay. Ich habe meine bestehenden URLs behalten wollen, die ich in 11ty verwendet habe (und manche sogar schon aus Jekyll-Zeiten).
-Offenbar haben die Standard-Einstellungen den Sprachcode der Default-Sprache weggelassen. Außerdem haben alle meine Posts in einer Verzeichnisstruktur wie `/content/<language-code>/posts/<year>/` gelegen, aber die tatsächlichen URLs sind wie `/<languagecode>/<year>/<month>/<day>/` gewesen. Also habe ich die Permalink-Option anpassen müssen.
+Offenbar lassen die Hugo Standard-Einstellungen den Sprachcode der Default-Sprache weg. Außerdem haben alle meine Posts in einer Verzeichnisstruktur wie `/content/<language-code>/posts/<year>/` gelegen, aber die tatsächlichen URLs sind wie `/<languagecode>/<year>/<month>/<day>/` gewesen. Also habe ich die Permalink-Option anpassen müssen.
 
 Ich habe die folgenden Optionen zu meiner Hugo-Konfiguration hinzugefügt:
 
@@ -58,7 +58,7 @@ Ich habe die folgenden Optionen zu meiner Hugo-Konfiguration hinzugefügt:
 
 ### Frontmatter für Slug/Path anpassen
 
-Problem: Die URLs der Posts sind immer noch falsch gewesen. Das hat daran gelegen, dass der komplette `slug`-Teil meiner .md-Dateien das Datum enthalten hat. Theoretisch hätte ich die Dateinamen ändern *können*, damit die URLs wieder korrekt sind. Ich habe mich aber dagegen entschieden, weil ich die einfache sortierte Struktur in den Content-Verzeichnissen gemocht habe.
+Problem: Die URLs der Posts sind immer noch falsch gewesen. Das hat daran gelegen, dass der komplette `slug`-Teil meiner .md-Dateien das Datum enthalten hat. Theoretisch hätte ich die Dateinamen ändern *können*, damit die URLs wieder korrekt sind. Ich habe mich aber dagegen entschieden, weil ich die einfache sortierte Struktur in den Content-Verzeichnissen mag.
 
 Lösung: Ich habe PowerShell verwendet, um in jedem Frontmatter all meiner Posts einen `slug`-Eintrag hinzuzufügen. Das ist Quick and Dirty **plus** gewesen. Kein echtes Error-Handling oder so, aber ich habe ein paar Kommentare ergänzt.
 
@@ -110,13 +110,13 @@ Set-Content -Path $md.FullName -Value ([regex]'---').Replace($content,"---`r`nal
 
 ## Mehrsprachigkeit - mein Weg
 
-Eine mehrsprachige Website zu betreiben ist nicht so einfach gewesen. Und bei jeder Migration, die ich mit diesem Blog gemacht habe, hat sich etwas daran geändert, wie die Anwendungen das gehandhabt haben. Ich habe die Inhalte leicht zugänglich machen wollen, deshalb habe ich – je nach Thema – Content auf Deutsch, Englisch oder in beiden Sprachen bereitgestellt.  
+Eine mehrsprachige Website zu betreiben ist nicht so einfach. Und bei jeder Migration, die ich mit diesem Blog gemacht habe, hat sich etwas daran geändert, wie die jeweilige Blogsoftware das handhabt. Ich habe die Inhalte leicht zugänglich machen wollen, deshalb habe ich – je nach Thema – Content auf Deutsch, Englisch oder in beiden Sprachen bereitgestellt.  
 Meine Idee ist also gewesen:
 
-- ✅ Ich habe englische Posts deutschsprachigen Besucher:innen weiterhin anzeigen wollen, wenn es keine deutsche Version des Posts gegeben hat.
-- ❌ Ich habe deutsche Posts englischsprachigen Besucher:innen nicht anzeigen wollen, wenn es keine englische Version des Posts gegeben hat.
+- ✅ Ich möchte die englischen Posts den deutschsprachigen Besucher:innen anzeigen, wenn es keine deutsche Version des Posts gibt.
+- ❌ Ich möchte die deutschen Posts den englischsprachigen Besucher:innen **nicht anzeigen**, wenn es keine englische Version des Posts gibt.
 
-Ich bin davon ausgegangen, dass mehr deutschsprachige Leute Englisch verstanden haben als umgekehrt.
+Ich gehe davon aus, dass mehr deutschsprachige Leute Englisch verstehen als umgekehrt.
 Leider hat es dafür in Hugo keine Funktion gegeben. Ich habe aber ein paar funky Filter gebaut, die mein Ziel erreicht haben. Das habe ich in meine Datei [layouts/_default/list.html](https://github.com/diecknet/diecknet-blog/blob/265016c97e1861bd9e713345eba6affbc93567d4/layouts/_default/list.html#L42-L49) gepackt:
 
 ```go {linenostart=42}
@@ -132,7 +132,7 @@ Leider hat es dafür in Hugo keine Funktion gegeben. Ich habe aber ein paar funk
 
 ### Aktuelle Sprache hervorheben
 
-Der einzige Nachteil bei diesem Ansatz ist gewesen, dass Nutzer:innen die Sprache der Seite gewechselt haben, wenn sie auf einen Post in einer anderen Sprache geklickt haben. Ich habe versucht, das etwas auszugleichen, indem ich die aktuelle Sprache im Seiten-Header mit **fetter Schrift** hervorgehoben habe (Datei: layouts/partials/header.html).
+Der einzige Nachteil bei diesem Ansatz ist gewesen, dass Nutzer:innen die Sprache der Seite wechseln, wenn sie auf einen Post in einer anderen Sprache geklickt haben. Ich habe versucht, das etwas auszugleichen, indem ich die aktuelle Sprache im Seiten-Header mit **fetter Schrift** hervorgehoben habe (Datei: layouts/partials/header.html).
 
 ```go {linenostart=112}
 {{- if eq .Language.LanguageName site.Language.LanguageName }}
@@ -156,7 +156,7 @@ Anfangs habe ich diese andere Variante in Betracht gezogen, die immer Einträge 
 
 ## Giscus für Kommentare
 
-Wenn ich schon dabei gewesen bin, habe ich [giscus](https://github.com/giscus/giscus) für Kommentare aktiviert. Ich habe [meine eigene giscus-Instanz](https://github.com/diecknet/giscus) auf Vercel gehostet.
+Da ich schon dabei war, habe ich [giscus](https://github.com/giscus/giscus) für Kommentare aktiviert. Ich habe [meine eigene giscus-Instanz](https://github.com/diecknet/giscus) auf Vercel gehostet.
 
 Ich habe einen `comments: true`-Eintrag zum Frontmatter aller bestehenden Blogposts hinzugefügt:
 
@@ -171,7 +171,15 @@ foreach($md in $mds) { # loop through all .md files
 
 Diesmal habe ich von Anfang an daran gedacht, `-NoNewLine` mitzugeben 😛. 
 
+### Update 2026
+
+Mittlerweile verwende ich Giscus nicht mehr. War zwar ganz nett, aber ich hatte keine Lust die Software aktuell zu halten.
+
 ## Fazit
 
 Okay, wow – dieser Post hat über ein Jahr in meinen Entwürfen gelegen. Ich bin nicht sicher, ob ich zwischenzeitlich etwas vergessen habe, aber ich denke, dass das Wichtigste drin gewesen ist. Auf jeden Fall läuft Hugo jetzt, ohne größere Probleme. Kann ich empfehlen, ich habe nicht mehr zu 11ty zurückgeschaut.  
 Der nächste Plan für die Seite ist eine Migration von Cloudflare Pages zu Netcup – ich bin kein großer Fan davon, wie viel vom Internet durch Cloudflare (und andere große Anbieter) kontrolliert worden ist.
+
+### Update 2026
+
+Mittlerweile wird die Webseite bei Netcup gehosted.
