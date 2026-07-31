@@ -19,9 +19,9 @@ Und die Fragen:
 > - NTLM-Hash des "Lab"-Users entschlüsselt
 > - root.txt
 
-Also haben wir davon ausgehen können, dass es eine Windows-Maschine ist.
+Also können wir davon ausgehen, dass es eine Windows-Maschine ist.
 
-## Aufklärung
+## Discovery
 
 Ich habe meine Kali-Linux-Maschine gestartet und auf meinem Desktop einen Ordner als Workspace angelegt.
 
@@ -133,17 +133,17 @@ Also haben wir Folgendes beobachten können:
 - ein paar hohe Ports mit msrpc
 - der SMB-Scan hat bereits als Gast einige Daten auslesen können
 
-All diese veraltete Software hat vermutlich einige Schwachstellen gehabt, die ich habe nutzen können.
+All diese veraltete Software hat vermutlich einige Schwachstellen, die ich ausnutzen kann.
 
 ## Initial Access: osCommerce-2.3.4-Exploit
 
 Nmap hat bereits eine Installation von osCommerce gefunden – eine Online-Shop-Anwendung. Der Verzeichnisname hat die Version schon verraten: `2.3.4`.
 Ich habe schnell auf [Exploit-DB.com](https://exploit-db.com) nach osCommerce gesucht und [diesen Exploit (EDB-ID 50128)](https://www.exploit-db.com/exploits/50128) von Bryan Leong `<NobodyAtall>` gefunden.
-Das zugrunde liegende Problem ist gewesen: Wenn das Verzeichnis `/install` nach der Installation nicht entfernt worden ist, sind Befehle ausführbar gewesen.
+Das zugrunde liegende Problem ist: Wenn das Verzeichnis `/install` nach der Installation nicht entfernt wurde, sind Befehle ausführbar.
 
-> Exploit: Der finish-Prozess von install.php ist ausgenutzt worden, indem ein PHP-Payload in den db_database-Parameter injiziert und die Ausgabe von Systembefehlen aus der configure.php gelesen worden ist.
+> Exploit: Exploiting the install.php finish process by injecting php payload into the db_database parameter & read the system command output from configure.php
 
-Da ich `searchsploit` auf meiner Kali-VM installiert gehabt habe, habe ich den Exploit wahrscheinlich bereits lokal auf der Platte gehabt:
+Da ich `searchsploit` auf meiner Kali-VM installiert habe, habe ich den Exploit wahrscheinlich bereits lokal auf der Platte:
 
 ```bash
 # find the path of the local exploit
@@ -165,11 +165,11 @@ RCE_SHELL$ whoami
 nt authority\system
 ```
 
-Okay, perfekt. Ich habe eine Shell bekommen und bin sogar als `NT Authority\SYSTEM` gelaufen. Ich denke, es ist eine grobe Fehlkonfiguration gewesen, den Webserver als `SYSTEM` laufen zu lassen, aber gut ... es ist nur ein einfaches CTF-Spiel gewesen.
+Okay, perfekt. Ich habe eine Shell bekommen und die läuft sogar als `NT Authority\SYSTEM`. Ich denke, es ist eine grobe Fehlkonfiguration, den Webserver als `SYSTEM` laufen zu lassen, aber gut ... es ist nur ein einfaches CTF-Spiel.
 
 ## Root-Flag auslesen
 
-In CTFs hat die Root-Flag oft auf dem Desktop des Administrators gelegen (wenn es eine Windows-Maschine gewesen ist). Also habe ich mit der RCE-Shell aus dem Exploit das Verzeichnis geprüft.
+In CTFs liegt die Root-Flag oft auf dem Desktop des Administrators (wenn es eine Windows-Maschine ist). Also habe ich mit der RCE-Shell aus dem Exploit das Verzeichnis geprüft.
 
 ```powershell
 RCE_SHELL$ dir C:\users\administrator\desktop
@@ -190,7 +190,7 @@ THM{ **redacted to not ruin the fun** }
 
 ## NTLM-Hash des "Lab"-Users
 
-Ich habe bereits die nötigen Berechtigungen gehabt (nochmal: ich bin als `NT Authority\SYSTEM` gelaufen). Um den NTLM-Hash auszulesen, habe ich auf meiner Kali-Maschine einen einfachen lokalen Webserver gestartet, um mimikatz auf das Zielsystem herunterzuladen.
+Ich habe bereits die nötigen Berechtigungen gehabt (nochmal: ich bin bereits `NT Authority\SYSTEM`). Um den NTLM-Hash auszulesen, habe ich auf meiner Kali-Maschine einen einfachen lokalen Webserver gestartet, um mimikatz auf das Zielsystem herunterzuladen.
 
 ```bash
 # in another terminal: spin up the webserver
