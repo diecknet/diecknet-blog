@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Azure Ad on diecknet</title>
+    <link>https://diecknet.de/de/tags/azure-ad/</link>
+    <description>Recent content in Azure Ad on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/azure-ad/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure AD Connect Staging Mode per PowerShell setzen</title>
+      <link>https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</guid>
+      <description>&lt;p&gt;Hier ist ein schneller Tipp, wie ihr den Staging Mode in Azure AD Connect per PowerShell ein- oder ausschaltet. Leider gibt es kein natives Cmdlet im Stil von &lt;code&gt;Set-ADSyncStagingMode&lt;/code&gt; oder so.&lt;/p&gt;
+&lt;p&gt;In diesem Artikel erkläre ich zuerst den Ansatz und liste danach den vollständigen Befehlsblock auf, den ihr nutzen könnt. Ihr könnt also gern nach unten zum Ende des Beitrags springen. Die folgenden PowerShell-Cmdlets müsst ihr auf dem Azure-AD-Connect-Server ausführen.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mit der Microsoft Graph API die Anzahl der Gruppenmitglieder abrufen</title>
+      <link>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
+      <description>&lt;p&gt;Offenbar ist es nicht &lt;em&gt;so einfach&lt;/em&gt;, die Anzahl der Mitglieder einer Gruppe mit der Microsoft Graph API zu erhalten. Wir müssen den zusätzlichen Header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; angeben, um die &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt; zu nutzen. Danach können wir den Query-Parameter &lt;code&gt;$count&lt;/code&gt; verwenden. Alternativ habe ich herausgefunden, dass ich ihn auch als URL-Query-Parameter hinzufügen kann. Das wäre dann &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;beispielabfragen&#34;&gt;Beispielabfragen&lt;/h2&gt;
+&lt;p&gt;Ersetzt die Gruppen-ID (&lt;code&gt;02bd9fd6-8f93-4758-87c3-1fb73740a315&lt;/code&gt;) durch eure gewünschte Azure-Active-Directory-Gruppen-ID. &lt;a href=&#34;https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%2F02bd9fd6-8f93-4758-87c3-1fb73740a315%2Fmembers%3F%24count%3Dtrue%26ConsistencyLevel%3Deventual&amp;amp;method=GET&amp;amp;version=v1.0&amp;amp;GraphUrl=https://graph.microsoft.com&#34; target=&#34;_blank&#34; &gt;Probiert die Abfrage hier im Microsoft Graph Explorer aus.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MFA-Methoden für Azure AD konfigurieren</title>
+      <link>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
+      <description>&lt;p&gt;Dieser Beitrag ist veraltet. Die &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Authentication Methods Policy&amp;rdquo;&lt;/a&gt; ist inzwischen im Entra-Portal leicht erreichbar. Falls ihr noch von den alten Einstellungen migrieren müsst, findet ihr den vollständigen aktuellen Artikel bei &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;alter-beitrag-zur-referenz&#34;&gt;ALTER BEITRAG ZUR REFERENZ&lt;/h2&gt;
+&lt;p&gt;Meiner Meinung nach erklärt die offizielle Microsoft-Dokumentation nicht klar, wo ihr die erlaubten MFA-Methoden für Azure AD konfiguriert. Wenn ihr euch also auch fragt, wo ihr die erlaubten Multi-Faktor-Authentifizierungsmethoden für Microsoft 365 festlegt, seid ihr hier richtig.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Alle Benutzer mit administrativen Rollen in einer Microsoft-365-Umgebung auflisten</title>
+      <link>https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</guid>
+      <description>&lt;h2 id=&#34;option-1-m365-admin-portal-verwenden&#34;&gt;Option 1: M365 Admin Portal verwenden&lt;/h2&gt;
+&lt;p&gt;Im Microsoft-365-Admin-Portal gab es endlich einen Weg. Geht zu &lt;a href=&#34;https://admin.microsoft.com/Adminportal/Home?#/rbac/directory&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo;&lt;/a&gt; und klickt auf &amp;ldquo;Export admin list&amp;rdquo;, um eine CSV-Datei mit allen Admins und ihren Rollen zu erhalten.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg&#34; alt=&#34;M365 Admin Center - Rollenzuweisungen&#34;  title=&#34;M365 Admin Center - Rollenzuweisungen&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;option-2-powershell--azure-ad-graph-module-verwenden&#34;&gt;Option 2: PowerShell / Azure AD Graph Module verwenden&lt;/h2&gt;
+&lt;p&gt;Nur ein kurzes PowerShell-Snippet, um alle Benutzer mit administrativen Rollen in einer Microsoft-365- (oder Azure-AD-) Umgebung aufzulisten. Bitte beachtet, dass hier das ältere Azure-AD-Graph-Modul verwendet wird (die Abkündigung war bereits geplant). Ein Beispiel mit der neueren Microsoft Graph API habe ich &lt;strong&gt;noch nicht&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

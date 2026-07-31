@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Archive Mailbox on diecknet</title>
+    <link>https://diecknet.de/de/tags/archive-mailbox/</link>
+    <description>Recent content in Archive Mailbox on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/archive-mailbox/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Auto-Expanding Archives in Exchange Online prüfen</title>
+      <link>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
+      <description>&lt;p&gt;Wenn ihr Auto-Expanding Archives für Exchange-Online-Postfächer aktiviert habt, wollt ihr vielleicht herausfinden, ob zusätzlicher Speicher tatsächlich bereitgestellt wird.&lt;/p&gt;
+&lt;p&gt;Im Exchange Admin Center (EAC) öffnet ihr den Infobereich des Benutzerpostfachs. Dann klickt ihr auf &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; alt=&#34;Exchange Admin Center - Postfachbereich&#34;  title=&#34;Exchange Admin Center - Postfachbereich&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ein Auto-Expanding Archive stellt bei Bedarf zusätzlichen Archivspeicher bereit. Standardarchive haben 100 GB verfügbaren Speicher. Wenn das Archiv bereits größer als 100 GB ist, muss zusätzlicher Speicher vorhanden sein.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

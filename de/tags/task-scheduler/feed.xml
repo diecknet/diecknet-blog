@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Task Scheduler on diecknet</title>
+    <link>https://diecknet.de/de/tags/task-scheduler/</link>
+    <description>Recent content in Task Scheduler on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 13 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/task-scheduler/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell-Skript mit der Windows-Aufgabenplanung ausführen</title>
+      <link>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</guid>
+      <description>&lt;p&gt;Eine kurze Notiz für mich selbst - wie ich ein PowerShell-Skript mit der Windows-Aufgabenplanung ausgeführt habe.&lt;/p&gt;
+&lt;h2 id=&#34;aufgabenplanung-öffnen&#34;&gt;Aufgabenplanung öffnen&lt;/h2&gt;
+&lt;p&gt;Ein schneller Weg, die Aufgabenplanung zu öffnen:
+&lt;code&gt;[WIN]&lt;/code&gt; + &lt;code&gt;R&lt;/code&gt;, dann &lt;code&gt;taskschd.msc&lt;/code&gt; ausführen.&lt;/p&gt;
+&lt;h2 id=&#34;neue-aufgabe-erstellen&#34;&gt;Neue Aufgabe erstellen&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;Aufgabenplanungsbibliothek&amp;rdquo; → &amp;ldquo;Neue Aufgabe erstellen&amp;rdquo; öffnen.
+Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger usw. setzen.&lt;/p&gt;
+&lt;h2 id=&#34;aktion-festlegen&#34;&gt;Aktion festlegen&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Setting&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Action&lt;/td&gt;
+          &lt;td&gt;Start a program&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Program/script&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;powershell.exe&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Add arguments (optional)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;-file &amp;quot;C:\Path\Script.ps1&amp;quot;&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

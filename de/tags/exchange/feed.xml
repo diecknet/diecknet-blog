@@ -18,6 +18,18 @@
     </item>
     
     <item>
+      <title>Exchange EAC hat nach dem Außerbetriebnehmen aller Mailbox-Datenbanken nicht mehr funktioniert</title>
+      <link>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
+      <description>&lt;p&gt;Ich habe dieses seltsame Problem in einer Exchange-Server-Umgebung gehabt:
+Die Firma hat eine Exchange Server 2016 DAG gehabt und alle Benutzerpostfächer nach Exchange Online migriert. Danach habe ich einen frischen Exchange Server 2019 für Recipient Management und SMTP-Relay installiert.
+Um die Exchange Server 2019 Hybrid-Lizenz zu nutzen, habe ich keine Mailbox-Datenbank erstellt.
+Ich habe alle verbleibenden System- und Arbitration-Postfächer von den Exchange-2016-Servern entfernt. Ich habe die DAG außer Betrieb genommen und Exchange von den alten Servern deinstalliert.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Synchronisierte Exchange Objekte ohne Exchange Server verwalten</title>
       <link>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
@@ -27,6 +39,19 @@
 Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft Dokumentation verweist nur am Rande auf das Thema&lt;/a&gt; und erklärt nicht wirklich.&lt;/p&gt;
 &lt;p&gt;In diesem Post gehe ich auf ein Szenario ein, was vorallem viele kleinere Unternehmen betrifft:
 Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exchange-Server-Setup unvollständig und Abschluss schlägt fehl</title>
+      <link>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</link>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
+      <description>&lt;p&gt;Ich habe ein Problem mit einem kaputten Exchange Server 2016 CU23 gehabt. Oder eher: Er ist nicht vollständig installiert gewesen.
+Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich oder interessant sein würde, bei diesem Problem tiefer einzusteigen.&lt;/p&gt;
+&lt;p&gt;Ich nehme euch bei meinen Troubleshooting-Schritten bzw. meinem Denkprozess mit.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; alt=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  title=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,6 +67,79 @@ Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; alt=&#34;Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen&#34;  title=&#34;Outlook Meldung: Es sind weitere Elemente in diesem Ordner auf dem Server vorhanden. Verbindung mit dem Server herstellen, um diese anzuzeigen&#34;  /&gt;
 &lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Alle Microsoft-Booking-Kalender auflisten</title>
+      <link>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
+      <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
+      <description>&lt;p&gt;Wenn ihr Microsoft Booking in eurem Microsoft-365-Tenant nutzt, wollt ihr vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ &amp;ldquo;SchedulingMailbox&amp;rdquo;. Wenn einem Benutzer die Rolle &amp;ldquo;Administrator&amp;rdquo; für einen Booking-Kalender zugewiesen ist, hat er &amp;ldquo;FullAccess&amp;rdquo;-Berechtigungen für das Scheduling-Postfach.&lt;/p&gt;
+&lt;h2 id=&#34;alle-booking-kalender-mit-berechtigungen-auflisten&#34;&gt;Alle Booking-Kalender mit Berechtigungen auflisten&lt;/h2&gt;
+&lt;p&gt;Ich habe ein PowerShell-Skript geschrieben, um alle Booking-Postfächer mit den Benutzern aufzulisten, die Zugriff haben.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;20
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# prerequisite: Exchange Online v2 PowerShell module, must be connected to the service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;New-Object&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;System.Collections.Generic.List[System.Object]&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Get all Booking Mailboxes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$allBookingsMailboxes&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ExoMailbox&lt;/span&gt; -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Loop through the list of Mailboxes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; = &lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$allBookingsMailboxes&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6c7986&#34;&gt;# Get Permissions for this Mailbox&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ExoMailboxPermission&lt;/span&gt; -UserPrincipalName &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.UserPrincipalName -ResultSize:Unlimited | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Where-Object&lt;/span&gt; {(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.User -like &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;*@*&amp;#39;&lt;/span&gt;) -and (&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.AccessRights -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;FullAccess&amp;#34;&lt;/span&gt;)}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6c7986&#34;&gt;# Output PSCustomObject with infos to the foreach loop, so it gets saved into $BookingsMailboxesWithPermissions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        [PSCustomObject]@{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox DisplayName&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.DisplayName
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox E-Mail-Address&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.PrimarySmtpAddress
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;User&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt;.User
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;AccessRights&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Administrator&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Export-Csv&lt;/span&gt; C:\temp\&lt;span style=&#34;color:#d0a8ff&#34;&gt;bookings-permissions&lt;/span&gt;.csv -Encoding utf8 -Delimiter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;;&amp;#34;&lt;/span&gt; -NoTypeInformation
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Beispielergebnis:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Auto-Expanding Archives in Exchange Online prüfen</title>
+      <link>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
+      <description>&lt;p&gt;Wenn ihr Auto-Expanding Archives für Exchange-Online-Postfächer aktiviert habt, wollt ihr vielleicht herausfinden, ob zusätzlicher Speicher tatsächlich bereitgestellt wird.&lt;/p&gt;
+&lt;p&gt;Im Exchange Admin Center (EAC) öffnet ihr den Infobereich des Benutzerpostfachs. Dann klickt ihr auf &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; alt=&#34;Exchange Admin Center - Postfachbereich&#34;  title=&#34;Exchange Admin Center - Postfachbereich&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ein Auto-Expanding Archive stellt bei Bedarf zusätzlichen Archivspeicher bereit. Standardarchive haben 100 GB verfügbaren Speicher. Wenn das Archiv bereits größer als 100 GB ist, muss zusätzlicher Speicher vorhanden sein.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -78,7 +176,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
-      <description>&lt;p&gt;Wenn du herausfinden möchtest, wann ein Exchange Postfach erstellt wurde, wirst du wahrscheinlich über das Active Directory-Benutzer Attribut &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt; stolpern. Um den Wert auszulesen, kannst du PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.&lt;/p&gt;
+      <description>&lt;p&gt;Wenn ihr herausfinden möchtet, wann ein Exchange Postfach erstellt wurde, werdet ihr wahrscheinlich über das Active Directory-Benutzer Attribut &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt; stolpern. Um den Wert auszulesen, könnt ihr PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
@@ -90,7 +188,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;MSExchWhenMailboxCreated Attribut per Active Directory-Benutzer und Computer anzeigen. Erweiterte Features müssen aktiviert sein.&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;msexchwhenmailboxcreated-enthält-nicht-die-ganze-wahrheit&#34;&gt;MSExchWhenMailboxCreated enthält nicht die ganze Wahrheit&lt;/h2&gt;
-&lt;p&gt;Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was du vielleicht denkst. Das Attribut wird nur propagiert wenn der Benutzer &lt;em&gt;DAS ERSTE MAL&lt;/em&gt; ein Postfach erhält. Wenn das Postfach zwischenzeitlich deaktiviert und dann später neuerstellt wurde, bleibt trotzdem der Zeitstempel der ersten Postfacherstellung.&lt;/p&gt;</description>
+&lt;p&gt;Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was ihr vielleicht denkt. Das Attribut wird nur propagiert wenn der Benutzer &lt;em&gt;DAS ERSTE MAL&lt;/em&gt; ein Postfach erhält. Wenn das Postfach zwischenzeitlich deaktiviert und dann später neuerstellt wurde, bleibt trotzdem der Zeitstempel der ersten Postfacherstellung.&lt;/p&gt;</description>
     </item>
     
     <item>

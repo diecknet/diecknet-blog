@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Onedrive for Business on diecknet</title>
+    <link>https://diecknet.de/de/tags/onedrive-for-business/</link>
+    <description>Recent content in Onedrive for Business on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/onedrive-for-business/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OneDrive for Business - Delegierung an Vorgesetzte nach Austritt von Mitarbeitenden</title>
+      <link>https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</guid>
+      <description>&lt;p&gt;Normalerweise wird bei einem Benutzer, der die Firma verlässt, dessen OneDrive-for-Business-Seite automatisch an den Vorgesetzten delegiert. Das bedeutet, dass der Vorgesetzte SharePoint Site Collection Admin-Rechte auf die OneDrive-Seite des Mitarbeiters erhält.&lt;/p&gt;
+&lt;h2 id=&#34;zugriffsdelegierung-prüfen-und-ändern&#34;&gt;Zugriffsdelegierung prüfen und ändern&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ Die Zugriffsdelegierung ist standardmäßig aktiviert&lt;/strong&gt;. Die Einstellung findet und ändert ihr hier:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;More features&lt;/strong&gt; in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.
+[&amp;hellip;]&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;User profiles&lt;/strong&gt;, select &lt;strong&gt;Open&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;My Site Settings&lt;/strong&gt;, select &lt;strong&gt;Setup My Sites&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Next to &lt;strong&gt;My Site Cleanup&lt;/strong&gt;, make sure &lt;strong&gt;Enable access delegation&lt;/strong&gt; is selected.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Quelle: &lt;a href=&#34;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&#34; target=&#34;_blank&#34; &gt;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

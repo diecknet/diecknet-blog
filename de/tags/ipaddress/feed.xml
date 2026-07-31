@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ipaddress on diecknet</title>
+    <link>https://diecknet.de/de/tags/ipaddress/</link>
+    <description>Recent content in Ipaddress on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 27 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/ipaddress/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Die Kehrseite von Serverless</title>
+      <link>https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/</guid>
+      <description>&lt;p&gt;Nachdem ich &lt;a href=&#34;https://simpleip.de&#34; target=&#34;_blank&#34; &gt;SimpleIP.de&lt;/a&gt; als Serverless-Anwendung gebaut hatte (siehe meinen Blogpost &lt;a href=&#34;https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/&#34; &gt;My simple serverless journey was not that easy&lt;/a&gt;), bin ich irgendwie stolz gewesen. Interessante Technologie, kleine und nützliche Website. Nice.&lt;/p&gt;
+&lt;h2 id=&#34;realität&#34;&gt;Realität&lt;/h2&gt;
+&lt;p&gt;Aber nach einer Weile hat mich die Realität eingeholt. Ich habe mit ein paar IPv6-Systemen herumgespielt, als es mir aufgefallen ist. Beim bisherigen Design hat die Seite nur die &lt;em&gt;primäre&lt;/em&gt; IP-Adresse des Clients angezeigt. Wenn der Client sowohl IPv6 &lt;strong&gt;als auch&lt;/strong&gt; IPv4 unterstützt hat, wurde trotzdem nur eine IP-Adresse angezeigt.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Meine simple Serverless-Reise war gar nicht so einfach</title>
+      <link>https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/</guid>
+      <description>&lt;p&gt;Serverless Computing ist ein spannendes Konzept. Man kann ein Skript oder Programm ausführen, ohne die komplette Infrastruktur dahinter aufzubauen (Server, Storage, Netzwerke usw.). Man schreibt einfach den Code und er wird ausgeführt. Aber Serverless heißt nicht „ohne Server“ – man muss sich nur nicht darum kümmern. Das ist gar nicht so weit weg von klassischem Webspace beim Hoster, auf den man PHP-Skripte legt.&lt;/p&gt;
+&lt;p&gt;Heute meint Serverless meistens eine moderne Architektur, mit der man Anwendungscode ausführen kann. Der große Unterschied ist das &lt;strong&gt;Skalieren&lt;/strong&gt;. Der Cloud-Anbieter übernimmt die Logik, wann und wie Serverless-Funktionen laufen. Wenn die Anwendung nicht genutzt wird, wird nichts ausgeführt und es werden keine Rechenressourcen verbraucht.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

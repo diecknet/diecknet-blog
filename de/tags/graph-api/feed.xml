@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Graph Api on diecknet</title>
+    <link>https://diecknet.de/de/tags/graph-api/</link>
+    <description>Recent content in Graph Api on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/graph-api/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mit der Microsoft Graph API die Anzahl der Gruppenmitglieder abrufen</title>
+      <link>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
+      <description>&lt;p&gt;Offenbar ist es nicht &lt;em&gt;so einfach&lt;/em&gt;, die Anzahl der Mitglieder einer Gruppe mit der Microsoft Graph API zu erhalten. Wir müssen den zusätzlichen Header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; angeben, um die &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt; zu nutzen. Danach können wir den Query-Parameter &lt;code&gt;$count&lt;/code&gt; verwenden. Alternativ habe ich herausgefunden, dass ich ihn auch als URL-Query-Parameter hinzufügen kann. Das wäre dann &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;beispielabfragen&#34;&gt;Beispielabfragen&lt;/h2&gt;
+&lt;p&gt;Ersetzt die Gruppen-ID (&lt;code&gt;02bd9fd6-8f93-4758-87c3-1fb73740a315&lt;/code&gt;) durch eure gewünschte Azure-Active-Directory-Gruppen-ID. &lt;a href=&#34;https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%2F02bd9fd6-8f93-4758-87c3-1fb73740a315%2Fmembers%3F%24count%3Dtrue%26ConsistencyLevel%3Deventual&amp;amp;method=GET&amp;amp;version=v1.0&amp;amp;GraphUrl=https://graph.microsoft.com&#34; target=&#34;_blank&#34; &gt;Probiert die Abfrage hier im Microsoft Graph Explorer aus.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

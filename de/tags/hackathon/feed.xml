@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hackathon on diecknet</title>
+    <link>https://diecknet.de/de/tags/hackathon/</link>
+    <description>Recent content in Hackathon on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Sun, 27 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/hackathon/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bereitstellung eines Azure NAT-Gateways für Azure Virtual Desktop mit PowerShell</title>
+      <link>https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
+      <description>&lt;p&gt;Ich habe ein PowerShell-Skript erstellt, das automatisch ein Azure NAT-Gateway in einer Azure Virtual Desktop Umgebung bereitstellt. Das ist nützlich, wenn ihr eine statische IP-Adresse für eure AVD-Maschinen braucht. Das Skript habe ich als Beitrag für den &lt;a href=&#34;https://getnerdio.com/nerdio-hackathon/&#34; target=&#34;_blank&#34; &gt;Nerdio Hackathon 2021&lt;/a&gt; erstellt. Mein erster Hackathon überhaupt :^).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 2021-10-05&lt;/strong&gt; - Ich habe tatsächlich den ersten Platz gewonnen, allerdings haben anscheinend nicht viele am Wettbewerb teilgenommen. Das Nerdio-Team war etwas enttäuscht und hat daher keine Ankündigung veröffentlicht. Immerhin habe ich einen Amazon-Gutschein über 1000 USD bekommen 🤩.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -32,6 +32,37 @@
     </item>
     
     <item>
+      <title>Unraid: &#39;&lt;Share Name&gt;&#39; kann nicht gelöscht werden: dataset is busy</title>
+      <link>https://diecknet.de/de/2025/12/27/unraid-destroy-zfs-failed/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2025/12/27/unraid-destroy-zfs-failed/</guid>
+      <description>&lt;p&gt;Ich habe vor Kurzem ein Problem auf meinem Unraid-Server gehabt: Ich habe einen Share (&amp;ldquo;myshare&amp;rdquo;) über die GUI löschen wollen, aber es hat einfach nicht funktioniert. Als ich die Logs geprüft habe, habe ich Folgendes gefunden:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower emhttpd: readlink -e &amp;#39;/mnt/user/myshare&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower emhttpd: /mnt/user/myshare
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower emhttpd: shcmd (750): rmdir &amp;#39;/mnt/user/myshare&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower shfs: /usr/sbin/zfs unmount &amp;#39;cache/myshare&amp;#39; 2&amp;gt;&amp;amp;1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower shfs: /usr/sbin/zfs destroy &amp;#39;cache/myshare&amp;#39; 2&amp;gt;&amp;amp;1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower shfs: cannot destroy &amp;#39;cache/myshare&amp;#39;: dataset is busy
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower shfs: /usr/sbin/zfs mount &amp;#39;cache/myshare&amp;#39; 2&amp;gt;&amp;amp;1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Das &lt;code&gt;dataset is busy&lt;/code&gt; war also offenbar das Problem 😐&amp;hellip;&lt;br&gt;
+Komisch, weil es komplett leer gewesen ist und keine Container oder VMs den Share eigentlich hätten verwenden sollen. Die Hinweise, die ich im Internet gefunden habe, haben mir nicht geholfen:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Führende Nullen per PowerShell hinzufügen</title>
       <link>https://diecknet.de/de/2025/05/19/powershell-pad-zeros/</link>
       <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
@@ -98,6 +129,27 @@ Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2
     </item>
     
     <item>
+      <title>Infos zu Active Directory Based Activation per PowerShell abrufen</title>
+      <link>https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/</link>
+      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/</guid>
+      <description>&lt;p&gt;Wenn ihr schnell Infos zu Active Directory Based Activation (ADBA) in eurer Domäne abrufen wollt, könnt ihr diesen PowerShell One-Liner verwenden:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Ich habe es nicht in einer Multi-Domain-Umgebung getestet, aber ich denke, dass es funktionieren sollte.&lt;/p&gt;
+&lt;h2 id=&#34;erklärung&#34;&gt;Erklärung&lt;/h2&gt;
+&lt;p&gt;Der Code verwendet Aliase, die in Skripten nicht ideal sind, aber in One-Linern praktisch sind.
+Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name der Domäne zu ermitteln. Das macht den Code portabler.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>PowerShell: Schleifen gezielt abbrechen/überspringen</title>
       <link>https://diecknet.de/de/2024/11/02/powershell-cancel-loops/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
@@ -117,6 +169,217 @@ Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Es ist aber auch möglich gezielt eine komplette Schleife vorzeitig abzubrechen oder einen einzelnen Schleifendurchgang abzubrechen. Und zwar auch, wenn ihr mehrere Schleifen ineinander verschachtelt habt.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TryHackMe Blueprint – Cybersecurity-Write-up</title>
+      <link>https://diecknet.de/de/2024/09/24/tryhackme-blueprint/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/09/24/tryhackme-blueprint/</guid>
+      <description>&lt;p&gt;Ich habe mich entschieden, etwas mehr Penetration Testing/Ethical Hacking auszuprobieren. Das Folgende ist ein Write-Up zum &lt;a href=&#34;https://tryhackme.com/&#34; target=&#34;_blank&#34; &gt;TryHackMe&lt;/a&gt;-Room &lt;a href=&#34;https://tryhackme.com/r/room/blueprint&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Blueprint&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;aufgaben&#34;&gt;Aufgaben&lt;/h2&gt;
+&lt;p&gt;Die einzige Information, die wir gehabt haben, ist:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Habt ihr das Zeug dazu, in diese Windows-Maschine einzudringen?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Und die Fragen:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;NTLM-Hash des &amp;ldquo;Lab&amp;rdquo;-Users entschlüsselt&lt;/li&gt;
+&lt;li&gt;root.txt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Also können wir davon ausgehen, dass es eine Windows-Maschine ist.&lt;/p&gt;
+&lt;h2 id=&#34;discovery&#34;&gt;Discovery&lt;/h2&gt;
+&lt;p&gt;Ich habe meine Kali-Linux-Maschine gestartet und auf meinem Desktop einen Ordner als Workspace angelegt.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;20
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;22
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;23
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;24
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;25
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;26
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;27
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;28
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;29
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;30
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;31
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;32
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;33
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;34
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;35
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;36
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;37
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;38
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;39
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;40
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;41
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;42
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;43
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;44
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;45
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;46
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;47
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;48
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;49
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;50
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;51
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;52
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;53
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;54
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;55
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;56
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;57
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;58
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;59
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;60
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;61
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;62
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;63
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;64
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;65
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;66
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;67
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;68
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;69
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;70
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;71
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;72
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;73
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;74
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;75
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;76
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;77
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;78
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;79
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;80
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;81
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;82
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;83
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;84
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;85
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;86
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;87
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;88
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;89
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;90
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# create a workspace&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir Desktop/blueprint &amp;amp;&amp;amp; &lt;span style=&#34;color:#d0a8ff&#34;&gt;cd&lt;/span&gt; Desktop/blueprint
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# portscan with nmap&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -v -A -oN nmap-scan.txt 10.10.251.173
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# nmap result&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PORT      STATE SERVICE      VERSION
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;80/tcp    open  http         Microsoft IIS httpd 7.5
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_http-title: &lt;span style=&#34;color:#d0bf69&#34;&gt;404&lt;/span&gt; - File or directory not found.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_http-server-header: Microsoft-IIS/7.5
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| http-methods: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   Supported Methods: OPTIONS TRACE GET HEAD POST
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_  Potentially risky methods: TRACE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;135/tcp   open  msrpc        Microsoft Windows RPC
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;443/tcp   open  ssl/http     Apache httpd 2.4.23 (OpenSSL/1.0.2h PHP/5.6.28)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| http-ls: Volume /
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| SIZE  TIME              FILENAME
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| -     2019-04-11 22:52  oscommerce-2.3.4/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| -     2019-04-11 22:52  oscommerce-2.3.4/catalog/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| -     2019-04-11 22:52  oscommerce-2.3.4/docs/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| http-methods: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   Supported Methods: OPTIONS GET HEAD POST TRACE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_  Potentially risky methods: TRACE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_ssl-date: TLS randomness does not represent &lt;span style=&#34;color:#d0a8ff&#34;&gt;time&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_http-server-header: Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| ssl-cert: Subject: &lt;span style=&#34;color:#41a1c0&#34;&gt;commonName&lt;/span&gt;=localhost
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Issuer: &lt;span style=&#34;color:#41a1c0&#34;&gt;commonName&lt;/span&gt;=localhost
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Public Key type: rsa
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Public Key bits: &lt;span style=&#34;color:#d0bf69&#34;&gt;1024&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Signature Algorithm: sha1WithRSAEncryption
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Not valid before: 2009-11-10T23:48:47
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Not valid after:  2019-11-08T23:48:47
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| MD5:   a0a4:4cc9:9e84:b26f:9e63:9f9e:d229:dee0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_SHA-1: b023:8c54:7a90:5bfa:119c:4e8b:acca:eacf:3649:1ff6
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_http-title: Index of /
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| tls-alpn: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_  http/1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;445/tcp   open  microsoft-ds Windows &lt;span style=&#34;color:#d0bf69&#34;&gt;7&lt;/span&gt; Home Basic &lt;span style=&#34;color:#d0bf69&#34;&gt;7601&lt;/span&gt; Service Pack &lt;span style=&#34;color:#d0bf69&#34;&gt;1&lt;/span&gt; microsoft-ds (workgroup: WORKGROUP)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;3306/tcp  open  mysql        MariaDB (unauthorized)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;8080/tcp  open  http         Apache httpd 2.4.23 (OpenSSL/1.0.2h PHP/5.6.28)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_http-server-header: Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| http-methods: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   Supported Methods: OPTIONS GET HEAD POST TRACE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_  Potentially risky methods: TRACE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_http-title: Index of /
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| http-ls: Volume /
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| SIZE  TIME              FILENAME
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| -     2019-04-11 22:52  oscommerce-2.3.4/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| -     2019-04-11 22:52  oscommerce-2.3.4/catalog/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| -     2019-04-11 22:52  oscommerce-2.3.4/docs/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;49152/tcp open  msrpc        Microsoft Windows RPC
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;49153/tcp open  msrpc        Microsoft Windows RPC
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;49154/tcp open  msrpc        Microsoft Windows RPC
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;49158/tcp open  msrpc        Microsoft Windows RPC
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;49159/tcp open  msrpc        Microsoft Windows RPC
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;49160/tcp open  msrpc        Microsoft Windows RPC
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Service Info: Hosts: www.example.com, BLUEPRINT, localhost; OS: Windows; CPE: cpe:/o:microsoft:windows
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host script results:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_clock-skew: mean: -20m03s, deviation: 34m37s, median: -4s
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| smb-os-discovery: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   OS: Windows &lt;span style=&#34;color:#d0bf69&#34;&gt;7&lt;/span&gt; Home Basic &lt;span style=&#34;color:#d0bf69&#34;&gt;7601&lt;/span&gt; Service Pack &lt;span style=&#34;color:#d0bf69&#34;&gt;1&lt;/span&gt; (Windows &lt;span style=&#34;color:#d0bf69&#34;&gt;7&lt;/span&gt; Home Basic 6.1)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   OS CPE: cpe:/o:microsoft:windows_7::sp1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   Computer name: BLUEPRINT
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   NetBIOS computer name: BLUEPRINT&lt;span style=&#34;color:#fc6a5d&#34;&gt;\x&lt;/span&gt;&lt;span style=&#34;color:#d0bf69&#34;&gt;00&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   Workgroup: WORKGROUP&lt;span style=&#34;color:#fc6a5d&#34;&gt;\x&lt;/span&gt;&lt;span style=&#34;color:#d0bf69&#34;&gt;00&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_  System time: 2024-08-16T18:05:38+01:00
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| smb2-security-mode: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   2:1:0: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_    Message signing enabled but not required
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| smb2-time: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   date: 2024-08-16T17:05:39
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_  start_date: 2024-08-16T17:02:15
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| smb-security-mode: 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   account_used: guest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   authentication_level: user
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   challenge_response: supported
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_  message_signing: disabled (dangerous, but default)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| nbstat: NetBIOS name: BLUEPRINT, NetBIOS user: &amp;lt;unknown&amp;gt;, NetBIOS MAC: 02:a6:9b:93:fd:95 (unknown)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Names:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   BLUEPRINT&amp;lt;00&amp;gt;        Flags: &amp;lt;unique&amp;gt;&amp;lt;active&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   WORKGROUP&amp;lt;00&amp;gt;        Flags: &amp;lt;group&amp;gt;&amp;lt;active&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   BLUEPRINT&amp;lt;20&amp;gt;        Flags: &amp;lt;unique&amp;gt;&amp;lt;active&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   WORKGROUP&amp;lt;1e&amp;gt;        Flags: &amp;lt;group&amp;gt;&amp;lt;active&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|   WORKGROUP&amp;lt;1d&amp;gt;        Flags: &amp;lt;unique&amp;gt;&amp;lt;active&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|_  &lt;span style=&#34;color:#fc6a5d&#34;&gt;\x&lt;/span&gt;01&lt;span style=&#34;color:#fc6a5d&#34;&gt;\x&lt;/span&gt;02__MSBROWSE__&lt;span style=&#34;color:#fc6a5d&#34;&gt;\x&lt;/span&gt;02&amp;lt;01&amp;gt;  Flags: &amp;lt;group&amp;gt;&amp;lt;active&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Also haben wir Folgendes beobachten können:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -184,6 +447,17 @@ Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/cod
 &lt;li&gt;Komplett eigene Eigenschaften erzeugt werden (z.B. durch den Aufruf zusätzlicher Cmdlets)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ich habe zu diesem Thema auch &lt;a href=&#34;https://www.youtube.com/watch?v=n7Vp6ESME5w&#34; target=&#34;_blank&#34; &gt;ein Video auf meinem YouTube Kanal veröffentlicht&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell: Active Directory Computer filtern</title>
+      <link>https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/</guid>
+      <description>&lt;p&gt;Ich habe vor Kurzem an einem Kundenprojekt gearbeitet, bei dem ich rund um Active Directory Computer einiges machen musste. Ich habe PowerShell und etwas leichtes Filtern und Verarbeiten verwendet. Diese Beispiele teile ich jetzt hier und hoffentlich findet sie jemand interessant oder hilfreich. Vielleicht werde ich sie auch zukünftig interessant finden - in dem Fall: Moin Andi! 👋&lt;/p&gt;
+&lt;h2 id=&#34;beispiel-1-computer-nach-betriebssystemversion-filtern&#34;&gt;Beispiel 1: Computer nach Betriebssystemversion filtern&lt;/h2&gt;
+&lt;p&gt;Das AD-Attribut &lt;code&gt;OperatingSystemVersion&lt;/code&gt; enthält die OS-Version inklusive Buildnummer in einem Format wie diesem: &lt;code&gt;10.0 (19041)&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -370,6 +644,16 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Von 11ty zu Hugo migrieren</title>
+      <link>https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/</link>
+      <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/</guid>
+      <description>&lt;p&gt;Ich habe diese Website kürzlich auf 11ty v2.0 aktualisiert, aber ich habe noch mehr Veränderung gewollt. Anfangs habe ich nur ein simples Design mit &lt;a href=&#34;https://github.com/Gioni06/terminal.css&#34; target=&#34;_blank&#34; &gt;Terminal.css&lt;/a&gt; bauen wollen. Dann bin ich aber zufällig über die &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; &gt;Hugo Theme Gallery&lt;/a&gt; gestolpert und habe ein paar richtig schöne Themes gefunden! Deshalb habe ich mich entschieden, &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod/&#34; target=&#34;_blank&#34; &gt;Hugo Papermod&lt;/a&gt; zu nutzen und die Website auf Hugo zu migrieren 🤓. Da ich JavaScript nicht &lt;em&gt;wirklich&lt;/em&gt; beherrsche, ist es für mich egal, dass Hugo stattdessen Go nutzt. Ich habe Go als Programmiersprache zwar noch nie verwendet, aber klingt gut.&lt;br&gt;
+Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Migration meines Blogs gemacht habe.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>PowerShell: Überprüfen ob Admin-Rechte vorhanden sind</title>
       <link>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</link>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
@@ -414,6 +698,27 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
     </item>
     
     <item>
+      <title>OneDrive for Business - Delegierung an Vorgesetzte nach Austritt von Mitarbeitenden</title>
+      <link>https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</guid>
+      <description>&lt;p&gt;Normalerweise wird bei einem Benutzer, der die Firma verlässt, dessen OneDrive-for-Business-Seite automatisch an den Vorgesetzten delegiert. Das bedeutet, dass der Vorgesetzte SharePoint Site Collection Admin-Rechte auf die OneDrive-Seite des Mitarbeiters erhält.&lt;/p&gt;
+&lt;h2 id=&#34;zugriffsdelegierung-prüfen-und-ändern&#34;&gt;Zugriffsdelegierung prüfen und ändern&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;⚠️ Die Zugriffsdelegierung ist standardmäßig aktiviert&lt;/strong&gt;. Die Einstellung findet und ändert ihr hier:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;More features&lt;/strong&gt; in the new SharePoint admin center, and sign in with an account that has admin permissions for your organization.
+[&amp;hellip;]&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;User profiles&lt;/strong&gt;, select &lt;strong&gt;Open&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Under &lt;strong&gt;My Site Settings&lt;/strong&gt;, select &lt;strong&gt;Setup My Sites&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Next to &lt;strong&gt;My Site Cleanup&lt;/strong&gt;, make sure &lt;strong&gt;Enable access delegation&lt;/strong&gt; is selected.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(Quelle: &lt;a href=&#34;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&#34; target=&#34;_blank&#34; &gt;https://learn.microsoft.com/en-us/sharepoint/retention-and-deletion#configure-automatic-access-delegation&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>PowerShell ConstrainedLanguage Mode per Gruppenrichtlinie einstellen</title>
       <link>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</link>
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
@@ -423,6 +728,18 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
 &lt;p&gt;Gleichzeitig ist das auch ein zweischneidiges Schwert:&lt;br&gt;
 Vorteil: Wir entziehen potenziellen Angreifern ein mächtiges Werkzeug.&lt;br&gt;
 Nachteil: Wir selbst als Administratoren können die PowerShell an einem System auch nicht mehr richtig nutzen.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exchange EAC hat nach dem Außerbetriebnehmen aller Mailbox-Datenbanken nicht mehr funktioniert</title>
+      <link>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
+      <description>&lt;p&gt;Ich habe dieses seltsame Problem in einer Exchange-Server-Umgebung gehabt:
+Die Firma hat eine Exchange Server 2016 DAG gehabt und alle Benutzerpostfächer nach Exchange Online migriert. Danach habe ich einen frischen Exchange Server 2019 für Recipient Management und SMTP-Relay installiert.
+Um die Exchange Server 2019 Hybrid-Lizenz zu nutzen, habe ich keine Mailbox-Datenbank erstellt.
+Ich habe alle verbleibenden System- und Arbitration-Postfächer von den Exchange-2016-Servern entfernt. Ich habe die DAG außer Betrieb genommen und Exchange von den alten Servern deinstalliert.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -438,6 +755,51 @@ Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>ntfy.sh mit Home Assistant verwenden</title>
+      <link>https://diecknet.de/de/2023/02/12/ntfy-sh-with-homeassistant/</link>
+      <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2023/02/12/ntfy-sh-with-homeassistant/</guid>
+      <description>&lt;p&gt;Nur eine kurze Notiz, falls ihr &lt;a href=&#34;https://ntfy.sh&#34; target=&#34;_blank&#34; &gt;ntfy.sh&lt;/a&gt; mit &lt;a href=&#34;https://www.home-assistant.io/&#34; target=&#34;_blank&#34; &gt;Home Assistant&lt;/a&gt; nutzen wollt.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Ich habe den folgenden Abschnitt in meine Datei &lt;code&gt;/config/configuration.yaml&lt;/code&gt; eingefügt:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;shell_command:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ntfy: &amp;gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        curl
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        -X POST
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --url &amp;#39;https://ntfy.sh/{{ topic }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --data &amp;#39;{{ message }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Title: {{ title }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Tags: {{ tags }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Priority: {{ priority }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Delay: {{ delay }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Actions: {{ actions }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Click: {{ click }}&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Icon: {{ icon }}&amp;#39;&lt;/span&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;verwendung&#34;&gt;Verwendung&lt;/h2&gt;
+&lt;p&gt;Um eine Benachrichtigung zu senden, habe ich in einer Automation diese YAML-Action verwendet. Es ist nicht nötig, alle Parameter zu setzen. Ich habe hier mit diesen vier gearbeitet. Soweit ich weiß, ist theoretisch nur &lt;code&gt;topic&lt;/code&gt; für ntfy erforderlich. Aber diese einfache &lt;code&gt;shell_command&lt;/code&gt;-Action prüft nicht, ob ihr ein Topic gesetzt habt.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Exchange Online per Azure Automation steuern im Jahr 2024</title>
       <link>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
@@ -450,6 +812,61 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
     </item>
     
     <item>
+      <title>Azure AD Connect Staging Mode per PowerShell setzen</title>
+      <link>https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</guid>
+      <description>&lt;p&gt;Hier ist ein schneller Tipp, wie ihr den Staging Mode in Azure AD Connect per PowerShell ein- oder ausschaltet. Leider gibt es kein natives Cmdlet im Stil von &lt;code&gt;Set-ADSyncStagingMode&lt;/code&gt; oder so.&lt;/p&gt;
+&lt;p&gt;In diesem Artikel erkläre ich zuerst den Ansatz und liste danach den vollständigen Befehlsblock auf, den ihr nutzen könnt. Ihr könnt also gern nach unten zum Ende des Beitrags springen. Die folgenden PowerShell-Cmdlets müsst ihr auf dem Azure-AD-Connect-Server ausführen.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exchange-Server-Setup unvollständig und Abschluss schlägt fehl</title>
+      <link>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</link>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
+      <description>&lt;p&gt;Ich habe ein Problem mit einem kaputten Exchange Server 2016 CU23 gehabt. Oder eher: Er ist nicht vollständig installiert gewesen.
+Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich oder interessant sein würde, bei diesem Problem tiefer einzusteigen.&lt;/p&gt;
+&lt;p&gt;Ich nehme euch bei meinen Troubleshooting-Schritten bzw. meinem Denkprozess mit.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; alt=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  title=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Alle gemergten Git-Branches unter Windows entfernen</title>
+      <link>https://diecknet.de/de/2022/06/21/Git-on-Windows-remove-all-merged-branches/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/21/Git-on-Windows-remove-all-merged-branches/</guid>
+      <description>&lt;p&gt;Hier ist ein schneller Tipp, wie ihr Git-Branches, die bereits gemergt sind (und daher lokal nicht mehr benötigt werden), unter Windows mit PowerShell entfernt. Voraussetzung ist, dass ihr Git for Windows installiert habt. &lt;strong&gt;Führt diese Befehle auf eigenes Risiko aus.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;alle-gemergten-branches-auflisten&#34;&gt;Alle gemergten Branches auflisten&lt;/h2&gt;
+&lt;p&gt;Ihr könnt alle gemergten Git-Branches auflisten, indem ihr Folgendes ausführt:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch --merged
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;aktuellen-branch-und-den-branch-main-ausschließen&#34;&gt;Aktuellen Branch und den Branch &amp;ldquo;main&amp;rdquo; ausschließen&lt;/h2&gt;
+&lt;p&gt;Danach pipet ihr es mit &lt;code&gt;|&lt;/code&gt; in Folgendes, um den aktuell ausgewählten Branch (mit einem Stern &lt;code&gt;*&lt;/code&gt; markiert) und den Branch &lt;code&gt;main&lt;/code&gt; auszuschließen. Diese Regex-Filterabfrage erhebt nicht den Anspruch, universell gut zu sein. Wenn eure Branches den Begriff &lt;code&gt;main&lt;/code&gt; im Namen enthalten, werden sie ebenfalls ausgeschlossen. Ich habe das nicht optimiert, weil ich meine Branches nicht auf eine so seltsame Weise benenne.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mit der Microsoft Graph API die Anzahl der Gruppenmitglieder abrufen</title>
+      <link>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</link>
+      <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
+      <description>&lt;p&gt;Offenbar ist es nicht &lt;em&gt;so einfach&lt;/em&gt;, die Anzahl der Mitglieder einer Gruppe mit der Microsoft Graph API zu erhalten. Wir müssen den zusätzlichen Header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; angeben, um die &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt; zu nutzen. Danach können wir den Query-Parameter &lt;code&gt;$count&lt;/code&gt; verwenden. Alternativ habe ich herausgefunden, dass ich ihn auch als URL-Query-Parameter hinzufügen kann. Das wäre dann &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;beispielabfragen&#34;&gt;Beispielabfragen&lt;/h2&gt;
+&lt;p&gt;Ersetzt die Gruppen-ID (&lt;code&gt;02bd9fd6-8f93-4758-87c3-1fb73740a315&lt;/code&gt;) durch eure gewünschte Azure-Active-Directory-Gruppen-ID. &lt;a href=&#34;https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%2F02bd9fd6-8f93-4758-87c3-1fb73740a315%2Fmembers%3F%24count%3Dtrue%26ConsistencyLevel%3Deventual&amp;amp;method=GET&amp;amp;version=v1.0&amp;amp;GraphUrl=https://graph.microsoft.com&#34; target=&#34;_blank&#34; &gt;Probiert die Abfrage hier im Microsoft Graph Explorer aus.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuerelement kann nicht instanziiert werden</title>
       <link>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</link>
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
@@ -457,6 +874,31 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
       <guid>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</guid>
       <description>&lt;p&gt;Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.&lt;/p&gt;
 &lt;p&gt;Ich wollte mich einfach nur per &lt;code&gt;Connect-MicrosoftTeams&lt;/code&gt; mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter. Aber bevor ich überhaupt nach einem Benutzernamen gefragt wurde - alles rot.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MFA-Methoden für Azure AD konfigurieren</title>
+      <link>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
+      <description>&lt;p&gt;Dieser Beitrag ist veraltet. Die &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Authentication Methods Policy&amp;rdquo;&lt;/a&gt; ist inzwischen im Entra-Portal leicht erreichbar. Falls ihr noch von den alten Einstellungen migrieren müsst, findet ihr den vollständigen aktuellen Artikel bei &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;alter-beitrag-zur-referenz&#34;&gt;ALTER BEITRAG ZUR REFERENZ&lt;/h2&gt;
+&lt;p&gt;Meiner Meinung nach erklärt die offizielle Microsoft-Dokumentation nicht klar, wo ihr die erlaubten MFA-Methoden für Azure AD konfiguriert. Wenn ihr euch also auch fragt, wo ihr die erlaubten Multi-Faktor-Authentifizierungsmethoden für Microsoft 365 festlegt, seid ihr hier richtig.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Alle Benutzer mit administrativen Rollen in einer Microsoft-365-Umgebung auflisten</title>
+      <link>https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</guid>
+      <description>&lt;h2 id=&#34;option-1-m365-admin-portal-verwenden&#34;&gt;Option 1: M365 Admin Portal verwenden&lt;/h2&gt;
+&lt;p&gt;Im Microsoft-365-Admin-Portal gab es endlich einen Weg. Geht zu &lt;a href=&#34;https://admin.microsoft.com/Adminportal/Home?#/rbac/directory&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo;&lt;/a&gt; und klickt auf &amp;ldquo;Export admin list&amp;rdquo;, um eine CSV-Datei mit allen Admins und ihren Rollen zu erhalten.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2023/2023-12-06_Export_m365_admin_role_assignments.jpg&#34; alt=&#34;M365 Admin Center - Rollenzuweisungen&#34;  title=&#34;M365 Admin Center - Rollenzuweisungen&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;option-2-powershell--azure-ad-graph-module-verwenden&#34;&gt;Option 2: PowerShell / Azure AD Graph Module verwenden&lt;/h2&gt;
+&lt;p&gt;Nur ein kurzes PowerShell-Snippet, um alle Benutzer mit administrativen Rollen in einer Microsoft-365- (oder Azure-AD-) Umgebung aufzulisten. Bitte beachtet, dass hier das ältere Azure-AD-Graph-Modul verwendet wird (die Abkündigung war bereits geplant). Ein Beispiel mit der neueren Microsoft Graph API habe ich &lt;strong&gt;noch nicht&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -475,6 +917,156 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
     </item>
     
     <item>
+      <title>Alle Microsoft-Booking-Kalender auflisten</title>
+      <link>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
+      <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
+      <description>&lt;p&gt;Wenn ihr Microsoft Booking in eurem Microsoft-365-Tenant nutzt, wollt ihr vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ &amp;ldquo;SchedulingMailbox&amp;rdquo;. Wenn einem Benutzer die Rolle &amp;ldquo;Administrator&amp;rdquo; für einen Booking-Kalender zugewiesen ist, hat er &amp;ldquo;FullAccess&amp;rdquo;-Berechtigungen für das Scheduling-Postfach.&lt;/p&gt;
+&lt;h2 id=&#34;alle-booking-kalender-mit-berechtigungen-auflisten&#34;&gt;Alle Booking-Kalender mit Berechtigungen auflisten&lt;/h2&gt;
+&lt;p&gt;Ich habe ein PowerShell-Skript geschrieben, um alle Booking-Postfächer mit den Benutzern aufzulisten, die Zugriff haben.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;12
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;14
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;15
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;16
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;17
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;18
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;19
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;20
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# prerequisite: Exchange Online v2 PowerShell module, must be connected to the service&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;New-Object&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;System.Collections.Generic.List[System.Object]&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Get all Booking Mailboxes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$allBookingsMailboxes&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ExoMailbox&lt;/span&gt; -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Loop through the list of Mailboxes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; = &lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$allBookingsMailboxes&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6c7986&#34;&gt;# Get Permissions for this Mailbox&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ExoMailboxPermission&lt;/span&gt; -UserPrincipalName &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.UserPrincipalName -ResultSize:Unlimited | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Where-Object&lt;/span&gt; {(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.User -like &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;*@*&amp;#39;&lt;/span&gt;) -and (&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.AccessRights -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;FullAccess&amp;#34;&lt;/span&gt;)}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6c7986&#34;&gt;# Output PSCustomObject with infos to the foreach loop, so it gets saved into $BookingsMailboxesWithPermissions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        [PSCustomObject]@{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox DisplayName&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.DisplayName
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox E-Mail-Address&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.PrimarySmtpAddress
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;User&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt;.User
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;AccessRights&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Administrator&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Export-Csv&lt;/span&gt; C:\temp\&lt;span style=&#34;color:#d0a8ff&#34;&gt;bookings-permissions&lt;/span&gt;.csv -Encoding utf8 -Delimiter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;;&amp;#34;&lt;/span&gt; -NoTypeInformation
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Beispielergebnis:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Auto-Expanding Archives in Exchange Online prüfen</title>
+      <link>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
+      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
+      <description>&lt;p&gt;Wenn ihr Auto-Expanding Archives für Exchange-Online-Postfächer aktiviert habt, wollt ihr vielleicht herausfinden, ob zusätzlicher Speicher tatsächlich bereitgestellt wird.&lt;/p&gt;
+&lt;p&gt;Im Exchange Admin Center (EAC) öffnet ihr den Infobereich des Benutzerpostfachs. Dann klickt ihr auf &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-04_Exchange_Online_Mailbox.png&#34; alt=&#34;Exchange Admin Center - Postfachbereich&#34;  title=&#34;Exchange Admin Center - Postfachbereich&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ein Auto-Expanding Archive stellt bei Bedarf zusätzlichen Archivspeicher bereit. Standardarchive haben 100 GB verfügbaren Speicher. Wenn das Archiv bereits größer als 100 GB ist, muss zusätzlicher Speicher vorhanden sein.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Die Kehrseite von Serverless</title>
+      <link>https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/</link>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/</guid>
+      <description>&lt;p&gt;Nachdem ich &lt;a href=&#34;https://simpleip.de&#34; target=&#34;_blank&#34; &gt;SimpleIP.de&lt;/a&gt; als Serverless-Anwendung gebaut hatte (siehe meinen Blogpost &lt;a href=&#34;https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/&#34; &gt;My simple serverless journey was not that easy&lt;/a&gt;), bin ich irgendwie stolz gewesen. Interessante Technologie, kleine und nützliche Website. Nice.&lt;/p&gt;
+&lt;h2 id=&#34;realität&#34;&gt;Realität&lt;/h2&gt;
+&lt;p&gt;Aber nach einer Weile hat mich die Realität eingeholt. Ich habe mit ein paar IPv6-Systemen herumgespielt, als es mir aufgefallen ist. Beim bisherigen Design hat die Seite nur die &lt;em&gt;primäre&lt;/em&gt; IP-Adresse des Clients angezeigt. Wenn der Client sowohl IPv6 &lt;strong&gt;als auch&lt;/strong&gt; IPv4 unterstützt hat, wurde trotzdem nur eine IP-Adresse angezeigt.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Regular Expressions zum Abgleich von Dateinamen verwenden</title>
+      <link>https://diecknet.de/de/2021/10/25/PowerShell-Regular-Expression/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/10/25/PowerShell-Regular-Expression/</guid>
+      <description>&lt;p&gt;Ein kurzes Beispiel für PowerShell Regular Expressions.&lt;/p&gt;
+&lt;p&gt;Szenario: Dateinamen wie &lt;code&gt;ID1234_MyDocumentXYZ.pdf.lnk&lt;/code&gt; abgleichen. Wir wollen die Zahl nach &lt;code&gt;ID&lt;/code&gt; und den Rest des Dateinamens zwischen Unterstrich &lt;code&gt;_&lt;/code&gt; und Dateiendung &lt;code&gt;.lnk&lt;/code&gt; extrahiert haben.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; = &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; -match &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;ID(?&amp;lt;id&amp;gt;\d+)_(?&amp;lt;actualFilename&amp;gt;.+)\.lnk$&amp;#39;&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#d0a8ff&#34;&gt;Write-Output&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID: &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Matches&lt;/span&gt;.id)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#d0a8ff&#34;&gt;Write-Output&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Actual Filename: &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Matches&lt;/span&gt;.actualFilename)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;(?&amp;lt;id&amp;gt;\d+)&lt;/code&gt; ist eine benannte Regex-Capture-Group (initialisiert mit &lt;code&gt;?&amp;lt;groupname&amp;gt;&lt;/code&gt;). Die Group matched jedes numerische Zeichen (&lt;code&gt;\d&lt;/code&gt;). Das &lt;code&gt;+&lt;/code&gt; danach ist ein Multiplikator, damit gegen beliebig viele numerische Zeichen gematcht wird.
+Da die Regular Expression erfolgreich gematcht hat, ist als Ergebnis $true zurückgekommen und wir haben den &lt;code&gt;if&lt;/code&gt;-Block ausgeführt.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell-Skript mit der Windows-Aufgabenplanung ausführen</title>
+      <link>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</guid>
+      <description>&lt;p&gt;Eine kurze Notiz für mich selbst - wie ich ein PowerShell-Skript mit der Windows-Aufgabenplanung ausgeführt habe.&lt;/p&gt;
+&lt;h2 id=&#34;aufgabenplanung-öffnen&#34;&gt;Aufgabenplanung öffnen&lt;/h2&gt;
+&lt;p&gt;Ein schneller Weg, die Aufgabenplanung zu öffnen:
+&lt;code&gt;[WIN]&lt;/code&gt; + &lt;code&gt;R&lt;/code&gt;, dann &lt;code&gt;taskschd.msc&lt;/code&gt; ausführen.&lt;/p&gt;
+&lt;h2 id=&#34;neue-aufgabe-erstellen&#34;&gt;Neue Aufgabe erstellen&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;Aufgabenplanungsbibliothek&amp;rdquo; → &amp;ldquo;Neue Aufgabe erstellen&amp;rdquo; öffnen.
+Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger usw. setzen.&lt;/p&gt;
+&lt;h2 id=&#34;aktion-festlegen&#34;&gt;Aktion festlegen&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Setting&lt;/th&gt;
+          &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Action&lt;/td&gt;
+          &lt;td&gt;Start a program&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Program/script&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;powershell.exe&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Add arguments (optional)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;-file &amp;quot;C:\Path\Script.ps1&amp;quot;&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+    <item>
       <title>Einwahlrufnummer für Teams Meetings per PowerShell setzen</title>
       <link>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
@@ -484,6 +1076,30 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
 &lt;p&gt;Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - &lt;strong&gt;einmalig wenn der Benutzer für Audiokonferenz aktiviert wird&lt;/strong&gt;. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.&lt;/p&gt;
 &lt;h2 id=&#34;teams-admin-center-verwenden-um-die-einwahlrufnummer-für-einzelne-benutzer-zu-ändern&#34;&gt;Teams Admin Center verwenden um die Einwahlrufnummer für einzelne Benutzer zu ändern&lt;/h2&gt;
 &lt;p&gt;Users ➔ Manage Users ➔ Auf einen Benutzer klicken ➔ Auf &amp;ldquo;Edit&amp;rdquo; klicken (neben &amp;ldquo;Audio Conferencing&amp;rdquo;) ➔ Auswählen der &amp;ldquo;Toll number&amp;rdquo; entsprechend des Benutzerstandorts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Der Wechsel von Skype for Business zu Teams ist frustrierend</title>
+      <link>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</guid>
+      <description>&lt;p&gt;Der Upgrade-Prozess von Skype for Business Online zu Microsoft Teams ist ein Desaster gewesen. Mehrere SMB-Kunden haben mir unnötige Fehler zu Teams/Skype gemeldet. Mit unnötig meine ich: &lt;strong&gt;Sie haben bis 2021-07-31 keine Probleme mit Teams gehabt.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem-plötzlich-sind-skype-besprechungen-in-outlook-mobile-wieder-da&#34;&gt;Problem: Plötzlich sind Skype-Besprechungen in Outlook Mobile wieder da&lt;/h2&gt;
+&lt;p&gt;Ein Kunde hat gemeldet, dass in Outlook auf iOS plötzlich wieder Skype-Besprechungen statt Teams-Besprechungen angezeigt worden sind.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-08-11-TeamsUpgrade_SuddenlySkypeMeetings.png&#34; alt=&#34;Skype Meeting in Outlook on iOS&#34;  title=&#34;Skype Meeting in Outlook on iOS&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Die Zeitzone einer SharePoint-Online-Website mit PowerShell auslesen</title>
+      <link>https://diecknet.de/de/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</guid>
+      <description>&lt;p&gt;Ich habe nach einer Möglichkeit gesucht, die Zeitzonen-Einstellung einer Sharepoint-Online-Seite per PowerShell auszulesen. Offenbar sind öffentlich nicht viele gute Informationen dazu verfügbar. Ich habe nach einem Weg gesucht, das mit dem &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps&#34; target=&#34;_blank&#34; &gt;standard SPO PowerShell module&lt;/a&gt; namens Microsoft.Online.SharePoint.PowerShell zu machen.&lt;/p&gt;
+&lt;p&gt;Online gibt es ein paar Infos zur Nutzung des PNPOnline-Moduls, aber das ist in meinem Fall nicht praktisch. Es gibt sogar einige wirklich nervige Artikel, die behaupten, einen PowerShell-Weg zu zeigen. Aber statt die tatsächliche Zeitzonen-Einstellung einer SPO-Seite auszulesen, fragen sie alle verfügbaren Zeitzonen ab und überschreiben anschließend die aktuelle Zeitzone mit einer gültigen. Das Schlimmste: Sie importieren Sharepoint-.dll-Dateien, verwenden Plaintext-Authentifizierung und arbeiten mit Client Context Object/CSOM (Microsoft.SharePoint.Client.ClientContext).
+😵 Oof.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -499,6 +1115,26 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
 &lt;p&gt;Im englischsprachigen Original &lt;a href=&#34;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&#34; target=&#34;_blank&#34; &gt;https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams#teams-and-channels&lt;/a&gt; wird unterhalb der Tabelle &lt;em&gt;Teams and channels&lt;/em&gt; in &lt;strong&gt;Fußnote 4&lt;/strong&gt; festgehalten:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Deleted channels can be restored within 30 days. During these 30 days, a deleted channel continues to be counted towards the 200 channel or 30 private channel per team limit. After 30 days, a deleted channel and its content are permanently deleted and the channel no longer counts towards the per team limit.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bereitstellung eines Azure NAT-Gateways für Azure Virtual Desktop mit PowerShell</title>
+      <link>https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</link>
+      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
+      <description>&lt;p&gt;Ich habe ein PowerShell-Skript erstellt, das automatisch ein Azure NAT-Gateway in einer Azure Virtual Desktop Umgebung bereitstellt. Das ist nützlich, wenn ihr eine statische IP-Adresse für eure AVD-Maschinen braucht. Das Skript habe ich als Beitrag für den &lt;a href=&#34;https://getnerdio.com/nerdio-hackathon/&#34; target=&#34;_blank&#34; &gt;Nerdio Hackathon 2021&lt;/a&gt; erstellt. Mein erster Hackathon überhaupt :^).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 2021-10-05&lt;/strong&gt; - Ich habe tatsächlich den ersten Platz gewonnen, allerdings haben anscheinend nicht viele am Wettbewerb teilgenommen. Das Nerdio-Team war etwas enttäuscht und hat daher keine Ankündigung veröffentlicht. Immerhin habe ich einen Amazon-Gutschein über 1000 USD bekommen 🤩.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Meine simple Serverless-Reise war gar nicht so einfach</title>
+      <link>https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/</guid>
+      <description>&lt;p&gt;Serverless Computing ist ein spannendes Konzept. Man kann ein Skript oder Programm ausführen, ohne die komplette Infrastruktur dahinter aufzubauen (Server, Storage, Netzwerke usw.). Man schreibt einfach den Code und er wird ausgeführt. Aber Serverless heißt nicht „ohne Server“ – man muss sich nur nicht darum kümmern. Das ist gar nicht so weit weg von klassischem Webspace beim Hoster, auf den man PHP-Skripte legt.&lt;/p&gt;
+&lt;p&gt;Heute meint Serverless meistens eine moderne Architektur, mit der man Anwendungscode ausführen kann. Der große Unterschied ist das &lt;strong&gt;Skalieren&lt;/strong&gt;. Der Cloud-Anbieter übernimmt die Logik, wann und wie Serverless-Funktionen laufen. Wenn die Anwendung nicht genutzt wird, wird nichts ausgeführt und es werden keine Rechenressourcen verbraucht.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -673,7 +1309,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
-      <description>&lt;p&gt;Wenn du herausfinden möchtest, wann ein Exchange Postfach erstellt wurde, wirst du wahrscheinlich über das Active Directory-Benutzer Attribut &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt; stolpern. Um den Wert auszulesen, kannst du PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.&lt;/p&gt;
+      <description>&lt;p&gt;Wenn ihr herausfinden möchtet, wann ein Exchange Postfach erstellt wurde, werdet ihr wahrscheinlich über das Active Directory-Benutzer Attribut &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt; stolpern. Um den Wert auszulesen, könnt ihr PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
@@ -685,7 +1321,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;MSExchWhenMailboxCreated Attribut per Active Directory-Benutzer und Computer anzeigen. Erweiterte Features müssen aktiviert sein.&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;msexchwhenmailboxcreated-enthält-nicht-die-ganze-wahrheit&#34;&gt;MSExchWhenMailboxCreated enthält nicht die ganze Wahrheit&lt;/h2&gt;
-&lt;p&gt;Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was du vielleicht denkst. Das Attribut wird nur propagiert wenn der Benutzer &lt;em&gt;DAS ERSTE MAL&lt;/em&gt; ein Postfach erhält. Wenn das Postfach zwischenzeitlich deaktiviert und dann später neuerstellt wurde, bleibt trotzdem der Zeitstempel der ersten Postfacherstellung.&lt;/p&gt;</description>
+&lt;p&gt;Das könnte schon das Ende der Geschichte sein. ABER das Attribut ist nicht, was ihr vielleicht denkt. Das Attribut wird nur propagiert wenn der Benutzer &lt;em&gt;DAS ERSTE MAL&lt;/em&gt; ein Postfach erhält. Wenn das Postfach zwischenzeitlich deaktiviert und dann später neuerstellt wurde, bleibt trotzdem der Zeitstempel der ersten Postfacherstellung.&lt;/p&gt;</description>
     </item>
     
     <item>

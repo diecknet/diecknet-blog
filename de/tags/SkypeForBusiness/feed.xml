@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SkypeForBusiness on diecknet</title>
+    <link>https://diecknet.de/de/tags/SkypeForBusiness/</link>
+    <description>Recent content in SkypeForBusiness on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/SkypeForBusiness/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Der Wechsel von Skype for Business zu Teams ist frustrierend</title>
+      <link>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</guid>
+      <description>&lt;p&gt;Der Upgrade-Prozess von Skype for Business Online zu Microsoft Teams ist ein Desaster gewesen. Mehrere SMB-Kunden haben mir unnötige Fehler zu Teams/Skype gemeldet. Mit unnötig meine ich: &lt;strong&gt;Sie haben bis 2021-07-31 keine Probleme mit Teams gehabt.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem-plötzlich-sind-skype-besprechungen-in-outlook-mobile-wieder-da&#34;&gt;Problem: Plötzlich sind Skype-Besprechungen in Outlook Mobile wieder da&lt;/h2&gt;
+&lt;p&gt;Ein Kunde hat gemeldet, dass in Outlook auf iOS plötzlich wieder Skype-Besprechungen statt Teams-Besprechungen angezeigt worden sind.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-08-11-TeamsUpgrade_SuddenlySkypeMeetings.png&#34; alt=&#34;Skype Meeting in Outlook on iOS&#34;  title=&#34;Skype Meeting in Outlook on iOS&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

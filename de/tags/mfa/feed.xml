@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mfa on diecknet</title>
+    <link>https://diecknet.de/de/tags/mfa/</link>
+    <description>Recent content in Mfa on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/mfa/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MFA-Methoden für Azure AD konfigurieren</title>
+      <link>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
+      <description>&lt;p&gt;Dieser Beitrag ist veraltet. Die &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Authentication Methods Policy&amp;rdquo;&lt;/a&gt; ist inzwischen im Entra-Portal leicht erreichbar. Falls ihr noch von den alten Einstellungen migrieren müsst, findet ihr den vollständigen aktuellen Artikel bei &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;alter-beitrag-zur-referenz&#34;&gt;ALTER BEITRAG ZUR REFERENZ&lt;/h2&gt;
+&lt;p&gt;Meiner Meinung nach erklärt die offizielle Microsoft-Dokumentation nicht klar, wo ihr die erlaubten MFA-Methoden für Azure AD konfiguriert. Wenn ihr euch also auch fragt, wo ihr die erlaubten Multi-Faktor-Authentifizierungsmethoden für Microsoft 365 festlegt, seid ihr hier richtig.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
