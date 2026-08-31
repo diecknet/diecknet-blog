@@ -106,13 +106,13 @@
                         {{- range $translationList -}}
                         
                         <li>
-                            <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                                aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                                {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                                    {{- if eq .Language.LanguageName site.Language.LanguageName }}
-                                        <b>{{- .Language.LanguageName -}}</b>
+                            <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.Label | emojify) | default (.Lang | title) }}"
+                                aria-label="{{ .Language.Label | default (.Lang | title) }}">
+                                {{- if (and site.Params.displayFullLangName (.Language.Label)) }}
+                                    {{- if eq .Language.Label site.Language.Label }}
+                                        <b>{{- .Language.Label -}}</b>
                                     {{- else }}
-                                        {{- .Language.LanguageName -}}
+                                        {{- .Language.Label -}}
                                     {{- end -}}                                   
                                 {{- end -}}
                             </a>

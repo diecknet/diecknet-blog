@@ -8,8 +8,8 @@
     🌍&nbsp;{{- i18n "translation-note" }}:&nbsp;
     <li>
         <a href="{{ .Permalink }}">
-            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-            {{- .Language.LanguageName -}}
+            {{- if (and site.Params.displayFullLangName (.Language.Label)) }}
+            {{- .Language.Label -}}
             {{- else }}
             {{- .Lang | title -}}
             {{- end -}}

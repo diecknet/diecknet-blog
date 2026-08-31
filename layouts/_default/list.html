@@ -40,7 +40,11 @@
 
 {{- if .IsHome }}
 {{- if eq .Site.Language.Lang "==" "de" }}
-{{- $pages = where (where site.AllPages "Kind" "page") "Type" "in" site.Params.mainSections }}
+{{- $allPages := slice }}
+{{- range hugo.Sites }}
+{{- $allPages = $allPages | append .Pages }}
+{{- end }}
+{{- $pages = where (where $allPages "Kind" "page") "Type" "in" site.Params.mainSections }}
 {{- $pages = where (where $pages ".Language.Lang" "!=" .Site.Language.Lang) ".IsTranslated" "!=" true }}
 {{- $pages = append (where site.RegularPages "Type" "in" site.Params.mainSections) $pages }}
 {{- $pages = sort $pages ".Date" "desc"}}
@@ -73,7 +77,7 @@
   <header class="entry-header">
     <h2>
       {{- if (and (eq site.Language.Lang "==" "de") (ne .Language.Lang site.Language.Lang)) }}
-      [{{- .Language.LanguageName }}]&nbsp;
+      [{{- .Language.Label }}]&nbsp;
       {{- end }}
       {{- .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
