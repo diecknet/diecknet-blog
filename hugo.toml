@@ -1,5 +1,5 @@
 baseURL = "https://diecknet.de/"
-languageCode = "de"
+locale = "de"
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = true
 disablePathToLower = true
@@ -9,12 +9,12 @@ enableRobotsTXT = true
 
 [languages.de]
 contentDir = "content/de"
-languageName = "Deutsch"
+label = "Deutsch"
 weight = 10
 
 [languages.en]
 contentDir = "content/en"
-languageName = "English"
+label = "English"
 weight = 20
 
 [permalinks]
