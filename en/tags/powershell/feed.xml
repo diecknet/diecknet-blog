@@ -34,6 +34,62 @@
     </item>
     
     <item>
+      <title>Add leading zeros with PowerShell</title>
+      <link>https://diecknet.de/en/2025/05/19/powershell-pad-zeros/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2025/05/19/powershell-pad-zeros/</guid>
+      <description>&lt;p&gt;There are many different ways to add leading zeros to a number in PowerShell. In practice, numbers (object type: &lt;code&gt;[int]&lt;/code&gt;) cannot have leading zeros, so we are really creating a text value (object type: &lt;code&gt;[string]&lt;/code&gt;) that contains the number.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In the examples below, I pad the number &lt;code&gt;42&lt;/code&gt; to four digits (&lt;code&gt;0042&lt;/code&gt;). Of course, you can adjust the length of the padding as needed :)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I also demonstrate the following options (and a few more) in &lt;a href=&#34;https://youtu.be/0Ck8rzW3f-g&#34; target=&#34;_blank&#34; &gt;this video on YouTube&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enable, configure, and restore objects from the Active Directory Recycle Bin</title>
+      <link>https://diecknet.de/en/2025/04/28/active-directory-recycle-bin/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2025/04/28/active-directory-recycle-bin/</guid>
+      <description>&lt;p&gt;If you use Active Directory Domain Services, you should definitely check whether the AD Recycle Bin is enabled in your environment.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-the-ad-recycle-bin&#34;&gt;What is the AD Recycle Bin?&lt;/h2&gt;
+&lt;p&gt;The AD Recycle Bin works similarly to the Recycle Bin in the file system:
+&lt;strong&gt;Deleted objects&lt;/strong&gt; (users, groups, and so on) are first moved to the Recycle Bin and can be restored easily.&lt;/p&gt;
+&lt;p&gt;This is especially useful for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;accidental deletions&lt;/li&gt;
+&lt;li&gt;intentional deletions that need to be undone&lt;/li&gt;
+&lt;li&gt;missing AD backups (which do not replace a backup)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The AD Recycle Bin was introduced with &lt;strong&gt;Windows Server 2008 R2&lt;/strong&gt;.
+Requirement: your AD forest must have at least the &lt;strong&gt;Windows Server 2008 R2 functional level&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Send emails with PowerShell and Microsoft Graph</title>
+      <link>https://diecknet.de/en/2025/04/10/powershell-send-mails-via-ms-graph/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2025/04/10/powershell-send-mails-via-ms-graph/</guid>
+      <description>&lt;p&gt;Sending emails via PowerShell and the Microsoft Graph API is unfortunately not as simple as with the classic &lt;code&gt;Send-MailMessage&lt;/code&gt; cmdlet. I also recently published &lt;a href=&#34;https://diecknet.de/en/2025/03/23/powershell-send-mailmessage/&#34; &gt;a blog post about the classic approach&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nevertheless, there are several reasons to prefer sending mail via Microsoft Graph. In October 2025, plaintext authentication (Basic Authentication) for SMTP sending in Exchange Online is expected to be turned off. So if Exchange Online is your only email system, but you want to send emails automatically, MS Graph is the right choice. Alternatively, of course, you could also purchase (or host) an additional email system.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Send emails with PowerShell using Send-MailMessage</title>
+      <link>https://diecknet.de/en/2025/03/23/powershell-send-mailmessage/</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2025/03/23/powershell-send-mailmessage/</guid>
+      <description>&lt;p&gt;It is fairly easy to send emails with PowerShell. For that purpose, there is the built-in cmdlet &lt;code&gt;Send-MailMessage&lt;/code&gt;, which Microsoft now describes as deprecated:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ Warning&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Send-MailMessage&lt;/code&gt; cmdlet is deprecated. This cmdlet does not guarantee secure connections with SMTP servers. Although there is no immediate replacement available in PowerShell, it is recommended not to use &lt;code&gt;Send-MailMessage&lt;/code&gt;. For more information, see &lt;a href=&#34;https://aka.ms/SendMailMessage&#34; target=&#34;_blank&#34; &gt;Platform Compatibility Note DE0005&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7.5&#34; target=&#34;_blank&#34; &gt;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7.5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For some scenarios, using &lt;code&gt;Send-MailMessage&lt;/code&gt; is still okay in my opinion. For example, if you run your own SMTP server, such as a Microsoft Exchange Server, or you have one hosted somewhere else, there is often no support for modern authentication methods. Of course, you could also run such an SMTP server in addition to an Exchange Online environment. In general, I would recommend using a subdomain such as &amp;ldquo;reports.demotenant.de&amp;rdquo; rather than just &amp;ldquo;demotenant.de&amp;rdquo; for these automated emails, but that is not a requirement.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Retrieve infos about Active Directory Based Activation via PowerShell</title>
       <link>https://diecknet.de/en/2024/11/25/powershell-show-adba-infos/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
@@ -52,6 +108,65 @@
 &lt;h2 id=&#34;explanation&#34;&gt;Explanation&lt;/h2&gt;
 &lt;p&gt;The code uses aliases, which are not great in scripts, but neat in One-Liners.
 It uses &lt;code&gt;Get-ADDomain&lt;/code&gt; to determine the Distinguished Name for the Domain. This should make the code portable.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell: Cancel and Skip Loops Intentionally</title>
+      <link>https://diecknet.de/en/2024/11/02/powershell-cancel-loops/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/11/02/powershell-cancel-loops/</guid>
+      <description>&lt;p&gt;Normally, a loop in PowerShell runs as long as it is defined by the condition block outside it. For example, the following &lt;code&gt;while&lt;/code&gt; loop runs as long as the variable named &lt;code&gt;$Variable&lt;/code&gt; is less than or equal to &lt;code&gt;10&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;while&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Variable&lt;/span&gt; -le &lt;span style=&#34;color:#d0bf69&#34;&gt;10&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6c7986&#34;&gt;# something&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;However, it is also possible to terminate a complete loop early or skip a single loop iteration on purpose. This also works when you have multiple loops nested inside each other.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Use WMI in PowerShell</title>
+      <link>https://diecknet.de/en/2024/09/20/powershell-wmi/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/09/20/powershell-wmi/</guid>
+      <description>&lt;p&gt;WMI is a powerful interface for managing Windows systems. It makes it possible to access things for which there may otherwise be no dedicated PowerShell cmdlets. In some cases, we can retrieve more information than the standard cmdlets provide. This works both locally and remotely.&lt;/p&gt;
+&lt;h2 id=&#34;deprecated-the-old-wmi-cmdlets&#34;&gt;Deprecated: The old WMI cmdlets&lt;/h2&gt;
+&lt;p&gt;There are a few older cmdlets, but they are not recommended for new development. However, you may still come across them in older scripts, so now you have heard of them at least. They do exist.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Problem with Array &#43;= in PowerShell</title>
+      <link>https://diecknet.de/en/2024/09/12/powershell-array-plus/</link>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/09/12/powershell-array-plus/</guid>
+      <description>&lt;p&gt;PowerShell unfortunately makes it quite easy to write inefficient code. Many people, for example, use the &lt;code&gt;+=&lt;/code&gt; syntax to populate an array. That is not recommended.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;background-color:#353539&#34;&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Please do not do it this way!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Array&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;@&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt; = &lt;span style=&#34;color:#d0bf69&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt; -lt &lt;span style=&#34;color:#d0bf69&#34;&gt;10000&lt;/span&gt;; &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt;++) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex; background-color:#353539&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$Array&lt;/span&gt; += &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;We can measure how long the execution of a scriptblock takes with &lt;code&gt;Measure-Command&lt;/code&gt;. On my test VM, the execution of the code above took over 2 seconds.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,6 +205,233 @@ It uses &lt;code&gt;Get-ADDomain&lt;/code&gt; to determine the Distinguished Nam
       <description>&lt;p&gt;I recently worked on a client project, where I had to do some work around Active Directory Computers. I used PowerShell and some light filtering and processing. And now I share those examples, and hopefully someone finds them interesting or helpful. Maybe it will be me, who finds it interesting in the future. In that case: Moin Andi! 👋&lt;/p&gt;
 &lt;h2 id=&#34;example-1-filter-computer-by-operating-system-version&#34;&gt;Example 1: Filter Computer by Operating System Version&lt;/h2&gt;
 &lt;p&gt;The AD attribute &lt;code&gt;OperatingSystemVersion&lt;/code&gt; holds the OS version with the build number in a format like this: &lt;code&gt;10.0 (19041)&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Write-Host vs. Write-Output</title>
+      <link>https://diecknet.de/en/2024/07/05/powershell-write-host-vs-write-output/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/07/05/powershell-write-host-vs-write-output/</guid>
+      <description>&lt;p&gt;In PowerShell, you can output text with the &lt;code&gt;Write-Host&lt;/code&gt; cmdlet. However, it is sometimes discouraged to use it. There is the alternative &lt;code&gt;Write-Output&lt;/code&gt;, for example. In this post, I will explain the differences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I also created a &lt;a href=&#34;https://www.youtube.com/watch?v=eHBO4b_Riho&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;write-host&#34;&gt;Write-Host&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Write-Host&lt;/code&gt; writes data to the PowerShell &lt;strong&gt;host&lt;/strong&gt;, the program hosting the current PowerShell session. Often this is the &lt;code&gt;ConsoleHost&lt;/code&gt;, but for example PowerShell ISE or Visual Studio Code use their own hosts, which differ from each other in some aspects.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Create and Extract .zip Archives with PowerShell</title>
+      <link>https://diecknet.de/en/2024/06/08/powershell-create-and-extract-zip-archives/</link>
+      <pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/06/08/powershell-create-and-extract-zip-archives/</guid>
+      <description>&lt;p&gt;Windows has long been able to work with ZIP archives.
+PowerShell can do that too, both creating ZIP files and extracting them.
+This can be useful if, for example, you want to combine several files into a ZIP file with a PowerShell script, which makes it easier to copy them elsewhere. Or perhaps to extract a ZIP file downloaded from the internet by a script.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I also created a &lt;a href=&#34;https://youtu.be/ALoe26e8c5s&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Split PowerShell Commands Across Multiple Lines</title>
+      <link>https://diecknet.de/en/2024/05/15/powershell-multiline-commands/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/05/15/powershell-multiline-commands/</guid>
+      <description>&lt;p&gt;PowerShell commands with many parameters can make the code harder to read. For example, in the code snippet below, in line 5 I used the &lt;code&gt;New-ADUser&lt;/code&gt; cmdlet and specified 7 parameters. That is very hard to read on one line, even if you use an ultra-wide monitor.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;background-color:#353539&#34;&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$CSVFile&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Import-Csv&lt;/span&gt; .\NeueUser.csv
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$CSVFile&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$Manager&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Filter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;mail -eq &amp;#39;&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Manager)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex; background-color:#353539&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#d0a8ff&#34;&gt;New-ADUser&lt;/span&gt; -Name &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Vorname)&lt;span style=&#34;color:#fc6a5d&#34;&gt; &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Nachname)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -Surname &lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Nachname -GivenName &lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Vorname -UserPrincipalName &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Vorname)&lt;span style=&#34;color:#fc6a5d&#34;&gt;.&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Nachname)&lt;span style=&#34;color:#fc6a5d&#34;&gt;@demotenant.de&amp;#34;&lt;/span&gt; -Department &lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Abteilung -Company &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Demotenant&amp;#34;&lt;/span&gt; -Path &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;OU=User,OU=Demotenant,DC=lan,DC=demotenant,DC=de&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;It would improve readability if we could split the command across multiple lines.
+That is why I will show you two ways to split your PowerShell commands across multiple lines in this article.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Null in PowerShell</title>
+      <link>https://diecknet.de/en/2024/04/29/powershell-null/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/04/29/powershell-null/</guid>
+      <description>&lt;p&gt;If you want to check in PowerShell whether a value is not set, you can compare it with &lt;code&gt;$null&lt;/code&gt;. This automatic variable always means null, nothing, no value.&lt;/p&gt;
+&lt;p&gt;That is a bit different from simply using quotation marks &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; and leaving them empty.&lt;/p&gt;
+&lt;p&gt;For example, this always returns &lt;code&gt;FALSE&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$null&lt;/span&gt; -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$null&lt;/span&gt; -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# By the way, this has nothing to do with the number 0, so this also returns false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$null&lt;/span&gt; -eq &lt;span style=&#34;color:#d0bf69&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;🎬 I have also created a &lt;a href=&#34;https://www.youtube.com/watch?v=EXoHcYNHSm8&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Developing PowerShell Scripts Remotely</title>
+      <link>https://diecknet.de/en/2024/04/23/powershell-remote-script-development/</link>
+      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/04/23/powershell-remote-script-development/</guid>
+      <description>&lt;p&gt;It is possible to develop PowerShell scripts remotely. In other words, the script is stored and executed on a remote computer, but the input comes from the local editor tool. This works with both the classic Windows PowerShell ISE and with Visual Studio Code. In VS Code, you can work with remote Windows PowerShell as well as remote PowerShell 7 systems.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I have also created a &lt;a href=&#34;https://www.youtube.com/watch?v=T009J35wJQE&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Suppressing PowerShell Output</title>
+      <link>https://diecknet.de/en/2024/04/09/powershell-suppress-output/</link>
+      <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/04/09/powershell-suppress-output/</guid>
+      <description>&lt;p&gt;Sometimes PowerShell commands return information even though we are not interested in it. There are different scenarios in which you can suppress the output.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I have also created a &lt;a href=&#34;https://youtu.be/0hS3IWrr_3I&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I will use the &lt;code&gt;New-NetFirewallRule&lt;/code&gt; cmdlet as an example, which I can use to add a new rule in the Windows Firewall:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;New-NetFirewallRule&lt;/span&gt; -DisplayName &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Block outbound connections to port 443&amp;#34;&lt;/span&gt; -Direction Outbound -RemotePort &lt;span style=&#34;color:#d0bf69&#34;&gt;443&lt;/span&gt; -Protocol TCP -Action Block
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-04-09_PowerShell_new-netfirewallrule_example.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-04-09_PowerShell_new-netfirewallrule_example.jpg&#34; alt=&#34;Example of excessive output from a PowerShell cmdlet: running New-NetFirewallRule&#34;  title=&#34;Example of excessive output from a PowerShell cmdlet: running New-NetFirewallRule&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Dot Sourcing</title>
+      <link>https://diecknet.de/en/2024/03/26/powershell-dot-sourcing/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/03/26/powershell-dot-sourcing/</guid>
+      <description>&lt;p&gt;With PowerShell dot sourcing, you can import a script file into your PowerShell session. The script is executed normally, but variables, functions, and so on that are defined in it remain available in the session. That is not the case with a normal script invocation. It always reminds me of the PHP &lt;code&gt;include&lt;/code&gt; command because I spent a lot of time messing around with PHP in my youth. 😅&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I have also created a &lt;a href=&#34;https://youtu.be/TTnKAU-Po7Q&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Regular Expressions in PowerShell</title>
+      <link>https://diecknet.de/en/2024/03/19/powershell-regex/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/03/19/powershell-regex/</guid>
+      <description>&lt;p&gt;Regular expressions are patterns that can be used to compare text or extract information from text. For example, you can use them to check whether a log file from a program contains the string &amp;ldquo;Error&amp;rdquo; to see whether an error occurred. Or simply to see whether a string matches a certain pattern, such as an email address.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I have also created a &lt;a href=&#34;https://youtu.be/Zk6iHL1T94k&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;These patterns exist in many programming languages. The details of the implementations can vary, though. PowerShell and the RegEx engine used by PowerShell are based on .NET. For that reason, the .NET-specific behavior matters most here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Measuring the Execution Time of PowerShell Code</title>
+      <link>https://diecknet.de/en/2024/03/12/powershell-measure-execution-time/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/03/12/powershell-measure-execution-time/</guid>
+      <description>&lt;p&gt;If you want to optimize the speed of your PowerShell code, it makes sense to measure times. There are several ways to measure how long a piece of PowerShell code takes to run.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I have also created a &lt;a href=&#34;https://youtu.be/-tpR-KQpPq4&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;option-1-measure-command&#34;&gt;Option 1: Measure-Command&lt;/h2&gt;
+&lt;p&gt;A simple way is to use the &lt;code&gt;Measure-Command&lt;/code&gt; cmdlet. It accepts a script block, which is then executed. We then get a measurement result in the form of a &lt;code&gt;TimeSpan&lt;/code&gt; object. A simple example:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Profiles Explained (with Examples)</title>
+      <link>https://diecknet.de/en/2024/03/05/powershell-profiles/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/03/05/powershell-profiles/</guid>
+      <description>&lt;p&gt;PowerShell profiles let you customize your PowerShell. For example, so it looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; alt=&#34;PowerShell console customized with Oh My Posh and the Blue Owl theme&#34;  title=&#34;PowerShell console customized with Oh My Posh and the Blue Owl theme&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Or you can configure it to show a splash screen at startup, such as with Winfetch:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; alt=&#34;Example of a Winfetch information screen&#34;  title=&#34;Example of a Winfetch information screen&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Or you can also store your own functions and variables so they are immediately available every time you start PowerShell.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell: Accessing Environment Variables</title>
+      <link>https://diecknet.de/en/2024/02/28/powershell-environment-variables/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/02/28/powershell-environment-variables/</guid>
+      <description>&lt;p&gt;Accessing environment variables via PowerShell is very simple.
+&lt;strong&gt;🎬 I also created a &lt;a href=&#34;https://youtu.be/25-jcylahSo&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;read-an-environment-variable-via-the-env-variable&#34;&gt;Read an environment variable via the &lt;code&gt;$Env:&lt;/code&gt; variable&lt;/h2&gt;
+&lt;p&gt;The simplest way is through the &lt;code&gt;$Env:&lt;/code&gt; variable. Just type &lt;code&gt;$Env&lt;/code&gt;, then a colon, and then the name of the environment variable whose value you want to read.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Env:username&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This outputs the username of the currently logged-in user.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-02-28_PowerShell_ENV_1.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-02-28_PowerShell_ENV_1.jpg&#34; alt=&#34;Example output of $Env:username in PowerShell - the current username is displayed&#34;  title=&#34;Example output of $Env:username in PowerShell - the current username is displayed&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PowerShell: Checking whether you have admin rights</title>
+      <link>https://diecknet.de/en/2024/02/20/powershell-check-for-admin-rights/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/02/20/powershell-check-for-admin-rights/</guid>
+      <description>&lt;p&gt;If you create a PowerShell script that should perform actions that require administrator rights, you can also check this in code. This allows you to make sure that your script can be executed successfully. The easiest way is with a &lt;code&gt;Requires&lt;/code&gt; statement.
+&lt;strong&gt;&lt;a href=&#34;https://youtu.be/ACUCARq7joM&#34; target=&#34;_blank&#34; &gt;🎬 I also created a video on this topic.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;requiring-admin-rights-with-a-requires-statement&#34;&gt;Requiring admin rights with a Requires statement&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;Requires&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;-RunAsAdministrator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This line can be inserted at any point in the PowerShell code. I would always place it fairly near the top of the script so it is easy to see. But the position technically does not matter. So if the &lt;code&gt;#Requires&lt;/code&gt; statement is in the code, it is evaluated before the rest of the code is executed. Depending on whether administrator rights are present or not, an error is returned.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finding localized Security Identifier names in PowerShell</title>
+      <link>https://diecknet.de/en/2024/01/17/powershell-localized-security-identifiers/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/01/17/powershell-localized-security-identifiers/</guid>
+      <description>&lt;p&gt;Security Identifiers are used to identify specific security principals or groups in Windows. Unfortunately, their names are localized, so for example they differ between a German and an English system.&lt;/p&gt;
+&lt;p&gt;For example, the built-in Administrators group is called &lt;code&gt;BUILTIN\ADMINISTRATORS&lt;/code&gt; in English and &lt;code&gt;VORDEFINIERT\Administratoren&lt;/code&gt; in German. Or the English &lt;code&gt;NT AUTHORITY\SYSTEM&lt;/code&gt; becomes &lt;code&gt;NT-AUTORITÄT\SYSTEM&lt;/code&gt; on a German system. &lt;strong&gt;I think that is really weird.&lt;/strong&gt; Suddenly a space is replaced by a hyphen. Well, whatever.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The different brackets in PowerShell</title>
+      <link>https://diecknet.de/en/2023/11/28/powershell-brackets/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2023/11/28/powershell-brackets/</guid>
+      <description>&lt;p&gt;When is which bracket the right one in PowerShell?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Different brackets in PowerShell&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;() {} []&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The brackets have different purposes. By the way, I would not count the greater-than and less-than signs &lt;code&gt;&amp;lt;&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt; as brackets. For all real brackets, if you open one, you must close it again.&lt;/p&gt;
+&lt;h2 id=&#34;round-brackets--&#34;&gt;Round brackets &lt;code&gt;( )&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Round brackets are used in PowerShell to group an expression or command, or to enclose the parameters for .NET methods.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -158,6 +500,16 @@ It was just a test environment, but I thought it would be useful or interesting 
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;exclude-current-branch-and-main-branch&#34;&gt;Exclude current branch and &amp;ldquo;main&amp;rdquo; branch&lt;/h2&gt;
 &lt;p&gt;Then we &lt;code&gt;|&lt;/code&gt;-pipe it into the following, to exclude the currently selected branch (marked with an asterisk &lt;code&gt;*&lt;/code&gt;) and the &lt;code&gt;main&lt;/code&gt; branch. This regex filter query does not aim to be universally good. So if you have branches that include the term &lt;code&gt;main&lt;/code&gt; in their name, those will be excluded aswell. I didn&amp;rsquo;t care to optimize, because I don&amp;rsquo;t name my branches in such a weird way.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams PowerShell: Authentication error / ActiveX control cannot be instantiated</title>
+      <link>https://diecknet.de/en/2022/06/13/microsoft-teams-powershell-authentication-error-activex/</link>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2022/06/13/microsoft-teams-powershell-authentication-error-activex/</guid>
+      <description>&lt;p&gt;Today I received a strange error when connecting to Teams PowerShell. I am noting it here briefly because after 15 seconds of searching the web I did not find a solution 😇. Everything I found initially had nothing to do with Teams.&lt;/p&gt;
+&lt;p&gt;I simply wanted to connect to the Microsoft Teams administration with PowerShell using &lt;code&gt;Connect-MicrosoftTeams&lt;/code&gt;. Without specifying any additional parameters, just log in normally with a personalized admin account and then confirm MFA and so on. But before I was even asked for a username, everything was red.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -283,6 +635,44 @@ Set all the self-explanatory options like Name, Description, User Account, Trigg
       <guid>https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
       <description>&lt;p&gt;I created a PowerShell script to automatically deploy an Azure NAT-Gateway into an Azure Virtual Desktop environment. That&amp;rsquo;s useful, if you to need one static IP-Address for your AVD machines. I created the script as a submission for the &lt;a href=&#34;https://getnerdio.com/nerdio-hackathon/&#34; target=&#34;_blank&#34; &gt;Nerdio Hackathon 2021&lt;/a&gt;. My first Hackathon attendance :^).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update 2021-10-05&lt;/strong&gt; - I actually won first place, but apparently not many people participated in the contest. The Nerdio team are a bit disappointed, so they didn&amp;rsquo;t publish any announcements. Anyway I got a 1000 USD Amazon Gift Card 🤩.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams: Disable Custom Backgrounds</title>
+      <link>https://diecknet.de/en/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
+      <description>&lt;p&gt;After Microsoft introduced virtual backgrounds for MS Teams meetings, I saw some interesting background images in meetings. Nevertheless, I do not think it is necessary to prohibit the free selection of backgrounds. Since this is handled differently by different companies, I describe the configuration options here. The meeting policy can be used to restrict the background selection.&lt;/p&gt;
+&lt;h2 id=&#34;configuration-options&#34;&gt;Configuration options&lt;/h2&gt;
+&lt;p&gt;The option &amp;ldquo;VideoFiltersMode&amp;rdquo; can currently only be set via PowerShell, not via the Teams Admin Center. The following configuration options exist:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Set a File Date with PowerShell</title>
+      <link>https://diecknet.de/en/2020/09/08/Set-File-Date-with-PowerShell/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2020/09/08/Set-File-Date-with-PowerShell/</guid>
+      <description>&lt;p&gt;The date of a file can be set or manipulated arbitrarily with PowerShell. In the screenshot you can see a few example values that have been set arbitrarily. The procedure has been tested with Windows PowerShell 5.1.&lt;/p&gt;
+&lt;p&gt;With &lt;code&gt;Get-Member&lt;/code&gt; you can display the time attributes of a file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; example.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-09-08_DateAttributes.png&#34; alt=&#34;File date attributes displayed&#34;  title=&#34;File date attributes displayed&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;The interesting attributes are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CreationTime (when the file was created)&lt;/li&gt;
+&lt;li&gt;LastAccessTime (when the file was last accessed)&lt;/li&gt;
+&lt;li&gt;LastWriteTime (when the file was last modified)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As you can see from the &lt;code&gt;{get;set;}&lt;/code&gt; at the end, you can not only read these attributes, but also set them.&lt;/p&gt;</description>
     </item>
     
     <item>

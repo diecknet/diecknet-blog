@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Security Identifiers on diecknet</title>
+    <link>https://diecknet.de/en/tags/security-identifiers/</link>
+    <description>Recent content in Security Identifiers on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Tue, 20 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/security-identifiers/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell: Checking whether you have admin rights</title>
+      <link>https://diecknet.de/en/2024/02/20/powershell-check-for-admin-rights/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/02/20/powershell-check-for-admin-rights/</guid>
+      <description>&lt;p&gt;If you create a PowerShell script that should perform actions that require administrator rights, you can also check this in code. This allows you to make sure that your script can be executed successfully. The easiest way is with a &lt;code&gt;Requires&lt;/code&gt; statement.
+&lt;strong&gt;&lt;a href=&#34;https://youtu.be/ACUCARq7joM&#34; target=&#34;_blank&#34; &gt;🎬 I also created a video on this topic.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;requiring-admin-rights-with-a-requires-statement&#34;&gt;Requiring admin rights with a Requires statement&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;Requires&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;-RunAsAdministrator&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This line can be inserted at any point in the PowerShell code. I would always place it fairly near the top of the script so it is easy to see. But the position technically does not matter. So if the &lt;code&gt;#Requires&lt;/code&gt; statement is in the code, it is evaluated before the rest of the code is executed. Depending on whether administrator rights are present or not, an error is returned.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finding localized Security Identifier names in PowerShell</title>
+      <link>https://diecknet.de/en/2024/01/17/powershell-localized-security-identifiers/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/01/17/powershell-localized-security-identifiers/</guid>
+      <description>&lt;p&gt;Security Identifiers are used to identify specific security principals or groups in Windows. Unfortunately, their names are localized, so for example they differ between a German and an English system.&lt;/p&gt;
+&lt;p&gt;For example, the built-in Administrators group is called &lt;code&gt;BUILTIN\ADMINISTRATORS&lt;/code&gt; in English and &lt;code&gt;VORDEFINIERT\Administratoren&lt;/code&gt; in German. Or the English &lt;code&gt;NT AUTHORITY\SYSTEM&lt;/code&gt; becomes &lt;code&gt;NT-AUTORITÄT\SYSTEM&lt;/code&gt; on a German system. &lt;strong&gt;I think that is really weird.&lt;/strong&gt; Suddenly a space is replaced by a hyphen. Well, whatever.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

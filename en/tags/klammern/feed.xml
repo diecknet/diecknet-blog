@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Klammern on diecknet</title>
+    <link>https://diecknet.de/en/tags/klammern/</link>
+    <description>Recent content in Klammern on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Tue, 28 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/klammern/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The different brackets in PowerShell</title>
+      <link>https://diecknet.de/en/2023/11/28/powershell-brackets/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2023/11/28/powershell-brackets/</guid>
+      <description>&lt;p&gt;When is which bracket the right one in PowerShell?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Different brackets in PowerShell&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;() {} []&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The brackets have different purposes. By the way, I would not count the greater-than and less-than signs &lt;code&gt;&amp;lt;&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt; as brackets. For all real brackets, if you open one, you must close it again.&lt;/p&gt;
+&lt;h2 id=&#34;round-brackets--&#34;&gt;Round brackets &lt;code&gt;( )&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Round brackets are used in PowerShell to group an expression or command, or to enclose the parameters for .NET methods.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

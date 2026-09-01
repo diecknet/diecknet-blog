@@ -8,7 +8,18 @@
     <language>en</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Mon, 25 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/regex/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/regex/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Regular Expressions in PowerShell</title>
+      <link>https://diecknet.de/en/2024/03/19/powershell-regex/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/03/19/powershell-regex/</guid>
+      <description>&lt;p&gt;Regular expressions are patterns that can be used to compare text or extract information from text. For example, you can use them to check whether a log file from a program contains the string &amp;ldquo;Error&amp;rdquo; to see whether an error occurred. Or simply to see whether a string matches a certain pattern, such as an email address.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I have also created a &lt;a href=&#34;https://youtu.be/Zk6iHL1T94k&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;These patterns exist in many programming languages. The details of the implementations can vary, though. PowerShell and the RegEx engine used by PowerShell are based on .NET. For that reason, the .NET-specific behavior matters most here.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Using PowerShell Regular Expressions to match against filenames</title>
       <link>https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/</link>

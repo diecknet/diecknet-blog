@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Freigegebenes Postfach on diecknet</title>
+    <link>https://diecknet.de/en/tags/freigegebenes-postfach/</link>
+    <description>Recent content in Freigegebenes Postfach on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/freigegebenes-postfach/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Outlook Cache Mode for Shared Mailboxes</title>
+      <link>https://diecknet.de/en/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</link>
+      <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
+      <description>&lt;p&gt;In newer Microsoft Outlook versions it is no longer possible to retrieve additional emails in cache mode for shared mailboxes. Instead, the following message appears at the end of the email list:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are more items in this folder on the server.&lt;/p&gt;
+&lt;p&gt;Connect to the server to view them&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; alt=&#34;Outlook message: There are more items in this folder on the server. Connect to the server to view them.&#34;  title=&#34;Outlook message: There are more items in this folder on the server. Connect to the server to view them.&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

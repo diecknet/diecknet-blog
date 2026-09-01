@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Measure on diecknet</title>
+    <link>https://diecknet.de/en/tags/measure/</link>
+    <description>Recent content in Measure on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Tue, 12 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/measure/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Measuring the Execution Time of PowerShell Code</title>
+      <link>https://diecknet.de/en/2024/03/12/powershell-measure-execution-time/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/03/12/powershell-measure-execution-time/</guid>
+      <description>&lt;p&gt;If you want to optimize the speed of your PowerShell code, it makes sense to measure times. There are several ways to measure how long a piece of PowerShell code takes to run.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎬 I have also created a &lt;a href=&#34;https://youtu.be/-tpR-KQpPq4&#34; target=&#34;_blank&#34; &gt;video on this topic&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;option-1-measure-command&#34;&gt;Option 1: Measure-Command&lt;/h2&gt;
+&lt;p&gt;A simple way is to use the &lt;code&gt;Measure-Command&lt;/code&gt; cmdlet. It accepts a script block, which is then executed. We then get a measurement result in the form of a &lt;code&gt;TimeSpan&lt;/code&gt; object. A simple example:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

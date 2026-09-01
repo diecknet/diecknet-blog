@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Activedirectory on diecknet</title>
+    <link>https://diecknet.de/en/tags/activedirectory/</link>
+    <description>Recent content in Activedirectory on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/activedirectory/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Azure AD Connect (Video)</title>
+      <link>https://diecknet.de/en/2020/06/23/Install-Azure-AD-Connect-Video/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2020/06/23/Install-Azure-AD-Connect-Video/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect Install (YouTube)&#34;  title=&#34;Azure AD Connect Install (YouTube)&#34;  /&gt;
+&lt;/a&gt;
+I created a &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;YouTube video&lt;/a&gt; about configuring Azure AD Connect and Password Hash Sync. In this blog post I only refer to a few related links. Also watch the previous &lt;a href=&#34;https://diecknet.de/2020/06/05/Plan-and-Prepare-Azure-AD-Connect-Video/&#34; &gt;video on planning and preparing Azure AD Connect&lt;/a&gt; first!&lt;/p&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download Azure AD Connect: &lt;a href=&#34;https://go.microsoft.com/fwlink/?LinkId=615771&#34; target=&#34;_blank&#34; &gt;Azure AD Connect Download (Microsoft.com)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Diecknet blog post: &lt;a href=&#34;https://diecknet.de/2020/06/05/Plan-and-Prepare-Azure-AD-Connect-Video/&#34; &gt;Plan and Prepare Azure AD Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;YouTube video: &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;Azure AD Connect: Plan and Prepare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hardware requirements for the Azure AD Connect server: &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites#hardware-requirements-for-azure-ad-connect&#34; target=&#34;_blank&#34; &gt;Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.microsoft.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Plan and Prepare Azure AD Connect Correctly (Video)</title>
+      <link>https://diecknet.de/en/2020/06/05/Plan-and-Prepare-Azure-AD-Connect-Video/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2020/06/05/Plan-and-Prepare-Azure-AD-Connect-Video/</guid>
+      <description>&lt;p&gt;Planning and preparing Azure AD Connect is important. I created a &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;YouTube video&lt;/a&gt; on this topic. In this article I link to the most important sources and documentation articles. I also created a decision tree for finding the right Azure AD Connect architecture.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect: Plan and Prepare (YouTube)&#34;  title=&#34;Azure AD Connect: Plan and Prepare (YouTube)&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;azure-ad-connect-decision-tree&#34;&gt;Azure AD Connect Decision Tree&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://data.diecknet.de/dl/2020-06-05/Azure_AD_Connect_Entscheidungsbaum.zip&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-05_Azure_AD_Connect_Entscheidungsbaum.jpg&#34; alt=&#34;Azure AD Connect Decision Tree (free download)&#34;  title=&#34;Azure AD Connect Decision Tree (free download)&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

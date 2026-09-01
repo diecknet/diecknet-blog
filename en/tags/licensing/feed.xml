@@ -8,7 +8,29 @@
     <language>en</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Wed, 10 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/licensing/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/licensing/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft 365 Self Service Purchase Licenses</title>
+      <link>https://diecknet.de/en/2020/12/01/M365-Self-Service-Purchase/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2020/12/01/M365-Self-Service-Purchase/</guid>
+      <description>&lt;p&gt;Since about the end of 2019, Microsoft has introduced self service purchase licenses for Microsoft 365. With this new feature, end users in an Office 365 tenant can buy licenses for some products themselves. As of 2020-12-01, the following products are available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Power Apps per user&lt;/li&gt;
+&lt;li&gt;Power Automate per user&lt;/li&gt;
+&lt;li&gt;Power Automate RPA&lt;/li&gt;
+&lt;li&gt;Power BI Pro&lt;/li&gt;
+&lt;li&gt;Power BI Premium (standalone)&lt;/li&gt;
+&lt;li&gt;Project Plan 1&lt;/li&gt;
+&lt;li&gt;Project Plan 3&lt;/li&gt;
+&lt;li&gt;Visio Plan 1&lt;/li&gt;
+&lt;li&gt;Visio Plan 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;explanation-video&#34;&gt;Explanation video&lt;/h2&gt;
+&lt;p&gt;I tried the license purchase as an end user and documented it. I show how self-service purchase of licenses works and provide guidance on whether the feature should be disabled in your organization in the following video:&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Office 365 Trial Licenses</title>
       <link>https://diecknet.de/en/2020/06/10/Office-365-Trials/</link>

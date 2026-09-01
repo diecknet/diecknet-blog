@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Azure AD Connect on diecknet</title>
+    <link>https://diecknet.de/en/tags/Azure-AD-Connect/</link>
+    <description>Recent content in Azure AD Connect on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/Azure-AD-Connect/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing synchronized Exchange objects without an Exchange Server</title>
+      <link>https://diecknet.de/en/2023/04/12/managing-synchronized-exchange-objects-without-an-exchange-server/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2023/04/12/managing-synchronized-exchange-objects-without-an-exchange-server/</guid>
+      <description>&lt;p&gt;It has been possible for some time to use the Exchange Server management tools without a full Exchange Server.
+Most guides assume that at least one Exchange Server already existed and was then removed. And the &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft documentation only briefly mentions the topic&lt;/a&gt; and does not really explain it.&lt;/p&gt;
+&lt;p&gt;In this post I look at a scenario that affects many smaller companies:
+In the Microsoft 365 Admin Center it says:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Set Azure AD Connect Staging Mode via PowerShell</title>
+      <link>https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a quick tip on howto enable or disable the Staging Mode in Azure AD Connect via PowerShell. Sadly there is no native Cmdlet in the style of &lt;code&gt;Set-ADSyncStagingMode&lt;/code&gt; or something like that.&lt;/p&gt;
+&lt;p&gt;In this article I&amp;rsquo;ll first explain the approach and then later on list the full command block you can use. So feel free to skip below to the end of the post. The following PowerShell Cmdlets have to get executed on the Azure AD Connect Server.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,7 +8,17 @@
     <language>en</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/Exchange/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/Exchange/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send emails with PowerShell and Microsoft Graph</title>
+      <link>https://diecknet.de/en/2025/04/10/powershell-send-mails-via-ms-graph/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2025/04/10/powershell-send-mails-via-ms-graph/</guid>
+      <description>&lt;p&gt;Sending emails via PowerShell and the Microsoft Graph API is unfortunately not as simple as with the classic &lt;code&gt;Send-MailMessage&lt;/code&gt; cmdlet. I also recently published &lt;a href=&#34;https://diecknet.de/en/2025/03/23/powershell-send-mailmessage/&#34; &gt;a blog post about the classic approach&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nevertheless, there are several reasons to prefer sending mail via Microsoft Graph. In October 2025, plaintext authentication (Basic Authentication) for SMTP sending in Exchange Online is expected to be turned off. So if Exchange Online is your only email system, but you want to send emails automatically, MS Graph is the right choice. Alternatively, of course, you could also purchase (or host) an additional email system.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Exchange EAC stopped working after decomissioning all Mailbox Databases</title>
       <link>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
@@ -22,6 +32,18 @@ I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exch
     </item>
     
     <item>
+      <title>Managing synchronized Exchange objects without an Exchange Server</title>
+      <link>https://diecknet.de/en/2023/04/12/managing-synchronized-exchange-objects-without-an-exchange-server/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2023/04/12/managing-synchronized-exchange-objects-without-an-exchange-server/</guid>
+      <description>&lt;p&gt;It has been possible for some time to use the Exchange Server management tools without a full Exchange Server.
+Most guides assume that at least one Exchange Server already existed and was then removed. And the &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft documentation only briefly mentions the topic&lt;/a&gt; and does not really explain it.&lt;/p&gt;
+&lt;p&gt;In this post I look at a scenario that affects many smaller companies:
+In the Microsoft 365 Admin Center it says:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Exchange Server Setup Incomplete but fails to complete</title>
       <link>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
@@ -31,6 +53,21 @@ I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exch
 It was just a test environment, but I thought it would be useful or interesting to drill down on that issue.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll guide you through my troubleshooting steps / thought process.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2022/2022-06-22_Exchange_Server_Incomplete_Installation_Detected.png&#34; alt=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  title=&#34;Exchange Server 2016 CU23 Setup Assistant - Incomplete Installation Detected&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Outlook Cache Mode for Shared Mailboxes</title>
+      <link>https://diecknet.de/en/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</link>
+      <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
+      <description>&lt;p&gt;In newer Microsoft Outlook versions it is no longer possible to retrieve additional emails in cache mode for shared mailboxes. Instead, the following message appears at the end of the email list:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are more items in this folder on the server.&lt;/p&gt;
+&lt;p&gt;Connect to the server to view them&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png&#34; alt=&#34;Outlook message: There are more items in this folder on the server. Connect to the server to view them.&#34;  title=&#34;Outlook message: There are more items in this folder on the server. Connect to the server to view them.&#34;  /&gt;
 &lt;/a&gt;&lt;/p&gt;</description>
     </item>
     

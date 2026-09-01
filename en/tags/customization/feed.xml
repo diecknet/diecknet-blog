@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Customization on diecknet</title>
+    <link>https://diecknet.de/en/tags/customization/</link>
+    <description>Recent content in Customization on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/customization/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Profiles Explained (with Examples)</title>
+      <link>https://diecknet.de/en/2024/03/05/powershell-profiles/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/03/05/powershell-profiles/</guid>
+      <description>&lt;p&gt;PowerShell profiles let you customize your PowerShell. For example, so it looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; alt=&#34;PowerShell console customized with Oh My Posh and the Blue Owl theme&#34;  title=&#34;PowerShell console customized with Oh My Posh and the Blue Owl theme&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Or you can configure it to show a splash screen at startup, such as with Winfetch:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_Winfetch.jpg&#34; alt=&#34;Example of a Winfetch information screen&#34;  title=&#34;Example of a Winfetch information screen&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Or you can also store your own functions and variables so they are immediately available every time you start PowerShell.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

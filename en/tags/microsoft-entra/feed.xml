@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsoft Entra on diecknet</title>
+    <link>https://diecknet.de/en/tags/microsoft-entra/</link>
+    <description>Recent content in Microsoft Entra on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/microsoft-entra/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entra Connect: Soft Match and Hard Match</title>
+      <link>https://diecknet.de/en/2024/12/16/entra-connect-soft-and-hard-match/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2024/12/16/entra-connect-soft-and-hard-match/</guid>
+      <description>&lt;p&gt;In this post, I will explain how Entra Connect merges identities and then continues to track them in operation. Some points could be explored in more depth, but these are the most important fundamentals in my opinion.&lt;/p&gt;
+&lt;p&gt;Everything I describe here is usually relevant for both classic Entra Connect Sync and the newer Entra Cloud Sync. If something only applies to one of the two sync tools, I will point that out explicitly. Otherwise, for simplicity, I will just write Entra Connect below when I mean both.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

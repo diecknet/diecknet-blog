@@ -22,6 +22,67 @@ You could still use App Registrations in Entra ID, but if you really just want t
     </item>
     
     <item>
+      <title>Microsoft Teams PowerShell: Authentication error / ActiveX control cannot be instantiated</title>
+      <link>https://diecknet.de/en/2022/06/13/microsoft-teams-powershell-authentication-error-activex/</link>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2022/06/13/microsoft-teams-powershell-authentication-error-activex/</guid>
+      <description>&lt;p&gt;Today I received a strange error when connecting to Teams PowerShell. I am noting it here briefly because after 15 seconds of searching the web I did not find a solution 😇. Everything I found initially had nothing to do with Teams.&lt;/p&gt;
+&lt;p&gt;I simply wanted to connect to the Microsoft Teams administration with PowerShell using &lt;code&gt;Connect-MicrosoftTeams&lt;/code&gt;. Without specifying any additional parameters, just log in normally with a personalized admin account and then confirm MFA and so on. But before I was even asked for a username, everything was red.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams: Disable Custom Backgrounds</title>
+      <link>https://diecknet.de/en/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</link>
+      <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
+      <description>&lt;p&gt;After Microsoft introduced virtual backgrounds for MS Teams meetings, I saw some interesting background images in meetings. Nevertheless, I do not think it is necessary to prohibit the free selection of backgrounds. Since this is handled differently by different companies, I describe the configuration options here. The meeting policy can be used to restrict the background selection.&lt;/p&gt;
+&lt;h2 id=&#34;configuration-options&#34;&gt;Configuration options&lt;/h2&gt;
+&lt;p&gt;The option &amp;ldquo;VideoFiltersMode&amp;rdquo; can currently only be set via PowerShell, not via the Teams Admin Center. The following configuration options exist:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft 365 Self Service Purchase Licenses</title>
+      <link>https://diecknet.de/en/2020/12/01/M365-Self-Service-Purchase/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2020/12/01/M365-Self-Service-Purchase/</guid>
+      <description>&lt;p&gt;Since about the end of 2019, Microsoft has introduced self service purchase licenses for Microsoft 365. With this new feature, end users in an Office 365 tenant can buy licenses for some products themselves. As of 2020-12-01, the following products are available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Power Apps per user&lt;/li&gt;
+&lt;li&gt;Power Automate per user&lt;/li&gt;
+&lt;li&gt;Power Automate RPA&lt;/li&gt;
+&lt;li&gt;Power BI Pro&lt;/li&gt;
+&lt;li&gt;Power BI Premium (standalone)&lt;/li&gt;
+&lt;li&gt;Project Plan 1&lt;/li&gt;
+&lt;li&gt;Project Plan 3&lt;/li&gt;
+&lt;li&gt;Visio Plan 1&lt;/li&gt;
+&lt;li&gt;Visio Plan 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;explanation-video&#34;&gt;Explanation video&lt;/h2&gt;
+&lt;p&gt;I tried the license purchase as an end user and documented it. I show how self-service purchase of licenses works and provide guidance on whether the feature should be disabled in your organization in the following video:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Azure AD Connect (Video)</title>
+      <link>https://diecknet.de/en/2020/06/23/Install-Azure-AD-Connect-Video/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2020/06/23/Install-Azure-AD-Connect-Video/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect Install (YouTube)&#34;  title=&#34;Azure AD Connect Install (YouTube)&#34;  /&gt;
+&lt;/a&gt;
+I created a &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;YouTube video&lt;/a&gt; about configuring Azure AD Connect and Password Hash Sync. In this blog post I only refer to a few related links. Also watch the previous &lt;a href=&#34;https://diecknet.de/2020/06/05/Plan-and-Prepare-Azure-AD-Connect-Video/&#34; &gt;video on planning and preparing Azure AD Connect&lt;/a&gt; first!&lt;/p&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download Azure AD Connect: &lt;a href=&#34;https://go.microsoft.com/fwlink/?LinkId=615771&#34; target=&#34;_blank&#34; &gt;Azure AD Connect Download (Microsoft.com)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Diecknet blog post: &lt;a href=&#34;https://diecknet.de/2020/06/05/Plan-and-Prepare-Azure-AD-Connect-Video/&#34; &gt;Plan and Prepare Azure AD Connect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;YouTube video: &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;Azure AD Connect: Plan and Prepare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hardware requirements for the Azure AD Connect server: &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites#hardware-requirements-for-azure-ad-connect&#34; target=&#34;_blank&#34; &gt;Prerequisites for Azure AD Connect - Hardware requirements for Azure AD Connect (docs.microsoft.com)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
       <title>Office 365 Trial Licenses</title>
       <link>https://diecknet.de/en/2020/06/10/Office-365-Trials/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
@@ -29,6 +90,20 @@ You could still use App Registrations in Entra ID, but if you really just want t
       <guid>https://diecknet.de/en/2020/06/10/Office-365-Trials/</guid>
       <description>&lt;p&gt;You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You&amp;rsquo;ll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services.
 A list of links to the trial licenes is further below in this article.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Plan and Prepare Azure AD Connect Correctly (Video)</title>
+      <link>https://diecknet.de/en/2020/06/05/Plan-and-Prepare-Azure-AD-Connect-Video/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2020/06/05/Plan-and-Prepare-Azure-AD-Connect-Video/</guid>
+      <description>&lt;p&gt;Planning and preparing Azure AD Connect is important. I created a &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;YouTube video&lt;/a&gt; on this topic. In this article I link to the most important sources and documentation articles. I also created a decision tree for finding the right Azure AD Connect architecture.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect: Plan and Prepare (YouTube)&#34;  title=&#34;Azure AD Connect: Plan and Prepare (YouTube)&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;azure-ad-connect-decision-tree&#34;&gt;Azure AD Connect Decision Tree&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://data.diecknet.de/dl/2020-06-05/Azure_AD_Connect_Entscheidungsbaum.zip&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-05_Azure_AD_Connect_Entscheidungsbaum.jpg&#34; alt=&#34;Azure AD Connect Decision Tree (free download)&#34;  title=&#34;Azure AD Connect Decision Tree (free download)&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsoft Graph on diecknet</title>
+    <link>https://diecknet.de/en/tags/microsoft-graph/</link>
+    <description>Recent content in Microsoft Graph on diecknet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/microsoft-graph/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send emails with PowerShell and Microsoft Graph</title>
+      <link>https://diecknet.de/en/2025/04/10/powershell-send-mails-via-ms-graph/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2025/04/10/powershell-send-mails-via-ms-graph/</guid>
+      <description>&lt;p&gt;Sending emails via PowerShell and the Microsoft Graph API is unfortunately not as simple as with the classic &lt;code&gt;Send-MailMessage&lt;/code&gt; cmdlet. I also recently published &lt;a href=&#34;https://diecknet.de/en/2025/03/23/powershell-send-mailmessage/&#34; &gt;a blog post about the classic approach&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nevertheless, there are several reasons to prefer sending mail via Microsoft Graph. In October 2025, plaintext authentication (Basic Authentication) for SMTP sending in Exchange Online is expected to be turned off. So if Exchange Online is your only email system, but you want to send emails automatically, MS Graph is the right choice. Alternatively, of course, you could also purchase (or host) an additional email system.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
