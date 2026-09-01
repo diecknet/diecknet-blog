@@ -16,7 +16,7 @@ This can be useful if, for example, you want to combine several files into a ZIP
 You can create a ZIP archive with the `Compress-Archive` cmdlet:
 
 ```powershell
-Compress-Archive -Path "MeineOriginalDatei.txt" -DestinationPath "MeineGezippteDatei.zip"
+Compress-Archive -Path "MyOriginalFile.txt" -DestinationPath "MyZippedFile.zip"
 ```
 
 ### Adjust the compression level
@@ -24,8 +24,8 @@ Compress-Archive -Path "MeineOriginalDatei.txt" -DestinationPath "MeineGezippteD
 Optionally, you can specify a compression level. If you do not specify the parameter, the default option is "Optimal", which should already compress as well as possible. This requires a bit more processing power when packing and unpacking, but can save disk space. Alternatively, there are the options "Fastest", which is faster but produces a larger archive, and "NoCompression", which does not compress at all and just packages the files into a ZIP file.
 
 ```powershell
-Compress-Archive -Path "MeineOriginalDatei.txt" -DestinationPath "MeineGezippteDatei-Fastest.zip" -CompressionLevel Fastest
-Compress-Archive -Path "MeineOriginalDatei.txt" -DestinationPath "MeineGezippteDatei-NoCompression.zip" -CompressionLevel NoCompression
+Compress-Archive -Path "MyOriginalFile.txt" -DestinationPath "MyZippedFile-Fastest.zip" -CompressionLevel Fastest
+Compress-Archive -Path "MyOriginalFile.txt" -DestinationPath "MyZippedFile-NoCompression.zip" -CompressionLevel NoCompression
 ```
 
 ### Zip multiple files
@@ -35,19 +35,19 @@ There are several ways to zip multiple files:
 1. You can simply provide several values to the `-Path` parameter and separate them with commas.
 
     ```powershell
-    Compress-Archive -Path "MeineOriginalDatei.txt","beispiel.bmp" -DestinationPath "MeineGezippteDatei2.zip"
+    Compress-Archive -Path "MyOriginalFile.txt","example.bmp" -DestinationPath "MyZippedFile2.zip"
     ```
 
 2. Or you can specify an entire folder:
 
     ```powershell
-    Compress-Archive -Path "C:\temp" -DestinationPath "MeineGezippteDatei3.zip"
+    Compress-Archive -Path "C:\temp" -DestinationPath "MyZippedFile3.zip"
     ```
 
 3. Or work with wildcards:
 
     ```powershell
-    Compress-Archive -Path "*.jpg" -DestinationPath "MeineGezippteDatei4.zip"
+    Compress-Archive -Path "*.jpg" -DestinationPath "MyZippedFile4.zip"
     ```
 
 4. Or you can pass the information about which data to compress through the pipeline:
@@ -55,7 +55,7 @@ There are several ways to zip multiple files:
     ```powershell
     Get-ChildItem C:\temp |
         Where-Object {$_.LastWriteTime -ge "2024-06-01"} |
-        Compress-Archive -Path "C:\temp" -DestinationPath "MeineGezippteDatei5.zip"
+        Compress-Archive -Path "C:\temp" -DestinationPath "MyZippedFile5.zip"
     ```
 
 ### Add files to an existing ZIP file
@@ -63,7 +63,7 @@ There are several ways to zip multiple files:
 To add files to an existing ZIP file, you can specify the `-Update` parameter. If the ZIP archive already contains a file with the same name, it will be replaced. Otherwise, the file will simply be added to the ZIP archive.
 
 ```powershell
-Compress-Archive -Path "Hallo.docx" -DestinationPath "MeineGezippteDatei6.zip" -Update
+Compress-Archive -Path "Hallo.docx" -DestinationPath "MyZippedFile6.zip" -Update
 ```
 
 ## Extract
@@ -71,19 +71,19 @@ Compress-Archive -Path "Hallo.docx" -DestinationPath "MeineGezippteDatei6.zip" -
 You can extract ZIP files with the `Expand-Archive` cmdlet:
 
 ```powershell
-Expand-Archive -Path "MeineGezippteDatei6.zip"
+Expand-Archive -Path "MyZippedFile6.zip"
 ```
 
 By default, the cmdlet creates a subfolder in the current directory with the same name as the ZIP file. The data from the ZIP archive is then placed in this new folder. If you want to extract the archive content somewhere else, you can specify a destination folder with `-DestinationPath`.
 
 ```powershell
-Expand-Archive -Path "MeineGezippteDatei6.zip" -DestinationPath "MeinEntpackterOrdner"
+Expand-Archive -Path "MyZippedFile6.zip" -DestinationPath "MeinEntpackterOrdner"
 ```
 
 Or, if you want to extract it into the current folder, you can also specify a dot as the value for `-DestinationPath`:
 
 ```powershell
-Expand-Archive -Path "MeineGezippteDatei6.zip" -DestinationPath .
+Expand-Archive -Path "MyZippedFile6.zip" -DestinationPath .
 ```
 
 ## Closing words
