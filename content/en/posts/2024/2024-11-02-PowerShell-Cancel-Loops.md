@@ -151,7 +151,7 @@ $AllFolders = Get-ChildItem testdir\ -Directory
 }
 ```
 
-As a result, the parent process, meaning iterating through the folders, is aborted if a file larger than `1KB` is found.
+As a result, the parent loop, meaning iterating through the folders, is aborted if a file larger than `1KB` is found.
 
 I did not necessarily need to label the inner loop, but I find it more readable this way.
 And this also works for deeper nesting levels than just two loops. The main thing is that you label the loop you want to address from further inside.
