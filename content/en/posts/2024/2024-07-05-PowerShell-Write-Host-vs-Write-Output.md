@@ -83,8 +83,11 @@ Write-Host "Output produced with Write-Host is not visible in Azure Automation"
 If you think that `Write-Output` should generally be preferred: you do not actually need to use `Write-Output` at all. You can simply reference the object you want to output directly, whether it comes from a variable, a cmdlet, or something else, and it will be displayed. The only advantage is that it is a bit more obvious in the code that you deliberately want to generate output.
 
 ```powershell
-Write-Output "Hallo :)"
-# Return: Hallo :)
+Write-Output "Hello :)"
+# Return: Hello :)
+
+"Hello :)"
+# Return: Hello :)
 ```
 
 ## Note on output streams
