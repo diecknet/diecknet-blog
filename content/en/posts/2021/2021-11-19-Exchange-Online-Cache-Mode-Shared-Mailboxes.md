@@ -19,7 +19,7 @@ In newer Microsoft Outlook versions it is no longer possible to retrieve additio
 
 [![Outlook message: There are more items in this folder on the server. Connect to the server to view them.](/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png "Outlook message: There are more items in this folder on the server. Connect to the server to view them.")](/images/2021/2021-11-19-Es-sind-weitere-Elemente-in-diesem-Ordner-auf-dem-Server-vorhanden_Zoomed.png)
 
-In personal mailboxes, the option to retrieve more items from the server is instead provided. The text has been clumsily translated automatically, which fits the overall picture well:
+In personal mailboxes, the option to retrieve more items from the server is instead provided.
 
 > There are more items in this folder on the server.
 >
