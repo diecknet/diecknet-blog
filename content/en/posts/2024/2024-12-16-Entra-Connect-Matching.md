@@ -20,7 +20,7 @@ If no hard match is possible, Entra Connect tries to perform a soft match. I wil
 
 Regardless of how the match was performed, the previous cloud object is now marked as "synchronized" and receives the properties from the on-premises AD object. The object ID of the cloud user, user data such as mailboxes, OneDrive, Teams messages, and any existing permissions and cloud group memberships remain intact.
 
-If neither a hard match nor a soft match is possible, the object is created anew in Entra. It is also stored that the new Entra object and the on-premises AD object belong together so that a hard match can be possible in the future.
+If neither a hard match nor a soft match is possible, a new object is created in Entra. It is also stored that the new Entra object and the on-premises AD object belong together so that a hard match can be possible in the future.
 
 ## Soft Match
 
@@ -101,7 +101,7 @@ If I want a different or new on-premises AD user named "Hard Match #1 NEW" to be
 
 ```powershell
 $ImmutableID = [System.Convert]::FromBase64String("6Ao63cWrYUewgqCMI5Fodw==")
-Set-ADUser hardmatch1neu -Replace @{"mS-DS-ConsistencyGuid" = $ImmutableID}
+Set-ADUser hardmatch1new -Replace @{"mS-DS-ConsistencyGuid" = $ImmutableID}
 ```
 
 **Step 4:** Now we can include the new object in the Entra sync scope, usually by moving it to the appropriate organizational unit. If there should be another original object that has the same Immutable ID, that other object should be deleted.
@@ -153,21 +153,21 @@ However, I wanted to adjust my hard match so that the user "Hard Match 2 NEW" wo
 In that case, I do not need the previous "Hard Match 2 NEW" user in the cloud at all. The only thing I am interested in is its Immutable ID. I retrieve it once:
 
 ```powershell
-$UserNEU = Get-MgUser -UserId hardmatch2NEU@demotenant.de -Property Id,OnPremisesImmutableID
-$UserNEU | Select-Object OnPremisesImmutableId
+$UserNEW = Get-MgUser -UserId hardmatch2NEW@demotenant.de -Property Id,OnPremisesImmutableID
+$UserNEW | Select-Object OnPremisesImmutableId
 ```
 
 And then I temporarily move the source object in on-premises AD into an organizational unit that is not synchronized with Entra. After the next synchronization, the object should be deleted in Entra. However, it will still be found in Deleted users, and as long as it is there I cannot reuse the Immutable ID. That will throw an error.
 
 ```powershell
 # This will still throw an error:
-Update-MgUser -UserId $User.Id -OnPremisesImmutableId $UserNEU.OnPremisesImmutableId
+Update-MgUser -UserId $User.Id -OnPremisesImmutableId $UserNEW.OnPremisesImmutableId
 
 # Delete the user from "Deleted users":
-Remove-MgDirectoryDeletedItem -DirectoryObjectId $UserNEU.Id
+Remove-MgDirectoryDeletedItem -DirectoryObjectId $UserNEW.Id
 
 # Now update the old user for real:
-Update-MgUser -UserId $User.Id -OnPremisesImmutableId $UserNEU.OnPremisesImmutableId
+Update-MgUser -UserId $User.Id -OnPremisesImmutableId $UserNEW.OnPremisesImmutableId
 ```
 
 After that is done, I can move the user "Hard Match 2 NEW" back into the sync scope in on-premises AD by moving the object back into one of my normal OUs.
