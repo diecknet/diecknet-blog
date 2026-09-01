@@ -6,12 +6,14 @@
     <description>Recent content in Timespan on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Tue, 12 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/timespan/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Die Ausführungsdauer von PowerShell Code messen</title>
       <link>https://diecknet.de/de/2024/03/12/powershell-measure-execution-time/</link>
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/03/12/powershell-measure-execution-time/</guid>
       <description>&lt;p&gt;Wenn ihr euren PowerShell Code auf Geschwindigkeit optimieren wollt, dann macht es Sinn Zeiten zu messen. Es gibt mehrere Möglichkeiten um zu messen, wie lange die Ausführung von einem Stück PowerShell Code dauert.&lt;br&gt;
 &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/-tpR-KQpPq4&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;

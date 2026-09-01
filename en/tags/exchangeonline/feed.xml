@@ -6,12 +6,14 @@
     <description>Recent content in Exchangeonline on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/exchangeonline/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automate Exchange Online with Azure Automation in 2024</title>
       <link>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
       <description>&lt;p&gt;If you want to manage Exchange Online via Azure Automation, &lt;strong&gt;Managed Identities&lt;/strong&gt; is what you should use (this statement was last checked in June 2024).&lt;/p&gt;
 &lt;h2 id=&#34;legacy-approach&#34;&gt;Legacy approach&lt;/h2&gt;
@@ -23,7 +25,7 @@ You could still use App Registrations in Entra ID, but if you really just want t
       <title>Exchange Online: Apple Internet Accounts - Need admin approval</title>
       <link>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
       <description>&lt;p&gt;When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -38,7 +40,7 @@ Apple Internet Accounts needs permission to access resources in your organizatio
       <title>Outlook Certificate Warning after Office 365 Migration</title>
       <link>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Outlook Certificate Warning after Office 365 Migration&lt;br&gt;

@@ -6,12 +6,14 @@
     <description>Recent content in Constrained Language on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Sat, 20 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/constrained-language/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Set PowerShell ConstrainedLanguage Mode per Group Policy</title>
       <link>https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</link>
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</guid>
       <description>&lt;p&gt;PowerShell Language Modes are a way to restrict the functionality of PowerShell to increase the security of a system. Of course, this is only one small piece in a larger security strategy, so this alone is not sufficient protection for a system.&lt;/p&gt;
 &lt;p&gt;At the same time, it&amp;rsquo;s also a double-edged sword:&lt;br&gt;

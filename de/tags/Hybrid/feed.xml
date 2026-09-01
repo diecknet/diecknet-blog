@@ -2,16 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hybrid on diecknet</title>
-    <link>https://diecknet.de/de/tags/hybrid/</link>
+    <link>https://diecknet.de/de/tags/Hybrid/</link>
     <description>Recent content in Hybrid on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/hybrid/feed.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/Hybrid/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exchange EAC hat nach dem Außerbetriebnehmen aller Mailbox-Datenbanken nicht mehr funktioniert</title>
       <link>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
       <description>&lt;p&gt;Ich habe dieses seltsame Problem in einer Exchange-Server-Umgebung gehabt:
 Die Firma hat eine Exchange Server 2016 DAG gehabt und alle Benutzerpostfächer nach Exchange Online migriert. Danach habe ich einen frischen Exchange Server 2019 für Recipient Management und SMTP-Relay installiert.
@@ -23,7 +25,7 @@ Ich habe alle verbleibenden System- und Arbitration-Postfächer von den Exchange
       <title>Synchronisierte Exchange Objekte ohne Exchange Server verwalten</title>
       <link>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</guid>
       <description>&lt;p&gt;Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden.
 Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft Dokumentation verweist nur am Rande auf das Thema&lt;/a&gt; und erklärt nicht wirklich.&lt;/p&gt;
@@ -35,7 +37,7 @@ Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
       <title>Azure AD Connect installieren (Video)</title>
       <link>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect installieren (YouTube)&#34;  title=&#34;Azure AD Connect installieren (YouTube)&#34;  /&gt;
 &lt;/a&gt;&lt;br&gt;
@@ -53,7 +55,7 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>Azure AD Connect richtig planen und vorbereiten (Video)</title>
       <link>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</guid>
       <description>&lt;p&gt;Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;YouTube Video&lt;/a&gt; erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  title=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  /&gt;

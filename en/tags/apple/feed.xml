@@ -6,12 +6,14 @@
     <description>Recent content in Apple on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/apple/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exchange Online: Apple Internet Accounts - Need admin approval</title>
       <link>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
       <description>&lt;p&gt;When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:&lt;/p&gt;
 &lt;blockquote&gt;

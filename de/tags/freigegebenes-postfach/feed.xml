@@ -6,12 +6,14 @@
     <description>Recent content in Freigegebenes Postfach on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/freigegebenes-postfach/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Outlook Cache Modus für Freigegebene Postfächer</title>
       <link>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
       <description>&lt;p&gt;In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;

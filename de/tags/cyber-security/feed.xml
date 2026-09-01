@@ -6,12 +6,14 @@
     <description>Recent content in Cyber Security on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/cyber-security/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TryHackMe Blueprint – Cybersecurity-Write-up</title>
       <link>https://diecknet.de/de/2024/09/24/tryhackme-blueprint/</link>
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/09/24/tryhackme-blueprint/</guid>
       <description>&lt;p&gt;Ich habe mich entschieden, etwas mehr Penetration Testing/Ethical Hacking auszuprobieren. Das Folgende ist ein Write-Up zum &lt;a href=&#34;https://tryhackme.com/&#34; target=&#34;_blank&#34; &gt;TryHackMe&lt;/a&gt;-Room &lt;a href=&#34;https://tryhackme.com/r/room/blueprint&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Blueprint&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;aufgaben&#34;&gt;Aufgaben&lt;/h2&gt;
@@ -29,9 +31,9 @@
 &lt;p&gt;Also können wir davon ausgehen, dass es eine Windows-Maschine ist.&lt;/p&gt;
 &lt;h2 id=&#34;discovery&#34;&gt;Discovery&lt;/h2&gt;
 &lt;p&gt;Ich habe meine Kali-Linux-Maschine gestartet und auf meinem Desktop einen Ordner als Workspace angelegt.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
@@ -123,7 +125,7 @@
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;90
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# create a workspace&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# create a workspace&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir Desktop/blueprint &amp;amp;&amp;amp; &lt;span style=&#34;color:#d0a8ff&#34;&gt;cd&lt;/span&gt; Desktop/blueprint
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# portscan with nmap&lt;/span&gt;

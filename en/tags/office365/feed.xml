@@ -6,12 +6,14 @@
     <description>Recent content in Office365 on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/office365/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automate Exchange Online with Azure Automation in 2024</title>
       <link>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
       <description>&lt;p&gt;If you want to manage Exchange Online via Azure Automation, &lt;strong&gt;Managed Identities&lt;/strong&gt; is what you should use (this statement was last checked in June 2024).&lt;/p&gt;
 &lt;h2 id=&#34;legacy-approach&#34;&gt;Legacy approach&lt;/h2&gt;
@@ -23,7 +25,7 @@ You could still use App Registrations in Entra ID, but if you really just want t
       <title>Office 365 Trial Licenses</title>
       <link>https://diecknet.de/en/2020/06/10/Office-365-Trials/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/06/10/Office-365-Trials/</guid>
       <description>&lt;p&gt;You can register for a free Office 365/Microsoft 365 Tenant to try it out. Or you can add trial licenses to your existing tenant. You&amp;rsquo;ll get a 30 day trial phase. The trial contains 25 user licenses. After the expiration of the trial phase, you can delete the tenant or extend the trial. Alternatively you can purchase licenses to continue to use the services.
 A list of links to the trial licenes is further below in this article.&lt;/p&gt;</description>
@@ -33,7 +35,7 @@ A list of links to the trial licenes is further below in this article.&lt;/p&gt;
       <title>Exchange Online: Apple Internet Accounts - Need admin approval</title>
       <link>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
       <description>&lt;p&gt;When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -48,7 +50,7 @@ Apple Internet Accounts needs permission to access resources in your organizatio
       <title>Exchange Hybrid: HCW8064 OAuth configuration couldn&#39;t get performed</title>
       <link>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
       <description>&lt;p&gt;At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -61,7 +63,7 @@ Apple Internet Accounts needs permission to access resources in your organizatio
       <title>Outlook Certificate Warning after Office 365 Migration</title>
       <link>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Outlook Certificate Warning after Office 365 Migration&lt;br&gt;

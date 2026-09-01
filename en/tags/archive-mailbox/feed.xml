@@ -6,12 +6,14 @@
     <description>Recent content in Archive Mailbox on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Thu, 04 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/archive-mailbox/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Verify Auto-Expanding Archives in Exchange Online</title>
       <link>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
       <description>&lt;p&gt;If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.&lt;/p&gt;
 &lt;p&gt;In the Exchange Admin Center (EAC), open the info pane of the user&amp;rsquo;s mailbox. Click on &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;

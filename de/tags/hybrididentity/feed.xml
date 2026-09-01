@@ -6,12 +6,14 @@
     <description>Recent content in Hybrididentity on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/hybrididentity/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure AD Connect installieren (Video)</title>
       <link>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect installieren (YouTube)&#34;  title=&#34;Azure AD Connect installieren (YouTube)&#34;  /&gt;
 &lt;/a&gt;&lt;br&gt;
@@ -29,7 +31,7 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>Azure AD Connect richtig planen und vorbereiten (Video)</title>
       <link>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</guid>
       <description>&lt;p&gt;Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;YouTube Video&lt;/a&gt; erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  title=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  /&gt;

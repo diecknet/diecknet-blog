@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -6,130 +7,130 @@
     <lastmod>2026-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/"
+                hreflang="de"
+                href="https://diecknet.de/de/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/"
+                hreflang="en"
+                href="https://diecknet.de/en/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/posts/</loc>
     <lastmod>2026-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/posts/"
+                hreflang="de"
+                href="https://diecknet.de/de/posts/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/posts/"
+                hreflang="en"
+                href="https://diecknet.de/en/posts/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/powershell/</loc>
     <lastmod>2026-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/powershell/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/powershell/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/powershell/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/powershell/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2026/05/10/powershell-screenshots/</loc>
     <lastmod>2026-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2026/05/10/powershell-screenshots/"
+                hreflang="de"
+                href="https://diecknet.de/de/2026/05/10/powershell-screenshots/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2026/05/10/powershell-screenshots/"
+                hreflang="en"
+                href="https://diecknet.de/en/2026/05/10/powershell-screenshots/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/</loc>
     <lastmod>2026-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/windows/</loc>
     <lastmod>2026-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/windows/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/windows/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/windows/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/windows/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/</loc>
     <lastmod>2026-04-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2026/04/14/powershell-find-process-listening-port/"
+                hreflang="de"
+                href="https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/"
+                hreflang="en"
+                href="https://diecknet.de/en/2026/04/14/powershell-find-process-listening-port/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/unraid/</loc>
     <lastmod>2025-12-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/unraid/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/unraid/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/unraid/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/unraid/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2025/12/27/unraid-destroy-zfs-failed/</loc>
     <lastmod>2025-12-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2025/12/27/unraid-destroy-zfs-failed/"
+                hreflang="de"
+                href="https://diecknet.de/de/2025/12/27/unraid-destroy-zfs-failed/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2025/12/27/unraid-destroy-zfs-failed/"
+                hreflang="en"
+                href="https://diecknet.de/en/2025/12/27/unraid-destroy-zfs-failed/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/zfs/</loc>
     <lastmod>2025-12-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/zfs/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/zfs/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/zfs/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/zfs/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2025/05/19/powershell-pad-zeros/</loc>
@@ -139,13 +140,13 @@
     <lastmod>2025-04-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/Active-Directory/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/Active-Directory/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/Active-Directory/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/Active-Directory/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</loc>
@@ -154,17 +155,17 @@
     <loc>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://diecknet.de/de/tags/exchange/</loc>
+    <loc>https://diecknet.de/de/tags/Exchange/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exchange/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/Exchange/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exchange/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/Exchange/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/microsoft-graph/</loc>
@@ -186,26 +187,26 @@
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/adba/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/adba/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/adba/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/adba/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2024/11/25/powershell-show-adba-infos/"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/11/25/powershell-show-adba-infos/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/11/02/powershell-cancel-loops/</loc>
@@ -215,39 +216,39 @@
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/cyber-security/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/cyber-security/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/cyber-security/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/cyber-security/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/tryhackme/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/tryhackme/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/tryhackme/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/tryhackme/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/tryhackme/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/09/24/tryhackme-blueprint/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2024/09/24/tryhackme-blueprint/"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/09/24/tryhackme-blueprint/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2024/09/24/tryhackme-blueprint/"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/09/24/tryhackme-blueprint/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/09/20/powershell-wmi/</loc>
@@ -260,52 +261,52 @@
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/ntfs/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/ntfs/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/ntfs/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/ntfs/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</loc>
     <lastmod>2024-08-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2024/08/30/powershell-ntfs-alternate-data-streams/"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/08/30/powershell-ntfs-alternate-data-streams/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</loc>
     <lastmod>2024-08-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2024/08/21/powershell-calculated-properties/"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/08/21/powershell-calculated-properties/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2024/08/21/powershell-calculated-properties/"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/08/21/powershell-calculated-properties/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2024/08/07/powershell-active-directory-computers-filtering/"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/08/07/powershell-active-directory-computers-filtering/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/07/05/powershell-write-host-vs-write-output/</loc>
@@ -333,26 +334,26 @@
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/regex/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/regex/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/regex/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/regex/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/regular-expressions/</loc>
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/regular-expressions/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/regular-expressions/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/regular-expressions/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/regular-expressions/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/03/19/powershell-regex/</loc>
@@ -389,91 +390,91 @@
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/11ty/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/11ty/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/11ty/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/11ty/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/eleventy/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/eleventy/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/eleventy/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/eleventy/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/eleventy/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/hugo/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/hugo/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/hugo/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/hugo/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/ssg/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/ssg/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/ssg/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/ssg/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/ssg/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/static-site-generator/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/static-site-generator/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/static-site-generator/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/static-site-generator/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/static-site-generator/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2024/02/22/Migrating-from-11ty-to-Hugo/"
+                hreflang="de"
+                href="https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/"
+                hreflang="en"
+                href="https://diecknet.de/en/2024/02/22/Migrating-from-11ty-to-Hugo/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/website/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/website/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/website/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/website/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/website/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/admin-rights/</loc>
@@ -501,143 +502,143 @@
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/my-site/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/my-site/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/my-site/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/my-site/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/onedrive/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/onedrive/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/onedrive/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/onedrive/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/onedrive/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/onedrive-for-business/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/onedrive-for-business/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/onedrive-for-business/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/onedrive-for-business/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/onedrive-for-business/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2023/09/25/onedrive-for-business-auto-delegation-to-manager/"
+                hreflang="de"
+                href="https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/"
+                hreflang="en"
+                href="https://diecknet.de/en/2023/09/25/onedrive-for-business-auto-delegation-to-manager/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/sharepoint-online/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/sharepoint-online/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/sharepoint-online/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/sharepoint-online/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/sharepoint-online/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/constrained-language/</loc>
     <lastmod>2023-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/constrained-language/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/constrained-language/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/constrained-language/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/constrained-language/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/language-mode/</loc>
     <lastmod>2023-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/language-mode/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/language-mode/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/language-mode/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/language-mode/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</loc>
     <lastmod>2023-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/"
+                hreflang="de"
+                href="https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/"
+                hreflang="en"
+                href="https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/"
+                hreflang="de"
+                href="https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/"
+                hreflang="en"
+                href="https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/Exchange-Server/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/Exchange-Server/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="de"
                 href="https://diecknet.de/de/tags/Exchange-Server/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/Exchange-Server/"
+                />
   </url><url>
-    <loc>https://diecknet.de/de/tags/hybrid/</loc>
+    <loc>https://diecknet.de/de/tags/Hybrid/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/Hybrid/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://diecknet.de/en/tags/Hybrid/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/hybrid/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/AAD/</loc>
@@ -650,13 +651,13 @@
     <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/azure-ad-connect/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/azure-ad-connect/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/azure-ad-connect/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/azure-ad-connect/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</loc>
@@ -666,367 +667,367 @@
     <lastmod>2023-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/home-assistant/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/home-assistant/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/home-assistant/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/home-assistant/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/homeassistant/</loc>
     <lastmod>2023-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/homeassistant/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/homeassistant/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/homeassistant/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/homeassistant/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/notification/</loc>
     <lastmod>2023-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/notification/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/notification/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/notification/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/notification/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/ntfy.sh/</loc>
     <lastmod>2023-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/ntfy.sh/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/ntfy.sh/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/ntfy.sh/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/ntfy.sh/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2023/02/12/ntfy-sh-with-homeassistant/</loc>
     <lastmod>2023-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2023/02/12/ntfy-sh-with-homeassistant/"
+                hreflang="de"
+                href="https://diecknet.de/de/2023/02/12/ntfy-sh-with-homeassistant/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2023/02/12/ntfy-sh-with-homeassistant/"
+                hreflang="en"
+                href="https://diecknet.de/en/2023/02/12/ntfy-sh-with-homeassistant/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/azure/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/azure/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/azure/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/azure/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/azure/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/azureautomation/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/azureautomation/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/azureautomation/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/azureautomation/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/azureautomation/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/"
+                hreflang="de"
+                href="https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/"
+                hreflang="en"
+                href="https://diecknet.de/en/2023/01/09/Exchange-Online-per-Azure-Automation/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/exchangeonline/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exchangeonline/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/exchangeonline/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exchangeonline/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/exchangeonline/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/exo/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exo/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/exo/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exo/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/exo/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/microsoft365/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/microsoft365/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/microsoft365/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/microsoft365/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/microsoft365/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/office365/</loc>
     <lastmod>2024-06-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/office365/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/office365/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/office365/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/office365/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/azure-ad/</loc>
     <lastmod>2022-07-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/azure-ad/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/azure-ad/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/azure-ad/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/azure-ad/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</loc>
     <lastmod>2022-07-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/"
+                hreflang="de"
+                href="https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/"
+                hreflang="en"
+                href="https://diecknet.de/en/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/exchange-server-setup/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exchange-server-setup/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/exchange-server-setup/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exchange-server-setup/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/exchange-server-setup/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/"
+                hreflang="de"
+                href="https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/"
+                hreflang="en"
+                href="https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/troubleshooting/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/troubleshooting/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/troubleshooting/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/troubleshooting/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/troubleshooting/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2022/06/21/Git-on-Windows-remove-all-merged-branches/</loc>
     <lastmod>2022-06-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2022/06/21/Git-on-Windows-remove-all-merged-branches/"
+                hreflang="de"
+                href="https://diecknet.de/de/2022/06/21/Git-on-Windows-remove-all-merged-branches/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2022/06/21/Git-on-Windows-remove-all-merged-branches/"
+                hreflang="en"
+                href="https://diecknet.de/en/2022/06/21/Git-on-Windows-remove-all-merged-branches/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/git/</loc>
     <lastmod>2022-06-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/git/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/git/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/git/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/git/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/graph-api/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/graph-api/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/graph-api/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/graph-api/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/graph-api/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/microsoft-365/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/microsoft-365/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/microsoft-365/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/microsoft-365/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/microsoft-365/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</loc>
     <lastmod>2022-06-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/"
+                hreflang="de"
+                href="https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/"
+                hreflang="en"
+                href="https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</loc>
     <lastmod>2022-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://diecknet.de/de/tags/microsoftteams/</loc>
+    <loc>https://diecknet.de/de/tags/MicrosoftTeams/</loc>
     <lastmod>2022-06-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/MicrosoftTeams/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://diecknet.de/en/tags/MicrosoftTeams/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/microsoftteams/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/mfa/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/mfa/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/mfa/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/mfa/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/mfa/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/"
+                hreflang="de"
+                href="https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/"
+                hreflang="en"
+                href="https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/multi-factor-authentication/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/multi-factor-authentication/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/multi-factor-authentication/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/multi-factor-authentication/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/multi-factor-authentication/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</loc>
     <lastmod>2021-12-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/exchange-online/</loc>
     <lastmod>2021-11-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exchange-online/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/exchange-online/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exchange-online/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/exchange-online/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/freigegebenes-postfach/</loc>
@@ -1042,494 +1043,494 @@
     <lastmod>2021-11-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/booking-calendar/</loc>
     <lastmod>2021-11-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/booking-calendar/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/booking-calendar/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/booking-calendar/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/booking-calendar/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/microsoft-booking/</loc>
     <lastmod>2021-11-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/microsoft-booking/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/microsoft-booking/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/microsoft-booking/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/microsoft-booking/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/archive-mailbox/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/archive-mailbox/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/archive-mailbox/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/archive-mailbox/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/archive-mailbox/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</loc>
     <lastmod>2021-11-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/cloud/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/cloud/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/cloud/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/cloud/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/cloud/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/cloudflare/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/cloudflare/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/cloudflare/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/cloudflare/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/cloudflare/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/cloudflareworkers/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/cloudflareworkers/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/cloudflareworkers/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/cloudflareworkers/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/cloudflareworkers/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/10/27/My-simple-serverless-journey-part2/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/10/27/My-simple-serverless-journey-part2/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/ipaddress/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/ipaddress/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/ipaddress/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/ipaddress/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/ipaddress/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/php/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/php/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/php/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/php/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/php/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/serverless/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/serverless/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/serverless/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/serverless/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/serverless/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/simpleip/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/simpleip/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/simpleip/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/simpleip/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/simpleip/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/vercel/</loc>
     <lastmod>2021-10-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/vercel/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/vercel/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/vercel/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/vercel/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/filename/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/filename/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/filename/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/filename/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/filename/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/named-groups/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/named-groups/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/named-groups/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/named-groups/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/named-groups/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/10/25/PowerShell-Regular-Expression/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/10/25/PowerShell-Regular-Expression/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/10/25/PowerShell-Regular-Expression/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/10/25/PowerShell-Regular-Expression/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/regexp/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/regexp/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/regexp/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/regexp/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/regexp/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</loc>
     <lastmod>2021-10-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/10/13/PowerShell-Task-Scheduler/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/10/13/PowerShell-Task-Scheduler/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/task-scheduler/</loc>
     <lastmod>2021-10-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/task-scheduler/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/task-scheduler/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/task-scheduler/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/task-scheduler/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</loc>
     <lastmod>2021-10-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/microsoft-teams/</loc>
     <lastmod>2021-10-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/microsoft-teams/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/microsoft-teams/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/microsoft-teams/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/microsoft-teams/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/teams/</loc>
     <lastmod>2021-10-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/teams/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/teams/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/teams/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/teams/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/teams-audio-conferencing/</loc>
     <lastmod>2021-10-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/teams-audio-conferencing/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/teams-audio-conferencing/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/teams-audio-conferencing/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/teams-audio-conferencing/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/teams-dial-in-number/</loc>
     <lastmod>2021-10-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/teams-dial-in-number/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/teams-dial-in-number/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/teams-dial-in-number/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/teams-dial-in-number/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</loc>
     <lastmod>2021-08-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/08/18/TeamsAutoUpgrade-fail/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/08/18/TeamsAutoUpgrade-fail/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/SkypeForBusiness/</loc>
     <lastmod>2021-08-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/SkypeForBusiness/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/SkypeForBusiness/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/SkypeForBusiness/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/SkypeForBusiness/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</loc>
     <lastmod>2021-07-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/Microsoft.Online.SharePoint.PowerShell/</loc>
     <lastmod>2021-07-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/Microsoft.Online.SharePoint.PowerShell/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/Microsoft.Online.SharePoint.PowerShell/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/Microsoft.Online.SharePoint.PowerShell/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/Microsoft.Online.SharePoint.PowerShell/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/timezone/</loc>
     <lastmod>2021-07-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/timezone/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/timezone/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/timezone/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/timezone/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/teams-channel-retention/</loc>
     <lastmod>2021-06-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/teams-channel-retention/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/teams-channel-retention/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/teams-channel-retention/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/teams-channel-retention/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/</loc>
     <lastmod>2021-06-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/06/29/Deleted-Teams-Channel-Retention/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/06/29/Deleted-Teams-Channel-Retention/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/azure-virtual-desktop/</loc>
     <lastmod>2021-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/azure-virtual-desktop/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/azure-virtual-desktop/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/azure-virtual-desktop/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/azure-virtual-desktop/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</loc>
     <lastmod>2021-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/hackathon/</loc>
     <lastmod>2021-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/hackathon/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/hackathon/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/hackathon/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/hackathon/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/nerdio/</loc>
     <lastmod>2021-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/nerdio/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/nerdio/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/nerdio/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/nerdio/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/windows-virtual-desktop/</loc>
     <lastmod>2021-06-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/windows-virtual-desktop/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/windows-virtual-desktop/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/windows-virtual-desktop/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/windows-virtual-desktop/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/</loc>
     <lastmod>2021-05-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/"
+                hreflang="de"
+                href="https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/"
+                hreflang="en"
+                href="https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</loc>
@@ -1539,13 +1540,13 @@
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/licensing/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/licensing/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/licensing/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/licensing/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</loc>
@@ -1573,13 +1574,13 @@
     <lastmod>2020-06-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/azuread/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/azuread/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/azuread/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/azuread/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/azureadconnect/</loc>
@@ -1592,26 +1593,26 @@
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2020/06/10/Office-365-Trials/"
+                hreflang="de"
+                href="https://diecknet.de/de/2020/06/10/Office-365-Trials/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2020/06/10/Office-365-Trials/"
+                hreflang="en"
+                href="https://diecknet.de/en/2020/06/10/Office-365-Trials/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/trial/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/trial/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/trial/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/trial/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/trial/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</loc>
@@ -1621,345 +1622,345 @@
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/accessrights/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/accessrights/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/accessrights/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/accessrights/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/acl/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/acl/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/acl/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/acl/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/acl/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/fslogix/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/fslogix/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/fslogix/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/fslogix/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/fslogix/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/"
+                hreflang="de"
+                href="https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/"
+                hreflang="en"
+                href="https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/windowsvirtualdesktop/</loc>
     <lastmod>2020-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/windowsvirtualdesktop/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/windowsvirtualdesktop/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/windowsvirtualdesktop/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/windowsvirtualdesktop/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/apple/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/apple/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/apple/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/apple/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/apple/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/"
+                hreflang="de"
+                href="https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/"
+                hreflang="en"
+                href="https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/ios/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/ios/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/ios/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/ios/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/ios/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/iphone/</loc>
     <lastmod>2020-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/iphone/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/iphone/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/iphone/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/iphone/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/"
+                hreflang="de"
+                href="https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/"
+                hreflang="en"
+                href="https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/exchange2013/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exchange2013/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/exchange2013/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exchange2013/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/exchange2013/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/exchangehybrid/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exchangehybrid/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/exchangehybrid/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exchangehybrid/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/exchangehybrid/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/oauth/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/oauth/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/oauth/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/oauth/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/oauth/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</loc>
     <lastmod>2020-01-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/"
+                hreflang="de"
+                href="https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/"
+                hreflang="en"
+                href="https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/"
+                hreflang="de"
+                href="https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/"
+                hreflang="en"
+                href="https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/exchange2010/</loc>
     <lastmod>2019-12-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/exchange2010/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/exchange2010/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/exchange2010/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/exchange2010/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</loc>
     <lastmod>2019-12-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/"
+                hreflang="de"
+                href="https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/"
+                hreflang="en"
+                href="https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/about/</loc>
     <lastmod>2019-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/about/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/about/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/about/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/diecknet/</loc>
     <lastmod>2019-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/diecknet/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/diecknet/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/diecknet/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/diecknet/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2019/10/21/new-blog/</loc>
     <lastmod>2019-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/2019/10/21/new-blog/"
+                hreflang="de"
+                href="https://diecknet.de/de/2019/10/21/new-blog/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/2019/10/21/new-blog/"
+                hreflang="en"
+                href="https://diecknet.de/en/2019/10/21/new-blog/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/why/</loc>
     <lastmod>2019-10-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/why/"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/why/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/why/"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/why/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/about/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/about/"
+                hreflang="de"
+                href="https://diecknet.de/de/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/about/"
+                hreflang="en"
+                href="https://diecknet.de/en/about/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/archive/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/archive/"
+                hreflang="de"
+                href="https://diecknet.de/de/archive/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/archive/"
+                hreflang="en"
+                href="https://diecknet.de/en/archive/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/categories/"
+                hreflang="de"
+                href="https://diecknet.de/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/categories/"
+                hreflang="en"
+                href="https://diecknet.de/en/categories/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/privacy/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/privacy/"
+                hreflang="de"
+                href="https://diecknet.de/de/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/privacy/"
+                hreflang="en"
+                href="https://diecknet.de/en/privacy/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/services/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/services/"
+                hreflang="de"
+                href="https://diecknet.de/de/services/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/services/"
+                hreflang="en"
+                href="https://diecknet.de/en/services/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/legal/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/legal/"
+                hreflang="de"
+                href="https://diecknet.de/de/legal/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/legal/"
+                hreflang="en"
+                href="https://diecknet.de/en/legal/"
                 />
   </url>
 </urlset>

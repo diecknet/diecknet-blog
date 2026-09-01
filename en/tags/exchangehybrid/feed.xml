@@ -6,12 +6,14 @@
     <description>Recent content in Exchangehybrid on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/exchangehybrid/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exchange Hybrid: HCW8064 OAuth configuration couldn&#39;t get performed</title>
       <link>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
       <description>&lt;p&gt;At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:&lt;/p&gt;
 &lt;blockquote&gt;

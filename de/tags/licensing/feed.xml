@@ -6,12 +6,14 @@
     <description>Recent content in Licensing on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/licensing/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microsoft 365 Self Service Purchase Lizenzen</title>
       <link>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</guid>
       <description>&lt;p&gt;Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:&lt;/p&gt;
 &lt;ul&gt;
@@ -33,7 +35,7 @@
       <title>Office 365 Trial Lizenzen</title>
       <link>https://diecknet.de/de/2020/06/10/Office-365-Trials/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/10/Office-365-Trials/</guid>
       <description>&lt;p&gt;Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich &lt;a href=&#34;https://www.youtube.com/watch?v=gCS2RkGWNjA&#34; target=&#34;_blank&#34; &gt;einen kostenlosen Tenant erstellen&lt;/a&gt;, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.&lt;/p&gt;</description>
     </item>

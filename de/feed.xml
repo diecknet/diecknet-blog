@@ -6,12 +6,14 @@
     <description>Recent content on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Screenshots per PowerShell erstellen</title>
       <link>https://diecknet.de/de/2026/05/10/powershell-screenshots/</link>
       <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2026/05/10/powershell-screenshots/</guid>
       <description>&lt;p&gt;Wenn ihr Screenshots per PowerShell erstellen wollt, dann müsst ihr .NET verwenden. Den passenden Code dazu zeige ich im folgenden. Aber falls ihr das einfacher machen möchtet, könnt ihr auch &lt;a href=&#34;https://github.com/diecknet/PSScreenshot&#34; target=&#34;_blank&#34; &gt;mein Screenshot PowerShell Modul&lt;/a&gt; verwenden (mehr Infos dazu weiter unten).&lt;/p&gt;
 &lt;p&gt;Ich demonstriere die nachfolgenden Möglichkeiten auch &lt;a href=&#34;https://youtu.be/wcEcqw89si8&#34; target=&#34;_blank&#34; &gt;in diesem Video hier auf YouTube&lt;/a&gt;.&lt;/p&gt;
@@ -23,7 +25,7 @@
       <title>Herausfinden welcher Prozess auf einem bestimmten Port lauscht (PowerShell)</title>
       <link>https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/</guid>
       <description>&lt;p&gt;Wenn ihr herausfinden möchtet, welcher Prozess auf einem bestimmten TCP/UDP Port lauscht dann könnt ihr unter Windows dafür auch PowerShell verwenden. Ich finde das angenehmer, als die Ausgabe von &lt;code&gt;netstat&lt;/code&gt; auszuwerten.&lt;/p&gt;
 &lt;p&gt;Ich demonstriere die nachfolgenden Möglichkeiten auch &lt;a href=&#34;https://youtu.be/SGvbBbsIpjw&#34; target=&#34;_blank&#34; &gt;in diesem Video hier auf YouTube&lt;/a&gt;.&lt;/p&gt;
@@ -35,12 +37,12 @@
       <title>Unraid: &#39;&lt;Share Name&gt;&#39; kann nicht gelöscht werden: dataset is busy</title>
       <link>https://diecknet.de/de/2025/12/27/unraid-destroy-zfs-failed/</link>
       <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2025/12/27/unraid-destroy-zfs-failed/</guid>
       <description>&lt;p&gt;Ich habe vor Kurzem ein Problem auf meinem Unraid-Server gehabt: Ich habe einen Share (&amp;ldquo;myshare&amp;rdquo;) über die GUI löschen wollen, aber es hat einfach nicht funktioniert. Als ich die Logs geprüft habe, habe ich Folgendes gefunden:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
@@ -49,7 +51,7 @@
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower emhttpd: readlink -e &amp;#39;/mnt/user/myshare&amp;#39;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower emhttpd: readlink -e &amp;#39;/mnt/user/myshare&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower emhttpd: /mnt/user/myshare
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower emhttpd: shcmd (750): rmdir &amp;#39;/mnt/user/myshare&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Dec 27 21:53:24 tower shfs: /usr/sbin/zfs unmount &amp;#39;cache/myshare&amp;#39; 2&amp;gt;&amp;amp;1
@@ -66,7 +68,7 @@ Komisch, weil es komplett leer gewesen ist und keine Container oder VMs den Shar
       <title>Führende Nullen per PowerShell hinzufügen</title>
       <link>https://diecknet.de/de/2025/05/19/powershell-pad-zeros/</link>
       <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2025/05/19/powershell-pad-zeros/</guid>
       <description>&lt;p&gt;Es gibt viele verschiedene Wege um führende Nullen zu einer Zahl in PowerShell hinzuzufügen. Wobei eigentlich können Zahlen (Objekttyp: &lt;code&gt;[int]&lt;/code&gt;) keine führenden Nullen haben, deshalb erzeugen wir eigentlich einen Text (Objekttyp: &lt;code&gt;[string]&lt;/code&gt;), der die Zahl enthält.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;In den folgenden Beispielen ergänze ich die Zahl &lt;code&gt;42&lt;/code&gt; jeweils auf vier Stellen (= &lt;code&gt;0042&lt;/code&gt;). Ihr könnt aber die Länge des &amp;ldquo;Paddings&amp;rdquo; natürlich anpassen :)&lt;/strong&gt;&lt;/p&gt;
@@ -77,7 +79,7 @@ Komisch, weil es komplett leer gewesen ist und keine Container oder VMs den Shar
       <title>Active Directory Papierkorb aktivieren, konfigurieren und Objekte wiederherstellen</title>
       <link>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</link>
       <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</guid>
       <description>&lt;p&gt;Wenn ihr Active Directory Domain Services verwendet, solltet ihr unbedingt prüfen, ob der &lt;strong&gt;AD-Papierkorb&lt;/strong&gt; bei euch aktiviert ist.&lt;/p&gt;
 &lt;h2 id=&#34;was-ist-der-ad-papierkorb&#34;&gt;Was ist der AD-Papierkorb?&lt;/h2&gt;
@@ -97,7 +99,7 @@ Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2
       <title>E-Mails per PowerShell und Microsoft Graph verschicken</title>
       <link>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</guid>
       <description>&lt;p&gt;E-Mails via Powershell und Microsoft Graph API zu verschicken, ist leider nicht so einfach wie mit dem klassischen &lt;code&gt;Send-MailMessage&lt;/code&gt; Cmdlet. Zu dem klassischen Weg hatte ich ja auch kürzlich &lt;a href=&#34;https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/&#34; &gt;einen Blog-Post veröffentlicht&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Trotzdem gibt es einige Gründe, die für den Versand per Microsoft Graph sprechen. Im Oktober 2025 wird voraussichtlich die Plaintext Authentifizierung (&amp;ldquo;Basic Authentifizierung&amp;rdquo;) für den SMTP-Versand bei Exchange Online abgeschaltet. Falls also Exchange Online euer einziges E-Mail-System ist, aber ihr automatisiert E-Mails verschicken wollt, dann ist MS Graph die richtige Wahl. Alternativ könntet ihr natürlich auch ein zusätzliches E-Mail-System anschaffen (anmieten oder selbst betreiben).&lt;/p&gt;</description>
@@ -107,7 +109,7 @@ Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2
       <title>E-Mails per PowerShell verschicken mit Send-MailMessage</title>
       <link>https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/</link>
       <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/</guid>
       <description>&lt;p&gt;Es ist recht einfach E-Mails per PowerShell zu verschicken. Dafür gibt es das mitgelieferte Cmdlet &lt;code&gt;Send-MailMessage&lt;/code&gt;, welches allerdings mittlerweile von Microsoft als veraltet bezeichnet wird:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -122,7 +124,7 @@ Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2
       <title>Entra Connect: Soft Match und Hard Match</title>
       <link>https://diecknet.de/de/2024/12/16/entra-connect-matching/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/12/16/entra-connect-matching/</guid>
       <description>&lt;p&gt;In diesem Post geht es darum, wie Entra Connect Identitäten zusammenführt und dann im Betrieb weiter trackt. Bei einigen Punkten könnte man bestimmt noch weiter in die Tiefe einsteigen, aber das hier sind meiner Meinung nach die wichtigsten Grundlagen.&lt;/p&gt;
 &lt;p&gt;Alles was ich jetzt hier in dem Post beschreibe bezieht sich in der Regel sowohl auf das klassische Entra Connect Sync, als auch auf das modernere Entra Cloud Sync. Falls doch etwas nur für das eine oder andere Sync Tool gilt, dann weise ich explizit darauf hin. Ansonsten werde ich aber der Einfachheit halber im Folgenden einfach Entra Connect schreiben, wenn ich beides meine.&lt;/p&gt;</description>
@@ -132,15 +134,15 @@ Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2
       <title>Infos zu Active Directory Based Activation per PowerShell abrufen</title>
       <link>https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/</guid>
       <description>&lt;p&gt;Wenn ihr schnell Infos zu Active Directory Based Activation (ADBA) in eurer Domäne abrufen wollt, könnt ihr diesen PowerShell One-Liner verwenden:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Ich habe es nicht in einer Multi-Domain-Umgebung getestet, aber ich denke, dass es funktionieren sollte.&lt;/p&gt;
@@ -153,17 +155,17 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
       <title>PowerShell: Schleifen gezielt abbrechen/überspringen</title>
       <link>https://diecknet.de/de/2024/11/02/powershell-cancel-loops/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/11/02/powershell-cancel-loops/</guid>
       <description>&lt;p&gt;Normalerweise wird eine Schleife in PowerShell solange ausgeführt, wie es durch den außen stehenden Bedingungsblock definiert ist. Die folgende &lt;code&gt;while&lt;/code&gt;-Schleife wird zum Beispiel so lange ausgeführt, wie die Variable namens &lt;code&gt;$Variable&lt;/code&gt; kleiner oder gleich &lt;code&gt;10&lt;/code&gt; ist.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;while&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Variable&lt;/span&gt; -le &lt;span style=&#34;color:#d0bf69&#34;&gt;10&lt;/span&gt;) {
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;while&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Variable&lt;/span&gt; -le &lt;span style=&#34;color:#d0bf69&#34;&gt;10&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#6c7986&#34;&gt;# irgendwas&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -175,7 +177,7 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
       <title>TryHackMe Blueprint – Cybersecurity-Write-up</title>
       <link>https://diecknet.de/de/2024/09/24/tryhackme-blueprint/</link>
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/09/24/tryhackme-blueprint/</guid>
       <description>&lt;p&gt;Ich habe mich entschieden, etwas mehr Penetration Testing/Ethical Hacking auszuprobieren. Das Folgende ist ein Write-Up zum &lt;a href=&#34;https://tryhackme.com/&#34; target=&#34;_blank&#34; &gt;TryHackMe&lt;/a&gt;-Room &lt;a href=&#34;https://tryhackme.com/r/room/blueprint&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Blueprint&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;aufgaben&#34;&gt;Aufgaben&lt;/h2&gt;
@@ -193,9 +195,9 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
 &lt;p&gt;Also können wir davon ausgehen, dass es eine Windows-Maschine ist.&lt;/p&gt;
 &lt;h2 id=&#34;discovery&#34;&gt;Discovery&lt;/h2&gt;
 &lt;p&gt;Ich habe meine Kali-Linux-Maschine gestartet und auf meinem Desktop einen Ordner als Workspace angelegt.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
@@ -287,7 +289,7 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;90
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# create a workspace&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# create a workspace&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir Desktop/blueprint &amp;amp;&amp;amp; &lt;span style=&#34;color:#d0a8ff&#34;&gt;cd&lt;/span&gt; Desktop/blueprint
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# portscan with nmap&lt;/span&gt;
@@ -386,7 +388,7 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
       <title>WMI in PowerShell verwenden</title>
       <link>https://diecknet.de/de/2024/09/20/powershell-wmi/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/09/20/powershell-wmi/</guid>
       <description>&lt;p&gt;WMI ist eine mächtige Schnittstelle um Windows Systeme zu verwalten. Dadurch ist der Zugriff auf Dinge möglich, für die es vielleicht sonst gar keine eigenen PowerShell Cmdlets gibt. Teilweise können wir so mehr Infos abrufen, als die Standard-Cmdlets liefern. Das geht sowohl lokal, als auch remote.&lt;/p&gt;
 &lt;h2 id=&#34;deprecated-die-alten-wmi-cmdlets&#34;&gt;Deprecated: Die alten WMI Cmdlets&lt;/h2&gt;
@@ -397,20 +399,20 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
       <title>Das Problem mit Array &#43;= in PowerShell</title>
       <link>https://diecknet.de/de/2024/09/12/powershell-array-plus/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/09/12/powershell-array-plus/</guid>
       <description>&lt;p&gt;Die PowerShell macht es leider recht einfach ineffizienten Code zu schreiben. Viele Leute benutzen zum Beispiel die &lt;code&gt;+=&lt;/code&gt; Schreibweise um ein Array zu befüllen. Nicht empfehlenswert!&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;background-color:#353539&#34;&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# So bitte nicht machen!&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Array&lt;/span&gt; = @()
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# So bitte nicht machen!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Array&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;@&lt;/span&gt;()
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt; = &lt;span style=&#34;color:#d0bf69&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt; -lt &lt;span style=&#34;color:#d0bf69&#34;&gt;10000&lt;/span&gt;; &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt;++) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex; background-color:#353539&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$Array&lt;/span&gt; += &lt;span style=&#34;color:#41a1c0&#34;&gt;$i&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
@@ -423,7 +425,7 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
       <title>PowerShell NTFS Alternate Data Streams</title>
       <link>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
       <description>&lt;p&gt;Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerweise hat eine Datei nur einen dazugehörigen normalen Datenstrom (Data Stream) mit dem Namen &lt;code&gt;:$DATA&lt;/code&gt;. Aber es gibt auch die sogenannten &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), die zusätzliche Daten enthalten können.&lt;/p&gt;
 &lt;p&gt;Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.&lt;/p&gt;
@@ -437,7 +439,7 @@ Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/cod
       <title>PowerShell Calculated Properties</title>
       <link>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/08/21/powershell-calculated-properties/</guid>
       <description>&lt;p&gt;Wenn ihr per PowerShell Daten exportiert (zum Beispiel in eine CSV-Datei per &lt;code&gt;Export-CSV&lt;/code&gt;), dann werden die originalen Eigenschaftsnamen von den PowerShell Objekten verwendet. Wenn die aber nicht ganz passend für euren Zweck sind, dann könnt ihr sie auch anpassen. Dafür können sogenannte &amp;ldquo;Calculcated Properties&amp;rdquo; und das Cmdlet &lt;code&gt;Select-Object&lt;/code&gt; verwendet werden.&lt;/p&gt;
 &lt;p&gt;Damit können zum Beispiel:&lt;/p&gt;
@@ -453,7 +455,7 @@ Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/cod
       <title>PowerShell: Active Directory Computer filtern</title>
       <link>https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/</guid>
       <description>&lt;p&gt;Ich habe vor Kurzem an einem Kundenprojekt gearbeitet, bei dem ich rund um Active Directory Computer einiges machen musste. Ich habe PowerShell und etwas leichtes Filtern und Verarbeiten verwendet. Diese Beispiele teile ich jetzt hier und hoffentlich findet sie jemand interessant oder hilfreich. Vielleicht werde ich sie auch zukünftig interessant finden - in dem Fall: Moin Andi! 👋&lt;/p&gt;
 &lt;h2 id=&#34;beispiel-1-computer-nach-betriebssystemversion-filtern&#34;&gt;Beispiel 1: Computer nach Betriebssystemversion filtern&lt;/h2&gt;
@@ -464,7 +466,7 @@ Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/cod
       <title>PowerShell Write-Host VS. Write-Output</title>
       <link>https://diecknet.de/de/2024/07/05/powershell-write-host-vs-write-output/</link>
       <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/07/05/powershell-write-host-vs-write-output/</guid>
       <description>&lt;p&gt;In PowerShell könnt ihr ja Text mit dem Cmdlet &lt;code&gt;Write-Host&lt;/code&gt; ausgeben. Aber es wird teilweise davon abgeraten das zu verwenden. Es gibt zum Beispiel die Alternative &lt;code&gt;Write-Output&lt;/code&gt;. In diesem Post erkläre ich euch die Unterschiede.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=eHBO4b_Riho&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -476,7 +478,7 @@ Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/cod
       <title>Per PowerShell .zip-Archive erstellen und entpacken</title>
       <link>https://diecknet.de/de/2024/06/08/powershell-zip/</link>
       <pubDate>Sat, 08 Jun 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/06/08/powershell-zip/</guid>
       <description>&lt;p&gt;Windows kann eigentlich schon ziemlich lange mit ZIP-Archiven umgehen.
 Und auch die PowerShell kann das, also sowohl ZIP-Dateien erstellen, als auch sie entpacken.
@@ -488,12 +490,12 @@ Das kann nützlich sein, wenn ihr z.B. mit einem PowerShell Skript mehrere Datei
       <title>PowerShell Befehle auf mehrere Zeilen aufteilen</title>
       <link>https://diecknet.de/de/2024/05/15/powershell-multiline-commands/</link>
       <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/05/15/powershell-multiline-commands/</guid>
       <description>&lt;p&gt;PowerShell Befehle mit vielen Parametern können die Lesbarkeit vom Code verschlechtern. Zum Beispiel habe ich im nachfolgenden Codeabschnitt in Zeile 5 das Cmdlet &lt;code&gt;New-ADUser&lt;/code&gt; verwendet und dabei 7 Parameter angegeben. Das ist sehr schwer auf einer Zeile zu lesen, selbst wenn ihr einen Ultra-Wide Monitor verwendet.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
@@ -501,7 +503,7 @@ Das kann nützlich sein, wenn ihr z.B. mit einem PowerShell Skript mehrere Datei
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$CSVFile&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Import-Csv&lt;/span&gt; .\NeueUser.csv
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$CSVFile&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Import-Csv&lt;/span&gt; .\NeueUser.csv
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$CSVFile&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$Manager&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Filter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;mail -eq &amp;#39;&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$User&lt;/span&gt;.Manager)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;&amp;#34;&lt;/span&gt;
@@ -517,25 +519,25 @@ Deshalb zeige ich euch in diesem Artikel zwei Möglichkeiten um eure PowerShell 
       <title>NULL in PowerShell</title>
       <link>https://diecknet.de/de/2024/04/29/powershell-null/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/04/29/powershell-null/</guid>
       <description>&lt;p&gt;Wenn ihr in PowerShell prüfen wollt, ob ein Wert nicht gesetzt ist, dann &lt;em&gt;könnt&lt;/em&gt; ihr einen Vergleich mit &lt;code&gt;$null&lt;/code&gt; machen. Diese automatische Variable bedeutet immer null, nichts, kein Wert.
 Das ist aber etwas anderes, als wenn ihr einfach Anführungszeichen &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; nehmt und dann nichts reinschreibt.
 Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$null -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$null -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$null&lt;/span&gt; -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$null&lt;/span&gt; -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Hat übrigens nichts mit der Zahl 0 zu tun // also das ergibt auch False&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$null -eq &lt;span style=&#34;color:#d0bf69&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$null&lt;/span&gt; -eq &lt;span style=&#34;color:#d0bf69&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#6c7986&#34;&gt;# = false&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=EXoHcYNHSm8&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
@@ -545,7 +547,7 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <title>PowerShell Skripte remote entwickeln</title>
       <link>https://diecknet.de/de/2024/04/23/powershell-remote-script-development/</link>
       <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/04/23/powershell-remote-script-development/</guid>
       <description>&lt;p&gt;Es ist möglich PowerShell Skripte remote zu entwickeln. Also das Skript wird auf einem remote Computer gespeichert und ausgeführt, aber die Eingabe erfolgt im lokalen Editor-Tool. Das geht sowohl mit der klassischen Windows PowerShell ISE, als auch mit Visual Studio Code. In VSCode könnt ihr sowohl mit remote Windows PowerShell, als auch remote PowerShell 7 Systemen arbeiten. &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://www.youtube.com/watch?v=T009J35wJQE&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;windows-powershell-ise&#34;&gt;Windows PowerShell ISE&lt;/h2&gt;
@@ -556,17 +558,17 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <title>PowerShell Ausgabe unterdrücken</title>
       <link>https://diecknet.de/de/2024/04/09/powershell-suppress-output/</link>
       <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/04/09/powershell-suppress-output/</guid>
       <description>&lt;p&gt;Manchmal geben PowerShell Befehle eine Rückmeldung aus, obwohl uns das gar nicht interessiert. Es gibt verschiedene Szenarien, wie ihr die Ausgaben unterdrücken könnt.&lt;br&gt;
 &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/0hS3IWrr_3I&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Ich verwende hier zum Beispiel das Cmdlet &lt;code&gt;New-NetFirewallRule&lt;/code&gt; mit dem ich eine neue Regel in der Windows Firewall hinzufügen kann:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;New-NetFirewallRule&lt;/span&gt; -DisplayName &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Ausgehende Verbindungen zu Port 443 blockieren&amp;#34;&lt;/span&gt; -Direction Outbound -RemotePort &lt;span style=&#34;color:#d0bf69&#34;&gt;443&lt;/span&gt; -Protocol TCP -Action Block
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;New-NetFirewallRule&lt;/span&gt; -DisplayName &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Ausgehende Verbindungen zu Port 443 blockieren&amp;#34;&lt;/span&gt; -Direction Outbound -RemotePort &lt;span style=&#34;color:#d0bf69&#34;&gt;443&lt;/span&gt; -Protocol TCP -Action Block
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-04-09_PowerShell_new-netfirewallrule_example.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-04-09_PowerShell_new-netfirewallrule_example.jpg&#34; alt=&#34;Beispiel für eine exzessive Rückgabe von Informationen durch ein PowerShell Cmdlet: Der Aufruf von New-NetFirewallRule&#34;  title=&#34;Beispiel für eine exzessive Rückgabe von Informationen durch ein PowerShell Cmdlet: Der Aufruf von New-NetFirewallRule&#34;  /&gt;
@@ -577,7 +579,7 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <title>PowerShell Dot Sourcing</title>
       <link>https://diecknet.de/de/2024/03/26/powershell-dot-sourcing/</link>
       <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/03/26/powershell-dot-sourcing/</guid>
       <description>&lt;p&gt;Mit PowerShell Dot Sourcing könnt ihr eine Skriptdatei in eure PowerShell Session importieren. Das Skript wird erstmal normal ausgeführt, aber gesetzte Variablen, erstellte Funktionen und so weiter sind dann in der Session verfügbar. Bei einem normalen Skript-Aufruf ist das sonst nicht der Fall. Mich erinnert das immer an den PHP-Befehl &lt;code&gt;include&lt;/code&gt;, weil ich in meiner Jugend mit PHP rumgedaddelt habe 😅&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/TTnKAU-Po7Q&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
@@ -587,7 +589,7 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <title>Regular Expressions in PowerShell</title>
       <link>https://diecknet.de/de/2024/03/19/powershell-regex/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/03/19/powershell-regex/</guid>
       <description>&lt;p&gt;Regular Expressions sind Muster mit denen Texte verglichen werden können oder auch Infos aus Texten extrahiert werden können. Zum Beispiel könnt ihr damit überprüfen, ob eine Logdatei von einem Programm die Zeichenfolge &amp;ldquo;Error&amp;rdquo; enthält (also um zu prüfen, ob ein Fehler aufgetreten ist). Oder um einfach nur zu schauen, ob eine Zeichenkette einem bestimmten Muster entspricht, zum Beispiel einer E-Mail Adresse.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/Zk6iHL1T94k&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
@@ -597,7 +599,7 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <title>Die Ausführungsdauer von PowerShell Code messen</title>
       <link>https://diecknet.de/de/2024/03/12/powershell-measure-execution-time/</link>
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/03/12/powershell-measure-execution-time/</guid>
       <description>&lt;p&gt;Wenn ihr euren PowerShell Code auf Geschwindigkeit optimieren wollt, dann macht es Sinn Zeiten zu messen. Es gibt mehrere Möglichkeiten um zu messen, wie lange die Ausführung von einem Stück PowerShell Code dauert.&lt;br&gt;
 &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/-tpR-KQpPq4&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -609,7 +611,7 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <title>PowerShell Profile erklärt (mit Beispielen)</title>
       <link>https://diecknet.de/de/2024/03/05/powershell-profiles/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/03/05/powershell-profiles/</guid>
       <description>&lt;p&gt;Mit PowerShell Profilen könnt ihr eure PowerShell anpassen. Also zum Beispiel, dass sie so aussieht:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2024/2024-03-05_PSProfiles_OhMyPosh.jpg&#34; alt=&#34;PowerShell Konsole angepasst mit Oh My Posh und dem Theme Blue Owl&#34;  title=&#34;PowerShell Konsole angepasst mit Oh My Posh und dem Theme Blue Owl&#34;  /&gt;
@@ -624,18 +626,18 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <title>PowerShell: Zugriff auf Umgebungsvariablen</title>
       <link>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</guid>
       <description>&lt;p&gt;Per PowerShell auf Umgebungsvariablen zugreifen - das geht ganz einfach.&lt;br&gt;
 &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/25-jcylahSo&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;umgebungsvariable-per-env-variable-auslesen&#34;&gt;Umgebungsvariable per &lt;code&gt;$Env:&lt;/code&gt;-Variable auslesen&lt;/h2&gt;
 &lt;p&gt;Die einfachste Möglichkeit ist per &lt;code&gt;$Env:&lt;/code&gt;-Variable. Gebt dafür einfach &lt;code&gt;$Env&lt;/code&gt; ein, dann einen Doppelpunkt und dann den Namen der Umgebungsvariable von der ihr den Wert auslesen wollt.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Env:username&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Env:username&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Dadurch wird der Username des aktuell angemeldeten Users ausgegeben.&lt;/p&gt;
@@ -647,7 +649,7 @@ Zum Beispiel ergibt das hier immer FALSE:&lt;/p&gt;
       <title>Von 11ty zu Hugo migrieren</title>
       <link>https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/</link>
       <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/</guid>
       <description>&lt;p&gt;Ich habe diese Website kürzlich auf 11ty v2.0 aktualisiert, aber ich habe noch mehr Veränderung gewollt. Anfangs habe ich nur ein simples Design mit &lt;a href=&#34;https://github.com/Gioni06/terminal.css&#34; target=&#34;_blank&#34; &gt;Terminal.css&lt;/a&gt; bauen wollen. Dann bin ich aber zufällig über die &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; &gt;Hugo Theme Gallery&lt;/a&gt; gestolpert und habe ein paar richtig schöne Themes gefunden! Deshalb habe ich mich entschieden, &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod/&#34; target=&#34;_blank&#34; &gt;Hugo Papermod&lt;/a&gt; zu nutzen und die Website auf Hugo zu migrieren 🤓. Da ich JavaScript nicht &lt;em&gt;wirklich&lt;/em&gt; beherrsche, ist es für mich egal, dass Hugo stattdessen Go nutzt. Ich habe Go als Programmiersprache zwar noch nie verwendet, aber klingt gut.&lt;br&gt;
 Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Migration meines Blogs gemacht habe.&lt;/p&gt;</description>
@@ -657,17 +659,17 @@ Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Mi
       <title>PowerShell: Überprüfen ob Admin-Rechte vorhanden sind</title>
       <link>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</link>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</guid>
       <description>&lt;p&gt;Wenn ihr ein PowerShell Skript erstellt habt, was Aktionen ausführen soll, die Adminrechte erfordern, dann könnt ihr das auch per Code überprüfen. Damit könnt ihr sicherstellen, dass euer Skript erfolgreich ausgeführt werden kann. Am einfachsten geht das mit einer &lt;code&gt;Requires&lt;/code&gt;-Anweisung.
 &lt;strong&gt;&lt;a href=&#34;https://youtu.be/ACUCARq7joM&#34; target=&#34;_blank&#34; &gt;🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;admin-rechte-per-requires-anweisung-erfordern&#34;&gt;Admin-Rechte per Requires Anweisung erfordern&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;Requires&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;-RunAsAdministrator&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;Requires&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;-RunAsAdministrator&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Diese Zeile kann an eine beliebigen Stelle im PowerShell Code eingefügt werden. Ich würde es immer relativ am Anfang des Skriptes einbauen, damit es gut sichtbar ist. Aber die Position spielt technisch gesehen keine Rolle. Also wenn die &lt;code&gt;#Requires&lt;/code&gt; Anweisung im Code drin steht, wird das vor der richtigen Ausführung des gesamten restlichen Codes ausgewertet. Und je nachdem ob Adminrechte vorhanden sind, oder nicht - wird ein Fehler ausgegeben.&lt;/p&gt;</description>
@@ -677,7 +679,7 @@ Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Mi
       <title>PowerShell: Übersetzte Security Identifier Namen herausfinden</title>
       <link>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</guid>
       <description>&lt;p&gt;Security Identifiers sind dazu da, um bestimmte Security Prinzipale oder Gruppen unter Windows zu identifizieren. Leider sind die dazugehörigen Namen lokalisiert, also sind zum Beispiel in einem deutschsprachigen System anders als in einem englischsprachigen System.&lt;/p&gt;
 &lt;p&gt;Beispielsweise heißt die eingebaute Administratorgruppe auf Englisch &lt;code&gt;BUILTIN\ADMINISTRATORS&lt;/code&gt; und auf Deutsch &lt;code&gt;VORDEFINIERT\Administratoren&lt;/code&gt;. Oder das Englische &lt;code&gt;NT AUTHORITY\SYSTEM&lt;/code&gt; wird an einem Deutschen System zu &lt;code&gt;NT-AUTORITÄT\SYSTEM&lt;/code&gt;. &lt;strong&gt;Das finde ich richtig abgefahren!&lt;/strong&gt; Da wird auf einmal ein Leerzeichen durch ein Bindestrich ersetzt. Naja was soll&amp;rsquo;s.&lt;/p&gt;</description>
@@ -687,10 +689,10 @@ Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Mi
       <title>Die unterschiedlichen Klammern in der PowerShell</title>
       <link>https://diecknet.de/de/2023/11/28/powershell-brackets/</link>
       <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/11/28/powershell-brackets/</guid>
       <description>&lt;p&gt;Wann ist welche Klammer die Richtige in der PowerShell?&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Verschiedene Klammern in der PowerShell&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Verschiedene Klammern in der PowerShell&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;() {} []&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Die Klammern haben unterschiedliche Einsatzzwecke. Die Größer-als &lt;code&gt;&amp;lt;&lt;/code&gt; und Kleiner-als &lt;code&gt;&amp;gt;&lt;/code&gt; Zeichen würde ich übrigens nicht zu den Klammern zählen. Für alle echten Klammern gilt: Wenn ihr eine Klammer geöffnet habt, müsst ihr sie auch wieder schließen.&lt;/p&gt;
 &lt;h2 id=&#34;runde-klammern--&#34;&gt;Runde Klammern &lt;code&gt;( )&lt;/code&gt;&lt;/h2&gt;
@@ -701,7 +703,7 @@ Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Mi
       <title>OneDrive for Business - Delegierung an Vorgesetzte nach Austritt von Mitarbeitenden</title>
       <link>https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</link>
       <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/09/25/onedrive-for-business-auto-delegation-to-manager/</guid>
       <description>&lt;p&gt;Normalerweise wird bei einem Benutzer, der die Firma verlässt, dessen OneDrive-for-Business-Seite automatisch an den Vorgesetzten delegiert. Das bedeutet, dass der Vorgesetzte SharePoint Site Collection Admin-Rechte auf die OneDrive-Seite des Mitarbeiters erhält.&lt;/p&gt;
 &lt;h2 id=&#34;zugriffsdelegierung-prüfen-und-ändern&#34;&gt;Zugriffsdelegierung prüfen und ändern&lt;/h2&gt;
@@ -722,7 +724,7 @@ Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Mi
       <title>PowerShell ConstrainedLanguage Mode per Gruppenrichtlinie einstellen</title>
       <link>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</link>
       <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/</guid>
       <description>&lt;p&gt;PowerShell Language Modes sind eine Möglichkeit die Funktionalität der PowerShell einzuschränken, um die Sicherheit eines Systems zu erhöhen. Das ist natürlich nur ein kleiner Baustein in einer größeren Sicherheitsstrategie, also das alleine ist noch kein ausreichender Schutz für ein System.&lt;/p&gt;
 &lt;p&gt;Gleichzeitig ist das auch ein zweischneidiges Schwert:&lt;br&gt;
@@ -734,7 +736,7 @@ Nachteil: Wir selbst als Administratoren können die PowerShell an einem System 
       <title>Exchange EAC hat nach dem Außerbetriebnehmen aller Mailbox-Datenbanken nicht mehr funktioniert</title>
       <link>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
       <description>&lt;p&gt;Ich habe dieses seltsame Problem in einer Exchange-Server-Umgebung gehabt:
 Die Firma hat eine Exchange Server 2016 DAG gehabt und alle Benutzerpostfächer nach Exchange Online migriert. Danach habe ich einen frischen Exchange Server 2019 für Recipient Management und SMTP-Relay installiert.
@@ -746,7 +748,7 @@ Ich habe alle verbleibenden System- und Arbitration-Postfächer von den Exchange
       <title>Synchronisierte Exchange Objekte ohne Exchange Server verwalten</title>
       <link>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</guid>
       <description>&lt;p&gt;Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden.
 Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft Dokumentation verweist nur am Rande auf das Thema&lt;/a&gt; und erklärt nicht wirklich.&lt;/p&gt;
@@ -758,14 +760,14 @@ Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
       <title>ntfy.sh mit Home Assistant verwenden</title>
       <link>https://diecknet.de/de/2023/02/12/ntfy-sh-with-homeassistant/</link>
       <pubDate>Sun, 12 Feb 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/02/12/ntfy-sh-with-homeassistant/</guid>
       <description>&lt;p&gt;Nur eine kurze Notiz, falls ihr &lt;a href=&#34;https://ntfy.sh&#34; target=&#34;_blank&#34; &gt;ntfy.sh&lt;/a&gt; mit &lt;a href=&#34;https://www.home-assistant.io/&#34; target=&#34;_blank&#34; &gt;Home Assistant&lt;/a&gt; nutzen wollt.&lt;/p&gt;
 &lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
 &lt;p&gt;Ich habe den folgenden Abschnitt in meine Datei &lt;code&gt;/config/configuration.yaml&lt;/code&gt; eingefügt:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
@@ -780,7 +782,7 @@ Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;13
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;shell_command:
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;shell_command:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ntfy: &amp;gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        curl
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        -X POST
@@ -792,7 +794,7 @@ Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Delay: {{ delay }}&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Actions: {{ actions }}&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Click: {{ click }}&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Icon: {{ icon }}&amp;#39;&lt;/span&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc6a5d&#34;&gt;        --header &amp;#39;X-Icon: {{ icon }}&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;verwendung&#34;&gt;Verwendung&lt;/h2&gt;
@@ -803,7 +805,7 @@ Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
       <title>Exchange Online per Azure Automation steuern im Jahr 2024</title>
       <link>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
       <description>&lt;p&gt;Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist &lt;strong&gt;Managed Identities&lt;/strong&gt; was ihr benutzen solltet (diese Aussage wurde zuletzt geprüft im Juni 2024).&lt;/p&gt;
 &lt;h2 id=&#34;legacy-ansatz&#34;&gt;Legacy Ansatz&lt;/h2&gt;
@@ -815,7 +817,7 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
       <title>Azure AD Connect Staging Mode per PowerShell setzen</title>
       <link>https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</link>
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2022/07/21/Azure-AD-Connect-Staging-mode-PowerShell/</guid>
       <description>&lt;p&gt;Hier ist ein schneller Tipp, wie ihr den Staging Mode in Azure AD Connect per PowerShell ein- oder ausschaltet. Leider gibt es kein natives Cmdlet im Stil von &lt;code&gt;Set-ADSyncStagingMode&lt;/code&gt; oder so.&lt;/p&gt;
 &lt;p&gt;In diesem Artikel erkläre ich zuerst den Ansatz und liste danach den vollständigen Befehlsblock auf, den ihr nutzen könnt. Ihr könnt also gern nach unten zum Ende des Beitrags springen. Die folgenden PowerShell-Cmdlets müsst ihr auf dem Azure-AD-Connect-Server ausführen.&lt;/p&gt;</description>
@@ -825,7 +827,7 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
       <title>Exchange-Server-Setup unvollständig und Abschluss schlägt fehl</title>
       <link>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
       <description>&lt;p&gt;Ich habe ein Problem mit einem kaputten Exchange Server 2016 CU23 gehabt. Oder eher: Er ist nicht vollständig installiert gewesen.
 Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich oder interessant sein würde, bei diesem Problem tiefer einzusteigen.&lt;/p&gt;
@@ -838,17 +840,17 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Alle gemergten Git-Branches unter Windows entfernen</title>
       <link>https://diecknet.de/de/2022/06/21/Git-on-Windows-remove-all-merged-branches/</link>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2022/06/21/Git-on-Windows-remove-all-merged-branches/</guid>
       <description>&lt;p&gt;Hier ist ein schneller Tipp, wie ihr Git-Branches, die bereits gemergt sind (und daher lokal nicht mehr benötigt werden), unter Windows mit PowerShell entfernt. Voraussetzung ist, dass ihr Git for Windows installiert habt. &lt;strong&gt;Führt diese Befehle auf eigenes Risiko aus.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;alle-gemergten-branches-auflisten&#34;&gt;Alle gemergten Branches auflisten&lt;/h2&gt;
 &lt;p&gt;Ihr könnt alle gemergten Git-Branches auflisten, indem ihr Folgendes ausführt:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch --merged
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git branch --merged
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;aktuellen-branch-und-den-branch-main-ausschließen&#34;&gt;Aktuellen Branch und den Branch &amp;ldquo;main&amp;rdquo; ausschließen&lt;/h2&gt;
@@ -859,7 +861,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Mit der Microsoft Graph API die Anzahl der Gruppenmitglieder abrufen</title>
       <link>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</link>
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
       <description>&lt;p&gt;Offenbar ist es nicht &lt;em&gt;so einfach&lt;/em&gt;, die Anzahl der Mitglieder einer Gruppe mit der Microsoft Graph API zu erhalten. Wir müssen den zusätzlichen Header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; angeben, um die &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt; zu nutzen. Danach können wir den Query-Parameter &lt;code&gt;$count&lt;/code&gt; verwenden. Alternativ habe ich herausgefunden, dass ich ihn auch als URL-Query-Parameter hinzufügen kann. Das wäre dann &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;beispielabfragen&#34;&gt;Beispielabfragen&lt;/h2&gt;
@@ -870,7 +872,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuerelement kann nicht instanziiert werden</title>
       <link>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</link>
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</guid>
       <description>&lt;p&gt;Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.&lt;/p&gt;
 &lt;p&gt;Ich wollte mich einfach nur per &lt;code&gt;Connect-MicrosoftTeams&lt;/code&gt; mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter. Aber bevor ich überhaupt nach einem Benutzernamen gefragt wurde - alles rot.&lt;/p&gt;</description>
@@ -880,7 +882,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>MFA-Methoden für Azure AD konfigurieren</title>
       <link>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
       <description>&lt;p&gt;Dieser Beitrag ist veraltet. Die &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Authentication Methods Policy&amp;rdquo;&lt;/a&gt; ist inzwischen im Entra-Portal leicht erreichbar. Falls ihr noch von den alten Einstellungen migrieren müsst, findet ihr den vollständigen aktuellen Artikel bei &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;alter-beitrag-zur-referenz&#34;&gt;ALTER BEITRAG ZUR REFERENZ&lt;/h2&gt;
@@ -891,7 +893,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Alle Benutzer mit administrativen Rollen in einer Microsoft-365-Umgebung auflisten</title>
       <link>https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</guid>
       <description>&lt;h2 id=&#34;option-1-m365-admin-portal-verwenden&#34;&gt;Option 1: M365 Admin Portal verwenden&lt;/h2&gt;
 &lt;p&gt;Im Microsoft-365-Admin-Portal gab es endlich einen Weg. Geht zu &lt;a href=&#34;https://admin.microsoft.com/Adminportal/Home?#/rbac/directory&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo;&lt;/a&gt; und klickt auf &amp;ldquo;Export admin list&amp;rdquo;, um eine CSV-Datei mit allen Admins und ihren Rollen zu erhalten.&lt;/p&gt;
@@ -905,7 +907,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Outlook Cache Modus für Freigegebene Postfächer</title>
       <link>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
       <description>&lt;p&gt;In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -920,14 +922,14 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Alle Microsoft-Booking-Kalender auflisten</title>
       <link>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
       <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
       <description>&lt;p&gt;Wenn ihr Microsoft Booking in eurem Microsoft-365-Tenant nutzt, wollt ihr vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ &amp;ldquo;SchedulingMailbox&amp;rdquo;. Wenn einem Benutzer die Rolle &amp;ldquo;Administrator&amp;rdquo; für einen Booking-Kalender zugewiesen ist, hat er &amp;ldquo;FullAccess&amp;rdquo;-Berechtigungen für das Scheduling-Postfach.&lt;/p&gt;
 &lt;h2 id=&#34;alle-booking-kalender-mit-berechtigungen-auflisten&#34;&gt;Alle Booking-Kalender mit Berechtigungen auflisten&lt;/h2&gt;
 &lt;p&gt;Ich habe ein PowerShell-Skript geschrieben, um alle Booking-Postfächer mit den Benutzern aufzulisten, die Zugriff haben.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
@@ -950,7 +952,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# prerequisite: Exchange Online v2 PowerShell module, must be connected to the service&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# prerequisite: Exchange Online v2 PowerShell module, must be connected to the service&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;New-Object&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;System.Collections.Generic.List[System.Object]&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Get all Booking Mailboxes&lt;/span&gt;
@@ -962,7 +964,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ExoMailboxPermission&lt;/span&gt; -UserPrincipalName &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.UserPrincipalName -ResultSize:Unlimited | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Where-Object&lt;/span&gt; {(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.User -like &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;*@*&amp;#39;&lt;/span&gt;) -and (&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.AccessRights -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;FullAccess&amp;#34;&lt;/span&gt;)}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6c7986&#34;&gt;# Output PSCustomObject with infos to the foreach loop, so it gets saved into $BookingsMailboxesWithPermissions&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        [PSCustomObject]@{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        [PSCustomObject]&lt;span style=&#34;color:#41a1c0&#34;&gt;@&lt;/span&gt;{
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox DisplayName&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.DisplayName
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox E-Mail-Address&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.PrimarySmtpAddress
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;User&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt;.User
@@ -980,7 +982,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Auto-Expanding Archives in Exchange Online prüfen</title>
       <link>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
       <description>&lt;p&gt;Wenn ihr Auto-Expanding Archives für Exchange-Online-Postfächer aktiviert habt, wollt ihr vielleicht herausfinden, ob zusätzlicher Speicher tatsächlich bereitgestellt wird.&lt;/p&gt;
 &lt;p&gt;Im Exchange Admin Center (EAC) öffnet ihr den Infobereich des Benutzerpostfachs. Dann klickt ihr auf &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;
@@ -993,7 +995,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Die Kehrseite von Serverless</title>
       <link>https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/10/27/My-simple-serverless-journey-part2/</guid>
       <description>&lt;p&gt;Nachdem ich &lt;a href=&#34;https://simpleip.de&#34; target=&#34;_blank&#34; &gt;SimpleIP.de&lt;/a&gt; als Serverless-Anwendung gebaut hatte (siehe meinen Blogpost &lt;a href=&#34;https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/&#34; &gt;My simple serverless journey was not that easy&lt;/a&gt;), bin ich irgendwie stolz gewesen. Interessante Technologie, kleine und nützliche Website. Nice.&lt;/p&gt;
 &lt;h2 id=&#34;realität&#34;&gt;Realität&lt;/h2&gt;
@@ -1004,20 +1006,20 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>PowerShell Regular Expressions zum Abgleich von Dateinamen verwenden</title>
       <link>https://diecknet.de/de/2021/10/25/PowerShell-Regular-Expression/</link>
       <pubDate>Mon, 25 Oct 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/10/25/PowerShell-Regular-Expression/</guid>
       <description>&lt;p&gt;Ein kurzes Beispiel für PowerShell Regular Expressions.&lt;/p&gt;
 &lt;p&gt;Szenario: Dateinamen wie &lt;code&gt;ID1234_MyDocumentXYZ.pdf.lnk&lt;/code&gt; abgleichen. Wir wollen die Zahl nach &lt;code&gt;ID&lt;/code&gt; und den Rest des Dateinamens zwischen Unterstrich &lt;code&gt;_&lt;/code&gt; und Dateiendung &lt;code&gt;.lnk&lt;/code&gt; extrahiert haben.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; = &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34;&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; = &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID1337_MyDocumentXYZ.pdf.lnk&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$oldLink&lt;/span&gt; -match &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;ID(?&amp;lt;id&amp;gt;\d+)_(?&amp;lt;actualFilename&amp;gt;.+)\.lnk$&amp;#39;&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#d0a8ff&#34;&gt;Write-Output&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;ID: &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Matches&lt;/span&gt;.id)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#d0a8ff&#34;&gt;Write-Output&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;Actual Filename: &lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$Matches&lt;/span&gt;.actualFilename)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt;
@@ -1032,7 +1034,7 @@ Da die Regular Expression erfolgreich gematcht hat, ist als Ergebnis $true zurü
       <title>PowerShell-Skript mit der Windows-Aufgabenplanung ausführen</title>
       <link>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</link>
       <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</guid>
       <description>&lt;p&gt;Eine kurze Notiz für mich selbst - wie ich ein PowerShell-Skript mit der Windows-Aufgabenplanung ausgeführt habe.&lt;/p&gt;
 &lt;h2 id=&#34;aufgabenplanung-öffnen&#34;&gt;Aufgabenplanung öffnen&lt;/h2&gt;
@@ -1043,26 +1045,26 @@ Da die Regular Expression erfolgreich gematcht hat, ist als Ergebnis $true zurü
 Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger usw. setzen.&lt;/p&gt;
 &lt;h2 id=&#34;aktion-festlegen&#34;&gt;Aktion festlegen&lt;/h2&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Setting&lt;/th&gt;
-          &lt;th&gt;Value&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Action&lt;/td&gt;
-          &lt;td&gt;Start a program&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Program/script&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;powershell.exe&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Add arguments (optional)&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;-file &amp;quot;C:\Path\Script.ps1&amp;quot;&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Setting&lt;/th&gt;
+					&lt;th&gt;Value&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Action&lt;/td&gt;
+					&lt;td&gt;Start a program&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Program/script&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;powershell.exe&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Add arguments (optional)&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;-file &amp;quot;C:\Path\Script.ps1&amp;quot;&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;</description>
     </item>
     
@@ -1070,7 +1072,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Einwahlrufnummer für Teams Meetings per PowerShell setzen</title>
       <link>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</link>
       <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/10/05/Set-Teams-Meeting-Dialin-number-powershell/</guid>
       <description>&lt;p&gt;Mit Microsoft Teams Audio Conferencing (Microsoft 365-Audiokonferenz) Lizenzen ist es möglich, Einwahlrufnummern für Teams Besprechungen zu verwenden. Die Lizenz wird für jeden Benutzer benötigt, der zu Teams Meetings mit Einwahlrufnummer einladen soll.&lt;/p&gt;
 &lt;p&gt;Die Einwahlrufnummer in der Meeting-Einladung basiert auf dem UsageLocation Attribut des Benutzers - &lt;strong&gt;einmalig wenn der Benutzer für Audiokonferenz aktiviert wird&lt;/strong&gt;. Also selbst wenn ihr eine falsche UsageLocation korrigiert, hat der Benutzer noch eine alte Einwahlrufnummer zugewiesen.&lt;/p&gt;
@@ -1082,7 +1084,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Der Wechsel von Skype for Business zu Teams ist frustrierend</title>
       <link>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</guid>
       <description>&lt;p&gt;Der Upgrade-Prozess von Skype for Business Online zu Microsoft Teams ist ein Desaster gewesen. Mehrere SMB-Kunden haben mir unnötige Fehler zu Teams/Skype gemeldet. Mit unnötig meine ich: &lt;strong&gt;Sie haben bis 2021-07-31 keine Probleme mit Teams gehabt.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;problem-plötzlich-sind-skype-besprechungen-in-outlook-mobile-wieder-da&#34;&gt;Problem: Plötzlich sind Skype-Besprechungen in Outlook Mobile wieder da&lt;/h2&gt;
@@ -1095,7 +1097,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Die Zeitzone einer SharePoint-Online-Website mit PowerShell auslesen</title>
       <link>https://diecknet.de/de/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/07/09/Sharepoint-Online-Timezones-by-PowerShell/</guid>
       <description>&lt;p&gt;Ich habe nach einer Möglichkeit gesucht, die Zeitzonen-Einstellung einer Sharepoint-Online-Seite per PowerShell auszulesen. Offenbar sind öffentlich nicht viele gute Informationen dazu verfügbar. Ich habe nach einem Weg gesucht, das mit dem &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps&#34; target=&#34;_blank&#34; &gt;standard SPO PowerShell module&lt;/a&gt; namens Microsoft.Online.SharePoint.PowerShell zu machen.&lt;/p&gt;
 &lt;p&gt;Online gibt es ein paar Infos zur Nutzung des PNPOnline-Moduls, aber das ist in meinem Fall nicht praktisch. Es gibt sogar einige wirklich nervige Artikel, die behaupten, einen PowerShell-Weg zu zeigen. Aber statt die tatsächliche Zeitzonen-Einstellung einer SPO-Seite auszulesen, fragen sie alle verfügbaren Zeitzonen ab und überschreiben anschließend die aktuelle Zeitzone mit einer gültigen. Das Schlimmste: Sie importieren Sharepoint-.dll-Dateien, verwenden Plaintext-Authentifizierung und arbeiten mit Client Context Object/CSOM (Microsoft.SharePoint.Client.ClientContext).
@@ -1106,7 +1108,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Wie lange werden gelöschte Teams Kanäle aufbewahrt?</title>
       <link>https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/</link>
       <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/06/29/Deleted-Teams-Channel-Retention/</guid>
       <description>&lt;p&gt;Falls ihr euch fragt &amp;ldquo;Wie lange wird ein gelöschter Teams Kanal aufbewahrt?&amp;rdquo; oder &amp;ldquo;Für wie lange kann ich einen gelöschten Teams Kanal wiederherstellen?&amp;rdquo;, findet ihr die Antwort relativ schnell. Aber meistens fehlt der Verweis auf die original Quelle in der Microsoft Dokumentation.&lt;/p&gt;
 &lt;h2 id=&#34;antwort&#34;&gt;Antwort&lt;/h2&gt;
@@ -1121,7 +1123,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Bereitstellung eines Azure NAT-Gateways für Azure Virtual Desktop mit PowerShell</title>
       <link>https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</link>
       <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/06/27/Deploy-Azure-NAT-Gateway-Azure-Virtual-Desktop/</guid>
       <description>&lt;p&gt;Ich habe ein PowerShell-Skript erstellt, das automatisch ein Azure NAT-Gateway in einer Azure Virtual Desktop Umgebung bereitstellt. Das ist nützlich, wenn ihr eine statische IP-Adresse für eure AVD-Maschinen braucht. Das Skript habe ich als Beitrag für den &lt;a href=&#34;https://getnerdio.com/nerdio-hackathon/&#34; target=&#34;_blank&#34; &gt;Nerdio Hackathon 2021&lt;/a&gt; erstellt. Mein erster Hackathon überhaupt :^).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update 2021-10-05&lt;/strong&gt; - Ich habe tatsächlich den ersten Platz gewonnen, allerdings haben anscheinend nicht viele am Wettbewerb teilgenommen. Das Nerdio-Team war etwas enttäuscht und hat daher keine Ankündigung veröffentlicht. Immerhin habe ich einen Amazon-Gutschein über 1000 USD bekommen 🤩.&lt;/p&gt;</description>
@@ -1131,7 +1133,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Meine simple Serverless-Reise war gar nicht so einfach</title>
       <link>https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/05/02/My-simple-serverless-journey/</guid>
       <description>&lt;p&gt;Serverless Computing ist ein spannendes Konzept. Man kann ein Skript oder Programm ausführen, ohne die komplette Infrastruktur dahinter aufzubauen (Server, Storage, Netzwerke usw.). Man schreibt einfach den Code und er wird ausgeführt. Aber Serverless heißt nicht „ohne Server“ – man muss sich nur nicht darum kümmern. Das ist gar nicht so weit weg von klassischem Webspace beim Hoster, auf den man PHP-Skripte legt.&lt;/p&gt;
 &lt;p&gt;Heute meint Serverless meistens eine moderne Architektur, mit der man Anwendungscode ausführen kann. Der große Unterschied ist das &lt;strong&gt;Skalieren&lt;/strong&gt;. Der Cloud-Anbieter übernimmt die Logik, wann und wie Serverless-Funktionen laufen. Wenn die Anwendung nicht genutzt wird, wird nichts ausgeführt und es werden keine Rechenressourcen verbraucht.&lt;/p&gt;</description>
@@ -1141,7 +1143,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren</title>
       <link>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</link>
       <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
       <description>&lt;p&gt;Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.&lt;/p&gt;
 &lt;h2 id=&#34;möglichkeiten-zur-konfiguration&#34;&gt;Möglichkeiten zur Konfiguration&lt;/h2&gt;
@@ -1152,7 +1154,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Microsoft 365 Self Service Purchase Lizenzen</title>
       <link>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</guid>
       <description>&lt;p&gt;Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:&lt;/p&gt;
 &lt;ul&gt;
@@ -1174,16 +1176,16 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Dateidatum per PowerShell setzen</title>
       <link>https://diecknet.de/de/2020/09/08/Set-File-Date-with-PowerShell/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/09/08/Set-File-Date-with-PowerShell/</guid>
       <description>&lt;p&gt;Das Datum einer Datei kann beliebig per PowerShell gesetzt beziehungsweise manipuliert werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.&lt;/p&gt;
 &lt;p&gt;Per &lt;code&gt;Get-Member&lt;/code&gt; kann man sich die Zeit-Attribute einer Datei anzeigen lassen.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; beispiel.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; beispiel.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-09-08_DateAttributes.png&#34; alt=&#34;Dateidatums-Attribute anzeigen&#34;  title=&#34;Dateidatums-Attribute anzeigen&#34;  /&gt;
@@ -1201,7 +1203,7 @@ Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger 
       <title>Azure AD Connect installieren (Video)</title>
       <link>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect installieren (YouTube)&#34;  title=&#34;Azure AD Connect installieren (YouTube)&#34;  /&gt;
 &lt;/a&gt;&lt;br&gt;
@@ -1219,7 +1221,7 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>Office 365 Trial Lizenzen</title>
       <link>https://diecknet.de/de/2020/06/10/Office-365-Trials/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/10/Office-365-Trials/</guid>
       <description>&lt;p&gt;Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich &lt;a href=&#34;https://www.youtube.com/watch?v=gCS2RkGWNjA&#34; target=&#34;_blank&#34; &gt;einen kostenlosen Tenant erstellen&lt;/a&gt;, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.&lt;/p&gt;</description>
     </item>
@@ -1228,7 +1230,7 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>Azure AD Connect richtig planen und vorbereiten (Video)</title>
       <link>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</guid>
       <description>&lt;p&gt;Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;YouTube Video&lt;/a&gt; erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  title=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  /&gt;
@@ -1242,35 +1244,35 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>NTFS-Berechtigungen mit PowerShell prüfen</title>
       <link>https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/</guid>
       <description>&lt;p&gt;Ich habe eine schnelle Möglichkeit gebraucht, ein paar Ordner auf korrekte Berechtigungen zu prüfen. Es hat sich um Windows Virtual Desktop/FSLogix-Benutzerprofilcontainer in einer Azure Files-Freigabe gehandelt. Bei einigen dieser Profilordner sind die Berechtigungen falsch gesetzt gewesen.&lt;/p&gt;
 &lt;p&gt;Die korrekten Storage-Berechtigungen sind:&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Benutzerkonto&lt;/th&gt;
-          &lt;th&gt;Ordner&lt;/th&gt;
-          &lt;th&gt;Berechtigungen&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Users&lt;/td&gt;
-          &lt;td&gt;Nur dieser Ordner&lt;/td&gt;
-          &lt;td&gt;Ändern&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Creator / Owner&lt;/td&gt;
-          &lt;td&gt;Nur Unterordner und Dateien&lt;/td&gt;
-          &lt;td&gt;Ändern&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Administrator (optional)&lt;/td&gt;
-          &lt;td&gt;Dieser Ordner, Unterordner, Dateien&lt;/td&gt;
-          &lt;td&gt;Vollzugriff&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Benutzerkonto&lt;/th&gt;
+					&lt;th&gt;Ordner&lt;/th&gt;
+					&lt;th&gt;Berechtigungen&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Users&lt;/td&gt;
+					&lt;td&gt;Nur dieser Ordner&lt;/td&gt;
+					&lt;td&gt;Ändern&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Creator / Owner&lt;/td&gt;
+					&lt;td&gt;Nur Unterordner und Dateien&lt;/td&gt;
+					&lt;td&gt;Ändern&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Administrator (optional)&lt;/td&gt;
+					&lt;td&gt;Dieser Ordner, Unterordner, Dateien&lt;/td&gt;
+					&lt;td&gt;Vollzugriff&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Offizielle FSLogix-Dokumentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/fslogix/fslogix-storage-config-ht&#34; target=&#34;_blank&#34; &gt;Configure storage permissions for use with Profile Containers and Office Containers&lt;/a&gt;&lt;/p&gt;</description>
     </item>
@@ -1279,7 +1281,7 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich</title>
       <link>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
       <description>&lt;p&gt;Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1294,7 +1296,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden</title>
       <link>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
       <description>&lt;p&gt;Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1307,15 +1309,15 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Exchange - Wann wurde das Postfach WIRKLICH erstellt?</title>
       <link>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
       <description>&lt;p&gt;Wenn ihr herausfinden möchtet, wann ein Exchange Postfach erstellt wurde, werdet ihr wahrscheinlich über das Active Directory-Benutzer Attribut &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt; stolpern. Um den Wert auszulesen, könnt ihr PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;MSExchWhenMailboxCreated Attribut per Active Directory-Benutzer und Computer anzeigen. Erweiterte Features müssen aktiviert sein.&#34;  /&gt;
@@ -1328,7 +1330,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Exchange Raumpostfach - Berechtigungen setzen</title>
       <link>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Zugriff wurde für den Benutzer verweigert. - Exchange Raumpostfach Berechtigungen (Outlook Fenster)&lt;/p&gt;
@@ -1340,7 +1342,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Outlook Zertifikatswarnung nach Office 365 Migration</title>
       <link>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Outlook Zertifikatswarnung nach Office 365 Migration&lt;br&gt;
@@ -1356,7 +1358,7 @@ Der On-Premise Exchange Server 2010 war noch vorhanden - logisch, sonst wäre wo
       <title>Ein neuer Blog</title>
       <link>https://diecknet.de/de/2019/10/21/new-blog/</link>
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2019/10/21/new-blog/</guid>
       <description>&lt;p&gt;Ungefähr so ist die Unterhaltung abgelaufen, als ich der ersten Person von meinem Blog-Vorhaben erzählt habe:&lt;/p&gt;
 &lt;blockquote&gt;

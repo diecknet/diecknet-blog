@@ -6,12 +6,14 @@
     <description>Recent content in Active Directory on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Mon, 28 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/Active-Directory/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Directory Papierkorb aktivieren, konfigurieren und Objekte wiederherstellen</title>
       <link>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</link>
       <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</guid>
       <description>&lt;p&gt;Wenn ihr Active Directory Domain Services verwendet, solltet ihr unbedingt prüfen, ob der &lt;strong&gt;AD-Papierkorb&lt;/strong&gt; bei euch aktiviert ist.&lt;/p&gt;
 &lt;h2 id=&#34;was-ist-der-ad-papierkorb&#34;&gt;Was ist der AD-Papierkorb?&lt;/h2&gt;
@@ -31,7 +33,7 @@ Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2
       <title>Entra Connect: Soft Match und Hard Match</title>
       <link>https://diecknet.de/de/2024/12/16/entra-connect-matching/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/12/16/entra-connect-matching/</guid>
       <description>&lt;p&gt;In diesem Post geht es darum, wie Entra Connect Identitäten zusammenführt und dann im Betrieb weiter trackt. Bei einigen Punkten könnte man bestimmt noch weiter in die Tiefe einsteigen, aber das hier sind meiner Meinung nach die wichtigsten Grundlagen.&lt;/p&gt;
 &lt;p&gt;Alles was ich jetzt hier in dem Post beschreibe bezieht sich in der Regel sowohl auf das klassische Entra Connect Sync, als auch auf das modernere Entra Cloud Sync. Falls doch etwas nur für das eine oder andere Sync Tool gilt, dann weise ich explizit darauf hin. Ansonsten werde ich aber der Einfachheit halber im Folgenden einfach Entra Connect schreiben, wenn ich beides meine.&lt;/p&gt;</description>
@@ -41,15 +43,15 @@ Voraussetzung: Euer AD-Forest muss mindestens den &lt;strong&gt;Windows Server 2
       <title>Infos zu Active Directory Based Activation per PowerShell abrufen</title>
       <link>https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/11/25/powershell-show-adba-infos/</guid>
       <description>&lt;p&gt;Wenn ihr schnell Infos zu Active Directory Based Activation (ADBA) in eurer Domäne abrufen wollt, könnt ihr diesen PowerShell One-Liner verwenden:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADDomain&lt;/span&gt; | %{&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADObject&lt;/span&gt; -SearchBase &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;CN=Activation Objects,CN=Microsoft SPP,CN=Services,CN=Configuration,&lt;/span&gt;$(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.DistinguishedName)&lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;&lt;/span&gt; -LDAPFilter &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;(objectclass=msspp-activationobject)&amp;#34;&lt;/span&gt; -Properties * -ErrorAction SilentlyContinue | &lt;span style=&#34;color:#d0a8ff&#34;&gt;fl &lt;/span&gt;displayName,DistinguishedName,Name,&lt;span style=&#34;color:#d0a8ff&#34;&gt;msspp-csvlkpartialproductkey&lt;/span&gt; }
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Ich habe es nicht in einer Multi-Domain-Umgebung getestet, aber ich denke, dass es funktionieren sollte.&lt;/p&gt;
@@ -62,7 +64,7 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
       <title>PowerShell: Active Directory Computer filtern</title>
       <link>https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/08/07/powershell-active-directory-computers-filtering/</guid>
       <description>&lt;p&gt;Ich habe vor Kurzem an einem Kundenprojekt gearbeitet, bei dem ich rund um Active Directory Computer einiges machen musste. Ich habe PowerShell und etwas leichtes Filtern und Verarbeiten verwendet. Diese Beispiele teile ich jetzt hier und hoffentlich findet sie jemand interessant oder hilfreich. Vielleicht werde ich sie auch zukünftig interessant finden - in dem Fall: Moin Andi! 👋&lt;/p&gt;
 &lt;h2 id=&#34;beispiel-1-computer-nach-betriebssystemversion-filtern&#34;&gt;Beispiel 1: Computer nach Betriebssystemversion filtern&lt;/h2&gt;
@@ -73,7 +75,7 @@ Er verwendet &lt;code&gt;Get-ADDomain&lt;/code&gt;, um den Distinguished Name de
       <title>Exchange EAC hat nach dem Außerbetriebnehmen aller Mailbox-Datenbanken nicht mehr funktioniert</title>
       <link>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
       <description>&lt;p&gt;Ich habe dieses seltsame Problem in einer Exchange-Server-Umgebung gehabt:
 Die Firma hat eine Exchange Server 2016 DAG gehabt und alle Benutzerpostfächer nach Exchange Online migriert. Danach habe ich einen frischen Exchange Server 2019 für Recipient Management und SMTP-Relay installiert.
@@ -85,7 +87,7 @@ Ich habe alle verbleibenden System- und Arbitration-Postfächer von den Exchange
       <title>Synchronisierte Exchange Objekte ohne Exchange Server verwalten</title>
       <link>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</guid>
       <description>&lt;p&gt;Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden.
 Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft Dokumentation verweist nur am Rande auf das Thema&lt;/a&gt; und erklärt nicht wirklich.&lt;/p&gt;

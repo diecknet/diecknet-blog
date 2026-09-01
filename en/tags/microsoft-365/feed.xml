@@ -6,12 +6,14 @@
     <description>Recent content in Microsoft 365 on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/microsoft-365/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to get Group Membership count with Microsoft Graph API</title>
       <link>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</link>
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
       <description>&lt;p&gt;Apparently it&amp;rsquo;s not &lt;em&gt;that easy&lt;/em&gt; to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; to use the &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt;. Then we can use the Query parameter &lt;code&gt;$count&lt;/code&gt;. Alternatively I found that I could also add it as an URL query parameter instead. That would be &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;example-queries&#34;&gt;Example Queries&lt;/h2&gt;
@@ -22,7 +24,7 @@
       <title>How to configure MFA methods for Azure AD</title>
       <link>https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2022/02/02/How-to-configure-M365-azure-ad-MFA-methods/</guid>
       <description>&lt;p&gt;This post is outdated. The &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;authentcation methods policy&amp;rdquo;&lt;/a&gt; is now easily available in the Entra portal. You might still need to migrate from the legacy settings, read the whole article at &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-methods-manage#authentication-methods-policy&#34; target=&#34;_blank&#34; &gt;Microsoft Learn&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;old-post-for-reference&#34;&gt;OLD POST for reference&lt;/h2&gt;
@@ -33,7 +35,7 @@
       <title>List all Users with administrative roles in a Microsoft 365 environment</title>
       <link>https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2021/12/13/How-to-list-all-users-with-admin-roles-m365/</guid>
       <description>&lt;h2 id=&#34;option-1-use-m365-admin-portal&#34;&gt;Option 1: Use M365 Admin Portal&lt;/h2&gt;
 &lt;p&gt;There is finally a way in the main Microsoft 365 Admin Portal. Go to &lt;a href=&#34;https://admin.microsoft.com/Adminportal/Home?#/rbac/directory&#34; target=&#34;_blank&#34; &gt;&amp;ldquo;Roles&amp;rdquo; -&amp;gt; &amp;ldquo;Role assignments&amp;rdquo;&lt;/a&gt; and click on &amp;ldquo;Export admin list&amp;rdquo; to get a CSV file with all admins and their roles.&lt;/p&gt;

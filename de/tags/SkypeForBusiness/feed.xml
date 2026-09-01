@@ -6,12 +6,14 @@
     <description>Recent content in SkypeForBusiness on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Wed, 18 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/SkypeForBusiness/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Der Wechsel von Skype for Business zu Teams ist frustrierend</title>
       <link>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</link>
       <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/08/18/TeamsAutoUpgrade-fail/</guid>
       <description>&lt;p&gt;Der Upgrade-Prozess von Skype for Business Online zu Microsoft Teams ist ein Desaster gewesen. Mehrere SMB-Kunden haben mir unnötige Fehler zu Teams/Skype gemeldet. Mit unnötig meine ich: &lt;strong&gt;Sie haben bis 2021-07-31 keine Probleme mit Teams gehabt.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;problem-plötzlich-sind-skype-besprechungen-in-outlook-mobile-wieder-da&#34;&gt;Problem: Plötzlich sind Skype-Besprechungen in Outlook Mobile wieder da&lt;/h2&gt;

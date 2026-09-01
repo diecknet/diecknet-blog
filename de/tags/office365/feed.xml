@@ -6,12 +6,14 @@
     <description>Recent content in Office365 on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/office365/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exchange Online per Azure Automation steuern im Jahr 2024</title>
       <link>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
       <description>&lt;p&gt;Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist &lt;strong&gt;Managed Identities&lt;/strong&gt; was ihr benutzen solltet (diese Aussage wurde zuletzt geprüft im Juni 2024).&lt;/p&gt;
 &lt;h2 id=&#34;legacy-ansatz&#34;&gt;Legacy Ansatz&lt;/h2&gt;
@@ -23,7 +25,7 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
       <title>Microsoft Teams PowerShell: Authentifizierungsfehler/ActiveX-Steuerelement kann nicht instanziiert werden</title>
       <link>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</link>
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2022/06/13/Connect-MicrosoftTeams-Authentifizierungsfehler-ActiveX/</guid>
       <description>&lt;p&gt;Ich habe heute einen merkwürdigen Fehler beim Verbinden mit der Teams PowerShell erhalten. Ich notiere das hier kurz, da ich nach 15 Sekunden Internetrecherche keine Lösung dazu gefunden habe 😇. Alles was ich dazu spontan gefunden hatte, hatte nichts mit Teams zu tun.&lt;/p&gt;
 &lt;p&gt;Ich wollte mich einfach nur per &lt;code&gt;Connect-MicrosoftTeams&lt;/code&gt; mit der Microsoft Teams Administration per PowerShell verbinden. Ohne Angabe irgendwelcher weiteren Parameter, einfach ganz normal mit einem personalisierten Adminkonto anmelden und dann MFA bestätigen und so weiter. Aber bevor ich überhaupt nach einem Benutzernamen gefragt wurde - alles rot.&lt;/p&gt;</description>
@@ -33,7 +35,7 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
       <title>Microsoft Teams: Benutzerdefinierte Hintergründe deaktivieren</title>
       <link>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</link>
       <pubDate>Thu, 25 Feb 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/02/25/MSTeams-Disable-Custom-Backgrounds/</guid>
       <description>&lt;p&gt;Nachdem Microsoft virtuelle Hintergründe für MS Teams Besprechungen eingeführt hat, habe ich einige interessante Hintergrundbilder in Meetings gesehen. Trotzdem ist es meiner Meinung nach nicht notwendig, die freie Auswahl von Hintergründen zu verbieten. Da dies jedoch von Unternehmen zu Unternehmen unterschiedlich gehandhabt wird, beschreibe ich hier die Konfigurationsmöglichkeiten. Zur Einschränkung der Hintergrundauswahl kann eine Besprechungsrichtline verwendet werden.&lt;/p&gt;
 &lt;h2 id=&#34;möglichkeiten-zur-konfiguration&#34;&gt;Möglichkeiten zur Konfiguration&lt;/h2&gt;
@@ -44,7 +46,7 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
       <title>Microsoft 365 Self Service Purchase Lizenzen</title>
       <link>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/12/01/M365-Self-Service-Purchase/</guid>
       <description>&lt;p&gt;Seit ca. Ende des Jahres 2019 hat Microsoft die Self Service Purchase Lizenzen für Microsoft 365 eingeführt. Durch diese neue Funktion können Endanwender in einem Office 365 Tenant selbstständig Lizenzen für einige Produkte kaufen. Mit dem Stand 2020-12-01 sind dies folgende Produkte:&lt;/p&gt;
 &lt;ul&gt;
@@ -66,7 +68,7 @@ Eventuell bieten sich noch App Registrierungen in Entra ID an, aber wenn ihr wir
       <title>Azure AD Connect installieren (Video)</title>
       <link>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/23/Azure-AD-Connect-Video-Part2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-23_AzureADConnect-Part2-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect installieren (YouTube)&#34;  title=&#34;Azure AD Connect installieren (YouTube)&#34;  /&gt;
 &lt;/a&gt;&lt;br&gt;
@@ -84,7 +86,7 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>Office 365 Trial Lizenzen</title>
       <link>https://diecknet.de/de/2020/06/10/Office-365-Trials/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/10/Office-365-Trials/</guid>
       <description>&lt;p&gt;Zum Ausprobieren von Office 365 bzw. Microsoft 365 können diverse kostenlose Trial-Lizenzen genutzt werden. Hierbei kann man sich &lt;a href=&#34;https://www.youtube.com/watch?v=gCS2RkGWNjA&#34; target=&#34;_blank&#34; &gt;einen kostenlosen Tenant erstellen&lt;/a&gt;, oder die Test-Lizenz in einem bestehenden Tenant aktivieren. In der Regel startet dann eine 30 Tage Testphase mit jeweils 25 Benutzerlizenzen. Die Testphase kann einmal kostenlos um weitere 30 Tage verlängert werden. Nach Ablauf der Testphase kann der Tenant gelöscht werden. Alternativ können passende Lizenzen gekauft werden, um die Dienste weiter zu nutzen.&lt;/p&gt;</description>
     </item>
@@ -93,7 +95,7 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>Azure AD Connect richtig planen und vorbereiten (Video)</title>
       <link>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/06/05/Azure-AD-Connect-Video/</guid>
       <description>&lt;p&gt;Die Planung und Vorbereitung von Azure AD Connect ist wichtig. Ich habe zu dem Thema ein &lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;YouTube Video&lt;/a&gt; erstellt. In diesem Artikel verlinke ich die wichtigsten Quellen und Dokumentationsartikel. Außerdem habe ich einen Entscheidungsbaum für das Finden der richtigen Azure AD Connect Architektur erstellt.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_feF0VPL2Ps&#34; target=&#34;_blank&#34; &gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-06-06_AzureADConnect-YT-Thumbnail.png&#34; alt=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  title=&#34;Azure AD Connect: Planen und vorbereiten (YouTube)&#34;  /&gt;
@@ -107,7 +109,7 @@ Ich habe ein &lt;a href=&#34;https://www.youtube.com/watch?v=xQYsSngTSnU&#34; ta
       <title>Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich</title>
       <link>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
       <description>&lt;p&gt;Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -122,7 +124,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden</title>
       <link>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
       <description>&lt;p&gt;Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -135,7 +137,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Outlook Zertifikatswarnung nach Office 365 Migration</title>
       <link>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Outlook Zertifikatswarnung nach Office 365 Migration&lt;br&gt;

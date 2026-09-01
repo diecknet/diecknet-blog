@@ -2,16 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Exchange on diecknet</title>
-    <link>https://diecknet.de/de/tags/exchange/</link>
+    <link>https://diecknet.de/de/tags/Exchange/</link>
     <description>Recent content in Exchange on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/exchange/feed.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/Exchange/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>E-Mails per PowerShell und Microsoft Graph verschicken</title>
       <link>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</guid>
       <description>&lt;p&gt;E-Mails via Powershell und Microsoft Graph API zu verschicken, ist leider nicht so einfach wie mit dem klassischen &lt;code&gt;Send-MailMessage&lt;/code&gt; Cmdlet. Zu dem klassischen Weg hatte ich ja auch kürzlich &lt;a href=&#34;https://diecknet.de/de/2025/03/23/powershell-send-mailmessage/&#34; &gt;einen Blog-Post veröffentlicht&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Trotzdem gibt es einige Gründe, die für den Versand per Microsoft Graph sprechen. Im Oktober 2025 wird voraussichtlich die Plaintext Authentifizierung (&amp;ldquo;Basic Authentifizierung&amp;rdquo;) für den SMTP-Versand bei Exchange Online abgeschaltet. Falls also Exchange Online euer einziges E-Mail-System ist, aber ihr automatisiert E-Mails verschicken wollt, dann ist MS Graph die richtige Wahl. Alternativ könntet ihr natürlich auch ein zusätzliches E-Mail-System anschaffen (anmieten oder selbst betreiben).&lt;/p&gt;</description>
@@ -21,7 +23,7 @@
       <title>Exchange EAC hat nach dem Außerbetriebnehmen aller Mailbox-Datenbanken nicht mehr funktioniert</title>
       <link>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
       <description>&lt;p&gt;Ich habe dieses seltsame Problem in einer Exchange-Server-Umgebung gehabt:
 Die Firma hat eine Exchange Server 2016 DAG gehabt und alle Benutzerpostfächer nach Exchange Online migriert. Danach habe ich einen frischen Exchange Server 2019 für Recipient Management und SMTP-Relay installiert.
@@ -33,7 +35,7 @@ Ich habe alle verbleibenden System- und Arbitration-Postfächer von den Exchange
       <title>Synchronisierte Exchange Objekte ohne Exchange Server verwalten</title>
       <link>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</guid>
       <description>&lt;p&gt;Es ist ja schon seit einiger Zeit möglich, die Exchange Server Verwaltungstools ohne einen vollständigen Exchange Server zu verwenden.
 Die meisten Anleitungen gehen davon aus, dass schon mindestens ein Exchange Server vorhanden war und dieser dann entfernt wird. Und die &lt;a href=&#34;https://learn.microsoft.com/en-us/exchange/manage-hybrid-exchange-recipients-with-management-tools&#34; title=&#34;Manage recipients in Exchange Hybrid environments using Management tools&#34; target=&#34;_blank&#34; &gt;Microsoft Dokumentation verweist nur am Rande auf das Thema&lt;/a&gt; und erklärt nicht wirklich.&lt;/p&gt;
@@ -45,7 +47,7 @@ Im Microsoft 365 Admin Center wird angezeigt:&lt;/p&gt;</description>
       <title>Exchange-Server-Setup unvollständig und Abschluss schlägt fehl</title>
       <link>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
       <description>&lt;p&gt;Ich habe ein Problem mit einem kaputten Exchange Server 2016 CU23 gehabt. Oder eher: Er ist nicht vollständig installiert gewesen.
 Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich oder interessant sein würde, bei diesem Problem tiefer einzusteigen.&lt;/p&gt;
@@ -58,7 +60,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Outlook Cache Modus für Freigegebene Postfächer</title>
       <link>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
       <description>&lt;p&gt;In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -73,14 +75,14 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Alle Microsoft-Booking-Kalender auflisten</title>
       <link>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
       <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
       <description>&lt;p&gt;Wenn ihr Microsoft Booking in eurem Microsoft-365-Tenant nutzt, wollt ihr vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ &amp;ldquo;SchedulingMailbox&amp;rdquo;. Wenn einem Benutzer die Rolle &amp;ldquo;Administrator&amp;rdquo; für einen Booking-Kalender zugewiesen ist, hat er &amp;ldquo;FullAccess&amp;rdquo;-Berechtigungen für das Scheduling-Postfach.&lt;/p&gt;
 &lt;h2 id=&#34;alle-booking-kalender-mit-berechtigungen-auflisten&#34;&gt;Alle Booking-Kalender mit Berechtigungen auflisten&lt;/h2&gt;
 &lt;p&gt;Ich habe ein PowerShell-Skript geschrieben, um alle Booking-Postfächer mit den Benutzern aufzulisten, die Zugriff haben.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
@@ -103,7 +105,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# prerequisite: Exchange Online v2 PowerShell module, must be connected to the service&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# prerequisite: Exchange Online v2 PowerShell module, must be connected to the service&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;New-Object&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;System.Collections.Generic.List[System.Object]&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Get all Booking Mailboxes&lt;/span&gt;
@@ -115,7 +117,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ExoMailboxPermission&lt;/span&gt; -UserPrincipalName &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.UserPrincipalName -ResultSize:Unlimited | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Where-Object&lt;/span&gt; {(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.User -like &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;*@*&amp;#39;&lt;/span&gt;) -and (&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.AccessRights -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;FullAccess&amp;#34;&lt;/span&gt;)}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6c7986&#34;&gt;# Output PSCustomObject with infos to the foreach loop, so it gets saved into $BookingsMailboxesWithPermissions&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        [PSCustomObject]@{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        [PSCustomObject]&lt;span style=&#34;color:#41a1c0&#34;&gt;@&lt;/span&gt;{
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox DisplayName&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.DisplayName
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox E-Mail-Address&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.PrimarySmtpAddress
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;User&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt;.User
@@ -133,7 +135,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Auto-Expanding Archives in Exchange Online prüfen</title>
       <link>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
       <description>&lt;p&gt;Wenn ihr Auto-Expanding Archives für Exchange-Online-Postfächer aktiviert habt, wollt ihr vielleicht herausfinden, ob zusätzlicher Speicher tatsächlich bereitgestellt wird.&lt;/p&gt;
 &lt;p&gt;Im Exchange Admin Center (EAC) öffnet ihr den Infobereich des Benutzerpostfachs. Dann klickt ihr auf &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;
@@ -146,7 +148,7 @@ Es ist nur eine Testumgebung gewesen, aber ich habe gedacht, dass es nützlich o
       <title>Exchange Online: Apple Internet Accounts - Administratorgenehmigung erforderlich</title>
       <link>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
       <description>&lt;p&gt;Als sich der erste User mit seinem iPhone an Office 365 angemeldet hat, um seine Kontakte und Kalender zu synchronisieren, wurde ihm folgende Meldung angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -161,7 +163,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Exchange Hybrid: HCW8064 OAuth konnte nicht eingerichtet werden</title>
       <link>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
       <description>&lt;p&gt;Zum Abschluss des Hybrid Configuration Wizard (HCW) wurde mir folgende Warnungs-Meldung angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -174,15 +176,15 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Exchange - Wann wurde das Postfach WIRKLICH erstellt?</title>
       <link>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
       <description>&lt;p&gt;Wenn ihr herausfinden möchtet, wann ein Exchange Postfach erstellt wurde, werdet ihr wahrscheinlich über das Active Directory-Benutzer Attribut &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt; stolpern. Um den Wert auszulesen, könnt ihr PowerShell oder Active Directory-Benutzer und -Computer (ADUC) verwenden.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;MSExchWhenMailboxCreated Attribut per Active Directory-Benutzer und Computer anzeigen. Erweiterte Features müssen aktiviert sein.&#34;  /&gt;
@@ -195,7 +197,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Exchange Raumpostfach - Berechtigungen setzen</title>
       <link>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Zugriff wurde für den Benutzer verweigert. - Exchange Raumpostfach Berechtigungen (Outlook Fenster)&lt;/p&gt;
@@ -207,7 +209,7 @@ Apple Internet Accounts benötigt, um auf Ressourcen in Ihrer Organisation zugre
       <title>Outlook Zertifikatswarnung nach Office 365 Migration</title>
       <link>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Outlook Zertifikatswarnung nach Office 365 Migration&lt;br&gt;

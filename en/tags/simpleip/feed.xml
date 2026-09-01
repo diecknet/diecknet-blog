@@ -6,12 +6,14 @@
     <description>Recent content in Simpleip on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Wed, 27 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/simpleip/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Downside of going serverless</title>
       <link>https://diecknet.de/en/2021/10/27/My-simple-serverless-journey-part2/</link>
       <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2021/10/27/My-simple-serverless-journey-part2/</guid>
       <description>&lt;p&gt;After creating &lt;a href=&#34;https://simpleip.de&#34; target=&#34;_blank&#34; &gt;SimpleIP.de&lt;/a&gt; as a serverless application (see my blog post &lt;a href=&#34;https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/&#34; &gt;My simple serverless journey was not that easy&lt;/a&gt;) I was kinda proud. Interesting technology, small and useful website. Nice.&lt;/p&gt;
 &lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
@@ -22,7 +24,7 @@
       <title>My simple serverless journey was not that easy</title>
       <link>https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2021/05/02/My-simple-serverless-journey/</guid>
       <description>&lt;p&gt;Serverless Computing is an interesting concept. You can execute a script or programm without setting up the infrastructure behind it (servers, storage, networks, etc.). You just write your code and it gets executed. But Serverless doesn&amp;rsquo;t mean &amp;ldquo;without any servers&amp;rdquo; - you just don&amp;rsquo;t need to worry about them. That&amp;rsquo;s not that much of a difference to renting classic webspace from any webhosting service and putting your PHP scripts there.
 Nowadays Serverless usually means some kind of modern architecture that allows you to run your application code. The difference is &lt;strong&gt;scaling&lt;/strong&gt;. The cloud provider handles the logic to run your serverless functions as it&amp;rsquo;s needed. When your application is not used, the execution is stopped and no computing resources are consumed.&lt;/p&gt;</description>

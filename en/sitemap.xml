@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -457,17 +458,17 @@
                 href="https://diecknet.de/en/2023/05/20/powershell-constrainedlanguage-mode-per-gpo/"
                 />
   </url><url>
-    <loc>https://diecknet.de/en/tags/exchange/</loc>
+    <loc>https://diecknet.de/en/tags/Exchange/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/exchange/"
+                href="https://diecknet.de/de/tags/Exchange/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/exchange/"
+                href="https://diecknet.de/en/tags/Exchange/"
                 />
   </url><url>
     <loc>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</loc>
@@ -501,7 +502,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/hybrid/"
+                href="https://diecknet.de/de/tags/Hybrid/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1229,7 +1230,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/microsoftteams/"
+                href="https://diecknet.de/de/tags/MicrosoftTeams/"
                 />
     <xhtml:link
                 rel="alternate"

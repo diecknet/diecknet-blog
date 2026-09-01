@@ -6,12 +6,14 @@
     <description>Recent content in Exo on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/exo/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exchange Online per Azure Automation steuern im Jahr 2024</title>
       <link>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2023/01/09/Exchange-Online-per-Azure-Automation/</guid>
       <description>&lt;p&gt;Wenn ihr Exchange Online per Azure Automation steuern wollt, dann ist &lt;strong&gt;Managed Identities&lt;/strong&gt; was ihr benutzen solltet (diese Aussage wurde zuletzt geprüft im Juni 2024).&lt;/p&gt;
 &lt;h2 id=&#34;legacy-ansatz&#34;&gt;Legacy Ansatz&lt;/h2&gt;

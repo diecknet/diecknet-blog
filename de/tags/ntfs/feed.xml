@@ -6,12 +6,14 @@
     <description>Recent content in Ntfs on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/ntfs/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell NTFS Alternate Data Streams</title>
       <link>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
       <description>&lt;p&gt;Das Dateisystem NTFS wird standardmäßig unter Windows verwendet. Und normalerweise hat eine Datei nur einen dazugehörigen normalen Datenstrom (Data Stream) mit dem Namen &lt;code&gt;:$DATA&lt;/code&gt;. Aber es gibt auch die sogenannten &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), die zusätzliche Daten enthalten können.&lt;/p&gt;
 &lt;p&gt;Diese ADS werden teilweise vom System verwendet, könnten aber auch von Angreifern verwendet werden, um Daten zu verstecken.&lt;/p&gt;
@@ -25,16 +27,16 @@ Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/cod
       <title>Dateidatum per PowerShell setzen</title>
       <link>https://diecknet.de/de/2020/09/08/Set-File-Date-with-PowerShell/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/09/08/Set-File-Date-with-PowerShell/</guid>
       <description>&lt;p&gt;Das Datum einer Datei kann beliebig per PowerShell gesetzt beziehungsweise manipuliert werden. Im Screenshot sind beispielhaft ein paar beliebig gesetzte Werte zu sehen. Die Vorgehensweise ist getestet mit Windows PowerShell 5.1.&lt;/p&gt;
 &lt;p&gt;Per &lt;code&gt;Get-Member&lt;/code&gt; kann man sich die Zeit-Attribute einer Datei anzeigen lassen.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; beispiel.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Item&lt;/span&gt; beispiel.txt | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-Member&lt;/span&gt; *time*
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-09-08_DateAttributes.png&#34; alt=&#34;Dateidatums-Attribute anzeigen&#34;  title=&#34;Dateidatums-Attribute anzeigen&#34;  /&gt;
@@ -52,35 +54,35 @@ Um den Inhalt eines ADS auszulesen, kann einfach &lt;code&gt;Get-Content&lt;/cod
       <title>NTFS-Berechtigungen mit PowerShell prüfen</title>
       <link>https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2020/05/20/Check-NTFS-Permissions-Powershell/</guid>
       <description>&lt;p&gt;Ich habe eine schnelle Möglichkeit gebraucht, ein paar Ordner auf korrekte Berechtigungen zu prüfen. Es hat sich um Windows Virtual Desktop/FSLogix-Benutzerprofilcontainer in einer Azure Files-Freigabe gehandelt. Bei einigen dieser Profilordner sind die Berechtigungen falsch gesetzt gewesen.&lt;/p&gt;
 &lt;p&gt;Die korrekten Storage-Berechtigungen sind:&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Benutzerkonto&lt;/th&gt;
-          &lt;th&gt;Ordner&lt;/th&gt;
-          &lt;th&gt;Berechtigungen&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Users&lt;/td&gt;
-          &lt;td&gt;Nur dieser Ordner&lt;/td&gt;
-          &lt;td&gt;Ändern&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Creator / Owner&lt;/td&gt;
-          &lt;td&gt;Nur Unterordner und Dateien&lt;/td&gt;
-          &lt;td&gt;Ändern&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Administrator (optional)&lt;/td&gt;
-          &lt;td&gt;Dieser Ordner, Unterordner, Dateien&lt;/td&gt;
-          &lt;td&gt;Vollzugriff&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Benutzerkonto&lt;/th&gt;
+					&lt;th&gt;Ordner&lt;/th&gt;
+					&lt;th&gt;Berechtigungen&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Users&lt;/td&gt;
+					&lt;td&gt;Nur dieser Ordner&lt;/td&gt;
+					&lt;td&gt;Ändern&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Creator / Owner&lt;/td&gt;
+					&lt;td&gt;Nur Unterordner und Dateien&lt;/td&gt;
+					&lt;td&gt;Ändern&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Administrator (optional)&lt;/td&gt;
+					&lt;td&gt;Dieser Ordner, Unterordner, Dateien&lt;/td&gt;
+					&lt;td&gt;Vollzugriff&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Offizielle FSLogix-Dokumentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/fslogix/fslogix-storage-config-ht&#34; target=&#34;_blank&#34; &gt;Configure storage permissions for use with Profile Containers and Office Containers&lt;/a&gt;&lt;/p&gt;</description>
     </item>

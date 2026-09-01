@@ -6,12 +6,14 @@
     <description>Recent content in Static Site Generator on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Thu, 22 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/static-site-generator/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Von 11ty zu Hugo migrieren</title>
       <link>https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/</link>
       <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/02/22/Von-11ty-zu-Hugo-migrieren/</guid>
       <description>&lt;p&gt;Ich habe diese Website kürzlich auf 11ty v2.0 aktualisiert, aber ich habe noch mehr Veränderung gewollt. Anfangs habe ich nur ein simples Design mit &lt;a href=&#34;https://github.com/Gioni06/terminal.css&#34; target=&#34;_blank&#34; &gt;Terminal.css&lt;/a&gt; bauen wollen. Dann bin ich aber zufällig über die &lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; &gt;Hugo Theme Gallery&lt;/a&gt; gestolpert und habe ein paar richtig schöne Themes gefunden! Deshalb habe ich mich entschieden, &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod/&#34; target=&#34;_blank&#34; &gt;Hugo Papermod&lt;/a&gt; zu nutzen und die Website auf Hugo zu migrieren 🤓. Da ich JavaScript nicht &lt;em&gt;wirklich&lt;/em&gt; beherrsche, ist es für mich egal, dass Hugo stattdessen Go nutzt. Ich habe Go als Programmiersprache zwar noch nie verwendet, aber klingt gut.&lt;br&gt;
 Ich habe jetzt einfach mal ein bisschen zusammengeschrieben, was ich für die Migration meines Blogs gemacht habe.&lt;/p&gt;</description>

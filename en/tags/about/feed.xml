@@ -6,12 +6,14 @@
     <description>Recent content in About on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/about/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A new blog</title>
       <link>https://diecknet.de/en/2019/10/21/new-blog/</link>
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2019/10/21/new-blog/</guid>
       <description>&lt;p&gt;That&amp;rsquo;s about how the conversation went when I told the first person about my blog plans.&lt;/p&gt;
 &lt;blockquote&gt;

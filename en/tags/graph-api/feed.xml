@@ -6,12 +6,14 @@
     <description>Recent content in Graph Api on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Thu, 16 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/graph-api/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to get Group Membership count with Microsoft Graph API</title>
       <link>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</link>
       <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2022/06/16/Get-Group-membership-count-with-microsoft-graph-api/</guid>
       <description>&lt;p&gt;Apparently it&amp;rsquo;s not &lt;em&gt;that easy&lt;/em&gt; to get the amount of members of a group with the Microsoft Graph API. We need to specify the additional header &lt;code&gt;ConsistencyLevel: eventual&lt;/code&gt; to use the &lt;strong&gt;Advanced Query Capabilities&lt;/strong&gt;. Then we can use the Query parameter &lt;code&gt;$count&lt;/code&gt;. Alternatively I found that I could also add it as an URL query parameter instead. That would be &lt;code&gt;&amp;amp;ConsistencyLevel=eventual&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;example-queries&#34;&gt;Example Queries&lt;/h2&gt;

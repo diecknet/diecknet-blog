@@ -6,12 +6,14 @@
     <description>Recent content in Ntfs on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/ntfs/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell NTFS Alternate Data Streams</title>
       <link>https://diecknet.de/en/2024/08/30/powershell-ntfs-alternate-data-streams/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2024/08/30/powershell-ntfs-alternate-data-streams/</guid>
       <description>&lt;p&gt;The NTFS file system is used by default in Windows. And normally a file has only one associated normal data stream with the name &lt;code&gt;:$DATA&lt;/code&gt;. But there are also the so-called &amp;ldquo;Alternate Data Streams&amp;rdquo; (ADS), which can contain additional data. These ADS are not visible in the Windows Explorer or most other applications.&lt;/p&gt;
 &lt;p&gt;ADS are sometimes used by the system, but could also be used by attackers to hide data.&lt;/p&gt;</description>
@@ -21,35 +23,35 @@
       <title>Check NTFS Permissions using Powershell</title>
       <link>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/05/20/Check-NTFS-Permissions-Powershell/</guid>
       <description>&lt;p&gt;So I needed a quick way to check a few folders for correct permissions. We had Windows Virtual Desktop/FSLogix user profile containers in an Azure Files share. Some of these profile folders had wrong permissions.&lt;/p&gt;
 &lt;p&gt;The correct storage permissions are:&lt;/p&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;User Account&lt;/th&gt;
-          &lt;th&gt;Folder&lt;/th&gt;
-          &lt;th&gt;Permissions&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Users&lt;/td&gt;
-          &lt;td&gt;This Folder Only&lt;/td&gt;
-          &lt;td&gt;Modify&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Creator / Owner&lt;/td&gt;
-          &lt;td&gt;Subfolders and Files Only&lt;/td&gt;
-          &lt;td&gt;Modify&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Administrator (optional)&lt;/td&gt;
-          &lt;td&gt;This Folder, Subfolders, and Files&lt;/td&gt;
-          &lt;td&gt;Full Control&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;User Account&lt;/th&gt;
+					&lt;th&gt;Folder&lt;/th&gt;
+					&lt;th&gt;Permissions&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Users&lt;/td&gt;
+					&lt;td&gt;This Folder Only&lt;/td&gt;
+					&lt;td&gt;Modify&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Creator / Owner&lt;/td&gt;
+					&lt;td&gt;Subfolders and Files Only&lt;/td&gt;
+					&lt;td&gt;Modify&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Administrator (optional)&lt;/td&gt;
+					&lt;td&gt;This Folder, Subfolders, and Files&lt;/td&gt;
+					&lt;td&gt;Full Control&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Official FSLogix documentation: &lt;a href=&#34;https://docs.microsoft.com/en-us/fslogix/fslogix-storage-config-ht&#34; target=&#34;_blank&#34; &gt;Configure storage permissions for use with Profile Containers and Office Containers&lt;/a&gt;&lt;/p&gt;</description>
     </item>

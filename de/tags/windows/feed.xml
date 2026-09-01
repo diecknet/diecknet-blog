@@ -6,12 +6,14 @@
     <description>Recent content in Windows on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Screenshots per PowerShell erstellen</title>
       <link>https://diecknet.de/de/2026/05/10/powershell-screenshots/</link>
       <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2026/05/10/powershell-screenshots/</guid>
       <description>&lt;p&gt;Wenn ihr Screenshots per PowerShell erstellen wollt, dann müsst ihr .NET verwenden. Den passenden Code dazu zeige ich im folgenden. Aber falls ihr das einfacher machen möchtet, könnt ihr auch &lt;a href=&#34;https://github.com/diecknet/PSScreenshot&#34; target=&#34;_blank&#34; &gt;mein Screenshot PowerShell Modul&lt;/a&gt; verwenden (mehr Infos dazu weiter unten).&lt;/p&gt;
 &lt;p&gt;Ich demonstriere die nachfolgenden Möglichkeiten auch &lt;a href=&#34;https://youtu.be/wcEcqw89si8&#34; target=&#34;_blank&#34; &gt;in diesem Video hier auf YouTube&lt;/a&gt;.&lt;/p&gt;
@@ -23,7 +25,7 @@
       <title>Herausfinden welcher Prozess auf einem bestimmten Port lauscht (PowerShell)</title>
       <link>https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/</guid>
       <description>&lt;p&gt;Wenn ihr herausfinden möchtet, welcher Prozess auf einem bestimmten TCP/UDP Port lauscht dann könnt ihr unter Windows dafür auch PowerShell verwenden. Ich finde das angenehmer, als die Ausgabe von &lt;code&gt;netstat&lt;/code&gt; auszuwerten.&lt;/p&gt;
 &lt;p&gt;Ich demonstriere die nachfolgenden Möglichkeiten auch &lt;a href=&#34;https://youtu.be/SGvbBbsIpjw&#34; target=&#34;_blank&#34; &gt;in diesem Video hier auf YouTube&lt;/a&gt;.&lt;/p&gt;
@@ -35,18 +37,18 @@
       <title>PowerShell: Zugriff auf Umgebungsvariablen</title>
       <link>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</link>
       <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/02/28/powershell-environment-variables/</guid>
       <description>&lt;p&gt;Per PowerShell auf Umgebungsvariablen zugreifen - das geht ganz einfach.&lt;br&gt;
 &lt;strong&gt;🎬 Ich habe übrigens auch ein &lt;a href=&#34;https://youtu.be/25-jcylahSo&#34; target=&#34;_blank&#34; &gt;Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;umgebungsvariable-per-env-variable-auslesen&#34;&gt;Umgebungsvariable per &lt;code&gt;$Env:&lt;/code&gt;-Variable auslesen&lt;/h2&gt;
 &lt;p&gt;Die einfachste Möglichkeit ist per &lt;code&gt;$Env:&lt;/code&gt;-Variable. Gebt dafür einfach &lt;code&gt;$Env&lt;/code&gt; ein, dann einen Doppelpunkt und dann den Namen der Umgebungsvariable von der ihr den Wert auslesen wollt.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Env:username&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$Env:username&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Dadurch wird der Username des aktuell angemeldeten Users ausgegeben.&lt;/p&gt;
@@ -58,17 +60,17 @@
       <title>PowerShell: Überprüfen ob Admin-Rechte vorhanden sind</title>
       <link>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</link>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/02/20/powershell-check-admin-rights/</guid>
       <description>&lt;p&gt;Wenn ihr ein PowerShell Skript erstellt habt, was Aktionen ausführen soll, die Adminrechte erfordern, dann könnt ihr das auch per Code überprüfen. Damit könnt ihr sicherstellen, dass euer Skript erfolgreich ausgeführt werden kann. Am einfachsten geht das mit einer &lt;code&gt;Requires&lt;/code&gt;-Anweisung.
 &lt;strong&gt;&lt;a href=&#34;https://youtu.be/ACUCARq7joM&#34; target=&#34;_blank&#34; &gt;🎬 Ich habe übrigens auch ein Video zu dem Thema erstellt.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;admin-rechte-per-requires-anweisung-erfordern&#34;&gt;Admin-Rechte per Requires Anweisung erfordern&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;Requires&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;-RunAsAdministrator&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#fc5fa3&#34;&gt;Requires&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;-RunAsAdministrator&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Diese Zeile kann an eine beliebigen Stelle im PowerShell Code eingefügt werden. Ich würde es immer relativ am Anfang des Skriptes einbauen, damit es gut sichtbar ist. Aber die Position spielt technisch gesehen keine Rolle. Also wenn die &lt;code&gt;#Requires&lt;/code&gt; Anweisung im Code drin steht, wird das vor der richtigen Ausführung des gesamten restlichen Codes ausgewertet. Und je nachdem ob Adminrechte vorhanden sind, oder nicht - wird ein Fehler ausgegeben.&lt;/p&gt;</description>
@@ -78,7 +80,7 @@
       <title>PowerShell: Übersetzte Security Identifier Namen herausfinden</title>
       <link>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2024/01/17/powershell-localized-security-identifiers/</guid>
       <description>&lt;p&gt;Security Identifiers sind dazu da, um bestimmte Security Prinzipale oder Gruppen unter Windows zu identifizieren. Leider sind die dazugehörigen Namen lokalisiert, also sind zum Beispiel in einem deutschsprachigen System anders als in einem englischsprachigen System.&lt;/p&gt;
 &lt;p&gt;Beispielsweise heißt die eingebaute Administratorgruppe auf Englisch &lt;code&gt;BUILTIN\ADMINISTRATORS&lt;/code&gt; und auf Deutsch &lt;code&gt;VORDEFINIERT\Administratoren&lt;/code&gt;. Oder das Englische &lt;code&gt;NT AUTHORITY\SYSTEM&lt;/code&gt; wird an einem Deutschen System zu &lt;code&gt;NT-AUTORITÄT\SYSTEM&lt;/code&gt;. &lt;strong&gt;Das finde ich richtig abgefahren!&lt;/strong&gt; Da wird auf einmal ein Leerzeichen durch ein Bindestrich ersetzt. Naja was soll&amp;rsquo;s.&lt;/p&gt;</description>
@@ -88,7 +90,7 @@
       <title>PowerShell-Skript mit der Windows-Aufgabenplanung ausführen</title>
       <link>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</link>
       <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/10/13/PowerShell-Task-Scheduler/</guid>
       <description>&lt;p&gt;Eine kurze Notiz für mich selbst - wie ich ein PowerShell-Skript mit der Windows-Aufgabenplanung ausgeführt habe.&lt;/p&gt;
 &lt;h2 id=&#34;aufgabenplanung-öffnen&#34;&gt;Aufgabenplanung öffnen&lt;/h2&gt;
@@ -99,26 +101,26 @@
 Alle selbsterklärenden Optionen wie Name, Beschreibung, Benutzerkonto, Trigger usw. setzen.&lt;/p&gt;
 &lt;h2 id=&#34;aktion-festlegen&#34;&gt;Aktion festlegen&lt;/h2&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Setting&lt;/th&gt;
-          &lt;th&gt;Value&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Action&lt;/td&gt;
-          &lt;td&gt;Start a program&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Program/script&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;powershell.exe&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Add arguments (optional)&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;-file &amp;quot;C:\Path\Script.ps1&amp;quot;&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Setting&lt;/th&gt;
+					&lt;th&gt;Value&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Action&lt;/td&gt;
+					&lt;td&gt;Start a program&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Program/script&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;powershell.exe&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Add arguments (optional)&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;-file &amp;quot;C:\Path\Script.ps1&amp;quot;&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;</description>
     </item>
     

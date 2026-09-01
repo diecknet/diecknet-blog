@@ -6,12 +6,14 @@
     <description>Recent content in Exchange Online on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/exchange-online/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Outlook Cache Modus für Freigegebene Postfächer</title>
       <link>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</link>
       <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/19/Exchange-Online-Cache-Mode-Shared-Mailboxes/</guid>
       <description>&lt;p&gt;In neueren Microsoft Outlook Versionen es ist nicht mehr möglich, im Cache Modus für freigegebene Postfächer weitere E-Mails abzurufen. Stattdessen wird am Ende der E-Mail-Liste folgender Hinweis angezeigt:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -26,14 +28,14 @@
       <title>Alle Microsoft-Booking-Kalender auflisten</title>
       <link>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
       <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
       <description>&lt;p&gt;Wenn ihr Microsoft Booking in eurem Microsoft-365-Tenant nutzt, wollt ihr vielleicht alle Booking-Kalender auflisten. Booking nutzt im Hintergrund Exchange-Online-Postfächer. Jeder Booking-Kalender hat ein entsprechendes Postfach vom Typ &amp;ldquo;SchedulingMailbox&amp;rdquo;. Wenn einem Benutzer die Rolle &amp;ldquo;Administrator&amp;rdquo; für einen Booking-Kalender zugewiesen ist, hat er &amp;ldquo;FullAccess&amp;rdquo;-Berechtigungen für das Scheduling-Postfach.&lt;/p&gt;
 &lt;h2 id=&#34;alle-booking-kalender-mit-berechtigungen-auflisten&#34;&gt;Alle Booking-Kalender mit Berechtigungen auflisten&lt;/h2&gt;
 &lt;p&gt;Ich habe ein PowerShell-Skript geschrieben, um alle Booking-Postfächer mit den Benutzern aufzulisten, die Zugriff haben.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
@@ -56,7 +58,7 @@
 &lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;21
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# prerequisite: Exchange Online v2 PowerShell module, must be connected to the service&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# prerequisite: Exchange Online v2 PowerShell module, must be connected to the service&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#41a1c0&#34;&gt;$BookingsMailboxesWithPermissions&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;New-Object&lt;/span&gt; &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;System.Collections.Generic.List[System.Object]&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6c7986&#34;&gt;# Get all Booking Mailboxes&lt;/span&gt;
@@ -68,7 +70,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt; = &lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ExoMailboxPermission&lt;/span&gt; -UserPrincipalName &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.UserPrincipalName -ResultSize:Unlimited | &lt;span style=&#34;color:#d0a8ff&#34;&gt;Where-Object&lt;/span&gt; {(&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.User -like &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;*@*&amp;#39;&lt;/span&gt;) -and (&lt;span style=&#34;color:#41a1c0&#34;&gt;$_&lt;/span&gt;.AccessRights -eq &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#34;FullAccess&amp;#34;&lt;/span&gt;)}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#fc5fa3&#34;&gt;foreach&lt;/span&gt;(&lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt; &lt;span style=&#34;color:#fc5fa3&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#41a1c0&#34;&gt;$allPermissionsForThisMailbox&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#6c7986&#34;&gt;# Output PSCustomObject with infos to the foreach loop, so it gets saved into $BookingsMailboxesWithPermissions&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        [PSCustomObject]@{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        [PSCustomObject]&lt;span style=&#34;color:#41a1c0&#34;&gt;@&lt;/span&gt;{
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox DisplayName&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.DisplayName
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;Bookings Mailbox E-Mail-Address&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$bookingsMailbox&lt;/span&gt;.PrimarySmtpAddress
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#fc6a5d&#34;&gt;&amp;#39;User&amp;#39;&lt;/span&gt; = &lt;span style=&#34;color:#41a1c0&#34;&gt;$permission&lt;/span&gt;.User
@@ -86,7 +88,7 @@
       <title>Auto-Expanding Archives in Exchange Online prüfen</title>
       <link>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
       <description>&lt;p&gt;Wenn ihr Auto-Expanding Archives für Exchange-Online-Postfächer aktiviert habt, wollt ihr vielleicht herausfinden, ob zusätzlicher Speicher tatsächlich bereitgestellt wird.&lt;/p&gt;
 &lt;p&gt;Im Exchange Admin Center (EAC) öffnet ihr den Infobereich des Benutzerpostfachs. Dann klickt ihr auf &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;

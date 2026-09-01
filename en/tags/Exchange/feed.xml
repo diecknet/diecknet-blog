@@ -2,16 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Exchange on diecknet</title>
-    <link>https://diecknet.de/en/tags/exchange/</link>
+    <link>https://diecknet.de/en/tags/Exchange/</link>
     <description>Recent content in Exchange on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/exchange/feed.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
+    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/Exchange/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exchange EAC stopped working after decomissioning all Mailbox Databases</title>
       <link>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</guid>
       <description>&lt;p&gt;I had this weird issue with a Exchange Server environment:
 The company had an Exchange Server 2016 DAG and migrated all User Mailboxes to Exchange Online. I then installed a fresh Exchange Server 2019 for Recipient Management and SMTP-Relay.
@@ -23,7 +25,7 @@ I removed all remaining System Mailboxes and Arbitration Mailboxes from the Exch
       <title>Exchange Server Setup Incomplete but fails to complete</title>
       <link>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
       <description>&lt;p&gt;I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed.
 It was just a test environment, but I thought it would be useful or interesting to drill down on that issue.&lt;/p&gt;
@@ -36,7 +38,7 @@ It was just a test environment, but I thought it would be useful or interesting 
       <title>List all Microsoft Booking Calendars</title>
       <link>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
       <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type &amp;ldquo;SchedulingMailbox&amp;rdquo;. If an user gets assigned &amp;ldquo;Administrator&amp;rdquo; for a Booking Calendar, they get &amp;ldquo;FullAccess&amp;rdquo; permissions for the Scheduling Mailbox.&lt;/p&gt;
 &lt;h2 id=&#34;list-all-booking-calendars-with-permission&#34;&gt;List all Booking Calendars with permission&lt;/h2&gt;
@@ -47,7 +49,7 @@ It was just a test environment, but I thought it would be useful or interesting 
       <title>Verify Auto-Expanding Archives in Exchange Online</title>
       <link>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</link>
       <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2021/11/04/Exchange-Online-Auto-Expanding-Archives/</guid>
       <description>&lt;p&gt;If you have Auto-Expanding Archives for Exchange Online Mailboxes enabled, you might want to find out, if it actually provisions additional storage.&lt;/p&gt;
 &lt;p&gt;In the Exchange Admin Center (EAC), open the info pane of the user&amp;rsquo;s mailbox. Click on &amp;ldquo;Manage mailbox archive&amp;rdquo;.&lt;/p&gt;
@@ -60,7 +62,7 @@ It was just a test environment, but I thought it would be useful or interesting 
       <title>Exchange Online: Apple Internet Accounts - Need admin approval</title>
       <link>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</link>
       <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/05/10/Apple-Internet-Accounts-Office365/</guid>
       <description>&lt;p&gt;When the first users logged into Office 365 with his iPhone to sync his Contacts and Calendar, he got this dialogue:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -75,7 +77,7 @@ Apple Internet Accounts needs permission to access resources in your organizatio
       <title>Exchange Hybrid: HCW8064 OAuth configuration couldn&#39;t get performed</title>
       <link>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/05/01/Exchange-Hybrid-HCW8064-OAuth/</guid>
       <description>&lt;p&gt;At the end of the Hybrid Configuration Wizard (HCW) I received the following warning message:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -88,15 +90,15 @@ Apple Internet Accounts needs permission to access resources in your organizatio
       <title>Exchange - When was that mailbox REALLY created?</title>
       <link>https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/</link>
       <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/01/25/Exchange-Mailbox-Creation-Date/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re wondering when an Exchange mailbox got created, you will most likely stumble over the Active Directory user attribute &lt;code&gt;MSExchWhenMailboxCreated&lt;/code&gt;. You can get the value using PowerShell or ADUC with advanced features enabled.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#1f1f24;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#d0a8ff&#34;&gt;Get-ADUser&lt;/span&gt; -Properties MSExchMaiboxWhenCreated
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://diecknet.de/images/2020/2020-01-25_MSExchWhenMailboxCreated_ADUC.png&#34; alt=&#34;Get MSExchWhenMailboxCreated attribute using PowerShell&#34;  title=&#34;Get MSExchWhenMailboxCreated attribute using Active Directory Users and Computers. Advanced features need to be enabled.&#34;  /&gt;
@@ -109,7 +111,7 @@ Apple Internet Accounts needs permission to access resources in your organizatio
       <title>Exchange Room Mailbox - Set Permissions</title>
       <link>https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2020/01/15/Exchange-Room-Mailbox-Standard-Permissions/</guid>
       <description>&lt;p&gt;By default, the &amp;ldquo;Calendar&amp;rdquo; folder in Exchange 2013 Room Mailboxes has the &amp;ldquo;LimitedDetails&amp;rdquo; permission for the &amp;ldquo;Standard&amp;rdquo; security principal. Therefore, if no other permissions are configured, users cannot view details for appointments in this room. For better usability in Outlook, the &amp;ldquo;Reviewer&amp;rdquo; permission is more suitable. This allows items to be listed and details to be displayed. If required, the &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-calendarprocessing?view=exchange-ps&#34; target=&#34;_blank&#34; &gt;CalendarProcessing&lt;/a&gt; can be adjusted so that details such as the description and subject of the appointment are not saved in the room mailbox. Whether all this makes sense always depends on the environment.&lt;/p&gt;</description>
     </item>
@@ -118,7 +120,7 @@ Apple Internet Accounts needs permission to access resources in your organizatio
       <title>Outlook Certificate Warning after Office 365 Migration</title>
       <link>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</link>
       <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2019/12/18/Outlook-Certificate-Warning-after-Office-365-Migration/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Outlook Certificate Warning after Office 365 Migration&lt;br&gt;

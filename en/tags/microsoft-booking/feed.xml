@@ -6,12 +6,14 @@
     <description>Recent content in Microsoft Booking on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Fri, 12 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/microsoft-booking/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>List all Microsoft Booking Calendars</title>
       <link>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</link>
       <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2021/11/12/List-All-Microsoft-Booking-Mailboxes/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re using Microsoft Booking in your Microsoft 365 Tenant, you might want to list all of the Booking calendars. Booking uses Exchange Online Mailboxes in the background. Every Booking Calendar has a corresponding Mailbox of the type &amp;ldquo;SchedulingMailbox&amp;rdquo;. If an user gets assigned &amp;ldquo;Administrator&amp;rdquo; for a Booking Calendar, they get &amp;ldquo;FullAccess&amp;rdquo; permissions for the Scheduling Mailbox.&lt;/p&gt;
 &lt;h2 id=&#34;list-all-booking-calendars-with-permission&#34;&gt;List all Booking Calendars with permission&lt;/h2&gt;

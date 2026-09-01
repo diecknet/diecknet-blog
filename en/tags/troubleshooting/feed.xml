@@ -6,12 +6,14 @@
     <description>Recent content in Troubleshooting on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <managingEditor>Andreas Dieckmann</managingEditor>
+    <webMaster>Andreas Dieckmann</webMaster>
     <lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/troubleshooting/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exchange Server Setup Incomplete but fails to complete</title>
       <link>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
-      
+      <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/en/2022/06/23/Exchange-Server-Setup-Incomplete-fail-stopping-services/</guid>
       <description>&lt;p&gt;I had an issue with a broken Exchange Server 2016 CU23. Or rather it was not fully installed.
 It was just a test environment, but I thought it would be useful or interesting to drill down on that issue.&lt;/p&gt;
