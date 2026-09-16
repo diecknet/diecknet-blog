@@ -4,7 +4,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://diecknet.de/de/</loc>
-    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -16,8 +16,21 @@
                 href="https://diecknet.de/en/"
                 />
   </url><url>
+    <loc>https://diecknet.de/de/2026/09/16/powershell-recycle-bin/</loc>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/2026/09/16/powershell-recycle-bin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/2026/09/16/powershell-recycle-bin/"
+                />
+  </url><url>
     <loc>https://diecknet.de/de/posts/</loc>
-    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -30,7 +43,7 @@
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/powershell/</loc>
-    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -40,6 +53,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://diecknet.de/en/tags/powershell/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/tags/</loc>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/"
+                />
+  </url><url>
+    <loc>https://diecknet.de/de/tags/windows/</loc>
+    <lastmod>2026-09-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://diecknet.de/de/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://diecknet.de/en/tags/windows/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2026/05/10/powershell-screenshots/</loc>
@@ -53,32 +92,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://diecknet.de/en/2026/05/10/powershell-screenshots/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/tags/</loc>
-    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/"
-                />
-  </url><url>
-    <loc>https://diecknet.de/de/tags/windows/</loc>
-    <lastmod>2026-05-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://diecknet.de/de/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://diecknet.de/en/tags/windows/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2026/04/14/powershell-find-process-listening-port/</loc>
@@ -146,17 +159,17 @@
                 href="https://diecknet.de/en/2025/05/19/powershell-pad-zeros/"
                 />
   </url><url>
-    <loc>https://diecknet.de/de/tags/active-directory/</loc>
+    <loc>https://diecknet.de/de/tags/Active-Directory/</loc>
     <lastmod>2025-04-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/active-directory/"
+                href="https://diecknet.de/de/tags/Active-Directory/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/active-directory/"
+                href="https://diecknet.de/en/tags/Active-Directory/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2025/04/28/active-directory-recycle-bin/</loc>
@@ -185,17 +198,17 @@
                 href="https://diecknet.de/en/2025/04/10/powershell-send-mails-via-ms-graph/"
                 />
   </url><url>
-    <loc>https://diecknet.de/de/tags/Exchange/</loc>
+    <loc>https://diecknet.de/de/tags/exchange/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/Exchange/"
+                href="https://diecknet.de/de/tags/exchange/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/Exchange/"
+                href="https://diecknet.de/en/tags/exchange/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/microsoft-graph/</loc>
@@ -978,17 +991,17 @@
                 href="https://diecknet.de/en/tags/Exchange-Server/"
                 />
   </url><url>
-    <loc>https://diecknet.de/de/tags/Hybrid/</loc>
+    <loc>https://diecknet.de/de/tags/hybrid/</loc>
     <lastmod>2023-05-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/Hybrid/"
+                href="https://diecknet.de/de/tags/hybrid/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/Hybrid/"
+                href="https://diecknet.de/en/tags/hybrid/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/AAD/</loc>
@@ -1017,17 +1030,17 @@
                 href="https://diecknet.de/en/tags/Azure-Active-Directory/"
                 />
   </url><url>
-    <loc>https://diecknet.de/de/tags/Azure-AD-Connect/</loc>
+    <loc>https://diecknet.de/de/tags/azure-ad-connect/</loc>
     <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/Azure-AD-Connect/"
+                href="https://diecknet.de/de/tags/azure-ad-connect/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/Azure-AD-Connect/"
+                href="https://diecknet.de/en/tags/azure-ad-connect/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</loc>
@@ -1342,17 +1355,17 @@
                 href="https://diecknet.de/en/2022/06/13/microsoft-teams-powershell-authentication-error-activex/"
                 />
   </url><url>
-    <loc>https://diecknet.de/de/tags/microsoftteams/</loc>
+    <loc>https://diecknet.de/de/tags/MicrosoftTeams/</loc>
     <lastmod>2022-06-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/microsoftteams/"
+                href="https://diecknet.de/de/tags/MicrosoftTeams/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/microsoftteams/"
+                href="https://diecknet.de/en/tags/MicrosoftTeams/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/mfa/</loc>

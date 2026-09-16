@@ -8,7 +8,19 @@
     <language>de</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leeren des Papierkorbs mit PowerShell</title>
+      <link>https://diecknet.de/de/2026/09/16/powershell-recycle-bin/</link>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/de/2026/09/16/powershell-recycle-bin/</guid>
+      <description>&lt;p&gt;Wenn ihr den Windows-Papierkorb automatisiert leeren möchtet, könnt ihr dafür PowerShell verwenden. In diesem Beitrag zeige ich euch, wie das geht.&lt;/p&gt;
+&lt;p&gt;Ich demonstriere alles, was hier erwähnt wird, auch &lt;a href=&#34;https://youtu.be/BiIrZsEvz5c&#34; target=&#34;_blank&#34; &gt;in diesem Video auf YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;warum-überhaupt&#34;&gt;Warum überhaupt?&lt;/h2&gt;
+&lt;p&gt;Ich will nicht so tun, als ob das Leeren des Papierkorbs mit PowerShell besser sei als die Verwendung der grafischen Oberfläche. Aber mit PowerShell könnt ihr es automatisieren. Zum Beispiel als Teil eines eigenen System-Aufräum-Skripts.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Screenshots per PowerShell erstellen</title>
       <link>https://diecknet.de/de/2026/05/10/powershell-screenshots/</link>

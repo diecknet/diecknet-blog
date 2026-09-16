@@ -8,7 +8,21 @@
     <language>en</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/posts/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emptying the Recycle Bin with PowerShell</title>
+      <link>https://diecknet.de/en/2026/09/16/powershell-recycle-bin/</link>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2026/09/16/powershell-recycle-bin/</guid>
+      <description>&lt;p&gt;If you want to empty the Windows Recycle bin automatically, you can use PowerShell. In this post, I&amp;rsquo;ll show you how.&lt;/p&gt;
+&lt;p&gt;I also demonstrate everything mentioned here &lt;a href=&#34;https://youtu.be/BiIrZsEvz5c&#34; target=&#34;_blank&#34; &gt;in this video on YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;why-though&#34;&gt;Why though?&lt;/h2&gt;
+&lt;p&gt;I don&amp;rsquo;t claim that using PowerShell to empty the Recycle Bin is generally better than using the GUI. But with PowerShell you can automate it. For example as part of a custom system clean-up script.&lt;/p&gt;
+&lt;h2 id=&#34;note-works-only-on-windows&#34;&gt;Note: Works only on Windows&lt;/h2&gt;
+&lt;p&gt;The code shown in this post only works on Windows.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Creating Screenshots with PowerShell</title>
       <link>https://diecknet.de/en/2026/05/10/powershell-screenshots/</link>
