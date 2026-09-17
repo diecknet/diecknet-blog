@@ -1,0 +1,6 @@
+# If you find any security issues, please report them via mail
+# I don't give out any bug bounties, but I appreciate every report.
+# Please do not send any AI generated reports without validating them.
+
+Contact: mailto:diecknet.security.txt.stylus788@simplelogin.com
+Preferred-Languages: en, de
