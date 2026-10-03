@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Exchange on diecknet</title>
-    <link>https://diecknet.de/de/tags/Exchange/</link>
+    <link>https://diecknet.de/de/tags/exchange/</link>
     <description>Recent content in Exchange on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/Exchange/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/exchange/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>E-Mails per PowerShell und Microsoft Graph verschicken</title>
       <link>https://diecknet.de/de/2025/04/10/powershell-send-mails-via-ms-graph/</link>

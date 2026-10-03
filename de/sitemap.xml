@@ -211,17 +211,17 @@
                 href="https://diecknet.de/en/2025/04/10/powershell-send-mails-via-ms-graph/"
                 />
   </url><url>
-    <loc>https://diecknet.de/de/tags/Exchange/</loc>
+    <loc>https://diecknet.de/de/tags/exchange/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/Exchange/"
+                href="https://diecknet.de/de/tags/exchange/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/Exchange/"
+                href="https://diecknet.de/en/tags/exchange/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/tags/microsoft-graph/</loc>
@@ -1043,17 +1043,17 @@
                 href="https://diecknet.de/en/tags/Azure-Active-Directory/"
                 />
   </url><url>
-    <loc>https://diecknet.de/de/tags/azure-ad-connect/</loc>
+    <loc>https://diecknet.de/de/tags/Azure-AD-Connect/</loc>
     <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/azure-ad-connect/"
+                href="https://diecknet.de/de/tags/Azure-AD-Connect/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/azure-ad-connect/"
+                href="https://diecknet.de/en/tags/Azure-AD-Connect/"
                 />
   </url><url>
     <loc>https://diecknet.de/de/2023/04/12/exchange-hybrid-without-ever-having-an-exchange-server/</loc>

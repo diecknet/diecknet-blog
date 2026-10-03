@@ -198,17 +198,17 @@
                 href="https://diecknet.de/en/2025/04/28/active-directory-recycle-bin/"
                 />
   </url><url>
-    <loc>https://diecknet.de/en/tags/Exchange/</loc>
+    <loc>https://diecknet.de/en/tags/exchange/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/Exchange/"
+                href="https://diecknet.de/de/tags/exchange/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/Exchange/"
+                href="https://diecknet.de/en/tags/exchange/"
                 />
   </url><url>
     <loc>https://diecknet.de/en/tags/microsoft-graph/</loc>
@@ -1043,17 +1043,17 @@
                 href="https://diecknet.de/en/tags/Azure-Active-Directory/"
                 />
   </url><url>
-    <loc>https://diecknet.de/en/tags/azure-ad-connect/</loc>
+    <loc>https://diecknet.de/en/tags/Azure-AD-Connect/</loc>
     <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://diecknet.de/de/tags/azure-ad-connect/"
+                href="https://diecknet.de/de/tags/Azure-AD-Connect/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://diecknet.de/en/tags/azure-ad-connect/"
+                href="https://diecknet.de/en/tags/Azure-AD-Connect/"
                 />
   </url><url>
     <loc>https://diecknet.de/en/2023/04/12/managing-synchronized-exchange-objects-without-an-exchange-server/</loc>
