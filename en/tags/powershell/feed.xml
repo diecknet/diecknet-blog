@@ -8,7 +8,19 @@
     <language>en</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Up a Test Environment Automatically with AutomatedLab</title>
+      <link>https://diecknet.de/en/2026/10/03/automatedlab-basics/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2026/10/03/automatedlab-basics/</guid>
+      <description>&lt;p&gt;If you often need a test environment, for example to try something out in an Active Directory environment, you don&amp;rsquo;t have to set it up manually. With AutomatedLab, you can simply define a test environment and set it up automatically. AutomatedLab is a free PowerShell module.&lt;/p&gt;
+&lt;p&gt;I also demonstrate the module &lt;a href=&#34;https://youtu.be/v4yjIMkQ4aI&#34; target=&#34;_blank&#34; &gt;in this video on YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;The module should also work on Linux and macOS, but so far I&amp;rsquo;ve only used it on Windows.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Emptying the Recycle Bin with PowerShell</title>
       <link>https://diecknet.de/en/2026/09/16/powershell-recycle-bin/</link>

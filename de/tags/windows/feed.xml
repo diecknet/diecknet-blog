@@ -8,7 +8,19 @@
     <language>de</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testumgebung automatisch einrichten per AutomatedLab</title>
+      <link>https://diecknet.de/de/2026/10/03/automatedlab-basics/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/de/2026/10/03/automatedlab-basics/</guid>
+      <description>&lt;p&gt;Wenn ihr öfter mal eine Testumgebung braucht um z.B. etwas in einer Active Directory Umgebung auszuprobieren, dann müsst ihr das nicht manuell einrichten. Mit AutomatedLab könnt ihr euch einfach eine Testumgebung definieren und automatisch einrichten. AutomatedLab ist ein kostenloses PowerShell Modul.&lt;/p&gt;
+&lt;p&gt;Ich demonstriere das Modul auch &lt;a href=&#34;https://youtu.be/v4yjIMkQ4aI&#34; target=&#34;_blank&#34; &gt;in diesem Video auf YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Das Modul funktioniert wohl auch unter Linux und macOS, aber ich habe es bisher nur unter Windows verwendet.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Leeren des Papierkorbs mit PowerShell</title>
       <link>https://diecknet.de/de/2026/09/16/powershell-recycle-bin/</link>

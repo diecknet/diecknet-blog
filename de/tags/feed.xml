@@ -8,11 +8,11 @@
     <language>de</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/de/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Powershell</title>
       <link>https://diecknet.de/de/tags/powershell/</link>
-      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
       <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/tags/powershell/</guid>
       <description></description>
@@ -21,7 +21,7 @@
     <item>
       <title>Windows</title>
       <link>https://diecknet.de/de/tags/windows/</link>
-      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
       <author>Andreas Dieckmann</author>
       <guid>https://diecknet.de/de/tags/windows/</guid>
       <description></description>
@@ -47,19 +47,19 @@
     
     <item>
       <title>Active Directory</title>
-      <link>https://diecknet.de/de/tags/Active-Directory/</link>
+      <link>https://diecknet.de/de/tags/active-directory/</link>
       <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
       <author>Andreas Dieckmann</author>
-      <guid>https://diecknet.de/de/tags/Active-Directory/</guid>
+      <guid>https://diecknet.de/de/tags/active-directory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exchange</title>
-      <link>https://diecknet.de/de/tags/exchange/</link>
+      <link>https://diecknet.de/de/tags/Exchange/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
       <author>Andreas Dieckmann</author>
-      <guid>https://diecknet.de/de/tags/exchange/</guid>
+      <guid>https://diecknet.de/de/tags/Exchange/</guid>
       <description></description>
     </item>
     
@@ -353,10 +353,10 @@
     
     <item>
       <title>Hybrid</title>
-      <link>https://diecknet.de/de/tags/Hybrid/</link>
+      <link>https://diecknet.de/de/tags/hybrid/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       <author>Andreas Dieckmann</author>
-      <guid>https://diecknet.de/de/tags/Hybrid/</guid>
+      <guid>https://diecknet.de/de/tags/hybrid/</guid>
       <description></description>
     </item>
     
@@ -532,11 +532,11 @@
     </item>
     
     <item>
-      <title>MicrosoftTeams</title>
-      <link>https://diecknet.de/de/tags/MicrosoftTeams/</link>
+      <title>Microsoftteams</title>
+      <link>https://diecknet.de/de/tags/microsoftteams/</link>
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
       <author>Andreas Dieckmann</author>
-      <guid>https://diecknet.de/de/tags/MicrosoftTeams/</guid>
+      <guid>https://diecknet.de/de/tags/microsoftteams/</guid>
       <description></description>
     </item>
     
