@@ -45,16 +45,16 @@ To improve readability, I supplied the parameter values using [hashtables and sp
 
 ```powershell
 #MyLab.ps1
-New-LabDefinition -Name Demotenant -DefaulVirtualizationEngine HyperV
+New-LabDefinition -Name Demotenant -DefaultVirtualizationEngine HyperV
 
-$Domain = {
+$Domain = @{
     DomainName = "ad.demotenant.de"
 }
 
 $DC1 = @{
     Name = "DC1"
     Memory = 4GB
-    OperationSystem = "Windows Server 2025 Standard (Desktop Experience)"
+    OperatingSystem = "Windows Server 2025 Standard (Desktop Experience)"
     Roles = "RootDC"
 }
 Add-LabMachineDefinition @DC1 @Domain
@@ -62,14 +62,14 @@ Add-LabMachineDefinition @DC1 @Domain
 $Server1 = @{
     Name = "Server1"
     Memory = 4GB
-    OperationSystem = "Windows Server 2025 Standard (Desktop Experience)"
+    OperatingSystem = "Windows Server 2025 Standard (Desktop Experience)"
 }
 Add-LabMachineDefinition @Server1 @Domain
 
 $Client1 = @{
     Name = "Client1"
     Memory = 4GB
-    OperationSystem = "Windows 11 Pro"
+    OperatingSystem = "Windows 11 Pro"
 }
 Add-LabMachineDefinition @Client1 @Domain
 
