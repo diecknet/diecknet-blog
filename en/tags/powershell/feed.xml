@@ -8,7 +8,23 @@
     <language>en</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/powershell/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entra ID: Dynamic MemberOf Filter will get removed</title>
+      <link>https://diecknet.de/en/2026/10/20/entra-id-memberof-change/</link>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <author>Andreas Dieckmann</author>
+      <guid>https://diecknet.de/en/2026/10/20/entra-id-memberof-change/</guid>
+      <description>&lt;p&gt;Microsoft is &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of&#34; target=&#34;_blank&#34; &gt;removing the &amp;ldquo;MemberOf&amp;rdquo; Filter feature&lt;/a&gt; in Entra ID. Interestingly the feature was 4 years in preview. Apparently there were some problems with the feature, so Microsoft decided against proceeding with this one.
+So &amp;ldquo;preview&amp;rdquo; doesn&amp;rsquo;t mean that there is a guarantee that the feature will ever go &amp;ldquo;General Available&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Here is a copy of the Message Center posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mc.merill.net/message/MC1448379&#34; target=&#34;_blank&#34; &gt;https://mc.merill.net/message/MC1448379&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mc.merill.net/message/MC1488834&#34; target=&#34;_blank&#34; &gt;https://mc.merill.net/message/MC1488834&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It was possible to use this filter for Dynamic Security Groups or for &lt;a href=&#34;https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-members-dynamic?tabs=admin-center&#34; target=&#34;_blank&#34; &gt;Administrative Units&lt;/a&gt;. I also made a video about this topic, you can find it &lt;strong&gt;&lt;a href=&#34;https://youtu.be/YVuQbl7mJlY&#34; target=&#34;_blank&#34; &gt;here on YouTube&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Set Up a Test Environment Automatically with AutomatedLab</title>
       <link>https://diecknet.de/en/2026/10/03/automatedlab-basics/</link>

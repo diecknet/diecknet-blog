@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hybrid on diecknet</title>
-    <link>https://diecknet.de/en/tags/hybrid/</link>
+    <link>https://diecknet.de/en/tags/Hybrid/</link>
     <description>Recent content in Hybrid on diecknet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>Andreas Dieckmann</managingEditor>
     <webMaster>Andreas Dieckmann</webMaster>
-    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/hybrid/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://diecknet.de/en/tags/Hybrid/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exchange EAC stopped working after decomissioning all Mailbox Databases</title>
       <link>https://diecknet.de/en/2023/05/16/exchange-eac-not-working-after-decomissioning-all-databases/</link>
